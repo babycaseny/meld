@@ -30,6 +30,13 @@ if not _locale_dir: _locale_dir = os.path.join(appdir,"po")
 if not _help_dir:    _help_dir  = os.path.join(appdir,"help")
 if not _share_dir:  _share_dir  = appdir
 
+print os.name
+if os.name == "posix":
+    from gtkosx_application import gtkosx_application_get_resource_path
+    _share_dir  = os.path.join(gtkosx_application_get_resource_path(), "share")
+    _locale_dir = os.path.join(gtkosx_application_get_resource_path(), "share", "meld", "po")
+    _locale_dir = os.path.join(gtkosx_application_get_resource_path(), "share", "meld", "help")
+
 def locale_dir(*args): # i18n files
     return os.path.join(_locale_dir, *args)
 
@@ -37,20 +44,20 @@ def help_dir(*args): # help
     return os.path.join(_help_dir, *args)
 
 def share_dir(*args):
-    if os.path.exists(os.path.join(_share_dir, "data")):
-        return os.path.join(_share_dir, "data", *args)
+    if os.path.exists(os.path.join(_share_dir, "meld")):
+        return os.path.join(_share_dir, "meld", *args)
     else:
         return os.path.join(_share_dir, *args)
 
 def ui_dir(*args):
-    if os.path.exists(os.path.join(_share_dir, "data")):
-        return os.path.join(_share_dir, "data", "ui", *args)
+    if os.path.exists(os.path.join(_share_dir, "meld", "ui")):
+        return os.path.join(_share_dir, "meld", "ui", *args)
     else:
         return os.path.join(_share_dir, "ui", *args)
 
 def icon_dir(*args):
-    if os.path.exists(os.path.join(_share_dir, "data")):
-        return os.path.join(_share_dir, "data", "icons", *args)
+    if os.path.exists(os.path.join(_share_dir, "meld", "icons")):
+        return os.path.join(_share_dir, "meld", "icons", *args)
     else:
         return os.path.join(_share_dir, "icons", *args)
 

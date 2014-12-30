@@ -10,7 +10,6 @@
       <separator/>
       <menuitem action="Recent" />
       <menuitem action="Close" />
-      <menuitem action="Quit" />
     </menu>
     <menu action="EditMenu">
       <menuitem action="Undo"/>

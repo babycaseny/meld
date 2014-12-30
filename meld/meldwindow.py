@@ -59,13 +59,13 @@ class MeldWindow(gnomeglade.Component):
 
         actions = (
             ("FileMenu", None, _("_File")),
-            ("New", gtk.STOCK_NEW, _("_New Comparison..."), "<control>N",
+            ("New", gtk.STOCK_NEW, _("_New Comparison..."), "<Primary>N",
                 _("Start a new comparison"),
                 self.on_menu_file_new_activate),
             ("Save", gtk.STOCK_SAVE, None, None,
                 _("Save the current file"),
                 self.on_menu_save_activate),
-            ("SaveAs", gtk.STOCK_SAVE_AS, _("Save As..."), "<control><shift>S",
+            ("SaveAs", gtk.STOCK_SAVE_AS, _("Save As..."), "<Primary><shift>S",
                 _("Save the current file with a different name"),
                 self.on_menu_save_as_activate),
             ("Close", gtk.STOCK_CLOSE, None, None,
@@ -76,10 +76,10 @@ class MeldWindow(gnomeglade.Component):
                 self.on_menu_quit_activate),
 
             ("EditMenu", None, _("_Edit")),
-            ("Undo", gtk.STOCK_UNDO, None, "<control>Z",
+            ("Undo", gtk.STOCK_UNDO, None, "<Primary>Z",
                 _("Undo the last action"),
                 self.on_menu_undo_activate),
-            ("Redo", gtk.STOCK_REDO, None, "<control><shift>Z",
+            ("Redo", gtk.STOCK_REDO, None, "<Primary><shift>Z",
                 _("Redo the last undone action"),
                 self.on_menu_redo_activate),
             ("Cut", gtk.STOCK_CUT, None, None, _("Cut the selection"),
@@ -90,14 +90,14 @@ class MeldWindow(gnomeglade.Component):
                 self.on_menu_paste_activate),
             ("Find", gtk.STOCK_FIND, _("Find..."), None, _("Search for text"),
                 self.on_menu_find_activate),
-            ("FindNext", None, _("Find Ne_xt"), "<control>G",
+            ("FindNext", None, _("Find Ne_xt"), "<Primary>G",
                 _("Search forwards for the same text"),
                 self.on_menu_find_next_activate),
-            ("FindPrevious", None, _("Find _Previous"), "<control><shift>G",
+            ("FindPrevious", None, _("Find _Previous"), "<Primary><shift>G",
                 _("Search backwards for the same text"),
                 self.on_menu_find_previous_activate),
             ("Replace", gtk.STOCK_FIND_AND_REPLACE,
-                _("_Replace..."), "<control>H",
+                _("_Replace..."), "<Primary>H",
                 _("Find and replace text"),
                 self.on_menu_replace_activate),
             ("Preferences", gtk.STOCK_PREFERENCES, _("Prefere_nces"), None,
@@ -123,7 +123,7 @@ class MeldWindow(gnomeglade.Component):
             ("Stop", gtk.STOCK_STOP, None, "Escape",
                 _("Stop the current action"),
                 self.on_toolbar_stop_clicked),
-            ("Refresh", gtk.STOCK_REFRESH, None, "<control>R",
+            ("Refresh", gtk.STOCK_REFRESH, None, "<Primary>R",
                 _("Refresh the view"),
                 self.on_menu_refresh_activate),
 
@@ -154,7 +154,7 @@ class MeldWindow(gnomeglade.Component):
                 self.on_menu_about_activate),
         )
         toggleactions = (
-            ("Fullscreen", None, _("Fullscreen"), "F11",
+            ("Fullscreen", None, _("Fullscreen"), "<Ctrl><Primary>F",
                 _("View the comparison in fullscreen"),
                 self.on_action_fullscreen_toggled, False),
             ("ToolbarVisible", None, _("_Toolbar"), None,
@@ -205,7 +205,7 @@ class MeldWindow(gnomeglade.Component):
         self.actiongroup.get_action("Stop").set_sensitive(False)
         self._update_page_action_sensitivity()
 
-        self.appvbox.pack_start(self.menubar, expand=False)
+        #self.appvbox.pack_start(self.menubar, expand=False)
         self.appvbox.pack_start(self.toolbar, expand=False)
         self._menu_context = self.statusbar.get_context_id("Tooltips")
         self.widget.drag_dest_set(
@@ -228,6 +228,27 @@ class MeldWindow(gnomeglade.Component):
         self.undo_handlers = tuple()
         self.widget.connect('focus_in_event', self.on_focus_change)
         self.widget.connect('focus_out_event', self.on_focus_change)
+
+        try:
+            import gtkosx_application
+            self.macapp = gtkosx_application.gtkosx_application_get()
+            self.osx_menu_setup()
+        except ImportError:
+            QUARTZ_ENABLE = False
+        else:
+            QUARTZ_ENABLE = True
+
+    def osx_menu_setup(self):
+        about_item = self.ui.get_widget('/Menubar/HelpMenu/About')
+        prefs_item = self.ui.get_widget('/Menubar/EditMenu/Preferences')
+        self.menubar.show()
+        self.macapp.set_menu_bar(self.menubar)
+        self.menubar.hide()
+        self.macapp.insert_app_menu_item(about_item, 0)
+        self.macapp.insert_app_menu_item(gtk.SeparatorMenuItem(), 1)
+        self.macapp.insert_app_menu_item(prefs_item, 2)
+        self.macapp.insert_app_menu_item(gtk.SeparatorMenuItem(), 3)
+        self.macapp.ready()
 
     def on_focus_change(self, widget, event, callback_data=None):
         for idx in range(self.notebook.get_n_pages()):
