@@ -26,17 +26,17 @@ msgstr "Error converting pattern '%s' to regular expression"
 #: ../dirdiff.py:283
 #, python-format
 msgid "Hide %s"
-msgstr "Hide %s"
+msgstr "Haid %s"
 
 #: ../dirdiff.py:363 ../dirdiff.py:372 ../vcview.py:212 ../vcview.py:240
 #, python-format
 msgid "[%s] Scanning %s"
-msgstr "[%s] Scanning %s"
+msgstr "[%s] Skaning %s"
 
 #: ../dirdiff.py:405
 #, python-format
 msgid "'%s' hidden by '%s'"
-msgstr "'%s' hidden by '%s'"
+msgstr "'%s' haiden by '%s'"
 
 #: ../dirdiff.py:411
 #, python-format
