@@ -24,7 +24,6 @@ import shutil
 import re
 import subprocess
 
-from gi.repository import GObject
 from gi.repository import Gtk
 
 from meld.conf import _
@@ -40,8 +39,7 @@ else:
         return rlist, wlist, xlist
 
 
-def error_dialog(
-        primary, secondary, parent=None, messagetype=Gtk.MessageType.ERROR):
+def error_dialog(primary, secondary):
     """A common error dialog handler for Meld
 
     This should only ever be used as a last resort, and for errors that
@@ -50,19 +48,9 @@ def error_dialog(
 
     Primary must be plain text. Secondary must be valid markup.
     """
-    if not parent:
-        from meld.meldapp import app
-        parent = app.get_active_window()
-
-    dialog = Gtk.MessageDialog(
-        parent=parent,
-        flags=Gtk.DialogFlags.MODAL | Gtk.DialogFlags.DESTROY_WITH_PARENT,
-        type=messagetype,
-        buttons=Gtk.ButtonsType.CLOSE,
-        message_format=primary)
-    dialog.format_secondary_markup(secondary)
-    dialog.run()
-    dialog.destroy()
+    return modal_dialog(
+        primary, secondary, Gtk.ButtonsType.CLOSE, parent=None,
+        messagetype=Gtk.MessageType.ERROR)
 
 
 def modal_dialog(
@@ -78,55 +66,30 @@ def modal_dialog(
 
     if not parent:
         from meld.meldapp import app
-        parent = app.window.widget
+        parent = app.get_active_window()
     elif not isinstance(parent, Gtk.Window):
         parent = parent.get_toplevel()
 
+    if isinstance(buttons, Gtk.ButtonsType):
+        custom_buttons = []
+    else:
+        custom_buttons, buttons = buttons, Gtk.ButtonsType.NONE
+
     dialog = Gtk.MessageDialog(
-        parent=parent,
-        flags=Gtk.DialogFlags.MODAL | Gtk.DialogFlags.DESTROY_WITH_PARENT,
-        type=messagetype,
-        buttons=Gtk.ButtonsType.NONE,
-        message_format=primary)
+        transient_for=parent,
+        modal=True,
+        destroy_with_parent=True,
+        message_type=messagetype,
+        buttons=buttons,
+        text=primary)
     dialog.format_secondary_markup(secondary)
 
-    for label, response_id in buttons:
+    for label, response_id in custom_buttons:
         dialog.add_button(label, response_id)
 
     response = dialog.run()
     dialog.destroy()
     return response
-
-
-def run_dialog( text, parent=None, messagetype=Gtk.MessageType.WARNING, buttonstype=Gtk.ButtonsType.OK, extrabuttons=()):
-    """Run a dialog with text 'text'.
-       Extra buttons are passed as tuples of (button label, response id).
-    """
-    escaped = GObject.markup_escape_text(text)
-    d = Gtk.MessageDialog(
-        None,
-        Gtk.DialogFlags.DESTROY_WITH_PARENT,
-        messagetype,
-        buttonstype)
-    markup = '<span weight="bold" size="larger">%s</span>' % escaped
-    d.set_markup(markup)
-    if parent and isinstance(parent, Gtk.Window):
-        d.set_transient_for(parent.widget.get_toplevel())
-    for b, rid in extrabuttons:
-        d.add_button(b, rid)
-    d.vbox.set_spacing(12)
-    hbox = d.vbox.get_children()[0]
-    hbox.set_spacing(12)
-    try:
-        d.props.image.set_alignment(0.5, 0)
-        d.props.image.set_padding(12, 12)
-    except AttributeError:
-        # FIXME: This is ridiculous. Possibly distribution-specific patches,
-        # or just... bad things. This needs to go away.
-        pass
-    ret = d.run()
-    d.destroy()
-    return ret
 
 
 # Taken from epiphany
@@ -165,9 +128,11 @@ def position_menu_under_widget(menu, widget):
 
     return (x, y, False)
 
+
 def make_tool_button_widget(label):
     """Make a GtkToolButton label-widget suggestive of a menu dropdown"""
-    arrow = Gtk.Arrow(Gtk.ArrowType.DOWN, Gtk.ShadowType.NONE)
+    arrow = Gtk.Arrow(
+        arrow_type=Gtk.ArrowType.DOWN, shadow_type=Gtk.ShadowType.NONE)
     label = Gtk.Label(label=label)
     hbox = Gtk.HBox(spacing=3)
     hbox.pack_end(arrow, True, True, 0)
@@ -175,8 +140,10 @@ def make_tool_button_widget(label):
     hbox.show_all()
     return hbox
 
+
 def gdk_to_cairo_color(color):
     return (color.red / 65535., color.green / 65535., color.blue / 65535.)
+
 
 def all_equal(alist):
     """Return true if all members of the list are equal to the first.
@@ -189,7 +156,8 @@ def all_equal(alist):
             if n != first:
                 return 0
     return 1
-    
+
+
 def shorten_names(*names):
     """Remove redunant parts of a list of names (e.g. /tmp/foo{1,2} -> foo{1,2}
     """
@@ -287,6 +255,7 @@ def write_pipe(command, text, error=None):
     proc.communicate(text)
     return proc.wait()
 
+
 def commonprefix(dirs):
     """Given a list of pathnames, returns the longest common leading component.
     """
@@ -302,6 +271,7 @@ def commonprefix(dirs):
                     return ''
                 break
     return os.sep.join(prefix)
+
 
 def copy2(src, dst):
     """Like shutil.copy2 but ignores chmod errors, and copies symlinks as links
@@ -324,6 +294,7 @@ def copy2(src, dst):
     except OSError as e:
         if e.errno not in (errno.EPERM, errno.ENOTSUP):
             raise
+
 
 def copytree(src, dst):
     """Similar to shutil.copytree, but always copies symlinks and doesn't
@@ -356,15 +327,18 @@ def copytree(src, dst):
         if e.errno != errno.EPERM:
             raise
 
+
 def shell_escape(glob_pat):
     # TODO: handle all cases
     assert not re.compile(r"[][*?]").findall(glob_pat)
     return glob_pat.replace('{', '[{]').replace('}', '[}]')
 
+
 def shell_to_regex(pat):
     """Translate a shell PATTERN to a regular expression.
 
-    Based on fnmatch.translate(). We also handle {a,b,c} where fnmatch does not.
+    Based on fnmatch.translate().
+    We also handle {a,b,c} where fnmatch does not.
     """
 
     i, n = 0, len(pat)
@@ -405,7 +379,9 @@ def shell_to_regex(pat):
             else:
                 stuff = pat[i:j]
                 i = j+1
-                res += '(%s)' % "|".join([shell_to_regex(p)[:-1] for p in stuff.split(",")])
+                res += '(%s)' % "|".join(
+                    [shell_to_regex(p)[:-1] for p in stuff.split(",")]
+                )
         else:
             res += re.escape(c)
     return res + "$"

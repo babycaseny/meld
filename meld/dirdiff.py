@@ -1,3 +1,5 @@
+# coding=UTF-8
+
 # Copyright (C) 2002-2006 Stephen Kennedy <stevek@gnome.org>
 # Copyright (C) 2009-2013 Kai Willadsen <kai.willadsen@gmail.com>
 #
@@ -109,8 +111,7 @@ def _files_same(files, regexes, comparison_args):
       FileError: There was a problem reading one or more of the files
     """
 
-    # One file is the same as itself
-    if len(files) < 2:
+    if all_same(files):
         return Same
 
     files = tuple(files)
@@ -354,6 +355,7 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
         self.current_path, self.prev_path, self.next_path = None, None, None
         self.on_treeview_focus_out_event(None, None)
         self.focus_pane = None
+        self.row_expansions = set()
 
         # One column-dict for each treeview, for changing visibility and order
         self.columns_dict = [{}, {}, {}]
@@ -427,6 +429,8 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
                 self.state_filters.append(s)
                 action_name = self.state_actions[s][1]
                 self.actiongroup.get_action(action_name).set_active(True)
+
+        self._scan_in_progress = 0
 
     def on_style_updated(self, widget):
         style = widget.get_style_context()
@@ -546,7 +550,7 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
             if f.filter is None:
                 disabled_actions.append(name)
 
-        self.filter_actiongroup = Gtk.ActionGroup("DirdiffFilterActions")
+        self.filter_actiongroup = Gtk.ActionGroup(name="DirdiffFilterActions")
         self.filter_actiongroup.add_toggle_actions(actions)
         for name in disabled_actions:
             self.filter_actiongroup.get_action(name).set_sensitive(False)
@@ -662,6 +666,7 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
             self.model.remove(child)
             child = self.model.iter_children( it )
         self._update_item_state(it)
+        self._scan_in_progress += 1
         self.scheduler.add_task(self._search_recursively_iter(path))
 
     def _search_recursively_iter(self, rootpath):
@@ -816,15 +821,57 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
             if differences:
                 expanded.add(path)
 
-        self._show_tree_wide_errors(invalid_filenames, shadowed_entries)
+        if invalid_filenames or shadowed_entries:
+            self._show_tree_wide_errors(invalid_filenames, shadowed_entries)
+        elif not expanded:
+            self._show_identical_status()
 
+        self.treeview[0].expand_to_path(Gtk.TreePath(("0",)))
         for path in sorted(expanded):
             self.treeview[0].expand_to_path(path)
         yield _("[%s] Done") % self.label_text
 
         self.scheduler.add_task(self.on_treeview_cursor_changed)
+        self._scan_in_progress -= 1
         self.treeview[0].get_selection().select_path(Gtk.TreePath.new_first())
         self._update_diffmaps()
+
+    def _show_identical_status(self):
+        primary = _("Folders have no differences")
+        identical_note = _(
+            "Contents of scanned files in folders are identical.")
+        shallow_note = _(
+            "Scanned files in folders appear identical, but contents have not "
+            "been scanned.")
+        file_filter_qualifier = _(
+            "File filters are in use, so not all files have been scanned.")
+        text_filter_qualifier = _(
+            "Text filters are in use and may be masking content differences.")
+
+        is_shallow = self.props.shallow_comparison
+        have_file_filters = any(f.active for f in self.name_filters)
+        have_text_filters = any(f.active for f in self.text_filters)
+
+        secondary = [shallow_note if is_shallow else identical_note]
+        if have_file_filters:
+            secondary.append(file_filter_qualifier)
+        if not is_shallow and have_text_filters:
+            secondary.append(text_filter_qualifier)
+        secondary = " ".join(secondary)
+
+        for pane in range(self.num_panes):
+            msgarea = self.msgarea_mgr[pane].new_from_text_and_icon(
+                Gtk.STOCK_INFO, primary, secondary)
+            button = msgarea.add_button(_("Hide"), Gtk.ResponseType.CLOSE)
+            if pane == 0:
+                button.props.label = _("Hi_de")
+
+            def clear_all(*args):
+                for p in range(self.num_panes):
+                    self.msgarea_mgr[p].clear()
+            msgarea.connect("response", clear_all)
+            msgarea.show_all()
+
 
     def _show_tree_wide_errors(self, invalid_filenames, shadowed_entries):
         header = _("Multiple errors occurred while scanning this folder")
@@ -877,45 +924,61 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
         return msgarea
 
     def copy_selected(self, direction):
-        assert direction in (-1,1)
+        assert direction in (-1, 1)
         src_pane = self._get_focused_pane()
-        if src_pane is not None:
-            dst_pane = src_pane + direction
-            assert dst_pane >= 0 and dst_pane < self.num_panes
-            paths = self._get_selected_paths(src_pane)
-            paths.reverse()
-            model = self.model
-            for path in paths: #filter(lambda x: x.name is not None, sel):
-                it = model.get_iter(path)
-                name = model.value_path(it, src_pane)
-                if name is None:
-                    continue
-                src = model.value_path(it, src_pane)
-                dst = model.value_path(it, dst_pane)
-                try:
-                    if os.path.isfile(src):
-                        dstdir = os.path.dirname( dst )
-                        if not os.path.exists( dstdir ):
-                            os.makedirs( dstdir )
-                        misc.copy2( src, dstdir )
-                        self.file_created( path, dst_pane)
-                    elif os.path.isdir(src):
-                        if os.path.exists(dst):
-                            if misc.run_dialog( _("'%s' exists.\nOverwrite?") % os.path.basename(dst),
-                                    parent = self,
-                                    buttonstype = Gtk.ButtonsType.OK_CANCEL) != Gtk.ResponseType.OK:
-                                continue
-                        misc.copytree(src, dst)
-                        self.recursively_update( path )
-                except (OSError, IOError, shutil.Error) as err:
-                    misc.error_dialog(
-                        _("Error copying file"),
-                        _("Couldn't copy %s\nto %s.\n\n%s") % (
-                            GLib.markup_escape_text(src),
-                            GLib.markup_escape_text(dst),
-                            GLib.markup_escape_text(str(err)),
+        if src_pane is None:
+            return
+
+        dst_pane = src_pane + direction
+        assert dst_pane >= 0 and dst_pane < self.num_panes
+        paths = self._get_selected_paths(src_pane)
+        paths.reverse()
+        model = self.model
+        for path in paths:  # filter(lambda x: x.name is not None, sel):
+            it = model.get_iter(path)
+            name = model.value_path(it, src_pane)
+            if name is None:
+                continue
+            src = model.value_path(it, src_pane)
+            dst = model.value_path(it, dst_pane)
+            try:
+                if os.path.isfile(src):
+                    dstdir = os.path.dirname(dst)
+                    if not os.path.exists(dstdir):
+                        os.makedirs(dstdir)
+                    misc.copy2(src, dstdir)
+                    self.file_created(path, dst_pane)
+                elif os.path.isdir(src):
+                    if os.path.exists(dst):
+                        parent_name = os.path.dirname(dst)
+                        folder_name = os.path.basename(dst)
+                        dialog_buttons = [
+                            (_("_Cancel"), Gtk.ResponseType.CANCEL),
+                            (_("_Replace"), Gtk.ResponseType.OK),
+                        ]
+                        replace = misc.modal_dialog(
+                            primary=_(u"Replace folder “%s”?") % folder_name,
+                            secondary=_(
+                                u"Another folder with the same name already "
+                                u"exists in “%s”.\n"
+                                u"If you replace the existing folder, all "
+                                u"files in it will be lost.") % parent_name,
+                            buttons=dialog_buttons,
+                            messagetype=Gtk.MessageType.WARNING,
                         )
+                        if replace != Gtk.ResponseType.OK:
+                            continue
+                    misc.copytree(src, dst)
+                    self.recursively_update(path)
+            except (OSError, IOError, shutil.Error) as err:
+                misc.error_dialog(
+                    _("Error copying file"),
+                    _("Couldn't copy %s\nto %s.\n\n%s") % (
+                        GLib.markup_escape_text(src),
+                        GLib.markup_escape_text(dst),
+                        GLib.markup_escape_text(str(err)),
                     )
+                )
 
     def delete_selected(self):
         """Delete all selected files/folders recursively.
@@ -984,6 +1047,8 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
             if self.current_path and self.focus_pane:
                 self.focus_pane.set_cursor(self.current_path)
 
+        self.row_expansions = set()
+
     def on_treeview_selection_changed(self, selection, pane):
         if not self.treeview[pane].is_focus():
             return
@@ -998,12 +1063,16 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
                     is_valid = False
                     break
 
+            busy = self._scan_in_progress > 0
+
             get_action("DirCompare").set_sensitive(True)
             get_action("Hide").set_sensitive(True)
-            get_action("DirDelete").set_sensitive(is_valid)
-            get_action("DirCopyLeft").set_sensitive(is_valid and pane > 0)
+            get_action("DirDelete").set_sensitive(
+                is_valid and not busy)
+            get_action("DirCopyLeft").set_sensitive(
+                is_valid and not busy and pane > 0)
             get_action("DirCopyRight").set_sensitive(
-                is_valid and pane + 1 < self.num_panes)
+                is_valid and not busy and pane + 1 < self.num_panes)
             if self.main_actiongroup:
                 act = self.main_actiongroup.get_action("OpenExternal")
                 act.set_sensitive(is_valid)
@@ -1101,11 +1170,17 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
                 view.expand_row(path, False)
 
     def on_treeview_row_expanded(self, view, it, path):
-        self._do_to_others(view, self.treeview, "expand_row", (path,0) )
+        self.row_expansions.add(str(path))
+        for row in self.model[path].iterchildren():
+            if str(row.path) in self.row_expansions:
+                view.expand_row(row.path, False)
+
+        self._do_to_others(view, self.treeview, "expand_row", (path, False))
         self._update_diffmaps()
 
     def on_treeview_row_collapsed(self, view, me, path):
-        self._do_to_others(view, self.treeview, "collapse_row", (path,) )
+        self.row_expansions.discard(str(path))
+        self._do_to_others(view, self.treeview, "collapse_row", (path,))
         self._update_diffmaps()
 
     def on_popup_deactivate_event(self, popup):

@@ -97,6 +97,7 @@ class CachedSequenceMatcher(object):
 
 
 MASK_SHIFT, MASK_CTRL = 1, 2
+PANE_LEFT, PANE_RIGHT = -1, +1
 
 
 class CursorDetails(object):
@@ -277,14 +278,20 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
 
         for pane, t in enumerate(self.textview):
             # FIXME: set_num_panes will break this good
+            direction = t.get_direction()
+
             if pane == 0 or (pane == 1 and self.num_panes == 3):
                 window = Gtk.TextWindowType.RIGHT
+                if direction == Gtk.TextDirection.RTL:
+                    window = Gtk.TextWindowType.LEFT
                 views = [self.textview[pane], self.textview[pane + 1]]
                 renderer = GutterRendererChunkAction(pane, pane + 1, views, self, self.linediffer)
                 gutter = t.get_gutter(window)
                 gutter.insert(renderer, 10)
             if pane in (1, 2):
                 window = Gtk.TextWindowType.LEFT
+                if direction == Gtk.TextDirection.RTL:
+                    window = Gtk.TextWindowType.RIGHT
                 views = [self.textview[pane], self.textview[pane - 1]]
                 renderer = GutterRendererChunkAction(pane, pane - 1, views, self, self.linediffer)
                 gutter = t.get_gutter(window)
@@ -571,38 +578,38 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
         return (dst, src) if reverse else (src, dst)
 
     def action_push_change_left(self, *args):
-        src, dst = self.get_action_panes(-1)
+        src, dst = self.get_action_panes(PANE_LEFT)
         self.replace_chunk(src, dst, self.get_action_chunk(src, dst))
 
     def action_push_change_right(self, *args):
-        src, dst = self.get_action_panes(+1)
+        src, dst = self.get_action_panes(PANE_RIGHT)
         self.replace_chunk(src, dst, self.get_action_chunk(src, dst))
 
     def action_pull_change_left(self, *args):
-        src, dst = self.get_action_panes(-1, reverse=True)
+        src, dst = self.get_action_panes(PANE_LEFT, reverse=True)
         self.replace_chunk(src, dst, self.get_action_chunk(src, dst))
 
     def action_pull_change_right(self, *args):
-        src, dst = self.get_action_panes(+1, reverse=True)
+        src, dst = self.get_action_panes(PANE_RIGHT, reverse=True)
         self.replace_chunk(src, dst, self.get_action_chunk(src, dst))
 
     def action_copy_change_left_up(self, *args):
-        src, dst = self.get_action_panes(-1)
+        src, dst = self.get_action_panes(PANE_LEFT)
         self.copy_chunk(
             src, dst, self.get_action_chunk(src, dst), copy_up=True)
 
     def action_copy_change_right_up(self, *args):
-        src, dst = self.get_action_panes(+1)
+        src, dst = self.get_action_panes(PANE_RIGHT)
         self.copy_chunk(
             src, dst, self.get_action_chunk(src, dst), copy_up=True)
 
     def action_copy_change_left_down(self, *args):
-        src, dst = self.get_action_panes(-1)
+        src, dst = self.get_action_panes(PANE_LEFT)
         self.copy_chunk(
             src, dst, self.get_action_chunk(src, dst), copy_up=False)
 
     def action_copy_change_right_down(self, *args):
-        src, dst = self.get_action_panes(+1)
+        src, dst = self.get_action_panes(PANE_RIGHT)
         self.copy_chunk(
             src, dst, self.get_action_chunk(src, dst), copy_up=False)
 
@@ -623,11 +630,11 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
         self.scheduler.add_task(resync)
 
     def action_pull_all_changes_left(self, *args):
-        src, dst = self.get_action_panes(-1, reverse=True)
+        src, dst = self.get_action_panes(PANE_LEFT, reverse=True)
         self.pull_all_non_conflicting_changes(src, dst)
 
     def action_pull_all_changes_right(self, *args):
-        src, dst = self.get_action_panes(+1, reverse=True)
+        src, dst = self.get_action_panes(PANE_RIGHT, reverse=True)
         self.pull_all_non_conflicting_changes(src, dst)
 
     def merge_all_non_conflicting_changes(self):
@@ -810,8 +817,13 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
                     txt = filt.filter.sub(killit, txt)
         except AssertionError:
             if not self.warned_bad_comparison:
-                misc.run_dialog(_("Filter '%s' changed the number of lines in the file. "
-                    "Comparison will be incorrect. See the user manual for more details.") % filt.label)
+                misc.error_dialog(
+                    primary=_(u"Comparison results will be inaccurate"),
+                    secondary=_(
+                        u"Filter “%s” changed the number of lines in the "
+                        u"file, which is unsupported. The comparison will "
+                        u"not be accurate.") % filt.label,
+                )
                 self.warned_bad_comparison = True
         return txt
 
@@ -843,26 +855,23 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
         if key == 'font':
             self.load_font()
 
-    def check_save_modified(self, label=None):
+    def check_save_modified(self):
         response = Gtk.ResponseType.OK
-        modified = [b.data.modified for b in self.textbuffer]
+        modified = [b.data.modified for b in self.textbuffer[:self.num_panes]]
+        labels = [b.data.label for b in self.textbuffer[:self.num_panes]]
         if True in modified:
             dialog = gnomeglade.Component("filediff.ui", "check_save_dialog")
             dialog.widget.set_transient_for(self.widget.get_toplevel())
-            if label:
-                dialog.widget.props.text = label
-            # FIXME: Should be packed into dialog.widget.get_message_area(),
-            # but this is unbound on currently required PyGTK.
+            message_area = dialog.widget.get_message_area()
             buttons = []
-            for i in range(self.num_panes):
-                button = Gtk.CheckButton(label=self.textbuffer[i].data.label)
-                button.set_use_underline(False)
-                button.set_sensitive(modified[i])
-                button.set_active(modified[i])
-                dialog.extra_vbox.pack_start(button, expand=True, fill=True,
-                                             padding=0)
+            for label, should_save in zip(labels, modified):
+                button = Gtk.CheckButton.new_with_label(label)
+                button.set_sensitive(should_save)
+                button.set_active(should_save)
+                message_area.pack_start(
+                    button, expand=False, fill=True, padding=0)
                 buttons.append(button)
-            dialog.extra_vbox.show_all()
+            message_area.show_all()
             response = dialog.widget.run()
             try_save = [b.get_active() for b in buttons]
             dialog.widget.destroy()
@@ -1592,22 +1601,37 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
         dialog.destroy()
         if filename:
             if os.path.exists(filename):
-                response = misc.run_dialog(
-                    _('"%s" exists!\nOverwrite?') % os.path.basename(filename),
-                    parent = self,
-                    buttonstype = Gtk.ButtonsType.YES_NO)
-                if response == Gtk.ResponseType.NO:
+                parent_name = os.path.dirname(filename)
+                file_name = os.path.basename(filename)
+                dialog_buttons = [
+                    (_("_Cancel"), Gtk.ResponseType.CANCEL),
+                    (_("_Replace"), Gtk.ResponseType.OK),
+                ]
+                replace = misc.modal_dialog(
+                    primary=_(u"Replace file “%s”?") % file_name,
+                    secondary=_(
+                        u"A file with this name already exists in “%s”.\n"
+                        u"If you replace the existing file, its contents "
+                        u"will be lost.") % parent_name,
+                    buttons=dialog_buttons,
+                    messagetype=Gtk.MessageType.WARNING,
+                )
+                if replace != Gtk.ResponseType.OK:
                     return None
             return filename
         return None
 
     def _save_text_to_filename(self, filename, text):
         try:
+            if not isinstance(text, str):
+                raise IOError("couldn't encode text")
             open(filename, "wb").write(text)
-        except IOError as e:
-            misc.run_dialog(
-                _("Error writing to %s\n\n%s.") % (filename, e),
-                self, Gtk.MessageType.ERROR, Gtk.ButtonsType.OK)
+        except IOError as err:
+            misc.error_dialog(
+                primary=_("Could not save file %s.") % filename,
+                secondary=_("Couldn't save file due to:\n%s") % (
+                    GLib.markup_escape_text(str(err))),
+            )
             return False
         return True
 
@@ -1634,11 +1658,12 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
 
         if not force_overwrite and not bufdata.current_on_disk():
             gfile = Gio.File.new_for_path(bufdata.filename)
-            primary = _("File %s has changed on disk since it was opened") % \
-                      gfile.get_parse_name()
+            primary = (
+                _("File %s has changed on disk since it was opened") %
+                gfile.get_parse_name())
             secondary = _("If you save it, any external changes will be lost.")
             msgarea = self.msgarea_mgr[pane].new_from_text_and_icon(
-                            Gtk.STOCK_DIALOG_WARNING, primary, secondary)
+                Gtk.STOCK_DIALOG_WARNING, primary, secondary)
             msgarea.add_button(_("Save Anyway"), Gtk.ResponseType.ACCEPT)
             msgarea.add_button(_("Don't Save"), Gtk.ResponseType.CLOSE)
 
@@ -1650,7 +1675,6 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
             msgarea.connect("response", on_file_changed_response)
             msgarea.show_all()
             return
-
 
         start, end = buf.get_bounds()
         text = text_type(buf.get_text(start, end, False), 'utf8')
@@ -1664,25 +1688,48 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
                     '\r\n': ("DOS/Windows (CR-LF)", 1),
                     '\r': ("Mac OS (CR)", 2),
                 }
-                newline = misc.run_dialog( _("This file '%s' contains a mixture of line endings.\n\nWhich format would you like to use?") % bufdata.label,
-                    self, Gtk.MessageType.WARNING, buttonstype=Gtk.ButtonsType.CANCEL,
-                    extrabuttons=[ buttons[b] for b in bufdata.newlines ] )
+                dialog_buttons = [(_("_Cancel"), Gtk.ResponseType.CANCEL)]
+                dialog_buttons += [buttons[b] for b in bufdata.newlines]
+                newline = misc.modal_dialog(
+                    primary=_("Inconsistent line endings found"),
+                    secondary=_(
+                        "'%s' contains a mixture of line endings. Select the "
+                        "line ending format to use.") % bufdata.label,
+                    buttons=dialog_buttons,
+                    messagetype=Gtk.MessageType.WARNING
+                )
                 if newline < 0:
-                    return
-                for k,v in buttons.items():
+                    return False
+                for k, v in buttons.items():
                     if v[1] == newline:
                         bufdata.newlines = k
                         if k != '\n':
                             text = text.replace('\n', k)
                         break
-        if bufdata.encoding:
+
+        encoding = bufdata.encoding
+        while isinstance(text, unicode):
             try:
-                text = text.encode(bufdata.encoding)
+                text = text.encode(encoding)
             except UnicodeEncodeError:
-                if misc.run_dialog(
-                    _("'%s' contains characters not encodable with '%s'\nWould you like to save as UTF-8?") % (bufdata.label, bufdata.encoding),
-                    self, Gtk.MessageType.ERROR, Gtk.ButtonsType.YES_NO) != Gtk.ResponseType.YES:
+                dialog_buttons = [
+                    (_("_Cancel"), Gtk.ResponseType.CANCEL),
+                    (_("_Save as UTF-8"), Gtk.ResponseType.OK),
+                ]
+                reencode = misc.modal_dialog(
+                    primary=_(u"Couldn't encode text as “%s”") % encoding,
+                    secondary=_(
+                        u"File “%s” contains characters that can't be encoded "
+                        u"using encoding “%s”.\n"
+                        u"Would you like to save as UTF-8?") % (
+                        bufdata.label, encoding),
+                    buttons=dialog_buttons,
+                    messagetype=Gtk.MessageType.WARNING
+                )
+                if reencode != Gtk.ResponseType.OK:
                     return False
+
+                encoding = 'utf-8'
 
         save_to = bufdata.savefile or bufdata.filename
         if self._save_text_to_filename(save_to, text):
