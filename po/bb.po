@@ -1,7 +1,7 @@
-# English (British) translation.
+# Babyish translation for meld.
 # Copyright (C) 2004 THE meld'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the meld package.
-# Gareth Owen <gowen72@yahoo.com>, 2004.
+# Tom K. C. Chiu <tomchiukc@gmail.com>, 2014-2015.
 #
 #
 msgid ""
@@ -9,14 +9,15 @@ msgstr ""
 "Project-Id-Version: meld\n"
 "Report-Msgid-Bugs-To: Stephen Kennedy <stevek@gnome.org>\n"
 "POT-Creation-Date: 2007-01-23 20:55+0000\n"
-"PO-Revision-Date: 2007-01-23 20:55-0000\n"
-"Last-Translator: David Lodge <dave@cirt.net>\n"
-"Language-Team:  <en@li.org>\n"
-"Language: en_GB\n"
+"PO-Revision-Date: 2015-01-19 14:59+0800\n"
+"Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
+"Language-Team:  <babycaseny@gmail.com>\n"
+"Language: bb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../dirdiff.py:252 ../dirdiff.py:267
 #, python-format
@@ -36,7 +37,7 @@ msgstr "[%s] Skaning %s"
 #: ../dirdiff.py:405
 #, python-format
 msgid "'%s' hidden by '%s'"
-msgstr "'%s' haiden by '%s'"
+msgstr "'%s' haiden bai '%s'"
 
 #: ../dirdiff.py:411
 #, python-format
@@ -57,11 +58,11 @@ msgstr "[%s] Done"
 #: ../dirdiff.py:527
 #, python-format
 msgid ""
-"'%s' exists.\n"
+"'%s' iksist.\n"
 "Overwrite?"
 msgstr ""
-"'%s' exists.\n"
-"Overwrite?"
+"'%s' iksist.\n"
+"Ovèrwrait?"
 
 #: ../dirdiff.py:534
 #, python-format
@@ -98,29 +99,29 @@ msgstr ""
 #, python-format
 msgid "%i second"
 msgid_plural "%i seconds"
-msgstr[0] "%i second"
-msgstr[1] "%i seconds"
+msgstr[0] "%i sekond"
+msgstr[1] "%i sekonds"
 
 #: ../dirdiff.py:571
 #, python-format
 msgid "%i minute"
 msgid_plural "%i minutes"
-msgstr[0] "%i minute"
-msgstr[1] "%i minutes"
+msgstr[0] "%i minut"
+msgstr[1] "%i minuts"
 
 #: ../dirdiff.py:572
 #, python-format
 msgid "%i hour"
 msgid_plural "%i hours"
-msgstr[0] "%i hour"
-msgstr[1] "%i hours"
+msgstr[0] "%i sigan"
+msgstr[1] "%i sigan"
 
 #: ../dirdiff.py:573
 #, python-format
 msgid "%i day"
 msgid_plural "%i days"
-msgstr[0] "%i day"
-msgstr[1] "%i days"
+msgstr[0] "%i dei"
+msgstr[1] "%i deis"
 
 #: ../dirdiff.py:574
 #, python-format
@@ -140,8 +141,8 @@ msgstr[1] "%i months"
 #, python-format
 msgid "%i year"
 msgid_plural "%i years"
-msgstr[0] "%i year"
-msgstr[1] "%i years"
+msgstr[0] "%i nin"
+msgstr[1] "%i nin"
 
 #. Abbreviation for insert,overwrite so that it will fit in the status bar
 #: ../filediff.py:199
@@ -152,7 +153,7 @@ msgstr "INS,OVR"
 #: ../filediff.py:201
 #, python-format
 msgid "Ln %i, Col %i"
-msgstr "Ln %i, Col %i"
+msgstr "Ln %i, Kol %i"
 
 #: ../filediff.py:259
 #, python-format
@@ -293,11 +294,11 @@ msgstr "Case"
 
 #: ../glade2/dirdiff.glade.h:2
 msgid "Compare"
-msgstr "Compare"
+msgstr "Kompär"
 
 #: ../glade2/dirdiff.glade.h:3 ../glade2/vcview.glade.h:6
 msgid "Compare selected"
-msgstr "Compare selected"
+msgstr "Kompär silekten"
 
 #: ../glade2/dirdiff.glade.h:4
 msgid "Copy To Left"
@@ -317,11 +318,11 @@ msgstr "Edit"
 
 #: ../glade2/dirdiff.glade.h:8
 msgid "Hide selected"
-msgstr "Hide selected"
+msgstr "Haid silekten"
 
 #: ../glade2/dirdiff.glade.h:9
 msgid "Hide..."
-msgstr "Hide..."
+msgstr "Haid..."
 
 #: ../glade2/dirdiff.glade.h:10
 msgid "Ignore case of entries"
@@ -333,11 +334,11 @@ msgstr "Left"
 
 #: ../glade2/dirdiff.glade.h:12
 msgid "Modified"
-msgstr "Modified"
+msgstr "Modifaien"
 
 #: ../glade2/dirdiff.glade.h:13
 msgid "New"
-msgstr "New"
+msgstr "Niu"
 
 #: ../glade2/dirdiff.glade.h:14
 msgid "Right"
@@ -362,11 +363,11 @@ msgstr "Show new"
 #: ../glade2/dirdiff.glade.h:19 ../glade2/meldapp.glade.h:89
 #: ../glade2/vcview.glade.h:25
 msgid "_Compare"
-msgstr "_Compare"
+msgstr "_Kompär"
 
 #: ../glade2/dirdiff.glade.h:20
 msgid "_Delete Selected"
-msgstr "_Delete Selected"
+msgstr "_Dilit Silekten"
 
 #: ../glade2/filediff.glade.h:1
 msgid ""
@@ -394,7 +395,7 @@ msgstr "Create Patch"
 
 #: ../glade2/filediff.glade.h:8
 msgid "Find"
-msgstr "Find"
+msgstr "Faind"
 
 #: ../glade2/filediff.glade.h:9
 msgid "Match _entire word only"
@@ -430,7 +431,7 @@ msgstr "<b>Drawing Style</b>"
 
 #: ../glade2/meldapp.glade.h:3
 msgid "<b>Edit Menu</b>"
-msgstr "<b>Edit Menu</b>"
+msgstr "<b>Edit Menyu</b>"
 
 #: ../glade2/meldapp.glade.h:4
 msgid "<b>Font</b>"
