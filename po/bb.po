@@ -2,6 +2,7 @@
 # Copyright (C) 2004 THE meld'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the meld package.
 # Tom K. C. Chiu <tomchiukc@gmail.com>, 2014-2015.
+# Websait: http://babyish.wikia.com/wiki/Meld%2Fbb.po
 #
 #
 msgid ""
