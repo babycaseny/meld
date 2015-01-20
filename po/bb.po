@@ -10,9 +10,9 @@ msgstr ""
 "Project-Id-Version: meld\n"
 "Report-Msgid-Bugs-To: Stephen Kennedy <stevek@gnome.org>\n"
 "POT-Creation-Date: 2007-01-23 20:55+0000\n"
-"PO-Revision-Date: 2015-01-19 14:59+0800\n"
+"PO-Revision-Date: 2015-01-20 19:50+0800\n"
 "Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
-"Language-Team:  <babycaseny@gmail.com>\n"
+"Language-Team: Babyish <babycaseny@gmail.com>\n"
 "Language: bb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,7 +33,7 @@ msgstr "Haid %s"
 #: ../dirdiff.py:363 ../dirdiff.py:372 ../vcview.py:212 ../vcview.py:240
 #, python-format
 msgid "[%s] Scanning %s"
-msgstr "[%s] Skaning %s"
+msgstr "[%s] Skäniŋ %s"
 
 #: ../dirdiff.py:405
 #, python-format
@@ -54,7 +54,7 @@ msgstr ""
 #: ../dirdiff.py:481
 #, python-format
 msgid "[%s] Done"
-msgstr "[%s] Done"
+msgstr "[%s] Finišen"
 
 #: ../dirdiff.py:527
 #, python-format
@@ -107,8 +107,8 @@ msgstr[1] "%i sekonds"
 #, python-format
 msgid "%i minute"
 msgid_plural "%i minutes"
-msgstr[0] "%i minut"
-msgstr[1] "%i minuts"
+msgstr[0] "%i minùt"
+msgstr[1] "%i minùts"
 
 #: ../dirdiff.py:572
 #, python-format
@@ -128,8 +128,8 @@ msgstr[1] "%i deis"
 #, python-format
 msgid "%i week"
 msgid_plural "%i weeks"
-msgstr[0] "%i week"
-msgstr[1] "%i weeks"
+msgstr[0] "%i wīk"
+msgstr[1] "%i wīks"
 
 #: ../dirdiff.py:575
 #, python-format
@@ -171,28 +171,28 @@ msgid ""
 "Regular expression error\n"
 "'%s'"
 msgstr ""
-"Regular expression error\n"
+"Regyular ikspresion öra\n"
 "'%s'"
 
 #: ../filediff.py:519
 #, python-format
 msgid "The regular expression '%s' was not found."
-msgstr "The regular expression '%s' was not found."
+msgstr "Regyular ikspresion '%s' wa not fainden."
 
 #: ../filediff.py:521
 #, python-format
 msgid "The text '%s' was not found."
-msgstr "The text '%s' was not found."
+msgstr "Tekst '%s' wa not fainden."
 
 #: ../filediff.py:573
 #, python-format
 msgid "[%s] Set num panes"
-msgstr "[%s] Set num panes"
+msgstr "[%s] Set nùm päns"
 
 #: ../filediff.py:580
 #, python-format
 msgid "[%s] Opening files"
-msgstr "[%s] Opening files"
+msgstr "[%s] Opèniŋ fayls"
 
 #: ../filediff.py:597 ../filediff.py:611 ../filediff.py:627 ../filediff.py:634
 #, python-format
@@ -201,7 +201,7 @@ msgstr "Could not read from '%s'"
 
 #: ../filediff.py:598 ../filediff.py:635
 msgid "The error was:"
-msgstr "The error was:"
+msgstr "Ora wa:"
 
 #: ../filediff.py:603
 #, python-format
@@ -224,7 +224,7 @@ msgstr "I tried encodings %s."
 #: ../filediff.py:657
 #, python-format
 msgid "[%s] Computing differences"
-msgstr "[%s] Computing differences"
+msgstr "[%s] Kompyutiŋ diffèrènses"
 
 #: ../filediff.py:762
 #, python-format
@@ -232,8 +232,8 @@ msgid ""
 "\"%s\" exists!\n"
 "Overwrite?"
 msgstr ""
-"\"%s\" exists!\n"
-"Overwrite?"
+"\"%s\" iksist!\n"
+"Ovèrwrait?"
 
 #: ../filediff.py:775
 #, python-format
@@ -303,15 +303,15 @@ msgstr "Kompär silekten"
 
 #: ../glade2/dirdiff.glade.h:4
 msgid "Copy To Left"
-msgstr "Copy To Left"
+msgstr "Kopi Tu _Left"
 
 #: ../glade2/dirdiff.glade.h:5
 msgid "Copy To Right"
-msgstr "Copy To Right"
+msgstr "Kopi Tu _Ràit"
 
 #: ../glade2/dirdiff.glade.h:6
 msgid "Delete selected"
-msgstr "Delete selected"
+msgstr "Dilit silekten"
 
 #: ../glade2/dirdiff.glade.h:7 ../glade2/filediff.glade.h:7
 msgid "Edit"
@@ -343,23 +343,23 @@ msgstr "Niu"
 
 #: ../glade2/dirdiff.glade.h:14
 msgid "Right"
-msgstr "Right"
+msgstr "Ràit"
 
 #: ../glade2/dirdiff.glade.h:15
 msgid "Same"
-msgstr "Same"
+msgstr "Seim"
 
 #: ../glade2/dirdiff.glade.h:16
 msgid "Show identical"
-msgstr "Show identical"
+msgstr "Displei aidentikol"
 
 #: ../glade2/dirdiff.glade.h:17 ../glade2/vcview.glade.h:18
 msgid "Show modified"
-msgstr "Show modified"
+msgstr "Displei modifaien"
 
 #: ../glade2/dirdiff.glade.h:18
 msgid "Show new"
-msgstr "Show new"
+msgstr "Displei niu"
 
 #: ../glade2/dirdiff.glade.h:19 ../glade2/meldapp.glade.h:89
 #: ../glade2/vcview.glade.h:25
@@ -380,15 +380,15 @@ msgstr ""
 
 #: ../glade2/filediff.glade.h:3
 msgid "Copy All To _Left"
-msgstr "Copy All To _Left"
+msgstr "Kopi Ol Tu _Left"
 
 #: ../glade2/filediff.glade.h:4
 msgid "Copy All To _Right"
-msgstr "Copy All To _Right"
+msgstr "Kopi Ol Tu _Ràit"
 
 #: ../glade2/filediff.glade.h:5
 msgid "Copy to Clipboard"
-msgstr "Copy to Clipboard"
+msgstr "Kopi Tu Klipbōd "
 
 #: ../glade2/filediff.glade.h:6
 msgid "Create Patch"
@@ -444,7 +444,7 @@ msgstr "<b>Global options</b>"
 
 #: ../glade2/meldapp.glade.h:6
 msgid "<b>Loading</b>"
-msgstr "<b>Loading</b>"
+msgstr "<b>Loudiŋ</b>"
 
 #: ../glade2/meldapp.glade.h:7
 msgid "<b>Misc</b>"
@@ -452,7 +452,7 @@ msgstr "<b>Misc</b>"
 
 #: ../glade2/meldapp.glade.h:8
 msgid "<b>Saving</b>"
-msgstr "<b>Saving</b>"
+msgstr "<b>Seiviŋ</b>"
 
 #: ../glade2/meldapp.glade.h:9
 msgid "<b>Toolbar Appearance</b>"
@@ -460,7 +460,7 @@ msgstr "<b>Toolbar Appearance</b>"
 
 #: ../glade2/meldapp.glade.h:10
 msgid "<b>Update Options</b>"
-msgstr "<b>Update Options</b>"
+msgstr "<b>Ùpdeit Opçions</b>"
 
 #: ../glade2/meldapp.glade.h:11
 msgid "<b>Whitespace</b>"
@@ -472,11 +472,11 @@ msgstr "<span weight=\"bold\" size=\"x-large\">CVS</span>"
 
 #: ../glade2/meldapp.glade.h:13
 msgid "<span weight=\"bold\" size=\"x-large\">Compare</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">Compare</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">Kompär</span>"
 
 #: ../glade2/meldapp.glade.h:14
 msgid "<span weight=\"bold\" size=\"x-large\">Display</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">Display</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">Displei</span>"
 
 #: ../glade2/meldapp.glade.h:15
 msgid "<span weight=\"bold\" size=\"x-large\">Editor</span>"
@@ -484,7 +484,7 @@ msgstr "<span weight=\"bold\" size=\"x-large\">Editor</span>"
 
 #: ../glade2/meldapp.glade.h:16
 msgid "<span weight=\"bold\" size=\"x-large\">Encoding</span>"
-msgstr "<span weight=\"bold\" size=\"x-large\">Encoding</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">Enkoudiŋ</span>"
 
 #: ../glade2/meldapp.glade.h:17
 msgid "<span weight=\"bold\" size=\"x-large\">File Filters</span>"
@@ -512,7 +512,7 @@ msgstr "CVS binary"
 
 #: ../glade2/meldapp.glade.h:23
 msgid "Choose Files"
-msgstr "Choose Files"
+msgstr "Silekt Fayls"
 
 #: ../glade2/meldapp.glade.h:24
 msgid ""
@@ -548,19 +548,19 @@ msgstr "Display"
 
 #: ../glade2/meldapp.glade.h:31
 msgid "Edit files with:"
-msgstr "Edit files with:"
+msgstr "Edit fayls wiŧ:"
 
 #: ../glade2/meldapp.glade.h:32
 msgid "Editor"
-msgstr "Editor"
+msgstr "Editā"
 
 #: ../glade2/meldapp.glade.h:33
 msgid "Encoding"
-msgstr "Encoding"
+msgstr "Enkoudiŋ"
 
 #: ../glade2/meldapp.glade.h:34
 msgid "File Filters"
-msgstr "File Filters"
+msgstr "Fayl Filtèrs"
 
 #: ../glade2/meldapp.glade.h:35
 msgid "Gnome Default"
@@ -572,11 +572,11 @@ msgstr "Gnome default editor"
 
 #: ../glade2/meldapp.glade.h:37
 msgid "Icons Only"
-msgstr "Icons Only"
+msgstr "Aikons Onli"
 
 #: ../glade2/meldapp.glade.h:38
 msgid "Ignore .cvsrc (-f)"
-msgstr "Ignore .cvsrc (-f)"
+msgstr "Ignor .cvsrc (-f)"
 
 #: ../glade2/meldapp.glade.h:39
 msgid "Ignore changes in amount of white space"
@@ -798,7 +798,7 @@ msgstr "_Character"
 
 #: ../glade2/meldapp.glade.h:90
 msgid "_Contents"
-msgstr "_Contents"
+msgstr "_Kontents"
 
 #: ../glade2/meldapp.glade.h:91
 msgid "_Directory Comparison"
@@ -810,7 +810,7 @@ msgstr "_Down"
 
 #: ../glade2/meldapp.glade.h:93
 msgid "_File Comparison"
-msgstr "_File Comparison"
+msgstr "_Fayl Kompäreiçion"
 
 #: ../glade2/meldapp.glade.h:94
 msgid "_Logo"
@@ -846,39 +846,39 @@ msgstr "_Word"
 
 #: ../glade2/vcview.glade.h:1
 msgid "Add _Binary"
-msgstr "Add _Binary"
+msgstr "Ädd _Binari"
 
 #: ../glade2/vcview.glade.h:2
 msgid "Add to VC"
-msgstr "Add to VC"
+msgstr "Koncrol"
 
 #: ../glade2/vcview.glade.h:3
 msgid "Commit"
-msgstr "Commit"
+msgstr "Kommit"
 
 #: ../glade2/vcview.glade.h:4
 msgid "Commit Files"
-msgstr "Commit Files"
+msgstr "Kommit Fayls"
 
 #: ../glade2/vcview.glade.h:5
 msgid "Compare Options"
-msgstr "Compare Options"
+msgstr "Kompär Opçions"
 
 #: ../glade2/vcview.glade.h:7
 msgid "Date"
-msgstr "Date"
+msgstr "Deit"
 
 #: ../glade2/vcview.glade.h:8
 msgid "Delete locally"
-msgstr "Delete locally"
+msgstr "Dilit lokolli"
 
 #: ../glade2/vcview.glade.h:9
 msgid "Flatten directories"
-msgstr "Flatten directories"
+msgstr "Flätenais direktòris"
 
 #: ../glade2/vcview.glade.h:10
 msgid "Ignored"
-msgstr "Ignored"
+msgstr "Ignoren"
 
 #: ../glade2/vcview.glade.h:11
 msgid "Local copy against other remote revision"
@@ -926,11 +926,11 @@ msgstr "VC Log"
 
 #: ../glade2/vcview.glade.h:23
 msgid "_Add"
-msgstr "_Add"
+msgstr "Ä_dd"
 
 #: ../glade2/vcview.glade.h:24
 msgid "_Commit"
-msgstr "_Commit"
+msgstr "_Kommit"
 
 #: ../glade2/vcview.glade.h:26
 msgid "_Edit"
@@ -938,7 +938,7 @@ msgstr "_Edit"
 
 #: ../glade2/vcview.glade.h:27
 msgid "_Flatten"
-msgstr "_Flatten"
+msgstr "_Flätenais"
 
 #: ../glade2/vcview.glade.h:28
 msgid "_Modified"
@@ -969,7 +969,7 @@ msgstr ""
 
 #: ../meld.desktop.in.h:1
 msgid "Compare and merge your files."
-msgstr "Compare and merge your files."
+msgstr "Kompär en mörj fayls."
 
 #: ../meld.desktop.in.h:2
 msgid "Meld Diff Viewer"
@@ -977,7 +977,7 @@ msgstr "Meld Diff Viewer"
 
 #: ../meldapp.py:145
 msgid "label"
-msgstr "label"
+msgstr "leibol"
 
 #: ../meldapp.py:146
 msgid "pattern"
@@ -991,7 +991,7 @@ msgstr "Name"
 
 #: ../meldapp.py:247 ../meldapp.py:252
 msgid "Active"
-msgstr "Active"
+msgstr "Aktiv"
 
 #: ../meldapp.py:247
 msgid "Pattern"
@@ -1018,7 +1018,7 @@ msgstr ""
 #. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
 #: ../meldapp.py:441
 msgid "Backups\t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
-msgstr "Backups\t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
+msgstr "Bäkùp\t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
 
 #. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
 #: ../meldapp.py:443
@@ -1043,12 +1043,12 @@ msgstr "CVS keywords\t0\t\\$\\w+(:[^\\n$]+)?\\$\n"
 #. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
 #: ../meldapp.py:451
 msgid "C++ comment\t0\t//.*\n"
-msgstr "C++ comment\t0\t//.*\n"
+msgstr "C++ komment\t0\t//.*\n"
 
 #. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
 #: ../meldapp.py:453
 msgid "C comment\t0\t/\\*.*?\\*/\n"
-msgstr "C comment\t0\t/\\*.*?\\*/\n"
+msgstr "C komment\t0\t/\\*.*?\\*/\n"
 
 #. TRANSLATORS: translate this string ONLY to the first "\t", leave it and the following parts intact
 #: ../meldapp.py:455
@@ -1103,7 +1103,7 @@ msgstr "untitled"
 #. no common path. empty names get changed to "[None]"
 #: ../misc.py:118
 msgid "[None]"
-msgstr "[None]"
+msgstr "[Mwu]"
 
 #: ../vcview.py:170
 msgid "Location"
@@ -1123,7 +1123,7 @@ msgstr "Options"
 
 #: ../vcview.py:256
 msgid "(Empty)"
-msgstr "(Empty)"
+msgstr "(Mwuye)"
 
 #: ../vcview.py:293
 #, python-format
