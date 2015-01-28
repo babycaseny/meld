@@ -13,14 +13,15 @@ msgstr ""
 "Project-Id-Version: meld master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-21 18:19+0800\n"
-"PO-Revision-Date: 2013-12-07 17:20+0800\n"
-"Last-Translator: Tao Wang <dancefire@gmail.com>\n"
+"PO-Revision-Date: 2015-01-28 14:46+0800\n"
+"Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-translation@lists.linux.net.cn>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../bin/meld:138
 msgid "Cannot import: "
@@ -422,7 +423,6 @@ msgid "_Help"
 msgstr "帮助(_H)"
 
 #: ../data/ui/application.ui.h:8
-#, fuzzy
 msgid "_About"
 msgstr "关于 Meld (_A)"
 
@@ -590,9 +590,8 @@ msgid "Add Synchronization Point"
 msgstr "增加同步点"
 
 #: ../data/ui/filediff.ui.h:7
-#, fuzzy
 msgid "Add a synchronization point for changes between files"
-msgstr "添加一个手动文件差异同步点"
+msgstr "手动添加一个文件差异同步点"
 
 #: ../data/ui/filediff.ui.h:8
 msgid "Clear Synchronization Points"
@@ -1424,9 +1423,8 @@ msgid ""
 msgstr ""
 
 #: ../meld/filediff.py:895
-#, fuzzy
 msgid "Cancel"
-msgstr "取消(_C)"
+msgstr "取消"
 
 #: ../meld/filediff.py:896
 #, fuzzy
@@ -1573,14 +1571,14 @@ msgid "Inconsistent line endings found"
 msgstr "发现文件使用的编码不正确"
 
 #: ../meld/filediff.py:1696
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "'%s' contains a mixture of line endings. Select the line ending format to "
 "use."
 msgstr ""
-"文件“%s”包含不同的行结束符。\n"
+"文件“%s”包含混合的行结束符。\n"
 "\n"
-"您想用哪种格式？"
+"您想统一采用哪种格式？"
 
 #: ../meld/filediff.py:1717
 msgid "_Save as UTF-8"
@@ -1946,9 +1944,8 @@ msgid "Open the Meld manual"
 msgstr "打开 Meld 帮助手册"
 
 #: ../meld/meldwindow.py:173
-#, fuzzy
 msgid "About this application"
-msgstr "程序设置"
+msgstr "关于程序"
 
 #: ../meld/meldwindow.py:546
 msgid "Switch to this tab"
@@ -2134,27 +2131,27 @@ msgstr "(空)"
 #: ../meld/vcview.py:522
 #, python-format
 msgid "%s — local"
-msgstr ""
+msgstr "%s — 本地"
 
 #: ../meld/vcview.py:523
 #, python-format
 msgid "%s — remote"
-msgstr ""
+msgstr "%s — 远端"
 
 #: ../meld/vcview.py:531
-#, fuzzy, python-format
+#, python-format
 msgid "%s (local, merge, remote)"
-msgstr "左侧为本地，右侧为远端"
+msgstr "%s (本地,合并,远端)"
 
 #: ../meld/vcview.py:536
-#, fuzzy, python-format
+#, python-format
 msgid "%s (remote, merge, local)"
-msgstr "左侧为远端，右侧为本地"
+msgstr "%s (远端,合并,本地)"
 
 #: ../meld/vcview.py:547
-#, fuzzy, python-format
+#, python-format
 msgid "%s — repository"
-msgstr "无效的仓库"
+msgstr "%s — 仓库"
 
 #: ../meld/vcview.py:553
 #, python-format
@@ -2258,135 +2255,3 @@ msgstr "删除 %s 出错"
 
 #~ msgid "Show or hide the statusbar"
 #~ msgstr "显示或隐藏状态栏"
-
-#~| msgid ""
-#~| "Regular expression error\n"
-#~| "'%s'"
-#~ msgid "Regular expression error"
-#~ msgstr "正则表达式错误"
-
-#~ msgid ""
-#~ "Ignored:Unversioned:::Error::Newly added:Modified:Conflict:Removed:"
-#~ "Missing:Not present"
-#~ msgstr "已忽略:未版本控制:::错误::新添加:已修改:冲突:已删除:丢失:不存在"
-
-#~ msgid ""
-#~ "Meld is free software: you can redistribute it and/or modify it under the "
-#~ "terms of the GNU General Public License as published by the Free Software "
-#~ "Foundation, either version 2 of the License, or (at your option) any "
-#~ "later version.\n"
-#~ "\n"
-#~ "Meld is distributed in the hope that it will be useful, but WITHOUT ANY "
-#~ "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
-#~ "FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
-#~ "details. \n"
-#~ "\n"
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with this program.  If not, see <http://www.gnu.org/licenses/>."
-#~ msgstr ""
-#~ "Meld 是自由软件；您可以在自由软件基金会发布的 GNU 公共许可证的条目下重新发"
-#~ "布或修改它；许可证应当是第二版或由您选择的更高版本。Meld 发布是希望它有"
-#~ "用，但没有任何担保；即使是商业性应用或其它任何目的。参见 GNU 公共许可证以"
-#~ "获得更多细节。您应当在收到 Meld 的同时收到了 GNU 公共许可证的副本；如果没"
-#~ "有的话，请访问 <http://www.gnu.org/licenses/>。"
-
-#~ msgid "Loading"
-#~ msgstr "载入"
-
-#~ msgid "When loading, try these codecs in order. (e.g. utf8, iso8859)"
-#~ msgstr "载入时，按此顺序尝试编码。(如 utf8，gb2312，gbk，gb18030)"
-
-#~ msgid "Encoding"
-#~ msgstr "文字编码"
-
-#~ msgid "Compare selected"
-#~ msgstr "比较选中的"
-
-#~ msgid ""
-#~ "'%s' is a directory.\n"
-#~ "Remove recursively?"
-#~ msgstr ""
-#~ "“%s”是一个目录。\n"
-#~ "递归删除该目录下的子目录吗？"
-
-#~ msgid "Start a comparison between file and dir/file"
-#~ msgstr "在文件和文件夹/文件之间开始比较"
-
-#~ msgid "D-Bus error; comparisons will open in a new window."
-#~ msgstr "D-Bus 错误；比较将在新窗口打开。"
-
-#~ msgid "Report _Bug"
-#~ msgstr "报告错误(_B)"
-
-#~ msgid "Report a bug in Meld"
-#~ msgstr "报告 Meld 中的错误"
-
-#~ msgid "About this program"
-#~ msgstr "关于本程序"
-
-#~ msgid "Only available if you have PyGtkSourceView 2 installed"
-#~ msgstr "只有安装了 PyGtkSourceView 2 才能用"
-
-#~ msgid "Backups\t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
-#~ msgstr "备份 \t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
-
-#~ msgid ""
-#~ "OS-specific metadata\t0\t.DS_Store ._* .Spotlight-V100 .Trashes Thumbs.db "
-#~ "Desktop.ini\n"
-#~ msgstr ""
-#~ "操作系统特定元数据\t0\t.DS_Store ._* .Spotlight-V100 .Trashes Thumbs.db "
-#~ "Desktop.ini\n"
-
-#~ msgid "Version Control\t1\t%s\n"
-#~ msgstr "版本控制 \t1\t%s\n"
-
-#~ msgid "Binaries\t1\t*.{pyc,a,obj,o,so,la,lib,dll,exe}\n"
-#~ msgstr "二进制 \t1\t*.{pyc,a,obj,o,so,la,lib,dll}\n"
-
-#~ msgid "Media\t0\t*.{jpg,gif,png,bmp,wav,mp3,ogg,flac,avi,mpg,xcf,xpm}"
-#~ msgstr "多媒体 \t0\t*.{jpg,gif,png,wav,mp3,ogg,xcf,xpm}"
-
-#~ msgid "CVS keywords\t0\t\\$\\w+(:[^\\n$]+)?\\$\n"
-#~ msgstr "CVS 关键字 \t0\t\\$\\w+(:[^\\n$]+)?\\$\n"
-
-#~ msgid "C++ comment\t0\t//.*\n"
-#~ msgstr "C++ 注释 \t0\t//.*\n"
-
-#~ msgid "C comment\t0\t/\\*.*?\\*/\n"
-#~ msgstr "C 注释 \t0\t/\\*.*?\\*/\n"
-
-#~ msgid "All whitespace\t0\t[ \\t\\r\\f\\v]*\n"
-#~ msgstr "所有空白字符 \t0\t[ \\t\\r\\f\\v]*\n"
-
-#~ msgid "Leading whitespace\t0\t^[ \\t\\r\\f\\v]*\n"
-#~ msgstr "开头空白字符 \t0\t^[ \\t\\r\\f\\v]*\n"
-
-#~ msgid "Script comment\t0\t#.*"
-#~ msgstr "脚本注释 \t0\t#.*"
-
-#~ msgid "_Browse..."
-#~ msgstr "浏览(_B)..."
-
-#~ msgid "Path"
-#~ msgstr "路径"
-
-#~ msgid "Path to file"
-#~ msgstr "文件路径"
-
-#~ msgid "Pop up a file selector to choose a file"
-#~ msgstr "弹出文件选择器来选择一个文件"
-
-#~ msgid "Select directory"
-#~ msgstr "选择目录"
-
-#~ msgid "Select file"
-#~ msgstr "选择文件"
-
-#~ msgid ""
-#~ "Error converting to a regular expression\n"
-#~ "The pattern was '%s'\n"
-#~ "The error was '%s'"
-#~ msgstr ""
-#~ "转换为正则表达式时出错\n"
-#~ "模式为“%s”\n"
-#~ "错误为“%s”"
