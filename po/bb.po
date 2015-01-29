@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: meld\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-21 18:19+0800\n"
-"PO-Revision-Date: 2015-01-20 19:50+0800\n"
+"PO-Revision-Date: 2015-01-29 15:42+0800\n"
 "Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
 "Language-Team: Babyish <babycaseny@gmail.com>\n"
 "Language: bb\n"
@@ -391,7 +391,7 @@ msgstr ""
 
 #: ../data/ui/application.ui.h:1
 msgid "About Meld"
-msgstr ""
+msgstr "Àbaut Meld"
 
 #: ../data/ui/application.ui.h:2
 #, fuzzy
@@ -419,7 +419,7 @@ msgstr ""
 
 #: ../data/ui/application.ui.h:8
 msgid "_About"
-msgstr ""
+msgstr "À_baut"
 
 #: ../data/ui/application.ui.h:9
 msgid "_Quit"
@@ -895,19 +895,19 @@ msgstr ""
 
 #: ../data/ui/preferences.ui.h:5
 msgid "1ns (ext4)"
-msgstr ""
+msgstr "1ns (ext4)"
 
 #: ../data/ui/preferences.ui.h:6
 msgid "100ns (NTFS)"
-msgstr ""
+msgstr "100ns (NTFS)"
 
 #: ../data/ui/preferences.ui.h:7
 msgid "1s (ext2/ext3)"
-msgstr ""
+msgstr "1s (ext2/ext3)"
 
 #: ../data/ui/preferences.ui.h:8
 msgid "2s (VFAT)"
-msgstr ""
+msgstr "2s (VFAT)"
 
 #: ../data/ui/preferences.ui.h:9
 #, fuzzy
@@ -1118,9 +1118,8 @@ msgid "Version control view"
 msgstr "Version control view"
 
 #: ../data/ui/tab-placeholder.ui.h:5
-#, fuzzy
 msgid "_3-way comparison"
-msgstr "_Fayl Kompäreiçion"
+msgstr "_3-direkçionol kompäreiçion"
 
 #: ../data/ui/tab-placeholder.ui.h:6
 msgid "Select Third File"
@@ -1663,9 +1662,9 @@ msgid ""
 msgstr ""
 
 #: ../meld/filemerge.py:48
-#, fuzzy, python-format
+#, python-format
 msgid "[%s] Merging files"
-msgstr "[%s] Opèniŋ fayls"
+msgstr "[%s] Mörjiŋ fayls"
 
 #: ../meld/gutterrendererchunk.py:93
 msgid "Copy _up"
@@ -1771,7 +1770,7 @@ msgstr ""
 #. TRANSLATORS: This is the label of a new, currently-unnamed file.
 #: ../meld/meldbuffer.py:137
 msgid "<unnamed>"
-msgstr ""
+msgstr "<mineimen>"
 
 #: ../meld/melddoc.py:78 ../meld/melddoc.py:79
 msgid "untitled"
@@ -2013,7 +2012,7 @@ msgstr ""
 
 #: ../meld/meldwindow.py:173
 msgid "About this application"
-msgstr ""
+msgstr "Àbaut nigè applaikeiçion"
 
 #: ../meld/meldwindow.py:546
 msgid "Switch to this tab"
