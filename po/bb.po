@@ -3,16 +3,15 @@
 # This file is distributed under the same license as the meld package.
 # Tom K. C. Chiu <tomchiukc@gmail.com>, 2014-2015.
 # Websait: http://babyish.wikia.com/wiki/Meld%2Fbb.po
-#
-#
+# Babycasèny Gavèrnmènt <babycaseny@gmail.com>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: meld\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-21 18:19+0800\n"
-"PO-Revision-Date: 2015-01-29 15:42+0800\n"
+"PO-Revision-Date: 2015-01-29 16:10+0800\n"
 "Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
-"Language-Team: Babyish <babycaseny@gmail.com>\n"
+"Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: bb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -53,18 +52,17 @@ msgstr "Meld"
 #: ../data/meld.desktop.in.h:2
 #, fuzzy
 msgid "Diff Viewer"
-msgstr "Meld Diff Viewer"
+msgstr "Diff Vyuā"
 
 #
 #: ../data/meld.desktop.in.h:3
 msgid "Meld Diff Viewer"
-msgstr "Meld Diff Viewer"
+msgstr "Meld Diff Vyuā"
 
 #
 #: ../data/meld.desktop.in.h:4
-#, fuzzy
 msgid "Compare and merge your files"
-msgstr "Kompär en mörj fayls."
+msgstr "Kompär en mörj neidè fayls."
 
 #
 #: ../data/meld.appdata.xml.in.h:1
@@ -85,37 +83,37 @@ msgstr ""
 #
 #: ../data/mime/meld.xml.in.h:1
 msgid "Meld comparison description"
-msgstr ""
+msgstr "Meld kompäreiçion diskraipçion"
 
 #
 #: ../data/org.gnome.meld.gschema.xml.h:1
 msgid "Default window size"
-msgstr ""
+msgstr "Difàult window saiz"
 
 #
 #: ../data/org.gnome.meld.gschema.xml.h:2
 msgid "Default window state"
-msgstr ""
+msgstr "Difàult window steit"
 
 #
 #: ../data/org.gnome.meld.gschema.xml.h:3
 msgid "Show toolbar"
-msgstr ""
+msgstr "Displei tūlbār"
 
 #
 #: ../data/org.gnome.meld.gschema.xml.h:4
 msgid "If true, the window toolbar is visible."
-msgstr ""
+msgstr "Displei window tūlbār if enàbolen."
 
 #
 #: ../data/org.gnome.meld.gschema.xml.h:5
 msgid "Show statusbar"
-msgstr "Displei Steitùsbār"
+msgstr "Displei steitùsbār"
 
 #
 #: ../data/org.gnome.meld.gschema.xml.h:6
 msgid "If true, the window statusbar is visible."
-msgstr ""
+msgstr "Displei window steitùsbār if enàbolen."
 
 #
 #: ../data/org.gnome.meld.gschema.xml.h:7
@@ -257,7 +255,7 @@ msgstr ""
 #: ../data/org.gnome.meld.gschema.xml.h:31
 #, fuzzy
 msgid "Use the system default editor"
-msgstr "Gnome default editor"
+msgstr "Yus sistèm difàulten editā"
 
 #
 #: ../data/org.gnome.meld.gschema.xml.h:32
@@ -293,7 +291,7 @@ msgstr ""
 #
 #: ../data/org.gnome.meld.gschema.xml.h:37 ../data/ui/preferences.ui.h:31
 msgid "Ignore symbolic links"
-msgstr "Ignor symbolik lingks"
+msgstr "Ignor symbolik liŋks"
 
 #
 #: ../data/org.gnome.meld.gschema.xml.h:38
@@ -429,7 +427,7 @@ msgstr ""
 #: ../data/org.gnome.meld.gschema.xml.h:59
 #, fuzzy
 msgid "Version control status filters"
-msgstr "Version control view"
+msgstr "Vörçion koncrol steitùs filtèrs"
 
 #
 #: ../data/org.gnome.meld.gschema.xml.h:60
@@ -441,7 +439,7 @@ msgstr ""
 #: ../data/org.gnome.meld.gschema.xml.h:61
 #, fuzzy
 msgid "Filename-based filters"
-msgstr "Fayl Filtèrs"
+msgstr "Faylneim-beisen filtèrs"
 
 #
 #: ../data/org.gnome.meld.gschema.xml.h:62
@@ -480,23 +478,23 @@ msgstr "Copyright (C) 2002-2006 Stephen Kennedy"
 #
 #: ../data/ui/application.ui.h:4
 msgid "Website"
-msgstr ""
+msgstr "Websàit"
 
 #
 #: ../data/ui/application.ui.h:5
 msgid "translator-credits"
-msgstr ""
+msgstr "Tom K. C. Chiu <tomchiukc@gmail.com>"
 
 #
 #: ../data/ui/application.ui.h:6
 #, fuzzy
 msgid "_Preferences"
-msgstr "Preferences : Meld"
+msgstr "_Priförènses"
 
 #
 #: ../data/ui/application.ui.h:7
 msgid "_Help"
-msgstr ""
+msgstr "_Help"
 
 #
 #: ../data/ui/application.ui.h:8
@@ -515,33 +513,30 @@ msgstr "_Kompär"
 
 #
 #: ../data/ui/dirdiff.ui.h:2 ../data/ui/vcview.ui.h:2
-#, fuzzy
 msgid "Compare selected files"
-msgstr "Kompär silekten"
+msgstr "Kompär silekten fayls"
 
 #
 #: ../data/ui/dirdiff.ui.h:3
 #, fuzzy
 msgid "Copy to _Left"
-msgstr "Kopi Tu _Left"
+msgstr "Kopi tu _Left"
 
 #
 #: ../data/ui/dirdiff.ui.h:4
-#, fuzzy
 msgid "Copy to left"
-msgstr "Copy left"
+msgstr "Kopi tu left"
 
 #
 #: ../data/ui/dirdiff.ui.h:5
-#, fuzzy
 msgid "Copy to _Right"
-msgstr "Kopi Tu _Ràit"
+msgstr "Kopi tu _Ràit"
 
 #
 #: ../data/ui/dirdiff.ui.h:6
 #, fuzzy
 msgid "Copy to right"
-msgstr "Copy right"
+msgstr "Kopi tu ràit"
 
 #
 #: ../data/ui/dirdiff.ui.h:7
@@ -562,7 +557,7 @@ msgstr "Haid silekten"
 #
 #: ../data/ui/dirdiff.ui.h:10
 msgid "Ignore Filename Case"
-msgstr ""
+msgstr "Ignor Faylneim Keis"
 
 #
 #: ../data/ui/dirdiff.ui.h:11
@@ -627,7 +622,7 @@ msgstr "Aktiv"
 #
 #: ../data/ui/EditableList.ui.h:3
 msgid "Column Name"
-msgstr ""
+msgstr "Kolùmn Neim"
 
 #
 #: ../data/ui/EditableList.ui.h:4 ../data/ui/vcview.ui.h:9
@@ -697,7 +692,7 @@ msgstr ""
 #: ../data/ui/filediff.ui.h:3
 #, fuzzy
 msgid "Save A_ll"
-msgstr "Save _As"
+msgstr "Seiv O_l"
 
 #
 #: ../data/ui/filediff.ui.h:4
@@ -733,7 +728,7 @@ msgstr ""
 #: ../data/ui/filediff.ui.h:10
 #, fuzzy
 msgid "Previous Conflict"
-msgstr "Previous Logs"
+msgstr "Priv Konflikt"
 
 #
 #: ../data/ui/filediff.ui.h:11
@@ -1210,7 +1205,7 @@ msgstr "_Fayl Kompäreiçion"
 #
 #: ../data/ui/preferences.ui.h:28
 msgid "C_ompare files based only on size and timestamp"
-msgstr ""
+msgstr "K_ompär fayls beisen onli on saiz en taimstämp"
 
 #
 #: ../data/ui/preferences.ui.h:29
@@ -1252,9 +1247,8 @@ msgstr ""
 
 #
 #: ../data/ui/preferences.ui.h:37
-#, fuzzy
 msgid "Commit Messages"
-msgstr "Log Message"
+msgstr "Kommit Messeijs"
 
 #
 #: ../data/ui/preferences.ui.h:38
@@ -1402,15 +1396,13 @@ msgstr "_Fayl Kompäreiçion"
 
 #
 #: ../data/ui/tab-placeholder.ui.h:14
-#, fuzzy
 msgid "C_ompare"
-msgstr "Kompär"
+msgstr "K_ompär"
 
 #
 #: ../data/ui/vcview.ui.h:3
-#, fuzzy
 msgid "Co_mmit..."
-msgstr "Kommit"
+msgstr "Ko_mmit..."
 
 #
 #: ../data/ui/vcview.ui.h:4
@@ -1439,9 +1431,8 @@ msgstr ""
 
 #
 #: ../data/ui/vcview.ui.h:10
-#, fuzzy
 msgid "Add to version control"
-msgstr "Version control view"
+msgstr "Ädd tu vörçion koncrol"
 
 #
 #: ../data/ui/vcview.ui.h:12
@@ -1559,9 +1550,8 @@ msgstr "Previous Logs"
 
 #
 #: ../data/ui/vcview.ui.h:34
-#, fuzzy
 msgid "Co_mmit"
-msgstr "Kommit"
+msgstr "Ko_mmit"
 
 #
 #: ../data/ui/vcview.ui.h:35
@@ -1815,9 +1805,9 @@ msgstr ""
 
 #
 #: ../meld/filediff.py:1153
-#, fuzzy, python-format
+#, python-format
 msgid "%s is not in encodings: %s"
-msgstr "I tried encodings %s."
+msgstr "%s-wa not in enkoudings: %s"
 
 #
 #: ../meld/filediff.py:1191
@@ -2333,7 +2323,7 @@ msgstr "Previous Logs"
 #
 #: ../meld/meldwindow.py:113
 msgid "Activate previous tab"
-msgstr ""
+msgstr "Aktiveit priv täb"
 
 #
 #: ../meld/meldwindow.py:115
@@ -2343,7 +2333,7 @@ msgstr ""
 #
 #: ../meld/meldwindow.py:116
 msgid "Activate next tab"
-msgstr ""
+msgstr "Aktiveit nèist täb"
 
 #
 #: ../meld/meldwindow.py:119
@@ -2476,7 +2466,7 @@ msgstr "Version control view"
 #
 #: ../meld/ui/notebooklabel.py:65
 msgid "Close tab"
-msgstr ""
+msgstr "Klos täb"
 
 #
 #: ../meld/ui/vcdialogs.py:61
@@ -2488,7 +2478,7 @@ msgstr ""
 #: ../meld/vc/git.py:129
 #, python-format
 msgid "%s in %s"
-msgstr ""
+msgstr "%s in %s"
 
 #. Translators: These messages cover the case where there is
 #. only one branch, and are not part of another message.
@@ -2521,7 +2511,7 @@ msgstr ""
 #
 #: ../meld/vc/_vc.py:47
 msgid "Base"
-msgstr ""
+msgstr "Beis"
 
 #
 #: ../meld/vc/_vc.py:47
@@ -2602,7 +2592,7 @@ msgstr "Options"
 #: ../meld/vcview.py:324
 #, python-format
 msgid "%s not installed"
-msgstr ""
+msgstr "%s  mi-instolen"
 
 #. TRANSLATORS: this is an error message when a version
 #. controlled repository is invalid or corrupted
@@ -2615,7 +2605,7 @@ msgstr "Internal editor"
 #: ../meld/vcview.py:337
 #, python-format
 msgid "%s (%s)"
-msgstr ""
+msgstr "%s (%s)"
 
 #
 #: ../meld/vcview.py:339 ../meld/vcview.py:347
@@ -2642,7 +2632,7 @@ msgstr ""
 #: ../meld/vcview.py:417
 #, python-format
 msgid "%s: %s"
-msgstr ""
+msgstr "%s: %s"
 
 #
 #: ../meld/vcview.py:431 ../meld/vcview.py:439
@@ -2659,13 +2649,13 @@ msgstr "(Mwuye)"
 #: ../meld/vcview.py:522
 #, python-format
 msgid "%s — local"
-msgstr ""
+msgstr "%s — lokol"
 
 #
 #: ../meld/vcview.py:523
 #, python-format
 msgid "%s — remote"
-msgstr ""
+msgstr "%s — rimot"
 
 #
 #: ../meld/vcview.py:531
@@ -2683,7 +2673,7 @@ msgstr ""
 #: ../meld/vcview.py:547
 #, python-format
 msgid "%s — repository"
-msgstr ""
+msgstr "%s — ripositori"
 
 #
 #: ../meld/vcview.py:553
@@ -2855,10 +2845,10 @@ msgstr ""
 #~ msgstr "_Dilit Silekten"
 
 #~ msgid ""
-#~ "<span weight=\"bold\" size=\"larger\">Some files have been modified.\n" </span>
+#~ "<span weight=\"bold\" size=\"larger\">Some files have been modified.\n"
 #~ "Which ones would you like to save?"
 #~ msgstr ""
-#~ "<span weight=\"bold\" size=\"larger\">Some files have been modified.\n" </span>
+#~ "<span weight=\"bold\" size=\"larger\">Some files have been modified.\n"
 #~ "Which ones would you like to save?"
 
 #~ msgid "Match _entire word only"
@@ -2889,7 +2879,7 @@ msgstr ""
 #~ msgstr "<b>Seiviŋ</b>"
 
 #~ msgid "<b>Toolbar Appearance</b>"
-#~ msgstr "<b>Toolbar Appearance</b>"
+#~ msgstr "<b>Tūlbār Appīràns</b>"
 
 #~ msgid "<b>Update Options</b>"
 #~ msgstr "<b>Ùpdeit Opçions</b>"
@@ -2897,26 +2887,26 @@ msgstr ""
 #~ msgid "<b>Whitespace</b>"
 #~ msgstr "<b>Whitespace</b>"
 
-#~ msgid "<span weight=\"bold\" size=\"x-large\">CVS" </span>
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">CVS" </span>
+#~ msgid "<span weight=\"bold\" size=\"x-large\">CVS"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">CVS"
 
-#~ msgid "<span weight=\"bold\" size=\"x-large\">Compare" </span>
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">Kompär" </span>
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Compare"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Kompär"
 
-#~ msgid "<span weight=\"bold\" size=\"x-large\">Display" </span>
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">Displei" </span>
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Display"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Displei"
 
-#~ msgid "<span weight=\"bold\" size=\"x-large\">Editor" </span>
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">Editor" </span>
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Editor"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Editor"
 
-#~ msgid "<span weight=\"bold\" size=\"x-large\">Encoding" </span>
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">Enkoudiŋ" </span>
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Encoding"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Enkoudiŋ"
 
-#~ msgid "<span weight=\"bold\" size=\"x-large\">File Filters" </span>
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">File Filters" </span>
+#~ msgid "<span weight=\"bold\" size=\"x-large\">File Filters"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Fayl Filtèrs"
 
-#~ msgid "<span weight=\"bold\" size=\"x-large\">Text Filters" </span>
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">Text Filters" </span>
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Text Filters"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Tekst Filtèrs"
 
 #~ msgid "Automatically supply missing newline at end of file"
 #~ msgstr "Automatically supply missing newline at end of file"
@@ -3238,8 +3228,7 @@ msgstr ""
 #~ " meld <dir> Start with CVS browser in 'dir'\n"
 #~ " meld <file> Start with CVS diff of 'file'\n"
 #~ " meld <file> <file> [file] Start with 2 or 3 way file comparison\n"
-#~ " meld <dir> <dir> [dir] Start with 2 or 3 way directory "
-#~ "comparison\n"
+#~ " meld <dir> <dir> [dir] Start with 2 or 3 way directory comparison\n"
 #~ "\n"
 #~ "For more information choose help -> contents.\n"
 #~ "Report bugs at http://bugzilla.gnome.org/buglist.cgi?product=meld\n"
@@ -3251,8 +3240,7 @@ msgstr ""
 #~ " meld <dir> Start with CVS browser in 'dir'\n"
 #~ " meld <file> Start with CVS diff of 'file'\n"
 #~ " meld <file> <file> [file] Start with 2 or 3 way file comparison\n"
-#~ " meld <dir> <dir> [dir] Start with 2 or 3 way directory "
-#~ "comparison\n"
+#~ " meld <dir> <dir> [dir] Start with 2 or 3 way directory comparison\n"
 #~ "\n"
 #~ "For more information choose help -> contents.\n"
 #~ "Report bugs at http://bugzilla.gnome.org/buglist.cgi?product=meld\n"
@@ -3279,8 +3267,8 @@ msgstr ""
 #~ msgid " spaces."
 #~ msgstr " spaces."
 
-#~ msgid "<span weight=\"bold\" size=\"x-large\">Diff" </span>
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">Diff" </span>
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Diff"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Diff"
 
 #~ msgid "CVS view"
 #~ msgstr "CVS view"
