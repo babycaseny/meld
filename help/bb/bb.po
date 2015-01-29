@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: meld\n"
 "Report-Msgid-Bugs-To: Stephen Kennedy <stevek@gnome.org>\n"
 "POT-Creation-Date: 2007-01-23 20:55+0000\n"
-"PO-Revision-Date: 2015-01-28 12:03+0800\n"
+"PO-Revision-Date: 2015-01-29 11:52+0800\n"
 "Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: bb\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -121,10 +121,10 @@ msgid ""
 "properly tested; please report any version control support bugs to <link "
 "href=\"https://bugzilla.gnome.org/\">GNOME bugzilla</link>."
 msgstr ""
-"Algunos sistemas de control de versiones menos comunes o configuraciones "
-"inusuales pueden no estar probadas apropiadamente; por favor informe de los "
-"errores de soporte de cualquier control de versiones en <link href=\"https://"
-"bugzilla.gnome.org/\">GNOME bugzilla</link>."
+"Less kòmmòn-na vörçion koncrol sistèms or kiiguaina konfigyureiçions wa "
+"possibolli mi-testen; soi if bùgs in vörçion koncrol sistèms dè yuseij, "
+"riport tu sùpport à <link href=\"https://bugzilla.gnome.org/\">GNOME "
+"bugzilla</link>."
 
 #. (itstool) path: info/title
 #: C/file-filters.page:5 C/text-filters.page:5 C/resolving-conflicts.page:5
@@ -772,6 +772,7 @@ msgstr ""
 
 #. (itstool) path: section/title
 #: C/file-changes.page:46
+#, fuzzy
 msgid "Changing changes"
 msgstr "Cambiando los cambios"
 
@@ -835,8 +836,8 @@ msgid ""
 msgstr ""
 "<app>Meld</app> permite comparar dos o tres archivos de texto uno al lado "
 "del otro. Puede comenzar una nueva comparación entre archivos seleccionando "
-"en el menú <guiseq><gui style=\"menu\">Archivo</gui><gui "
-"style=\"menuitem\">Nuevo...</gui></guiseq>."
+"en el menú <guiseq><gui style=\"menu\">Archivo</gui><gui style=\"menuitem"
+"\">Nuevo...</gui></guiseq>."
 
 #. (itstool) path: page/p
 #: C/file-mode.page:26
@@ -1188,7 +1189,7 @@ msgstr ""
 #. (itstool) path: td/p
 #: C/vc-mode.page:167 C/folder-mode.page:176
 msgid "Missing"
-msgstr "Missing"
+msgstr "Miss-zo"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:169
@@ -1516,7 +1517,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/folder-mode.page:16
 msgid "Getting started comparing folders"
-msgstr "Primeros pasos para comparar carpetas"
+msgstr "Getiŋ started kompäriŋ fouldèrs"
 
 #. (itstool) path: page/p
 #: C/folder-mode.page:18
@@ -1713,9 +1714,7 @@ msgstr ""
 #: C/folder-mode.page:223
 msgid ""
 "Finally, the most recently modified file/folder has an emblem attached to it."
-msgstr ""
-"Por último, el archivo/carpeta modificado más recientemente lleva una marca "
-"adjunta."
+msgstr "Lastli, zuigèn modifaien fayl/fouldèrs wa emblèm attaĉen."
 
 #. (itstool) path: page/title
 #: C/missing-functionality.page:15
