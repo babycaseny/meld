@@ -45,7 +45,7 @@ from . import undo
 from .ui import findbar
 from .ui import gnomeglade
 
-from meld.const import MODE_REPLACE, MODE_DELETE, MODE_INSERT
+from meld.const import MODE_REPLACE, MODE_DELETE, MODE_INSERT, NEWLINES
 from meld.settings import bind_settings, meldsettings, settings
 from .util.compat import text_type
 from meld.sourceview import LanguageManager
@@ -883,6 +883,9 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
             elif response == Gtk.ResponseType.DELETE_EVENT:
                 response = Gtk.ResponseType.CANCEL
 
+        if response == Gtk.ResponseType.CLOSE:
+            response = Gtk.ResponseType.OK
+
         if response == Gtk.ResponseType.OK and self.meta:
             parent = self.meta.get('parent', None)
             saved = self.meta.get('middle_saved', False)
@@ -1419,21 +1422,40 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
             if self.num_panes == 1 or error_message:
                 return
             for index, mgr in enumerate(self.msgarea_mgr):
+                primary = _("Files are identical")
                 secondary_text = None
                 # TODO: Currently this only checks to see whether text filters
                 # are active, and may be altering the comparison. It would be
                 # better if we only showed this message if the filters *did*
                 # change the text in question.
                 active_filters = any([f.active for f in self.text_filters])
+
+                bufs = self.textbuffer[:self.num_panes]
+                newlines = [b.data.newlines for b in bufs]
+                different_newlines = not misc.all_same(newlines)
+
                 if active_filters:
                     secondary_text = _("Text filters are being used, and may "
                                        "be masking differences between files. "
                                        "Would you like to compare the "
                                        "unfiltered files?")
+                elif different_newlines:
+                    primary = _("Files differ in line endings only")
+                    secondary_text = _(
+                        "Files are identical except for differing line "
+                        "endings:\n%s")
 
-                msgarea = mgr.new_from_text_and_icon(Gtk.STOCK_INFO,
-                                                     _("Files are identical"),
-                                                     secondary_text)
+                    labels = [b.data.label for b in bufs]
+                    newline_types = [
+                        n if isinstance(n, tuple) else (n,) for n in newlines]
+                    newline_strings = []
+                    for label, nl_types in zip(labels, newline_types):
+                        nl_string = ", ".join(NEWLINES[n] for n in nl_types)
+                        newline_strings.append("\t%s: %s" % (label, nl_string))
+                    secondary_text %= "\n".join(newline_strings)
+
+                msgarea = mgr.new_from_text_and_icon(
+                    Gtk.STOCK_INFO, primary, secondary_text)
                 mgr.set_msg_id(FileDiff.MSG_SAME)
                 button = msgarea.add_button(_("Hide"), Gtk.ResponseType.CLOSE)
                 if index == 0:
@@ -1684,9 +1706,9 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
                     text = text.replace("\n", bufdata.newlines)
             else:
                 buttons = {
-                    '\n': ("UNIX (LF)", 0),
-                    '\r\n': ("DOS/Windows (CR-LF)", 1),
-                    '\r': ("Mac OS (CR)", 2),
+                    '\n': (NEWLINES['\n'], 0),
+                    '\r\n': (NEWLINES['\r\n'], 1),
+                    '\r': (NEWLINES['\r'], 2),
                 }
                 dialog_buttons = [(_("_Cancel"), Gtk.ResponseType.CANCEL)]
                 dialog_buttons += [buttons[b] for b in bufdata.newlines]

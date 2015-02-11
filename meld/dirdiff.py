@@ -44,6 +44,7 @@ from collections import namedtuple
 from decimal import Decimal
 
 from meld.conf import _
+from meld.misc import all_same
 from meld.settings import bind_settings, meldsettings, settings
 
 
@@ -88,10 +89,6 @@ Same, SameFiltered, DodgySame, DodgyDifferent, Different, FileError = \
 CHUNK_SIZE = 4096
 
 
-def all_same(lst):
-    return not lst or lst.count(lst[0]) == len(lst)
-
-
 def remove_blank_lines(text):
     splits = text.splitlines()
     lines = text.splitlines(True)
@@ -122,7 +119,7 @@ def _files_same(files, regexes, comparison_args):
     time_resolution_ns = comparison_args['time-resolution']
     ignore_blank_lines = comparison_args['ignore_blank_lines']
 
-    need_contents = regexes or ignore_blank_lines
+    need_contents = comparison_args['apply-text-filters']
 
     # If all entries are directories, they are considered to be the same
     if all([stat.S_ISDIR(s.mode) for s in stats]):
@@ -144,7 +141,7 @@ def _files_same(files, regexes, comparison_args):
         return Different
 
     # Check the cache before doing the expensive comparison
-    cache_key = (files, regexes, ignore_blank_lines)
+    cache_key = (files, need_contents, regexes, ignore_blank_lines)
     cache = _cache.get(cache_key)
     if cache and cache.stats == stats:
         return cache.result
@@ -193,6 +190,9 @@ def _files_same(files, regexes, comparison_args):
 
     if result == Different and need_contents:
         contents = ["".join(c) for c in contents]
+        # For probable text files, discard newline differences to match
+        # file comparisons.
+        contents = ["\n".join(c.splitlines()) for c in contents]
         for r in regexes:
             contents = [re.sub(r, "", c) for c in contents]
         if ignore_blank_lines:
@@ -254,9 +254,18 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
         ('folder-shallow-comparison', 'shallow-comparison'),
         ('folder-time-resolution', 'time-resolution'),
         ('folder-status-filters', 'status-filters'),
+        ('folder-filter-text', 'apply-text-filters'),
         ('ignore-blank-lines', 'ignore-blank-lines'),
     )
 
+    apply_text_filters = GObject.property(
+        type=bool,
+        nick="Apply text filters",
+        blurb=(
+            "Whether text filters and other text sanitisation preferences "
+            "should be applied when comparing file contents"),
+        default=False,
+    )
     ignore_blank_lines = GObject.property(
         type=bool,
         nick="Ignore blank lines",
@@ -422,6 +431,7 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
         self.connect("notify::shallow-comparison", self.update_comparator)
         self.connect("notify::time-resolution", self.update_comparator)
         self.connect("notify::ignore-blank-lines", self.update_comparator)
+        self.connect("notify::apply-text-filters", self.update_comparator)
 
         self.state_filters = []
         for s in self.state_actions:
@@ -465,6 +475,7 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
         comparison_args = {
             'shallow-comparison': self.props.shallow_comparison,
             'time-resolution': self.props.time_resolution,
+            'apply-text-filters': self.props.apply_text_filters,
             'ignore_blank_lines': self.props.ignore_blank_lines,
         }
         self.file_compare = functools.partial(
@@ -635,12 +646,12 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
         for i, l in enumerate(locations):
             if not isinstance(l, unicode):
                 locations[i] = l.decode(sys.getfilesystemencoding())
-        # TODO: Support for blank folder comparisons should probably look here
-        locations = [os.path.abspath(l or ".") for l in locations]
+        locations = [os.path.abspath(l) if l else '' for l in locations]
         self.current_path = None
         self.model.clear()
         for pane, loc in enumerate(locations):
-            self.fileentry[pane].set_filename(loc)
+            if loc:
+                self.fileentry[pane].set_filename(loc)
         child = self.model.add_entries(None, locations)
         self.treeview0.grab_focus()
         self._update_item_state(child)
@@ -1501,6 +1512,7 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
     def recompute_label(self):
         root = self.model.get_iter_first()
         filenames = self.model.value_paths(root)
+        filenames = [f or _('No folder') for f in filenames]
         if self.custom_labels:
             label_options = zip(self.custom_labels, filenames)
             shortnames = [l[0] or l[1] for l in label_options]
@@ -1561,6 +1573,7 @@ class DirDiff(melddoc.MeldDoc, gnomeglade.Component):
         # do the update
         for path in changed_paths:
             self._update_item_state( model.get_iter(path) )
+        self._update_diffmaps()
 
     def next_diff(self, direction):
         if self.focus_pane:
