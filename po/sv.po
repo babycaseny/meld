@@ -18,6 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.5.4\n"
+"X-Language: sv_SE\n"
+"X-Source-Language: C\n"
 
 #: ../bin/meld:138
 msgid "Cannot import: "
@@ -351,14 +353,14 @@ msgstr "Visa versionsjämförelser som vänster-lokal/höger-fjärr"
 
 #: ../data/org.gnome.meld.gschema.xml.h:50
 msgid ""
-"If true, version control comparisons will use a left-is-local, right-is-"
-"remote scheme to determine what order to present files in panes. Otherwise, "
-"a left-is-theirs, right-is-mine scheme is used."
+"If true, version control comparisons will use a left-is-local, "
+"right-is-remote scheme to determine what order to present files in panes. "
+"Otherwise, a left-is-theirs, right-is-mine scheme is used."
 msgstr ""
-"Om true kommer jämförelser med versionshantering att använda ett vänster-är-"
-"lokal-, höger-är-fjärr-schema för att bestämma i vilken ordning filerna ska "
-"presenteras i paneler. Annars används ett vänster-är-deras-, höger-är-mitt-"
-"schema."
+"Om true kommer jämförelser med versionshantering att använda ett "
+"vänster-är-lokal-, höger-är-fjärr-schema för att bestämma i vilken ordning "
+"filerna ska presenteras i paneler. Annars används ett vänster-är-deras-, "
+"höger-är-mitt-schema."
 
 #: ../data/org.gnome.meld.gschema.xml.h:51
 msgid "Order for files in three-way version control merge comparisons"
@@ -609,8 +611,7 @@ msgid "Move _Down"
 msgstr "Flytta _nedåt"
 
 #. Create icon and filename CellRenderer
-#: ../data/ui/EditableList.ui.h:10 ../meld/dirdiff.py:365
-#: ../meld/vcview.py:203
+#: ../data/ui/EditableList.ui.h:10 ../meld/dirdiff.py:365 ../meld/vcview.py:203
 msgid "Name"
 msgstr "Namn"
 

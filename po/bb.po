@@ -18,6 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.5.4\n"
+"X-Language: en_HK\n"
+"X-Source-Language: C\n"
 
 #
 #: ../bin/meld:138
@@ -253,7 +255,6 @@ msgstr ""
 
 #
 #: ../data/org.gnome.meld.gschema.xml.h:31
-#, fuzzy
 msgid "Use the system default editor"
 msgstr "Yus sistèm difàulten editā"
 
@@ -369,9 +370,9 @@ msgstr ""
 #
 #: ../data/org.gnome.meld.gschema.xml.h:50
 msgid ""
-"If true, version control comparisons will use a left-is-local, right-is-"
-"remote scheme to determine what order to present files in panes. Otherwise, "
-"a left-is-theirs, right-is-mine scheme is used."
+"If true, version control comparisons will use a left-is-local, "
+"right-is-remote scheme to determine what order to present files in panes. "
+"Otherwise, a left-is-theirs, right-is-mine scheme is used."
 msgstr ""
 
 #
@@ -469,11 +470,12 @@ msgstr "Àbaut Meld"
 
 #
 #: ../data/ui/application.ui.h:2
-#, fuzzy
 msgid ""
 "Copyright © 2002-2009 Stephen Kennedy\n"
 "Copyright © 2009-2013 Kai Willadsen"
-msgstr "Copyright (C) 2002-2006 Stephen Kennedy"
+msgstr ""
+"Copyright © 2002-2009 Stephen Kennedy\n"
+"Copyright © 2009-2013 Kai Willadsen"
 
 #
 #: ../data/ui/application.ui.h:4
@@ -487,7 +489,6 @@ msgstr "Tom K. C. Chiu <tomchiukc@gmail.com>"
 
 #
 #: ../data/ui/application.ui.h:6
-#, fuzzy
 msgid "_Preferences"
 msgstr "_Priförènses"
 
@@ -504,7 +505,7 @@ msgstr "À_baut"
 #
 #: ../data/ui/application.ui.h:9
 msgid "_Quit"
-msgstr ""
+msgstr "_Ziuru"
 
 #
 #: ../data/ui/dirdiff.ui.h:1 ../data/ui/vcview.ui.h:1
@@ -657,8 +658,7 @@ msgid "Move _Down"
 msgstr "_Down"
 
 #. Create icon and filename CellRenderer
-#: ../data/ui/EditableList.ui.h:10 ../meld/dirdiff.py:365
-#: ../meld/vcview.py:203
+#: ../data/ui/EditableList.ui.h:10 ../meld/dirdiff.py:365 ../meld/vcview.py:203
 msgid "Name"
 msgstr "Name"
 
@@ -2487,7 +2487,6 @@ msgstr "%s in %s"
 msgid "%d unpushed commit"
 msgid_plural "%d unpushed commits"
 msgstr[0] ""
-msgstr[1] ""
 
 #
 #: ../meld/vc/git.py:132
@@ -2495,7 +2494,6 @@ msgstr[1] ""
 msgid "%d branch"
 msgid_plural "%d branches"
 msgstr[0] ""
-msgstr[1] ""
 
 #
 #: ../meld/vc/git.py:360
@@ -3173,11 +3171,11 @@ msgstr ""
 #~ msgstr "Select some files first."
 
 #~ msgid ""
-#~ "Ignored:Unversioned:::Error::Newly added:Modified:<b>Conflict</b>:Removed:"
-#~ "Missing"
+#~ "Ignored:Unversioned:::Error::Newly "
+#~ "added:Modified:<b>Conflict</b>:Removed:Missing"
 #~ msgstr ""
-#~ "Ignored:Unversioned:::Error::Newly added:Modified:<b>Conflict</b>:Removed:"
-#~ "Missing"
+#~ "Ignored:Unversioned:::Error::Newly "
+#~ "added:Modified:<b>Conflict</b>:Removed:Missing"
 
 #~ msgid ""
 #~ "Error converting to a regular expression\n"
@@ -3192,11 +3190,9 @@ msgstr ""
 #~ msgstr "[%s] Scanning"
 
 #~ msgid ""
-#~ "second,seconds:minute,minutes:hour,hours:day,days:week,weeks:month,months:"
-#~ "year,years"
+#~ "second,seconds:minute,minutes:hour,hours:day,days:week,weeks:month,months:year,years"
 #~ msgstr ""
-#~ "second,seconds:minute,minutes:hour,hours:day,days:week,weeks:month,months:"
-#~ "year,years"
+#~ "second,seconds:minute,minutes:hour,hours:day,days:week,weeks:month,months:year,years"
 
 #~ msgid ""
 #~ "Could not open '%s' for reading.\n"
