@@ -2,9 +2,8 @@
 # Copyright (C) 2004 THE meld'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the meld package.
 # Tom K. C. Chiu <tomchiukc@gmail.com>, 2014-2015.
-# Websàit: https://github.com/babycaseny/meld/blob/master/po/bb.po
-#
-#
+# Websàit: http://babyish.wikia.com/wiki/Meld%2Fbb.po
+# Babycasèny Gavèrnmènt <babycaseny@gmail.com>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: meld\n"
@@ -54,9 +53,8 @@ msgid "Meld Diff Viewer"
 msgstr "Meld Diff Vyuā"
 
 #: ../data/meld.desktop.in.h:4
-#, fuzzy
 msgid "Compare and merge your files"
-msgstr "Kompär en mörj fayls."
+msgstr "Kompär en mörj neidè fayls."
 
 #: ../data/meld.appdata.xml.in.h:1
 msgid ""
@@ -78,7 +76,7 @@ msgstr ""
 
 #: ../data/mime/meld.xml.in.h:1
 msgid "Meld comparison description"
-msgstr "Meld kompäreiçion diskripçion"
+msgstr "Meld kompäreiçion diskraipçion"
 
 #: ../data/org.gnome.meld.gschema.xml.h:1
 msgid "Default window size"
@@ -86,23 +84,23 @@ msgstr "Difàult window saiz"
 
 #: ../data/org.gnome.meld.gschema.xml.h:2
 msgid "Default window state"
-msgstr ""
+msgstr "Difàult window steit"
 
 #: ../data/org.gnome.meld.gschema.xml.h:3
 msgid "Show toolbar"
-msgstr "Displei Tūlbār"
+msgstr "Displei tūlbār"
 
 #: ../data/org.gnome.meld.gschema.xml.h:4
 msgid "If true, the window toolbar is visible."
-msgstr ""
+msgstr "Displei window tūlbār if enàbolen."
 
 #: ../data/org.gnome.meld.gschema.xml.h:5
 msgid "Show statusbar"
-msgstr "Displei Steitùsbār"
+msgstr "Displei steitùsbār"
 
 #: ../data/org.gnome.meld.gschema.xml.h:6
 msgid "If true, the window statusbar is visible."
-msgstr ""
+msgstr "Displei window steitùsbār if enàbolen."
 
 #: ../data/org.gnome.meld.gschema.xml.h:7
 msgid "Automatically detected text encodings"
@@ -219,7 +217,7 @@ msgstr ""
 #: ../data/org.gnome.meld.gschema.xml.h:31
 #, fuzzy
 msgid "Use the system default editor"
-msgstr "Gnome default editor"
+msgstr "Yus sistèm difàulten editā"
 
 #: ../data/org.gnome.meld.gschema.xml.h:32
 msgid ""
@@ -249,7 +247,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:37 ../data/ui/preferences.ui.h:31
 msgid "Ignore symbolic links"
-msgstr "Ignor symbolik lingks"
+msgstr "Ignor symbolik liŋks"
 
 #: ../data/org.gnome.meld.gschema.xml.h:38
 msgid ""
@@ -363,7 +361,7 @@ msgstr ""
 #: ../data/org.gnome.meld.gschema.xml.h:59
 #, fuzzy
 msgid "Version control status filters"
-msgstr "Version control view"
+msgstr "Vörçion koncrol steitùs filtèrs"
 
 #: ../data/org.gnome.meld.gschema.xml.h:60
 msgid ""
@@ -373,7 +371,7 @@ msgstr ""
 #: ../data/org.gnome.meld.gschema.xml.h:61
 #, fuzzy
 msgid "Filename-based filters"
-msgstr "Fayl Filtèrs"
+msgstr "Faylneim-beisen filtèrs"
 
 #: ../data/org.gnome.meld.gschema.xml.h:62
 msgid ""
@@ -402,7 +400,9 @@ msgstr "Àbaut Meld"
 msgid ""
 "Copyright © 2002-2009 Stephen Kennedy\n"
 "Copyright © 2009-2013 Kai Willadsen"
-msgstr "Copyright (C) 2002-2006 Stephen Kennedy"
+msgstr ""
+"Copyright © 2002-2009 Stephen Kennedy\n"
+"Copyright © 2009-2015 Kai Willadsen"
 
 #: ../data/ui/application.ui.h:4
 msgid "Website"
@@ -410,16 +410,16 @@ msgstr ""
 
 #: ../data/ui/application.ui.h:5
 msgid "translator-credits"
-msgstr ""
+msgstr "Tom K. C. Chiu <tomchiukc@gmail.com>"
 
 #: ../data/ui/application.ui.h:6
 #, fuzzy
 msgid "_Preferences"
-msgstr "Preferences : Meld"
+msgstr "_Priförènses"
 
 #: ../data/ui/application.ui.h:7
 msgid "_Help"
-msgstr ""
+msgstr "_Help"
 
 #: ../data/ui/application.ui.h:8
 msgid "_About"
@@ -427,7 +427,7 @@ msgstr "À_baut"
 
 #: ../data/ui/application.ui.h:9
 msgid "_Quit"
-msgstr ""
+msgstr "_Ziuru"
 
 #: ../data/ui/dirdiff.ui.h:1 ../data/ui/vcview.ui.h:1
 msgid "_Compare"
@@ -436,27 +436,26 @@ msgstr "_Kompär"
 #: ../data/ui/dirdiff.ui.h:2 ../data/ui/vcview.ui.h:2
 #, fuzzy
 msgid "Compare selected files"
-msgstr "Kompär silekten"
+msgstr "Kompär silekten fayls"
 
 #: ../data/ui/dirdiff.ui.h:3
 #, fuzzy
 msgid "Copy to _Left"
-msgstr "Kopi Tu _Left"
+msgstr "Kopi tu _Left"
 
 #: ../data/ui/dirdiff.ui.h:4
 #, fuzzy
 msgid "Copy to left"
-msgstr "Copy left"
+msgstr "Kopi tu left"
 
 #: ../data/ui/dirdiff.ui.h:5
-#, fuzzy
 msgid "Copy to _Right"
-msgstr "Kopi Tu _Ràit"
+msgstr "Kopi tu _Ràit"
 
 #: ../data/ui/dirdiff.ui.h:6
 #, fuzzy
 msgid "Copy to right"
-msgstr "Copy right"
+msgstr "Kopi tu ràit"
 
 #: ../data/ui/dirdiff.ui.h:7
 msgid "Delete selected"
@@ -473,7 +472,7 @@ msgstr "Haid silekten"
 
 #: ../data/ui/dirdiff.ui.h:10
 msgid "Ignore Filename Case"
-msgstr ""
+msgstr "Ignor Faylneim Keis"
 
 #: ../data/ui/dirdiff.ui.h:11
 msgid ""
@@ -526,7 +525,7 @@ msgstr "Aktiv"
 
 #: ../data/ui/EditableList.ui.h:3
 msgid "Column Name"
-msgstr ""
+msgstr "Kolùmn Neim"
 
 #: ../data/ui/EditableList.ui.h:4 ../data/ui/vcview.ui.h:9
 msgid "_Add"
@@ -543,7 +542,7 @@ msgstr ""
 
 #: ../data/ui/EditableList.ui.h:7
 msgid "Move _Up"
-msgstr ""
+msgstr "Mūv Ù_p"
 
 #: ../data/ui/EditableList.ui.h:8
 msgid "Move item down"
@@ -558,7 +557,7 @@ msgstr "_Down"
 #: ../data/ui/EditableList.ui.h:10 ../meld/dirdiff.py:365
 #: ../meld/vcview.py:203
 msgid "Name"
-msgstr "Name"
+msgstr "Neim"
 
 #: ../data/ui/EditableList.ui.h:11
 msgid "Pattern"
@@ -584,7 +583,7 @@ msgstr ""
 #: ../data/ui/filediff.ui.h:3
 #, fuzzy
 msgid "Save A_ll"
-msgstr "Save _As"
+msgstr "Seiv O_l"
 
 #: ../data/ui/filediff.ui.h:4
 msgid "Save all files in the current comparison"
@@ -613,7 +612,7 @@ msgstr ""
 #: ../data/ui/filediff.ui.h:10
 #, fuzzy
 msgid "Previous Conflict"
-msgstr "Previous Logs"
+msgstr "Priv Konflikt"
 
 #: ../data/ui/filediff.ui.h:11
 msgid "Go to the previous conflict"
@@ -1001,7 +1000,7 @@ msgstr "_Fayl Kompäreiçion"
 
 #: ../data/ui/preferences.ui.h:28
 msgid "C_ompare files based only on size and timestamp"
-msgstr ""
+msgstr "K_ompär fayls beisen onli on saiz en taimstämp"
 
 #: ../data/ui/preferences.ui.h:29
 msgid "_Timestamp resolution:"
@@ -1037,7 +1036,7 @@ msgstr ""
 #: ../data/ui/preferences.ui.h:37
 #, fuzzy
 msgid "Commit Messages"
-msgstr "Log Message"
+msgstr "Kommit Messeijs"
 
 #: ../data/ui/preferences.ui.h:38
 msgid "Show _right margin at:"
@@ -1162,12 +1161,12 @@ msgstr "_Fayl Kompäreiçion"
 #: ../data/ui/tab-placeholder.ui.h:14
 #, fuzzy
 msgid "C_ompare"
-msgstr "Kompär"
+msgstr "K_ompär"
 
 #: ../data/ui/vcview.ui.h:3
 #, fuzzy
 msgid "Co_mmit..."
-msgstr "Kommit"
+msgstr "Ko_mmit..."
 
 #: ../data/ui/vcview.ui.h:4
 msgid "Commit changes to version control"
@@ -1192,7 +1191,7 @@ msgstr ""
 #: ../data/ui/vcview.ui.h:10
 #, fuzzy
 msgid "Add to version control"
-msgstr "Version control view"
+msgstr "Ädd tu vörçion koncrol"
 
 #: ../data/ui/vcview.ui.h:12
 msgid "Remove from version control"
@@ -1289,7 +1288,7 @@ msgstr "Previous Logs"
 #: ../data/ui/vcview.ui.h:34
 #, fuzzy
 msgid "Co_mmit"
-msgstr "Kommit"
+msgstr "Ko_mmit"
 
 #: ../data/ui/vcview.ui.h:35
 msgid "Console output"
@@ -1508,9 +1507,9 @@ msgid "%s appears to be a binary file."
 msgstr ""
 
 #: ../meld/filediff.py:1153
-#, fuzzy, python-format
+#, python-format
 msgid "%s is not in encodings: %s"
-msgstr "I tried encodings %s."
+msgstr "%s-wa not in enkoudings: %s"
 
 #: ../meld/filediff.py:1191
 #, python-format
@@ -1839,9 +1838,8 @@ msgid "Paste the clipboard"
 msgstr "Kopi Tu Klipbōd "
 
 #: ../meld/meldwindow.py:75
-#, fuzzy
 msgid "Find..."
-msgstr "Faind"
+msgstr "Faind..."
 
 #: ../meld/meldwindow.py:75
 #, fuzzy
@@ -1926,29 +1924,28 @@ msgstr "Refresh"
 
 #: ../meld/meldwindow.py:111
 msgid "_Tabs"
-msgstr ""
+msgstr "_Täb"
 
 #: ../meld/meldwindow.py:112
-#, fuzzy
 msgid "_Previous Tab"
-msgstr "Previous Logs"
+msgstr "_Priv Täb"
 
 #: ../meld/meldwindow.py:113
 msgid "Activate previous tab"
-msgstr ""
+msgstr "Aktiveit priv täb"
 
 #: ../meld/meldwindow.py:115
 msgid "_Next Tab"
-msgstr ""
+msgstr "_Nèist Täb"
 
 #: ../meld/meldwindow.py:116
 msgid "Activate next tab"
-msgstr ""
+msgstr "Aktiveit nèist täb"
 
 #: ../meld/meldwindow.py:119
 #, fuzzy
 msgid "Move Tab _Left"
-msgstr "Kopi Tu _Left"
+msgstr "Kopi Täb _Left"
 
 #: ../meld/meldwindow.py:120
 msgid "Move current tab to left"
@@ -2228,7 +2225,7 @@ msgstr ""
 #: ../meld/vcview.py:547
 #, python-format
 msgid "%s — repository"
-msgstr ""
+msgstr "%s — ripositori"
 
 #: ../meld/vcview.py:553
 #, python-format
@@ -2374,7 +2371,7 @@ msgstr ""
 #~ "You cannot undo this operation."
 
 #~ msgid "Case"
-#~ msgstr "Case"
+#~ msgstr "Keis"
 
 #~ msgid "Edit"
 #~ msgstr "Edit"
@@ -2429,7 +2426,7 @@ msgstr ""
 #~ msgstr "<b>Seiviŋ</b>"
 
 #~ msgid "<b>Toolbar Appearance</b>"
-#~ msgstr "<b>Toolbar Appearance</b>"
+#~ msgstr "<b>Tūlbār Appīràns</b>"
 
 #~ msgid "<b>Update Options</b>"
 #~ msgstr "<b>Ùpdeit Opçions</b>"
@@ -2437,26 +2434,26 @@ msgstr ""
 #~ msgid "<b>Whitespace</b>"
 #~ msgstr "<b>Whitespace</b>"
 
-#~ msgid "<span weight=\"bold\" size=\"x-large\">CVS" 
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">CVS" 
+#~ msgid "<span weight=\"bold\" size=\"x-large\">CVS"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">CVS"
 
-#~ msgid "<span weight=\"bold\" size=\"x-large\">Compare" 
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">Kompär" 
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Compare"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Kompär"
 
-#~ msgid "<span weight=\"bold\" size=\"x-large\">Display" 
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">Displei" 
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Display"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Displei"
 
-#~ msgid "<span weight=\"bold\" size=\"x-large\">Editor" 
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">Editor" 
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Editor"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Editor"
 
-#~ msgid "<span weight=\"bold\" size=\"x-large\">Encoding" 
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">Enkoudiŋ" 
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Encoding"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Enkoudiŋ"
 
-#~ msgid "<span weight=\"bold\" size=\"x-large\">File Filters" 
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">File Filters" 
+#~ msgid "<span weight=\"bold\" size=\"x-large\">File Filters"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Fayl Filtèrs"
 
-#~ msgid "<span weight=\"bold\" size=\"x-large\">Text Filters" 
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">Text Filters" 
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Text Filters"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Tekst Filtèrs"
 
 #~ msgid "Automatically supply missing newline at end of file"
 #~ msgstr "Automatically supply missing newline at end of file"
