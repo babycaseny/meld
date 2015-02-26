@@ -1,5 +1,5 @@
 # Babyish translation for meld.
-# Copyright (C) 2004 THE meld'S COPYRIGHT HOLDER
+# Copyright © 2005-2015 Free Software Foundation, Inc.
 # This file is distributed under the same license as the meld package.
 # Tom K. C. Chiu <tomchiukc@gmail.com>, 2014-2015.
 # Websàit: http://babyish.wikia.com/wiki/Meld%2Fbb.po
@@ -7,17 +7,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: meld\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=meld&ke"
+"ywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-01-21 18:19+0800\n"
-"PO-Revision-Date: 2015-01-29 15:42+0800\n"
+"PO-Revision-Date: 2015-02-26 19:20+0800\n"
 "Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
-"Language-Team: Babyish <babycaseny@gmail.com>\n"
+"Language-Team: Babycasèny Gavèrnmènt\n"
 "Language: bb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
 
 #: ../bin/meld:138
 msgid "Cannot import: "
@@ -73,6 +75,8 @@ msgid ""
 "Meld helps you review code changes, understand patches, and makes enormous "
 "merge conflicts slightly less painful."
 msgstr ""
+"Meld hjälper dig att granska kodändringar, förstå programfixar och göra "
+"enorma sammanfogningskonflikter något mindre smärtsamma."
 
 #: ../data/mime/meld.xml.in.h:1
 msgid "Meld comparison description"
@@ -104,17 +108,19 @@ msgstr "Displei window steitùsbār if enàbolen."
 
 #: ../data/org.gnome.meld.gschema.xml.h:7
 msgid "Automatically detected text encodings"
-msgstr ""
+msgstr "Tekst enkoudiŋs ditekten òtomeitikolli"
 
 #: ../data/org.gnome.meld.gschema.xml.h:8
 msgid ""
 "These text encodings will be automatically used (in order) to try to decode "
 "loaded text files."
 msgstr ""
+"Dessa textkodningar kommer automatiskt att användas (i ordning) för att "
+"försöka avkoda inlästa textfiler."
 
 #: ../data/org.gnome.meld.gschema.xml.h:9
 msgid "Width of an indentation step"
-msgstr ""
+msgstr "Bredden på ett indenteringssteg"
 
 #: ../data/org.gnome.meld.gschema.xml.h:10
 msgid "The number of spaces to use for a single indent step"
@@ -138,7 +144,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:15
 msgid "Highlight syntax"
-msgstr "Haihlàit syntäks"
+msgstr "Haiĥlàit syntäks"
 
 #: ../data/org.gnome.meld.gschema.xml.h:16
 msgid ""
@@ -147,9 +153,8 @@ msgid ""
 msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:17
-#, fuzzy
 msgid "Color scheme to use for syntax highlighting"
-msgstr "Kalar skem tu yus für syntäks haihlàiting"
+msgstr "Kalar skem tu yus für syntäks haihlàitiŋ"
 
 #: ../data/org.gnome.meld.gschema.xml.h:18
 msgid "Used by GtkSourceView to determine colors for syntax highlighting"
@@ -157,7 +162,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:19
 msgid "Displayed whitespace"
-msgstr ""
+msgstr "Displeien hwaitspeis"
 
 #: ../data/org.gnome.meld.gschema.xml.h:20
 msgid ""
@@ -178,7 +183,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:23
 msgid "Highlight current line"
-msgstr "Haihlàit körrènt lain"
+msgstr "Haiĥlàit körrènt lain" 
 
 #: ../data/org.gnome.meld.gschema.xml.h:24
 msgid ""
@@ -247,7 +252,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:37 ../data/ui/preferences.ui.h:31
 msgid "Ignore symbolic links"
-msgstr "Ignor symbolik liŋks"
+msgstr "Ignor symbòlik liŋks" 
 
 #: ../data/org.gnome.meld.gschema.xml.h:38
 msgid ""
@@ -268,7 +273,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:41
 msgid "File timestamp resolution"
-msgstr ""
+msgstr "Fayl taimstämp rīsolveiçion"
 
 #: ../data/org.gnome.meld.gschema.xml.h:42
 msgid ""
@@ -280,7 +285,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:43
 msgid "File status filters"
-msgstr "Fayl steitùs filtèrs"
+msgstr "Fayl steitùs filtèrās"
 
 #: ../data/org.gnome.meld.gschema.xml.h:44
 msgid "List of statuses used to filter visible files in folder comparison."
@@ -361,7 +366,7 @@ msgstr ""
 #: ../data/org.gnome.meld.gschema.xml.h:59
 #, fuzzy
 msgid "Version control status filters"
-msgstr "Vörçion koncrol steitùs filtèrs"
+msgstr "Vörçion koncrol steitùs filtèrās"
 
 #: ../data/org.gnome.meld.gschema.xml.h:60
 msgid ""
@@ -371,7 +376,7 @@ msgstr ""
 #: ../data/org.gnome.meld.gschema.xml.h:61
 #, fuzzy
 msgid "Filename-based filters"
-msgstr "Faylneim-beisen filtèrs"
+msgstr "Faylneim-beisen filtèrās"
 
 #: ../data/org.gnome.meld.gschema.xml.h:62
 msgid ""
@@ -382,7 +387,7 @@ msgstr ""
 #: ../data/org.gnome.meld.gschema.xml.h:63
 #, fuzzy
 msgid "Text-based filters"
-msgstr "Text Filters"
+msgstr "Tekst-beisen filtèrās"
 
 #: ../data/org.gnome.meld.gschema.xml.h:64
 msgid ""
@@ -505,19 +510,18 @@ msgid "Show modified"
 msgstr "Displei modifaien"
 
 #: ../data/ui/dirdiff.ui.h:18
-#, fuzzy
 msgid "Filters"
-msgstr "Fayl Filtèrs"
+msgstr "Filtèrās"
 
 #: ../data/ui/dirdiff.ui.h:19
 #, fuzzy
 msgid "Set active filters"
-msgstr "Fayl Filtèrs"
+msgstr "Set aktiv filtèrās"
 
 #: ../data/ui/EditableList.ui.h:1
 #, fuzzy
 msgid "Editable List"
-msgstr "Edit fayls wiŧ:"
+msgstr "Editàbol List"
 
 #: ../data/ui/EditableList.ui.h:2
 msgid "Active"
@@ -534,11 +538,11 @@ msgstr "Ä_dd"
 #: ../data/ui/EditableList.ui.h:5 ../data/ui/vcview.ui.h:11
 #: ../meld/vcview.py:747
 msgid "_Remove"
-msgstr "_Remove"
+msgstr "_Rīmūv"
 
 #: ../data/ui/EditableList.ui.h:6
 msgid "Move item up"
-msgstr ""
+msgstr "Mūv aitèm ùp"
 
 #: ../data/ui/EditableList.ui.h:7
 msgid "Move _Up"
@@ -546,12 +550,12 @@ msgstr "Mūv Ù_p"
 
 #: ../data/ui/EditableList.ui.h:8
 msgid "Move item down"
-msgstr ""
+msgstr "Mūv aitèm dawn"
 
 #: ../data/ui/EditableList.ui.h:9
 #, fuzzy
 msgid "Move _Down"
-msgstr "_Down"
+msgstr "Mūv _Dawn"
 
 #. Create icon and filename CellRenderer
 #: ../data/ui/EditableList.ui.h:10 ../meld/dirdiff.py:365
@@ -561,11 +565,11 @@ msgstr "Neim"
 
 #: ../data/ui/EditableList.ui.h:11
 msgid "Pattern"
-msgstr "Pattern"
+msgstr "Pättèrn" 
 
 #: ../data/ui/EditableList.ui.h:12
 msgid "Add new filter"
-msgstr ""
+msgstr "Ädd niu filtèrā"
 
 #: ../data/ui/EditableList.ui.h:13
 msgid "Remove selected filter"
@@ -956,18 +960,16 @@ msgid "Highlight _current line"
 msgstr ""
 
 #: ../data/ui/preferences.ui.h:19
-#, fuzzy
 msgid "Show _line numbers"
-msgstr "Show line numbers"
+msgstr "Displei _lain numbers"
 
 #: ../data/ui/preferences.ui.h:20
 msgid "Show w_hitespace"
-msgstr ""
+msgstr "Displei _hwaitspeis"
 
 #: ../data/ui/preferences.ui.h:21
-#, fuzzy
 msgid "Use s_yntax highlighting"
-msgstr "Use syntax highlighting"
+msgstr "Yus syntaks highlighting"
 
 #: ../data/ui/preferences.ui.h:22
 #, fuzzy
@@ -975,19 +977,16 @@ msgid "Syntax highlighting color scheme:"
 msgstr "Use syntax highlighting"
 
 #: ../data/ui/preferences.ui.h:23
-#, fuzzy
 msgid "External Editor"
-msgstr "Internal editor"
+msgstr "Ikstornol editā"
 
 #: ../data/ui/preferences.ui.h:24
-#, fuzzy
 msgid "Use _default system editor"
-msgstr "Gnome default editor"
+msgstr "Yus sistèm _difàulten editā"
 
 #: ../data/ui/preferences.ui.h:25
-#, fuzzy
 msgid "Edito_r command:"
-msgstr "Custom command"
+msgstr "_Editā kommand:"
 
 #: ../data/ui/preferences.ui.h:26
 msgid "Editor"
@@ -1004,26 +1003,23 @@ msgstr "K_ompär fayls beisen onli on saiz en taimstämp"
 
 #: ../data/ui/preferences.ui.h:29
 msgid "_Timestamp resolution:"
-msgstr ""
+msgstr "_Taimstamp risolucion"
 
 #: ../data/ui/preferences.ui.h:30
-#, fuzzy
 msgid "Symbolic Links"
-msgstr "Ignore symbolic links"
+msgstr "Symbolik lingks"
 
 #: ../data/ui/preferences.ui.h:32
 msgid "Visible Columns"
-msgstr ""
+msgstr "Vyusolabol Kolumns"
 
 #: ../data/ui/preferences.ui.h:33
-#, fuzzy
 msgid "Folder Comparisons"
-msgstr "_Fayl Kompäreiçion"
+msgstr "_Foulder Kompäreiçions"
 
 #: ../data/ui/preferences.ui.h:34
-#, fuzzy
 msgid "Version Comparisons"
-msgstr "_Fayl Kompäreiçion"
+msgstr "Vorçion Kompäreiçions"
 
 #: ../data/ui/preferences.ui.h:35
 msgid "_Order when comparing file revisions:"
@@ -1034,7 +1030,6 @@ msgid "Order when _merging files:"
 msgstr ""
 
 #: ../data/ui/preferences.ui.h:37
-#, fuzzy
 msgid "Commit Messages"
 msgstr "Kommit Messeijs"
 
@@ -1047,14 +1042,12 @@ msgid "Automatically _break lines at right margin on commit"
 msgstr ""
 
 #: ../data/ui/preferences.ui.h:40
-#, fuzzy
 msgid "Version Control"
-msgstr "Version control view"
+msgstr "Vorçion Koncrol"
 
 #: ../data/ui/preferences.ui.h:41
-#, fuzzy
 msgid "Filename filters"
-msgstr "Fayl Filtèrs"
+msgstr "Faylneim filtèrās"
 
 #: ../data/ui/preferences.ui.h:42
 msgid ""
@@ -1068,20 +1061,19 @@ msgstr ""
 
 #: ../data/ui/preferences.ui.h:43 ../meld/meldwindow.py:103
 msgid "File Filters"
-msgstr "Fayl Filtèrs"
+msgstr "Fayl Filtèrās"
 
 #: ../data/ui/preferences.ui.h:44
 msgid "Change trimming"
-msgstr ""
+msgstr "Čeinj trimiŋ"
 
 #: ../data/ui/preferences.ui.h:45
 msgid "Trim blank line differences from the start and end of changes"
 msgstr ""
 
 #: ../data/ui/preferences.ui.h:46
-#, fuzzy
 msgid "Text filters"
-msgstr "Text Filters"
+msgstr "Tekst filtèrās"
 
 #: ../data/ui/preferences.ui.h:47
 msgid ""
@@ -1102,14 +1094,12 @@ msgid "Text Filters"
 msgstr "Text Filters"
 
 #: ../data/ui/tab-placeholder.ui.h:1 ../meld/meldwindow.py:623
-#, fuzzy
 msgid "New comparison"
-msgstr "_Fayl Kompäreiçion"
+msgstr "Pikka kompäreiçion"
 
 #: ../data/ui/tab-placeholder.ui.h:2
-#, fuzzy
 msgid "File comparison"
-msgstr "_Fayl Kompäreiçion"
+msgstr "Fayl kompäreiçion"
 
 #: ../data/ui/tab-placeholder.ui.h:3
 #, fuzzy
@@ -1509,7 +1499,7 @@ msgstr ""
 #: ../meld/filediff.py:1153
 #, python-format
 msgid "%s is not in encodings: %s"
-msgstr "%s-wa not in enkoudings: %s"
+msgstr "%s-wa not in enkoudiŋs: %s"
 
 #: ../meld/filediff.py:1191
 #, python-format
@@ -2392,10 +2382,10 @@ msgstr ""
 #~ msgstr "_Dilit Silekten"
 
 #~ msgid ""
-#~ "<span weight=\"bold\" size=\"larger\">Some files have been modified.\n" 
+#~ "<span weight=\"bold\" size=\"larger\">Some files have been modified.\n"
 #~ "Which ones would you like to save?"
 #~ msgstr ""
-#~ "<span weight=\"bold\" size=\"larger\">Some files have been modified.\n" 
+#~ "<span weight=\"bold\" size=\"larger\">Some files have been modified.\n"
 #~ "Which ones would you like to save?"
 
 #~ msgid "Match _entire word only"
@@ -2450,10 +2440,10 @@ msgstr ""
 #~ msgstr "<span weight=\"bold\" size=\"x-large\">Enkoudiŋ"
 
 #~ msgid "<span weight=\"bold\" size=\"x-large\">File Filters"
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">Fayl Filtèrs"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Fayl Filtèrās"
 
 #~ msgid "<span weight=\"bold\" size=\"x-large\">Text Filters"
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">Tekst Filtèrs"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Tekst Filtèrās"
 
 #~ msgid "Automatically supply missing newline at end of file"
 #~ msgstr "Automatically supply missing newline at end of file"
@@ -2490,7 +2480,7 @@ msgstr ""
 #~ msgstr "Enkoudiŋ"
 
 #~ msgid "Gnome Default"
-#~ msgstr "Gnome Default"
+#~ msgstr "Gnome Difault"
 
 #~ msgid "Icons Only"
 #~ msgstr "Aikons Onli"
@@ -2816,8 +2806,8 @@ msgstr ""
 #~ msgid " spaces."
 #~ msgstr " spaces."
 
-#~ msgid "<span weight=\"bold\" size=\"x-large\">Diff" 
-#~ msgstr "<span weight=\"bold\" size=\"x-large\">Diff" 
+#~ msgid "<span weight=\"bold\" size=\"x-large\">Diff"
+#~ msgstr "<span weight=\"bold\" size=\"x-large\">Diff"
 
 #~ msgid "CVS view"
 #~ msgstr "CVS view"
@@ -2847,4 +2837,5 @@ msgstr ""
 #~ msgstr "http://meld.sourceforge.net"
 
 #~ msgid "utf8 iso8859"
-#~ msgstr "utf8 iso8859"  
+#~ msgstr "utf8 iso8859"
+
