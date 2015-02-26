@@ -7,18 +7,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: meld\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=meld&keywords=I18N+L10N&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=meld&ke"
+"ywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-01-21 18:19+0800\n"
-"PO-Revision-Date: 2015-02-26 20:40+0800\n"
+"PO-Revision-Date: 2015-02-26 21:00+0800\n"
 "Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
-"Language-Team: Babycasèny Gavèrnmènt\n"
+"Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: bb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
 #: ../bin/meld:138
@@ -155,11 +155,11 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:17
 msgid "Color scheme to use for syntax highlighting"
-msgstr "Kalar skem tu yus für syntäks haihlàitiŋ"
+msgstr "Kalar sĥem tu yus für syntäks haiĥlàitiŋ "
 
 #: ../data/org.gnome.meld.gschema.xml.h:18
 msgid "Used by GtkSourceView to determine colors for syntax highlighting"
-msgstr ""
+msgstr "Yusen bai GtkSourceView tu ditörmin kalars für syntäks haiĥlàitiŋ"
 
 #: ../data/org.gnome.meld.gschema.xml.h:19
 msgid "Displayed whitespace"
@@ -194,12 +194,13 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:25
 msgid "Use the system default monospace font"
-msgstr "Yus sistèm-na difàult monospace taipset"
+msgstr "Yus sistèm-na difàult fiksen-widŧ taipset"
 
 #: ../data/org.gnome.meld.gschema.xml.h:26
 msgid ""
 "If false, custom-font will be used instead of the system monospace font."
 msgstr ""
+"If fols, kùstomaisen-taipset wa yusen apart from sistèm fiksen-widŧ taipset."
 
 #: ../data/org.gnome.meld.gschema.xml.h:27
 msgid "Custom font"
@@ -221,7 +222,6 @@ msgid ""
 msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:31
-#, fuzzy
 msgid "Use the system default editor"
 msgstr "Yus sistèm difàulten editā"
 
@@ -867,19 +867,19 @@ msgstr ""
 
 #: ../data/ui/preferences.ui.h:1
 msgid "Left is remote, right is local"
-msgstr ""
+msgstr "Left wa rīmot, rait wa lokol"
 
 #: ../data/ui/preferences.ui.h:2
 msgid "Left is local, right is remote"
-msgstr ""
+msgstr "Left wa lokol, rait wa rīmot"
 
 #: ../data/ui/preferences.ui.h:3
 msgid "Remote, merge, local"
-msgstr ""
+msgstr "Rīmot, mörj, lokol"
 
 #: ../data/ui/preferences.ui.h:4
 msgid "Local, merge, remote"
-msgstr ""
+msgstr "Lokol, mörj, rīmot"
 
 #: ../data/ui/preferences.ui.h:5
 msgid "1ns (ext4)"
@@ -903,24 +903,23 @@ msgstr "Meld Priförènses"
 
 #: ../data/ui/preferences.ui.h:10
 msgid "Font"
-msgstr "Font"
+msgstr "Taipset"
 
 #: ../data/ui/preferences.ui.h:11
 msgid "_Use the system fixed width font"
-msgstr ""
+msgstr "_Yus sistèm fiksen-widŧ taipset"
 
 #: ../data/ui/preferences.ui.h:12
 msgid "_Editor font:"
-msgstr "Editā _font:"
+msgstr "Editā _taipset:"
 
 #: ../data/ui/preferences.ui.h:13
 msgid "Display"
 msgstr "Display"
 
 #: ../data/ui/preferences.ui.h:14
-#, fuzzy
 msgid "_Tab width:"
-msgstr "Tab width"
+msgstr "_Täb widŧ:"
 
 #: ../data/ui/preferences.ui.h:15
 msgid "_Insert spaces instead of tabs"
@@ -948,12 +947,11 @@ msgstr "Displei _hwaitspeis"
 
 #: ../data/ui/preferences.ui.h:21
 msgid "Use s_yntax highlighting"
-msgstr "Yus syntaks highlighting"
+msgstr "Yus s_yntäks haihlàitiŋ"
 
 #: ../data/ui/preferences.ui.h:22
-#, fuzzy
 msgid "Syntax highlighting color scheme:"
-msgstr "Use syntax highlighting"
+msgstr "Syntäks haiĥlàitiŋ kalar sĥem:"
 
 #: ../data/ui/preferences.ui.h:23
 msgid "External Editor"
@@ -1165,11 +1163,11 @@ msgstr ""
 
 #: ../data/ui/vcview.ui.h:13
 msgid "Mar_k as Resolved"
-msgstr ""
+msgstr "Mar_k as Rīsolven"
 
 #: ../data/ui/vcview.ui.h:14
 msgid "Mark as resolved in version control"
-msgstr ""
+msgstr "Mar_k as rīsolven in vörçion koncrol"
 
 #: ../data/ui/vcview.ui.h:15
 msgid "Re_vert"
@@ -1428,7 +1426,7 @@ msgstr ""
 
 #: ../meld/filediff.py:891
 msgid "Mark conflict as resolved?"
-msgstr ""
+msgstr "Mark konflikt as rīsolven?"
 
 #: ../meld/filediff.py:893
 msgid ""
@@ -1441,7 +1439,7 @@ msgstr ""
 
 #: ../meld/filediff.py:896
 msgid "Mark _Resolved"
-msgstr ""
+msgstr "Mark _Rīsolven"
 
 #: ../meld/filediff.py:1099
 #, python-format
@@ -1521,12 +1519,12 @@ msgstr ""
 #: ../meld/filediff.py:1474
 #, fuzzy
 msgid "Keep highlighting"
-msgstr "Use syntax highlighting"
+msgstr "Kīp haiĥlàitiŋ"
 
 #: ../meld/filediff.py:1476
 #, fuzzy
 msgid "_Keep highlighting"
-msgstr "Use syntax highlighting"
+msgstr "_Kīp haiĥlàitiŋ"
 
 #: ../meld/filediff.py:1611
 #, python-format
@@ -2088,7 +2086,7 @@ msgstr ""
 
 #: ../meld/vcview.py:233 ../meld/vcview.py:417
 msgid "Location"
-msgstr "Location"
+msgstr "Loukeiçion"
 
 #: ../meld/vcview.py:234
 msgid "Status"
@@ -2166,12 +2164,12 @@ msgstr "%s — rimot"
 #: ../meld/vcview.py:531
 #, python-format
 msgid "%s (local, merge, remote)"
-msgstr "%s (lokol, merge, rimot)"
+msgstr "%s (lokol, mörj, rīmot)"
 
 #: ../meld/vcview.py:536
 #, python-format
 msgid "%s (remote, merge, local)"
-msgstr ""
+msgstr "%s (rīmot, mörj, lokol)"
 
 #: ../meld/vcview.py:547
 #, python-format
