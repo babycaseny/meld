@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: meld 3.12.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-03 15:30+0800\n"
-"PO-Revision-Date: 2015-03-03 16:42+0800\n"
+"PO-Revision-Date: 2015-03-03 17:08+0800\n"
 "Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: zh_TW\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../bin/meld:144
 msgid "Cannot import: "
@@ -52,7 +52,7 @@ msgstr "Meld Diff 顯示程式"
 
 #: ../data/meld.desktop.in.h:4
 msgid "Compare and merge your files"
-msgstr "對照及合併您的檔案"
+msgstr "比對及合併您的檔案"
 
 #: ../data/meld.appdata.xml.in.h:1
 msgid ""
@@ -151,7 +151,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:19
 msgid "Displayed whitespace"
-msgstr ""
+msgstr "空白字元會顯示"
 
 #: ../data/org.gnome.meld.gschema.xml.h:20
 msgid ""
@@ -433,11 +433,11 @@ msgstr "離開(_Q)"
 
 #: ../data/ui/dirdiff.ui.h:1 ../data/ui/vcview.ui.h:1
 msgid "_Compare"
-msgstr "對照(_C)"
+msgstr "比對(_C)"
 
 #: ../data/ui/dirdiff.ui.h:2 ../data/ui/vcview.ui.h:2
 msgid "Compare selected files"
-msgstr "對照您所選的檔案"
+msgstr "比對您所選的檔案"
 
 #: ../data/ui/dirdiff.ui.h:3
 msgid "Copy to _Left"
@@ -475,7 +475,7 @@ msgstr "忽視檔案名大小楷差別"
 msgid ""
 "Consider differently-cased filenames that are otherwise-identical to be the "
 "same"
-msgstr ""
+msgstr "把只在名稱有大小楷差別的檔案當作相同"
 
 #: ../data/ui/dirdiff.ui.h:12
 msgid "Same"
@@ -878,19 +878,19 @@ msgstr "本地,合併,遠端"
 
 #: ../data/ui/preferences.ui.h:5
 msgid "1ns (ext4)"
-msgstr ""
+msgstr "1ns (ext4)"
 
 #: ../data/ui/preferences.ui.h:6
 msgid "100ns (NTFS)"
-msgstr ""
+msgstr "100ns (NTFS)"
 
 #: ../data/ui/preferences.ui.h:7
 msgid "1s (ext2/ext3)"
-msgstr ""
+msgstr "1s (ext2/ext3)"
 
 #: ../data/ui/preferences.ui.h:8
 msgid "2s (VFAT)"
-msgstr ""
+msgstr "2s (VFAT)"
 
 #: ../data/ui/preferences.ui.h:9
 #, fuzzy
@@ -906,9 +906,8 @@ msgid "_Use the system fixed width font"
 msgstr ""
 
 #: ../data/ui/preferences.ui.h:12
-#, fuzzy
 msgid "_Editor font:"
-msgstr "編輯器 (_E)"
+msgstr "編輯器字型(_E):"
 
 #: ../data/ui/preferences.ui.h:13
 msgid "Display"
@@ -925,7 +924,7 @@ msgstr ""
 
 #: ../data/ui/preferences.ui.h:16
 msgid "Enable text _wrapping"
-msgstr ""
+msgstr "自動換行啟用(_W)"
 
 #: ../data/ui/preferences.ui.h:17
 msgid "Do not _split words over two lines"
@@ -978,7 +977,7 @@ msgstr "檔案比較(_F)"
 
 #: ../data/ui/preferences.ui.h:28
 msgid "C_ompare files based only on size and timestamp"
-msgstr ""
+msgstr "只比對檔案大小及存取時間(_O)"
 
 #: ../data/ui/preferences.ui.h:29
 msgid "_Timestamp resolution:"
@@ -1010,9 +1009,8 @@ msgid "Order when _merging files:"
 msgstr ""
 
 #: ../data/ui/preferences.ui.h:38
-#, fuzzy
 msgid "Commit Messages"
-msgstr "日誌訊息"
+msgstr "提交日誌訊息"
 
 #: ../data/ui/preferences.ui.h:39
 msgid "Show _right margin at:"
@@ -1035,7 +1033,9 @@ msgid ""
 "When performing directory comparisons, you may filter out files and "
 "directories by name. Each pattern is a list of shell style wildcards "
 "separated by spaces."
-msgstr "當進行比對，您可以把某些檔案及資料夾過濾掉。每個式樣都是以空格分開，shell 形式的萬用字元。"
+msgstr ""
+"當進行比對，您可以把某些檔案及資料夾過濾掉。每個式樣都是以空格分開，shell 形"
+"式的萬用字元。"
 
 #: ../data/ui/preferences.ui.h:44 ../meld/meldwindow.py:103
 msgid "File Filters"
@@ -1061,8 +1061,9 @@ msgid ""
 "contains groups, only the groups are replaced. See the user manual for more "
 "details."
 msgstr ""
-"當進行檔案比對時，您可能要忽略某種形式的變更。在這裡每個樣式都是 python "
-"語言的正規表達式，用在進行比對前取代匹配的字串。如果表達式包含群組，那麼只有群組會被取代。請參閱使用說明以取得更多資訊。"
+"當進行檔案比對時，您可能要忽略某種形式的變更。在這裡每個樣式都是 python 語言"
+"的正規表達式，用在進行比對前取代匹配的字串。如果表達式包含群組，那麼只有群組"
+"會被取代。請參閱使用說明以取得更多資訊。"
 
 #: ../data/ui/preferences.ui.h:49
 msgid "Text Filters"
@@ -1130,7 +1131,7 @@ msgstr "提交... (_M)"
 
 #: ../data/ui/vcview.ui.h:4
 msgid "Commit changes to version control"
-msgstr ""
+msgstr "提交修改到版本控制"
 
 #: ../data/ui/vcview.ui.h:5
 msgid "_Update"
@@ -1138,7 +1139,7 @@ msgstr "更新(_U)"
 
 #: ../data/ui/vcview.ui.h:6
 msgid "Update working copy from version control"
-msgstr ""
+msgstr "從版本控制更新工作副本"
 
 #: ../data/ui/vcview.ui.h:7
 msgid "_Push"
@@ -1146,15 +1147,15 @@ msgstr "提交(_P)"
 
 #: ../data/ui/vcview.ui.h:8
 msgid "Push local changes to remote"
-msgstr ""
+msgstr "提交本地修改到遠程"
 
 #: ../data/ui/vcview.ui.h:10
 msgid "Add to version control"
-msgstr ""
+msgstr "新增至版本控制"
 
 #: ../data/ui/vcview.ui.h:12
 msgid "Remove from version control"
-msgstr ""
+msgstr "從版本控制移除"
 
 #: ../data/ui/vcview.ui.h:13
 msgid "Mar_k as Resolved"
@@ -1250,7 +1251,7 @@ msgstr ""
 
 #: ../data/ui/vcview.ui.h:36
 msgid "Push local commits to remote?"
-msgstr ""
+msgstr "要將本地修改提交到遠程嗎？"
 
 #: ../data/ui/vcview.ui.h:37
 msgid "The commits to be pushed are determined by your version control system."
@@ -1285,7 +1286,7 @@ msgstr "修改時間"
 #. Create permissions CellRenderer
 #: ../meld/dirdiff.py:408 ../meld/preferences.py:84
 msgid "Permissions"
-msgstr ""
+msgstr "權限"
 
 #: ../meld/dirdiff.py:558
 #, python-format
@@ -1377,7 +1378,7 @@ msgstr ""
 
 #: ../meld/dirdiff.py:986
 msgid "Error copying file"
-msgstr ""
+msgstr "拷貝檔案時發生錯誤"
 
 #: ../meld/dirdiff.py:987
 #, python-format
@@ -1395,7 +1396,7 @@ msgstr ""
 #: ../meld/dirdiff.py:1010
 #, python-format
 msgid "Error deleting %s"
-msgstr "移除 %s 時發生錯誤"
+msgstr "刪除 %s 時發生錯誤"
 
 #: ../meld/dirdiff.py:1515
 msgid "No folder"
@@ -1482,7 +1483,7 @@ msgstr "[%s] 正在計算差異"
 #: ../meld/filediff.py:1262
 #, python-format
 msgid "File %s has changed on disk"
-msgstr ""
+msgstr "在碟上的%s檔案已變更"
 
 #: ../meld/filediff.py:1263
 msgid "Do you want to reload the file?"
@@ -1575,7 +1576,7 @@ msgstr ""
 #: ../meld/filediff.py:1684
 #, python-format
 msgid "File %s has changed on disk since it was opened"
-msgstr ""
+msgstr "在碟上的%s檔案在打開之後已變更"
 
 #: ../meld/filediff.py:1686
 msgid "If you save it, any external changes will be lost."
@@ -1594,14 +1595,11 @@ msgid "Inconsistent line endings found"
 msgstr ""
 
 #: ../meld/filediff.py:1718
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "'%s' contains a mixture of line endings. Select the line ending format to "
 "use."
-msgstr ""
-"檔案‘%s’混合了不同的斷行字元。\n"
-"\n"
-"您要使用那一種？"
+msgstr "檔案‘%s’混合了不同的斷行字元。請選擇要使用的斷行字元。"
 
 #: ../meld/filediff.py:1739
 msgid "_Save as UTF-8"
@@ -1633,7 +1631,7 @@ msgid ""
 msgstr ""
 
 #: ../meld/filemerge.py:48
-#, fuzzy, python-format
+#, python-format
 msgid "[%s] Merging files"
 msgstr "[%s] 正在合併檔案"
 
@@ -1677,7 +1675,7 @@ msgstr ""
 #: ../meld/meldapp.py:224
 #, python-format
 msgid "Error: %s\n"
-msgstr ""
+msgstr "錯誤: %s\n"
 
 #: ../meld/meldapp.py:231
 msgid "Meld is a file and directory comparison tool."
@@ -1722,16 +1720,15 @@ msgstr ""
 
 #: ../meld/meldapp.py:282
 msgid "can't auto-merge less than 3 files"
-msgstr ""
+msgstr "少於三個檔案無法自動合併"
 
 #: ../meld/meldapp.py:284
-#, fuzzy
 msgid "can't auto-merge directories"
-msgstr "將檔案合併顯示（不顯示目錄）"
+msgstr "無法自動合併目錄"
 
 #: ../meld/meldapp.py:298
 msgid "Error reading saved comparison file"
-msgstr ""
+msgstr "讀取已儲存比對檔案時發生錯誤"
 
 #: ../meld/meldapp.py:326
 #, python-format
@@ -1748,9 +1745,8 @@ msgid "untitled"
 msgstr "沒有標題"
 
 #: ../meld/meldwindow.py:48
-#, fuzzy
 msgid "_File"
-msgstr "我的檔案"
+msgstr "檔案(_F)"
 
 #: ../meld/meldwindow.py:49
 #, fuzzy
@@ -1763,7 +1759,7 @@ msgstr "開始新的比對"
 
 #: ../meld/meldwindow.py:53
 msgid "Save the current file"
-msgstr ""
+msgstr "儲存現時檔案"
 
 #: ../meld/meldwindow.py:55
 msgid "Save As..."
@@ -1771,11 +1767,11 @@ msgstr "另存為..."
 
 #: ../meld/meldwindow.py:56
 msgid "Save the current file with a different name"
-msgstr ""
+msgstr "將現時檔案以另一名稱儲存"
 
 #: ../meld/meldwindow.py:59
 msgid "Close the current file"
-msgstr ""
+msgstr "關閉現時檔案"
 
 #: ../meld/meldwindow.py:62
 msgid "_Edit"
@@ -1985,9 +1981,8 @@ msgid "Need three files to auto-merge, got: %r"
 msgstr ""
 
 #: ../meld/meldwindow.py:673
-#, fuzzy
 msgid "Cannot compare a mixture of files and directories"
-msgstr "無法對檔案及目錄的混合作出比較。\n"
+msgstr "無法比對檔案及目錄的混合"
 
 #. no common path. empty names get changed to "[None]"
 #: ../meld/misc.py:178
@@ -2201,12 +2196,9 @@ msgid ""
 msgstr ""
 
 #: ../meld/vcview.py:777
-#, fuzzy, python-format
+#, python-format
 msgid "Error removing %s"
-msgstr ""
-"移除 %s 時發生錯誤\n"
-"\n"
-"%s，"
+msgstr "移除 %s 時發生錯誤"
 
 #~ msgid ""
 #~ "Ignored:Non CVS:::Error::Newly added:Modified:<b>Conflict</b>:Removed:"
