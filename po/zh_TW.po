@@ -31,14 +31,15 @@ msgstr "Meld 需要 %s 或以上的版本。"
 
 #: ../bin/meld:145
 msgid "Meld does not support Python 3."
-msgstr ""
+msgstr "Meld 並未支援 Python 3。"
 
 #: ../bin/meld:195
 #, c-format
 msgid ""
 "Couldn't load Meld-specific CSS (%s)\n"
 "%s"
-msgstr ""
+msgstr "無法載入與 Meld 相關的 CSS (%)\n"
+"%s"
 
 #: ../data/meld.desktop.in.h:1 ../data/ui/meldapp.ui.h:1
 msgid "Meld"
