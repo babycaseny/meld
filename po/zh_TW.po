@@ -2380,7 +2380,7 @@ msgstr "移除 %s 時發生錯誤"
 #~ "Written by Stephen Kennedy <stevek@gnome.org>"
 #~ msgstr ""
 #~ "Meld·%s\n"
-#~ "由 Stephen·Kennedy·編寫 <stevek@gnome.org>"
+#~ "由 Stephen·Kennedy·<stevek@gnome.org> 編寫"
 
 #~ msgid ""
 #~ "Ignored:Non SVN:::Error::Newly added:Modified:<b>Conflict</b>:Removed:"
