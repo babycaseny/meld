@@ -5,8 +5,8 @@ import sys
 __package__ = "meld"
 __version__ = "3.13.1"
 
-DATADIR = "/usr/share/meld"
-LOCALEDIR = "/usr/share/locale"
+DATADIR = "/System/Library/Frameworks/Python.framework/Versions/2.7/share/meld"
+LOCALEDIR = "/System/Library/Frameworks/Python.framework/Versions/2.7/share/locale"
 UNINSTALLED = False
 
 # Installed from main script
