@@ -33,7 +33,7 @@ msgstr "Meld 需要 %s 或以上的版本。"
 
 #: ../bin/meld:151
 msgid "Meld does not support Python 3."
-msgstr "Meld does not support Python 3."
+msgstr "Meld 並未支援 Python 3。"
 
 #: ../bin/meld:201
 #, c-format
@@ -148,7 +148,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:17
 msgid "Color scheme to use for syntax highlighting"
-msgstr "使用語法高亮度標示"
+msgstr "使用語法高亮度標示功能"
 
 #: ../data/org.gnome.meld.gschema.xml.h:18
 msgid "Used by GtkSourceView to determine colors for syntax highlighting"
@@ -442,18 +442,16 @@ msgid "Compare selected files"
 msgstr "比對選取的檔案"
 
 #: ../data/ui/dirdiff.ui.h:3
-#, fuzzy
 msgid "Copy to _Left"
-msgstr "複製到左側"
+msgstr "複製到左側(_L)"
 
 #: ../data/ui/dirdiff.ui.h:4
 msgid "Copy to left"
 msgstr "複製到左側"
 
 #: ../data/ui/dirdiff.ui.h:5
-#, fuzzy
 msgid "Copy to _Right"
-msgstr "複製到右側"
+msgstr "複製到右側(_R)"
 
 #: ../data/ui/dirdiff.ui.h:6
 msgid "Copy to right"
@@ -461,7 +459,7 @@ msgstr "複製到右側"
 
 #: ../data/ui/dirdiff.ui.h:7
 msgid "Delete selected"
-msgstr "將已選取的刪除"
+msgstr "刪除已選取的"
 
 #: ../data/ui/dirdiff.ui.h:8 ../meld/dirdiff.py:876 ../meld/filediff.py:1460
 msgid "Hide"
@@ -469,7 +467,7 @@ msgstr "隱藏"
 
 #: ../data/ui/dirdiff.ui.h:9
 msgid "Hide selected"
-msgstr "將已選取的隱藏"
+msgstr "隱藏已選取的"
 
 #: ../data/ui/dirdiff.ui.h:10
 msgid "Ignore Filename Case"
@@ -569,14 +567,12 @@ msgid "Remove selected filter"
 msgstr "移除選擇的過濾器"
 
 #: ../data/ui/filediff.ui.h:1
-#, fuzzy
 msgid "Format as Patch..."
-msgstr "格式化為補丁..."
+msgstr "格式化為修正檔..."
 
 #: ../data/ui/filediff.ui.h:2
-#, fuzzy
 msgid "Create a patch using differences between files"
-msgstr "使用文件之前的差異創建補丁"
+msgstr "使用檔案之前的差異創建修正檔"
 
 #: ../data/ui/filediff.ui.h:3
 msgid "Save A_ll"
@@ -595,18 +591,16 @@ msgid "Add Synchronization Point"
 msgstr "新增同步點"
 
 #: ../data/ui/filediff.ui.h:7
-#, fuzzy
 msgid "Add a synchronization point for changes between files"
-msgstr "加入一個手動文件差異同步點"
+msgstr "加入一個手動檔案差異同步點"
 
 #: ../data/ui/filediff.ui.h:8
 msgid "Clear Synchronization Points"
 msgstr "清除同步點"
 
 #: ../data/ui/filediff.ui.h:9
-#, fuzzy
 msgid "Clear sychronization points for changes between files"
-msgstr "加入一個手動文件差異同步點"
+msgstr "清除手動檔案差異同步點"
 
 #: ../data/ui/filediff.ui.h:10
 msgid "Previous Conflict"
@@ -625,84 +619,68 @@ msgid "Go to the next conflict"
 msgstr "跳到下一個衝突"
 
 #: ../data/ui/filediff.ui.h:14
-#, fuzzy
 msgid "Push to Left"
 msgstr "推送到左側"
 
 #: ../data/ui/filediff.ui.h:15
-#, fuzzy
 msgid "Push current change to the left"
-msgstr "覆制當前的更改到左側"
+msgstr "推送當前的更改到左側"
 
 #: ../data/ui/filediff.ui.h:16
-#, fuzzy
 msgid "Push to Right"
 msgstr "推送到右側"
 
 #: ../data/ui/filediff.ui.h:17
-#, fuzzy
 msgid "Push current change to the right"
-msgstr "推送(push)當前的更改到右側"
+msgstr "推送當前的更改到右側"
 
 #: ../data/ui/filediff.ui.h:18
-#, fuzzy
 msgid "Pull from Left"
 msgstr "從左側拉取"
 
 #: ../data/ui/filediff.ui.h:19
-#, fuzzy
 msgid "Pull change from the left"
-msgstr "從左側拉取(pull)更改"
+msgstr "從左側拉取更改"
 
 #: ../data/ui/filediff.ui.h:20
-#, fuzzy
 msgid "Pull from Right"
-msgstr "從右側拉取(pull)"
+msgstr "從右側拉取"
 
 #: ../data/ui/filediff.ui.h:21
-#, fuzzy
 msgid "Pull change from the right"
-msgstr "從右側拉取(pull)更改"
+msgstr "從右側拉取更改"
 
 #: ../data/ui/filediff.ui.h:22
-#, fuzzy
 msgid "Copy Above Left"
-msgstr "覆制左側上方"
+msgstr "複製左側上方"
 
 #: ../data/ui/filediff.ui.h:23
-#, fuzzy
 msgid "Copy change above the left chunk"
-msgstr "從左側塊上方覆制更改"
+msgstr "從左側塊上方複製更改"
 
 #: ../data/ui/filediff.ui.h:24
-#, fuzzy
 msgid "Copy Below Left"
-msgstr "覆制左側下方"
+msgstr "複製左側下方"
 
 #: ../data/ui/filediff.ui.h:25
-#, fuzzy
 msgid "Copy change below the left chunk"
-msgstr "從左側塊下方覆制更改"
+msgstr "從左側塊下方複製更改"
 
 #: ../data/ui/filediff.ui.h:26
-#, fuzzy
 msgid "Copy Above Right"
-msgstr "覆制右側上方"
+msgstr "複製右側上方"
 
 #: ../data/ui/filediff.ui.h:27
-#, fuzzy
 msgid "Copy change above the right chunk"
-msgstr "從右側塊上方覆制更改"
+msgstr "從右側塊上方複製更改"
 
 #: ../data/ui/filediff.ui.h:28
-#, fuzzy
 msgid "Copy Below Right"
-msgstr "覆制右側下方"
+msgstr "複製右側下方"
 
 #: ../data/ui/filediff.ui.h:29
-#, fuzzy
 msgid "Copy change below the right chunk"
-msgstr "從右側塊下方覆制更改"
+msgstr "從右側塊下方複製更改"
 
 #: ../data/ui/filediff.ui.h:30
 msgid "Delete"
@@ -737,19 +715,16 @@ msgid "Merge all non-conflicting changes from left and right panes"
 msgstr "從左側和右側窗口合併所有非衝突的更改"
 
 #: ../data/ui/filediff.ui.h:38
-#, fuzzy
 msgid "Previous Pane"
-msgstr "上一個變更"
+msgstr "上一個窗格"
 
 #: ../data/ui/filediff.ui.h:39
-#, fuzzy
 msgid "Move keyboard focus to the previous document in this comparison"
 msgstr "將鍵盤焦點轉移到比較的下個文檔"
 
 #: ../data/ui/filediff.ui.h:40
-#, fuzzy
 msgid "Next Pane"
-msgstr "下一個變更"
+msgstr "下一個窗格"
 
 #: ../data/ui/filediff.ui.h:41
 #, fuzzy
