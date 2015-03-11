@@ -4,22 +4,25 @@
 # Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2011.
 # Josef Andersson <josef.andersson@fripost.org>, 2014.
 # Sebastian Rasmussen <sebras@gmail.com>, 2015.
-#
+# Babycasèny Gavèrnmènt <babycaseny@gmail.com>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: meld\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=meld&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-01 11:14+0000\n"
-"PO-Revision-Date: 2015-02-08 17:15+0100\n"
-"Last-Translator: Sebastian Rasmussen <sebras@gmail.com>\n"
-"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"POT-Creation-Date: 2015-03-10 23:05+0000\n"
+"PO-Revision-Date: 2015-03-11 16:13+0800\n"
+"Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
+"Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Project-Style: gnome\n"
+"X-Language: sv_SE\n"
+"X-Source-Language: C\n"
 
 #: ../bin/meld:144
 msgid "Cannot import: "
@@ -40,6 +43,8 @@ msgid ""
 "Couldn't load Meld-specific CSS (%s)\n"
 "%s"
 msgstr ""
+"Kunde inte ladda Meld specifik CSS (%s)\n"
+"%s"
 
 #: ../data/meld.desktop.in.h:1 ../data/ui/meldapp.ui.h:1
 msgid "Meld"
@@ -156,10 +161,9 @@ msgstr ""
 "markeringar är detta som standard av."
 
 #: ../data/org.gnome.meld.gschema.xml.h:17
-#, fuzzy
 #| msgid "Use s_yntax highlighting"
 msgid "Color scheme to use for syntax highlighting"
-msgstr "Använd _syntaxmarkering"
+msgstr "Färgschema att använda för syntaxmarkering"
 
 #: ../data/org.gnome.meld.gschema.xml.h:18
 msgid "Used by GtkSourceView to determine colors for syntax highlighting"
@@ -322,7 +326,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:43 ../data/ui/preferences.ui.h:30
 msgid "Apply text filters during folder comparisons"
-msgstr ""
+msgstr "Applicera textfilter under mapp jämförelser"
 
 #: ../data/org.gnome.meld.gschema.xml.h:44
 msgid ""
@@ -529,24 +533,22 @@ msgid "Compare selected files"
 msgstr "Jämför markerade filer"
 
 #: ../data/ui/dirdiff.ui.h:3
-#, fuzzy
 #| msgid "Copy to left"
 msgid "Copy to _Left"
-msgstr "Kopiera till vänster"
+msgstr "Kopiera till _Vänster"
 
 #: ../data/ui/dirdiff.ui.h:4
 msgid "Copy to left"
-msgstr "Kopiera till vänster"
+msgstr "Kopiera till Vänster"
 
 #: ../data/ui/dirdiff.ui.h:5
-#, fuzzy
 #| msgid "Copy to right"
 msgid "Copy to _Right"
-msgstr "Kopiera till höger"
+msgstr "Kopiera till _Höger"
 
 #: ../data/ui/dirdiff.ui.h:6
 msgid "Copy to right"
-msgstr "Kopiera till höger"
+msgstr "Kopiera till Höger"
 
 #: ../data/ui/dirdiff.ui.h:7
 msgid "Delete selected"
@@ -1219,7 +1221,7 @@ msgstr "_Tom jämförelse"
 
 #: ../data/ui/tab-placeholder.ui.h:14
 msgid "C_ompare"
-msgstr "Jämför"
+msgstr "Jä_mför"
 
 #: ../data/ui/vcview.ui.h:3
 msgid "Co_mmit..."
@@ -1359,15 +1361,15 @@ msgstr "_Tryck incheckningar"
 
 #: ../meld/const.py:10
 msgid "UNIX (LF)"
-msgstr ""
+msgstr "UNIX (LF)"
 
 #: ../meld/const.py:11
 msgid "DOS/Windows (CR-LF)"
-msgstr ""
+msgstr "DOS/Windows (CR-LF)"
 
 #: ../meld/const.py:12
 msgid "Mac OS (CR)"
-msgstr ""
+msgstr "Mac OS (CR)"
 
 #. Create file size CellRenderer
 #: ../meld/dirdiff.py:392 ../meld/preferences.py:82
@@ -1624,6 +1626,8 @@ msgid ""
 "Files are identical except for differing line endings:\n"
 "%s"
 msgstr ""
+"Filerna är identiska förutom olika radslut:\n"
+"%s"
 
 #: ../meld/filediff.py:1465
 msgid "Show without filters"
@@ -1663,10 +1667,10 @@ msgid ""
 msgstr ""
 
 #: ../meld/filediff.py:1653
-#, fuzzy, python-format
+#, python-format
 #| msgid "Could not read file"
 msgid "Could not save file %s."
-msgstr "Kunde inte läsa filen"
+msgstr "Kunde inte spara filen %s."
 
 #: ../meld/filediff.py:1654
 #, python-format
@@ -1711,7 +1715,7 @@ msgid "Inconsistent line endings found"
 msgstr "Filer med ogiltiga teckenkodningar hittades"
 
 #: ../meld/filediff.py:1718
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "This file '%s' contains a mixture of line endings.\n"
 #| "\n"
@@ -1720,9 +1724,8 @@ msgid ""
 "'%s' contains a mixture of line endings. Select the line ending format to "
 "use."
 msgstr ""
-"Filen ”%s” innehåller olika typer av radslut.\n"
-"\n"
-"Vilket format vill du använda?"
+"'%s' innehåller en blandning av radslut. Välj raden slutar formatet att "
+"använda."
 
 #: ../meld/filediff.py:1739
 msgid "_Save as UTF-8"
