@@ -2,17 +2,22 @@
 # Copyright (C) 2005 Free Software Foundation, Inc.
 # This file is distributed under the same license as the meld package.
 # Woodman Tuen <wmtuen@gmail.com>, 2005.
+# Funda Wang <fundawang@linux.net.cn>, 2004, 2005.
+# Careone <careoneagain@gmail.com>, 2009.
+# arccos <boyermoore@gmail.com>, 2009.
+# Tao Wang <dancefire@gmail.com>, 2010, 2013.
+# Wylmer Wang <wantinghard@gmail.com>, 2013.
 # Tom K. C. Chiu <babycaseny@gmail.com>, 2015.
 # 張修銘 <cges30901@gmail.com>, 2015
-# Babycasèny Gavèrnmènt <babycaseny@gmail.com>, 2015.
+
 msgid ""
 msgstr ""
-"Project-Id-Version: meld 3.13.0\n"
+"Project-Id-Version: meld master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=meld&ke"
 "ywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-10 11:08+0000\n"
-"PO-Revision-Date: 2015-03-10 20:29+0800\n"
-"Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
+"POT-Creation-Date: 2015-03-10 23:05+0000\n"
+"PO-Revision-Date: 2015-03-11 16:47+0800\n"
+"Last-Translator: Tom K. C. Chiu <babycaseny@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
@@ -21,10 +26,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
+"X-Source-Language: C\n"
 
 #: ../bin/meld:144
 msgid "Cannot import: "
-msgstr "無法導入："
+msgstr "無法匯入："
 
 #: ../bin/meld:147
 #, c-format
@@ -76,7 +82,7 @@ msgstr ""
 
 #: ../data/mime/meld.xml.in.h:1
 msgid "Meld comparison description"
-msgstr "Meld 比較描述"
+msgstr "Meld 比對描述"
 
 #: ../data/org.gnome.meld.gschema.xml.h:1
 msgid "Default window size"
@@ -92,7 +98,7 @@ msgstr "顯示工具列"
 
 #: ../data/org.gnome.meld.gschema.xml.h:4
 msgid "If true, the window toolbar is visible."
-msgstr "選取表示會顯示工具列"
+msgstr "選取表示視窗會顯示工具列"
 
 #: ../data/org.gnome.meld.gschema.xml.h:5
 msgid "Show statusbar"
@@ -100,7 +106,7 @@ msgstr "顯示狀態列"
 
 #: ../data/org.gnome.meld.gschema.xml.h:6
 msgid "If true, the window statusbar is visible."
-msgstr "選取表示會顯示狀態列"
+msgstr "選取表示視窗會顯示狀態列"
 
 #: ../data/org.gnome.meld.gschema.xml.h:7
 msgid "Automatically detected text encodings"
@@ -255,7 +261,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:39
 msgid "Use shallow comparison"
-msgstr "使用粗淺比較"
+msgstr "使用粗淺比對"
 
 #: ../data/org.gnome.meld.gschema.xml.h:40
 msgid ""
@@ -266,7 +272,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:41
 msgid "File timestamp resolution"
-msgstr "檔案時間戳記精細度："
+msgstr "檔案時間戳記精細度"
 
 #: ../data/org.gnome.meld.gschema.xml.h:42
 msgid ""
@@ -278,7 +284,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:43 ../data/ui/preferences.ui.h:30
 msgid "Apply text filters during folder comparisons"
-msgstr "在文件夾對照使用文本過濾器"
+msgstr "在文件夾比對使用文本過濾器"
 
 #: ../data/org.gnome.meld.gschema.xml.h:44
 msgid ""
@@ -328,7 +334,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:53
 msgid "Order for files in three-way version control merge comparisons"
-msgstr ""
+msgstr "在三方版本控制合併比對的文件次序"
 
 #: ../data/org.gnome.meld.gschema.xml.h:54
 msgid ""
@@ -359,7 +365,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:59
 msgid "Automatically hard-wrap commit messages"
-msgstr "提交時自動斷行"
+msgstr "提交時自動強制換行"
 
 #: ../data/org.gnome.meld.gschema.xml.h:60
 msgid ""
@@ -416,6 +422,14 @@ msgstr "網站"
 #: ../data/ui/application.ui.h:5
 msgid "translator-credits"
 msgstr ""
+"Funda Wang <fundawang@linux.net.cn>, 2004, 2005\n"
+"Woodman Tuen <wmtuen@gmail.com>\n"
+"Careone <careoneagain@gmail.com>, 2009\n"
+"arccos <boyermoore@gmail.com>, 2009\n"
+"Tao Wang <dancefire@gmail.com>, 2010, 2013\n"
+"Wylmer Wang <wantinghard@gmail.com>, 2013\n"
+"Tom K. C. Chiu <babycaseny@gmail.com>\n"
+"張修銘 <cges30901@gmail.com>\n"
 
 #: ../data/ui/application.ui.h:6
 msgid "_Preferences"
@@ -552,7 +566,7 @@ msgstr "下移(_D)"
 #: ../data/ui/EditableList.ui.h:10 ../meld/dirdiff.py:374
 #: ../meld/vcview.py:203
 msgid "Name"
-msgstr "名稱"
+msgstr "過濾器名稱"
 
 #: ../data/ui/EditableList.ui.h:11
 msgid "Pattern"
@@ -592,7 +606,7 @@ msgstr "新增同步點"
 
 #: ../data/ui/filediff.ui.h:7
 msgid "Add a synchronization point for changes between files"
-msgstr "加入一個手動檔案差異同步點"
+msgstr "加入一個檔案差異同步點"
 
 #: ../data/ui/filediff.ui.h:8
 msgid "Clear Synchronization Points"
@@ -600,7 +614,7 @@ msgstr "清除同步點"
 
 #: ../data/ui/filediff.ui.h:9
 msgid "Clear sychronization points for changes between files"
-msgstr "清除手動檔案差異同步點"
+msgstr "清除檔案差異同步點"
 
 #: ../data/ui/filediff.ui.h:10
 msgid "Previous Conflict"
@@ -727,17 +741,14 @@ msgid "Next Pane"
 msgstr "下一個窗格"
 
 #: ../data/ui/filediff.ui.h:41
-#, fuzzy
 msgid "Move keyboard focus to the next document in this comparison"
 msgstr "將鍵盤焦點轉移到比較的下個文檔"
 
 #: ../data/ui/filediff.ui.h:42
-#, fuzzy
 msgid "Lock Scrolling"
 msgstr "鎖定滾動"
 
 #: ../data/ui/filediff.ui.h:43
-#, fuzzy
 msgid "Lock scrolling of all panes"
 msgstr "鎖定所有窗格的滾動"
 
@@ -1254,11 +1265,11 @@ msgstr "推送提交(_P)"
 
 #: ../meld/const.py:10
 msgid "UNIX (LF)"
-msgstr ""
+msgstr "UNIX (LF)"
 
 #: ../meld/const.py:11
 msgid "DOS/Windows (CR-LF)"
-msgstr ""
+msgstr "DOS/Windows (CR-LF)"
 
 #: ../meld/const.py:12
 msgid "Mac OS (CR)"
@@ -2189,7 +2200,6 @@ msgid "Remove folder and all its files?"
 msgstr "移除資料夾及所有包含的檔案？"
 
 #: ../meld/vcview.py:743
-#, fuzzy
 msgid ""
 "This will remove all selected files and folders, and all files within any "
 "selected folders, from version control."
@@ -2200,11 +2210,9 @@ msgstr "這將從版本控制中移除所有選中的文件及文件夾，及選
 msgid "Error removing %s"
 msgstr "移除 %s 時發生錯誤"
 
-#~| msgid "Copy Left"
 #~ msgid "Copy _Left"
 #~ msgstr "複製到左側(_L)"
 
-#~| msgid "Copy Right"
 #~ msgid "Copy _Right"
 #~ msgstr "複製到右側(_R)"
 
@@ -2215,13 +2223,46 @@ msgstr "移除 %s 時發生錯誤"
 #~ "‘%s’已存在。\n"
 #~ "覆寫它？"
 
-#, fuzzy
+#~ msgid "%i second"
+#~ msgid_plural "%i seconds"
+#~ msgstr[0] "%i 秒"
+
+#~ msgid "%i minute"
+#~ msgid_plural "%i minutes"
+#~ msgstr[0] "%i 分钟"
+
+#~ msgid "%i hour"
+#~ msgid_plural "%i hours"
+#~ msgstr[0] "%i 小时"
+
+#~ msgid "%i day"
+#~ msgid_plural "%i days"
+#~ msgstr[0] "%i 天"
+
+#~ msgid "%i week"
+#~ msgid_plural "%i weeks"
+#~ msgstr[0] "%i 周"
+
+#~ msgid "%i month"
+#~ msgid_plural "%i months"
+#~ msgstr[0] "%i 月"
+
+#~ msgid "%i year"
+#~ msgid_plural "%i years"
+#~ msgstr[0] "%i 年"
+
 #~ msgid "Clear manual change sychronization points"
 #~ msgstr "清除手動更改同步點"
 
-#, fuzzy
 #~ msgid "Cycle Through Documents"
-#~ msgstr "在文檔間循環"
+#~ msgstr "在文件間循環"
+
+#~ msgid ""
+#~ "\"%s\" exists!\n"
+#~ "Overwrite?"
+#~ msgstr ""
+#~ "“%s”已存在！\n"
+#~ "覆盖文件？"
 
 #~ msgid ""
 #~ "Error writing to %s\n"

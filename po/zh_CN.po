@@ -1,27 +1,32 @@
 # Simplified Chinese translation of meld.
 # Copyright (C) 2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the meld package.
-#
+# Woodman Tuen <wmtuen@gmail.com>, 2005.
 # Funda Wang <fundawang@linux.net.cn>, 2004, 2005.
 # Careone <careoneagain@gmail.com>, 2009.
 # arccos <boyermoore@gmail.com>, 2009.
 # Tao Wang <dancefire@gmail.com>, 2010, 2013.
 # Wylmer Wang <wantinghard@gmail.com>, 2013.
-#
+# Tom K. C. Chiu <babycaseny@gmail.com>, 2015.
+# 張修銘 <cges30901@gmail.com>, 2015
+
 msgid ""
 msgstr ""
 "Project-Id-Version: meld master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=meld&keywords=I18N+L10N&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=meld&ke"
+"ywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-03-10 23:05+0000\n"
-"PO-Revision-Date: 2013-12-07 17:20+0800\n"
-"Last-Translator: Tao Wang <dancefire@gmail.com>\n"
-"Language-Team: Chinese (simplified) <i18n-translation@lists.linux.net.cn>\n"
+"PO-Revision-Date: 2015-03-11 16:47+0800\n"
+"Last-Translator: Tom K. C. Chiu <babycaseny@gmail.com>\n"
+"Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
+"X-Source-Language: C\n"
 
 #: ../bin/meld:144
 msgid "Cannot import: "
@@ -34,7 +39,7 @@ msgstr "Meld 要求 %s 或更高版本。"
 
 #: ../bin/meld:151
 msgid "Meld does not support Python 3."
-msgstr ""
+msgstr "Meld 不支持 Python 3。"
 
 #: ../bin/meld:201
 #, c-format
@@ -42,6 +47,8 @@ msgid ""
 "Couldn't load Meld-specific CSS (%s)\n"
 "%s"
 msgstr ""
+"无法加载 Meld 特定的 CSS (%s)\n”"
+"%s"
 
 #: ../data/meld.desktop.in.h:1 ../data/ui/meldapp.ui.h:1
 msgid "Meld"
@@ -49,11 +56,11 @@ msgstr "Meld"
 
 #: ../data/meld.desktop.in.h:2
 msgid "Diff Viewer"
-msgstr "差异查看器"
+msgstr "Diff 查看器"
 
 #: ../data/meld.desktop.in.h:3
 msgid "Meld Diff Viewer"
-msgstr "Meld Diff 差异查看器"
+msgstr "Meld Diff 查看器"
 
 #: ../data/meld.desktop.in.h:4
 msgid "Compare and merge your files"
@@ -82,10 +89,8 @@ msgid "Default window size"
 msgstr "默认窗口大小"
 
 #: ../data/org.gnome.meld.gschema.xml.h:2
-#, fuzzy
-#| msgid "Default window size"
 msgid "Default window state"
-msgstr "默认窗口大小"
+msgstr "默认窗口状态"
 
 #: ../data/org.gnome.meld.gschema.xml.h:3
 msgid "Show toolbar"
@@ -93,7 +98,7 @@ msgstr "显示工具栏"
 
 #: ../data/org.gnome.meld.gschema.xml.h:4
 msgid "If true, the window toolbar is visible."
-msgstr ""
+msgstr "如果为true，则窗口的工具栏是可见的。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:5
 msgid "Show statusbar"
@@ -101,7 +106,7 @@ msgstr "显示状态栏"
 
 #: ../data/org.gnome.meld.gschema.xml.h:6
 msgid "If true, the window statusbar is visible."
-msgstr ""
+msgstr "如果为true，则窗口的状态栏是可见的。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:7
 msgid "Automatically detected text encodings"
@@ -111,11 +116,11 @@ msgstr "自动检测到的文本编码"
 msgid ""
 "These text encodings will be automatically used (in order) to try to decode "
 "loaded text files."
-msgstr ""
+msgstr "这些文字编码将自动（按顺序）使用，试图解码已加载的文本文件。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:9
 msgid "Width of an indentation step"
-msgstr ""
+msgstr "缩排的每步宽度"
 
 #: ../data/org.gnome.meld.gschema.xml.h:10
 msgid "The number of spaces to use for a single indent step"
@@ -139,7 +144,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:15
 msgid "Highlight syntax"
-msgstr "语法高亮"
+msgstr "高亮显示语法"
 
 #: ../data/org.gnome.meld.gschema.xml.h:16
 msgid ""
@@ -148,8 +153,6 @@ msgid ""
 msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:17
-#, fuzzy
-#| msgid "Use s_yntax highlighting"
 msgid "Color scheme to use for syntax highlighting"
 msgstr "使用语法高亮(_Y)"
 
@@ -209,7 +212,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:29
 msgid "Ignore blank lines when comparing files"
-msgstr ""
+msgstr "比較檔案時忽略空行"
 
 #: ../data/org.gnome.meld.gschema.xml.h:30
 msgid ""
@@ -238,7 +241,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:35
 msgid "Columns to display"
-msgstr ""
+msgstr "要显示的列"
 
 #: ../data/org.gnome.meld.gschema.xml.h:36
 msgid ""
@@ -269,7 +272,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:41
 msgid "File timestamp resolution"
-msgstr "文件时间戳精细度："
+msgstr "文件时间戳精细度"
 
 #: ../data/org.gnome.meld.gschema.xml.h:42
 msgid ""
@@ -281,7 +284,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:43 ../data/ui/preferences.ui.h:30
 msgid "Apply text filters during folder comparisons"
-msgstr ""
+msgstr "在文件夹比较使用文本过滤器"
 
 #: ../data/org.gnome.meld.gschema.xml.h:44
 msgid ""
@@ -309,10 +312,8 @@ msgid ""
 msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:49
-#, fuzzy
-#| msgid "Version control view"
 msgid "Version control pane position"
-msgstr "版本控制查看"
+msgstr "版本控制面板中的位置"
 
 #: ../data/org.gnome.meld.gschema.xml.h:50
 msgid ""
@@ -332,10 +333,8 @@ msgid ""
 msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:53
-#, fuzzy
-#| msgid "Start a version control comparison"
 msgid "Order for files in three-way version control merge comparisons"
-msgstr "开始版本控制比较"
+msgstr "在三方版本控制合并比较的文件次序"
 
 #: ../data/org.gnome.meld.gschema.xml.h:54
 msgid ""
@@ -366,7 +365,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:59
 msgid "Automatically hard-wrap commit messages"
-msgstr ""
+msgstr "提交信息自动硬折行"
 
 #: ../data/org.gnome.meld.gschema.xml.h:60
 msgid ""
@@ -424,10 +423,13 @@ msgstr "网站"
 msgid "translator-credits"
 msgstr ""
 "Funda Wang <fundawang@linux.net.cn>, 2004, 2005\n"
+"Woodman Tuen <wmtuen@gmail.com>\n"
 "Careone <careoneagain@gmail.com>, 2009\n"
 "arccos <boyermoore@gmail.com>, 2009\n"
 "Tao Wang <dancefire@gmail.com>, 2010, 2013\n"
-"Wylmer Wang <wantinghard@gmail.com>, 2013"
+"Wylmer Wang <wantinghard@gmail.com>, 2013\n"
+"Tom K. C. Chiu <babycaseny@gmail.com>\n"
+"張修銘 <cges30901@gmail.com>\n"
 
 #: ../data/ui/application.ui.h:6
 msgid "_Preferences"
@@ -438,10 +440,8 @@ msgid "_Help"
 msgstr "帮助(_H)"
 
 #: ../data/ui/application.ui.h:8
-#, fuzzy
-#| msgid "_About Meld"
 msgid "_About"
-msgstr "关于 Meld (_A)"
+msgstr "关于 (_A)"
 
 #: ../data/ui/application.ui.h:9
 msgid "_Quit"
@@ -456,20 +456,16 @@ msgid "Compare selected files"
 msgstr "比较选中的文件"
 
 #: ../data/ui/dirdiff.ui.h:3
-#, fuzzy
-#| msgid "Copy to left"
 msgid "Copy to _Left"
-msgstr "复制到左侧"
+msgstr "复制到左侧(_L)"
 
 #: ../data/ui/dirdiff.ui.h:4
 msgid "Copy to left"
 msgstr "复制到左侧"
 
 #: ../data/ui/dirdiff.ui.h:5
-#, fuzzy
-#| msgid "Copy to right"
 msgid "Copy to _Right"
-msgstr "复制到右侧"
+msgstr "复制到右侧(_R)"
 
 #: ../data/ui/dirdiff.ui.h:6
 msgid "Copy to right"
@@ -535,7 +531,7 @@ msgstr "可编辑的列表"
 
 #: ../data/ui/EditableList.ui.h:2
 msgid "Active"
-msgstr "启用"
+msgstr "激活"
 
 #: ../data/ui/EditableList.ui.h:3
 msgid "Column Name"
@@ -612,17 +608,15 @@ msgstr "增加同步点"
 #, fuzzy
 #| msgid "Add a manual point for synchronization of changes between files"
 msgid "Add a synchronization point for changes between files"
-msgstr "添加一个手动文件差异同步点"
+msgstr "添加一个文件差异同步点"
 
 #: ../data/ui/filediff.ui.h:8
 msgid "Clear Synchronization Points"
 msgstr "清除同步点"
 
 #: ../data/ui/filediff.ui.h:9
-#, fuzzy
-#| msgid "Add a manual point for synchronization of changes between files"
 msgid "Clear sychronization points for changes between files"
-msgstr "添加一个手动文件差异同步点"
+msgstr "清除文件差异同步点"
 
 #: ../data/ui/filediff.ui.h:10
 msgid "Previous Conflict"
@@ -646,7 +640,7 @@ msgstr "推送到左侧"
 
 #: ../data/ui/filediff.ui.h:15
 msgid "Push current change to the left"
-msgstr "复制当前的更改到左侧"
+msgstr "推送当前的更改到左侧"
 
 #: ../data/ui/filediff.ui.h:16
 msgid "Push to Right"
@@ -654,7 +648,7 @@ msgstr "推送到右侧"
 
 #: ../data/ui/filediff.ui.h:17
 msgid "Push current change to the right"
-msgstr "推送(push)当前的更改到右侧"
+msgstr "推送当前的更改到右侧"
 
 #: ../data/ui/filediff.ui.h:18
 msgid "Pull from Left"
