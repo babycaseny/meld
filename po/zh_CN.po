@@ -9,22 +9,21 @@
 # Wylmer Wang <wantinghard@gmail.com>, 2013.
 # Tom K. C. Chiu <babycaseny@gmail.com>, 2015.
 # 張修銘 <cges30901@gmail.com>, 2015
-
 msgid ""
 msgstr ""
 "Project-Id-Version: meld master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=meld&ke"
-"ywords=I18N+L10N&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=meld&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-03-10 23:05+0000\n"
-"PO-Revision-Date: 2015-03-11 16:47+0800\n"
-"Last-Translator: Tom K. C. Chiu <babycaseny@gmail.com>\n"
+"PO-Revision-Date: 2015-03-11 17:24+0800\n"
+"Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Project-Style: gnome\n"
 "X-Source-Language: C\n"
 
@@ -47,8 +46,8 @@ msgid ""
 "Couldn't load Meld-specific CSS (%s)\n"
 "%s"
 msgstr ""
-"无法加载 Meld 特定的 CSS (%s)\n”"
-"%s"
+"无法加载 Meld 特定的 CSS (%s)\n"
+"”%s"
 
 #: ../data/meld.desktop.in.h:1 ../data/ui/meldapp.ui.h:1
 msgid "Meld"
@@ -429,7 +428,7 @@ msgstr ""
 "Tao Wang <dancefire@gmail.com>, 2010, 2013\n"
 "Wylmer Wang <wantinghard@gmail.com>, 2013\n"
 "Tom K. C. Chiu <babycaseny@gmail.com>\n"
-"張修銘 <cges30901@gmail.com>\n"
+"張修銘 <cges30901@gmail.com>"
 
 #: ../data/ui/application.ui.h:6
 msgid "_Preferences"
@@ -605,8 +604,6 @@ msgid "Add Synchronization Point"
 msgstr "增加同步点"
 
 #: ../data/ui/filediff.ui.h:7
-#, fuzzy
-#| msgid "Add a manual point for synchronization of changes between files"
 msgid "Add a synchronization point for changes between files"
 msgstr "添加一个文件差异同步点"
 
@@ -656,15 +653,15 @@ msgstr "从左侧拉取"
 
 #: ../data/ui/filediff.ui.h:19
 msgid "Pull change from the left"
-msgstr "从左侧拉取(pull)更改"
+msgstr "从左侧拉取更改"
 
 #: ../data/ui/filediff.ui.h:20
 msgid "Pull from Right"
-msgstr "从右侧拉取(pull)"
+msgstr "从右侧拉取"
 
 #: ../data/ui/filediff.ui.h:21
 msgid "Pull change from the right"
-msgstr "从右侧拉取(pull)更改"
+msgstr "从右侧拉取更改"
 
 #: ../data/ui/filediff.ui.h:22
 msgid "Copy Above Left"
@@ -731,26 +728,20 @@ msgid "Merge all non-conflicting changes from left and right panes"
 msgstr "从左侧和右侧窗口合并所有非冲突的更改"
 
 #: ../data/ui/filediff.ui.h:38
-#, fuzzy
-#| msgid "Previous Change"
 msgid "Previous Pane"
-msgstr "上一个更改"
+msgstr "上一个窗格"
 
 #: ../data/ui/filediff.ui.h:39
-#, fuzzy
-#| msgid "Move keyboard focus to the next document in this comparison"
 msgid "Move keyboard focus to the previous document in this comparison"
-msgstr "将键盘焦点转移到比较的下个文档"
+msgstr "将键盘焦点转移到比较的上一个文档"
 
 #: ../data/ui/filediff.ui.h:40
-#, fuzzy
-#| msgid "Next Change"
 msgid "Next Pane"
-msgstr "下一个更改"
+msgstr "下一个窗格"
 
 #: ../data/ui/filediff.ui.h:41
 msgid "Move keyboard focus to the next document in this comparison"
-msgstr "将键盘焦点转移到比较的下个文档"
+msgstr "将键盘焦点转移到比较的下一个文档"
 
 #: ../data/ui/filediff.ui.h:42
 msgid "Lock Scrolling"
@@ -790,22 +781,16 @@ msgstr ""
 "个新文件中。"
 
 #: ../data/ui/filediff.ui.h:50
-#, fuzzy
-#| msgid "_File"
 msgid "File 3"
-msgstr "文件(_F)"
+msgstr "文件3"
 
 #: ../data/ui/filediff.ui.h:51
-#, fuzzy
-#| msgid "_File"
 msgid "File 2"
-msgstr "文件(_F)"
+msgstr "文件2"
 
 #: ../data/ui/filediff.ui.h:52
-#, fuzzy
-#| msgid "_File"
 msgid "File 1"
-msgstr "文件(_F)"
+msgstr "文件1"
 
 #: ../data/ui/filediff.ui.h:53
 msgid "Revert unsaved changes to documents?"
@@ -892,16 +877,14 @@ msgid "Left is local, right is remote"
 msgstr "左侧为本地，右侧为远端"
 
 #: ../data/ui/preferences.ui.h:3
-#, fuzzy
 #| msgid "Left is remote, right is local"
 msgid "Remote, merge, local"
-msgstr "左侧为远端，右侧为本地"
+msgstr "远端,合并,本地"
 
 #: ../data/ui/preferences.ui.h:4
-#, fuzzy
 #| msgid "Left is local, right is remote"
 msgid "Local, merge, remote"
-msgstr "左侧为本地，右侧为远端"
+msgstr "本地,合并,远端"
 
 #: ../data/ui/preferences.ui.h:5
 msgid "1ns (ext4)"
@@ -1022,14 +1005,13 @@ msgid "Version Comparisons"
 msgstr "版本比较"
 
 #: ../data/ui/preferences.ui.h:36
-#, fuzzy
 #| msgid "_When comparing file revisions:"
 msgid "_Order when comparing file revisions:"
-msgstr "在比较文件版本时(_W)："
+msgstr "在比较文件版本时的次序(_O)："
 
 #: ../data/ui/preferences.ui.h:37
 msgid "Order when _merging files:"
-msgstr ""
+msgstr "在合并文件的次序(_M):"
 
 #: ../data/ui/preferences.ui.h:38
 msgid "Commit Messages"
@@ -1174,7 +1156,7 @@ msgstr "推送(_P)"
 
 #: ../data/ui/vcview.ui.h:8
 msgid "Push local changes to remote"
-msgstr "推送(push)本地更改至远端"
+msgstr "推送本地更改至远端"
 
 #: ../data/ui/vcview.ui.h:10
 msgid "Add to version control"
@@ -1280,7 +1262,7 @@ msgstr ""
 
 #: ../data/ui/vcview.ui.h:36
 msgid "Push local commits to remote?"
-msgstr "推送(push)本地提交到远端?"
+msgstr "推送本地提交到远端?"
 
 #: ../data/ui/vcview.ui.h:37
 msgid "The commits to be pushed are determined by your version control system."
@@ -1300,7 +1282,7 @@ msgstr ""
 
 #: ../meld/const.py:12
 msgid "Mac OS (CR)"
-msgstr ""
+msgstr "Mac OS (CR)"
 
 #. Create file size CellRenderer
 #: ../meld/dirdiff.py:392 ../meld/preferences.py:82
@@ -1398,7 +1380,7 @@ msgstr "'%s' 已按“%s”隐藏"
 #: ../meld/dirdiff.py:971
 #, python-format
 msgid "Replace folder “%s”?"
-msgstr ""
+msgstr "替换 folder “%s”?"
 
 #: ../meld/dirdiff.py:973
 #, python-format
@@ -1545,10 +1527,8 @@ msgid ""
 msgstr "正在使用文本过滤器，可能会屏蔽文件之间的不同。您想比较未过滤的文件吗？"
 
 #: ../meld/filediff.py:1443
-#, fuzzy
-#| msgid "Files with invalid encodings found"
 msgid "Files differ in line endings only"
-msgstr "发现文件使用的编码不正确"
+msgstr "发现文件只有使用的编码不正确"
 
 #: ../meld/filediff.py:1445
 #, python-format
@@ -1583,7 +1563,7 @@ msgstr "保持语法高亮(_K)"
 #: ../meld/filediff.py:1633
 #, python-format
 msgid "Replace file “%s”?"
-msgstr ""
+msgstr "替换文件 “%s”?"
 
 #: ../meld/filediff.py:1635
 #, python-format
@@ -1792,7 +1772,7 @@ msgstr "读取保存的比较文件出错"
 #: ../meld/meldapp.py:326
 #, python-format
 msgid "invalid path or URI \"%s\""
-msgstr ""
+msgstr "无效的路径或URI \"%s\""
 
 #. TRANSLATORS: This is the label of a new, currently-unnamed file.
 #: ../meld/meldbuffer.py:137
@@ -1996,20 +1976,18 @@ msgid "Open recent files"
 msgstr "选择文件"
 
 #: ../meld/meldwindow.py:164
-#, fuzzy
 #| msgid "Meld"
 msgid "_Meld"
-msgstr "Meld"
+msgstr "_Meld"
 
 #: ../meld/meldwindow.py:165
 msgid "Quit the program"
 msgstr "退出程序"
 
 #: ../meld/meldwindow.py:167
-#, fuzzy
 #| msgid "_Preferences"
 msgid "Prefere_nces"
-msgstr "首选项(_P)"
+msgstr "首选项(_N)"
 
 #: ../meld/meldwindow.py:168
 msgid "Configure the application"
@@ -2124,22 +2102,19 @@ msgid "Newly added"
 msgstr ""
 
 #: ../meld/vc/_vc.py:72
-#, fuzzy
 #| msgid "<unnamed>"
 msgid "Renamed"
-msgstr "<未命名>"
+msgstr "改名"
 
 #: ../meld/vc/_vc.py:73
-#, fuzzy
 #| msgid "Next Conflict"
 msgid "Conflict"
-msgstr "下一个冲突"
+msgstr "冲突"
 
 #: ../meld/vc/_vc.py:74
-#, fuzzy
 #| msgid "_Remove"
 msgid "Removed"
-msgstr "删除(_R)"
+msgstr "已删除"
 
 #: ../meld/vc/_vc.py:75
 msgid "Missing"
@@ -2217,30 +2192,30 @@ msgstr "(空)"
 #: ../meld/vcview.py:522
 #, python-format
 msgid "%s — local"
-msgstr ""
+msgstr "%s — 本地"
 
 #: ../meld/vcview.py:523
 #, python-format
 msgid "%s — remote"
-msgstr ""
+msgstr "%s — 远端"
 
 #: ../meld/vcview.py:531
-#, fuzzy, python-format
+#, python-format
 #| msgid "Left is local, right is remote"
 msgid "%s (local, merge, remote)"
-msgstr "左侧为本地，右侧为远端"
+msgstr "%s (本地,合并,远端)"
 
 #: ../meld/vcview.py:536
-#, fuzzy, python-format
+#, python-format
 #| msgid "Left is remote, right is local"
 msgid "%s (remote, merge, local)"
-msgstr "左侧为远端，右侧为本地"
+msgstr "%s (远端,合并,本地)"
 
 #: ../meld/vcview.py:547
-#, fuzzy, python-format
+#, python-format
 #| msgid "Invalid repository"
 msgid "%s — repository"
-msgstr "无效的仓库"
+msgstr "%s — 仓库"
 
 #: ../meld/vcview.py:553
 #, python-format
@@ -2344,135 +2319,3 @@ msgstr "删除 %s 出错"
 
 #~ msgid "Show or hide the statusbar"
 #~ msgstr "显示或隐藏状态栏"
-
-#~| msgid ""
-#~| "Regular expression error\n"
-#~| "'%s'"
-#~ msgid "Regular expression error"
-#~ msgstr "正则表达式错误"
-
-#~ msgid ""
-#~ "Ignored:Unversioned:::Error::Newly added:Modified:Conflict:Removed:"
-#~ "Missing:Not present"
-#~ msgstr "已忽略:未版本控制:::错误::新添加:已修改:冲突:已删除:丢失:不存在"
-
-#~ msgid ""
-#~ "Meld is free software: you can redistribute it and/or modify it under the "
-#~ "terms of the GNU General Public License as published by the Free Software "
-#~ "Foundation, either version 2 of the License, or (at your option) any "
-#~ "later version.\n"
-#~ "\n"
-#~ "Meld is distributed in the hope that it will be useful, but WITHOUT ANY "
-#~ "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
-#~ "FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
-#~ "details. \n"
-#~ "\n"
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with this program.  If not, see <http://www.gnu.org/licenses/>."
-#~ msgstr ""
-#~ "Meld 是自由软件；您可以在自由软件基金会发布的 GNU 公共许可证的条目下重新发"
-#~ "布或修改它；许可证应当是第二版或由您选择的更高版本。Meld 发布是希望它有"
-#~ "用，但没有任何担保；即使是商业性应用或其它任何目的。参见 GNU 公共许可证以"
-#~ "获得更多细节。您应当在收到 Meld 的同时收到了 GNU 公共许可证的副本；如果没"
-#~ "有的话，请访问 <http://www.gnu.org/licenses/>。"
-
-#~ msgid "Loading"
-#~ msgstr "载入"
-
-#~ msgid "When loading, try these codecs in order. (e.g. utf8, iso8859)"
-#~ msgstr "载入时，按此顺序尝试编码。(如 utf8，gb2312，gbk，gb18030)"
-
-#~ msgid "Encoding"
-#~ msgstr "文字编码"
-
-#~ msgid "Compare selected"
-#~ msgstr "比较选中的"
-
-#~ msgid ""
-#~ "'%s' is a directory.\n"
-#~ "Remove recursively?"
-#~ msgstr ""
-#~ "“%s”是一个目录。\n"
-#~ "递归删除该目录下的子目录吗？"
-
-#~ msgid "Start a comparison between file and dir/file"
-#~ msgstr "在文件和文件夹/文件之间开始比较"
-
-#~ msgid "D-Bus error; comparisons will open in a new window."
-#~ msgstr "D-Bus 错误；比较将在新窗口打开。"
-
-#~ msgid "Report _Bug"
-#~ msgstr "报告错误(_B)"
-
-#~ msgid "Report a bug in Meld"
-#~ msgstr "报告 Meld 中的错误"
-
-#~ msgid "About this program"
-#~ msgstr "关于本程序"
-
-#~ msgid "Only available if you have PyGtkSourceView 2 installed"
-#~ msgstr "只有安装了 PyGtkSourceView 2 才能用"
-
-#~ msgid "Backups\t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
-#~ msgstr "备份 \t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
-
-#~ msgid ""
-#~ "OS-specific metadata\t0\t.DS_Store ._* .Spotlight-V100 .Trashes Thumbs.db "
-#~ "Desktop.ini\n"
-#~ msgstr ""
-#~ "操作系统特定元数据\t0\t.DS_Store ._* .Spotlight-V100 .Trashes Thumbs.db "
-#~ "Desktop.ini\n"
-
-#~ msgid "Version Control\t1\t%s\n"
-#~ msgstr "版本控制 \t1\t%s\n"
-
-#~ msgid "Binaries\t1\t*.{pyc,a,obj,o,so,la,lib,dll,exe}\n"
-#~ msgstr "二进制 \t1\t*.{pyc,a,obj,o,so,la,lib,dll}\n"
-
-#~ msgid "Media\t0\t*.{jpg,gif,png,bmp,wav,mp3,ogg,flac,avi,mpg,xcf,xpm}"
-#~ msgstr "多媒体 \t0\t*.{jpg,gif,png,wav,mp3,ogg,xcf,xpm}"
-
-#~ msgid "CVS keywords\t0\t\\$\\w+(:[^\\n$]+)?\\$\n"
-#~ msgstr "CVS 关键字 \t0\t\\$\\w+(:[^\\n$]+)?\\$\n"
-
-#~ msgid "C++ comment\t0\t//.*\n"
-#~ msgstr "C++ 注释 \t0\t//.*\n"
-
-#~ msgid "C comment\t0\t/\\*.*?\\*/\n"
-#~ msgstr "C 注释 \t0\t/\\*.*?\\*/\n"
-
-#~ msgid "All whitespace\t0\t[ \\t\\r\\f\\v]*\n"
-#~ msgstr "所有空白字符 \t0\t[ \\t\\r\\f\\v]*\n"
-
-#~ msgid "Leading whitespace\t0\t^[ \\t\\r\\f\\v]*\n"
-#~ msgstr "开头空白字符 \t0\t^[ \\t\\r\\f\\v]*\n"
-
-#~ msgid "Script comment\t0\t#.*"
-#~ msgstr "脚本注释 \t0\t#.*"
-
-#~ msgid "_Browse..."
-#~ msgstr "浏览(_B)..."
-
-#~ msgid "Path"
-#~ msgstr "路径"
-
-#~ msgid "Path to file"
-#~ msgstr "文件路径"
-
-#~ msgid "Pop up a file selector to choose a file"
-#~ msgstr "弹出文件选择器来选择一个文件"
-
-#~ msgid "Select directory"
-#~ msgstr "选择目录"
-
-#~ msgid "Select file"
-#~ msgstr "选择文件"
-
-#~ msgid ""
-#~ "Error converting to a regular expression\n"
-#~ "The pattern was '%s'\n"
-#~ "The error was '%s'"
-#~ msgstr ""
-#~ "转换为正则表达式时出错\n"
-#~ "模式为“%s”\n"
-#~ "错误为“%s”"
