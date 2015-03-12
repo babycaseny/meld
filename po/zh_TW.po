@@ -1361,22 +1361,22 @@ msgstr ""
 #: ../meld/dirdiff.py:906
 #, python-format
 msgid "'%s' hidden by '%s'"
-msgstr "‘%s’被‘%s’隱藏"
+msgstr "「%s」被「%s」隱藏"
 
 #: ../meld/dirdiff.py:971
 #, python-format
 msgid "Replace folder “%s”?"
-msgstr ""
+msgstr "要取代資料夾「%s」嗎？"
 
 #: ../meld/dirdiff.py:973
 #, python-format
 msgid ""
 "Another folder with the same name already exists in “%s”.\n"
 "If you replace the existing folder, all files in it will be lost."
-msgstr ""
+msgstr "在「%s」已有一個相同名稱的資料夾。\n"
+"如果您取代現有的資料夾的話，裡面的內容會全部遺失。"
 
 #: ../meld/dirdiff.py:986
-#, fuzzy
 msgid "Error copying file"
 msgstr "拷貝檔案時發生錯誤"
 
@@ -1388,8 +1388,8 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"無法將 %s\n"
-"覆制到 %s。\n"
+"無法將「%s」\n"
+"複製到「%s」。\n"
 "\n"
 "%s"
 
@@ -1399,9 +1399,8 @@ msgid "Error deleting %s"
 msgstr "刪除 %s 出錯"
 
 #: ../meld/dirdiff.py:1515
-#, fuzzy
 msgid "No folder"
-msgstr "資料夾"
+msgstr "沒有資料夾"
 
 #. Abbreviations for insert and overwrite that fit in the status bar
 #: ../meld/filediff.py:406
@@ -1428,7 +1427,7 @@ msgid ""
 "Filter “%s” changed the number of lines in the file, which is unsupported. "
 "The comparison will not be accurate."
 msgstr ""
-"過濾器“%s”更改了文件的行數。比較的結果將不準確。更多細節請查看用戶手冊。"
+"過濾器「%s」更改了文件的行數。比較的結果將不準確。更多細節請查看用戶手冊。"
 
 #: ../meld/filediff.py:894
 msgid "Mark conflict as resolved?"
@@ -1437,7 +1436,7 @@ msgstr "要把衝突標記為「已解決」嗎？"
 #: ../meld/filediff.py:896
 msgid ""
 "If the conflict was resolved successfully, you may mark it as resolved now."
-msgstr ""
+msgstr "如果這個衝突已成功解決，您就可以標記為「已解決」。"
 
 #: ../meld/filediff.py:898
 msgid "Cancel"
@@ -1450,7 +1449,7 @@ msgstr "標記為「已解決」(_R)"
 #: ../meld/filediff.py:1102
 #, python-format
 msgid "[%s] Set num panes"
-msgstr "[%s] 設定數目窗格"
+msgstr "[%s] 設定窗格數目"
 
 #: ../meld/filediff.py:1109
 #, python-format
@@ -1485,7 +1484,7 @@ msgstr "[%s] 正在計算差異"
 #: ../meld/filediff.py:1262
 #, python-format
 msgid "File %s has changed on disk"
-msgstr "在碟上的%s檔案已變更"
+msgstr "在碟上的「%s」檔案已變更"
 
 #: ../meld/filediff.py:1263
 msgid "Do you want to reload the file?"
@@ -1525,7 +1524,7 @@ msgstr "顯示不過濾的結果"
 #: ../meld/filediff.py:1487
 #, fuzzy
 msgid "Change highlighting incomplete"
-msgstr "更改高亮不完整"
+msgstr "更改高亮度標示不完整"
 
 #: ../meld/filediff.py:1488
 #, fuzzy
@@ -1533,7 +1532,7 @@ msgid ""
 "Some changes were not highlighted because they were too large. You can force "
 "Meld to take longer to highlight larger changes, though this may be slow."
 msgstr ""
-"某些更改沒有高亮，因為太大。您可以強制高亮顯示大幅的更改，盡管這可能很慢。"
+"某些更改未以高亮度標示，因為範圍太大。您可以強制高亮度標示大幅的更改，儘管這可能很慢。"
 
 #: ../meld/filediff.py:1496
 msgid "Keep highlighting"
@@ -1546,7 +1545,7 @@ msgstr "保持語法高亮度標示(_K)"
 #: ../meld/filediff.py:1633
 #, python-format
 msgid "Replace file “%s”?"
-msgstr ""
+msgstr "要取代「%s」檔案嗎？"
 
 #: ../meld/filediff.py:1635
 #, python-format
@@ -1605,7 +1604,7 @@ msgstr "檔案使用了多種斷行字元"
 msgid ""
 "'%s' contains a mixture of line endings. Select the line ending format to "
 "use."
-msgstr "檔案‘%s’混合了不同的斷行字元使用。請選擇要統一使用的斷行字元。"
+msgstr "檔案「%s」混合了不同的斷行字元使用。請選擇要統一使用的斷行字元。"
 
 #: ../meld/filediff.py:1739
 msgid "_Save as UTF-8"
@@ -1614,7 +1613,7 @@ msgstr "以 UTF-8 編碼儲存(_S)"
 #: ../meld/filediff.py:1742
 #, python-format
 msgid "Couldn't encode text as “%s”"
-msgstr "無法以“%s”編碼儲存"
+msgstr "無法以「%s」編碼儲存"
 
 #: ../meld/filediff.py:1744
 #, fuzzy, python-format
@@ -1622,7 +1621,7 @@ msgid ""
 "File “%s” contains characters that can't be encoded using encoding “%s”.\n"
 "Would you like to save as UTF-8?"
 msgstr ""
-"‘%s’包含無法以‘%s’編碼的字元\n"
+"「%s」包含無法以「%s」編碼的字元\n"
 "您是否要將其另存為 UTF-8？"
 
 #: ../meld/filediff.py:2096
@@ -1740,7 +1739,7 @@ msgstr "讀取已儲存比對檔案時發生錯誤"
 #: ../meld/meldapp.py:326
 #, python-format
 msgid "invalid path or URI \"%s\""
-msgstr "無效的路徑或URI \"%s\""
+msgstr "「%s」是無效的路徑或URI"
 
 #. TRANSLATORS: This is the label of a new, currently-unnamed file.
 #: ../meld/meldbuffer.py:137
@@ -2218,7 +2217,7 @@ msgstr "移除 %s 時發生錯誤"
 #~ "'%s' exists.\n"
 #~ "Overwrite?"
 #~ msgstr ""
-#~ "‘%s’已存在。\n"
+#~ "「%s」已存在。\n"
 #~ "覆寫它？"
 
 #~ msgid "%i second"
@@ -2259,7 +2258,7 @@ msgstr "移除 %s 時發生錯誤"
 #~ "\"%s\" exists!\n"
 #~ "Overwrite?"
 #~ msgstr ""
-#~ "“%s”已存在！\n"
+#~ "「%s」已存在！\n"
 #~ "覆盖文件？"
 
 #~ msgid ""
