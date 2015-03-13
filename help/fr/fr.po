@@ -126,10 +126,10 @@ msgid ""
 "properly tested; please report any version control support bugs to <link "
 "href=\"https://bugzilla.gnome.org/\">GNOME bugzilla</link>."
 msgstr ""
-"Systèmes de contrôle de version moins courantes ou inhabituelles "
-"configurations peuvent ne pas être correctement testés; se il vous plaît "
-"rapporter tous les bugs de soutien de contrôle de version à <link href = "
-"\"https: //bugzilla.gnome.org/ \"> GNOME bugzilla </link>."
+"Systèmes de contrôle de version moins courantes ou configurations "
+"inhabituelles peuvent ne pas être correctement testés; se il vous plaît "
+"rapporter tous les bugs de soutien de contrôle de version à <link href\="https://"
+"bugzilla.gnome.org/\">GNOME bugzilla</link>."
 
 #. (itstool) path: info/title
 #: C/file-filters.page:5 C/text-filters.page:5 C/resolving-conflicts.page:5
@@ -173,11 +173,10 @@ msgid ""
 msgstr ""
 "<app>Meld</app> a plusieurs façons de contrôler quels fichiers et quel genre "
 "de différences que vous voyez. Vous pouvez filtrer sur la base <link xref="
-"\"# fichier-état-filtre \"> différences entre un fichier à travers des "
-"dossiers </link> ou <link xref=\"# nom de fichier filtre \"> noms de "
-"fichiers et de dossiers </ link>. Vous pouvez aussi dire <app> Meld </app> "
-"pour traiter les noms de fichiers comme étant <link xref =\"# fichier cas-"
-"filtre \"> cas </link> insensibles. Enfin, vous pouvez utiliser <link xref="
+"\"#file-state-filter\"> différences entre un fichier à travers des dossiers </"
+"link> ou <link xref=\"#file-name-filter\"> noms de fichiers et de dossiers </"
+"link>. Vous pouvez aussi dire <app>Meld</app> pour traiter les noms de "
+"fichiers comme étant <link xref=\"#file-case-filter\"> cas </link> insensibles. Enfin, vous pouvez utiliser <link xref="
 "\"text-filtres \"> filtres de texte </link> pour changer ce dossier et de "
 "fichier à la fois des comparaisons voir."
 
@@ -189,16 +188,16 @@ msgid ""
 "identical after all of the text filters are applied are not highlighted as "
 "being different, but are shown in italics."
 msgstr ""
-"Tout <link xref=\"text-filtres \"> filtres de texte </link> vous avez défini "
-"<em> appliquer automatiquement </em> lorsque l'on compare les dossiers. Les "
-"fichiers qui sont identiques après que tous les filtres de texte sont "
-"appliqués ne sont pas mis en évidence comme étant différent, mais sont "
+"Tout <link xref=\"text-filters \"> filtres de texte </link> vous avez "
+"défini <em> appliquer automatiquement </em> lorsque l'on compare les dossiers. "
+"Les fichiers qui sont identiques après que tous les filtres de texte sont appliqués"
+"ne sont pas mis en évidence comme étant différent, mais sont "
 "indiqués en italique."
 
 #. (itstool) path: section/title
 #: C/file-filters.page:48
 msgid "File differences filtering"
-msgstr "Différences de fichiers de filtrage"
+msgstr "Filtrage pour différences de fichiers"
 
 #. (itstool) path: section/p
 #: C/file-filters.page:50
@@ -208,10 +207,9 @@ msgid ""
 "is classified as being either <em>Modifed</em>, <em>New</em> or <em>Same</"
 "em>:"
 msgstr ""
-"Dans une comparaison de dossier, chaque ligne contient un seul fichier ou "
-"d'un dossier qui est présent dans au moins un des dossiers comparées. "
-"Chacune de ces lignes est classé comme étant soit <em>Modifé</em>, "
-"<em>Nouveau</em> ou <em>Même</em>:"
+"Dans une comparaison de dossier, chaque ligne contient un seul fichier ou dossier "
+"qui est présent dans au moins un des dossiers comparées. Chacune de ces "
+"lignes est classé comme étant soit <em>Modifé</em>, <em>Nouveau</em> ou <em>La même</em>:"
 
 #. (itstool) path: item/title
 #. (itstool) path: td/p
@@ -240,7 +238,7 @@ msgstr "Le fichier existe dans un dossier mais pas dans les autres"
 #. (itstool) path: td/p
 #: C/file-filters.page:66 C/vc-mode.page:93 C/folder-mode.page:118
 msgid "Same"
-msgstr "Même"
+msgstr "La même"
 
 #. (itstool) path: item/p
 #: C/file-filters.page:67
@@ -279,7 +277,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/file-filters.page:94
 msgid "Filename filtering"
-msgstr "Nom du fichier filtrage"
+msgstr "filtrage pour nom du fichier"
 
 #. (itstool) path: section/p
 #: C/file-filters.page:96
@@ -366,7 +364,7 @@ msgstr "<code>?</code>"
 #. (itstool) path: td/p
 #: C/file-filters.page:139
 msgid "exactly one character"
-msgstr "Iksäktli 1-gè karakta"
+msgstr "exactement un caractère"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:142
@@ -376,7 +374,7 @@ msgstr "<code>[abc]</code>"
 #. (itstool) path: td/p
 #: C/file-filters.page:143
 msgid "any one of the listed characters"
-msgstr "kiẑōŋ 1-gè listen karakta"
+msgstr "quelconque des caractères listés"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:146
@@ -391,12 +389,12 @@ msgstr "cualquier carácter <em>excepto</em> los listados"
 #. (itstool) path: td/p
 #: C/file-filters.page:150
 msgid "<code>{cat,dog}</code>"
-msgstr "<code>{meow,wow}</code>"
+msgstr "<code>{chat,faire}</code>"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:151
 msgid "either \"cat\" or \"dog\""
-msgstr "cualquiera de «gato» o «perro»"
+msgstr "quelconque de «chat» ou «faire»"
 
 #. (itstool) path: note/p
 #: C/file-filters.page:157
@@ -419,9 +417,8 @@ msgstr ""
 
 #. (itstool) path: section/title
 #: C/file-filters.page:174
-#, fuzzy
 msgid "Case insensitive filenames"
-msgstr "Sensibilité à la casse"
+msgstr "Noms de fichiers sensibilité à la casse"
 
 #. (itstool) path: section/p
 #: C/file-filters.page:176
@@ -452,9 +449,8 @@ msgstr ""
 
 #. (itstool) path: page/title
 #: C/text-filters.page:17
-#, fuzzy
 msgid "Filtering out text"
-msgstr "Filtre"
+msgstr "Filtrer texte"
 
 #. (itstool) path: page/p
 #: C/text-filters.page:19
@@ -486,7 +482,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/text-filters.page:37
 msgid "Adding and using text filters"
-msgstr "Äddiŋ en yusiŋ tekst filtèrs"
+msgstr "L'ajout et l'utilisation de filtres de texte"
 
 #. (itstool) path: section/p
 #: C/text-filters.page:39
@@ -532,7 +528,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/text-filters.page:67
 msgid "Getting text filters right"
-msgstr "Getiŋ tekst filtèrs korrekt"
+msgstr "Obtenir filtres de texte droite"
 
 #. (itstool) path: section/p
 #: C/text-filters.page:69
@@ -550,7 +546,7 @@ msgstr ""
 #. (itstool) path: listing/title
 #: C/text-filters.page:80
 msgid "<file>comment1.txt</file>"
-msgstr "<file>komment1.txt</file>"
+msgstr "<file>commentaire1.txt</file>"
 
 #. (itstool) path: listing/code
 #: C/text-filters.page:81
@@ -564,14 +560,14 @@ msgid ""
 msgstr ""
 "\n"
 "a\n"
-"b#komment\n"
+"b#commentaire\n"
 "c\n"
 "d"
 
 #. (itstool) path: listing/title
 #: C/text-filters.page:90
 msgid "<file>comment2.txt</file>"
-msgstr "<file>komment2.txt</file>"
+msgstr "<file>commentaire2.txt</file>"
 
 #. (itstool) path: listing/code
 #: C/text-filters.page:91
@@ -587,7 +583,7 @@ msgstr ""
 "a\n"
 "b\n"
 "c\n"
-"#komment"
+"#commentaire"
 
 #. (itstool) path: section/p
 #: C/text-filters.page:101
@@ -610,7 +606,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/text-filters.page:114
 msgid "Blank lines and filters"
-msgstr "Bläŋk lains en filtèrs"
+msgstr "Les lignes vides et les filtres"
 
 #. (itstool) path: section/p
 #: C/text-filters.page:116
@@ -737,9 +733,8 @@ msgstr ""
 
 #. (itstool) path: page/title
 #: C/file-changes.page:16
-#, fuzzy
 msgid "Dealing with changes"
-msgstr "Modifications"
+msgstr "Faire face aux les changements"
 
 #. (itstool) path: page/p
 #: C/file-changes.page:18
@@ -761,7 +756,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/file-changes.page:30
 msgid "Navigating between changes"
-msgstr "Navegar entre los cambios"
+msgstr "Naviguer entre les changements"
 
 #. (itstool) path: section/p
 #: C/file-changes.page:32
@@ -780,9 +775,8 @@ msgstr ""
 
 #. (itstool) path: section/title
 #: C/file-changes.page:46
-#, fuzzy
 msgid "Changing changes"
-msgstr "Modifications"
+msgstr "Modification des changements"
 
 #. (itstool) path: section/p
 #: C/file-changes.page:48
@@ -1730,7 +1724,8 @@ msgstr ""
 #: C/folder-mode.page:223
 msgid ""
 "Finally, the most recently modified file/folder has an emblem attached to it."
-msgstr "Lastli, zuigèn modifaien fayl/fouldèrs wa emblèm attaĉen."
+msgstr ""
+"Enfin, le fichier/dossier le plus récemment modifié a un emblème qui s'y rattachent."
 
 #. (itstool) path: page/title
 #: C/missing-functionality.page:15
@@ -1778,9 +1773,8 @@ msgstr ""
 
 #. (itstool) path: page/title
 #: C/command-line.page:15
-#, fuzzy
 msgid "Command line usage"
-msgstr "Paramètres de la ligne de commande"
+msgstr "Utilisation de la ligne de commande"
 
 #. (itstool) path: page/p
 #: C/command-line.page:17
