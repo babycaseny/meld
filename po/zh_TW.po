@@ -12,18 +12,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: meld master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=meld&keywords=I18N+L10N&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=meld&ke"
+"ywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-03-10 23:05+0000\n"
-"PO-Revision-Date: 2015-03-12 17:00+0800\n"
-"Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
+"PO-Revision-Date: 2015-03-13 18:29+0800\n"
+"Last-Translator: Tom K. C. Chiu <babycaseny@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 "X-Source-Language: C\n"
 
@@ -66,12 +66,15 @@ msgid "Compare and merge your files"
 msgstr "比對及合併您的檔案"
 
 #: ../data/meld.appdata.xml.in.h:1
+#, fuzzy
 msgid ""
 "Meld is a visual diff and merge tool targeted at developers. Meld helps you "
 "compare files, directories, and version controlled projects. It provides "
 "two- and three-way comparison of both files and directories, and supports "
 "many version control systems including Git, Mercurial, Bazaar and Subversion."
 msgstr ""
+"Meld 是一種視覺差異和合併工具針對開發商。融合可以幫助你比較文件，目錄和版本控制項目。它提供了文件和目錄的二路和三路比較，並支持多種版本控制系統，"
+"包括Git, Mercurial, Bazaar 和 Subversion。"
 
 #: ../data/meld.appdata.xml.in.h:2
 msgid ""
@@ -119,19 +122,19 @@ msgstr "這些文字編碼將自動（按順序）使用，以試圖解碼已經
 
 #: ../data/org.gnome.meld.gschema.xml.h:9
 msgid "Width of an indentation step"
-msgstr "縮排的每步寬度"
+msgstr "縮排每步的寬度"
 
 #: ../data/org.gnome.meld.gschema.xml.h:10
 msgid "The number of spaces to use for a single indent step"
-msgstr ""
+msgstr "縮排的每步寬度要用幾多個空白字元"
 
 #: ../data/org.gnome.meld.gschema.xml.h:11
 msgid "Whether to indent using spaces or tabs"
-msgstr ""
+msgstr "縮排用空白還是製表鍵。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:12
 msgid "If true, any new indentation will use spaces instead of tabs."
-msgstr ""
+msgstr "如果選了這項，新插入的縮排會用空白鍵而不是製表鍵。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:13
 msgid "Show line numbers"
@@ -139,7 +142,7 @@ msgstr "顯示行號"
 
 #: ../data/org.gnome.meld.gschema.xml.h:14
 msgid "If true, line numbers will be shown in the gutter of file comparisons."
-msgstr ""
+msgstr "如果選了這項，比對檔案時會在每行開首邊界以外顯示行號。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:15
 msgid "Highlight syntax"
@@ -352,7 +355,7 @@ msgstr ""
 msgid ""
 "If true, a guide will be displayed to show what column the margin is at in "
 "the version control commit message editor."
-msgstr ""
+msgstr "如果選了這項，在版本控制提交信息的編輯器會在右邊邊界所在的行顯示指示。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:57
 msgid "Margin column in commit message editor"
