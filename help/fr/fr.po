@@ -21,7 +21,6 @@ msgstr ""
 "X-Generator: Virtaal 0.7.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#, fuzzy
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
@@ -128,8 +127,8 @@ msgid ""
 msgstr ""
 "Systèmes de contrôle de version moins courantes ou configurations "
 "inhabituelles peuvent ne pas être correctement testés; se il vous plaît "
-"rapporter tous les bugs de soutien de contrôle de version à <link href\="https://"
-"bugzilla.gnome.org/\">GNOME bugzilla</link>."
+"rapporter tous les bugs de soutien de contrôle de version à <link "
+"href=\"https://bugzilla.gnome.org/\">GNOME bugzilla</link>."
 
 #. (itstool) path: info/title
 #: C/file-filters.page:5 C/text-filters.page:5 C/resolving-conflicts.page:5
@@ -157,7 +156,7 @@ msgstr ""
 "d'ignorer certains fichiers. Par exemple, vous pouvez voir que les fichiers "
 "qui sont présents et différent dans les deux dossiers, en ignorant ceux qui "
 "sont identiques ou ne existent que dans un seul dossier. Alternativement, "
-"vous pouvez ignorer tous les fichiers dans votre <file> .git </ fichier> "
+"vous pouvez ignorer tous les fichiers dans votre <file>.git</file> "
 "répertoire, ou ignorer toutes les images."
 
 #. (itstool) path: page/p
@@ -171,14 +170,13 @@ msgid ""
 "\">case insensitive</link>. Finally, you can use <link xref=\"text-filters"
 "\">text filters</link> to change what both folder and file comparisons see."
 msgstr ""
-"<app>Meld</app> a plusieurs façons de contrôler quels fichiers et quel genre "
-"de différences que vous voyez. Vous pouvez filtrer sur la base <link xref="
-"\"#file-state-filter\"> différences entre un fichier à travers des dossiers </"
-"link> ou <link xref=\"#file-name-filter\"> noms de fichiers et de dossiers </"
-"link>. Vous pouvez aussi dire <app>Meld</app> pour traiter les noms de "
-"fichiers comme étant <link xref=\"#file-case-filter\"> cas </link> insensibles. Enfin, vous pouvez utiliser <link xref="
-"\"text-filtres \"> filtres de texte </link> pour changer ce dossier et de "
-"fichier à la fois des comparaisons voir."
+"<app>Meld</app> a plusieurs façons de contrôler quels fichiers et "
+"quel genre de différences que vous voyez. Vous pouvez filtrer sur la base <link xref=\"#file-"
+"state-filter\"> différences entre un fichier à travers des dossiers </link> ou <link "
+"xref=\"#file-name-filter\"> noms de fichiers et de dossiers </link>. Vous pouvez aussi dire "
+"<app>Meld</app> pour traiter les noms de fichiers comme étant <link xref=\"#file-case-filter"
+"\">insensible à la casse</link>. Enfin, vous pouvez utiliser <link xref="\"text-filters"
+"\">filtres de texte</link> pour changer ce dossier et de fichier à la fois des comparaisons voir."
 
 #. (itstool) path: note/p
 #: C/file-filters.page:37
