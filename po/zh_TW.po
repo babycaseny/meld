@@ -123,15 +123,15 @@ msgstr "縮排的每步寬度"
 
 #: ../data/org.gnome.meld.gschema.xml.h:10
 msgid "The number of spaces to use for a single indent step"
-msgstr ""
+msgstr "縮排的每步寬度要用幾多個空白字元"
 
 #: ../data/org.gnome.meld.gschema.xml.h:11
 msgid "Whether to indent using spaces or tabs"
-msgstr ""
+msgstr "縮排用空白還是製表鍵。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:12
 msgid "If true, any new indentation will use spaces instead of tabs."
-msgstr ""
+msgstr "如果選了這項，新插入的縮排會用空白鍵而不是製表鍵。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:13
 msgid "Show line numbers"
@@ -139,7 +139,7 @@ msgstr "顯示列號"
 
 #: ../data/org.gnome.meld.gschema.xml.h:14
 msgid "If true, line numbers will be shown in the gutter of file comparisons."
-msgstr ""
+msgstr "如果選了這項，比對檔案時會在每行開首邊界以外顯示列號。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:15
 msgid "Highlight syntax"
@@ -322,7 +322,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:51
 msgid "Present version comparisons as left-local/right-remote"
-msgstr ""
+msgstr "現時的版本比對設定為左-本地/右-遠端"
 
 #: ../data/org.gnome.meld.gschema.xml.h:52
 msgid ""
@@ -341,6 +341,8 @@ msgid ""
 "preference only affects three-way comparisons launched from the version "
 "control view, so is used solely for merges/conflict resolution within Meld."
 msgstr ""
+"檔案順序的選擇為遠程/合併/本地或本地/合併/遠程。這選項只影響"
+"從版本控制視圖啟動的三方比對，所以在 Meld 只用於合併/解決衝突。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:55
 msgid "Show margin in commit message editor"
@@ -350,7 +352,7 @@ msgstr ""
 msgid ""
 "If true, a guide will be displayed to show what column the margin is at in "
 "the version control commit message editor."
-msgstr ""
+msgstr "如果選了這項，在版本控制提交信息的編輯器會在右邊邊界所在的行顯示指示。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:57
 msgid "Margin column in commit message editor"
@@ -1256,7 +1258,7 @@ msgstr "推送 (push) 本地提交到遠端？"
 #: ../data/ui/vcview.ui.h:37
 #, fuzzy
 msgid "The commits to be pushed are determined by your version control system."
-msgstr "要推送的提交由您的版本控制系統決定。"
+msgstr "要推送(push)的提交由您的版本控制系統決定。"
 
 #: ../data/ui/vcview.ui.h:38
 msgid "_Push commits"
@@ -1310,7 +1312,7 @@ msgstr "資料夾沒有差異"
 
 #: ../meld/dirdiff.py:853
 msgid "Contents of scanned files in folders are identical."
-msgstr ""
+msgstr "資料夾內已掃描檔案的內容一致。"
 
 #: ../meld/dirdiff.py:855
 msgid ""
@@ -1324,7 +1326,7 @@ msgstr ""
 
 #: ../meld/dirdiff.py:860
 msgid "Text filters are in use and may be masking content differences."
-msgstr ""
+msgstr "文字過濾器正在使用，可能會屏蔽不同之處。"
 
 #: ../meld/dirdiff.py:878 ../meld/dirdiff.py:931 ../meld/filediff.py:1115
 #: ../meld/filediff.py:1267 ../meld/filediff.py:1462 ../meld/filediff.py:1492
@@ -1374,6 +1376,8 @@ msgid ""
 "Another folder with the same name already exists in “%s”.\n"
 "If you replace the existing folder, all files in it will be lost."
 msgstr ""
+"在「%s」已有一個相同名稱的資料夾。\n"
+"如果您取代現有的資料夾的話，裡面的全部檔案會流失。"
 
 #: ../meld/dirdiff.py:986
 msgid "Error copying file"
@@ -1418,14 +1422,14 @@ msgstr "列  %i，行 %i"
 
 #: ../meld/filediff.py:821
 msgid "Comparison results will be inaccurate"
-msgstr "比較結果可能不準確"
+msgstr "比對結果可能不準確"
 
 #: ../meld/filediff.py:823
 #, python-format
 msgid ""
 "Filter “%s” changed the number of lines in the file, which is unsupported. "
 "The comparison will not be accurate."
-msgstr "「%s」過濾器更改了檔案的列數，但還尚未支援。比較結果可能不準確。"
+msgstr "「%s」過濾器更改了檔案的列數，但還尚未支援。比對結果可能不準確。"
 
 #: ../meld/filediff.py:894
 msgid "Mark conflict as resolved?"
@@ -1528,8 +1532,7 @@ msgid ""
 "Some changes were not highlighted because they were too large. You can force "
 "Meld to take longer to highlight larger changes, though this may be slow."
 msgstr ""
-"某些更改沒有標明，因為太大。您可以強制標明顯示大幅更改，盡管這可能會變得很"
-"慢。"
+"某些更改沒有標明，因為太大。您可以強制標明顯示大幅更改，盡管這可能會變得很慢。"
 
 #: ../meld/filediff.py:1496
 msgid "Keep highlighting"
@@ -2208,7 +2211,7 @@ msgstr "移除 %s 時發生錯誤"
 #~ "'%s' exists.\n"
 #~ "Overwrite?"
 #~ msgstr ""
-#~ "‘%s’已存在。\n"
+#~ "「%s」已存在。\n"
 #~ "覆寫它？"
 
 #~ msgid "%i second"
@@ -2257,5 +2260,6 @@ msgstr "移除 %s 時發生錯誤"
 #~ "\n"
 #~ "%s."
 #~ msgstr ""
+#~ "寫入 %s 時發生錯誤\n"
 #~ "\n"
 #~ "%s，"
