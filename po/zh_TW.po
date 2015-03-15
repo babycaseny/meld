@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=meld&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-03-10 23:05+0000\n"
-"PO-Revision-Date: 2015-03-16 00:57+0800\n"
+"PO-Revision-Date: 2015-03-16 01:41+0800\n"
 "Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: zh_TW\n"
@@ -150,6 +150,7 @@ msgid ""
 "Whether to highlight syntax in comparisons. Because of Meld's own color "
 "highlighting, this is off by default."
 msgstr ""
+"在比對時要不要語法標明。由於 Meld 預設會用本身的標明顏色，本項目預設為關。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:17
 msgid "Color scheme to use for syntax highlighting"
@@ -207,7 +208,7 @@ msgstr "使用自訂字型"
 msgid ""
 "The custom font to use, stored as a string and parsed as a Pango font "
 "description."
-msgstr ""
+msgstr "會使用的自訂字型，會以字串儲存，並作為 Pango 的字型描述來分析。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:29
 msgid "Ignore blank lines when comparing files"
@@ -216,7 +217,7 @@ msgstr "比較檔案時忽略空列"
 #: ../data/org.gnome.meld.gschema.xml.h:30
 msgid ""
 "If true, blank lines will be trimmed when highlighting changes between files."
-msgstr ""
+msgstr "如果選了這項，當標明檔案間的變更時，空列不會顯示。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:31
 msgid "Use the system default editor"
@@ -230,13 +231,14 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:33
 msgid "The custom editor launch command"
-msgstr ""
+msgstr "自訂編輯器的啟動命令"
 
 #: ../data/org.gnome.meld.gschema.xml.h:34
 msgid ""
 "The command used to launch a custom editor. Some limited templating is "
 "supported here; at the moment '{file}' and '{line}' are recognised tokens."
 msgstr ""
+"啟動自訂編輯器的命令。目前對模板的支持有限制：只認得「{file}」跟「{line}」。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:35
 msgid "Columns to display"
@@ -330,6 +332,8 @@ msgid ""
 "remote scheme to determine what order to present files in panes. Otherwise, "
 "a left-is-theirs, right-is-mine scheme is used."
 msgstr ""
+"如果選了這項，版本比對會使用「左-本地/右-遠端」的設定，否則會使用「右-本地/"
+"左-遠端」的設定。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:53
 msgid "Order for files in three-way version control merge comparisons"
@@ -341,12 +345,12 @@ msgid ""
 "preference only affects three-way comparisons launched from the version "
 "control view, so is used solely for merges/conflict resolution within Meld."
 msgstr ""
-"檔案順序的選擇為遠程/合併/本地或本地/合併/遠程。這選項只影響"
-"從版本控制視圖啟動的三方比對，所以在 Meld 只用於合併/解決衝突。"
+"檔案順序的選擇為遠程/合併/本地或本地/合併/遠程。這選項只影響從版本控制視圖啟"
+"動的三方比對，所以在 Meld 只用於合併/解決衝突。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:55
 msgid "Show margin in commit message editor"
-msgstr ""
+msgstr "提交信息編輯器會顯示右邊界"
 
 #: ../data/org.gnome.meld.gschema.xml.h:56
 msgid ""
@@ -1185,7 +1189,7 @@ msgstr "主控台"
 
 #: ../data/ui/vcview.ui.h:19
 msgid "Show or hide the version control console output pane"
-msgstr ""
+msgstr "顯示或隱藏版本控制狀態窗格"
 
 #: ../data/ui/vcview.ui.h:20
 msgid "_Flatten"
@@ -1256,7 +1260,6 @@ msgid "Push local commits to remote?"
 msgstr "推送 (push) 本地提交到遠端？"
 
 #: ../data/ui/vcview.ui.h:37
-#, fuzzy
 msgid "The commits to be pushed are determined by your version control system."
 msgstr "要推送(push)的提交由您的版本控制系統決定。"
 
@@ -1318,11 +1321,11 @@ msgstr "資料夾內已掃描檔案的內容一致。"
 msgid ""
 "Scanned files in folders appear identical, but contents have not been "
 "scanned."
-msgstr ""
+msgstr "資料夾內已掃描的檔案似乎一致，但其內容未有掃描。"
 
 #: ../meld/dirdiff.py:858
 msgid "File filters are in use, so not all files have been scanned."
-msgstr ""
+msgstr "檔案過濾器正在使用，未必能掃描所有檔案。"
 
 #: ../meld/dirdiff.py:860
 msgid "Text filters are in use and may be masking content differences."
@@ -1532,7 +1535,8 @@ msgid ""
 "Some changes were not highlighted because they were too large. You can force "
 "Meld to take longer to highlight larger changes, though this may be slow."
 msgstr ""
-"某些更改沒有標明，因為太大。您可以強制標明顯示大幅更改，盡管這可能會變得很慢。"
+"某些更改沒有標明，因為太大。您可以強制標明顯示大幅更改，盡管這可能會變得很"
+"慢。"
 
 #: ../meld/filediff.py:1496
 msgid "Keep highlighting"
