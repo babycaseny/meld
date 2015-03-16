@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="keyboard-shortcuts" xml:lang="fr">
+<info>
+  <title type="sort">2</title>
+  <link type="guide" xref="index#advanced"/>
+  <revision docversion="1.6" status="draft"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  </info>
+<title>Kībōd šortkùts</title>
+
+<table frame="top bottom">
+  <title>Šortkùts für wörkiŋ wiŧ fayls en kompäreiçions</title>
+
+  <thead>
+    <tr>
+      <td><p>Šortkùts </p></td><td><p>Diskraipçion</p></td>
+    </tr>
+  </thead>
+
+  <!-- File shortcuts -->
+  <tbody>
+    <tr>
+      <td><p><keyseq><key>Ktrl</key><key>N</key></keyseq></p></td>
+      <td><p>Start pikka kompäreiçion.</p></td>
+    </tr>
+    <tr>
+      <td><p><keyseq><key>Ktrl</key><key>S</key></keyseq></p></td>
+      <td><p>Seiv körrènt dokyumènt tu disk.</p></td>
+    </tr>
+    <tr>
+      <td><p><keyseq><key>Ktrl</key><key>Šift</key><key>S</key></keyseq></p></td>
+      <td><p>Seiv körrènt dokyumènt wiŧ niu faylneim. </p></td>
+    </tr>
+    <tr>
+      <td><p><keyseq><key>Ktrl</key><key>W</key></keyseq></p></td>
+      <td><p>Klos körrènt kompäreiçion.</p></td>
+    </tr>
+    <tr>
+      <td><p><keyseq><key>Ktrl</key><key>Q</key></keyseq></p></td>
+      <td><p><app>Meld</app> wa ziuru.</p></td>
+    </tr>
+  </tbody>
+</table>
+
+<table frame="top bottom">
+  <title>Šortkùts für editiŋ dokyumènts</title>
+
+  <thead>
+    <tr>
+      <td><p>Šortkùts </p></td><td><p>Diskraipçion</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p><keyseq><key>Ktrl</key><key>Z</key></keyseq></p></td>
+      <td><p>Ùndiodio priv akçion.</p></td>
+    </tr>
+    <tr>
+      <td><p><keyseq><key>Ktrl</key><key>Šift</key><key>Z</key></keyseq></p></td>
+      <td><p>Rīapplai priv ùndiodio-zo gè akçion.</p></td>
+    </tr>
+    <tr>
+      <td><p><keyseq><key>Ktrl</key><key>X</key></keyseq></p></td>
+      <td><p>Kùt silekten tekst or rijion en peist ontu klipbod.</p></td>
+    </tr>
+    <tr>
+      <td><p><keyseq><key>Ktrl</key><key>C</key></keyseq></p></td>
+      <td><p>Kopi silekten tekst or rijion ontu klipbôd.</p></td>
+    </tr>
+    <tr>
+      <td><p><keyseq><key>Ktrl</key><key>V</key></keyseq></p></td>
+      <td><p>Pegar el contenido del portapapeles.</p></td>
+    </tr>
+    <tr>
+      <td><p><keyseq><key>Ktrl</key><key>F</key></keyseq></p></td>
+      <td><p>Find a string.</p></td>
+    </tr>
+    <tr>
+      <td><p><keyseq><key>Ktrl</key><key>G</key></keyseq></p></td>
+      <td><p>Söč striŋ dè nèist instàns</p></td>
+    </tr>
+    <tr>
+      <td><p><keyseq><key>Alt</key><key>Ùp</key></keyseq></p></td>
+      <td><p>Ir a la siguiente diferencia. (También <keyseq><key>Ktrl</key><key>D</key></keyseq>)</p></td>
+    </tr>
+    <tr>
+      <td><p><keyseq><key>Alt</key><key>Ùp</key></keyseq></p></td>
+      <td><p>Goutu priv diffèrèns. (Osou <keyseq><key>Ktrl</key><key>E</key></keyseq>)</p></td>
+    </tr>
+  </tbody>
+</table>
+
+<table frame="top bottom">
+  <title>Šortkùts für vyu setiŋs</title>
+
+  <thead>
+    <tr>
+      <td><p>Šortkùts </p></td><td><p>Diskraipçion</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p><keyseq><key>Esc</key></keyseq></p></td>
+      <td><p>Stop körrènt kompäreiçion.</p></td>
+    </tr>
+    <tr>
+      <td><p><keyseq><key>Ktrl</key><key>R</key></keyseq></p></td>
+      <td><p>Rīfreš körrènt kompäreiçion.</p></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table frame="top bottom">
+  <title>Šortkùts für help</title>
+
+  <thead>
+    <tr>
+      <td><p>Šortkùts </p></td><td><p>Diskraipçion</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p><keyseq><key>F1</key></keyseq></p></td>
+      <td><p>Opèn <app>Meld</app> dè yusa manyuol.</p></td>
+    </tr>
+  </tbody>
+</table>
+
+</page>

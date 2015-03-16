@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="index" xml:lang="fr">
+	<info>
+      <revision docversion="1.6" status="draft"/>
+      <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+      <credit type="author copyright">
+        <name>Kai Willadsen</name>
+        <email>kai.willadsen@gmail.com</email>
+        <years>2012</years>
+      </credit>
+	
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Meld dè Help</title>
+
+	<section id="introduction" style="2column">
+	    <title>Introduction</title>
+	</section>
+
+	<section id="file-mode" style="2column">
+		<title>Kompäring Fayls</title>
+	</section>
+
+	<section id="folder-mode" style="2column">
+		<title>Kompäriŋ Fouldèrs</title>
+	</section>
+
+	<section id="vc-mode" style="2column">
+		<title>Yusiŋ Meld wiŧ Vörçion Koncrol</title>
+	</section>
+
+	<section id="advanced" style="2column">
+		<title>Gokab yuseij</title>
+	</section>
+</page>
