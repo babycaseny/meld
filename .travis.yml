@@ -2,3 +2,8 @@ os:
   - linux
   - osx
 language: python
+install:
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get -qq update; fi
+  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew update; fi
+before_script: mkdir build && pushd build
+  - python ./setup.py -v install
