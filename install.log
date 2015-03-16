@@ -1,0 +1,261 @@
+running install
+running build
+running build_py
+copying meld/conf.py-installed -> build/lib.linux-x86_64-2.7/meld/conf.py
+running build_scripts
+running build_i18n
+intltool-update -p -g meld
+running build_icons
+running build_help
+msgfmt help/el/el.po -o build/help/el/el.mo
+itstool -m build/help/el/el.mo -o build/help/el help/C/vc-mode.page
+itstool -m build/help/el/el.mo -o build/help/el help/C/file-changes.page
+itstool -m build/help/el/el.mo -o build/help/el help/C/folder-mode.page
+itstool -m build/help/el/el.mo -o build/help/el help/C/missing-functionality.page
+itstool -m build/help/el/el.mo -o build/help/el help/C/index.page
+itstool -m build/help/el/el.mo -o build/help/el help/C/introduction.page
+itstool -m build/help/el/el.mo -o build/help/el help/C/preferences.page
+itstool -m build/help/el/el.mo -o build/help/el help/C/file-mode.page
+itstool -m build/help/el/el.mo -o build/help/el help/C/flattened-view.page
+itstool -m build/help/el/el.mo -o build/help/el help/C/command-line.page
+itstool -m build/help/el/el.mo -o build/help/el help/C/file-filters.page
+itstool -m build/help/el/el.mo -o build/help/el help/C/text-filters.page
+itstool -m build/help/el/el.mo -o build/help/el help/C/resolving-conflicts.page
+itstool -m build/help/el/el.mo -o build/help/el help/C/keyboard-shortcuts.page
+itstool -m build/help/el/el.mo -o build/help/el help/C/vc-supported.page
+copying help/C/vc-mode.page -> build/help/C
+copying help/C/file-changes.page -> build/help/C
+copying help/C/folder-mode.page -> build/help/C
+copying help/C/missing-functionality.page -> build/help/C
+copying help/C/buildwebhelp.py -> build/help/C
+copying help/C/index.page -> build/help/C
+copying help/C/introduction.page -> build/help/C
+copying help/C/preferences.page -> build/help/C
+copying help/C/file-mode.page -> build/help/C
+copying help/C/flattened-view.page -> build/help/C
+copying help/C/legal.xml -> build/help/C
+copying help/C/command-line.page -> build/help/C
+copying help/C/file-filters.page -> build/help/C
+copying help/C/text-filters.page -> build/help/C
+copying help/C/resolving-conflicts.page -> build/help/C
+copying help/C/keyboard-shortcuts.page -> build/help/C
+copying help/C/vc-supported.page -> build/help/C
+msgfmt help/de/de.po -o build/help/de/de.mo
+itstool -m build/help/de/de.mo -o build/help/de help/C/vc-mode.page
+itstool -m build/help/de/de.mo -o build/help/de help/C/file-changes.page
+itstool -m build/help/de/de.mo -o build/help/de help/C/folder-mode.page
+itstool -m build/help/de/de.mo -o build/help/de help/C/missing-functionality.page
+itstool -m build/help/de/de.mo -o build/help/de help/C/index.page
+itstool -m build/help/de/de.mo -o build/help/de help/C/introduction.page
+itstool -m build/help/de/de.mo -o build/help/de help/C/preferences.page
+itstool -m build/help/de/de.mo -o build/help/de help/C/file-mode.page
+itstool -m build/help/de/de.mo -o build/help/de help/C/flattened-view.page
+itstool -m build/help/de/de.mo -o build/help/de help/C/command-line.page
+itstool -m build/help/de/de.mo -o build/help/de help/C/file-filters.page
+itstool -m build/help/de/de.mo -o build/help/de help/C/text-filters.page
+itstool -m build/help/de/de.mo -o build/help/de help/C/resolving-conflicts.page
+itstool -m build/help/de/de.mo -o build/help/de help/C/keyboard-shortcuts.page
+itstool -m build/help/de/de.mo -o build/help/de help/C/vc-supported.page
+msgfmt help/zh_TW/zh_TW.po -o build/help/zh_TW/zh_TW.mo
+itstool -m build/help/zh_TW/zh_TW.mo -o build/help/zh_TW help/C/vc-mode.page
+itstool -m build/help/zh_TW/zh_TW.mo -o build/help/zh_TW help/C/file-changes.page
+itstool -m build/help/zh_TW/zh_TW.mo -o build/help/zh_TW help/C/folder-mode.page
+itstool -m build/help/zh_TW/zh_TW.mo -o build/help/zh_TW help/C/missing-functionality.page
+itstool -m build/help/zh_TW/zh_TW.mo -o build/help/zh_TW help/C/index.page
+itstool -m build/help/zh_TW/zh_TW.mo -o build/help/zh_TW help/C/introduction.page
+itstool -m build/help/zh_TW/zh_TW.mo -o build/help/zh_TW help/C/preferences.page
+itstool -m build/help/zh_TW/zh_TW.mo -o build/help/zh_TW help/C/file-mode.page
+itstool -m build/help/zh_TW/zh_TW.mo -o build/help/zh_TW help/C/flattened-view.page
+itstool -m build/help/zh_TW/zh_TW.mo -o build/help/zh_TW help/C/command-line.page
+itstool -m build/help/zh_TW/zh_TW.mo -o build/help/zh_TW help/C/file-filters.page
+itstool -m build/help/zh_TW/zh_TW.mo -o build/help/zh_TW help/C/text-filters.page
+itstool -m build/help/zh_TW/zh_TW.mo -o build/help/zh_TW help/C/resolving-conflicts.page
+itstool -m build/help/zh_TW/zh_TW.mo -o build/help/zh_TW help/C/keyboard-shortcuts.page
+itstool -m build/help/zh_TW/zh_TW.mo -o build/help/zh_TW help/C/vc-supported.page
+msgfmt help/bb/bb.po -o build/help/bb/bb.mo
+itstool -m build/help/bb/bb.mo -o build/help/bb help/C/vc-mode.page
+itstool -m build/help/bb/bb.mo -o build/help/bb help/C/file-changes.page
+itstool -m build/help/bb/bb.mo -o build/help/bb help/C/folder-mode.page
+itstool -m build/help/bb/bb.mo -o build/help/bb help/C/missing-functionality.page
+itstool -m build/help/bb/bb.mo -o build/help/bb help/C/index.page
+itstool -m build/help/bb/bb.mo -o build/help/bb help/C/introduction.page
+itstool -m build/help/bb/bb.mo -o build/help/bb help/C/preferences.page
+itstool -m build/help/bb/bb.mo -o build/help/bb help/C/file-mode.page
+itstool -m build/help/bb/bb.mo -o build/help/bb help/C/flattened-view.page
+itstool -m build/help/bb/bb.mo -o build/help/bb help/C/command-line.page
+itstool -m build/help/bb/bb.mo -o build/help/bb help/C/file-filters.page
+itstool -m build/help/bb/bb.mo -o build/help/bb help/C/text-filters.page
+itstool -m build/help/bb/bb.mo -o build/help/bb help/C/resolving-conflicts.page
+itstool -m build/help/bb/bb.mo -o build/help/bb help/C/keyboard-shortcuts.page
+itstool -m build/help/bb/bb.mo -o build/help/bb help/C/vc-supported.page
+msgfmt help/cs/cs.po -o build/help/cs/cs.mo
+itstool -m build/help/cs/cs.mo -o build/help/cs help/C/vc-mode.page
+itstool -m build/help/cs/cs.mo -o build/help/cs help/C/file-changes.page
+itstool -m build/help/cs/cs.mo -o build/help/cs help/C/folder-mode.page
+itstool -m build/help/cs/cs.mo -o build/help/cs help/C/missing-functionality.page
+itstool -m build/help/cs/cs.mo -o build/help/cs help/C/index.page
+itstool -m build/help/cs/cs.mo -o build/help/cs help/C/introduction.page
+itstool -m build/help/cs/cs.mo -o build/help/cs help/C/preferences.page
+itstool -m build/help/cs/cs.mo -o build/help/cs help/C/file-mode.page
+itstool -m build/help/cs/cs.mo -o build/help/cs help/C/flattened-view.page
+itstool -m build/help/cs/cs.mo -o build/help/cs help/C/command-line.page
+itstool -m build/help/cs/cs.mo -o build/help/cs help/C/file-filters.page
+itstool -m build/help/cs/cs.mo -o build/help/cs help/C/text-filters.page
+itstool -m build/help/cs/cs.mo -o build/help/cs help/C/resolving-conflicts.page
+itstool -m build/help/cs/cs.mo -o build/help/cs help/C/keyboard-shortcuts.page
+itstool -m build/help/cs/cs.mo -o build/help/cs help/C/vc-supported.page
+msgfmt help/es/es.po -o build/help/es/es.mo
+itstool -m build/help/es/es.mo -o build/help/es help/C/vc-mode.page
+itstool -m build/help/es/es.mo -o build/help/es help/C/file-changes.page
+itstool -m build/help/es/es.mo -o build/help/es help/C/folder-mode.page
+itstool -m build/help/es/es.mo -o build/help/es help/C/missing-functionality.page
+itstool -m build/help/es/es.mo -o build/help/es help/C/index.page
+itstool -m build/help/es/es.mo -o build/help/es help/C/introduction.page
+itstool -m build/help/es/es.mo -o build/help/es help/C/preferences.page
+itstool -m build/help/es/es.mo -o build/help/es help/C/file-mode.page
+itstool -m build/help/es/es.mo -o build/help/es help/C/flattened-view.page
+itstool -m build/help/es/es.mo -o build/help/es help/C/command-line.page
+itstool -m build/help/es/es.mo -o build/help/es help/C/file-filters.page
+itstool -m build/help/es/es.mo -o build/help/es help/C/text-filters.page
+itstool -m build/help/es/es.mo -o build/help/es help/C/resolving-conflicts.page
+itstool -m build/help/es/es.mo -o build/help/es help/C/keyboard-shortcuts.page
+itstool -m build/help/es/es.mo -o build/help/es help/C/vc-supported.page
+msgfmt help/sv/sv.po -o build/help/sv/sv.mo
+itstool -m build/help/sv/sv.mo -o build/help/sv help/C/vc-mode.page
+itstool -m build/help/sv/sv.mo -o build/help/sv help/C/file-changes.page
+itstool -m build/help/sv/sv.mo -o build/help/sv help/C/folder-mode.page
+itstool -m build/help/sv/sv.mo -o build/help/sv help/C/missing-functionality.page
+itstool -m build/help/sv/sv.mo -o build/help/sv help/C/index.page
+itstool -m build/help/sv/sv.mo -o build/help/sv help/C/introduction.page
+itstool -m build/help/sv/sv.mo -o build/help/sv help/C/preferences.page
+itstool -m build/help/sv/sv.mo -o build/help/sv help/C/file-mode.page
+itstool -m build/help/sv/sv.mo -o build/help/sv help/C/flattened-view.page
+itstool -m build/help/sv/sv.mo -o build/help/sv help/C/command-line.page
+itstool -m build/help/sv/sv.mo -o build/help/sv help/C/file-filters.page
+itstool -m build/help/sv/sv.mo -o build/help/sv help/C/text-filters.page
+itstool -m build/help/sv/sv.mo -o build/help/sv help/C/resolving-conflicts.page
+itstool -m build/help/sv/sv.mo -o build/help/sv help/C/keyboard-shortcuts.page
+itstool -m build/help/sv/sv.mo -o build/help/sv help/C/vc-supported.page
+xmllint --noout --noent --path build/help/el --xinclude build/help/el/vc-mode.page
+xmllint --noout --noent --path build/help/el --xinclude build/help/el/file-changes.page
+xmllint --noout --noent --path build/help/el --xinclude build/help/el/folder-mode.page
+xmllint --noout --noent --path build/help/el --xinclude build/help/el/missing-functionality.page
+xmllint --noout --noent --path build/help/el --xinclude build/help/el/index.page
+xmllint --noout --noent --path build/help/el --xinclude build/help/el/introduction.page
+xmllint --noout --noent --path build/help/el --xinclude build/help/el/preferences.page
+xmllint --noout --noent --path build/help/el --xinclude build/help/el/file-mode.page
+xmllint --noout --noent --path build/help/el --xinclude build/help/el/flattened-view.page
+xmllint --noout --noent --path build/help/el --xinclude build/help/el/command-line.page
+xmllint --noout --noent --path build/help/el --xinclude build/help/el/file-filters.page
+xmllint --noout --noent --path build/help/el --xinclude build/help/el/text-filters.page
+xmllint --noout --noent --path build/help/el --xinclude build/help/el/resolving-conflicts.page
+xmllint --noout --noent --path build/help/el --xinclude build/help/el/keyboard-shortcuts.page
+xmllint --noout --noent --path build/help/el --xinclude build/help/el/vc-supported.page
+xmllint --noout --noent --path build/help/C --xinclude build/help/C/vc-mode.page
+xmllint --noout --noent --path build/help/C --xinclude build/help/C/file-changes.page
+xmllint --noout --noent --path build/help/C --xinclude build/help/C/folder-mode.page
+xmllint --noout --noent --path build/help/C --xinclude build/help/C/missing-functionality.page
+xmllint --noout --noent --path build/help/C --xinclude build/help/C/index.page
+xmllint --noout --noent --path build/help/C --xinclude build/help/C/introduction.page
+xmllint --noout --noent --path build/help/C --xinclude build/help/C/preferences.page
+xmllint --noout --noent --path build/help/C --xinclude build/help/C/file-mode.page
+xmllint --noout --noent --path build/help/C --xinclude build/help/C/flattened-view.page
+xmllint --noout --noent --path build/help/C --xinclude build/help/C/command-line.page
+xmllint --noout --noent --path build/help/C --xinclude build/help/C/file-filters.page
+xmllint --noout --noent --path build/help/C --xinclude build/help/C/text-filters.page
+xmllint --noout --noent --path build/help/C --xinclude build/help/C/resolving-conflicts.page
+xmllint --noout --noent --path build/help/C --xinclude build/help/C/keyboard-shortcuts.page
+xmllint --noout --noent --path build/help/C --xinclude build/help/C/vc-supported.page
+xmllint --noout --noent --path build/help/de --xinclude build/help/de/vc-mode.page
+xmllint --noout --noent --path build/help/de --xinclude build/help/de/file-changes.page
+xmllint --noout --noent --path build/help/de --xinclude build/help/de/folder-mode.page
+xmllint --noout --noent --path build/help/de --xinclude build/help/de/missing-functionality.page
+xmllint --noout --noent --path build/help/de --xinclude build/help/de/index.page
+xmllint --noout --noent --path build/help/de --xinclude build/help/de/introduction.page
+xmllint --noout --noent --path build/help/de --xinclude build/help/de/preferences.page
+xmllint --noout --noent --path build/help/de --xinclude build/help/de/file-mode.page
+xmllint --noout --noent --path build/help/de --xinclude build/help/de/flattened-view.page
+xmllint --noout --noent --path build/help/de --xinclude build/help/de/command-line.page
+xmllint --noout --noent --path build/help/de --xinclude build/help/de/file-filters.page
+xmllint --noout --noent --path build/help/de --xinclude build/help/de/text-filters.page
+xmllint --noout --noent --path build/help/de --xinclude build/help/de/resolving-conflicts.page
+xmllint --noout --noent --path build/help/de --xinclude build/help/de/keyboard-shortcuts.page
+xmllint --noout --noent --path build/help/de --xinclude build/help/de/vc-supported.page
+xmllint --noout --noent --path build/help/zh_TW --xinclude build/help/zh_TW/vc-mode.page
+xmllint --noout --noent --path build/help/zh_TW --xinclude build/help/zh_TW/file-changes.page
+xmllint --noout --noent --path build/help/zh_TW --xinclude build/help/zh_TW/folder-mode.page
+xmllint --noout --noent --path build/help/zh_TW --xinclude build/help/zh_TW/missing-functionality.page
+xmllint --noout --noent --path build/help/zh_TW --xinclude build/help/zh_TW/index.page
+xmllint --noout --noent --path build/help/zh_TW --xinclude build/help/zh_TW/introduction.page
+xmllint --noout --noent --path build/help/zh_TW --xinclude build/help/zh_TW/preferences.page
+xmllint --noout --noent --path build/help/zh_TW --xinclude build/help/zh_TW/file-mode.page
+xmllint --noout --noent --path build/help/zh_TW --xinclude build/help/zh_TW/flattened-view.page
+xmllint --noout --noent --path build/help/zh_TW --xinclude build/help/zh_TW/command-line.page
+xmllint --noout --noent --path build/help/zh_TW --xinclude build/help/zh_TW/file-filters.page
+xmllint --noout --noent --path build/help/zh_TW --xinclude build/help/zh_TW/text-filters.page
+xmllint --noout --noent --path build/help/zh_TW --xinclude build/help/zh_TW/resolving-conflicts.page
+xmllint --noout --noent --path build/help/zh_TW --xinclude build/help/zh_TW/keyboard-shortcuts.page
+xmllint --noout --noent --path build/help/zh_TW --xinclude build/help/zh_TW/vc-supported.page
+xmllint --noout --noent --path build/help/bb --xinclude build/help/bb/vc-mode.page
+xmllint --noout --noent --path build/help/bb --xinclude build/help/bb/file-changes.page
+xmllint --noout --noent --path build/help/bb --xinclude build/help/bb/folder-mode.page
+xmllint --noout --noent --path build/help/bb --xinclude build/help/bb/missing-functionality.page
+xmllint --noout --noent --path build/help/bb --xinclude build/help/bb/index.page
+xmllint --noout --noent --path build/help/bb --xinclude build/help/bb/introduction.page
+xmllint --noout --noent --path build/help/bb --xinclude build/help/bb/preferences.page
+xmllint --noout --noent --path build/help/bb --xinclude build/help/bb/file-mode.page
+xmllint --noout --noent --path build/help/bb --xinclude build/help/bb/flattened-view.page
+xmllint --noout --noent --path build/help/bb --xinclude build/help/bb/command-line.page
+xmllint --noout --noent --path build/help/bb --xinclude build/help/bb/file-filters.page
+xmllint --noout --noent --path build/help/bb --xinclude build/help/bb/text-filters.page
+xmllint --noout --noent --path build/help/bb --xinclude build/help/bb/resolving-conflicts.page
+xmllint --noout --noent --path build/help/bb --xinclude build/help/bb/keyboard-shortcuts.page
+xmllint --noout --noent --path build/help/bb --xinclude build/help/bb/vc-supported.page
+xmllint --noout --noent --path build/help/cs --xinclude build/help/cs/vc-mode.page
+xmllint --noout --noent --path build/help/cs --xinclude build/help/cs/file-changes.page
+xmllint --noout --noent --path build/help/cs --xinclude build/help/cs/folder-mode.page
+xmllint --noout --noent --path build/help/cs --xinclude build/help/cs/missing-functionality.page
+xmllint --noout --noent --path build/help/cs --xinclude build/help/cs/index.page
+xmllint --noout --noent --path build/help/cs --xinclude build/help/cs/introduction.page
+xmllint --noout --noent --path build/help/cs --xinclude build/help/cs/preferences.page
+xmllint --noout --noent --path build/help/cs --xinclude build/help/cs/file-mode.page
+xmllint --noout --noent --path build/help/cs --xinclude build/help/cs/flattened-view.page
+xmllint --noout --noent --path build/help/cs --xinclude build/help/cs/command-line.page
+xmllint --noout --noent --path build/help/cs --xinclude build/help/cs/file-filters.page
+xmllint --noout --noent --path build/help/cs --xinclude build/help/cs/text-filters.page
+xmllint --noout --noent --path build/help/cs --xinclude build/help/cs/resolving-conflicts.page
+xmllint --noout --noent --path build/help/cs --xinclude build/help/cs/keyboard-shortcuts.page
+xmllint --noout --noent --path build/help/cs --xinclude build/help/cs/vc-supported.page
+xmllint --noout --noent --path build/help/es --xinclude build/help/es/vc-mode.page
+xmllint --noout --noent --path build/help/es --xinclude build/help/es/file-changes.page
+xmllint --noout --noent --path build/help/es --xinclude build/help/es/folder-mode.page
+xmllint --noout --noent --path build/help/es --xinclude build/help/es/missing-functionality.page
+xmllint --noout --noent --path build/help/es --xinclude build/help/es/index.page
+xmllint --noout --noent --path build/help/es --xinclude build/help/es/introduction.page
+xmllint --noout --noent --path build/help/es --xinclude build/help/es/preferences.page
+xmllint --noout --noent --path build/help/es --xinclude build/help/es/file-mode.page
+xmllint --noout --noent --path build/help/es --xinclude build/help/es/flattened-view.page
+xmllint --noout --noent --path build/help/es --xinclude build/help/es/command-line.page
+xmllint --noout --noent --path build/help/es --xinclude build/help/es/file-filters.page
+xmllint --noout --noent --path build/help/es --xinclude build/help/es/text-filters.page
+xmllint --noout --noent --path build/help/es --xinclude build/help/es/resolving-conflicts.page
+xmllint --noout --noent --path build/help/es --xinclude build/help/es/keyboard-shortcuts.page
+xmllint --noout --noent --path build/help/es --xinclude build/help/es/vc-supported.page
+xmllint --noout --noent --path build/help/sv --xinclude build/help/sv/vc-mode.page
+xmllint --noout --noent --path build/help/sv --xinclude build/help/sv/file-changes.page
+xmllint --noout --noent --path build/help/sv --xinclude build/help/sv/folder-mode.page
+xmllint --noout --noent --path build/help/sv --xinclude build/help/sv/missing-functionality.page
+xmllint --noout --noent --path build/help/sv --xinclude build/help/sv/index.page
+xmllint --noout --noent --path build/help/sv --xinclude build/help/sv/introduction.page
+xmllint --noout --noent --path build/help/sv --xinclude build/help/sv/preferences.page
+xmllint --noout --noent --path build/help/sv --xinclude build/help/sv/file-mode.page
+xmllint --noout --noent --path build/help/sv --xinclude build/help/sv/flattened-view.page
+xmllint --noout --noent --path build/help/sv --xinclude build/help/sv/command-line.page
+xmllint --noout --noent --path build/help/sv --xinclude build/help/sv/file-filters.page
+xmllint --noout --noent --path build/help/sv --xinclude build/help/sv/text-filters.page
+xmllint --noout --noent --path build/help/sv --xinclude build/help/sv/resolving-conflicts.page
+xmllint --noout --noent --path build/help/sv --xinclude build/help/sv/keyboard-shortcuts.page
+xmllint --noout --noent --path build/help/sv --xinclude build/help/sv/vc-supported.page
+running build_data
+running install_lib
+copying build/lib.linux-x86_64-2.7/meld/conf.py -> /usr/lib/python2.7/dist-packages/meld
