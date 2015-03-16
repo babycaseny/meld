@@ -1,0 +1,5 @@
+Warning: Could not merge cs translation for msgid:
+For example, when using <app>Git</app>, <cmd>git mergetool</cmd> will start a 'merge helper'; <app>Meld</app> is one such helper. If you want to make <app>git mergetool</app> use <app>Meld</app> by default, you can add
+Warning: Could not merge sv translation for msgid:
+<app>Meld</app> has several different ways of controlling which files and what kind of differences you see. You can filter based on <link xref="#file-state-filter">differences between a file across folders</link> or <link xref="#file-name-filter">file and folder names</link>. You can also tell <app>Meld</app> to treat filenames as being <link xref="#file-case-filter">case insensitive</link>. Finally, you can use <link xref="text-filters">text filters</link> to change what both folder and file comparisons see.
+error: could not delete '/usr/lib/python2.7/dist-packages/meld/conf.py': Permission denied
