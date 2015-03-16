@@ -259,7 +259,7 @@ msgstr ""
 "comparaison actuel en utilisant <gui style=\"button\">La Même</gui>, <gui "
 "style=\"button\">Nouveau</gui> et <gui style=\"button\">Modifié</gui> du "
 "bouton de herramientas o del menú <guiseq><gui style=\"menu\">Vista</gui><"
-"gui style=\"menuitem\">Estado del archivo</gui></guiseq>."
+"gui style=\"menuitem\">Etat du fichier</gui></guiseq>."
 
 #. (itstool) path: note/p
 #: C/file-filters.page:80
