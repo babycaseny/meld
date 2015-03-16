@@ -1,0 +1,14 @@
+char *s = N_("New comparison");
+char *s = N_("File comparison");
+char *s = N_("Directory comparison");
+char *s = N_("Version control view");
+char *s = N_("_3-way comparison");
+char *s = N_("Select Third File");
+char *s = N_("Select Second File");
+char *s = N_("Select First File");
+char *s = N_("Select First Folder");
+char *s = N_("Select Second Folder");
+char *s = N_("Select Third Folder");
+char *s = N_("Select A Version-Controlled Folder");
+char *s = N_("_Blank comparison");
+char *s = N_("C_ompare");
