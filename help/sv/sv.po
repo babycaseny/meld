@@ -1,4 +1,3 @@
-# Babyish translation for meld.
 # Copyright (C) 2004 THE meld'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the meld package.
 # Tom K. C. Chiu <tomchiukc@gmail.com>, 2014-2015.
@@ -9,8 +8,8 @@ msgstr ""
 "Project-Id-Version: meld\n"
 "Report-Msgid-Bugs-To: Stephen Kennedy <stevek@gnome.org>\n"
 "POT-Creation-Date: 2007-01-23 20:55+0000\n"
-"PO-Revision-Date: 2015-02-12 19:00+0800\n"
-"Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
+"PO-Revision-Date: 2015-03-15 01:08+0800\n"
+"Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
@@ -137,7 +136,7 @@ msgstr "2"
 #. (itstool) path: page/title
 #: C/file-filters.page:15
 msgid "Filtering out files"
-msgstr "Filtèriŋ fayls out"
+msgstr "Filtrera bort filer"
 
 #. (itstool) path: page/p
 #: C/file-filters.page:17
@@ -165,14 +164,14 @@ msgid ""
 "\">case insensitive</link>. Finally, you can use <link xref=\"text-filters"
 "\">text filters</link> to change what both folder and file comparisons see."
 msgstr ""
-"<app>Meld</ app> har flera olika sätt att styra vilka filer och vilken typ "
-"av skillnader du ser. Du kan filtrera baserat på <link xref=\"# file-state-"
-"filter\"> skillnader mellan en fil över mappar </link> eller <link xref ="
-"\"#file-name-filter\"> fil- och mappnamn </ link>. Du kan också berätta "
-"<app>Meld</ app> att behandla filnamn som <link xref=\"# file-case-filter "
-"\"> case okänslig </link>. Slutligen kan du använda <link xref=\"text-filter"
-"\"> textfilter </ link> för att ändra vad både mappar och filnamn "
-"jämförelser ser."
+"<app>Meld</app> har flera olika sätt att styra vilka filer och vilken typ av "
+"skillnader du ser. Du kan filtrera baserat på <link xref=\"#file-state-filter"
+"\"> skillnader mellan en fil över mappar </link> eller <link xref=\"#file-"
+"name-filter\"> fil- och mappnamn </link>. Du kan också berätta <app>Meld</ "
+"app> att behandla filnamn som <link xref=\"#file-case-filter\">case "
+"okänslig</link>. Slutligen kan du använda <link xref=\"text-filters"
+"\">textfilter</link> för att ändra vad både mappar och filnamn jämförelser "
+"ser."
 
 #. (itstool) path: note/p
 #: C/file-filters.page:37
@@ -182,16 +181,15 @@ msgid ""
 "identical after all of the text filters are applied are not highlighted as "
 "being different, but are shown in italics."
 msgstr ""
-"Cualquier <link xref=\"text-filters\">filtro de texto</link> que haya "
-"definido <em> se aplica automáticamente</em> cuando se comparan carpetas. "
-"Los archivos que resulten idénticos después de que se les hayan aplicado "
-"todos los filtros de texto no se resaltarán como diferentes, pero se "
-"mostrarán en cursiva."
+"Eventuella <link xref=\"text-filters\">textfilter</link> du har definierat "
+"<em>automatiskt gälla</em> när man jämför mappar. Filer som är identiska "
+"trots alla textfiler tillämpas inte markeras som annorlunda, men visas i "
+"kursiv stil."
 
 #. (itstool) path: section/title
 #: C/file-filters.page:48
 msgid "File differences filtering"
-msgstr "Fayls diffèrènses filtèriŋ"
+msgstr "File skillnader filtrerings"
 
 #. (itstool) path: section/p
 #: C/file-filters.page:50
@@ -201,15 +199,16 @@ msgid ""
 "is classified as being either <em>Modifed</em>, <em>New</em> or <em>Same</"
 "em>:"
 msgstr ""
-"Cuando se comparan carpetas, cada línea contiene un solo archivo o carpeta "
-"que exista en al menos una de las carpetas comparadas. Cada una de esas "
-"líneas se clasifica como <em>Modificada</em>, <em>Nueva</em> o <em>Igual</em>"
+"I en jämförelse mapp varje rad innehåller en enda fil eller mapp som finns i "
+"åtminstone en av mapparna som jämförs. Var och en av dessa rader "
+"klassificeras som antingen <em>Modifieras</ em>, <em>Nytt</ em> eller <em> "
+"Samma."
 
 #. (itstool) path: item/title
 #. (itstool) path: td/p
 #: C/file-filters.page:58 C/vc-mode.page:107 C/folder-mode.page:148
 msgid "Modified"
-msgstr "Modifaien"
+msgstr "Modifieras"
 
 #. (itstool) path: item/p
 #: C/file-filters.page:59
@@ -234,7 +233,7 @@ msgstr ""
 #. (itstool) path: td/p
 #: C/file-filters.page:66 C/vc-mode.page:93 C/folder-mode.page:118
 msgid "Same"
-msgstr "Seim"
+msgstr "Samma"
 
 #. (itstool) path: item/p
 #: C/file-filters.page:67
@@ -273,7 +272,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/file-filters.page:94
 msgid "Filename filtering"
-msgstr "Faylneim filtèriŋ"
+msgstr "filnamn filtrering"
 
 #. (itstool) path: section/p
 #: C/file-filters.page:96
