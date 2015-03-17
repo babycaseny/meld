@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: meld\n"
 "Report-Msgid-Bugs-To: Stephen Kennedy <stevek@gnome.org>\n"
 "POT-Creation-Date: 2007-01-23 20:55+0000\n"
-"PO-Revision-Date: 2015-03-15 01:08+0800\n"
+"PO-Revision-Date: 2015-03-16 02:19+0800\n"
 "Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: sv\n"
@@ -51,7 +51,7 @@ msgstr "2012"
 #. (itstool) path: page/title
 #: C/vc-supported.page:15
 msgid "Supported version control systems"
-msgstr "Sùpporten vörçion koncrol sistèms"
+msgstr "Stöds versionshanteringssystem"
 
 #. (itstool) path: page/p
 #: C/vc-supported.page:17
@@ -238,7 +238,7 @@ msgstr "Samma"
 #. (itstool) path: item/p
 #: C/file-filters.page:67
 msgid "The file exists in all folders, and is the same everywhere"
-msgstr "Nigè fayl iksist in ol fouldèrs, en in ol-pleises"
+msgstr "Filen finns i alla mappar, och är samma överallt"
 
 #. (itstool) path: section/p
 #: C/file-filters.page:70
@@ -284,12 +284,13 @@ msgid ""
 "gui> button on the toolbar or the <guiseq><gui style=\"menu\">View</gui><gui "
 "style=\"menuitem\">File Filters</gui></guiseq> menu."
 msgstr ""
-"<app>Meld</app> incluye un útil conjunto de filtros de nombres de archivos "
-"para permitir ignorar archivos y carpetas poco interesantes como archivos "
-"comunes de respaldo y carpetas de metadatos del sistema de control de "
-"versiones. Cada filtro de nombres de archivo se puede activar o desactivar "
-"por separado desde el botón <gui style=\"button\">Filtro</gui> en la barra "
-"de herramientas o desde el menú <guiseq><gui style=\"menu\">Vista</gui><gui "
+"<app>Meld</app> kommer med en användbar uppsättning filnamn filter som låter "
+"dig ignorerar ointressanta filer och mappar som vanliga säkerhetskopior och "
+"metadata mappar med versionskontrollsystem. Varje filnamn filter kan separat "
+"aktiveras eller avaktiveras från knappen \"Filter\" i verktygsfältet eller "
+"menyn.Cada filtro de nombres de archivo se puede activar o desactivar por "
+"separado desde el botón <gui style=\"button\">Filtro</gui> en la barra de "
+"herramientas o desde el menú <guiseq><gui style=\"menu\">Vista</gui><gui "
 "style=\"menuitem\">Filtros de archivo</gui></guiseq>."
 
 #. (itstool) path: section/p
@@ -349,7 +350,7 @@ msgstr "<code>*</code>"
 #. (itstool) path: td/p
 #: C/file-filters.page:135
 msgid "anything (i.e., zero or more characters)"
-msgstr "cualquier cosa (cero o más caracteres)"
+msgstr "något (dvs noll eller flera tecken)"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:138
@@ -359,7 +360,7 @@ msgstr "<code>?</code>"
 #. (itstool) path: td/p
 #: C/file-filters.page:139
 msgid "exactly one character"
-msgstr "Iksäktli 1-gè karakta"
+msgstr "exakt ett tecken"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:142
@@ -369,7 +370,7 @@ msgstr "<code>[abc]</code>"
 #. (itstool) path: td/p
 #: C/file-filters.page:143
 msgid "any one of the listed characters"
-msgstr "kiẑōŋ 1-gè listen karakta"
+msgstr "någon av de listade tecknen"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:146
@@ -379,17 +380,17 @@ msgstr "<code>[!abc]</code>"
 #. (itstool) path: td/p
 #: C/file-filters.page:147
 msgid "anything <em>except</em> one of the listed characters"
-msgstr "cualquier carácter <em>excepto</em> los listados"
+msgstr "något <em>utom</em> en av de listade tecknen"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:150
 msgid "<code>{cat,dog}</code>"
-msgstr "<code>{meow,wow}</code>"
+msgstr "<code>{katt,hund}</code>"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:151
 msgid "either \"cat\" or \"dog\""
-msgstr "cualquiera de «gato» o «perro»"
+msgstr "antingen \"katt\" eller \"hund\""
 
 #. (itstool) path: note/p
 #: C/file-filters.page:157
