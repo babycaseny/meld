@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="file-filters" xml:lang="bb">
+<info>
+  <title type="sort">2</title>
+  <link type="guide" xref="index#folder-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tom K. C. Chiu</mal:name>
+      <mal:email>tomchiukc@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+<title>Filtèriŋ fayls out</title>
+
+<p>
+When you compare folders, you may want to be able to ignore some files.
+For example, you may wish to only see files that are present and different
+in both folders, ignoring those that are the same or only exist in one
+folder. Alternatively, you might want to ignore all the files in your
+<file>.git</file> directory, or ignore all images.
+</p>
+
+<p>
+<app>Meld</app> has several different ways of controlling which files
+and what kind of differences you see. You can filter based on
+<link xref="#file-state-filter">differences between a file across
+folders</link> or <link xref="#file-name-filter">file and folder
+names</link>. You can also tell <app>Meld</app> to treat filenames
+as being <link xref="#file-case-filter">case insensitive</link>.
+Finally, you can use <link xref="text-filters">text filters</link> to
+change what both folder and file comparisons see.
+</p>
+
+<note style="important">
+  <p>Cualquier <link xref="text-filters">filtro de texto</link> que haya definido <em> se aplica automáticamente</em> cuando se comparan carpetas. Los archivos que resulten idénticos después de que se les hayan aplicado todos los filtros de texto no se resaltarán como diferentes, pero se mostrarán en cursiva.</p>
+</note>
+
+
+
+<section id="file-state-filter">
+<title>Fayls diffèrènses filtèriŋ</title>
+
+<p>
+In a folder comparison, each line contains a single file or folder
+that is present in at least one of the folders being compared. Each of
+these lines is classified as being either <em>Modifed</em>, <em>New</em>
+or <em>Same</em>:
+</p>
+<terms>
+  <item>
+    <title>Modifaien</title>
+    <p>Fayl wiŧ seim faylneim iksists in mùltipol fouldèrs, bùt nidi fayls wa diffèrènt</p>
+  </item>
+  <item>
+    <title>Niu</title>
+    <p>Fayl wiŧ seim faylneim iksists in kiẑōŋ 1-gè fouldèr, bùt not dū in kita</p>
+  </item>
+  <item>
+    <title>Seim</title>
+    <p>Nigè fayl iksist in ol fouldèrs, en in ol-pleises</p>
+  </item>
+</terms>
+<p>Puede cambiar las diferencias que ve en su comparación actual usando los botones <gui style="button">Mismo</gui>, <gui style="button">Nuevo</gui> y <gui style="button">Modificado</gui> de la barra de herramientas o del menú <guiseq><gui style="menu">Vista</gui><gui style="menuitem">Estado del archivo</gui></guiseq>.</p>
+
+<note style="tip">
+  <p>Actualmente, solo se puede filtrar archivos en función de sus estados; las carpetas no se pueden ser filtrar de esta forma. Por ejemplo, se le puede decir a <app>Meld</app> que ignore todas las carpetas que contengan solo archivos nuevos. Una carpeta que contenga solo archivos "Nuevos" se mostraría como vacía, pero seguiría presente.</p>
+</note>
+
+</section>
+
+
+
+<section id="file-name-filter">
+<title>Faylneim filtèriŋ</title>
+
+<p><app>Meld</app> incluye un útil conjunto de filtros de nombres de archivos para permitir ignorar archivos y carpetas poco interesantes como archivos comunes de respaldo y carpetas de metadatos del sistema de control de versiones. Cada filtro de nombres de archivo se puede activar o desactivar por separado desde el botón <gui style="button">Filtro</gui> en la barra de herramientas o desde el menú <guiseq><gui style="menu">Vista</gui><gui style="menuitem">Filtros de archivo</gui></guiseq>.</p>
+
+<p>Puede agregar, quitar o cambiar los filtros de nombres de archivo desde la sección <gui style="tab">Filtros de archivo</gui> en la ventana del diálogo <gui>Preferencias</gui>. Los filtros de nombres de archivo especifican patrones de nombres de archivo que <em>no</em> ser considerarán cuando se realiza la comparación entre carpetas. Cualquier archivo que iguale con un filtro activo no será siquiera mostrado en el árbol de comparaciones. Los filtros de nombres de archivo pueden igualar tanto archivos como carpetas; si una carpeta se filtra, ella y todos sus contenidos se ignoran.</p>
+
+<p>Los filtros de nombres de archivo coinciden con los patrones de comodines del shell. Por ejemplo, <code>*.jpg</code> coincidirá con todas los archivos que terminen en <code>.jpg</code>. La siguiente tabla lista todos los caracteres comodines globales que <app>Meld</app> reconoce.</p>
+
+<table frame="top bottom">
+  <title>Patrón de comodines del shell</title>
+
+  <thead>
+    <tr>
+      <td><p>Comodín</p></td><td><p>Coincidencias</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p><code>*</code></p></td>
+      <td><p>cualquier cosa (cero o más caracteres)</p></td>
+    </tr>
+    <tr>
+      <td><p><code>?</code></p></td>
+      <td><p>Iksäktli 1-gè karakta</p></td>
+    </tr>
+    <tr>
+      <td><p><code>[abc]</code></p></td>
+      <td><p>kiẑōŋ 1-gè listen karakta</p></td>
+    </tr>
+    <tr>
+      <td><p><code>[!abc]</code></p></td>
+      <td><p>cualquier carácter <em>excepto</em> los listados</p></td>
+    </tr>
+    <tr>
+      <td><p><code>{meow,wow}</code></p></td>
+      <td><p>cualquiera de «gato» o «perro»</p></td>
+    </tr>
+  </tbody>
+</table>
+
+<note style="tip">
+  <p>Cambiar la opción <gui>Activo</gui> de un filtro en el diálogo de <gui>Preferencias</gui> cambia si el filtro estará activo <em>de manera predeterminada</em>.</p>
+
+  <p>Aktiveitiŋ filtèr from menyu or tulbar aktiveit nigè filtèr on or off für <em>nigè kompäreiçion onli</em>.</p>
+</note>
+
+</section>
+
+
+
+<section id="file-case-filter">
+<title>Nombres de archivo no sensibles a capitalización</title>
+
+<p>Los archivos se comparan entre carpetas de acuerdo a su nombre. Esta comparación es sensible a capitalización de manera predeterminada; esto es, los archivos <file>README</file>, <file>readme</file> y <file>ReadMe</file> ser considerarán como distintos.</p>
+
+<p>Cuando se comparan carpetas en algunos sistemas de archivo (por ejemplo, HFS+ o FAT) puede querer que <app>Meld</app> trate los nombres ignorando la capitalización. Esto se puede lograr seleccionando <guiseq><gui style="menu">Vista</gui><gui style="menuitem">Ignorar capitalización de archivos</gui></guiseq> desde los menús.</p>
+</section>
+
+
+
+</page>

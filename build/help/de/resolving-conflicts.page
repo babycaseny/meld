@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="resolving-conflicts" xml:lang="de">
+<info>
+  <title type="sort">2</title>
+  <link type="guide" xref="index#vc-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mariobl@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+<title>Resolving merge conflicts</title>
+
+<p>
+One of the best uses of <app>Meld</app> is to resolve conflicts that occur
+while merging different branches.
+</p>
+
+<p>
+For example, when using <app>Git</app>, <cmd>git mergetool</cmd> will start
+a 'merge helper'; <app>Meld</app> is one such helper. If you want to make
+<app>git mergetool</app> use <app>Meld</app> by default, you can add
+</p>
+<code>
+[merge]
+    tool = meld
+</code>
+<p>
+to <file>.git/gitconfig</file>. See the <app>git mergetool</app> manual for
+details.
+</p>
+
+</page>

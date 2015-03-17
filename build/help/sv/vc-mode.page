@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="vc-mode" xml:lang="sv">
+<info>
+  <title type="sort">0</title>
+  <link type="guide" xref="index#vc-mode"/>
+  <revision docversion="1.6" status="draft"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  <credit type="author copyright">
+    <name>Kai Willadsen</name>
+    <email>kai.willadsen@gmail.com</email>
+    <years>2012</years>
+  </credit>
+</info>
+
+<title>Displeiing Vörçion-koncrol fayls</title>
+
+<p><app>Meld</app> se integra con <link xref="vc-supported">varios sistemas de control de versiones</link> para permitir revisar los cambios locales y ejecutar tareas simples de control de versiones. Puede empezar una nueva comparación de control de versiones eligiendo en el menú <guiseq><gui style="menu">Archivo</gui><gui style="menuitem">Nuevo...</gui></guiseq>, y pulsando en la pestaña <gui style="tab">Control de Versiones</gui>.</p>
+
+
+<section id="vc-mode-overview">
+<title>Vörçion koncrol kompäreiçions</title>
+
+<p>Vörçion koncrol kompäreiçions displei diffèrènses bitwin kontents insaid körrènt fouldèr en körrènt ripositori vörçion.  Evri fayl in lokol kopi wa <link xref="#vc-state">steitùs</link> indikeiting diffèrèns from ripositori kopi.</p>
+
+<p>Si quiere mirar unas diferencias de archivos en particular, puede elegirlo y presionar <key>Intro</key>, o pulsar dos veces en el archivo para empezar una <link xref="file-mode">comparación de archivos</link>. También puede interactuar con su sistema de control de versiones usando el menú <gui style="menu">Cambios</gui>.</p>
+</section>
+
+<section id="vc-state">
+<title>Vörçion koncrol steitùs</title>
+
+<p>Cada archivo o carpeta en una comparación de control de versiones tiene un <em>estado</em>, obtenido por el propio sistema de control de versiones. <app>Meld</app> mapea estos diferentes estados en un conjunto estándar de conceptos muy similares. De este modo, <app>Meld</app> puede utilizar nombres ligeramente diferentes para los estados de los que emplea su sistema de control de versiones. Los estados posibles son:</p>
+
+
+<table frame="top bottom">
+  <title>Vörçion koncrol steitùs</title>
+
+  <thead>
+    <tr>
+      <td><p>Steitùs</p></td>
+      <td><p>Apariencia</p></td>
+      <td><p>Significado</p></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><p>Samma</p></td>
+      <td>
+        <p>Normol font</p>
+      </td>
+      <td>
+        <p>Fayl/Fouldèr wa seim as vörçion in ripositori.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Modifieras</p></td>
+      <td>
+        <p>Red en bold</p>
+      </td>
+      <td>
+        <p>El archivo difiere respecto a la versión del repositorio.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Nytt</p></td>
+      <td>
+        <p>Grīn en bold</p>
+      </td>
+      <td>
+        <p>Nigè fayl/fouldèr wa niu, en skejulen tu add tu ripositori.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Rīmūven</p></td>
+      <td>
+        <p>Red en bold tekst with lain akros middol</p>
+      </td>
+      <td>
+        <p>Nigè fayl/fouldèr iksisted, bùt skejulen tu rimuven from ripositori.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Konflikt</p></td>
+      <td>
+        <p>Haihlàiten red bold tekst</p>
+      </td>
+      <td>
+        <p>Cuando se intenta mezclar con el repositorio, las diferencias entre los archivos locales y los del repositorio podrían no resolverse, y entonces el archivo se encontrará en conflicto con el contenido del repositorio</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Missing</p></td>
+      <td>
+        <p>Blu en bold tekst with lain akros middol</p>
+      </td>
+      <td>
+        <p>Este archivo/carpeta debería estar presente, pero no lo está.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Ignoren</p></td>
+      <td>
+        <p>Fui-zo na tekst</p>
+      </td>
+      <td>
+        <p>Este archivo/carpeta se ha ignorado deliberadamente (ej. por una entrada en <file>.gitignore</file>) y no está bajo el control de versiones.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Not dū koncrolen</p></td>
+      <td>
+        <p>Fui-zo na tekst</p>
+      </td>
+      <td>
+        <p>Este archivo no se encuentra en el sistema de control de versiones; solo en la copia local</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p>Öra</p></td>
+      <td>
+        <p>Haihlàiten red with yelow bäkgraund en bold tekst</p>
+      </td>
+      <td>
+        <p>El sistema de control de versiones ha reportado un problema con este archivo.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+<section id="vc-state-filtering">
+<title>Vörçion koncrol steitùs filtèring</title>
+
+<p>A menudo, querrá ver solo los archivos que se presentan alguna diferencia; esta es la configuración por defecto en <app>Meld</app>. Puede cambiar qué estados de archivos se muestran usando el menú <guiseq><gui style="menu">Vista</gui><gui style="menuitem">Estado de la versión</gui></guiseq> o pulsando el botón <gui style="button">Modificado</gui>, <gui style="button">Normal</gui>, <gui style="button">Sin control de versiones</gui> o <gui style="button">Ignorado</gui> en la barra de herramientas.</p>
+</section>
+
+</page>
