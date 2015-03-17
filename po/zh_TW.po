@@ -15,8 +15,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=meld&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-03-10 23:05+0000\n"
-"PO-Revision-Date: 2015-03-16 01:41+0800\n"
-"Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
+"PO-Revision-Date: 2015-03-16 14:20+0800\n"
+"Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
@@ -72,12 +72,17 @@ msgid ""
 "two- and three-way comparison of both files and directories, and supports "
 "many version control systems including Git, Mercurial, Bazaar and Subversion."
 msgstr ""
+"meld 是一個為程式開發者設計的視覺差異和合併工具。meld可以幫助你比對檔案、資料"
+"夾和版本控制專案。它提供了檔案和資料夾的雙向和三向的比對，而且支援多種版本控"
+"制系統，包括的Git、 Mercurial、Bazaar和Subversion。"
 
 #: ../data/meld.appdata.xml.in.h:2
 msgid ""
 "Meld helps you review code changes, understand patches, and makes enormous "
 "merge conflicts slightly less painful."
 msgstr ""
+"meld 可以幫助您查看原始碼的變更，理解修正檔，使您進行巨大的合併衝突時的痛苦略"
+"略減輕一點。"
 
 #: ../data/mime/meld.xml.in.h:1
 msgid "Meld comparison description"
@@ -154,7 +159,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:17
 msgid "Color scheme to use for syntax highlighting"
-msgstr "使用語法標明功能"
+msgstr "語法標明功能使用的配色方案"
 
 #: ../data/org.gnome.meld.gschema.xml.h:18
 msgid "Used by GtkSourceView to determine colors for syntax highlighting"
@@ -198,7 +203,7 @@ msgstr "使用系統預設等寬字型"
 #: ../data/org.gnome.meld.gschema.xml.h:26
 msgid ""
 "If false, custom-font will be used instead of the system monospace font."
-msgstr ""
+msgstr "如果取消了這選項，會使用自訂字型而不是系統預設等寬字型。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:27
 msgid "Custom font"
@@ -350,7 +355,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:55
 msgid "Show margin in commit message editor"
-msgstr "提交信息編輯器會顯示右邊界"
+msgstr "顯示提交信息編輯器的右邊界"
 
 #: ../data/org.gnome.meld.gschema.xml.h:56
 msgid ""
@@ -360,13 +365,13 @@ msgstr "如果選了這項，在版本控制提交信息的編輯器會在右邊
 
 #: ../data/org.gnome.meld.gschema.xml.h:57
 msgid "Margin column in commit message editor"
-msgstr ""
+msgstr "提交信息編輯器的邊界行"
 
 #: ../data/org.gnome.meld.gschema.xml.h:58
 msgid ""
 "The column at which to show the margin in the version control commit message "
 "editor."
-msgstr ""
+msgstr "在使用版本控制的提交信息編輯器時的，會顯示右邊邊界所在的行。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:59
 msgid "Automatically hard-wrap commit messages"
@@ -1053,7 +1058,7 @@ msgstr "更改修剪"
 
 #: ../data/ui/preferences.ui.h:46
 msgid "Trim blank line differences from the start and end of changes"
-msgstr ""
+msgstr "隱藏變更開始和結束的空列"
 
 #: ../data/ui/preferences.ui.h:47
 msgid "Text filters"
@@ -1384,7 +1389,7 @@ msgstr ""
 
 #: ../meld/dirdiff.py:986
 msgid "Error copying file"
-msgstr "複製檔案時發生錯誤"
+msgstr "複製檔案時出錯"
 
 #: ../meld/dirdiff.py:987
 #, python-format
@@ -1676,16 +1681,17 @@ msgstr "資料夾"
 
 #: ../meld/meldapp.py:177
 msgid "Start a version control comparison"
-msgstr "開始版本控制比較"
+msgstr "開始版本控制比對"
 
 #: ../meld/meldapp.py:179
 msgid "Start a 2- or 3-way file comparison"
-msgstr "開始雙向或三向檔案比較"
+msgstr "開始雙向或三向檔案比對"
 
 #: ../meld/meldapp.py:181
 msgid "Start a 2- or 3-way folder comparison"
-msgstr "開始雙向或三向資料夾比較"
+msgstr "開始雙向或三向資料夾比對"
 
+# (n.)
 #: ../meld/meldapp.py:224
 #, python-format
 msgid "Error: %s\n"
@@ -1742,7 +1748,7 @@ msgstr "無法自動合併資料夾"
 
 #: ../meld/meldapp.py:298
 msgid "Error reading saved comparison file"
-msgstr "讀取已儲存比對檔案時發生錯誤"
+msgstr "讀取已儲存比對檔案時出錯"
 
 #: ../meld/meldapp.py:326
 #, python-format
@@ -2062,6 +2068,7 @@ msgstr "遠端"
 msgid "Unversioned"
 msgstr "未版本控制"
 
+# (n.)
 #: ../meld/vc/_vc.py:68
 msgid "Error"
 msgstr "錯誤"
@@ -2203,7 +2210,7 @@ msgstr "這將從版本控制中移除所有選中的文件及資料夾，及選
 #: ../meld/vcview.py:777
 #, python-format
 msgid "Error removing %s"
-msgstr "移除 %s 時發生錯誤"
+msgstr "移除 %s 時出錯"
 
 #~ msgid "Copy _Left"
 #~ msgstr "複製到左側(_L)"

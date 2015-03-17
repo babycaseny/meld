@@ -1,0 +1,10 @@
+char *s = N_("_Replace");
+char *s = N_("Replace _All");
+char *s = N_("_Previous");
+char *s = N_("_Next");
+char *s = N_("Find:");
+char *s = N_("Replace _with:");
+char *s = N_("_Match case");
+char *s = N_("Who_le word");
+char *s = N_("Regular e_xpression");
+char *s = N_("Wrapped");

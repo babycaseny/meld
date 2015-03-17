@@ -15,11 +15,7 @@
 
 <p>Jednou z nejlepších věcí na aplikaci <app>Meld</app> je řešení konfliktů, které vznikají při slučování rozdílných větví.</p>
 
-<p>
-For example, when using <app>Git</app>, <cmd>git mergetool</cmd> will start
-a 'merge helper'; <app>Meld</app> is one such helper. If you want to make
-<app>git mergetool</app> use <app>Meld</app> by default, you can add
-</p>
+<p>Například, když používáte <app>Git</app>, <cmd>git mergtool</cmd> spustí „pomocníka se slučováním“. <app>Meld</app> je jedním z možných takovýchto pomocníků. Jestli chcete, aby <app>git mergetool</app> používal <app>Meld</app> jako výchozího pomocníka, můžete přidat</p>
 <code>
 [merge]
     tool = meld

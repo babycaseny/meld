@@ -15,16 +15,7 @@
 
 <p>När du jämför mappar, kanske du vill kunna ignorera vissa filer. Till exempel kanske du vill bara se filer som är närvarande och olika i båda mapparna, ignorerar de som är samma eller finns bara i en mapp. Alternativt , kanske du vill ignorera alla filer i din <file>.git</file> katalogen, eller ignorera alla bilder. </p>
 
-<p>
-<app>Meld</app> has several different ways of controlling which files
-and what kind of differences you see. You can filter based on
-<link xref="#file-state-filter">differences between a file across
-folders</link> or <link xref="#file-name-filter">file and folder
-names</link>. You can also tell <app>Meld</app> to treat filenames
-as being <link xref="#file-case-filter">case insensitive</link>.
-Finally, you can use <link xref="text-filters">text filters</link> to
-change what both folder and file comparisons see.
-</p>
+<p><app>Meld</app> har flera olika sätt att styra vilka filer och vilken typ av skillnader du ser. Du kan filtrera baserat på <link xref="#file-state-filter"> skillnader mellan en fil över mappar </link> eller <link xref="#file-name-filter"> fil- och mappnamn </link>. Du kan också berätta <app>Meld</app> att behandla filnamn som <link xref="#file-case-filter">case okänslig</link>. Slutligen kan du använda <link xref="text-filters">textfilter</link> för att ändra vad både mappar och filnamn jämförelser ser.</p>
 
 <note style="important">
   <p>Eventuella <link xref="text-filters">textfilter</link> du har definierat <em>automatiskt gälla</em> när man jämför mappar. Filer som är identiska trots alla textfiler tillämpas inte markeras som annorlunda, men visas i kursiv stil.</p>

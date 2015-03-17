@@ -53,7 +53,7 @@
     <p>Le fichier existe dans tous les dossiers, et ce est la même partout</p>
   </item>
 </terms>
-<p>Vous pouvez modifier les types de différences que vous voyez dans votre comparaison actuel en utilisant <gui style="button">La Même</gui>, <gui style="button">Nouveau</gui> et <gui style="button">Modifié</gui> du bouton de herramientas o del menú <guiseq><gui style="menu">Vista</gui><gui style="menuitem">Estado del archivo</gui></guiseq>.</p>
+<p>Vous pouvez modifier les types de différences que vous voyez dans votre comparaison actuel en utilisant <gui style="button">La Même</gui>, <gui style="button">Nouveau</gui> et <gui style="button">Modifié</gui> du bouton de herramientas o del menú <guiseq><gui style="menu">Vista</gui><gui style="menuitem">Etat du fichier</gui></guiseq>.</p>
 
 <note style="tip">
   <p>Actuellement, vous ne pouvez filtrer les fichiers en fonction de leur état; dossiers ne peuvent pas être filtrées de cette façon. Par exemple, vous ne pouvez pas dire <app>Meld</app> pour ignorer tous les dossiers qui ne contiennent que de nouveaux fichiers. Un dossier contenant uniquement des fichiers "Nouveau" apparaîtrait aussi vide, mais toujours présente.</p>
