@@ -1,0 +1,4 @@
+  File "./build_app.sh", line 10
+    python setup_py2app.py build
+                      ^
+SyntaxError: invalid syntax
