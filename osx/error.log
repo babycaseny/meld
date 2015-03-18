@@ -21,3 +21,9 @@ build_app.sh: line 50: cd: /Volumes/Meld Merge/: 沒有此一檔案或目錄
 cp: 無法 stat ‘osx/DS_Store’: 沒有此一檔案或目錄
 build_app.sh: line 54: hdiutil：命令找不到
 build_app.sh: line 55: hdiutil：命令找不到
+
+  File "./build_app.sh", line 10
+    python setup_py2app.py build
+                      ^
+SyntaxError: invalid syntax
+
