@@ -43,7 +43,7 @@ or <em>Same</em>:
   </item>
   <item>
     <title>Samma</title>
-    <p>Nigè fayl iksist in ol fouldèrs, en in ol-pleises</p>
+    <p>Filen finns i alla mappar, och är samma överallt</p>
   </item>
 </terms>
 <p>Puede cambiar las diferencias que ve en su comparación actual usando los botones <gui style="button">Mismo</gui>, <gui style="button">Nuevo</gui> y <gui style="button">Modificado</gui> de la barra de herramientas o del menú <guiseq><gui style="menu">Vista</gui><gui style="menuitem">Estado del archivo</gui></guiseq>.</p>
@@ -59,7 +59,7 @@ or <em>Same</em>:
 <section id="file-name-filter">
 <title>filnamn filtrering</title>
 
-<p><app>Meld</app> incluye un útil conjunto de filtros de nombres de archivos para permitir ignorar archivos y carpetas poco interesantes como archivos comunes de respaldo y carpetas de metadatos del sistema de control de versiones. Cada filtro de nombres de archivo se puede activar o desactivar por separado desde el botón <gui style="button">Filtro</gui> en la barra de herramientas o desde el menú <guiseq><gui style="menu">Vista</gui><gui style="menuitem">Filtros de archivo</gui></guiseq>.</p>
+<p><app>Meld</app> kommer med en användbar uppsättning filnamn filter som låter dig ignorerar ointressanta filer och mappar som vanliga säkerhetskopior och metadata mappar med versionskontrollsystem. Varje filnamn filter kan separat aktiveras eller avaktiveras från knappen "Filter" i verktygsfältet eller menyn.Cada filtro de nombres de archivo se puede activar o desactivar por separado desde el botón <gui style="button">Filtro</gui> en la barra de herramientas o desde el menú <guiseq><gui style="menu">Vista</gui><gui style="menuitem">Filtros de archivo</gui></guiseq>.</p>
 
 <p>Puede agregar, quitar o cambiar los filtros de nombres de archivo desde la sección <gui style="tab">Filtros de archivo</gui> en la ventana del diálogo <gui>Preferencias</gui>. Los filtros de nombres de archivo especifican patrones de nombres de archivo que <em>no</em> ser considerarán cuando se realiza la comparación entre carpetas. Cualquier archivo que iguale con un filtro activo no será siquiera mostrado en el árbol de comparaciones. Los filtros de nombres de archivo pueden igualar tanto archivos como carpetas; si una carpeta se filtra, ella y todos sus contenidos se ignoran.</p>
 
@@ -77,23 +77,23 @@ or <em>Same</em>:
   <tbody>
     <tr>
       <td><p><code>*</code></p></td>
-      <td><p>cualquier cosa (cero o más caracteres)</p></td>
+      <td><p>något (dvs noll eller flera tecken)</p></td>
     </tr>
     <tr>
       <td><p><code>?</code></p></td>
-      <td><p>Iksäktli 1-gè karakta</p></td>
+      <td><p>exakt ett tecken</p></td>
     </tr>
     <tr>
       <td><p><code>[abc]</code></p></td>
-      <td><p>kiẑōŋ 1-gè listen karakta</p></td>
+      <td><p>någon av de listade tecknen</p></td>
     </tr>
     <tr>
       <td><p><code>[!abc]</code></p></td>
-      <td><p>cualquier carácter <em>excepto</em> los listados</p></td>
+      <td><p>något <em>utom</em> en av de listade tecknen</p></td>
     </tr>
     <tr>
-      <td><p><code>{meow,wow}</code></p></td>
-      <td><p>cualquiera de «gato» o «perro»</p></td>
+      <td><p><code>{katt,hund}</code></p></td>
+      <td><p>antingen "katt" eller "hund"</p></td>
     </tr>
   </tbody>
 </table>
