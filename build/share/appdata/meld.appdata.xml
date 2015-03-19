@@ -15,10 +15,7 @@
   <p xml:lang="es">Meld es una herramienta para ver diferencias y mezclar archivos orientada a desarrolladores. Meld le ayuda a comparar archivos, carpetas y proyectos con control de versiones. Proporciona una comparación de 2 y 3 vías para archivos y carpetas y soporta muchos sistemas de control de versiones, incluyendo Git, Mercurial, Bazaar y Subversion.</p>
   <p xml:lang="eu">Meld aplikazioak garatzaileentzako 'diff' eta 'merge' tresna bisuala da. Meld-ek fitxategiak, direktorioak eta bertsio-kontrola daramaten proiektuak konparatzen lagunduko dizu. Bai fitxategi bai direktorioen bi eta hiru elementuen arteko konparazioa eskaintzen ditu. Bertsio-kontrola daramaten hainbat sistema onartzen ditu, Git, Mercurial, Bazaar eta Subversion barne.</p>
   <p xml:lang="fi">Meld on visuaalinen työkalu eroavaisuuksien (diff) vertailuun ja yhdistämiseen (merge). Sovelluksen kohderyhmänä on sovelluskehittäjät. Meld auttaa vertailemaan tiedostoja, kansioita ja versiohallittuja projekteja. Meld tarjoaa kaksi- ja kolmisuuntaisen vertailun tiedostoille ja kansioille. Versionhallintajärjestelmistä tuettuina ovat muun muassa Git, Mercurial, Bazaar ja Subversion.</p>
-<<<<<<< HEAD
-=======
   <p xml:lang="fr">Meld est un diff visuelle et fusionner outil destiné aux développeurs. Meld vous aide à comparer les fichiers, les répertoires et les versions sont contrôlées projets. Il fournit la comparaison de deux et trois voies des deux fichiers et répertoires, et supporte de nombreux systèmes de contrôle de version Git y compris, Mercurial, Bazaar et Subversion.</p>
->>>>>>> 631372dded679f8f3020589263954c5c1e06eaef
   <p xml:lang="he">‏Meld הוא כלי להצגת הבדל בין קבצים ולמיזוג קבצים, המוכוון למפתחים. Meld מסייע בהשוואת קבצים, תיקיות ופרויקטים עם בקרת גרסות. הוא מאפשר השוואה בין שניים ובין שלושה (three-way) קבצים או תיקיות, ותומך במערכות בקרת גרסות רבות, כולל Git, ‏Mercurial, ‏Bazaar ו־Subversion.</p>
   <p xml:lang="hu">A Meld egy vizuális diff- és összefésülő eszköz fejlesztőknek. A Meld segít fájlok, könyvtárak és verziókövetőt használó projektek összehasonlításában. Két- és háromutas összehasonlítást biztosít fájlokhoz és könyvtárakhoz, és sok verziókövető rendszert is támogat, beleértve a Git, Mercurial, Bazaar és Subversion rendszereket.</p>
   <p xml:lang="id">Meld adalah alat diff dan merge visual yang ditujukan bagi para pengembang. Meld membantu Anda membandingkan berkas, direktori, dan projek yang dikendalikan versinya. Ini menyediakan perbandingan dua dan tiga arah bagi berkas dan direktori, dan mendukung banyak kendali sistem versi termasuk Git, Mercurial, Bazaar, dan Subversion.</p>
@@ -30,10 +27,7 @@
   <p xml:lang="sr">Мелд је графички алат за разлике и стапање намењен програмерима. Помаже вам да поредите датотеке, директоријуме, и пројекте управљања издањима. Обезбеђује двоструко и троструко поређење и датотека и директоријума, и подржава многе системе управљања издањима укључујући Гит, Меркуријал, Базар и Субверзију.</p>
   <p xml:lang="sr@latin">Meld je grafički alat za razlike i stapanje namenjen programerima. Pomaže vam da poredite datoteke, direktorijume, i projekte upravljanja izdanjima. Obezbeđuje dvostruko i trostruko poređenje i datoteka i direktorijuma, i podržava mnoge sisteme upravljanja izdanjima uključujući Git, Merkurijal, Bazar i Subverziju.</p>
   <p xml:lang="sv">Meld är ett visuellt diff- och sammanfogningsverktyg riktat till utvecklare. Meld hjälper dig att jämföra filer, kataloger och versionshanterade projekt. Det erbjuder två- och trevägsjämförelser av både filer och kataloger samt stöder många versionshanteringssystem som Git, Mercurial, Bazaar och Subversion.</p>
-<<<<<<< HEAD
-=======
   <p xml:lang="zh_TW">meld 是一個為程式開發者設計的視覺差異和合併工具。meld可以幫助你比對檔案、資料夾和版本控制專案。它提供了檔案和資料夾的雙向和三向的比對，而且支援多種版本控制系統，包括的Git、 Mercurial、Bazaar和Subversion。</p>
->>>>>>> 631372dded679f8f3020589263954c5c1e06eaef
   <p>Meld helps you review code changes, understand patches, and makes enormous merge conflicts slightly less painful.</p>
   <p xml:lang="bb">Meld help rīvyuiŋ koud čeinjs, förstå progremfikses en rīlif from mani mörj rīkwests.</p>
   <p xml:lang="bs">Meld vam pomaže pregledati promjene kodova, razumijevanje zakrpi i čini brojne konflikte kod spajanja manje bolnim.</p>
@@ -56,10 +50,7 @@
   <p xml:lang="sr">Мелд вам помаже да прегледате измене у коду, да разумете закрпе, и огромне сукобе стапања чини мање болним.</p>
   <p xml:lang="sr@latin">Meld vam pomaže da pregledate izmene u kodu, da razumete zakrpe, i ogromne sukobe stapanja čini manje bolnim.</p>
   <p xml:lang="sv">Meld hjälper dig att granska kodändringar, förstå programfixar och göra enorma sammanfogningskonflikter något mindre smärtsamma.</p>
-<<<<<<< HEAD
-=======
   <p xml:lang="zh_TW">meld 可以幫助您查看原始碼的變更，理解修正檔，使您進行巨大的合併衝突時的痛苦略略減輕一點。</p>
->>>>>>> 631372dded679f8f3020589263954c5c1e06eaef
  </description>
  <screenshots>
   <screenshot width="992" type="default" height="759">http://meldmerge.org/images/meld-filediff-full.png</screenshot>

@@ -1657,7 +1657,7 @@ msgstr "Seim when filtèren"
 #. (itstool) path: td/p
 #: C/folder-mode.page:134
 msgid "Italics"
-msgstr "Cursivas"
+msgstr "Italiks"
 
 #. (itstool) path: td/p
 #: C/folder-mode.page:140
@@ -1688,7 +1688,7 @@ msgstr "Fui-zo na tekst with lain akros middol"
 msgid ""
 "This file/folder doesn't exist in this folder, but does in one of the others."
 msgstr ""
-"Este archivo/carpeta no existe en esta carpeta, pero se encuentra en otra."
+"Nigè fayl/fouldèr wa not du iksist in nigè fouldèr, bùt in another."
 
 #. (itstool) path: td/p
 #: C/folder-mode.page:199
@@ -1822,5 +1822,4 @@ msgstr ""
 #: C/command-line.page:40
 msgid "Run <cmd>meld --help</cmd> for a list of all command line options."
 msgstr ""
-"Ejecute <cmd>meld --help</cmd> para una lista de todas las opciones de línea "
-"de comandos."
+"Rùn <cmd>meld --help</cmd> para für ol kommand lain opçions dè list."
