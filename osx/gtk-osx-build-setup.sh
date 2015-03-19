@@ -24,8 +24,10 @@
 # See http://live.gnome.org/GTK%2B/OSX/Building for more information.
 #
 
-SOURCE=$HOME/Source
-BASEURL="https://git.gnome.org/browse/gtk-osx/plain/"
+#SOURCE=$HOME/Source
+SOURCE=$HOME/Desktop/Development
+#BASEURL="https://git.gnome.org/browse/gtk-osx/plain/"
+BASEURL="https://github.com/babycaseny/gtk-osx"
 
 do_exit()
 {

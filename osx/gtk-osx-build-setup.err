@@ -1,0 +1,5 @@
+./gtk-osx-build-setup.sh: 42: test: x/usr/bin/svn: unexpected operator
+./gtk-osx-build-setup.sh: 46: test: x/usr/bin/git: unexpected operator
+Cloning into 'jhbuild'...
+Switched to a new branch 'stable'
+./gtk-osx-build-setup.sh: 112: test: x: unexpected operator

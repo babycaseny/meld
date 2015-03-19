@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=meld&ke"
 "ywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-03-10 23:05+0000\n"
-"PO-Revision-Date: 2015-03-11 18:08+0800\n"
+"PO-Revision-Date: 2015-03-16 18:38+0800\n"
 "Last-Translator: Tom K. C. Chiu <babycaseny@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: zh_TW\n"
@@ -337,12 +337,12 @@ msgstr "Patrón de comodines del shell"
 #. (itstool) path: td/p
 #: C/file-filters.page:128
 msgid "Wildcard"
-msgstr "Comodín"
+msgstr "通配符"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:128
 msgid "Matches"
-msgstr "Coincidencias"
+msgstr "匹配"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:134
@@ -352,7 +352,7 @@ msgstr "<code>*</code>"
 #. (itstool) path: td/p
 #: C/file-filters.page:135
 msgid "anything (i.e., zero or more characters)"
-msgstr "cualquier cosa (cero o más caracteres)"
+msgstr "任何 (cero o más caracteres)"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:138
@@ -416,7 +416,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/file-filters.page:174
 msgid "Case insensitive filenames"
-msgstr "Nombres de archivo no sensibles a capitalización"
+msgstr "檔名不區分大小寫"
 
 #. (itstool) path: section/p
 #: C/file-filters.page:176
@@ -825,7 +825,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/file-mode.page:17
 msgid "Getting started comparing files"
-msgstr "Getiŋ started kompäriŋ fayls"
+msgstr "開始比對檔案"
 
 #. (itstool) path: page/p
 #: C/file-mode.page:19
@@ -836,8 +836,8 @@ msgid ""
 msgstr ""
 "<app>Meld</app> permite comparar dos o tres archivos de texto uno al lado "
 "del otro. Puede comenzar una nueva comparación entre archivos seleccionando "
-"en el menú <guiseq><gui style=\"menu\">Archivo</gui><gui style=\"menuitem"
-"\">Nuevo...</gui></guiseq>."
+"en el menú <guiseq><gui style=\"menu\">Archivo</gui><gui style=\"menuitem\""
+">Nuevo...</gui></guiseq>."
 
 #. (itstool) path: page/p
 #: C/file-mode.page:26
@@ -909,7 +909,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/file-mode.page:62
 msgid "Saving your changes"
-msgstr "Čeinjs seiviŋ nau"
+msgstr "儲存您的變更"
 
 #. (itstool) path: section/p
 #: C/file-mode.page:64
@@ -999,17 +999,17 @@ msgstr "Meld dè Help"
 #. (itstool) path: section/title
 #: C/index.page:17
 msgid "Introduction"
-msgstr "Introdùkçion"
+msgstr "簡介"
 
 #. (itstool) path: section/title
 #: C/index.page:21
 msgid "Comparing Files"
-msgstr "Kompäring Fayls"
+msgstr "比對檔案"
 
 #. (itstool) path: section/title
 #: C/index.page:25
 msgid "Comparing Folders"
-msgstr "Kompäriŋ Fouldèrs"
+msgstr "比對資料夾"
 
 #. (itstool) path: section/title
 #: C/index.page:29
@@ -1052,7 +1052,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/vc-mode.page:30
 msgid "Version control comparisons"
-msgstr "Vörçion koncrol kompäreiçions"
+msgstr "版本控制比對"
 
 #. (itstool) path: section/p
 #: C/vc-mode.page:32
@@ -1063,9 +1063,9 @@ msgid ""
 "from the repository copy."
 msgstr ""
 "Vörçion koncrol kompäreiçions displei diffèrènses bitwin kontents insaid "
-"körrènt fouldèr en körrènt ripositori vörçion.  Evri fayl in lokol kopi wa "
-"<link xref=\"#vc-state\">steitùs</link> indikeiting diffèrèns from "
-"ripositori kopi."
+"körrènt fouldèr en körrènt ripositori vörçion.  Evri fayl in lokol kopi wa <"
+"link xref=\"#vc-state\">steitùs</link> indikeiting diffèrèns from ripositori "
+"kopi."
 
 #. (itstool) path: section/p
 #: C/vc-mode.page:46
@@ -1085,7 +1085,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: C/vc-mode.page:56 C/vc-mode.page:81
 msgid "Version control states"
-msgstr "Vörçion koncrol steitùs"
+msgstr "版本控制狀態"
 
 #. (itstool) path: section/p
 #: C/vc-mode.page:58
