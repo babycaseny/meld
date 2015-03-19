@@ -42,10 +42,12 @@ get_moduleset_from_git()
 if test x`which svn` == x; then
     do_exit "Svn (subversion) is not available, please install it and try again."
 fi
+./gtk-osx-build-setup.sh: 42: test: x/usr/bin/svn: unexpected operator
 
 if test x`which git` == x; then
     do_exit "Git is not available, please install it and try again."
 fi
+./gtk-osx-build-setup.sh: 46: test: x/usr/bin/git: unexpected operator
 
 mkdir -p $SOURCE 2>/dev/null || do_exit "The directory $SOURCE could not be created. Check permissions and try again."
 
@@ -80,6 +82,8 @@ else
 	do_exit "Update of jhbuild failed";
     mv modulesets/bootstrap.modules modulesets/bootstrap.modules.dist;
 fi
+Cloning into 'jhbuild'...
+Switched to a new branch 'stable'
 curl -ks https://git.gnome.org/browse/gtk-osx/plain/patches/0001-Bug-700557-autoreconf-i-fails-in-cases-of-ltmain.sh-.patch | git am
 
 echo "Installing jhbuild..."
@@ -113,5 +117,6 @@ if test "x`echo $PATH | grep $HOME/.local/bin`" == x; then
     echo "PATH does not contain $HOME/.local/bin, it is recommended that you add that."
     echo
 fi
+./gtk-osx-build-setup.sh: 112: test: x: unexpected operator
 
 echo "Done."
