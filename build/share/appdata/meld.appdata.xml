@@ -27,7 +27,8 @@
   <p xml:lang="sr">Мелд је графички алат за разлике и стапање намењен програмерима. Помаже вам да поредите датотеке, директоријуме, и пројекте управљања издањима. Обезбеђује двоструко и троструко поређење и датотека и директоријума, и подржава многе системе управљања издањима укључујући Гит, Меркуријал, Базар и Субверзију.</p>
   <p xml:lang="sr@latin">Meld je grafički alat za razlike i stapanje namenjen programerima. Pomaže vam da poredite datoteke, direktorijume, i projekte upravljanja izdanjima. Obezbeđuje dvostruko i trostruko poređenje i datoteka i direktorijuma, i podržava mnoge sisteme upravljanja izdanjima uključujući Git, Merkurijal, Bazar i Subverziju.</p>
   <p xml:lang="sv">Meld är ett visuellt diff- och sammanfogningsverktyg riktat till utvecklare. Meld hjälper dig att jämföra filer, kataloger och versionshanterade projekt. Det erbjuder två- och trevägsjämförelser av både filer och kataloger samt stöder många versionshanteringssystem som Git, Mercurial, Bazaar och Subversion.</p>
-  <p xml:lang="zh_TW">meld 是一個為程式開發者設計的視覺差異和合併工具。meld可以幫助你比對檔案、資料夾和版本控制專案。它提供了檔案和資料夾的雙向和三向的比對，而且支援多種版本控制系統，包括的Git、 Mercurial、Bazaar和Subversion。</p>
+  <p xml:lang="zh_CN">meld 是是一个针对程序开发者設計的可视化差异和合并工具。meld可以帮助你比较比较文件，目录和版本控制项目。它提供了文件和目录的双向和三向比较，而且支持多种版本控制系统，包括Git、 Mercurial、Bazaar和Subversion。</p>
+  <p xml:lang="zh_TW">meld 是一個為程式開發者設計的視覺差異和合併工具。meld可以幫助您比對檔案、資料夾和版本控制專案。它提供了檔案和資料夾的雙向和三向的比對，而且支援多種版本控制系統，包括Git、 Mercurial、Bazaar和Subversion。</p>
   <p>Meld helps you review code changes, understand patches, and makes enormous merge conflicts slightly less painful.</p>
   <p xml:lang="bb">Meld help rīvyuiŋ koud čeinjs, förstå progremfikses en rīlif from mani mörj rīkwests.</p>
   <p xml:lang="bs">Meld vam pomaže pregledati promjene kodova, razumijevanje zakrpi i čini brojne konflikte kod spajanja manje bolnim.</p>
@@ -50,6 +51,7 @@
   <p xml:lang="sr">Мелд вам помаже да прегледате измене у коду, да разумете закрпе, и огромне сукобе стапања чини мање болним.</p>
   <p xml:lang="sr@latin">Meld vam pomaže da pregledate izmene u kodu, da razumete zakrpe, i ogromne sukobe stapanja čini manje bolnim.</p>
   <p xml:lang="sv">Meld hjälper dig att granska kodändringar, förstå programfixar och göra enorma sammanfogningskonflikter något mindre smärtsamma.</p>
+  <p xml:lang="zh_CN">meld 可以帮助你查看代码的修改，理解补丁，使你進行巨大的合并冲突時的略略减轻你的痛苦。</p>
   <p xml:lang="zh_TW">meld 可以幫助您查看原始碼的變更，理解修正檔，使您進行巨大的合併衝突時的痛苦略略減輕一點。</p>
  </description>
  <screenshots>

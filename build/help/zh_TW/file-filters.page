@@ -74,14 +74,14 @@ change what both folder and file comparisons see.
 
   <thead>
     <tr>
-      <td><p>Comodín</p></td><td><p>Coincidencias</p></td>
+      <td><p>通配符</p></td><td><p>匹配</p></td>
     </tr>
   </thead>
 
   <tbody>
     <tr>
       <td><p><code>*</code></p></td>
-      <td><p>cualquier cosa (cero o más caracteres)</p></td>
+      <td><p>任何 (cero o más caracteres)</p></td>
     </tr>
     <tr>
       <td><p><code>?</code></p></td>
@@ -113,7 +113,7 @@ change what both folder and file comparisons see.
 
 
 <section id="file-case-filter">
-<title>Nombres de archivo no sensibles a capitalización</title>
+<title>檔名不區分大小寫</title>
 
 <p>Los archivos se comparan entre carpetas de acuerdo a su nombre. Esta comparación es sensible a capitalización de manera predeterminada; esto es, los archivos <file>README</file>, <file>readme</file> y <file>ReadMe</file> ser considerarán como distintos.</p>
 

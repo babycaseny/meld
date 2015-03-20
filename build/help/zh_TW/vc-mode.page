@@ -18,7 +18,7 @@
 
 
 <section id="vc-mode-overview">
-<title>Vörçion koncrol kompäreiçions</title>
+<title>版本控制比對</title>
 
 <p>Vörçion koncrol kompäreiçions displei diffèrènses bitwin kontents insaid körrènt fouldèr en körrènt ripositori vörçion.  Evri fayl in lokol kopi wa <link xref="#vc-state">steitùs</link> indikeiting diffèrèns from ripositori kopi.</p>
 
@@ -26,13 +26,13 @@
 </section>
 
 <section id="vc-state">
-<title>Vörçion koncrol steitùs</title>
+<title>版本控制狀態</title>
 
 <p>Cada archivo o carpeta en una comparación de control de versiones tiene un <em>estado</em>, obtenido por el propio sistema de control de versiones. <app>Meld</app> mapea estos diferentes estados en un conjunto estándar de conceptos muy similares. De este modo, <app>Meld</app> puede utilizar nombres ligeramente diferentes para los estados de los que emplea su sistema de control de versiones. Los estados posibles son:</p>
 
 
 <table frame="top bottom">
-  <title>Vörçion koncrol steitùs</title>
+  <title>版本控制狀態</title>
 
   <thead>
     <tr>

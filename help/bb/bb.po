@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: meld\n"
 "Report-Msgid-Bugs-To: Stephen Kennedy <stevek@gnome.org>\n"
 "POT-Creation-Date: 2007-01-23 20:55+0000\n"
-"PO-Revision-Date: 2015-03-12 16:32+0800\n"
+"PO-Revision-Date: 2015-03-19 14:06+0800\n"
 "Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: bb\n"
@@ -756,7 +756,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/file-changes.page:30
 msgid "Navigating between changes"
-msgstr "Navegar entre los cambios"
+msgstr "Nävigeiting bitwin c<einjs"
 
 #. (itstool) path: section/p
 #: C/file-changes.page:32
@@ -1119,7 +1119,7 @@ msgstr "Appīràns"
 #. (itstool) path: td/p
 #: C/vc-mode.page:87 C/folder-mode.page:112
 msgid "Meaning"
-msgstr "Significado"
+msgstr "Yiyi"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:95 C/folder-mode.page:120
@@ -1687,8 +1687,7 @@ msgstr "Fui-zo na tekst with lain akros middol"
 #: C/folder-mode.page:184
 msgid ""
 "This file/folder doesn't exist in this folder, but does in one of the others."
-msgstr ""
-"Nigè fayl/fouldèr wa not du iksist in nigè fouldèr, bùt in another."
+msgstr "Nigè fayl/fouldèr wa not du iksist in nigè fouldèr, bùt in another."
 
 #. (itstool) path: td/p
 #: C/folder-mode.page:199
@@ -1821,5 +1820,4 @@ msgstr ""
 #. (itstool) path: note/p
 #: C/command-line.page:40
 msgid "Run <cmd>meld --help</cmd> for a list of all command line options."
-msgstr ""
-"Rùn <cmd>meld --help</cmd> para für ol kommand lain opçions dè list."
+msgstr "Rùn <cmd>meld --help</cmd> für ol kommand lain opçions dè list."

@@ -25,7 +25,7 @@
 
 
 <section id="change-navigation">
-<title>Navegar entre los cambios</title>
+<title>Navigating between changes</title>
 
 <p>Puede navegar entre los cambios con los elementos de menú <guiseq><gui style="menu">Cambios</gui><gui style="menuitem">Cambios Previos</gui></guiseq> y <guiseq><gui style="menu">Cambios</gui><gui style="menuitem">Siguiente cambio</gui></guiseq>. También puede usar la rueda de su ratón para moverse entre los cambios, desplazándose en la barra central de cambios.</p>
 

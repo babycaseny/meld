@@ -13,7 +13,7 @@
   </credit>
 </info>
 
-<title>Getiŋ started kompäriŋ fayls</title>
+<title>開始比對檔案</title>
 
 <p><app>Meld</app> permite comparar dos o tres archivos de texto uno al lado del otro. Puede comenzar una nueva comparación entre archivos seleccionando en el menú <guiseq><gui style="menu">Archivo</gui><gui style="menuitem">Nuevo...</gui></guiseq>.</p>
 
@@ -30,7 +30,7 @@
 
 
 <section id="file-mode-saving">
-<title>Čeinjs seiviŋ nau</title>
+<title>儲存您的變更</title>
 
 <p>Cuando haya terminado de editar los archivos, es necesario guardar cada archivo que se haya modificado.</p>
 <p>Es posible decir si sus archivos se han grabado desde el último cambio por el icono de guardar que aparece junto al nombre sobre cada archivo. También, la etiqueta del bloc de notas mostrará un asterisco (<code>*</code>) cuando el archivo no se haya grabado.</p>

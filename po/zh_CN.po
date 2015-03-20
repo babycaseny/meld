@@ -259,6 +259,7 @@ msgid ""
 "List of column names in folder comparison and whether they should be "
 "displayed."
 msgstr ""
+"在文件夹比较时会用的栏，以及这些栏是否要显示。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:37 ../data/ui/preferences.ui.h:32
 msgid "Ignore symbolic links"
@@ -355,6 +356,8 @@ msgid ""
 "preference only affects three-way comparisons launched from the version "
 "control view, so is used solely for merges/conflict resolution within Meld."
 msgstr ""
+"文件比较顺序可选择“远程/合并/本地”或“本地/合并/远程”。这种偏好只影响"
+"从版本控制视图的三方比较，所以在 Meld 仅用于合并/解决冲突。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:55
 msgid "Show margin in commit message editor"

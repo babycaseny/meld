@@ -13,15 +13,15 @@
 	<title>Meld dè Help</title>
 
 	<section id="introduction" style="2column">
-	    <title>Introdùkçion</title>
+	    <title>簡介</title>
 	</section>
 
 	<section id="file-mode" style="2column">
-		<title>Kompäring Fayls</title>
+		<title>比對檔案</title>
 	</section>
 
 	<section id="folder-mode" style="2column">
-		<title>Kompäriŋ Fouldèrs</title>
+		<title>比對資料夾</title>
 	</section>
 
 	<section id="vc-mode" style="2column">

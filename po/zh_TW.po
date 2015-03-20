@@ -210,7 +210,7 @@ msgstr "如果選項為非，會使用自訂字型而不是系統預設等寬字
 
 #: ../data/org.gnome.meld.gschema.xml.h:27
 msgid "Custom font"
-msgstr "使用自訂字型"
+msgstr "自訂字型"
 
 #: ../data/org.gnome.meld.gschema.xml.h:28
 msgid ""
@@ -236,8 +236,8 @@ msgid ""
 "If false, custom-editor-command will be used instead of the system editor "
 "when opening files externally."
 msgstr ""
-"如果選項為非，在使用外部編輯器打開文件時，系統預設編輯器將被自定編輯器的命令"
-"替代。"
+"如果選項為非，在使用外部編輯器打開文件時，系統預設編輯器"
+"將被自定編輯器的命令替代。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:33
 msgid "The custom editor launch command"
@@ -259,6 +259,7 @@ msgid ""
 "List of column names in folder comparison and whether they should be "
 "displayed."
 msgstr ""
+"在資料夾比對時會用的欄位，以及這些欄位是否要顯示。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:37 ../data/ui/preferences.ui.h:32
 msgid "Ignore symbolic links"
@@ -357,8 +358,8 @@ msgid ""
 "preference only affects three-way comparisons launched from the version "
 "control view, so is used solely for merges/conflict resolution within Meld."
 msgstr ""
-"檔案順序的選擇為遠程/合併/本地或本地/合併/遠程。這選項只影響從版本控制檢視
-"動的三方比對，所以在 Meld 只用於合併/解決衝突。"
+"檔案順序的選擇為「遠程/合併/本地」或「本地/合併/遠程」。這選項只影響"
+"從版本控制檢視的三方比對，所以在 Meld 只用於合併/解決衝突。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:55
 msgid "Show margin in commit message editor"

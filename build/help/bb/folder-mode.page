@@ -58,7 +58,7 @@
     <tr>
       <td><p>Steitùs</p></td>
       <td><p>Appīràns</p></td>
-      <td><p>Significado</p></td>
+      <td><p>Yiyi</p></td>
     </tr>
   </thead>
 
@@ -75,7 +75,7 @@
     <tr>
       <td><p>Seim when filtèren</p></td>
       <td>
-        <p>Cursivas</p>
+        <p>Italiks</p>
       </td>
       <td>
         <p>Estos archivos son diferentes en las carpetas, pero una vez aplicados los <link xref="text-filters">filtros de texto</link>, se han vuelto idénticos.</p>
@@ -105,7 +105,7 @@
         <p>Fui-zo na tekst with lain akros middol</p>
       </td>
       <td>
-        <p>Este archivo/carpeta no existe en esta carpeta, pero se encuentra en otra.</p>
+        <p>Nigè fayl/fouldèr wa not du iksist in nigè fouldèr, bùt in another.</p>
       </td>
     </tr>
     <tr>

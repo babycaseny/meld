@@ -27,7 +27,7 @@
 <p>Puede empezar una comparación de <link xref="vc-mode">control de versiones</link> agregando un solo argumento; si es un archivo o carpeta manejado por un  <link xref="vc-supported">sistema de control de versiones reconocido</link>, ejecutará la comparación de control de versiones con ese argumento. Por ejemplo, <cmd>meld .</cmd> ejecutaría una vista de control de versiones de la carpeta actual.</p>
 
 <note>
-<p>Ejecute <cmd>meld --help</cmd> para una lista de todas las opciones de línea de comandos.</p>
+<p>Rùn <cmd>meld --help</cmd> für ol kommand lain opçions dè list.</p>
 </note>
 
 </page>
