@@ -72,9 +72,9 @@ msgid ""
 "two- and three-way comparison of both files and directories, and supports "
 "many version control systems including Git, Mercurial, Bazaar and Subversion."
 msgstr ""
-"meld 是一個為程式開發者設計的視覺差異和合併工具。meld可以幫助你比對檔案、資料"
+"meld 是一個為程式開發者設計的視覺差異和合併工具。meld可以幫助您比對檔案、資料"
 "夾和版本控制專案。它提供了檔案和資料夾的雙向和三向的比對，而且支援多種版本控"
-"制系統，包括的Git、 Mercurial、Bazaar和Subversion。"
+"制系統，包括Git、 Mercurial、Bazaar和Subversion。"
 
 #: ../data/meld.appdata.xml.in.h:2
 msgid ""
@@ -132,11 +132,11 @@ msgstr "縮排的每步寬度要用幾多個空白字元"
 
 #: ../data/org.gnome.meld.gschema.xml.h:11
 msgid "Whether to indent using spaces or tabs"
-msgstr "縮排用空白還是製表鍵。"
+msgstr "縮排用空白字符還是製表鍵。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:12
 msgid "If true, any new indentation will use spaces instead of tabs."
-msgstr "如果選了這項，新插入的縮排會用空白鍵而不是製表鍵。"
+msgstr "如果選了這項，新插入的縮排會用空白字符而不是製表鍵。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:13
 msgid "Show line numbers"
@@ -144,7 +144,7 @@ msgstr "顯示列號"
 
 #: ../data/org.gnome.meld.gschema.xml.h:14
 msgid "If true, line numbers will be shown in the gutter of file comparisons."
-msgstr "如果選了這項，比對檔案時會在每行開首邊界以外顯示列號。"
+msgstr "如果選了這項，比對檔案時會在每行的裝訂線顯示列號。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:15
 msgid "Highlight syntax"
@@ -167,13 +167,13 @@ msgstr "GtkSourceView 用來判斷語法標明的顏色"
 
 #: ../data/org.gnome.meld.gschema.xml.h:19
 msgid "Displayed whitespace"
-msgstr "空白字元會顯示"
+msgstr "會顯示的空白字元"
 
 #: ../data/org.gnome.meld.gschema.xml.h:20
 msgid ""
 "Selector for individual whitespace character types to be shown. Possible "
 "values are 'space', 'tab', 'newline' and 'nbsp'."
-msgstr ""
+msgstr "您可以選擇顯示的空白字元類型。可選值有「空白鍵」、「製表鍵」、「換行鍵」和「不換行空白鍵」。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:21
 msgid "Wrap mode"
@@ -217,7 +217,7 @@ msgstr "會使用的自訂字型，會以字串儲存，並作為 Pango 的字�
 
 #: ../data/org.gnome.meld.gschema.xml.h:29
 msgid "Ignore blank lines when comparing files"
-msgstr "比較檔案時忽略空列"
+msgstr "比對檔案時忽略空列"
 
 #: ../data/org.gnome.meld.gschema.xml.h:30
 msgid ""
@@ -232,7 +232,7 @@ msgstr "使用系統預設編輯器"
 msgid ""
 "If false, custom-editor-command will be used instead of the system editor "
 "when opening files externally."
-msgstr ""
+msgstr "如果選項為非，在使用外部編輯器打開文件時，系統預設編輯器將被自定編輯器的命令替代。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:33
 msgid "The custom editor launch command"
@@ -243,7 +243,7 @@ msgid ""
 "The command used to launch a custom editor. Some limited templating is "
 "supported here; at the moment '{file}' and '{line}' are recognised tokens."
 msgstr ""
-"啟動自訂編輯器的命令。目前對模板的支持有限制：只認得「{file}」跟「{line}」。"
+"啟動自訂編輯器的命令。目前支援的模板有限：只認得「{file}」跟「{line}」。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:35
 msgid "Columns to display"

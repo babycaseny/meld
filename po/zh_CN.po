@@ -72,12 +72,17 @@ msgid ""
 "two- and three-way comparison of both files and directories, and supports "
 "many version control systems including Git, Mercurial, Bazaar and Subversion."
 msgstr ""
+"meld 是是一个针对程序开发者設計的可视化差异和合并工具。meld可以帮助你比较比较文件，目录"
+"和版本控制项目。它提供了文件和目录的双向和三向比较，而且支持多种版本控"
+"制系统，包括Git、 Mercurial、Bazaar和Subversion。"
 
 #: ../data/meld.appdata.xml.in.h:2
 msgid ""
 "Meld helps you review code changes, understand patches, and makes enormous "
 "merge conflicts slightly less painful."
 msgstr ""
+"meld 可以帮助你查看代码的修改，理解补丁，使你進行巨大的合并冲突時的略"
+"略减轻你的痛苦。"
 
 #: ../data/mime/meld.xml.in.h:1
 msgid "Meld comparison description"
@@ -123,15 +128,15 @@ msgstr "缩排的每步宽度"
 
 #: ../data/org.gnome.meld.gschema.xml.h:10
 msgid "The number of spaces to use for a single indent step"
-msgstr ""
+msgstr "缩排的每步宽度要用多少个空格"
 
 #: ../data/org.gnome.meld.gschema.xml.h:11
 msgid "Whether to indent using spaces or tabs"
-msgstr ""
+msgstr "缩排用空白字符或是制表符。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:12
 msgid "If true, any new indentation will use spaces instead of tabs."
-msgstr ""
+msgstr "如果为true，则缩排用空白字符而不是制表符。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:13
 msgid "Show line numbers"
@@ -139,7 +144,7 @@ msgstr "显示行号"
 
 #: ../data/org.gnome.meld.gschema.xml.h:14
 msgid "If true, line numbers will be shown in the gutter of file comparisons."
-msgstr ""
+msgstr "如果为true，比较文件将在每行的装订线显示行号。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:15
 msgid "Highlight syntax"
@@ -150,14 +155,15 @@ msgid ""
 "Whether to highlight syntax in comparisons. Because of Meld's own color "
 "highlighting, this is off by default."
 msgstr ""
+"比较要不要高亮显示语法。由於 Meld 用本身的高亮显示色，本项目默认关闭。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:17
 msgid "Color scheme to use for syntax highlighting"
-msgstr "使用语法高亮(_Y)"
+msgstr "语法高亮显示功能使用的配色方案"
 
 #: ../data/org.gnome.meld.gschema.xml.h:18
 msgid "Used by GtkSourceView to determine colors for syntax highlighting"
-msgstr ""
+msgstr "GtkSourceView 用于确定语法高亮显示的配色"
 
 #: ../data/org.gnome.meld.gschema.xml.h:19
 msgid "Displayed whitespace"
@@ -167,7 +173,7 @@ msgstr "显示的空白字符"
 msgid ""
 "Selector for individual whitespace character types to be shown. Possible "
 "values are 'space', 'tab', 'newline' and 'nbsp'."
-msgstr ""
+msgstr "你可以选择显示的空白字符类型。可选值有“空白符”，“制表符”，“换行符”和“不换行空白符'。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:21
 msgid "Wrap mode"
@@ -207,16 +213,16 @@ msgstr "自定义字体"
 msgid ""
 "The custom font to use, stored as a string and parsed as a Pango font "
 "description."
-msgstr ""
+msgstr "使用的自定义字体，存储为一个字符串，并解析为 Pango 的字体描述。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:29
 msgid "Ignore blank lines when comparing files"
-msgstr "比較檔案時忽略空行"
+msgstr "比较文件时忽略空行"
 
 #: ../data/org.gnome.meld.gschema.xml.h:30
 msgid ""
 "If true, blank lines will be trimmed when highlighting changes between files."
-msgstr ""
+msgstr "如果为true，高亮文件之间变化时，空行进行修整。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:31
 msgid "Use the system default editor"
@@ -226,17 +232,18 @@ msgstr "使用系统默认编辑器"
 msgid ""
 "If false, custom-editor-command will be used instead of the system editor "
 "when opening files externally."
-msgstr ""
+msgstr "如果为false，在使用外部编辑器打开文件时，自定义编辑器的命令将被用于代替系统编辑器。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:33
 msgid "The custom editor launch command"
-msgstr ""
+msgstr "自定义编辑器的启动命令"
 
 #: ../data/org.gnome.meld.gschema.xml.h:34
 msgid ""
 "The command used to launch a custom editor. Some limited templating is "
 "supported here; at the moment '{file}' and '{line}' are recognised tokens."
 msgstr ""
+"啟動自訂編輯器的命令。目前對模板的支持有限制：只認得“{file}”跟“{line}”。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:35
 msgid "Columns to display"
