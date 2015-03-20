@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=meld&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-03-10 23:05+0000\n"
-"PO-Revision-Date: 2015-03-16 14:20+0800\n"
+"PO-Revision-Date: 2015-03-20 11:15+0800\n"
 "Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: zh_TW\n"
@@ -46,7 +46,7 @@ msgid ""
 "Couldn't load Meld-specific CSS (%s)\n"
 "%s"
 msgstr ""
-"無法載入與 Meld 的特定 CSS (%s)\n"
+"無法載入 Meld 特定的 CSS (%s)\n"
 "%s"
 
 #: ../data/meld.desktop.in.h:1 ../data/ui/meldapp.ui.h:1
@@ -173,7 +173,9 @@ msgstr "會顯示的空白字元"
 msgid ""
 "Selector for individual whitespace character types to be shown. Possible "
 "values are 'space', 'tab', 'newline' and 'nbsp'."
-msgstr "您可以選擇顯示的空白字元類型。可選值有「空白鍵」、「製表鍵」、「換行鍵」和「不換行空白鍵」。"
+msgstr ""
+"您可以選擇顯示的空白字元類型。可選值有「空白鍵」、「製表鍵」、「換行鍵」和"
+"「不換行空白鍵」。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:21
 msgid "Wrap mode"
@@ -195,6 +197,7 @@ msgid ""
 "If true, the line containing the cursor will be highlighted in file "
 "comparisons."
 msgstr ""
+"如果選了這項，包含光標的列會在文件中標明。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:25
 msgid "Use the system default monospace font"
@@ -203,7 +206,7 @@ msgstr "使用系統預設等寬字型"
 #: ../data/org.gnome.meld.gschema.xml.h:26
 msgid ""
 "If false, custom-font will be used instead of the system monospace font."
-msgstr "如果取消了這選項，會使用自訂字型而不是系統預設等寬字型。"
+msgstr "如果選項為非，會使用自訂字型而不是系統預設等寬字型。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:27
 msgid "Custom font"
@@ -232,7 +235,9 @@ msgstr "使用系統預設編輯器"
 msgid ""
 "If false, custom-editor-command will be used instead of the system editor "
 "when opening files externally."
-msgstr "如果選項為非，在使用外部編輯器打開文件時，系統預設編輯器將被自定編輯器的命令替代。"
+msgstr ""
+"如果選項為非，在使用外部編輯器打開文件時，系統預設編輯器將被自定編輯器的命令"
+"替代。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:33
 msgid "The custom editor launch command"
@@ -305,7 +310,7 @@ msgstr "檔案狀態過濾器"
 
 #: ../data/org.gnome.meld.gschema.xml.h:46
 msgid "List of statuses used to filter visible files in folder comparison."
-msgstr ""
+msgstr "在文件夾比對畫面用來篩選可見檔案狀態的列表。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:47
 msgid "Show the version control console output"
@@ -316,6 +321,8 @@ msgid ""
 "If true, a console output section will be shown in version control views, "
 "showing the commands run for version control operations."
 msgstr ""
+"如果選了這項，主控台輸出部分將顯示在版本控制檢視中，"
+"顯示版本控制操作運行中的命令。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:49
 msgid "Version control pane position"
@@ -329,7 +336,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:51
 msgid "Present version comparisons as left-local/right-remote"
-msgstr "現時的版本比對設定為左-本地/右-遠端"
+msgstr "現時的版本比對設定為「左-本地/右-遠端」"
 
 #: ../data/org.gnome.meld.gschema.xml.h:52
 msgid ""
@@ -350,7 +357,7 @@ msgid ""
 "preference only affects three-way comparisons launched from the version "
 "control view, so is used solely for merges/conflict resolution within Meld."
 msgstr ""
-"檔案順序的選擇為遠程/合併/本地或本地/合併/遠程。這選項只影響從版本控制視圖啟"
+"檔案順序的選擇為遠程/合併/本地或本地/合併/遠程。這選項只影響從版本控制檢視
 "動的三方比對，所以在 Meld 只用於合併/解決衝突。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:55
@@ -1685,11 +1692,11 @@ msgstr "開始版本控制比對"
 
 #: ../meld/meldapp.py:179
 msgid "Start a 2- or 3-way file comparison"
-msgstr "開始雙向或三向檔案比對"
+msgstr "開始雙向或三方檔案比對"
 
 #: ../meld/meldapp.py:181
 msgid "Start a 2- or 3-way folder comparison"
-msgstr "開始雙向或三向資料夾比對"
+msgstr "開始雙向或三方資料夾比對"
 
 # (n.)
 #: ../meld/meldapp.py:224
@@ -1802,7 +1809,7 @@ msgstr "復原上一次的動作"
 
 #: ../meld/meldwindow.py:67
 msgid "Redo the last undone action"
-msgstr "重做最後撤消的操作"
+msgstr "重做最後復原的操作"
 
 #: ../meld/meldwindow.py:69
 msgid "Cut the selection"
@@ -1830,7 +1837,7 @@ msgstr "尋找下一個(_X)"
 
 #: ../meld/meldwindow.py:78
 msgid "Search forwards for the same text"
-msgstr "向下尋找相同的文字"
+msgstr "向下搜尋相同的文字"
 
 #: ../meld/meldwindow.py:80
 msgid "Find _Previous"
@@ -1838,7 +1845,7 @@ msgstr "尋找上一個(_P)"
 
 #: ../meld/meldwindow.py:81
 msgid "Search backwards for the same text"
-msgstr "向上尋找相同的文字"
+msgstr "向上搜尋相同的文字"
 
 #: ../meld/meldwindow.py:84
 msgid "_Replace..."
@@ -1995,7 +2002,7 @@ msgstr "需要三個檔案來自動合併，已有：%r"
 
 #: ../meld/meldwindow.py:673
 msgid "Cannot compare a mixture of files and directories"
-msgstr "無法對文件和目錄混合比較"
+msgstr "無法對文件和目錄混合比對"
 
 #. no common path. empty names get changed to "[None]"
 #: ../meld/misc.py:178
@@ -2066,7 +2073,7 @@ msgstr "遠端"
 
 #: ../meld/vc/_vc.py:65
 msgid "Unversioned"
-msgstr "未版本控制"
+msgstr "不在版本控制"
 
 # (n.)
 #: ../meld/vc/_vc.py:68
@@ -2151,7 +2158,7 @@ msgstr "選擇要使用的版本控制系統"
 #: ../meld/vcview.py:417
 #, python-format
 msgid "%s: %s"
-msgstr "%s: %s"
+msgstr "%s：%s"
 
 #: ../meld/vcview.py:431 ../meld/vcview.py:439
 #, python-format
@@ -2205,7 +2212,9 @@ msgstr "移除資料夾及所有包含的檔案？"
 msgid ""
 "This will remove all selected files and folders, and all files within any "
 "selected folders, from version control."
-msgstr "這將從版本控制中移除所有選中的文件及資料夾，及選中資料夾中的所有文件。"
+msgstr ""
+"這將從版本控制中移除所有選中的文件及資料夾，及選中"
+"資料夾中的所有文件。"
 
 #: ../meld/vcview.py:777
 #, python-format

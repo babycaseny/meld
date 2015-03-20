@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=meld&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-03-10 23:05+0000\n"
-"PO-Revision-Date: 2015-03-11 17:24+0800\n"
+"PO-Revision-Date: 2015-03-20 11:00+0800\n"
 "Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: zh_CN\n"
@@ -47,7 +47,7 @@ msgid ""
 "%s"
 msgstr ""
 "无法加载 Meld 特定的 CSS (%s)\n"
-"”%s"
+"%s"
 
 #: ../data/meld.desktop.in.h:1 ../data/ui/meldapp.ui.h:1
 msgid "Meld"
@@ -72,17 +72,17 @@ msgid ""
 "two- and three-way comparison of both files and directories, and supports "
 "many version control systems including Git, Mercurial, Bazaar and Subversion."
 msgstr ""
-"meld 是是一个针对程序开发者設計的可视化差异和合并工具。meld可以帮助你比较比较文件，目录"
-"和版本控制项目。它提供了文件和目录的双向和三向比较，而且支持多种版本控"
-"制系统，包括Git、 Mercurial、Bazaar和Subversion。"
+"meld 是是一个针对程序开发者設計的可视化差异和合并工具。meld可以帮助你比较比较"
+"文件，目录和版本控制项目。它提供了文件和目录的双向和三向比较，而且支持多种版"
+"本控制系统，包括Git、 Mercurial、Bazaar和Subversion。"
 
 #: ../data/meld.appdata.xml.in.h:2
 msgid ""
 "Meld helps you review code changes, understand patches, and makes enormous "
 "merge conflicts slightly less painful."
 msgstr ""
-"meld 可以帮助你查看代码的修改，理解补丁，使你進行巨大的合并冲突時的略"
-"略减轻你的痛苦。"
+"meld 可以帮助你查看代码的修改，理解补丁，使你進行巨大的合并冲突時的略略减轻你"
+"的痛苦。"
 
 #: ../data/mime/meld.xml.in.h:1
 msgid "Meld comparison description"
@@ -173,7 +173,9 @@ msgstr "显示的空白字符"
 msgid ""
 "Selector for individual whitespace character types to be shown. Possible "
 "values are 'space', 'tab', 'newline' and 'nbsp'."
-msgstr "你可以选择显示的空白字符类型。可选值有“空白符”，“制表符”，“换行符”和“不换行空白符'。"
+msgstr ""
+"你可以选择显示的空白字符类型。可选值有“空白符”，“制表符”，“换行符”和“不换行空"
+"白符'。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:21
 msgid "Wrap mode"
@@ -195,6 +197,7 @@ msgid ""
 "If true, the line containing the cursor will be highlighted in file "
 "comparisons."
 msgstr ""
+"如果为true，包含光标的行会在文件中高亮。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:25
 msgid "Use the system default monospace font"
@@ -203,7 +206,7 @@ msgstr "使用系统默认等宽字体"
 #: ../data/org.gnome.meld.gschema.xml.h:26
 msgid ""
 "If false, custom-font will be used instead of the system monospace font."
-msgstr ""
+msgstr "如果为false，自定义字体将被使用，而不是系统的等宽字型。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:27
 msgid "Custom font"
@@ -232,7 +235,9 @@ msgstr "使用系统默认编辑器"
 msgid ""
 "If false, custom-editor-command will be used instead of the system editor "
 "when opening files externally."
-msgstr "如果为false，在使用外部编辑器打开文件时，自定义编辑器的命令将被用于代替系统编辑器。"
+msgstr ""
+"如果为false，在使用外部编辑器打开文件时，自定义编辑器的命令将被用于代替系统编"
+"辑器。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:33
 msgid "The custom editor launch command"
@@ -305,7 +310,7 @@ msgstr "文件状态过滤器"
 
 #: ../data/org.gnome.meld.gschema.xml.h:46
 msgid "List of statuses used to filter visible files in folder comparison."
-msgstr ""
+msgstr "在文件夹比较用来筛选可见文件状态的列表。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:47
 msgid "Show the version control console output"
@@ -316,6 +321,8 @@ msgid ""
 "If true, a console output section will be shown in version control views, "
 "showing the commands run for version control operations."
 msgstr ""
+"如果为true，控制台终端输出部分将显示在版本控制视图中，"
+"显示版本控制操作运行中的命令。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:49
 msgid "Version control pane position"
@@ -1064,7 +1071,6 @@ msgid "Trim blank line differences from the start and end of changes"
 msgstr ""
 
 #: ../data/ui/preferences.ui.h:47
-#, fuzzy
 #| msgid "Text Filters"
 msgid "Text filters"
 msgstr "文字过滤器"
@@ -1195,13 +1201,12 @@ msgstr "从工作副本删除"
 
 #: ../data/ui/vcview.ui.h:18
 msgid "Console"
-msgstr ""
+msgstr "终端"
 
 #: ../data/ui/vcview.ui.h:19
-#, fuzzy
 #| msgid "Show the version control console output"
 msgid "Show or hide the version control console output pane"
-msgstr "选择版本控制终端输出"
+msgstr "显示或隐藏版本控制终端输出面板"
 
 #: ../data/ui/vcview.ui.h:20
 msgid "_Flatten"
@@ -1265,7 +1270,7 @@ msgstr "提交(_M)"
 
 #: ../data/ui/vcview.ui.h:35
 msgid "Console output"
-msgstr ""
+msgstr "终端输出"
 
 #: ../data/ui/vcview.ui.h:36
 msgid "Push local commits to remote?"
@@ -1281,11 +1286,11 @@ msgstr "推送提交(_P)"
 
 #: ../meld/const.py:10
 msgid "UNIX (LF)"
-msgstr ""
+msgstr "UNIX (LF)"
 
 #: ../meld/const.py:11
 msgid "DOS/Windows (CR-LF)"
-msgstr ""
+msgstr "DOS/Windows (CR-LF)"
 
 #: ../meld/const.py:12
 msgid "Mac OS (CR)"
@@ -2009,10 +2014,9 @@ msgid "Open the Meld manual"
 msgstr "打开 Meld 帮助手册"
 
 #: ../meld/meldwindow.py:173
-#, fuzzy
 #| msgid "Configure the application"
 msgid "About this application"
-msgstr "程序设置"
+msgstr "关于本应用程序"
 
 #: ../meld/meldwindow.py:548
 msgid "Switch to this tab"
@@ -2095,10 +2099,9 @@ msgid "Remote"
 msgstr "远端"
 
 #: ../meld/vc/_vc.py:65
-#, fuzzy
 #| msgid "Un_versioned"
 msgid "Unversioned"
-msgstr "未版本控制(_V)"
+msgstr "不在版本控制"
 
 #: ../meld/vc/_vc.py:68
 msgid "Error"
