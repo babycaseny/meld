@@ -15,8 +15,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=meld&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-03-10 23:05+0000\n"
-"PO-Revision-Date: 2015-03-25 16:58+0800\n"
-"Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
+"PO-Revision-Date: 2015-03-25 21:33+0800\n"
+"Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
@@ -187,6 +187,8 @@ msgid ""
 "not at all ('none'), at any character ('char') or only at the end of words "
 "('word')."
 msgstr ""
+"在比對檔案時，過長的列會根據此設定而決定是否會換列。可以選「不換列」、「只看"
+"字元」或「詞邊界」。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:23
 msgid "Highlight current line"
@@ -267,7 +269,7 @@ msgstr "忽略符號連結"
 msgid ""
 "If true, folder comparisons do not follow symbolic links when traversing the "
 "folder tree."
-msgstr "忽略符號連結"
+msgstr "如果選了這項，資料夾比對在遊歷整個資料夾樹之時不會追蹤符號連結。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:39
 msgid "Use shallow comparison"
@@ -393,7 +395,7 @@ msgstr "提交時自動強制實體換列"
 msgid ""
 "If true, the version control commit message editor will hard-wrap (i.e., "
 "insert line breaks) at the commit margin before commit."
-msgstr ""
+msgstr "如果選了這項，提交時自動在長度超過右邊邊界的文字前強制插入實體換列符。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:61
 msgid "Version control status filters"
@@ -402,7 +404,7 @@ msgstr "版本控制狀態過濾器"
 #: ../data/org.gnome.meld.gschema.xml.h:62
 msgid ""
 "List of statuses used to filter visible files in version control comparison."
-msgstr ""
+msgstr "在比對時可以在過濾器選擇作檔案篩選的版本控制狀態列表。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:63
 msgid "Filename-based filters"
@@ -413,6 +415,8 @@ msgid ""
 "List of predefined filename-based filters that, if active, will remove "
 "matching files from a folder comparison."
 msgstr ""
+"預設檔案過濾器列表。如果此選項啟動了，在資料夾比對時，符合所選檔案篩選條件的"
+"檔案都會被隱藏。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:65
 msgid "Text-based filters"
@@ -424,6 +428,8 @@ msgid ""
 "text from being used in a file comparison. The text will still be displayed, "
 "but won't contribute to the comparison itself."
 msgstr ""
+"預設的正則式文字為本過濾器列表。如果此選項啟動了，當比對檔案時，即使兩邊檔案"
+"內容有差異，若差異符合篩選內容，有關差異不會被顯示。"
 
 #: ../data/ui/application.ui.h:1
 msgid "About Meld"
@@ -1066,7 +1072,7 @@ msgstr "檔案過濾器"
 
 #: ../data/ui/preferences.ui.h:45
 msgid "Change trimming"
-msgstr "更改修剪"
+msgstr "精簡比對"
 
 #: ../data/ui/preferences.ui.h:46
 msgid "Trim blank line differences from the start and end of changes"
