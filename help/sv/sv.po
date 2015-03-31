@@ -753,7 +753,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/file-changes.page:30
 msgid "Navigating between changes"
-msgstr "Navegar entre los cambios"
+msgstr "Navigera mellan förändringar"
 
 #. (itstool) path: section/p
 #: C/file-changes.page:32
@@ -773,7 +773,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/file-changes.page:46
 msgid "Changing changes"
-msgstr "Cambiando los cambios"
+msgstr "Ändra förändringar"
 
 #. (itstool) path: section/p
 #: C/file-changes.page:48
