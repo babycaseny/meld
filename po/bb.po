@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=meld&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-01-21 18:19+0800\n"
-"PO-Revision-Date: 2015-04-01 00:52+0800\n"
+"PO-Revision-Date: 2015-04-01 01:15+0800\n"
 "Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
 "Language-Team: Babycasèny Gavèrnmènt\n"
 "Language: bb\n"
@@ -236,6 +236,8 @@ msgid ""
 "If false, custom-editor-command will be used instead of the system editor "
 "when opening files externally."
 msgstr ""
+"If ùnset, kùstomaisen-editā-kommand wa yusen tu rīpleis sistèm editā when "
+"opèniŋ fayls ikstörnolli. "
 
 #: ../data/org.gnome.meld.gschema.xml.h:33
 msgid "The custom editor launch command"
@@ -844,7 +846,7 @@ msgstr "Wräpen"
 
 #: ../data/ui/patch-dialog.ui.h:1
 msgid "Format as Patch"
-msgstr "Formät as progremfiks…"
+msgstr "Formät as progremfiks"
 
 #: ../data/ui/patch-dialog.ui.h:2
 msgid "Copy to Clipboard"
@@ -931,13 +933,12 @@ msgid "_Insert spaces instead of tabs"
 msgstr "Insört speises tu rīpleis täbs "
 
 #: ../data/ui/preferences.ui.h:16
-#, fuzzy
 msgid "Enable text _wrapping"
-msgstr "상태와 글자(_A)"
+msgstr "Tekst _wräpiŋ wa enàbolen"
 
 #: ../data/ui/preferences.ui.h:17
 msgid "Do not _split words over two lines"
-msgstr ""
+msgstr "Not dū _split wörds ovèr 2 lains"
 
 #: ../data/ui/preferences.ui.h:18
 msgid "Highlight _current line"
@@ -998,7 +999,7 @@ msgstr "Vyusolabol Kolumns"
 
 #: ../data/ui/preferences.ui.h:33
 msgid "Folder Comparisons"
-msgstr "_Foulder Kompäreiçions"
+msgstr "_Fouldèr Kompäreiçions"
 
 #: ../data/ui/preferences.ui.h:34
 msgid "Version Comparisons"
@@ -1136,7 +1137,7 @@ msgstr "K_ompär"
 
 #: ../data/ui/vcview.ui.h:3
 msgid "Co_mmit..."
-msgstr "Ko_mmit..."
+msgstr "Ko_mmit…"
 
 #: ../data/ui/vcview.ui.h:4
 msgid "Commit changes to version control"
@@ -1303,9 +1304,8 @@ msgid "[%s] Done"
 msgstr "[%s] Finišen"
 
 #: ../meld/dirdiff.py:840
-#, fuzzy
 msgid "Folders have no differences"
-msgstr "차이점이 없습니다!"
+msgstr "Fouldèrs wa mwu diffèrènses"
 
 #: ../meld/dirdiff.py:842
 msgid "Contents of scanned files in folders are identical."
@@ -1337,7 +1337,7 @@ msgstr ""
 
 #: ../meld/dirdiff.py:878
 msgid "Files with invalid encodings found"
-msgstr ""
+msgstr "Fayls wiŧ invälid enkoudiŋs wa fainden"
 
 #. TRANSLATORS: This is followed by a list of files
 #: ../meld/dirdiff.py:880
@@ -1377,9 +1377,8 @@ msgid ""
 msgstr ""
 
 #: ../meld/dirdiff.py:975
-#, fuzzy
 msgid "Error copying file"
-msgstr "파일 '%s'을(를) '%s'(으)로부터 복사하고 있습니다..."
+msgstr "Öra when kopiiŋ fayl"
 
 #: ../meld/dirdiff.py:976
 #, fuzzy, python-format
@@ -1477,12 +1476,11 @@ msgstr "[%s] Kompyutiŋ diffèrènses"
 #: ../meld/filediff.py:1259
 #, python-format
 msgid "File %s has changed on disk"
-msgstr ""
+msgstr "Fayl %s on disk yígīŋ čeinjen"
 
 #: ../meld/filediff.py:1260
-#, fuzzy
 msgid "Do you want to reload the file?"
-msgstr "請問妳是否想刪除這個專案?"
+msgstr "Ayisyur tu rīloud nigè fayl?"
 
 #: ../meld/filediff.py:1263
 msgid "_Reload"
@@ -1540,45 +1538,42 @@ msgid "Could not save file %s."
 msgstr "\"%s\" 파일을 열 수 없음: %s\n"
 
 #: ../meld/filediff.py:1632
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Couldn't save file due to:\n"
 "%s"
-msgstr "오류 기록을 파일로 저장(_S)..."
+msgstr ""
+"Fayl seiv butdùk bikos:\n"
+"%s"
 
 #: ../meld/filediff.py:1644
-#, fuzzy
 msgid "Save Left Pane As"
-msgstr "_POV-Ray로 저장..."
+msgstr "Seiv Left Pänol As"
 
 #: ../meld/filediff.py:1646
-#, fuzzy
 msgid "Save Middle Pane As"
-msgstr "_POV-Ray로 저장..."
+msgstr "Seiv Middol Pänol As"
 
 #: ../meld/filediff.py:1648
-#, fuzzy
 msgid "Save Right Pane As"
-msgstr "오른쪽 Ctrl 키를 오른쪽 Alt 키로"
+msgstr "Seiv Ràit Pänol As"
 
 #: ../meld/filediff.py:1662
 #, python-format
 msgid "File %s has changed on disk since it was opened"
-msgstr ""
+msgstr "Fayl %s on disk yígīŋ čeinjen sins opènen"
 
 #: ../meld/filediff.py:1664
 msgid "If you save it, any external changes will be lost."
 msgstr ""
 
 #: ../meld/filediff.py:1667
-#, fuzzy
 msgid "Save Anyway"
-msgstr "어쨌든 계속합니다."
+msgstr "Ignor en Seiv"
 
 #: ../meld/filediff.py:1668
-#, fuzzy
 msgid "Don't Save"
-msgstr "另存為 (&A)..."
+msgstr "Not dū Seiv"
 
 #: ../meld/filediff.py:1694
 #, fuzzy
@@ -1652,7 +1647,7 @@ msgstr "fayl"
 
 #: ../meld/meldapp.py:176 ../meld/meldapp.py:180
 msgid "folder"
-msgstr "foulder"
+msgstr "fouldèr"
 
 #: ../meld/meldapp.py:177
 #, fuzzy
@@ -1707,7 +1702,7 @@ msgstr ""
 
 #: ../meld/meldapp.py:259
 msgid "Create a diff tab for the supplied files or folders"
-msgstr ""
+msgstr "Krieit diff täb für sùpplaien fayls or fouldèrs"
 
 #: ../meld/meldapp.py:279
 #, fuzzy, python-format
@@ -1727,9 +1722,9 @@ msgid "Error reading saved comparison file"
 msgstr "Öra rīdiŋ seiven kompäreiçion fayl"
 
 #: ../meld/meldapp.py:326
-#, fuzzy, python-format
+#, python-format
 msgid "invalid path or URI \"%s\""
-msgstr "사용자 이름이나 암호가 잘못됨"
+msgstr "invälid paŧwei or YRI \"%s\""
 
 #. TRANSLATORS: This is the label of a new, currently-unnamed file.
 #: ../meld/meldbuffer.py:137
@@ -1746,7 +1741,7 @@ msgstr "_Fayl"
 
 #: ../meld/meldwindow.py:49
 msgid "_New Comparison..."
-msgstr "_Pikka Kompäreiçion..."
+msgstr "_Pikka Kompäreiçion…"
 
 #: ../meld/meldwindow.py:50
 #, fuzzy
@@ -1759,7 +1754,7 @@ msgstr "Seiv körrènt fayl"
 
 #: ../meld/meldwindow.py:55
 msgid "Save As..."
-msgstr "Seiv As..."
+msgstr "Seiv As…"
 
 #: ../meld/meldwindow.py:56
 #, fuzzy
@@ -1785,9 +1780,8 @@ msgid "Redo the last undone action"
 msgstr "취소했던 마지막 동작 재실행"
 
 #: ../meld/meldwindow.py:69
-#, fuzzy
 msgid "Cut the selection"
-msgstr "語言選擇"
+msgstr "Kùt silekçion"
 
 #: ../meld/meldwindow.py:71
 msgid "Copy the selection"
@@ -1800,7 +1794,7 @@ msgstr "클립보드의 내용을 붙여넣기"
 
 #: ../meld/meldwindow.py:75
 msgid "Find..."
-msgstr "Faind..."
+msgstr "Faind…"
 
 #: ../meld/meldwindow.py:75
 #, fuzzy
@@ -1828,7 +1822,7 @@ msgstr "정규 표현식을 이용해 역순 검색"
 
 #: ../meld/meldwindow.py:84
 msgid "_Replace..."
-msgstr "_Rīpleis..."
+msgstr "_Rīpleis…"
 
 #: ../meld/meldwindow.py:85
 #, fuzzy
@@ -1845,18 +1839,16 @@ msgid "Next Change"
 msgstr "사소한 변경"
 
 #: ../meld/meldwindow.py:90
-#, fuzzy
 msgid "Go to the next change"
-msgstr "배치를 전환하는 키"
+msgstr "Goutu nèist čeinj"
 
 #: ../meld/meldwindow.py:92
 msgid "Previous Change"
 msgstr "Priv Čeinj"
 
 #: ../meld/meldwindow.py:93
-#, fuzzy
 msgid "Go to the previous change"
-msgstr "이전 슬라이드로 가기"
+msgstr "Goutu priv čeinj"
 
 #: ../meld/meldwindow.py:95
 #, fuzzy
@@ -1927,9 +1919,8 @@ msgid "Move current tab to right"
 msgstr "창을 우측으로 이동"
 
 #: ../meld/meldwindow.py:128
-#, fuzzy
 msgid "Fullscreen"
-msgstr "전체 화면"
+msgstr "Fullskrīn"
 
 #: ../meld/meldwindow.py:129
 msgid "View the comparison in fullscreen"
@@ -2074,9 +2065,8 @@ msgid "Unversioned"
 msgstr "Mǐkoncrolen"
 
 #: ../meld/vc/_vc.py:68
-#, fuzzy
 msgid "Error"
-msgstr "오류"
+msgstr "Öra"
 
 #: ../meld/vc/_vc.py:70
 #, fuzzy
@@ -2132,9 +2122,8 @@ msgstr "%s wa mi-instolen"
 #. TRANSLATORS: this is an error message when a version
 #. controlled repository is invalid or corrupted
 #: ../meld/vcview.py:328
-#, fuzzy
 msgid "Invalid repository"
-msgstr "저장소 정보가 올바르지 않습니다"
+msgstr "Invälid rīpositori"
 
 #: ../meld/vcview.py:337
 #, python-format
