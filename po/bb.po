@@ -694,35 +694,32 @@ msgid "Delete change"
 msgstr "Dilit čeinj"
 
 #: ../data/ui/filediff.ui.h:32
-#, fuzzy
 msgid "Merge All from Left"
-msgstr "Kopi Ol Tu _Left"
+msgstr "Mörj Ol from Left"
 
 #: ../data/ui/filediff.ui.h:33
 msgid "Merge all non-conflicting changes from the left"
-msgstr ""
+msgstr "Mörj ol mwu-konflikt-gè čeinjs from left"
 
 #: ../data/ui/filediff.ui.h:34
-#, fuzzy
 msgid "Merge All from Right"
-msgstr "Kopi Ol Tu _Ràit"
+msgstr "Mörj Ol from Ràit"
 
 #: ../data/ui/filediff.ui.h:35
 msgid "Merge all non-conflicting changes from the right"
-msgstr ""
+msgstr "Mörj ol mwu-konflikt-gè čeinjs from rait"
 
 #: ../data/ui/filediff.ui.h:36
 msgid "Merge All"
-msgstr ""
+msgstr "Mörj Ol "
 
 #: ../data/ui/filediff.ui.h:37
 msgid "Merge all non-conflicting changes from left and right panes"
-msgstr ""
+msgstr "Mörj ol mwu-konflikt-gè čeinjs from left en rait pänol"
 
 #: ../data/ui/filediff.ui.h:38
-#, fuzzy
 msgid "Previous Pane"
-msgstr "Previous Logs"
+msgstr "Priv Pänol"
 
 #: ../data/ui/filediff.ui.h:39
 msgid "Move keyboard focus to the previous document in this comparison"
@@ -730,7 +727,7 @@ msgstr ""
 
 #: ../data/ui/filediff.ui.h:40
 msgid "Next Pane"
-msgstr ""
+msgstr "Nèist Pänol"
 
 #: ../data/ui/filediff.ui.h:41
 msgid "Move keyboard focus to the next document in this comparison"
@@ -759,11 +756,11 @@ msgstr ""
 #: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:956 ../meld/filediff.py:1607
 #: ../meld/filediff.py:1691 ../meld/filediff.py:1716
 msgid "_Cancel"
-msgstr ""
+msgstr "_Känsol"
 
 #: ../data/ui/filediff.ui.h:48
 msgid "_Save"
-msgstr "_Save"
+msgstr "_Seiv"
 
 #: ../data/ui/filediff.ui.h:49
 msgid ""
@@ -1009,11 +1006,11 @@ msgstr "Kommit Messeijs"
 
 #: ../data/ui/preferences.ui.h:38
 msgid "Show _right margin at:"
-msgstr ""
+msgstr "Displei _rait marjin à:"
 
 #: ../data/ui/preferences.ui.h:39
 msgid "Automatically _break lines at right margin on commit"
-msgstr ""
+msgstr "Òtomeitikolli _breik lains à rait marjin on kommit"
 
 #: ../data/ui/preferences.ui.h:40
 msgid "Version Control"
@@ -1029,9 +1026,9 @@ msgid ""
 "directories by name. Each pattern is a list of shell style wildcards "
 "separated by spaces."
 msgstr ""
-"When performing directory comparisons, you may filter out files and "
-"directories by name. Each pattern is a list of shell style wildcards "
-"separated by spaces."
+"When pörformiŋ direktòris kompäreiçions, nei keyi filtèr out fayls en "
+"direktòris bai neim.  Evri pättèrn wa list konteiniŋ šel staiyol waildkards "
+"sepäreiten bai speises."
 
 #: ../data/ui/preferences.ui.h:43 ../meld/meldwindow.py:103
 msgid "File Filters"
@@ -1043,7 +1040,7 @@ msgstr "Čeinj trimiŋ"
 
 #: ../data/ui/preferences.ui.h:45
 msgid "Trim blank line differences from the start and end of changes"
-msgstr ""
+msgstr "Trim blänk lain diffèrènses from čeinjs dè start en end"
 
 #: ../data/ui/preferences.ui.h:46
 msgid "Text filters"
@@ -1076,13 +1073,12 @@ msgid "File comparison"
 msgstr "Fayl kompäreiçion"
 
 #: ../data/ui/tab-placeholder.ui.h:3
-#, fuzzy
 msgid "Directory comparison"
-msgstr "_Directory Comparison"
+msgstr "Direktòri kompäreiçion"
 
 #: ../data/ui/tab-placeholder.ui.h:4
 msgid "Version control view"
-msgstr "Version control view"
+msgstr "Vörçion koncrol vyu"
 
 #: ../data/ui/tab-placeholder.ui.h:5
 msgid "_3-way comparison"
@@ -1090,37 +1086,36 @@ msgstr "_3-direkçionol kompäreiçion"
 
 #: ../data/ui/tab-placeholder.ui.h:6
 msgid "Select Third File"
-msgstr ""
+msgstr "Silekt de-3-gè fayl"
 
 #: ../data/ui/tab-placeholder.ui.h:7
 msgid "Select Second File"
-msgstr ""
+msgstr "Silekt de-2-gè fayl"
 
 #: ../data/ui/tab-placeholder.ui.h:8
 msgid "Select First File"
-msgstr ""
+msgstr "Silekt de-1-gè fayl"
 
 #: ../data/ui/tab-placeholder.ui.h:9
 msgid "Select First Folder"
-msgstr ""
+msgstr "Silekt de-1-gè fouldèr"
 
 #: ../data/ui/tab-placeholder.ui.h:10
 msgid "Select Second Folder"
-msgstr ""
+msgstr "Silekt de-2-gè fouldèr"
 
 #: ../data/ui/tab-placeholder.ui.h:11
 msgid "Select Third Folder"
-msgstr ""
+msgstr "Silekt de-3-gè fouldèr"
 
 #: ../data/ui/tab-placeholder.ui.h:12
 #, fuzzy
 msgid "Select A Version-Controlled Folder"
-msgstr "_Version Control Browser"
+msgstr "Silekt 1-gè vörçion-koncrolen fouldèr"
 
 #: ../data/ui/tab-placeholder.ui.h:13
-#, fuzzy
 msgid "_Blank comparison"
-msgstr "_Fayl Kompäreiçion"
+msgstr "_Blänk kompäreiçion"
 
 #: ../data/ui/tab-placeholder.ui.h:14
 msgid "C_ompare"
@@ -1136,11 +1131,11 @@ msgstr "Kommit čeinjs tu vörçion koncrol"
 
 #: ../data/ui/vcview.ui.h:5
 msgid "_Update"
-msgstr "_Update"
+msgstr "Ù_pdeit"
 
 #: ../data/ui/vcview.ui.h:6
 msgid "Update working copy from version control"
-msgstr ""
+msgstr "Ùpdeit wörkiŋ kopi from vörçion koncrol"
 
 #: ../data/ui/vcview.ui.h:7
 msgid "_Push"
@@ -1168,23 +1163,23 @@ msgstr "Mar_k as rīsolven in vörçion koncrol"
 
 #: ../data/ui/vcview.ui.h:15
 msgid "Re_vert"
-msgstr ""
+msgstr "Rī_vört "
 
 #: ../data/ui/vcview.ui.h:16
 msgid "Revert working copy to original state"
-msgstr ""
+msgstr "Rīvört wörkiŋ kopi tu orijinol steitùs"
 
 #: ../data/ui/vcview.ui.h:17
 msgid "Delete from working copy"
-msgstr "Dilit from wörkiŋ kopi "
+msgstr "Dilit from wörkiŋ kopi"
 
 #: ../data/ui/vcview.ui.h:18
 msgid "Console"
-msgstr ""
+msgstr "Konsol"
 
 #: ../data/ui/vcview.ui.h:19
 msgid "Show or hide the version control console output pane"
-msgstr ""
+msgstr "Displei or neimai vörçion koncrol konsol output pänol"
 
 #: ../data/ui/vcview.ui.h:20
 msgid "_Flatten"

@@ -202,8 +202,8 @@ msgid ""
 msgstr ""
 "I en jämförelse mapp varje rad innehåller en enda fil eller mapp som finns i "
 "åtminstone en av mapparna som jämförs. Var och en av dessa rader "
-"klassificeras som antingen <em>Modifieras</ em>, <em>Nytt</ em> eller <em> "
-"Samma."
+"klassificeras som antingen <em>Modifieras</em>, <em>Nytt</em> eller <em> "
+"Samma</em>:"
 
 #. (itstool) path: item/title
 #. (itstool) path: td/p
@@ -215,8 +215,7 @@ msgstr "Modifieras"
 #: C/file-filters.page:59
 msgid "The file exists in multiple folders, but the files are different"
 msgstr ""
-"Fayl wiŧ seim faylneim iksists in mùltipol fouldèrs, bùt nidi fayls wa "
-"diffèrènt"
+"Filen finns i flera mappar, men filerna är olika"
 
 #. (itstool) path: item/title
 #. (itstool) path: td/p
@@ -228,7 +227,7 @@ msgstr "Nytt"
 #: C/file-filters.page:63
 msgid "The file exists in one folder but not in the others"
 msgstr ""
-"Fayl wiŧ seim faylneim iksists in kiẑōŋ 1-gè fouldèr, bùt not dū in kita"
+"Filen finns i en mapp men inte i andra"
 
 #. (itstool) path: item/title
 #. (itstool) path: td/p
