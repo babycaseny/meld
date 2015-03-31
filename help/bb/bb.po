@@ -756,14 +756,14 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/file-changes.page:30
 msgid "Navigating between changes"
-msgstr "Nävigeiting bitwin c<einjs"
+msgstr "Nävigeitiŋ bitwīn čeinjs"
 
 #. (itstool) path: section/p
 #: C/file-changes.page:32
 msgid ""
-"You can navigate between changes with the <guiseq><gui style=\"menu"
-"\">Changes</gui><gui style=\"menuitem\">Previous change</gui></guiseq> and "
-"<guiseq><gui style=\"menu\">Changes</gui><gui style=\"menuitem\">Next "
+"Nei keyi nävigeit bitwīn čeinjs wiŧ <guiseq><gui style=\"menyu"
+"\">Čeinjs</gui><gui style=\"menuitem\">Priv čeinj</gui></guiseq> en "
+"<guiseq><gui style=\"menu\">Čeinjs</gui><gui style=\"menuitem\">Nèist "
 "change</gui></guiseq> menu items. You can also use your mouse's scroll wheel "
 "to move between changes, by scrolling on the central change bar."
 msgstr ""
@@ -775,9 +775,8 @@ msgstr ""
 
 #. (itstool) path: section/title
 #: C/file-changes.page:46
-#, fuzzy
 msgid "Changing changes"
-msgstr "Cambiando los cambios"
+msgstr "Čeinjiŋ los čeinjs"
 
 #. (itstool) path: section/p
 #: C/file-changes.page:48

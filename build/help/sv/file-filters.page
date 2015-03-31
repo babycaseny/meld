@@ -26,20 +26,15 @@
 <section id="file-state-filter">
 <title>File skillnader filtrerings</title>
 
-<p>
-In a folder comparison, each line contains a single file or folder
-that is present in at least one of the folders being compared. Each of
-these lines is classified as being either <em>Modifed</em>, <em>New</em>
-or <em>Same</em>:
-</p>
+<p>I en jämförelse mapp varje rad innehåller en enda fil eller mapp som finns i åtminstone en av mapparna som jämförs. Var och en av dessa rader klassificeras som antingen <em>Modifieras</em>, <em>Nytt</em> eller <em> Samma</em>:</p>
 <terms>
   <item>
     <title>Modifieras</title>
-    <p>Fayl wiŧ seim faylneim iksists in mùltipol fouldèrs, bùt nidi fayls wa diffèrènt</p>
+    <p>Filen finns i flera mappar, men filerna är olika</p>
   </item>
   <item>
     <title>Nytt</title>
-    <p>Fayl wiŧ seim faylneim iksists in kiẑōŋ 1-gè fouldèr, bùt not dū in kita</p>
+    <p>Filen finns i en mapp men inte i andra</p>
   </item>
   <item>
     <title>Samma</title>

@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=meld&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-01-21 18:19+0800\n"
-"PO-Revision-Date: 2015-04-01 00:33+0800\n"
+"PO-Revision-Date: 2015-04-01 00:52+0800\n"
 "Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
 "Language-Team: Babycasèny Gavèrnmènt\n"
 "Language: bb\n"
@@ -90,7 +90,7 @@ msgstr "Difàult window saiz"
 
 #: ../data/org.gnome.meld.gschema.xml.h:2
 msgid "Default window state"
-msgstr "Difàult window steit"
+msgstr "Difàult window steitùs"
 
 #: ../data/org.gnome.meld.gschema.xml.h:3
 msgid "Show toolbar"
@@ -143,6 +143,7 @@ msgstr "Displei lain nùmbèrs"
 #: ../data/org.gnome.meld.gschema.xml.h:14
 msgid "If true, line numbers will be shown in the gutter of file comparisons."
 msgstr ""
+"If seten, lain nùmbèrs wa displeiiŋ in fayl kompäreiçions skrīn dè gùttèr."
 
 #: ../data/org.gnome.meld.gschema.xml.h:15
 msgid "Highlight syntax"
@@ -615,19 +616,16 @@ msgid "Previous Conflict"
 msgstr "Priv Konflikt"
 
 #: ../data/ui/filediff.ui.h:11
-#, fuzzy
 msgid "Go to the previous conflict"
-msgstr "이전 슬라이드로 가기"
+msgstr "Goutu priv konflikt"
 
 #: ../data/ui/filediff.ui.h:12
-#, fuzzy
 msgid "Next Conflict"
-msgstr "자원 충돌"
+msgstr "Nèist Konflikt"
 
 #: ../data/ui/filediff.ui.h:13
-#, fuzzy
 msgid "Go to the next conflict"
-msgstr "다음 화면으로 이동"
+msgstr "Goutu nèist konflikt"
 
 #: ../data/ui/filediff.ui.h:14
 #, fuzzy
@@ -710,22 +708,20 @@ msgid "Delete change"
 msgstr "Dilit čeinj"
 
 #: ../data/ui/filediff.ui.h:32
-#, fuzzy
 msgid "Merge All from Left"
-msgstr "왼쪽 색상 불러오기(_L)"
+msgstr "Mörj Ol from Left"
 
 #: ../data/ui/filediff.ui.h:33
 msgid "Merge all non-conflicting changes from the left"
-msgstr ""
+msgstr "Mörj ol mwu-konflikt-gè čeinjs from left"
 
 #: ../data/ui/filediff.ui.h:34
-#, fuzzy
 msgid "Merge All from Right"
-msgstr "왼쪽에서 오른쪽으로"
+msgstr "Mörj Ol from Ràit"
 
 #: ../data/ui/filediff.ui.h:35
 msgid "Merge all non-conflicting changes from the right"
-msgstr ""
+msgstr "Mörj ol mwu-konflikt-gè čeinjs from rait"
 
 #: ../data/ui/filediff.ui.h:36
 msgid "Merge All"
@@ -733,7 +729,7 @@ msgstr "Mörj Ol"
 
 #: ../data/ui/filediff.ui.h:37
 msgid "Merge all non-conflicting changes from left and right panes"
-msgstr ""
+msgstr "Mörj ol mwu-konflikt-gè čeinjs from left en rait pänol"
 
 #: ../data/ui/filediff.ui.h:38
 msgid "Previous Pane"
@@ -744,31 +740,28 @@ msgid "Move keyboard focus to the previous document in this comparison"
 msgstr ""
 
 #: ../data/ui/filediff.ui.h:40
-#, fuzzy
 msgid "Next Pane"
-msgstr "창 배치"
+msgstr "Nèist Pänol"
 
 #: ../data/ui/filediff.ui.h:41
 msgid "Move keyboard focus to the next document in this comparison"
 msgstr ""
 
 #: ../data/ui/filediff.ui.h:42
-#, fuzzy
 msgid "Lock Scrolling"
-msgstr "Caps Lock"
+msgstr "Lokk Skrolliŋ"
 
 #: ../data/ui/filediff.ui.h:43
 msgid "Lock scrolling of all panes"
-msgstr ""
+msgstr "Lokk ol pänols dè skrolliŋ"
 
 #: ../data/ui/filediff.ui.h:44
-#, fuzzy
 msgid "Save changes to documents before closing?"
-msgstr "이미지를 닫기 전에 '%s'을(를) 저장하시겠습니까?"
+msgstr "Seiv čeinjs tu dokyumènts bifor klosiŋ?"
 
 #: ../data/ui/filediff.ui.h:45
 msgid "If you don't save, changes will be permanently lost."
-msgstr ""
+msgstr "If čeinjs not dū seiven, čeinjs-wa mwuzo-gala."
 
 #: ../data/ui/filediff.ui.h:46
 msgid "Close _without Saving"
@@ -787,7 +780,7 @@ msgstr "_Seiv"
 msgid ""
 "This file can not be written to. You may click here to unlock this file and "
 "make changes anyway, but these changes must be saved to a new file."
-msgstr ""
+msgstr "Komplit wörd"
 
 #: ../data/ui/filediff.ui.h:50
 msgid "File 3"
@@ -838,9 +831,8 @@ msgid "_Match case"
 msgstr "_Match case"
 
 #: ../data/ui/findbar.ui.h:8
-#, fuzzy
 msgid "Who_le word"
-msgstr "단어 단위로 입력"
+msgstr "Komplit wörd    "
 
 #: ../data/ui/findbar.ui.h:9
 msgid "Regular e_xpression"
@@ -851,7 +843,6 @@ msgid "Wrapped"
 msgstr "Wräpen"
 
 #: ../data/ui/patch-dialog.ui.h:1
-#, fuzzy
 msgid "Format as Patch"
 msgstr "Formät as progremfiks…"
 
@@ -861,7 +852,7 @@ msgstr "Kopi tu Klipbōd "
 
 #: ../data/ui/patch-dialog.ui.h:3 ../meld/patchdialog.py:119
 msgid "Save Patch"
-msgstr "Seiv Päč"
+msgstr "Seiv Progremfiks"
 
 #: ../data/ui/patch-dialog.ui.h:4
 msgid "Use differences between:"
@@ -877,7 +868,7 @@ msgstr "Middol en rait pänols"
 
 #: ../data/ui/patch-dialog.ui.h:7
 msgid "_Reverse patch direction"
-msgstr "Rivörs päč direkçion"
+msgstr "_Rīvörs progremfiks dè direkçion"
 
 #: ../data/ui/preferences.ui.h:1
 msgid "Left is remote, right is local"
@@ -1029,11 +1020,11 @@ msgstr "Kommit Messeijs"
 #: ../data/ui/preferences.ui.h:38
 #, fuzzy
 msgid "Show _right margin at:"
-msgstr "시작할 때 이 창 표시"
+msgstr "Displei _rait marjin à:"
 
 #: ../data/ui/preferences.ui.h:39
 msgid "Automatically _break lines at right margin on commit"
-msgstr ""
+msgstr "Òtomeitikolli _breik lains à rait marjin on kommit"
 
 #: ../data/ui/preferences.ui.h:40
 msgid "Version Control"
@@ -1049,9 +1040,9 @@ msgid ""
 "directories by name. Each pattern is a list of shell style wildcards "
 "separated by spaces."
 msgstr ""
-"When performing directory comparisons, you may filter out files and "
-"directories by name. Each pattern is a list of shell style wildcards "
-"separated by spaces."
+"When pörformiŋ direktòris kompäreiçions, nei keyi filtèr out fayls en "
+"direktòris bai neim.  Evri pättèrn wa list konteiniŋ šel staiyol waildkards "
+"sepäreiten bai speises."
 
 #: ../data/ui/preferences.ui.h:43 ../meld/meldwindow.py:103
 msgid "File Filters"
@@ -1063,7 +1054,7 @@ msgstr "Čeinj trimiŋ"
 
 #: ../data/ui/preferences.ui.h:45
 msgid "Trim blank line differences from the start and end of changes"
-msgstr ""
+msgstr "Trim blänk lain diffèrènses from čeinjs dè start en end"
 
 #: ../data/ui/preferences.ui.h:46
 msgid "Text filters"
@@ -1096,52 +1087,44 @@ msgid "File comparison"
 msgstr "Fayl kompäreiçion"
 
 #: ../data/ui/tab-placeholder.ui.h:3
-#, fuzzy
 msgid "Directory comparison"
-msgstr "Pikka kompäreiçion"
+msgstr "Direktòri kompäreiçion"
 
 #: ../data/ui/tab-placeholder.ui.h:4
 msgid "Version control view"
-msgstr "Version control view"
+msgstr "Vörçion koncrol vyu"
 
 #: ../data/ui/tab-placeholder.ui.h:5
 msgid "_3-way comparison"
 msgstr "_3-direkçionol kompäreiçion"
 
 #: ../data/ui/tab-placeholder.ui.h:6
-#, fuzzy
 msgid "Select Third File"
-msgstr "팔레트 파일 선택"
+msgstr "Silekt de-3-gè fayl"
 
 #: ../data/ui/tab-placeholder.ui.h:7
-#, fuzzy
 msgid "Select Second File"
-msgstr "팔레트 파일 선택"
+msgstr "Silekt de-2-gè fayl"
 
 #: ../data/ui/tab-placeholder.ui.h:8
-#, fuzzy
 msgid "Select First File"
-msgstr "팔레트 파일 선택"
+msgstr "Silekt de-1-gè fayl"
 
 #: ../data/ui/tab-placeholder.ui.h:9
-#, fuzzy
 msgid "Select First Folder"
-msgstr "스왑 디렉토리 선택"
+msgstr "Silekt de-1-gè fouldèr"
 
 #: ../data/ui/tab-placeholder.ui.h:10
-#, fuzzy
 msgid "Select Second Folder"
-msgstr "스왑 디렉토리 선택"
+msgstr "Silekt de-2-gè fouldèr"
 
 #: ../data/ui/tab-placeholder.ui.h:11
-#, fuzzy
 msgid "Select Third Folder"
-msgstr "스왑 디렉토리 선택"
+msgstr "Silekt de-3-gè fouldèr"
 
 #: ../data/ui/tab-placeholder.ui.h:12
-#, fuzzy
 msgid "Select A Version-Controlled Folder"
-msgstr "임시 폴더 선택"
+msgstr "Silekt 1-gè vörçion-koncrolen fouldèr"
 
 #: ../data/ui/tab-placeholder.ui.h:13
 msgid "_Blank comparison"
@@ -1202,7 +1185,7 @@ msgstr "Rīvört wörkiŋ kopi tu orijinol steitùs"
 
 #: ../data/ui/vcview.ui.h:17
 msgid "Delete from working copy"
-msgstr "Dilit from wörkiŋ kopi "
+msgstr "Dilit from wörkiŋ kopi"
 
 #: ../data/ui/vcview.ui.h:18
 msgid "Console"
@@ -1210,7 +1193,7 @@ msgstr "Konsol"
 
 #: ../data/ui/vcview.ui.h:19
 msgid "Show or hide the version control console output pane"
-msgstr ""
+msgstr "Displei or neimai vörçion koncrol konsol output pänol"
 
 #: ../data/ui/vcview.ui.h:20
 msgid "_Flatten"
@@ -1262,7 +1245,7 @@ msgstr "Kommit Fayls"
 
 #: ../data/ui/vcview.ui.h:32
 msgid "Log Message"
-msgstr "Log Message"
+msgstr "Log Messeij"
 
 #: ../data/ui/vcview.ui.h:33
 msgid "Previous logs:"
@@ -1296,9 +1279,8 @@ msgstr "Saiz"
 
 #. Create date-time CellRenderer
 #: ../meld/dirdiff.py:391 ../meld/preferences.py:83
-#, fuzzy
 msgid "Modification time"
-msgstr "수정 시간 없음!"
+msgstr "Modifaikeiçion taim"
 
 #. Create permissions CellRenderer
 #: ../meld/dirdiff.py:399 ../meld/preferences.py:84
