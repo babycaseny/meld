@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=meld&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-01-21 18:19+0800\n"
-"PO-Revision-Date: 2015-04-01 01:15+0800\n"
+"PO-Revision-Date: 2015-04-01 01:28+0800\n"
 "Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
 "Language-Team: Babycasèny Gavèrnmènt\n"
 "Language: bb\n"
@@ -999,7 +999,7 @@ msgstr "Vyusolabol Kolumns"
 
 #: ../data/ui/preferences.ui.h:33
 msgid "Folder Comparisons"
-msgstr "_Fouldèr Kompäreiçions"
+msgstr "Fouldèr Kompäreiçions"
 
 #: ../data/ui/preferences.ui.h:34
 msgid "Version Comparisons"
@@ -1309,7 +1309,7 @@ msgstr "Fouldèrs wa mwu diffèrènses"
 
 #: ../meld/dirdiff.py:842
 msgid "Contents of scanned files in folders are identical."
-msgstr ""
+msgstr "Kontents in skänen fayls in Fouldèrs wa aidentikol."
 
 #: ../meld/dirdiff.py:844
 msgid ""
@@ -1411,7 +1411,7 @@ msgstr "Ln %i, Kol %i"
 
 #: ../meld/filediff.py:821
 msgid "Comparison results will be inaccurate"
-msgstr ""
+msgstr "Kompäreiçion risùlt wa possibolli not akkyureit"
 
 #: ../meld/filediff.py:823
 #, python-format
@@ -1459,9 +1459,9 @@ msgid "[%s] Reading files"
 msgstr "[%s] Reading files"
 
 #: ../meld/filediff.py:1140
-#, fuzzy, python-format
+#, python-format
 msgid "%s appears to be a binary file."
-msgstr "김프 팁 파일이 없습니다!"
+msgstr "%s wa bainari fayl nigga?"
 
 #: ../meld/filediff.py:1153
 #, python-format
@@ -1533,9 +1533,9 @@ msgid ""
 msgstr ""
 
 #: ../meld/filediff.py:1631
-#, fuzzy, python-format
+#, python-format
 msgid "Could not save file %s."
-msgstr "\"%s\" 파일을 열 수 없음: %s\n"
+msgstr "Seiv fayl %s butdùk."
 
 #: ../meld/filediff.py:1632
 #, python-format
@@ -1576,12 +1576,11 @@ msgid "Don't Save"
 msgstr "Not dū Seiv"
 
 #: ../meld/filediff.py:1694
-#, fuzzy
 msgid "Inconsistent line endings found"
-msgstr "förväntad fortsättningsrad inte funnen"
+msgstr "Lain endiŋs dè inkonsistènt wa fainden"
 
 #: ../meld/filediff.py:1696
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "'%s' contains a mixture of line endings. Select the line ending format to "
 "use."
@@ -1692,9 +1691,8 @@ msgid "Set the target file for saving a merge result"
 msgstr ""
 
 #: ../meld/meldapp.py:251
-#, fuzzy
 msgid "Automatically merge files"
-msgstr "Kompär en mörj neidè fayls."
+msgstr "Òtomeitikolli mörj  fayls"
 
 #: ../meld/meldapp.py:255
 msgid "Load a saved comparison from a Meld comparison file"
@@ -1941,9 +1939,8 @@ msgid "Open Recent"
 msgstr "최근 사용한 파일(_R)"
 
 #: ../meld/meldwindow.py:142
-#, fuzzy
 msgid "Open recent files"
-msgstr "För många öppna filer"
+msgstr "Opèn zuigèn yusen fayls"
 
 #: ../meld/meldwindow.py:164
 msgid "_Meld"
@@ -1958,9 +1955,8 @@ msgid "Prefere_nces"
 msgstr "_Priförè_nses"
 
 #: ../meld/meldwindow.py:168
-#, fuzzy
 msgid "Configure the application"
-msgstr "응용 프로그램 전환기"
+msgstr "Konfigyur nigè applaikeiçion"
 
 #: ../meld/meldwindow.py:170
 msgid "_Contents"
@@ -2011,9 +2007,8 @@ msgid "Close tab"
 msgstr "Klos täb"
 
 #: ../meld/ui/vcdialogs.py:61
-#, fuzzy
 msgid "No files will be committed"
-msgstr "#%d 작업을 다시 시작할 수 없음 - 파일 없음!"
+msgstr "Mwu fayls kommitiŋ ikspekten"
 
 #. Translators: First %s is replaced by translated "%d unpushed
 #. commits", second %s is replaced by translated "%d branches"
@@ -2039,9 +2034,9 @@ msgstr[0] "%d branch"
 msgstr[1] "%d branches"
 
 #: ../meld/vc/git.py:360
-#, fuzzy, python-format
+#, python-format
 msgid "Mode changed from %s to %s"
-msgstr "%s의 모드를 %04lo(%s)으로 변경하였습니다\n"
+msgstr "Moud čeinjen from %s tu %s"
 
 #: ../meld/vc/_vc.py:47
 #, fuzzy
@@ -2078,23 +2073,20 @@ msgid "Renamed"
 msgstr "Rīneimen"
 
 #: ../meld/vc/_vc.py:73
-#, fuzzy
 msgid "Conflict"
-msgstr "충돌하고 있습니다."
+msgstr "Konflikt"
 
 #: ../meld/vc/_vc.py:74
 msgid "Removed"
 msgstr "Rīmūven"
 
 #: ../meld/vc/_vc.py:75
-#, fuzzy
 msgid "Missing"
-msgstr "}이 빠졌습니다"
+msgstr "Mwuzo"
 
 #: ../meld/vc/_vc.py:76
-#, fuzzy
 msgid "Not present"
-msgstr "\t데몬 표시\n"
+msgstr "Mipresent"
 
 #: ../meld/vcview.py:233 ../meld/vcview.py:417
 msgid "Location"
