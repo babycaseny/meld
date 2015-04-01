@@ -1467,16 +1467,19 @@ msgid "'%s' hidden by '%s'"
 msgstr "”%s” dolda av ”%s”"
 
 #: ../meld/dirdiff.py:971
-#, python-format
+#, fuzzy, python-format
 msgid "Replace folder “%s”?"
-msgstr ""
+msgstr "Byta mappen “%s”?"
 
 #: ../meld/dirdiff.py:973
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Another folder with the same name already exists in “%s”.\n"
 "If you replace the existing folder, all files in it will be lost."
 msgstr ""
+"En annan mapp med samma namn redan "
+"finns i ”%s”. Om du byter ut befintlig "
+"mapp kommer alla filer i det förlorade."
 
 #: ../meld/dirdiff.py:986
 msgid "Error copying file"
@@ -1504,7 +1507,7 @@ msgstr "Fel vid borttagning av %s"
 #, fuzzy
 #| msgid "folder"
 msgid "No folder"
-msgstr "mapp"
+msgstr "Ingen mapp"
 
 #. Abbreviations for insert and overwrite that fit in the status bar
 #: ../meld/filediff.py:406
@@ -1523,7 +1526,7 @@ msgstr "Rad %i, kolumn %i"
 
 #: ../meld/filediff.py:821
 msgid "Comparison results will be inaccurate"
-msgstr ""
+msgstr "Jämförelse resultat att bli felaktig"
 
 #: ../meld/filediff.py:823
 #, fuzzy, python-format
@@ -1729,12 +1732,12 @@ msgstr ""
 
 #: ../meld/filediff.py:1739
 msgid "_Save as UTF-8"
-msgstr ""
+msgstr "_Spara som UTF-8"
 
 #: ../meld/filediff.py:1742
 #, python-format
 msgid "Couldn't encode text as “%s”"
-msgstr ""
+msgstr ""Kunde inte koda text som “%s”"
 
 #: ../meld/filediff.py:1744
 #, fuzzy, python-format
@@ -1865,7 +1868,7 @@ msgstr "Fel vid läsning av den sparade konfigurationsfilen"
 #: ../meld/meldapp.py:326
 #, python-format
 msgid "invalid path or URI \"%s\""
-msgstr ""
+msgstr "ogiltig sökväg eller URI ”%s”"
 
 #. TRANSLATORS: This is the label of a new, currently-unnamed file.
 #: ../meld/meldbuffer.py:137
