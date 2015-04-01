@@ -8,18 +8,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: meld\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=meld&ke"
-"ywords=I18N+L10N&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=meld&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-01-21 18:19+0800\n"
-"PO-Revision-Date: 2015-02-26 21:00+0800\n"
-"Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
+"PO-Revision-Date: 2015-04-01 01:28+0800\n"
+"Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
 "Language-Team: Babycasèny Gavèrnmènt\n"
 "Language: bb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Project-Style: gnome\n"
 
 #: ../bin/meld:144
@@ -68,7 +68,7 @@ msgid ""
 "many version control systems including Git, Mercurial, Bazaar and Subversion."
 msgstr ""
 "Meld-wa vyusol diff en mörj tūl targeten tu divelopās.  Meld keyi kompär "
-"fayls, direktòris, en vörçion koncrolen projekts.  Meld provaid fayls en "
+"fayls, direktòris, en vörçion koncrolen prōjekts.  Meld provaid fayls en "
 "direktòris dè 2-wei en 3-wei kompäreiçion, sùpport mani vörçion koncrol "
 "sistèms, inklūdiŋ: Git, Mercurial, Bazaar en Subversion."
 
@@ -77,8 +77,8 @@ msgid ""
 "Meld helps you review code changes, understand patches, and makes enormous "
 "merge conflicts slightly less painful."
 msgstr ""
-"Meld help rīvyuiŋ koud čeinjs, förstå progremfikses en rīlif from "
-"mani mörj rīkwests."
+"Meld help rīvyuiŋ koud čeinjs, förstå progremfikses en rīlif from mani mörj "
+"rīkwests."
 
 #: ../data/mime/meld.xml.in.h:1
 msgid "Meld comparison description"
@@ -90,7 +90,7 @@ msgstr "Difàult window saiz"
 
 #: ../data/org.gnome.meld.gschema.xml.h:2
 msgid "Default window state"
-msgstr "Difàult window steit"
+msgstr "Difàult window steitùs"
 
 #: ../data/org.gnome.meld.gschema.xml.h:3
 msgid "Show toolbar"
@@ -143,6 +143,7 @@ msgstr "Displei lain nùmbèrs"
 #: ../data/org.gnome.meld.gschema.xml.h:14
 msgid "If true, line numbers will be shown in the gutter of file comparisons."
 msgstr ""
+"If seten, lain nùmbèrs wa displeiiŋ in fayl kompäreiçions skrīn dè gùttèr."
 
 #: ../data/org.gnome.meld.gschema.xml.h:15
 msgid "Highlight syntax"
@@ -171,6 +172,8 @@ msgid ""
 "Selector for individual whitespace character types to be shown. Possible "
 "values are 'space', 'tab', 'newline' and 'nbsp'."
 msgstr ""
+"Silektā für indivaidol hwaitspeis käraktā taips tu displeien.  Possibol "
+"välyus wa 'speis', 'täb', 'niulain' en 'nbsp'. "
 
 #: ../data/org.gnome.meld.gschema.xml.h:21
 msgid "Wrap mode"
@@ -212,10 +215,12 @@ msgid ""
 "The custom font to use, stored as a string and parsed as a Pango font "
 "description."
 msgstr ""
+"Kùstomaisen taipset tu yus, storen as striŋ en parsen as Pango dè font "
+"diskraipçion."
 
 #: ../data/org.gnome.meld.gschema.xml.h:29
 msgid "Ignore blank lines when comparing files"
-msgstr ""
+msgstr "Ignor blänk lains when kompäriŋ fayls"
 
 #: ../data/org.gnome.meld.gschema.xml.h:30
 msgid ""
@@ -231,10 +236,12 @@ msgid ""
 "If false, custom-editor-command will be used instead of the system editor "
 "when opening files externally."
 msgstr ""
+"If ùnset, kùstomaisen-editā-kommand wa yusen tu rīpleis sistèm editā when "
+"opèniŋ fayls ikstörnolli. "
 
 #: ../data/org.gnome.meld.gschema.xml.h:33
 msgid "The custom editor launch command"
-msgstr ""
+msgstr "Kommand tu launč kùstomaisen editā"
 
 #: ../data/org.gnome.meld.gschema.xml.h:34
 msgid ""
@@ -263,8 +270,9 @@ msgid ""
 msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:39
+#, fuzzy
 msgid "Use shallow comparison"
-msgstr ""
+msgstr "문자열 비교가 실패했습니다"
 
 #: ../data/org.gnome.meld.gschema.xml.h:40
 msgid ""
@@ -284,6 +292,9 @@ msgid ""
 "is useful when comparing files between filesystems with different timestamp "
 "resolution."
 msgstr ""
+"When kompäriŋ beisen on mtime, nigè minimùm diffèrèns in nanosekonds bitwīn "
+"2-gè fayls bifor konsidèren diffèrènt mtime välyus.  Nigè setiŋ wa yusfol "
+"when kompäriŋ fayls bitwīn faylsistèms wiŧ diffèrènt taimstämp rīsoluçion."
 
 #: ../data/org.gnome.meld.gschema.xml.h:43
 msgid "File status filters"
@@ -295,7 +306,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:45
 msgid "Show the version control console output"
-msgstr ""
+msgstr "Displei vörçion koncrol konsol output"
 
 #: ../data/org.gnome.meld.gschema.xml.h:46
 msgid ""
@@ -315,7 +326,7 @@ msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:49
 msgid "Present version comparisons as left-local/right-remote"
-msgstr ""
+msgstr "Jigùm-na vörçion kompäreiçions as left-lokol/rait-rīmot"
 
 #: ../data/org.gnome.meld.gschema.xml.h:50
 msgid ""
@@ -385,7 +396,6 @@ msgid ""
 msgstr ""
 
 #: ../data/org.gnome.meld.gschema.xml.h:63
-#, fuzzy
 msgid "Text-based filters"
 msgstr "Tekst-beisen filtèrās"
 
@@ -410,7 +420,7 @@ msgstr ""
 
 #: ../data/ui/application.ui.h:4
 msgid "Website"
-msgstr ""
+msgstr "Websàit"
 
 #: ../data/ui/application.ui.h:5
 msgid "translator-credits"
@@ -507,9 +517,8 @@ msgid "Filters"
 msgstr "Filtèrās"
 
 #: ../data/ui/dirdiff.ui.h:19
-#, fuzzy
 msgid "Set active filters"
-msgstr "Set aktiv filtèrās"
+msgstr "Set aktiv filtèrās "
 
 #: ../data/ui/EditableList.ui.h:1
 msgid "Editable List"
@@ -587,71 +596,78 @@ msgid "Revert files to their saved versions"
 msgstr "Rīvört fayls tu seiven vörçions"
 
 #: ../data/ui/filediff.ui.h:6
+#, fuzzy
 msgid "Add Synchronization Point"
-msgstr ""
+msgstr "김프"
 
 #: ../data/ui/filediff.ui.h:7
 msgid "Add a synchronization point for changes between files"
 msgstr ""
 
 #: ../data/ui/filediff.ui.h:8
+#, fuzzy
 msgid "Clear Synchronization Points"
-msgstr ""
+msgstr "표본점 표시"
 
 #: ../data/ui/filediff.ui.h:9
 msgid "Clear sychronization points for changes between files"
 msgstr ""
 
 #: ../data/ui/filediff.ui.h:10
-#, fuzzy
 msgid "Previous Conflict"
 msgstr "Priv Konflikt"
 
 #: ../data/ui/filediff.ui.h:11
 msgid "Go to the previous conflict"
-msgstr ""
+msgstr "Goutu priv konflikt"
 
 #: ../data/ui/filediff.ui.h:12
 msgid "Next Conflict"
-msgstr ""
+msgstr "Nèist Konflikt"
 
 #: ../data/ui/filediff.ui.h:13
 msgid "Go to the next conflict"
-msgstr ""
+msgstr "Goutu nèist konflikt"
 
 #: ../data/ui/filediff.ui.h:14
+#, fuzzy
 msgid "Push to Left"
-msgstr ""
+msgstr "왼쪽으로 최대화."
 
 #: ../data/ui/filediff.ui.h:15
+#, fuzzy
 msgid "Push current change to the left"
-msgstr ""
+msgstr "kan inte byta aktuell katalog till \"/\": %s"
 
 #: ../data/ui/filediff.ui.h:16
 #, fuzzy
 msgid "Push to Right"
-msgstr "Kopi Tu _Ràit"
+msgstr "오른쪽으로 최대화."
 
 #: ../data/ui/filediff.ui.h:17
+#, fuzzy
 msgid "Push current change to the right"
-msgstr ""
+msgstr "kan inte byta aktuell katalog till \"/\": %s"
 
 #: ../data/ui/filediff.ui.h:18
+#, fuzzy
 msgid "Pull from Left"
-msgstr ""
+msgstr "왼쪽 색상 불러오기(_L)"
 
 #: ../data/ui/filediff.ui.h:19
+#, fuzzy
 msgid "Pull change from the left"
-msgstr ""
+msgstr "왼쪽 색상 불러오기(_L)"
 
 #: ../data/ui/filediff.ui.h:20
 #, fuzzy
 msgid "Pull from Right"
-msgstr "Kopi Ol Tu _Ràit"
+msgstr "왼쪽에서 오른쪽으로"
 
 #: ../data/ui/filediff.ui.h:21
+#, fuzzy
 msgid "Pull change from the right"
-msgstr ""
+msgstr "왼쪽에서 오른쪽으로"
 
 #: ../data/ui/filediff.ui.h:22
 msgid "Copy Above Left"
@@ -711,7 +727,7 @@ msgstr "Mörj ol mwu-konflikt-gè čeinjs from rait"
 
 #: ../data/ui/filediff.ui.h:36
 msgid "Merge All"
-msgstr "Mörj Ol "
+msgstr "Mörj Ol"
 
 #: ../data/ui/filediff.ui.h:37
 msgid "Merge all non-conflicting changes from left and right panes"
@@ -735,23 +751,23 @@ msgstr ""
 
 #: ../data/ui/filediff.ui.h:42
 msgid "Lock Scrolling"
-msgstr ""
+msgstr "Lokk Skrolliŋ"
 
 #: ../data/ui/filediff.ui.h:43
 msgid "Lock scrolling of all panes"
-msgstr ""
+msgstr "Lokk ol pänols dè skrolliŋ"
 
 #: ../data/ui/filediff.ui.h:44
 msgid "Save changes to documents before closing?"
-msgstr ""
+msgstr "Seiv čeinjs tu dokyumènts bifor klosiŋ?"
 
 #: ../data/ui/filediff.ui.h:45
 msgid "If you don't save, changes will be permanently lost."
-msgstr ""
+msgstr "If čeinjs not dū seiven, čeinjs-wa mwuzo-gala."
 
 #: ../data/ui/filediff.ui.h:46
 msgid "Close _without Saving"
-msgstr ""
+msgstr "Klos _wiŧout Seiviŋ"
 
 #: ../data/ui/filediff.ui.h:47 ../meld/dirdiff.py:956 ../meld/filediff.py:1607
 #: ../meld/filediff.py:1691 ../meld/filediff.py:1716
@@ -766,7 +782,7 @@ msgstr "_Seiv"
 msgid ""
 "This file can not be written to. You may click here to unlock this file and "
 "make changes anyway, but these changes must be saved to a new file."
-msgstr ""
+msgstr "Komplit wörd"
 
 #: ../data/ui/filediff.ui.h:50
 msgid "File 3"
@@ -782,7 +798,7 @@ msgstr "Fayl_1"
 
 #: ../data/ui/filediff.ui.h:53
 msgid "Revert unsaved changes to documents?"
-msgstr ""
+msgstr "Rīvört mǐseiven čeinjs tu dokyumènts?"
 
 #: ../data/ui/filediff.ui.h:54
 msgid "Changes made to the following documents will be permanently lost:\n"
@@ -790,11 +806,11 @@ msgstr ""
 
 #: ../data/ui/findbar.ui.h:1 ../meld/dirdiff.py:957 ../meld/filediff.py:1608
 msgid "_Replace"
-msgstr ""
+msgstr "_Rīpleis"
 
 #: ../data/ui/findbar.ui.h:2
 msgid "Replace _All"
-msgstr ""
+msgstr "Rīpleis _Ol"
 
 #: ../data/ui/findbar.ui.h:3
 msgid "_Previous"
@@ -810,7 +826,7 @@ msgstr "Faind:"
 
 #: ../data/ui/findbar.ui.h:6
 msgid "Replace _with:"
-msgstr ""
+msgstr "Rīpleis _wiŧ:"
 
 #: ../data/ui/findbar.ui.h:7
 msgid "_Match case"
@@ -818,7 +834,7 @@ msgstr "_Match case"
 
 #: ../data/ui/findbar.ui.h:8
 msgid "Who_le word"
-msgstr ""
+msgstr "Komplit wörd    "
 
 #: ../data/ui/findbar.ui.h:9
 msgid "Regular e_xpression"
@@ -826,38 +842,35 @@ msgstr "Regular e_xpression"
 
 #: ../data/ui/findbar.ui.h:10
 msgid "Wrapped"
-msgstr ""
+msgstr "Wräpen"
 
 #: ../data/ui/patch-dialog.ui.h:1
-#, fuzzy
 msgid "Format as Patch"
-msgstr "Create Patch"
+msgstr "Formät as progremfiks"
 
 #: ../data/ui/patch-dialog.ui.h:2
 msgid "Copy to Clipboard"
 msgstr "Kopi tu Klipbōd "
 
 #: ../data/ui/patch-dialog.ui.h:3 ../meld/patchdialog.py:119
-#, fuzzy
 msgid "Save Patch"
-msgstr "Create Patch"
+msgstr "Seiv Progremfiks"
 
 #: ../data/ui/patch-dialog.ui.h:4
-#, fuzzy
 msgid "Use differences between:"
-msgstr "No differences found."
+msgstr "Yus diffèrènses bitwīn:"
 
 #: ../data/ui/patch-dialog.ui.h:5
 msgid "Left and middle panes"
-msgstr ""
+msgstr "Left en middol pänols"
 
 #: ../data/ui/patch-dialog.ui.h:6
 msgid "Middle and right panes"
-msgstr ""
+msgstr "Middol en rait pänols"
 
 #: ../data/ui/patch-dialog.ui.h:7
 msgid "_Reverse patch direction"
-msgstr ""
+msgstr "_Rīvörs progremfiks dè direkçion"
 
 #: ../data/ui/preferences.ui.h:1
 msgid "Left is remote, right is local"
@@ -909,7 +922,7 @@ msgstr "Editā _taipset:"
 
 #: ../data/ui/preferences.ui.h:13
 msgid "Display"
-msgstr "Display"
+msgstr "Displei"
 
 #: ../data/ui/preferences.ui.h:14
 msgid "_Tab width:"
@@ -917,15 +930,15 @@ msgstr "_Täb widŧ:"
 
 #: ../data/ui/preferences.ui.h:15
 msgid "_Insert spaces instead of tabs"
-msgstr ""
+msgstr "Insört speises tu rīpleis täbs "
 
 #: ../data/ui/preferences.ui.h:16
 msgid "Enable text _wrapping"
-msgstr ""
+msgstr "Tekst _wräpiŋ wa enàbolen"
 
 #: ../data/ui/preferences.ui.h:17
 msgid "Do not _split words over two lines"
-msgstr ""
+msgstr "Not dū _split wörds ovèr 2 lains"
 
 #: ../data/ui/preferences.ui.h:18
 msgid "Highlight _current line"
@@ -966,7 +979,7 @@ msgstr "Editā"
 #: ../data/ui/preferences.ui.h:27
 #, fuzzy
 msgid "Shallow Comparison"
-msgstr "_Fayl Kompäreiçion"
+msgstr "Pikka kompäreiçion"
 
 #: ../data/ui/preferences.ui.h:28
 msgid "C_ompare files based only on size and timestamp"
@@ -974,11 +987,11 @@ msgstr "K_ompär fayls beisen onli on saiz en taimstämp"
 
 #: ../data/ui/preferences.ui.h:29
 msgid "_Timestamp resolution:"
-msgstr "_Taimstamp risolucion"
+msgstr "_Taimstämp rīsoluçion"
 
 #: ../data/ui/preferences.ui.h:30
 msgid "Symbolic Links"
-msgstr "Symbolik lingks"
+msgstr "Symbòlik liŋks"
 
 #: ../data/ui/preferences.ui.h:32
 msgid "Visible Columns"
@@ -986,7 +999,7 @@ msgstr "Vyusolabol Kolumns"
 
 #: ../data/ui/preferences.ui.h:33
 msgid "Folder Comparisons"
-msgstr "_Foulder Kompäreiçions"
+msgstr "Fouldèr Kompäreiçions"
 
 #: ../data/ui/preferences.ui.h:34
 msgid "Version Comparisons"
@@ -997,14 +1010,16 @@ msgid "_Order when comparing file revisions:"
 msgstr ""
 
 #: ../data/ui/preferences.ui.h:36
+#, fuzzy
 msgid "Order when _merging files:"
-msgstr ""
+msgstr "Ignor blänk lains when kompäriŋ fayls"
 
 #: ../data/ui/preferences.ui.h:37
 msgid "Commit Messages"
 msgstr "Kommit Messeijs"
 
 #: ../data/ui/preferences.ui.h:38
+#, fuzzy
 msgid "Show _right margin at:"
 msgstr "Displei _rait marjin à:"
 
@@ -1109,7 +1124,6 @@ msgid "Select Third Folder"
 msgstr "Silekt de-3-gè fouldèr"
 
 #: ../data/ui/tab-placeholder.ui.h:12
-#, fuzzy
 msgid "Select A Version-Controlled Folder"
 msgstr "Silekt 1-gè vörçion-koncrolen fouldèr"
 
@@ -1123,7 +1137,7 @@ msgstr "K_ompär"
 
 #: ../data/ui/vcview.ui.h:3
 msgid "Co_mmit..."
-msgstr "Ko_mmit..."
+msgstr "Ko_mmit…"
 
 #: ../data/ui/vcview.ui.h:4
 msgid "Commit changes to version control"
@@ -1138,8 +1152,9 @@ msgid "Update working copy from version control"
 msgstr "Ùpdeit wörkiŋ kopi from vörçion koncrol"
 
 #: ../data/ui/vcview.ui.h:7
+#, fuzzy
 msgid "_Push"
-msgstr ""
+msgstr "밀기"
 
 #: ../data/ui/vcview.ui.h:8
 msgid "Push local changes to remote"
@@ -1151,7 +1166,7 @@ msgstr "Ädd tu vörçion koncrol"
 
 #: ../data/ui/vcview.ui.h:12
 msgid "Remove from version control"
-msgstr ""
+msgstr "Rīmūv from vörçion koncrol"
 
 #: ../data/ui/vcview.ui.h:13
 msgid "Mar_k as Resolved"
@@ -1163,7 +1178,7 @@ msgstr "Mar_k as rīsolven in vörçion koncrol"
 
 #: ../data/ui/vcview.ui.h:15
 msgid "Re_vert"
-msgstr "Rī_vört "
+msgstr "Rī_vört"
 
 #: ../data/ui/vcview.ui.h:16
 msgid "Revert working copy to original state"
@@ -1194,22 +1209,20 @@ msgid "_Modified"
 msgstr "_Modifaien"
 
 #: ../data/ui/vcview.ui.h:23
-#, fuzzy
 msgid "Show modified files"
-msgstr "Save modified files?"
+msgstr "Displei modifaien fayls"
 
 #: ../data/ui/vcview.ui.h:24
 msgid "_Normal"
 msgstr "_Normal"
 
 #: ../data/ui/vcview.ui.h:25
-#, fuzzy
 msgid "Show normal files"
-msgstr "Show unversioned files"
+msgstr "Displei normol fayls"
 
 #: ../data/ui/vcview.ui.h:26
 msgid "Un_versioned"
-msgstr ""
+msgstr "_Mǐkoncrolen"
 
 #: ../data/ui/vcview.ui.h:27
 msgid "Show unversioned files"
@@ -1220,9 +1233,8 @@ msgid "Ignored"
 msgstr "Ignoren"
 
 #: ../data/ui/vcview.ui.h:29
-#, fuzzy
 msgid "Show ignored files"
-msgstr "Show unversioned files"
+msgstr "Displei ignoren fayls"
 
 #: ../data/ui/vcview.ui.h:30
 msgid "Commit"
@@ -1234,12 +1246,11 @@ msgstr "Kommit Fayls"
 
 #: ../data/ui/vcview.ui.h:32
 msgid "Log Message"
-msgstr "Log Message"
+msgstr "Log Messeij"
 
 #: ../data/ui/vcview.ui.h:33
-#, fuzzy
 msgid "Previous logs:"
-msgstr "Previous Logs"
+msgstr "Priv logs:"
 
 #: ../data/ui/vcview.ui.h:34
 msgid "Co_mmit"
@@ -1247,7 +1258,7 @@ msgstr "Ko_mmit"
 
 #: ../data/ui/vcview.ui.h:35
 msgid "Console output"
-msgstr ""
+msgstr "Konsol output"
 
 #: ../data/ui/vcview.ui.h:36
 msgid "Push local commits to remote?"
@@ -1260,22 +1271,22 @@ msgstr ""
 #: ../data/ui/vcview.ui.h:38
 #, fuzzy
 msgid "_Push commits"
-msgstr "_Kommit"
+msgstr "push: 인수가 너무 많음"
 
 #. Create file size CellRenderer
 #: ../meld/dirdiff.py:383 ../meld/preferences.py:82
 msgid "Size"
-msgstr ""
+msgstr "Saiz"
 
 #. Create date-time CellRenderer
 #: ../meld/dirdiff.py:391 ../meld/preferences.py:83
 msgid "Modification time"
-msgstr ""
+msgstr "Modifaikeiçion taim"
 
 #. Create permissions CellRenderer
 #: ../meld/dirdiff.py:399 ../meld/preferences.py:84
 msgid "Permissions"
-msgstr ""
+msgstr "Pörmiçions"
 
 #: ../meld/dirdiff.py:547
 #, python-format
@@ -1293,13 +1304,12 @@ msgid "[%s] Done"
 msgstr "[%s] Finišen"
 
 #: ../meld/dirdiff.py:840
-#, fuzzy
 msgid "Folders have no differences"
-msgstr "[%s] Fetching differences"
+msgstr "Fouldèrs wa mwu diffèrènses"
 
 #: ../meld/dirdiff.py:842
 msgid "Contents of scanned files in folders are identical."
-msgstr ""
+msgstr "Kontents in skänen fayls in Fouldèrs wa aidentikol."
 
 #: ../meld/dirdiff.py:844
 msgid ""
@@ -1327,7 +1337,7 @@ msgstr ""
 
 #: ../meld/dirdiff.py:878
 msgid "Files with invalid encodings found"
-msgstr ""
+msgstr "Fayls wiŧ invälid enkoudiŋs wa fainden"
 
 #. TRANSLATORS: This is followed by a list of files
 #: ../meld/dirdiff.py:880
@@ -1357,7 +1367,7 @@ msgstr "'%s' haiden bai '%s'"
 #: ../meld/dirdiff.py:960
 #, python-format
 msgid "Replace folder “%s”?"
-msgstr ""
+msgstr "Rīpleis foulèr “%s”?"
 
 #: ../meld/dirdiff.py:962
 #, python-format
@@ -1368,7 +1378,7 @@ msgstr ""
 
 #: ../meld/dirdiff.py:975
 msgid "Error copying file"
-msgstr ""
+msgstr "Öra when kopiiŋ fayl"
 
 #: ../meld/dirdiff.py:976
 #, fuzzy, python-format
@@ -1377,18 +1387,12 @@ msgid ""
 "to %s.\n"
 "\n"
 "%s"
-msgstr ""
-"Error copying '%s' to '%s'\n"
-"\n"
-"%s."
+msgstr "붓 위치 복사(_L)"
 
 #: ../meld/dirdiff.py:999
 #, fuzzy, python-format
 msgid "Error deleting %s"
-msgstr ""
-"Error removing %s\n"
-"\n"
-"%s."
+msgstr "출력파일 %s를 지우는 데 오류가 발생했습니다"
 
 #. Abbreviations for insert and overwrite that fit in the status bar
 #: ../meld/filediff.py:406
@@ -1407,7 +1411,7 @@ msgstr "Ln %i, Kol %i"
 
 #: ../meld/filediff.py:821
 msgid "Comparison results will be inaccurate"
-msgstr ""
+msgstr "Kompäreiçion risùlt wa possibolli not akkyureit"
 
 #: ../meld/filediff.py:823
 #, python-format
@@ -1427,7 +1431,7 @@ msgstr ""
 
 #: ../meld/filediff.py:895
 msgid "Cancel"
-msgstr ""
+msgstr "Känsol"
 
 #: ../meld/filediff.py:896
 msgid "Mark _Resolved"
@@ -1447,7 +1451,7 @@ msgstr "[%s] Opèniŋ fayls"
 #: ../meld/filediff.py:1158
 #, fuzzy
 msgid "Could not read file"
-msgstr "Could not read from '%s'"
+msgstr "%s: \"%s\" 파일을 읽을 수 없음\n"
 
 #: ../meld/filediff.py:1130
 #, python-format
@@ -1457,7 +1461,7 @@ msgstr "[%s] Reading files"
 #: ../meld/filediff.py:1140
 #, python-format
 msgid "%s appears to be a binary file."
-msgstr ""
+msgstr "%s wa bainari fayl nigga?"
 
 #: ../meld/filediff.py:1153
 #, python-format
@@ -1472,16 +1476,15 @@ msgstr "[%s] Kompyutiŋ diffèrènses"
 #: ../meld/filediff.py:1259
 #, python-format
 msgid "File %s has changed on disk"
-msgstr ""
+msgstr "Fayl %s on disk yígīŋ čeinjen"
 
 #: ../meld/filediff.py:1260
 msgid "Do you want to reload the file?"
-msgstr ""
+msgstr "Ayisyur tu rīloud nigè fayl?"
 
 #: ../meld/filediff.py:1263
-#, fuzzy
 msgid "_Reload"
-msgstr "Reload"
+msgstr "_Rīloud"
 
 #: ../meld/filediff.py:1429
 msgid ""
@@ -1494,13 +1497,12 @@ msgid "Files are identical"
 msgstr "Fayls wa aidentikol"
 
 #: ../meld/filediff.py:1443
-#, fuzzy
 msgid "Show without filters"
-msgstr "Show unversioned files"
+msgstr "Displei wiŧout filtèrās"
 
 #: ../meld/filediff.py:1465
 msgid "Change highlighting incomplete"
-msgstr ""
+msgstr "Čeinj haiĥlàitiŋ mǐ-komplīt"
 
 #: ../meld/filediff.py:1466
 msgid ""
@@ -1511,17 +1513,17 @@ msgstr ""
 #: ../meld/filediff.py:1474
 #, fuzzy
 msgid "Keep highlighting"
-msgstr "Kīp haiĥlàitiŋ"
+msgstr "똑같이 유지"
 
 #: ../meld/filediff.py:1476
 #, fuzzy
 msgid "_Keep highlighting"
-msgstr "_Kīp haiĥlàitiŋ"
+msgstr "똑같이 유지"
 
 #: ../meld/filediff.py:1611
 #, python-format
 msgid "Replace file “%s”?"
-msgstr ""
+msgstr "Rīpleis fayl “%s”?"
 
 #: ../meld/filediff.py:1613
 #, python-format
@@ -1531,9 +1533,9 @@ msgid ""
 msgstr ""
 
 #: ../meld/filediff.py:1631
-#, fuzzy, python-format
+#, python-format
 msgid "Could not save file %s."
-msgstr "Could not read from '%s'"
+msgstr "Seiv fayl %s butdùk."
 
 #: ../meld/filediff.py:1632
 #, python-format
@@ -1541,43 +1543,44 @@ msgid ""
 "Couldn't save file due to:\n"
 "%s"
 msgstr ""
+"Fayl seiv butdùk bikos:\n"
+"%s"
 
 #: ../meld/filediff.py:1644
 msgid "Save Left Pane As"
-msgstr ""
+msgstr "Seiv Left Pänol As"
 
 #: ../meld/filediff.py:1646
 msgid "Save Middle Pane As"
-msgstr ""
+msgstr "Seiv Middol Pänol As"
 
 #: ../meld/filediff.py:1648
 msgid "Save Right Pane As"
-msgstr ""
+msgstr "Seiv Ràit Pänol As"
 
 #: ../meld/filediff.py:1662
 #, python-format
 msgid "File %s has changed on disk since it was opened"
-msgstr ""
+msgstr "Fayl %s on disk yígīŋ čeinjen sins opènen"
 
 #: ../meld/filediff.py:1664
 msgid "If you save it, any external changes will be lost."
 msgstr ""
 
 #: ../meld/filediff.py:1667
-#, fuzzy
 msgid "Save Anyway"
-msgstr "Save _As"
+msgstr "Ignor en Seiv"
 
 #: ../meld/filediff.py:1668
 msgid "Don't Save"
-msgstr ""
+msgstr "Not dū Seiv"
 
 #: ../meld/filediff.py:1694
 msgid "Inconsistent line endings found"
-msgstr ""
+msgstr "Lain endiŋs dè inkonsistènt wa fainden"
 
 #: ../meld/filediff.py:1696
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "'%s' contains a mixture of line endings. Select the line ending format to "
 "use."
@@ -1586,9 +1589,8 @@ msgstr ""
 "use."
 
 #: ../meld/filediff.py:1717
-#, fuzzy
 msgid "_Save as UTF-8"
-msgstr "Save in UTF-8 encoding"
+msgstr "_Seiv as UTF-8"
 
 #: ../meld/filediff.py:1720
 #, python-format
@@ -1634,8 +1636,9 @@ msgid "wrong number of arguments supplied to --diff"
 msgstr "Wrong number of arguments (Got %i)"
 
 #: ../meld/meldapp.py:175
+#, fuzzy
 msgid "Start with an empty window"
-msgstr ""
+msgstr "와곽선을 이용하여 창 크기를 조절함"
 
 #: ../meld/meldapp.py:176 ../meld/meldapp.py:178
 msgid "file"
@@ -1643,11 +1646,12 @@ msgstr "fayl"
 
 #: ../meld/meldapp.py:176 ../meld/meldapp.py:180
 msgid "folder"
-msgstr "foulder"
+msgstr "fouldèr"
 
 #: ../meld/meldapp.py:177
+#, fuzzy
 msgid "Start a version control comparison"
-msgstr ""
+msgstr "pg_control 버전 번호:                 %u\n"
 
 #: ../meld/meldapp.py:179
 msgid "Start a 2- or 3-way file comparison"
@@ -1658,9 +1662,9 @@ msgid "Start a 2- or 3-way folder comparison"
 msgstr ""
 
 #: ../meld/meldapp.py:224
-#, python-format
+#, fuzzy, python-format
 msgid "Error: %s\n"
-msgstr ""
+msgstr "오류"
 
 #: ../meld/meldapp.py:231
 msgid "Meld is a file and directory comparison tool."
@@ -1688,7 +1692,7 @@ msgstr ""
 
 #: ../meld/meldapp.py:251
 msgid "Automatically merge files"
-msgstr ""
+msgstr "Òtomeitikolli mörj  fayls"
 
 #: ../meld/meldapp.py:255
 msgid "Load a saved comparison from a Meld comparison file"
@@ -1696,30 +1700,29 @@ msgstr ""
 
 #: ../meld/meldapp.py:259
 msgid "Create a diff tab for the supplied files or folders"
-msgstr ""
+msgstr "Krieit diff täb für sùpplaien fayls or fouldèrs"
 
 #: ../meld/meldapp.py:279
-#, python-format
+#, fuzzy, python-format
 msgid "too many arguments (wanted 0-3, got %d)"
-msgstr ""
+msgstr "%s: 너무 많은 명령행 인자들 (시작 \"%s\")\n"
 
 #: ../meld/meldapp.py:282
 msgid "can't auto-merge less than 3 files"
-msgstr ""
+msgstr "òto-mörj direktòris wa butdùk if mwu 3-gè fayls"
 
 #: ../meld/meldapp.py:284
-#, fuzzy
 msgid "can't auto-merge directories"
-msgstr "Flätenais direktòris"
+msgstr "òto-mörj direktòris wa butdùk"
 
 #: ../meld/meldapp.py:298
 msgid "Error reading saved comparison file"
-msgstr ""
+msgstr "Öra rīdiŋ seiven kompäreiçion fayl"
 
 #: ../meld/meldapp.py:326
 #, python-format
 msgid "invalid path or URI \"%s\""
-msgstr ""
+msgstr "invälid paŧwei or YRI \"%s\""
 
 #. TRANSLATORS: This is the label of a new, currently-unnamed file.
 #: ../meld/meldbuffer.py:137
@@ -1736,45 +1739,47 @@ msgstr "_Fayl"
 
 #: ../meld/meldwindow.py:49
 msgid "_New Comparison..."
-msgstr "_Pikka Kompäreiçion..."
+msgstr "_Pikka Kompäreiçion…"
 
 #: ../meld/meldwindow.py:50
 #, fuzzy
 msgid "Start a new comparison"
-msgstr "Launch _Comparison"
+msgstr "새 그림을 시작할까요?"
 
 #: ../meld/meldwindow.py:53
 msgid "Save the current file"
-msgstr ""
+msgstr "Seiv körrènt fayl"
 
 #: ../meld/meldwindow.py:55
-#, fuzzy
 msgid "Save As..."
-msgstr "Save _As"
+msgstr "Seiv As…"
 
 #: ../meld/meldwindow.py:56
+#, fuzzy
 msgid "Save the current file with a different name"
-msgstr ""
+msgstr "다른 이름으로 저장하기"
 
 #: ../meld/meldwindow.py:59
 msgid "Close the current file"
-msgstr ""
+msgstr "Klos körrènt fayl"
 
 #: ../meld/meldwindow.py:62
 msgid "_Edit"
 msgstr "_Edit"
 
 #: ../meld/meldwindow.py:64
+#, fuzzy
 msgid "Undo the last action"
-msgstr ""
+msgstr "마지막 동작 실행 취소"
 
 #: ../meld/meldwindow.py:67
+#, fuzzy
 msgid "Redo the last undone action"
-msgstr ""
+msgstr "취소했던 마지막 동작 재실행"
 
 #: ../meld/meldwindow.py:69
 msgid "Cut the selection"
-msgstr ""
+msgstr "Kùt silekçion"
 
 #: ../meld/meldwindow.py:71
 msgid "Copy the selection"
@@ -1783,65 +1788,70 @@ msgstr "Kopi silekçion"
 #: ../meld/meldwindow.py:73
 #, fuzzy
 msgid "Paste the clipboard"
-msgstr "Kopi Tu Klipbōd "
+msgstr "클립보드의 내용을 붙여넣기"
 
 #: ../meld/meldwindow.py:75
 msgid "Find..."
-msgstr "Faind..."
+msgstr "Faind…"
 
 #: ../meld/meldwindow.py:75
 #, fuzzy
 msgid "Search for text"
-msgstr "Search for:"
+msgstr "내용 전체에서 찾음 : \"%s\""
 
 #: ../meld/meldwindow.py:77
+#, fuzzy
 msgid "Find Ne_xt"
-msgstr ""
+msgstr "텍스트 도구(_X)"
 
 #: ../meld/meldwindow.py:78
 msgid "Search forwards for the same text"
 msgstr ""
 
 #: ../meld/meldwindow.py:80
+#, fuzzy
 msgid "Find _Previous"
-msgstr ""
+msgstr "이전 팁(_P)"
 
 #: ../meld/meldwindow.py:81
+#, fuzzy
 msgid "Search backwards for the same text"
-msgstr ""
+msgstr "정규 표현식을 이용해 역순 검색"
 
 #: ../meld/meldwindow.py:84
 msgid "_Replace..."
-msgstr ""
+msgstr "_Rīpleis…"
 
 #: ../meld/meldwindow.py:85
+#, fuzzy
 msgid "Find and replace text"
-msgstr ""
+msgstr "현재 페이지에서 텍스트 찾기"
 
 #: ../meld/meldwindow.py:88
 msgid "_Changes"
 msgstr "Č_einjs"
 
 #: ../meld/meldwindow.py:89
+#, fuzzy
 msgid "Next Change"
-msgstr ""
+msgstr "사소한 변경"
 
 #: ../meld/meldwindow.py:90
 msgid "Go to the next change"
-msgstr ""
+msgstr "Goutu nèist čeinj"
 
 #: ../meld/meldwindow.py:92
-#, fuzzy
 msgid "Previous Change"
-msgstr "Previous Logs"
+msgstr "Priv Čeinj"
 
 #: ../meld/meldwindow.py:93
 msgid "Go to the previous change"
-msgstr ""
+msgstr "Goutu priv čeinj"
 
 #: ../meld/meldwindow.py:95
+#, fuzzy
 msgid "Open Externally"
-msgstr ""
+msgstr "開啟編目檔"
 
 #: ../meld/meldwindow.py:96
 msgid "Open selected file or directory in the default external application"
@@ -1849,25 +1859,24 @@ msgstr ""
 
 #: ../meld/meldwindow.py:100
 msgid "_View"
-msgstr ""
+msgstr "_Vyu"
 
 #: ../meld/meldwindow.py:101
 msgid "File Status"
 msgstr "Fayl Steitùs"
 
 #: ../meld/meldwindow.py:102
-#, fuzzy
 msgid "Version Status"
-msgstr "Status"
+msgstr "Vörçion steitùs"
 
 #: ../meld/meldwindow.py:105
+#, fuzzy
 msgid "Stop the current action"
-msgstr ""
+msgstr "작업 실행 삭제   "
 
 #: ../meld/meldwindow.py:108
-#, fuzzy
 msgid "Refresh the view"
-msgstr "Refresh"
+msgstr "Rīfreš vyu"
 
 #: ../meld/meldwindow.py:111
 msgid "_Tabs"
@@ -1894,41 +1903,44 @@ msgid "Move Tab _Left"
 msgstr "Mūv Täb _Left"
 
 #: ../meld/meldwindow.py:120
+#, fuzzy
 msgid "Move current tab to left"
-msgstr ""
+msgstr "창을 좌측으로 이동"
 
 #: ../meld/meldwindow.py:123
 msgid "Move Tab _Right"
 msgstr "Mūv Tu _Ràit"
 
 #: ../meld/meldwindow.py:124
+#, fuzzy
 msgid "Move current tab to right"
-msgstr ""
+msgstr "창을 우측으로 이동"
 
 #: ../meld/meldwindow.py:128
 msgid "Fullscreen"
-msgstr ""
+msgstr "Fullskrīn"
 
 #: ../meld/meldwindow.py:129
 msgid "View the comparison in fullscreen"
-msgstr ""
+msgstr "Vyu kompäreiçion in fullskrīn "
 
 #: ../meld/meldwindow.py:131
 msgid "_Toolbar"
-msgstr ""
+msgstr "_Tūlbār"
 
 #: ../meld/meldwindow.py:132
+#, fuzzy
 msgid "Show or hide the toolbar"
-msgstr ""
+msgstr "위젯 창을 숨기거나 보여줌"
 
 #: ../meld/meldwindow.py:141
+#, fuzzy
 msgid "Open Recent"
-msgstr ""
+msgstr "최근 사용한 파일(_R)"
 
 #: ../meld/meldwindow.py:142
-#, fuzzy
 msgid "Open recent files"
-msgstr "[%s] Opèniŋ fayls"
+msgstr "Opèn zuigèn yusen fayls"
 
 #: ../meld/meldwindow.py:164
 msgid "_Meld"
@@ -1936,7 +1948,7 @@ msgstr "_Meld"
 
 #: ../meld/meldwindow.py:165
 msgid "Quit the program"
-msgstr ""
+msgstr "Progrem-wa Ziuru"
 
 #: ../meld/meldwindow.py:167
 msgid "Prefere_nces"
@@ -1944,23 +1956,25 @@ msgstr "_Priförè_nses"
 
 #: ../meld/meldwindow.py:168
 msgid "Configure the application"
-msgstr ""
+msgstr "Konfigyur nigè applaikeiçion"
 
 #: ../meld/meldwindow.py:170
 msgid "_Contents"
 msgstr "_Kontents"
 
 #: ../meld/meldwindow.py:171
+#, fuzzy
 msgid "Open the Meld manual"
-msgstr ""
+msgstr "김프 사용자 설명서 열기"
 
 #: ../meld/meldwindow.py:173
 msgid "About this application"
 msgstr "Àbaut nigè applaikeiçion"
 
 #: ../meld/meldwindow.py:546
+#, fuzzy
 msgid "Switch to this tab"
-msgstr ""
+msgstr "독(dock)의 탭 잠그기(_K)"
 
 #: ../meld/meldwindow.py:657
 #, python-format
@@ -1968,9 +1982,8 @@ msgid "Need three files to auto-merge, got: %r"
 msgstr ""
 
 #: ../meld/meldwindow.py:671
-#, fuzzy
 msgid "Cannot compare a mixture of files and directories"
-msgstr "Cannot compare a mixture of files and directories.\n"
+msgstr "Kompär fayls en direktòris dè mikscör wa butdùk"
 
 #. no common path. empty names get changed to "[None]"
 #: ../meld/misc.py:186
@@ -1986,9 +1999,8 @@ msgid "pattern"
 msgstr "pättèrn"
 
 #: ../meld/recent.py:114
-#, fuzzy
 msgid "Version control:"
-msgstr "Version control view"
+msgstr "Vörçion koncrol:"
 
 #: ../meld/ui/notebooklabel.py:65
 msgid "Close tab"
@@ -1996,7 +2008,7 @@ msgstr "Klos täb"
 
 #: ../meld/ui/vcdialogs.py:61
 msgid "No files will be committed"
-msgstr ""
+msgstr "Mwu fayls kommitiŋ ikspekten"
 
 #. Translators: First %s is replaced by translated "%d unpushed
 #. commits", second %s is replaced by translated "%d branches"
@@ -2024,11 +2036,12 @@ msgstr[1] "%d branches"
 #: ../meld/vc/git.py:360
 #, python-format
 msgid "Mode changed from %s to %s"
-msgstr ""
+msgstr "Moud čeinjen from %s tu %s"
 
 #: ../meld/vc/_vc.py:47
+#, fuzzy
 msgid "Merged"
-msgstr ""
+msgstr "표본 합치기(_S)"
 
 #: ../meld/vc/_vc.py:47
 msgid "Base"
@@ -2043,38 +2056,37 @@ msgid "Remote"
 msgstr "Rimot"
 
 #: ../meld/vc/_vc.py:65
-#, fuzzy
 msgid "Unversioned"
-msgstr "Show unversioned files"
+msgstr "Mǐkoncrolen"
 
 #: ../meld/vc/_vc.py:68
 msgid "Error"
-msgstr ""
+msgstr "Öra"
 
 #: ../meld/vc/_vc.py:70
+#, fuzzy
 msgid "Newly added"
-msgstr ""
+msgstr "별칭 추가됨."
 
 #: ../meld/vc/_vc.py:72
 msgid "Renamed"
-msgstr ""
+msgstr "Rīneimen"
 
 #: ../meld/vc/_vc.py:73
 msgid "Conflict"
-msgstr ""
+msgstr "Konflikt"
 
 #: ../meld/vc/_vc.py:74
-#, fuzzy
 msgid "Removed"
-msgstr "_Remove"
+msgstr "Rīmūven"
 
 #: ../meld/vc/_vc.py:75
 msgid "Missing"
-msgstr ""
+msgstr "Mwuzo"
 
 #: ../meld/vc/_vc.py:76
 msgid "Not present"
-msgstr ""
+msgstr "Mipresent"
 
 #: ../meld/vcview.py:233 ../meld/vcview.py:417
 msgid "Location"
@@ -2086,11 +2098,11 @@ msgstr "Status"
 
 #: ../meld/vcview.py:235
 msgid "Revision"
-msgstr ""
+msgstr "Rīvaiçion"
 
 #: ../meld/vcview.py:236
 msgid "Options"
-msgstr "Options"
+msgstr "Opçions"
 
 #. TRANSLATORS: this is an error message when a version control
 #. application isn't installed or can't be found
@@ -2102,9 +2114,8 @@ msgstr "%s wa mi-instolen"
 #. TRANSLATORS: this is an error message when a version
 #. controlled repository is invalid or corrupted
 #: ../meld/vcview.py:328
-#, fuzzy
 msgid "Invalid repository"
-msgstr "Internal editor"
+msgstr "Invälid rīpositori"
 
 #: ../meld/vcview.py:337
 #, python-format
@@ -2114,7 +2125,7 @@ msgstr "%s (%s)"
 #: ../meld/vcview.py:339 ../meld/vcview.py:347
 #, fuzzy
 msgid "None"
-msgstr "_None"
+msgstr "없음"
 
 #: ../meld/vcview.py:358
 msgid "No valid version control system found in this folder"
@@ -2135,9 +2146,9 @@ msgid "%s: %s"
 msgstr "%s: %s"
 
 #: ../meld/vcview.py:431 ../meld/vcview.py:439
-#, fuzzy, python-format
+#, python-format
 msgid "Scanning %s"
-msgstr "[%s] Skäniŋ %s"
+msgstr "Skäniŋ %s"
 
 #: ../meld/vcview.py:479
 msgid "(Empty)"
@@ -2188,8 +2199,8 @@ msgid ""
 "selected folders, from version control."
 msgstr ""
 
-#: ../meld/vcview.py:777
 # python-format
+#: ../meld/vcview.py:777
 msgid "Error removing %s"
 msgstr "Öra rīmūviŋ %s"
 
