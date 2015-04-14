@@ -10,13 +10,7 @@
     <email>kai.willadsen@gmail.com</email>
     <years>2012</years>
   </credit>
-
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Tom K. C. Chiu</mal:name>
-      <mal:email>tomchiukc@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
-  </info>
+</info>
 <title>Flätenaisen vyu</title>
 
 <p>Cuando esté viendo carpetas grandes, puede estar interesado solo en unos pocos archivos entre los miles que estén en la carpeta. Por esta razón, <app>Meld</app> incluye la <em>vista aplanada</em> de una carpeta; solo se muestran los archivos que no se hayan filtrado (por ejemplo, mediante <link xref="vc-mode#vc-state-filtering"/>), y la jerarquía de la carpeta se elimina, con las direcciones de los archivos mostrados en la columna <em>Ubicación</em>.</p>

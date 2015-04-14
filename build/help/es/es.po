@@ -1,29 +1,30 @@
-# Babyish translation for meld.
-# Copyright (C) 2004 THE meld'S COPYRIGHT HOLDER
+# Spanish translation for meld.
+# Copyright (C) 2014 meld's COPYRIGHT HOLDER
 # This file is distributed under the same license as the meld package.
-# Tom K. C. Chiu <tomchiukc@gmail.com>, 2014-2015.
-# Websait: https://github.com/babycaseny/meld/blob/master/po/bb.po
-# Babycasèny Gavèrnmènt <babycaseny@gmail.com>, 2015.
-# Tom K. C. Chiu <babycaseny@gmail.com>, 2015.
+# Facundo Dario Illanes <fdillanes@gmail.com>, 2014.
+# Facundo Dario Illanes <fdillanes@gmail.com>, 2014.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2014.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: meld\n"
-"Report-Msgid-Bugs-To: Stephen Kennedy <stevek@gnome.org>\n"
-"POT-Creation-Date: 2007-01-23 20:55+0000\n"
-"PO-Revision-Date: 2015-04-11 20:39+0800\n"
-"Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
-"Language-Team: Babycaseny Gavèrnmènt\n"
-"Language: bb\n"
+"Project-Id-Version: meld master\n"
+"POT-Creation-Date: 2014-04-09 10:27+0000\n"
+"PO-Revision-Date: 2014-04-09 16:44+0200\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
+"Language-Team: Español <gnome-es-list@gnome.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Gtranslator 2.91.5\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Tom K. C. Chiu <tomchiukc@gmail.com>, 2015"
+msgstr ""
+"Daniel Mustieles <daniel.mustieles@gmail.com>, 2014\n"
+"Facundo Darío Illanes <fdillanes@gmail.com>, 2014"
 
 #. (itstool) path: info/title
 #: C/vc-supported.page:5
@@ -53,12 +54,13 @@ msgstr "2012"
 #. (itstool) path: page/title
 #: C/vc-supported.page:15
 msgid "Supported version control systems"
-msgstr "Sùpporten vörçion koncrol sistèms"
+msgstr "Sistemas de control de versiones controlados"
 
 #. (itstool) path: page/p
 #: C/vc-supported.page:17
 msgid "<app>Meld</app> supports a wide range of version control systems:"
-msgstr "<app>Meld</app> sùpport waid reinj dè vörçion koncrol sistèms:"
+msgstr ""
+"<app>Meld</app> soporta un amplio rango de sistemas de control de versiones:"
 
 #. (itstool) path: item/p
 #: C/vc-supported.page:22
@@ -122,10 +124,10 @@ msgid ""
 "properly tested; please report any version control support bugs to <link "
 "href=\"https://bugzilla.gnome.org/\">GNOME bugzilla</link>."
 msgstr ""
-"Less kòmmòn-na vörçion koncrol sistèms or kiiguaina konfigyureiçions wa "
-"possibolli mi-testen; soi if bùgs in vörçion koncrol sistèms dè yuseij, "
-"riport tu sùpport à <link href=\"https://bugzilla.gnome.org/\">GNOME "
-"bugzilla</link>."
+"Algunos sistemas de control de versiones menos comunes o configuraciones "
+"inusuales pueden no estar probadas apropiadamente; por favor informe de los "
+"errores de soporte de cualquier control de versiones en <link href=\"https://"
+"bugzilla.gnome.org/\">GNOME bugzilla</link>."
 
 #. (itstool) path: info/title
 #: C/file-filters.page:5 C/text-filters.page:5 C/resolving-conflicts.page:5
@@ -138,11 +140,10 @@ msgstr "2"
 #. (itstool) path: page/title
 #: C/file-filters.page:15
 msgid "Filtering out files"
-msgstr "Filtèriŋ fayls out"
+msgstr "Filtrar archivos"
 
 #. (itstool) path: page/p
 #: C/file-filters.page:17
-#, fuzzy
 msgid ""
 "When you compare folders, you may want to be able to ignore some files. For "
 "example, you may wish to only see files that are present and different in "
@@ -150,15 +151,14 @@ msgid ""
 "Alternatively, you might want to ignore all the files in your <file>.git</"
 "file> directory, or ignore all images."
 msgstr ""
-"When kompäriŋ fayls, nei keyi ignor bufùn-na fayls.  Für iksampol, "
+"Cuando compare carpetas, puede querer ignorar algunos archivos. Por ejemplo, "
 "puede querer ver solamente los archivos que están presentes o que difieren "
 "en ambas carpetas, ignorando aquellos que son iguales o solo existen en una "
-"fouldèr.  Osou, nei keyi ignor ol fayls in neidè <file>.git</file> "fouldèr,"
-"or ignor ol imeijfayls."
+"de las carpetas. Alternativamente, puede querer ignorar todos los archivos "
+"de su carpeta <file>.git</file> , o ignorar todas las imágenes."
 
 #. (itstool) path: page/p
 #: C/file-filters.page:25
-#, fuzzy
 msgid ""
 "<app>Meld</app> has several different ways of controlling which files and "
 "what kind of differences you see. You can filter based on <link xref=\"#file-"
@@ -168,12 +168,13 @@ msgid ""
 "\">case insensitive</link>. Finally, you can use <link xref=\"text-filters"
 "\">text filters</link> to change what both folder and file comparisons see."
 msgstr ""
-"<app>Meld</app> wa severol diffèrènt meŧods tu koncrol fayls en diffèrènses "
-"tu displei.  Yus filtèr beisen on <link xref=\"#file-state-filter"
-"\">diffèrènses bitwin fayls akros fouldèrs</link> or <link xref=\"#file-name-"
-"filter\">fayl en fouldèr neims</link>.  Instrùkt <app>Meld</app> tu konsidèr "
-"faylneim seim if <link xref=\"#file-case-filter\"> distiŋktaips mayúsculas en "
-"minúsculas</link>. Fainolli, se pueden usar <link xref=\"text-filters"
+"<app>Meld</app> tiene diferentes maneras de controlar qué archivos y qué "
+"tipos de diferencias se muestran. Se puede filtrar basándose en <link xref="
+"\"#file-state-filter\">diferencias entre archivos a través de carpetas</"
+"link> o <link xref=\"#file-name-filter\">nombres de carpetas y archivos</"
+"link>. También se puede pedir a <app>Meld</app> que trate los nombres de "
+"archivo <link xref=\"#file-case-filter\">sin distinguir mayúsculas de "
+"minúsculas</link>. Finalmente, se pueden usar <link xref=\"text-filters"
 "\">filtros de texto</link> para cambiar tanto las comparaciones mostradas de "
 "carpetas como de archivos."
 
@@ -194,11 +195,10 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/file-filters.page:48
 msgid "File differences filtering"
-msgstr "Fayls diffèrènses filtèriŋ"
+msgstr "Filtrado por diferencias de archivo"
 
 #. (itstool) path: section/p
 #: C/file-filters.page:50
-#, fuzzy
 msgid ""
 "In a folder comparison, each line contains a single file or folder that is "
 "present in at least one of the folders being compared. Each of these lines "
@@ -213,37 +213,34 @@ msgstr ""
 #. (itstool) path: td/p
 #: C/file-filters.page:58 C/vc-mode.page:107 C/folder-mode.page:148
 msgid "Modified"
-msgstr "Modifaien"
+msgstr "Modificado"
 
 #. (itstool) path: item/p
 #: C/file-filters.page:59
 msgid "The file exists in multiple folders, but the files are different"
-msgstr ""
-"Fayl wiŧ seim faylneim iksists in mùltipol fouldèrs, bùt nidi fayls wa "
-"diffèrènt"
+msgstr "El archivo existe en varias carpetas, pero los archivos son diferentes"
 
 #. (itstool) path: item/title
 #. (itstool) path: td/p
 #: C/file-filters.page:62 C/vc-mode.page:121 C/folder-mode.page:162
 msgid "New"
-msgstr "Niu"
+msgstr "Nuevo"
 
 #. (itstool) path: item/p
 #: C/file-filters.page:63
 msgid "The file exists in one folder but not in the others"
-msgstr ""
-"Fayl wiŧ seim faylneim iksists in kiẑōŋ 1-gè fouldèr, bùt not dū in kita"
+msgstr "El archivo existe en una carpeta pero no en otras"
 
 #. (itstool) path: item/title
 #. (itstool) path: td/p
 #: C/file-filters.page:66 C/vc-mode.page:93 C/folder-mode.page:118
 msgid "Same"
-msgstr "Seim"
+msgstr "El mismo"
 
 #. (itstool) path: item/p
 #: C/file-filters.page:67
 msgid "The file exists in all folders, and is the same everywhere"
-msgstr "Nigè fayl iksist in ol fouldèrs, en in ol-pleises"
+msgstr "El archivo existe en todas las carpetas y es el mismo en todas ellas"
 
 #. (itstool) path: section/p
 #: C/file-filters.page:70
@@ -277,7 +274,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/file-filters.page:94
 msgid "Filename filtering"
-msgstr "Faylneim filtèriŋ"
+msgstr "Filtrado por nombre de archivo"
 
 #. (itstool) path: section/p
 #: C/file-filters.page:96
@@ -364,7 +361,7 @@ msgstr "<code>?</code>"
 #. (itstool) path: td/p
 #: C/file-filters.page:139
 msgid "exactly one character"
-msgstr "Iksäktli 1-gè karakta"
+msgstr "exactamente un carácter"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:142
@@ -374,7 +371,7 @@ msgstr "<code>[abc]</code>"
 #. (itstool) path: td/p
 #: C/file-filters.page:143
 msgid "any one of the listed characters"
-msgstr "kiẑōŋ 1-gè listen karakta"
+msgstr "cualquiera de los caracteres listados"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:146
@@ -389,7 +386,7 @@ msgstr "cualquier carácter <em>excepto</em> los listados"
 #. (itstool) path: td/p
 #: C/file-filters.page:150
 msgid "<code>{cat,dog}</code>"
-msgstr "<code>{meow,wow}</code>"
+msgstr "<code>{gato,perro}</code>"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:151
@@ -412,8 +409,8 @@ msgid ""
 "Activating a filter from the menu or the toolbar turns the filter on or off "
 "for <em>this comparison only</em>."
 msgstr ""
-"Aktiveitiŋ filtèr from menyu or tulbar aktiveit nigè filtèr on or off für "
-"<em>nigè kompäreiçion onli</em>."
+"Activar un filtro desde el menú o la barra de herramientas activa o "
+"desactiva el filtro <em>solamente para esta comparación</em>."
 
 #. (itstool) path: section/title
 #: C/file-filters.page:174
@@ -428,9 +425,10 @@ msgid ""
 "file>, <file>readme</file> and <file>ReadMe</file> would all be seen as "
 "different files."
 msgstr ""
-"Fayls wa kompären akros direktoris akkording tu ano neim.  Nigè kompärison "
-"wa keis-sensitiv bai difàut; in-iksakt: <file>README</file>, <file>readme</"
-"file> en <file>ReadMe</file> ni-gei-gè fayls wa konsidèren diffèrènt fayls."
+"Los archivos se comparan entre carpetas de acuerdo a su nombre. Esta "
+"comparación es sensible a capitalización de manera predeterminada; esto es, "
+"los archivos <file>README</file>, <file>readme</file> y <file>ReadMe</file> "
+"ser considerarán como distintos."
 
 #. (itstool) path: section/p
 #: C/file-filters.page:183
@@ -449,7 +447,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/text-filters.page:17
 msgid "Filtering out text"
-msgstr "Filtèriŋ tekst out"
+msgstr "Filtrado de texto"
 
 #. (itstool) path: page/p
 #: C/text-filters.page:19
@@ -481,7 +479,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/text-filters.page:37
 msgid "Adding and using text filters"
-msgstr "Äddiŋ en yusiŋ tekst filtèrs"
+msgstr "Agregar y usar filtros de texto"
 
 #. (itstool) path: section/p
 #: C/text-filters.page:39
@@ -527,7 +525,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/text-filters.page:67
 msgid "Getting text filters right"
-msgstr "Getiŋ tekst filtèrs korrekt"
+msgstr "Conseguir filtros de texto correctos"
 
 #. (itstool) path: section/p
 #: C/text-filters.page:69
@@ -540,12 +538,12 @@ msgstr ""
 "Es fácil cometer errores con el filtrado de texto, y el soporte para "
 "filtrado de Meld no está completo. En particular, un filtro de texto no "
 "puede cambiar el número de líneas de un archivo. Por ejemplo, si activa el "
-"filtro <gui>Skript komment</gui>, y compara los siguientes archivos:"
+"filtro <gui>Comentario de Script</gui>, y compara los siguientes archivos:"
 
 #. (itstool) path: listing/title
 #: C/text-filters.page:80
 msgid "<file>comment1.txt</file>"
-msgstr "<file>komment1.txt</file>"
+msgstr "<file>comentario1.txt</file>"
 
 #. (itstool) path: listing/code
 #: C/text-filters.page:81
@@ -559,14 +557,14 @@ msgid ""
 msgstr ""
 "\n"
 "a\n"
-"b#komment\n"
+"b#comentario\n"
 "c\n"
 "d"
 
 #. (itstool) path: listing/title
 #: C/text-filters.page:90
 msgid "<file>comment2.txt</file>"
-msgstr "<file>komment2.txt</file>"
+msgstr "<file>comentario2.txt</file>"
 
 #. (itstool) path: listing/code
 #: C/text-filters.page:91
@@ -582,7 +580,7 @@ msgstr ""
 "a\n"
 "b\n"
 "c\n"
-"#komment"
+"#comentario"
 
 #. (itstool) path: section/p
 #: C/text-filters.page:101
@@ -605,7 +603,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/text-filters.page:114
 msgid "Blank lines and filters"
-msgstr "Bläŋk lains en filtèrs"
+msgstr "Líneas en blanco y filtros"
 
 #. (itstool) path: section/p
 #: C/text-filters.page:116
@@ -641,7 +639,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/resolving-conflicts.page:15
 msgid "Resolving merge conflicts"
-msgstr "Rīsolviŋ mörj konflikts"
+msgstr "Resolver conflictos al combinar"
 
 #. (itstool) path: page/p
 #: C/resolving-conflicts.page:17
@@ -700,17 +698,17 @@ msgstr "2013"
 #. (itstool) path: page/title
 #: C/preferences.page:15
 msgid "Meld's preferences"
-msgstr "Meld dè priforènses"
+msgstr "Preferencias de Meld"
 
 #. (itstool) path: terms/title
 #: C/preferences.page:18
 msgid "Editor preferences"
-msgstr "Editā priförènses"
+msgstr "Preferencias del editor"
 
 #. (itstool) path: item/title
 #: C/preferences.page:20
 msgid "Editor command"
-msgstr "Editā kommand"
+msgstr "Comando del editor"
 
 #. (itstool) path: item/p
 #: C/preferences.page:21
@@ -725,10 +723,10 @@ msgstr ""
 "El nombre del comando que ejecutar para abrir archivos de texto en un editor "
 "externo. Este puede ser simplemente el comando (por ejemplo: <cmd>gedit</"
 "cmd>) en cuyo caso el archivo que abrir se pasará como el último argumento. "
-"De otra manera, puede agregar los elementos <code>{archivo}</code> y "
-"<code>{línea}</code> al comando, en cuyo caso <app>Meld</app> sustituirá la "
-"ruta al archivo y el número de línea respectivamente (por ejemplo: "
-"<cmd>gedit {archivo}:{línea}</cmd>)."
+"De otra manera, puede agregar los elementos <code>{archivo}</code> y <code>"
+"{línea}</code> al comando, en cuyo caso <app>Meld</app> sustituirá la ruta "
+"al archivo y el número de línea respectivamente (por ejemplo: <cmd>gedit "
+"{archivo}:{línea}</cmd>)."
 
 #. (itstool) path: page/title
 #: C/file-changes.page:16
@@ -755,16 +753,16 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/file-changes.page:30
 msgid "Navigating between changes"
-msgstr "Nävigeitiŋ bitwīn čeinjs"
+msgstr "Navegar entre los cambios"
 
 #. (itstool) path: section/p
 #: C/file-changes.page:32
 msgid ""
-"Nei keyi nävigeit bitwīn čeinjs wiŧ <guiseq><gui style=\"menyu\">Čeinjs</"
-"gui><gui style=\"menuitem\">Priv čeinj</gui></guiseq> en <guiseq><gui style="
-"\"menu\">Čeinjs</gui><gui style=\"menuitem\">Nèist change</gui></guiseq> "
-"menu items. You can also use your mouse's scroll wheel to move between "
-"changes, by scrolling on the central change bar."
+"You can navigate between changes with the <guiseq><gui style=\"menu"
+"\">Changes</gui><gui style=\"menuitem\">Previous change</gui></guiseq> and "
+"<guiseq><gui style=\"menu\">Changes</gui><gui style=\"menuitem\">Next "
+"change</gui></guiseq> menu items. You can also use your mouse's scroll wheel "
+"to move between changes, by scrolling on the central change bar."
 msgstr ""
 "Puede navegar entre los cambios con los elementos de menú <guiseq><gui style="
 "\"menu\">Cambios</gui><gui style=\"menuitem\">Cambios Previos</gui></guiseq> "
@@ -775,7 +773,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/file-changes.page:46
 msgid "Changing changes"
-msgstr "Čeinjiŋ čeinjs"
+msgstr "Cambiando los cambios"
 
 #. (itstool) path: section/p
 #: C/file-changes.page:48
@@ -826,7 +824,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/file-mode.page:17
 msgid "Getting started comparing files"
-msgstr "Getiŋ started kompäriŋ fayls"
+msgstr "Primeros pasos para comparar archivos"
 
 #. (itstool) path: page/p
 #: C/file-mode.page:19
@@ -859,7 +857,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/file-mode.page:35
 msgid "<app>Meld</app>'s file comparisons"
-msgstr "<app>Meld</app> dè fayl kompäreiçions"
+msgstr "Las comparaciones de archivos de <app>Meld</app>"
 
 #. (itstool) path: section/p
 #: C/file-mode.page:37
@@ -910,7 +908,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/file-mode.page:62
 msgid "Saving your changes"
-msgstr "Čeinjs seiviŋ nau"
+msgstr "Guardar los cambios"
 
 #. (itstool) path: section/p
 #: C/file-mode.page:64
@@ -959,7 +957,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/flattened-view.page:15
 msgid "Flattened view"
-msgstr "Flätenaisen vyu"
+msgstr "Vista aplanada"
 
 #. (itstool) path: page/p
 #: C/flattened-view.page:17
@@ -995,32 +993,32 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/index.page:14
 msgid "Meld Help"
-msgstr "Meld dè Help"
+msgstr "Ayuda de Meld"
 
 #. (itstool) path: section/title
 #: C/index.page:17
 msgid "Introduction"
-msgstr "Introdùkçion"
+msgstr "Introducción"
 
 #. (itstool) path: section/title
 #: C/index.page:21
 msgid "Comparing Files"
-msgstr "Kompäring Fayls"
+msgstr "Comparar archivos"
 
 #. (itstool) path: section/title
 #: C/index.page:25
 msgid "Comparing Folders"
-msgstr "Kompäriŋ Fouldèrs"
+msgstr "Comparar carpetas"
 
 #. (itstool) path: section/title
 #: C/index.page:29
 msgid "Using Meld with Version Control"
-msgstr "Yusiŋ Meld wiŧ Vörçion Koncrol"
+msgstr "Usar Meld con un sistema de control de versiones"
 
 #. (itstool) path: section/title
 #: C/index.page:33
 msgid "Advanced Usage"
-msgstr "Gokab yuseij"
+msgstr "Uso avanzado"
 
 #. (itstool) path: info/title
 #: C/vc-mode.page:5
@@ -1031,7 +1029,7 @@ msgstr "0"
 #. (itstool) path: page/title
 #: C/vc-mode.page:16
 msgid "Viewing version-controlled files"
-msgstr "Displeiing Vörçion-koncrol fayls"
+msgstr "Ver archivos bajo control de versiones"
 
 #. (itstool) path: page/p
 #: C/vc-mode.page:18
@@ -1053,7 +1051,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/vc-mode.page:30
 msgid "Version control comparisons"
-msgstr "Vörçion koncrol kompäreiçions"
+msgstr "Comparaciones entre versiones"
 
 #. (itstool) path: section/p
 #: C/vc-mode.page:32
@@ -1063,10 +1061,10 @@ msgid ""
 "has a <link xref=\"#vc-state\">state</link> that indicates how it differs "
 "from the repository copy."
 msgstr ""
-"Vörçion koncrol kompäreiçions displei diffèrènses bitwin kontents insaid "
-"körrènt fouldèr en körrènt ripositori vörçion.  Evri fayl in lokol kopi wa "
-"<link xref=\"#vc-state\">steitùs</link> indikeiting diffèrèns from "
-"ripositori kopi."
+"Las comparaciones en sistemas de control de versiones muestran las "
+"diferencias entre los contenidos de su carpeta y la versión del repositorio "
+"actual. Cada archivo en su copia local tienen un <link xref=\"#vc-state"
+"\">estado</link> que indica en qué difiere de la copia del repositorio."
 
 #. (itstool) path: section/p
 #: C/vc-mode.page:46
@@ -1086,7 +1084,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: C/vc-mode.page:56 C/vc-mode.page:81
 msgid "Version control states"
-msgstr "Vörçion koncrol steitùs"
+msgstr "Estados del control de versiones"
 
 #. (itstool) path: section/p
 #: C/vc-mode.page:58
@@ -1107,74 +1105,78 @@ msgstr ""
 #. (itstool) path: td/p
 #: C/vc-mode.page:85 C/folder-mode.page:110
 msgid "State"
-msgstr "Steitùs"
+msgstr "Estado"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:86 C/folder-mode.page:111
 msgid "Appearance"
-msgstr "Appīràns"
+msgstr "Apariencia"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:87 C/folder-mode.page:112
 msgid "Meaning"
-msgstr "Yiyi"
+msgstr "Significado"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:95 C/folder-mode.page:120
 msgid "Normal font"
-msgstr "Normol font"
+msgstr "Tipografía normal"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:101
 msgid "The file/folder is the same as the repository version."
-msgstr "Fayl/Fouldèr wa seim as vörçion in ripositori."
+msgstr "El archivo o carpeta es el mismo que el del repositorio"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:109 C/folder-mode.page:150
 msgid "Red and bold"
-msgstr "Red en bold"
+msgstr "Rojo y en negrita"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:115
 msgid "This file is different to the repository version."
-msgstr "Nigè fayl wa diffèrènt from ripositori dè vörçion."
+msgstr "El archivo difiere respecto a la versión del repositorio."
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:123 C/folder-mode.page:164
 msgid "Green and bold"
-msgstr "Grīn en bold"
+msgstr "Verde y en negrita"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:129
 msgid ""
 "This file/folder is new, and is scheduled to be added to the repository."
-msgstr "Nigè fayl/fouldèr wa niu, en skejulen tu add tu ripositori."
+msgstr ""
+"El archivo o carpeta es nuevo, y está programado para añadirlo al "
+"repositorio."
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:136
 msgid "Removed"
-msgstr "Rīmūven"
+msgstr "Eliminado"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:138
 msgid "Red bold text with a line through the middle"
-msgstr "Red en bold tekst with lain akros middol"
+msgstr "Rojo en negrita y con una línea en el medio"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:144
 msgid ""
 "This file/folder existed, but is scheduled to be removed from the repository."
-msgstr "Nigè fayl/fouldèr iksisted, bùt skejulen tu rimuven from ripositori."
+msgstr ""
+"El archivo o carpeta existe, pero está programado para quitarlo del "
+"repositorio."
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:151
 msgid "Conflict"
-msgstr "Konflikt"
+msgstr "Conflicto"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:153
 msgid "Bright red bold text"
-msgstr "Haihlàiten red bold tekst"
+msgstr "Texto en negrita rojo claro"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:159
@@ -1190,27 +1192,27 @@ msgstr ""
 #. (itstool) path: td/p
 #: C/vc-mode.page:167 C/folder-mode.page:176
 msgid "Missing"
-msgstr "Miss-zo"
+msgstr "Faltante"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:169
 msgid "Blue bold text with a line through the middle"
-msgstr "Blu en bold tekst with lain akros middol"
+msgstr "Negrita azul con una línea en el medio"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:175
 msgid "This file/folder should be present, but isn't."
-msgstr "Nigè fayl/fouldèr diŋyǐu iksist, bùt mwuzo."
+msgstr "Este archivo/carpeta debería estar presente, pero no lo está."
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:181
 msgid "Ignored"
-msgstr "Ignoren"
+msgstr "Ignorado"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:183 C/vc-mode.page:199
 msgid "Greyed out text"
-msgstr "Fui-zo na tekst"
+msgstr "Texto en gris"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:189
@@ -1224,7 +1226,7 @@ msgstr ""
 #. (itstool) path: td/p
 #: C/vc-mode.page:197
 msgid "Non VC"
-msgstr "Not dū koncrolen"
+msgstr "Sin control de versiones"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:205
@@ -1237,12 +1239,12 @@ msgstr ""
 #. (itstool) path: td/p
 #: C/vc-mode.page:212 C/folder-mode.page:191
 msgid "Error"
-msgstr "Öra"
+msgstr "Error"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:214 C/folder-mode.page:193
 msgid "Bright red with a yellow background and bold"
-msgstr "Haihlàiten red with yelow bäkgraund en bold tekst"
+msgstr "Rojo brillante con un fondo amarillo y negrita"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:220
@@ -1253,7 +1255,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/vc-mode.page:230
 msgid "Version control state filtering"
-msgstr "Vörçion koncrol steitùs filtèring"
+msgstr "Filtrar el estado del control de versiones"
 
 #. (itstool) path: section/p
 #: C/vc-mode.page:232
@@ -1277,124 +1279,125 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/keyboard-shortcuts.page:15
 msgid "Keyboard shortcuts"
-msgstr "Kībōd šortkùts"
+msgstr "Atajos de teclado"
 
 #. (itstool) path: table/title
 #: C/keyboard-shortcuts.page:18
 msgid "Shortcuts for working with files and comparisons"
-msgstr "Šortkùts für wörkiŋ wiŧ fayls en kompäreiçions"
+msgstr "Atajos para trabajar con archivos y comparaciones"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:22 C/keyboard-shortcuts.page:56
 #: C/keyboard-shortcuts.page:109 C/keyboard-shortcuts.page:131
 msgid "Shortcut"
-msgstr "Šortkùts "
+msgstr "Atajo"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:22 C/keyboard-shortcuts.page:56
 #: C/keyboard-shortcuts.page:109 C/keyboard-shortcuts.page:131
 msgid "Description"
-msgstr "Diskraipçion"
+msgstr "Descripción"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:29
 msgid "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:30
 msgid "Start a new comparison."
-msgstr "Start pikka kompäreiçion."
+msgstr "Comenzar una nueva comparación."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:33
 msgid "<keyseq><key>Ctrl</key><key>S</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>S</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>S</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:34
 msgid "Save the current document to disk."
-msgstr "Seiv körrènt dokyumènt tu disk."
+msgstr "Guardar el documento actual en el disco."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:37
 msgid "<keyseq><key>Ctrl</key><key>Shift</key><key>S</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>Šift</key><key>S</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Mayús</key><key>S</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:38
 msgid "Save the current document with a new filename."
-msgstr "Seiv körrènt dokyumènt wiŧ niu faylneim. "
+msgstr "Guardar el documento actual con un nuevo nombre de archivo."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:41
 msgid "<keyseq><key>Ctrl</key><key>W</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>W</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>W</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:42
 msgid "Close the current comparison."
-msgstr "Klos körrènt kompäreiçion."
+msgstr "Cerrar la comparación actual."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:45
 msgid "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>Q</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:46
 msgid "Quit <app>Meld</app>."
-msgstr "<app>Meld</app> wa ziuru."
+msgstr "Salir de <app>Meld</app>."
 
 #. (itstool) path: table/title
 #: C/keyboard-shortcuts.page:52
 msgid "Shortcuts for editing documents"
-msgstr "Šortkùts für editiŋ dokyumènts"
+msgstr "Atajos para editar documentos"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:62
 msgid "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>Z</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:63
 msgid "Undo the last action."
-msgstr "Ùndiodio priv akçion."
+msgstr "Deshacer la última acción."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:66
 msgid "<keyseq><key>Ctrl</key><key>Shift</key><key>Z</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>Šift</key><key>Z</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Mayús</key><key>Z</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:67
 msgid "Redo the last undone action."
-msgstr "Rīapplai priv ùndiodio-zo gè akçion."
+msgstr "Rehacer la última acción deshecha."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:70
 msgid "<keyseq><key>Ctrl</key><key>X</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>X</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>X</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:71
 msgid "Cut the selected text or region and place it on the clipboard."
-msgstr "Kùt silekten tekst or rijion en peist ontu klipbod."
+msgstr ""
+"Corta la región o el texto seleccionado y lo coloca en el portapapeles."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:74
 msgid "<keyseq><key>Ctrl</key><key>C</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>C</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>C</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:75
 msgid "Copy the selected text or region onto the clipboard."
-msgstr "Kopi silekten tekst or rijion ontu klipbôd."
+msgstr "Copia la región ó el texto seleccionado en el portapapeles."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:78
 msgid "<keyseq><key>Ctrl</key><key>V</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>V</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>V</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:79
@@ -1404,27 +1407,27 @@ msgstr "Pegar el contenido del portapapeles."
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:82
 msgid "<keyseq><key>Ctrl</key><key>F</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>F</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>F</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:83
 msgid "Find a string."
-msgstr "Söč 1-gè striŋ"
+msgstr "Buscar una cadena."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:86
 msgid "<keyseq><key>Ctrl</key><key>G</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>G</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>G</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:87
 msgid "Find the next instance of the string."
-msgstr "Söč striŋ dè nèist instàns"
+msgstr "Buscar la siguiente instancia de la cadena"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:90 C/keyboard-shortcuts.page:96
 msgid "<keyseq><key>Alt</key><key>Up</key></keyseq>"
-msgstr "<keyseq><key>Alt</key><key>Ùp</key></keyseq>"
+msgstr "<keyseq><key>Alt</key><key>Arriba</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:91
@@ -1432,7 +1435,7 @@ msgid ""
 "Go to the next difference. (Also <keyseq><key>Ctrl</key><key>D</key></"
 "keyseq>)"
 msgstr ""
-"Ir a la siguiente diferencia. (También <keyseq><key>Ktrl</key><key>D</key></"
+"Ir a la siguiente diferencia. (También <keyseq><key>Ctrl</key><key>D</key></"
 "keyseq>)"
 
 #. (itstool) path: td/p
@@ -1441,12 +1444,13 @@ msgid ""
 "Go to the previous difference. (Also <keyseq><key>Ctrl</key><key>E</key></"
 "keyseq>)"
 msgstr ""
-"Goutu priv diffèrèns. (Osou <keyseq><key>Ktrl</key><key>E</key></keyseq>)"
+"Ir a la diferencia anterior. (También <keyseq><key>Ctrl</key><key>E</key></"
+"keyseq>)"
 
 #. (itstool) path: table/title
 #: C/keyboard-shortcuts.page:105
 msgid "Shortcuts for view settings"
-msgstr "Šortkùts für vyu setiŋs"
+msgstr "Atajos para la configuración de la vista."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:115
@@ -1456,22 +1460,22 @@ msgstr "<keyseq><key>Esc</key></keyseq>"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:116
 msgid "Stop the current comparison."
-msgstr "Stop körrènt kompäreiçion."
+msgstr "Detener la comparación actual."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:119
 msgid "<keyseq><key>Ctrl</key><key>R</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>R</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>R</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:120
 msgid "Refresh the current comparison."
-msgstr "Rīfreš körrènt kompäreiçion."
+msgstr "Actualizar la comparación actual."
 
 #. (itstool) path: table/title
 #: C/keyboard-shortcuts.page:127
 msgid "Shortcuts for help"
-msgstr "Šortkùts für help"
+msgstr "Atajos para la ayuda"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:137
@@ -1481,12 +1485,12 @@ msgstr "<keyseq><key>F1</key></keyseq>"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:138
 msgid "Open <app>Meld</app>'s user manual."
-msgstr "Opèn <app>Meld</app> dè yusa manyuol."
+msgstr "Abrir en manual de usuario de <app>Meld</app>."
 
 #. (itstool) path: page/title
 #: C/introduction.page:15
 msgid "What is Meld?"
-msgstr "Meld-wa mienigga?"
+msgstr "¿Qué es Meld?"
 
 #. (itstool) path: page/p
 #: C/introduction.page:16
@@ -1495,9 +1499,9 @@ msgid ""
 "resolving differences between them. It is also useful for comparing changes "
 "captured by version control systems."
 msgstr ""
-"<app>Meld</app>-wa tūl für kompäriŋ fayls en direktòris, en für rīsolviŋ ano "
-"diffèrènses bitwīn. Nigè softwär wa osou yusfol für kompäriŋ čeinjs käpcören "
-"bai vörçion koncrol sistèms."
+"<app>Meld</app> es una herramienta para comparar archivos y carpetas, y para "
+"resolver diferencias entre ellos. También es útil para comparar cambios "
+"capturados por sistemas de control de versiones."
 
 #. (itstool) path: page/p
 #: C/introduction.page:22
@@ -1517,7 +1521,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/folder-mode.page:16
 msgid "Getting started comparing folders"
-msgstr "Getiŋ started kompäriŋ fouldèrs"
+msgstr "Primeros pasos para comparar carpetas"
 
 #. (itstool) path: page/p
 #: C/folder-mode.page:18
@@ -1548,7 +1552,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/folder-mode.page:36
 msgid "The folder comparison view"
-msgstr "Fouldèr kompäreiçion vyu"
+msgstr "La vista de comparación de carpetas"
 
 #. (itstool) path: section/p
 #: C/folder-mode.page:38
@@ -1593,7 +1597,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/folder-mode.page:63
 msgid "Navigating folder comparisons"
-msgstr "Nävigeiting fouldèr kompäreiçions"
+msgstr "Navegar entre comparaciones"
 
 #. (itstool) path: section/p
 #: C/folder-mode.page:65
@@ -1626,7 +1630,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/folder-mode.page:83
 msgid "States in folder comparisons"
-msgstr "Steitùs in fouldèr kompäreiçions"
+msgstr "Estados en la comparación de carpetas"
 
 #. (itstool) path: section/p
 #: C/folder-mode.page:85
@@ -1640,7 +1644,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: C/folder-mode.page:106
 msgid "Folder comparison states"
-msgstr "Fouldèr kompäreiçion steitùs"
+msgstr "Estados de la comparación de carpetas"
 
 #. (itstool) path: td/p
 #: C/folder-mode.page:126
@@ -1650,12 +1654,12 @@ msgstr "El archivo/carpeta es igual en todas las carpetas comparadas."
 #. (itstool) path: td/p
 #: C/folder-mode.page:132
 msgid "Same when filtered"
-msgstr "Seim when filtèren"
+msgstr "Igual cuando se filtró"
 
 #. (itstool) path: td/p
 #: C/folder-mode.page:134
 msgid "Italics"
-msgstr "Italiks"
+msgstr "Cursivas"
 
 #. (itstool) path: td/p
 #: C/folder-mode.page:140
@@ -1669,23 +1673,24 @@ msgstr ""
 #. (itstool) path: td/p
 #: C/folder-mode.page:156
 msgid "These files differ between the folders being compared."
-msgstr "Nidi fayls bitwin silekten fouldèrs wa diffèr."
+msgstr "Estos archivos difieren entre las carpetas comparadas."
 
 #. (itstool) path: td/p
 #: C/folder-mode.page:170
 msgid "This file/folder exists in this folder, but not in the others."
-msgstr "Nigè fayl/fouldèr iksist in nigè foulder, bùt not du in anodèr."
+msgstr "Este archivo/carpeta existe en esta carpeta, pero no en las otras."
 
 #. (itstool) path: td/p
 #: C/folder-mode.page:178
 msgid "Greyed out text with a line through the middle"
-msgstr "Fui-zo na tekst with lain akros middol"
+msgstr "El texto en gris y tachado"
 
 #. (itstool) path: td/p
 #: C/folder-mode.page:184
 msgid ""
 "This file/folder doesn't exist in this folder, but does in one of the others."
-msgstr "Nigè fayl/fouldèr wa not du iksist in nigè fouldèr, bùt in another."
+msgstr ""
+"Este archivo/carpeta no existe en esta carpeta, pero se encuentra en otra."
 
 #. (itstool) path: td/p
 #: C/folder-mode.page:199
@@ -1702,8 +1707,8 @@ msgstr ""
 #: C/folder-mode.page:217
 msgid ""
 "You can filter out files based on these states, for example, to show only "
-"files that have been <em>Modified</em>. You can read more about this in "
-"<link xref=\"file-filters#file-state-filter\"/>."
+"files that have been <em>Modified</em>. You can read more about this in <link "
+"xref=\"file-filters#file-state-filter\"/>."
 msgstr ""
 "Es posible filtrar archivos en base a sus estados, por ejemplo, mostrar solo "
 "los archivos <em>Modificados</em>. Puede leer más sobre esto en la <link "
@@ -1713,7 +1718,9 @@ msgstr ""
 #: C/folder-mode.page:223
 msgid ""
 "Finally, the most recently modified file/folder has an emblem attached to it."
-msgstr "Lastli, zuigèn modifaien fayl/fouldèrs wa emblèm attaĉen."
+msgstr ""
+"Por último, el archivo/carpeta modificado más recientemente lleva una marca "
+"adjunta."
 
 #. (itstool) path: page/title
 #: C/missing-functionality.page:15
@@ -1762,7 +1769,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/command-line.page:15
 msgid "Command line usage"
-msgstr "Kommand lain yuseij"
+msgstr "Uso de línea de comandos"
 
 #. (itstool) path: page/p
 #: C/command-line.page:17
@@ -1818,4 +1825,6 @@ msgstr ""
 #. (itstool) path: note/p
 #: C/command-line.page:40
 msgid "Run <cmd>meld --help</cmd> for a list of all command line options."
-msgstr "Rùn <cmd>meld --help</cmd> für ol kommand lain opçions dè list."
+msgstr ""
+"Ejecute <cmd>meld --help</cmd> para una lista de todas las opciones de línea "
+"de comandos."
