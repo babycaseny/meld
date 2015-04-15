@@ -10,13 +10,7 @@
     <email>kai.willadsen@gmail.com</email>
     <years>2012</years>
   </credit>
-
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Tom K. C. Chiu</mal:name>
-      <mal:email>tomchiukc@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
-  </info>
+</info>
 <title>Kommand lain yuseij</title>
 
 <p>Si ejecuta <app>Meld</app> desde la línea de comandos, puede decirle que hacer cuando arranca.</p>
@@ -24,7 +18,7 @@
 
 <p>Para una <link xref="folder-mode">comparación de carpetas</link>de dos o tres vías, ejecute <app>Meld</app> con <cmd>meld <var>carpeta1</var> <var>carpeta2</var></cmd>  <cmd>meld <var>carpeta1</var> <var>carpeta2</var> <var>carpeta3</var></cmd></p>
 
-<p>Puede empezar una comparación de <link xref="vc-mode">control de versiones</link> agregando un solo argumento; si es un archivo o carpeta manejado por un  <link xref="vc-supported">sistema de control de versiones reconocido</link>, ejecutará la comparación de control de versiones con ese argumento. Por ejemplo, <cmd>meld .</cmd> ejecutaría una vista de control de versiones de la carpeta actual.</p>
+<p>Nei keyi start 1-gè <link xref="vc-mode">vörçion koncrol</link> dè kompäreiçion bai provaiding 1-gè argyumènt; si es un archivo o carpeta manejado por un  <link xref="vc-supported">sistema de control de versiones reconocido</link>, ejecutará la comparación de control de versiones con ese argumento. Por ejemplo, <cmd>meld .</cmd> ejecutaría una vista de control de versiones de la carpeta actual.</p>
 
 <note>
 <p>Rùn <cmd>meld --help</cmd> für ol kommand lain opçions dè list.</p>

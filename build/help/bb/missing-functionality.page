@@ -10,13 +10,7 @@
     <email>kai.willadsen@gmail.com</email>
     <years>2012</years>
   </credit>
-
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Tom K. C. Chiu</mal:name>
-      <mal:email>tomchiukc@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
-  </info>
+</info>
 <title>Cosas que <app>Meld</app> no hace</title>
 
 <p>¿Nunca ha perdido media hora investigando una aplicación intentando ver cómo hacer algo, pensando que <em>seguramente</em> debe haber una opción para eso?</p>
