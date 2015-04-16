@@ -10,13 +10,7 @@
     <email>kai.willadsen@gmail.com</email>
     <years>2012</years>
   </credit>
-
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Tom K. C. Chiu</mal:name>
-      <mal:email>tomchiukc@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
-  </info>
+</info>
 
 <title>Getiŋ started kompäriŋ fouldèrs</title>
 
@@ -87,7 +81,7 @@
         <p>Red en bold</p>
       </td>
       <td>
-        <p>Estos archivos difieren entre las carpetas comparadas.</p>
+        <p>Nidi fayls bitwin silekten fouldèrs wa diffèr.</p>
       </td>
     </tr>
     <tr>
@@ -96,7 +90,7 @@
         <p>Grīn en bold</p>
       </td>
       <td>
-        <p>Este archivo/carpeta existe en esta carpeta, pero no en las otras.</p>
+        <p>Nigè fayl/fouldèr iksist in nigè foulder, bùt not du in anodèr.</p>
       </td>
     </tr>
     <tr>
