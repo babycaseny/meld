@@ -10,13 +10,7 @@
     <email>kai.willadsen@gmail.com</email>
     <years>2012</years>
   </credit>
-
-    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Tom K. C. Chiu</mal:name>
-      <mal:email>tomchiukc@gmail.com</mal:email>
-      <mal:years>2015</mal:years>
-    </mal:credit>
-  </info>
+</info>
 
 <title>Tratando con los cambios</title>
 
@@ -41,7 +35,7 @@ by scrolling on the central change bar.
 
 
 <section id="change-actions">
-<title>Čeinjiŋ los čeinjs</title>
+<title>Čeinjiŋ čeinjs</title>
 
 <p>Además de editar directamente archivos de texto, <app>Meld</app> brinda herramientas para mover, copiar o eliminar diferencias individuales entre archivos. La barra entre dos archivos no sólo muestra qué partes de los dos archivos se corresponden, sino que también permite combinar a su elección o eliminar diferentes cambios pulsando en los iconos de la flecha o cruz junto al comienzo de cada cambio.</p>
 

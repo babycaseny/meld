@@ -180,6 +180,7 @@ msgid "Wrap mode"
 msgstr "Wräp moud"
 
 #: ../data/org.gnome.meld.gschema.xml.h:22
+# ,fuzzy
 msgid ""
 "Lines in file comparisons will be wrapped according to this setting, either "
 "not at all ('none'), at any character ('char') or only at the end of words "
@@ -194,7 +195,7 @@ msgstr "Haiĥlàit körrènt lain"
 msgid ""
 "If true, the line containing the cursor will be highlighted in file "
 "comparisons."
-msgstr ""
+msgstr "If seten, lain konteining ko:sor wa haiĥlàiten in fayl kompareicions."
 
 #: ../data/org.gnome.meld.gschema.xml.h:25
 msgid "Use the system default monospace font"
