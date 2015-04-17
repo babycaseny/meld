@@ -6,18 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: meld master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=meld&ke"
-"ywords=I18N+L10N&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=meld&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-03-10 23:05+0000\n"
-"PO-Revision-Date: 2015-03-16 18:38+0800\n"
-"Last-Translator: Tom K. C. Chiu <babycaseny@gmail.com>\n"
+"PO-Revision-Date: 2015-04-18 02:28+0800\n"
+"Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Project-Style: gnome\n"
 "X-Source-Language: C\n"
 
@@ -49,7 +49,7 @@ msgstr "Kai Willadsen"
 #: C/keyboard-shortcuts.page:12 C/introduction.page:12 C/folder-mode.page:12
 #: C/missing-functionality.page:12 C/command-line.page:12
 msgid "2012"
-msgstr "2012"
+msgstr "2012年"
 
 #. (itstool) path: page/title
 #: C/vc-supported.page:15
@@ -216,9 +216,7 @@ msgstr "已修改"
 #. (itstool) path: item/p
 #: C/file-filters.page:59
 msgid "The file exists in multiple folders, but the files are different"
-msgstr ""
-"Fayl wiŧ seim faylneim iksists in mùltipol fouldèrs, bùt nidi fayls wa "
-"diffèrènt"
+msgstr "檔案在多個資料夾出現，但這些檔案並不一樣。"
 
 #. (itstool) path: item/title
 #. (itstool) path: td/p
@@ -229,8 +227,7 @@ msgstr "新增"
 #. (itstool) path: item/p
 #: C/file-filters.page:63
 msgid "The file exists in one folder but not in the others"
-msgstr ""
-"Fayl wiŧ seim faylneim iksists in kiẑōŋ 1-gè fouldèr, bùt not dū in kita"
+msgstr "檔案只在其中一個資料夾出現，其他的沒有。"
 
 #. (itstool) path: item/title
 #. (itstool) path: td/p
@@ -241,7 +238,7 @@ msgstr "相同"
 #. (itstool) path: item/p
 #: C/file-filters.page:67
 msgid "The file exists in all folders, and is the same everywhere"
-msgstr "Nigè fayl iksist in ol fouldèrs, en in ol-pleises"
+msgstr "檔案在所有資料夾都有，而且皆為同一個檔案。"
 
 #. (itstool) path: section/p
 #: C/file-filters.page:70
@@ -694,12 +691,12 @@ msgstr "1"
 #. (itstool) path: credit/years
 #: C/preferences.page:12
 msgid "2013"
-msgstr "2013"
+msgstr "2013年"
 
 #. (itstool) path: page/title
 #: C/preferences.page:15
 msgid "Meld's preferences"
-msgstr "Meld dè priforènses"
+msgstr "Meld的偏好設定"
 
 #. (itstool) path: terms/title
 #: C/preferences.page:18
@@ -836,8 +833,8 @@ msgid ""
 msgstr ""
 "<app>Meld</app> permite comparar dos o tres archivos de texto uno al lado "
 "del otro. Puede comenzar una nueva comparación entre archivos seleccionando "
-"en el menú <guiseq><gui style=\"menu\">Archivo</gui><gui style=\"menuitem\""
-">Nuevo...</gui></guiseq>."
+"en el menú <guiseq><gui style=\"menu\">Archivo</gui><gui style=\"menuitem"
+"\">Nuevo...</gui></guiseq>."
 
 #. (itstool) path: page/p
 #: C/file-mode.page:26
@@ -994,7 +991,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/index.page:14
 msgid "Meld Help"
-msgstr "Meld dè Help"
+msgstr "Meld的說明文件"
 
 #. (itstool) path: section/title
 #: C/index.page:17
@@ -1063,9 +1060,9 @@ msgid ""
 "from the repository copy."
 msgstr ""
 "Vörçion koncrol kompäreiçions displei diffèrènses bitwin kontents insaid "
-"körrènt fouldèr en körrènt ripositori vörçion.  Evri fayl in lokol kopi wa <"
-"link xref=\"#vc-state\">steitùs</link> indikeiting diffèrèns from ripositori "
-"kopi."
+"körrènt fouldèr en körrènt ripositori vörçion.  Evri fayl in lokol kopi wa "
+"<link xref=\"#vc-state\">steitùs</link> indikeiting diffèrèns from "
+"ripositori kopi."
 
 #. (itstool) path: section/p
 #: C/vc-mode.page:46
@@ -1116,12 +1113,12 @@ msgstr "Apariencia"
 #. (itstool) path: td/p
 #: C/vc-mode.page:87 C/folder-mode.page:112
 msgid "Meaning"
-msgstr "Significado"
+msgstr "意思"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:95 C/folder-mode.page:120
 msgid "Normal font"
-msgstr "Normol font"
+msgstr "正常字體"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:101
@@ -1131,7 +1128,7 @@ msgstr "Fayl/Fouldèr wa seim as vörçion in ripositori."
 #. (itstool) path: td/p
 #: C/vc-mode.page:109 C/folder-mode.page:150
 msgid "Red and bold"
-msgstr "Red en bold"
+msgstr "紅色粗體"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:115
@@ -1141,7 +1138,7 @@ msgstr "El archivo difiere respecto a la versión del repositorio."
 #. (itstool) path: td/p
 #: C/vc-mode.page:123 C/folder-mode.page:164
 msgid "Green and bold"
-msgstr "Grīn en bold"
+msgstr "綠色粗體"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:129
@@ -1173,7 +1170,7 @@ msgstr "衝突"
 #. (itstool) path: td/p
 #: C/vc-mode.page:153
 msgid "Bright red bold text"
-msgstr "Haihlàiten red bold tekst"
+msgstr "鮮紅色粗體"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:159
@@ -1194,17 +1191,17 @@ msgstr "欠缺"
 #. (itstool) path: td/p
 #: C/vc-mode.page:169
 msgid "Blue bold text with a line through the middle"
-msgstr "Blu en bold tekst with lain akros middol"
+msgstr "藍色粗體最加上中間劃線"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:175
 msgid "This file/folder should be present, but isn't."
-msgstr "Este archivo/carpeta debería estar presente, pero no lo está."
+msgstr "這檔案/資料夾理應存在，但沒有。"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:181
 msgid "Ignored"
-msgstr "Ignoren"
+msgstr "忽略"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:183 C/vc-mode.page:199
@@ -1223,7 +1220,7 @@ msgstr ""
 #. (itstool) path: td/p
 #: C/vc-mode.page:197
 msgid "Non VC"
-msgstr "Not dū koncrolen"
+msgstr "未有版本控制"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:205
@@ -1408,7 +1405,7 @@ msgstr "<keyseq><key>Ktrl</key><key>F</key></keyseq>"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:83
 msgid "Find a string."
-msgstr "Söč 1-gè striŋ"
+msgstr "搜尋一個字串"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:86
@@ -1418,7 +1415,7 @@ msgstr "<keyseq><key>Ktrl</key><key>G</key></keyseq>"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:87
 msgid "Find the next instance of the string."
-msgstr "Söč striŋ dè nèist instàns"
+msgstr "尋找字串的下一個出處。"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:90 C/keyboard-shortcuts.page:96
@@ -1446,7 +1443,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: C/keyboard-shortcuts.page:105
 msgid "Shortcuts for view settings"
-msgstr "Atajos para la configuración de la vista."
+msgstr "檢視設定的捷徑"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:115
@@ -1486,7 +1483,7 @@ msgstr "Opèn <app>Meld</app> dè yusa manyuol."
 #. (itstool) path: page/title
 #: C/introduction.page:15
 msgid "What is Meld?"
-msgstr "Meld-wa mienigga?"
+msgstr "Meld是甚麼？"
 
 #. (itstool) path: page/p
 #: C/introduction.page:16
@@ -1640,7 +1637,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: C/folder-mode.page:106
 msgid "Folder comparison states"
-msgstr "Fouldèr kompäreiçion steitùs"
+msgstr "資料夾比對狀態"
 
 #. (itstool) path: td/p
 #: C/folder-mode.page:126
@@ -1655,7 +1652,7 @@ msgstr "Seim when filtèren"
 #. (itstool) path: td/p
 #: C/folder-mode.page:134
 msgid "Italics"
-msgstr "Cursivas"
+msgstr "斜體"
 
 #. (itstool) path: td/p
 #: C/folder-mode.page:140
@@ -1729,8 +1726,8 @@ msgid ""
 "out how to do something, thinking that <em>surely</em> there must be an "
 "option for this?"
 msgstr ""
-"¿Nunca ha perdido media hora investigando una aplicación intentando ver cómo "
-"hacer algo, pensando que <em>seguramente</em> debe haber una opción para eso?"
+"您有沒有試過在一個應用程式花了半小時到處走，只是為了想知道怎樣去做一件事，認"
+"為<em>肯定</em>在某處一定有個選項去做這件事的？"
 
 #. (itstool) path: page/p
 #: C/missing-functionality.page:23
@@ -1763,7 +1760,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/command-line.page:15
 msgid "Command line usage"
-msgstr "Kommand lain yuseij"
+msgstr "命令列的用法"
 
 #. (itstool) path: page/p
 #: C/command-line.page:17
