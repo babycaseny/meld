@@ -213,14 +213,13 @@ msgid "Use the system default monospace font"
 msgstr "Använd systemets standard typsnitt med fast breddsteg"
 
 #: ../data/org.gnome.meld.gschema.xml.h:26
-#, fuzzy
 #| msgid ""
 #| "If false, the defined custom font will be used instead of the system "
 #| "monospace font."
 msgid ""
 "If false, custom-font will be used instead of the system monospace font."
 msgstr ""
-"Om false kommer det definierade anpassade typsnittet att användas istället "
+"Om false kommer anpassade typsnittet att användas istället "
 "för systemets typsnitt med fast breddsteg."
 
 #: ../data/org.gnome.meld.gschema.xml.h:27
@@ -250,7 +249,6 @@ msgid "Use the system default editor"
 msgstr "Använd systemets standardredigerare"
 
 #: ../data/org.gnome.meld.gschema.xml.h:32
-#, fuzzy
 #| msgid ""
 #| "If false, the defined custom editor will be used instead of the system "
 #| "editor when opening files externally."
@@ -258,7 +256,7 @@ msgid ""
 "If false, custom-editor-command will be used instead of the system editor "
 "when opening files externally."
 msgstr ""
-"Om false kommer den definierade anpassade redigeraren att användas istället "
+"Om false kommer anpassade redigeraren att användas istället "
 "för systemredigeraren när filer öppnas externt."
 
 #: ../data/org.gnome.meld.gschema.xml.h:33
@@ -389,7 +387,6 @@ msgid "Order for files in three-way version control merge comparisons"
 msgstr "Sortering för filer i trevägsjämförelser med versionshantering"
 
 #: ../data/org.gnome.meld.gschema.xml.h:54
-#, fuzzy
 #| msgid ""
 #| "Choices for file order are remote/merge/local and local/merged/remote. "
 #| "This preference only affects three-way comparisons launched from the "
@@ -443,7 +440,7 @@ msgid ""
 "insert line breaks) at the commit margin before commit."
 msgstr ""
 "Om true kommer versionshanteringsredigeraren för incheckningsmeddelanden att "
-"radbrytas vid den definierade marginalen före incheckning."
+"radbrytas vid den marginalen före incheckning."
 
 #: ../data/org.gnome.meld.gschema.xml.h:61
 msgid "Version control status filters"
@@ -1737,7 +1734,7 @@ msgstr "_Spara som UTF-8"
 #: ../meld/filediff.py:1742
 #, python-format
 msgid "Couldn't encode text as “%s”"
-msgstr ""Kunde inte koda text som “%s”"
+msgstr "Kunde inte koda text som “%s”"
 
 #: ../meld/filediff.py:1744
 #, fuzzy, python-format
