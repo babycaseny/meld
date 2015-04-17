@@ -5,7 +5,4 @@ language: python
 install:
   - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get install intltool; fi
   - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew install intltool; fi
-before_script:
-  - ./configure
-  - make 
-  - make install
+  - python ./setup.py -v install
