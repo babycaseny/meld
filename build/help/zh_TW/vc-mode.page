@@ -8,7 +8,7 @@
   <credit type="author copyright">
     <name>Kai Willadsen</name>
     <email>kai.willadsen@gmail.com</email>
-    <years>2012</years>
+    <years>2012年</years>
   </credit>
 </info>
 
@@ -38,7 +38,7 @@
     <tr>
       <td><p>Steitùs</p></td>
       <td><p>Apariencia</p></td>
-      <td><p>Significado</p></td>
+      <td><p>意思</p></td>
     </tr>
   </thead>
 
@@ -46,7 +46,7 @@
     <tr>
       <td><p>相同</p></td>
       <td>
-        <p>Normol font</p>
+        <p>正常字體</p>
       </td>
       <td>
         <p>Fayl/Fouldèr wa seim as vörçion in ripositori.</p>
@@ -55,7 +55,7 @@
     <tr>
       <td><p>已修改</p></td>
       <td>
-        <p>Red en bold</p>
+        <p>紅色粗體</p>
       </td>
       <td>
         <p>El archivo difiere respecto a la versión del repositorio.</p>
@@ -64,7 +64,7 @@
     <tr>
       <td><p>新增</p></td>
       <td>
-        <p>Grīn en bold</p>
+        <p>綠色粗體</p>
       </td>
       <td>
         <p>Nigè fayl/fouldèr wa niu, en skejulen tu add tu ripositori.</p>
@@ -82,7 +82,7 @@
     <tr>
       <td><p>衝突</p></td>
       <td>
-        <p>Haihlàiten red bold tekst</p>
+        <p>鮮紅色粗體</p>
       </td>
       <td>
         <p>Cuando se intenta mezclar con el repositorio, las diferencias entre los archivos locales y los del repositorio podrían no resolverse, y entonces el archivo se encontrará en conflicto con el contenido del repositorio</p>
@@ -91,14 +91,14 @@
     <tr>
       <td><p>欠缺</p></td>
       <td>
-        <p>Blu en bold tekst with lain akros middol</p>
+        <p>藍色粗體最加上中間劃線</p>
       </td>
       <td>
-        <p>Este archivo/carpeta debería estar presente, pero no lo está.</p>
+        <p>這檔案/資料夾理應存在，但沒有。</p>
       </td>
     </tr>
     <tr>
-      <td><p>Ignoren</p></td>
+      <td><p>忽略</p></td>
       <td>
         <p>Fui-zo na tekst</p>
       </td>
@@ -107,7 +107,7 @@
       </td>
     </tr>
     <tr>
-      <td><p>Not dū koncrolen</p></td>
+      <td><p>未有版本控制</p></td>
       <td>
         <p>Fui-zo na tekst</p>
       </td>

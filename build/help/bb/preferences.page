@@ -10,7 +10,13 @@
     <email>kai.willadsen@gmail.com</email>
     <years>2013</years>
   </credit>
-</info>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tom K. C. Chiu</mal:name>
+      <mal:email>tomchiukc@gmail.com</mal:email>
+      <mal:years>2015n</mal:years>
+    </mal:credit>
+  </info>
 <title>Meld dè priforènses</title>
 
 <terms>

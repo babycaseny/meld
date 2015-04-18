@@ -8,7 +8,7 @@
   <credit type="author copyright">
     <name>Kai Willadsen</name>
     <email>kai.willadsen@gmail.com</email>
-    <years>2012</years>
+    <years>2012年</years>
   </credit>
 </info>
 <title>Atajos de teclado</title>
@@ -79,11 +79,11 @@
     </tr>
     <tr>
       <td><p><keyseq><key>Ktrl</key><key>F</key></keyseq></p></td>
-      <td><p>Söč 1-gè striŋ</p></td>
+      <td><p>搜尋一個字串</p></td>
     </tr>
     <tr>
       <td><p><keyseq><key>Ktrl</key><key>G</key></keyseq></p></td>
-      <td><p>Söč striŋ dè nèist instàns</p></td>
+      <td><p>尋找字串的下一個出處。</p></td>
     </tr>
     <tr>
       <td><p><keyseq><key>Alt</key><key>Ùp</key></keyseq></p></td>
@@ -97,7 +97,7 @@
 </table>
 
 <table frame="top bottom">
-  <title>Atajos para la configuración de la vista.</title>
+  <title>檢視設定的捷徑</title>
 
   <thead>
     <tr>

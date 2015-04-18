@@ -8,12 +8,18 @@
   <credit type="author copyright">
     <name>Kai Willadsen</name>
     <email>kai.willadsen@gmail.com</email>
-    <years>2012</years>
+    <years>2012n</years>
   </credit>
-</info>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tom K. C. Chiu</mal:name>
+      <mal:email>tomchiukc@gmail.com</mal:email>
+      <mal:years>2015n</mal:years>
+    </mal:credit>
+  </info>
 <title>Kommand lain yuseij</title>
 
-<p>Si ejecuta <app>Meld</app> desde la línea de comandos, puede decirle que hacer cuando arranca.</p>
+<p>If <app>Meld</app>-wa start from kommand lain, nei keyi spesifai what tudu when start.</p>
 <p>Para una <link xref="file-mode">comparación de archivos</link> de dos o tres vías, ejecute <app>Meld</app> con <cmd>meld <var>archivo1</var> <var>archivo2</var></cmd> o <cmd>meld <var>archivo1</var> <var>archivo2</var> <var>archivo3</var></cmd> respectivamente.</p>
 
 <p>Para una <link xref="folder-mode">comparación de carpetas</link>de dos o tres vías, ejecute <app>Meld</app> con <cmd>meld <var>carpeta1</var> <var>carpeta2</var></cmd>  <cmd>meld <var>carpeta1</var> <var>carpeta2</var> <var>carpeta3</var></cmd></p>

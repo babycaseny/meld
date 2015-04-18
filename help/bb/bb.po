@@ -696,7 +696,7 @@ msgstr "1"
 #. (itstool) path: credit/years
 #: C/preferences.page:12
 msgid "2013"
-msgstr "2013"
+msgstr "2013n"
 
 #. (itstool) path: page/title
 #: C/preferences.page:15

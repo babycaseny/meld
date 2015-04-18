@@ -8,7 +8,7 @@
   <credit type="author copyright">
     <name>Kai Willadsen</name>
     <email>kai.willadsen@gmail.com</email>
-    <years>2012</years>
+    <years>2012年</years>
   </credit>
 </info>
 <title>過濾了的檔案</title>
@@ -39,15 +39,15 @@ change what both folder and file comparisons see.
 <terms>
   <item>
     <title>已修改</title>
-    <p>Fayl wiŧ seim faylneim iksists in mùltipol fouldèrs, bùt nidi fayls wa diffèrènt</p>
+    <p>檔案在多個資料夾出現，但這些檔案並不一樣。</p>
   </item>
   <item>
     <title>新增</title>
-    <p>Fayl wiŧ seim faylneim iksists in kiẑōŋ 1-gè fouldèr, bùt not dū in kita</p>
+    <p>檔案只在其中一個資料夾出現，其他的沒有。</p>
   </item>
   <item>
     <title>相同</title>
-    <p>Nigè fayl iksist in ol fouldèrs, en in ol-pleises</p>
+    <p>檔案在所有資料夾都有，而且皆為同一個檔案。</p>
   </item>
 </terms>
 <p>Puede cambiar las diferencias que ve en su comparación actual usando los botones <gui style="button">Mismo</gui>, <gui style="button">Nuevo</gui> y <gui style="button">Modificado</gui> de la barra de herramientas o del menú <guiseq><gui style="menu">Vista</gui><gui style="menuitem">Estado del archivo</gui></guiseq>.</p>

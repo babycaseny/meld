@@ -8,29 +8,20 @@
   <credit type="author copyright">
     <name>Kai Willadsen</name>
     <email>kai.willadsen@gmail.com</email>
-    <years>2012</years>
+    <years>2012n</years>
   </credit>
-</info>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tom K. C. Chiu</mal:name>
+      <mal:email>tomchiukc@gmail.com</mal:email>
+      <mal:years>2015n</mal:years>
+    </mal:credit>
+  </info>
 <title>Filtèriŋ fayls out</title>
 
-<p>
-When you compare folders, you may want to be able to ignore some files.
-For example, you may wish to only see files that are present and different
-in both folders, ignoring those that are the same or only exist in one
-folder. Alternatively, you might want to ignore all the files in your
-<file>.git</file> directory, or ignore all images.
-</p>
+<p>When kompäriŋ fayls, nei keyi ignor bufùn-na fayls.  Für iksampol, nei keyi silekt kontents tu displei if fayls in 2-gè said or in 1-gè onli, or ignor if fayls in 1-gè said onli or ignor if 2-gè fayl ikwol.  Osou, nei keyi ignor ol fayls in neidè <file>.git</file> fouldèr,or ignor ol imeij-fayls.</p>
 
-<p>
-<app>Meld</app> has several different ways of controlling which files
-and what kind of differences you see. You can filter based on
-<link xref="#file-state-filter">differences between a file across
-folders</link> or <link xref="#file-name-filter">file and folder
-names</link>. You can also tell <app>Meld</app> to treat filenames
-as being <link xref="#file-case-filter">case insensitive</link>.
-Finally, you can use <link xref="text-filters">text filters</link> to
-change what both folder and file comparisons see.
-</p>
+<p><app>Meld</app> wa severol diffèrènt meŧods tu koncrol fayls en diffèrènses tu displei.  Yus filtèr beisen on <link xref="#file-state-filter">diffèrènses bitwin fayls akros fouldèrs</link> or <link xref="#file-name-filter">fayl en fouldèr neims</link>.  Instrùkt <app>Meld</app> tu konsidèr faylneim seim if <link xref="#file-case-filter"> distiŋguiš meijā en mainā taips</link>. Fainolli, nei keyi yus <link xref="text-filters">tekst filtèrā</link> tu čeinj appīràns when fouldèr en fayl kompär.</p>
 
 <note style="important">
   <p>Cualquier <link xref="text-filters">filtro de texto</link> que haya definido <em> se aplica automáticamente</em> cuando se comparan carpetas. Los archivos que resulten idénticos después de que se les hayan aplicado todos los filtros de texto no se resaltarán como diferentes, pero se mostrarán en cursiva.</p>

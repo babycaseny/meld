@@ -8,7 +8,7 @@
   <credit type="author copyright">
     <name>Kai Willadsen</name>
     <email>kai.willadsen@gmail.com</email>
-    <years>2012</years>
+    <years>2012年</years>
   </credit>
 </info>
 
@@ -46,13 +46,13 @@
 
 
 <table frame="top bottom">
-  <title>Fouldèr kompäreiçion steitùs</title>
+  <title>資料夾比對狀態</title>
 
   <thead>
     <tr>
       <td><p>Steitùs</p></td>
       <td><p>Apariencia</p></td>
-      <td><p>Significado</p></td>
+      <td><p>意思</p></td>
     </tr>
   </thead>
 
@@ -60,7 +60,7 @@
     <tr>
       <td><p>相同</p></td>
       <td>
-        <p>Normol font</p>
+        <p>正常字體</p>
       </td>
       <td>
         <p>El archivo/carpeta es igual en todas las carpetas comparadas.</p>
@@ -69,7 +69,7 @@
     <tr>
       <td><p>Seim when filtèren</p></td>
       <td>
-        <p>Cursivas</p>
+        <p>斜體</p>
       </td>
       <td>
         <p>Estos archivos son diferentes en las carpetas, pero una vez aplicados los <link xref="text-filters">filtros de texto</link>, se han vuelto idénticos.</p>
@@ -78,7 +78,7 @@
     <tr>
       <td><p>已修改</p></td>
       <td>
-        <p>Red en bold</p>
+        <p>紅色粗體</p>
       </td>
       <td>
         <p>Estos archivos difieren entre las carpetas comparadas.</p>
@@ -87,7 +87,7 @@
     <tr>
       <td><p>新增</p></td>
       <td>
-        <p>Grīn en bold</p>
+        <p>綠色粗體</p>
       </td>
       <td>
         <p>Este archivo/carpeta existe en esta carpeta, pero no en las otras.</p>

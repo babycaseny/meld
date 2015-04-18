@@ -8,9 +8,15 @@
   <credit type="author copyright">
     <name>Kai Willadsen</name>
     <email>kai.willadsen@gmail.com</email>
-    <years>2012</years>
+    <years>2012n</years>
   </credit>
-</info>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tom K. C. Chiu</mal:name>
+      <mal:email>tomchiukc@gmail.com</mal:email>
+      <mal:years>2015n</mal:years>
+    </mal:credit>
+  </info>
 <title>Kībōd šortkùts</title>
 
 <table frame="top bottom">

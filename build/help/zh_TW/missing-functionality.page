@@ -8,12 +8,12 @@
   <credit type="author copyright">
     <name>Kai Willadsen</name>
     <email>kai.willadsen@gmail.com</email>
-    <years>2012</years>
+    <years>2012年</years>
   </credit>
 </info>
 <title>Cosas que <app>Meld</app> no hace</title>
 
-<p>¿Nunca ha perdido media hora investigando una aplicación intentando ver cómo hacer algo, pensando que <em>seguramente</em> debe haber una opción para eso?</p>
+<p>您有沒有試過在一個應用程式花了半小時到處走，只是為了想知道怎樣去做一件事，認為<em>肯定</em>在某處一定有個選項去做這件事的？</p>
 
 <p>Esta sección lista unas pocas cosas comunes que <app>Meld</app> <em>no</em> hace, ya sea por una decisión deliberada, o porque nos faltó tiempo.</p>
 

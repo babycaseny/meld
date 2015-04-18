@@ -185,7 +185,7 @@ msgid ""
 "Lines in file comparisons will be wrapped according to this setting, either "
 "not at all ('none'), at any character ('char') or only at the end of words "
 "('word')."
-msgstr "Lains in fayl komp\t"
+msgstr "Lains in fayl kompareiçion\t"
 
 #: ../data/org.gnome.meld.gschema.xml.h:23
 msgid "Highlight current line"

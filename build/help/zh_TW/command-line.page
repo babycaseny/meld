@@ -8,10 +8,10 @@
   <credit type="author copyright">
     <name>Kai Willadsen</name>
     <email>kai.willadsen@gmail.com</email>
-    <years>2012</years>
+    <years>2012年</years>
   </credit>
 </info>
-<title>Kommand lain yuseij</title>
+<title>命令列的用法</title>
 
 <p>Si ejecuta <app>Meld</app> desde la línea de comandos, puede decirle que hacer cuando arranca.</p>
 <p>Para una <link xref="file-mode">comparación de archivos</link> de dos o tres vías, ejecute <app>Meld</app> con <cmd>meld <var>archivo1</var> <var>archivo2</var></cmd> o <cmd>meld <var>archivo1</var> <var>archivo2</var> <var>archivo3</var></cmd> respectivamente.</p>

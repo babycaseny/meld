@@ -8,10 +8,10 @@
   <credit type="author copyright">
     <name>Kai Willadsen</name>
     <email>kai.willadsen@gmail.com</email>
-    <years>2012</years>
+    <years>2012年</years>
   </credit>
 </info>
-<title>Meld-wa mienigga?</title>
+<title>Meld是甚麼？</title>
 <p><app>Meld</app> es una herramienta para comparar archivos y carpetas, y para resolver diferencias entre ellos. También es útil para comparar cambios capturados por sistemas de control de versiones.</p>
 
 <p><app>Meld</app> muestra las diferencias entre dos o tres archivos (o dos o tres carpetas) y permite mover contenido entre ellos, o editar los archivos manualmente. <app>Meld</app> está enfocado a ayudar a los desarrolladores a comparar y mezclar archivos fuente, y tener una supervisión gráfica de los cambios en su sistema de control de versiones favorito.</p>
