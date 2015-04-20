@@ -1,5 +1,8 @@
-# German translation of the meld manual.
+# German translation for meld.
+# Copyright (C) 2015 meld's COPYRIGHT HOLDER
+# This file is distributed under the same license as the meld package.
 # Mario Blättermann <mariobl@gnome.org>, 2009.
+<<<<<<< HEAD
 # Benjamin Steinwender <b@stbe.at>, 2014.
 #
 msgid ""
@@ -7,20 +10,39 @@ msgstr ""
 "Project-Id-Version: meld\n"
 "POT-Creation-Date: 2014-06-01 09:37+0000\n"
 "PO-Revision-Date: 2014-06-08 17:53+0100\n"
+=======
+# Benjamin Steinwender <b@stbe.at>, 2014-2015.
+# Christian Kirbach <Christian.Kirbach@gmail.com>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: meld meld-3-12\n"
+"POT-Creation-Date: 2015-01-23 10:52+0000\n"
+"PO-Revision-Date: 2015-01-23 23:33+0100\n"
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 "Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+<<<<<<< HEAD
 "X-Generator: Poedit 1.6.5\n"
+=======
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Mario Blättermann <mariobl@gnome.org>, 2009\n"
+<<<<<<< HEAD
 "Benjamin Steinwender <b@stbe.at>, 2014\n"
+=======
+"Benjamin Steinwender <b@stbe.at>, 2014-2015\n"
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 "Christian Kirbach <christian.kirbach@gmail.com>, 2014"
 
 #. (itstool) path: info/title
@@ -371,7 +393,10 @@ msgstr ""
 
 #. (itstool) path: section/title
 #: C/file-filters.page:174
+<<<<<<< HEAD
 #| msgid "Case Sensitivity"
+=======
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 msgid "Case insensitive filenames"
 msgstr "Dateinamen mit beliebiger Groß-/Kleinschreibung"
 
@@ -606,6 +631,7 @@ msgid ""
 "<code>{file}</code> and <code>{line}</code> elements to the command, in "
 "which case <app>Meld</app> will substitute the file path and current line "
 "number respectively (e.g., <cmd>gedit {file}:{line}</cmd>)."
+<<<<<<< HEAD
 msgstr ""
 
 #. (itstool) path: page/title
@@ -613,6 +639,15 @@ msgstr ""
 msgid "Dealing with changes"
 msgstr ""
 
+=======
+msgstr ""
+
+#. (itstool) path: page/title
+#: C/file-changes.page:16
+msgid "Dealing with changes"
+msgstr ""
+
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 #. (itstool) path: page/p
 #: C/file-changes.page:18
 msgid ""
@@ -869,6 +904,7 @@ msgid ""
 "and press <key>Enter</key>, or double-click the file to start a <link xref="
 "\"file-mode\">file comparison</link>. You can also interact with your "
 "version control system using the <gui style=\"menu\">Changes</gui> menu."
+<<<<<<< HEAD
 msgstr ""
 
 #. (itstool) path: section/title
@@ -893,6 +929,32 @@ msgid "State"
 msgstr ""
 
 #. (itstool) path: td/p
+=======
+msgstr ""
+
+#. (itstool) path: section/title
+#. (itstool) path: table/title
+#: C/vc-mode.page:56 C/vc-mode.page:81
+msgid "Version control states"
+msgstr ""
+
+#. (itstool) path: section/p
+#: C/vc-mode.page:58
+msgid ""
+"Each file or folder in a version control comparison has a <em>state</em>, "
+"obtained from the version control system itself. <app>Meld</app> maps these "
+"different states into a standard set of very similar concepts. As such, "
+"<app>Meld</app> might use slightly different names for states than your "
+"version control system does. The possible states are:"
+msgstr ""
+
+#. (itstool) path: td/p
+#: C/vc-mode.page:85 C/folder-mode.page:110
+msgid "State"
+msgstr "Zustand"
+
+#. (itstool) path: td/p
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 #: C/vc-mode.page:86 C/folder-mode.page:111
 msgid "Appearance"
 msgstr "Erscheinungsbild"
@@ -1013,7 +1075,11 @@ msgstr ""
 #. (itstool) path: td/p
 #: C/vc-mode.page:197
 msgid "Non VC"
+<<<<<<< HEAD
 msgstr "Nicht-VC"
+=======
+msgstr "Nicht unter VK"
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:205
@@ -1084,7 +1150,7 @@ msgstr "<keyseq><key>Strg</key><key>N</key></keyseq>"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:30
 msgid "Start a new comparison."
-msgstr "Startet einen neuen Vergleich."
+msgstr "Einen neuen Vergleich durchführen."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:33
@@ -1094,7 +1160,7 @@ msgstr "<keyseq><key>Strg</key><key>S</key></keyseq>"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:34
 msgid "Save the current document to disk."
-msgstr "Speichert das aktuelle Dokument auf Festplatte."
+msgstr "Das aktuelle Dokument auf einem Datenträger speichern."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:37
@@ -1104,7 +1170,7 @@ msgstr "<keyseq><key>Strg</key><key>Umschalt</key><key>S</key></keyseq>"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:38
 msgid "Save the current document with a new filename."
-msgstr "Speichert das aktuelle Dokument unter einem neuen Namen."
+msgstr "Das aktuelle Dokument unter einem anderen Dateinamen speichern."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:41
@@ -1114,7 +1180,7 @@ msgstr "<keyseq><key>Strg</key><key>W</key></keyseq>"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:42
 msgid "Close the current comparison."
-msgstr "Schließt den aktuellen Vergleich"
+msgstr "Den aktuellen Vergleich schließen."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:45
@@ -1139,7 +1205,7 @@ msgstr "<keyseq><key>Strg</key><key>Z</key></keyseq>"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:63
 msgid "Undo the last action."
-msgstr "Macht die letzte Aktion rückgängig."
+msgstr "Die letzte Aktion rückgängig machen."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:66
@@ -1147,9 +1213,17 @@ msgid "<keyseq><key>Ctrl</key><key>Shift</key><key>Z</key></keyseq>"
 msgstr "<keyseq><key>Strg</key><key>Umschalt</key><key>Z</key></keyseq>"
 
 #. (itstool) path: td/p
+<<<<<<< HEAD
+#: C/keyboard-shortcuts.page:66
+msgid "<keyseq><key>Ctrl</key><key>Shift</key><key>Z</key></keyseq>"
+msgstr "<keyseq><key>Strg</key><key>Umschalt</key><key>Z</key></keyseq>"
+
+#. (itstool) path: td/p
+=======
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 #: C/keyboard-shortcuts.page:67
 msgid "Redo the last undone action."
-msgstr "Wiederholt die letzte rückgängig gemachte Aktion."
+msgstr "Die zuletzt rückgängig gemachte Aktion wiederholen."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:70
@@ -1160,8 +1234,8 @@ msgstr "<keyseq><key>Strg</key><key>X</key></keyseq>"
 #: C/keyboard-shortcuts.page:71
 msgid "Cut the selected text or region and place it on the clipboard."
 msgstr ""
-"Schneidet den markierten Text oder den markierten Bereich aus und verschiebt "
-"ihn in die Zwischenablage."
+"Den markierten Text oder den markierten Bereich ausschneiden und in die "
+"Zwischenablage verschieben."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:74
@@ -1172,8 +1246,13 @@ msgstr "<keyseq><key>Strg</key><key>C</key></keyseq>"
 #: C/keyboard-shortcuts.page:75
 msgid "Copy the selected text or region onto the clipboard."
 msgstr ""
+<<<<<<< HEAD
 "Kopiert den markierten Text oder den markierten Bereich in die "
 "Zwischenablage."
+=======
+"Den markierten Text oder den markierten Bereich in die Zwischenablage "
+"kopieren."
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:78
@@ -1183,7 +1262,7 @@ msgstr "<keyseq><key>Strg</key><key>V</key></keyseq>"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:79
 msgid "Paste the contents of the clipboard."
-msgstr "Fügt den Inhalt der Zwischenablage ein."
+msgstr "Den Inhalt der Zwischenablage einfügen."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:82
@@ -1193,7 +1272,7 @@ msgstr "<keyseq><key>Strg</key><key>F</key></keyseq>"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:83
 msgid "Find a string."
-msgstr "Sucht nach einer Zeichenkette."
+msgstr "Eine Zeichenkette suchen."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:86
@@ -1203,6 +1282,7 @@ msgstr "<keyseq><key>Strg</key><key>G</key></keyseq>"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:87
 msgid "Find the next instance of the string."
+<<<<<<< HEAD
 msgstr "Findet das nächste Vorkommen der Zeichenkette."
 
 #. (itstool) path: td/p
@@ -1211,6 +1291,16 @@ msgid "<keyseq><key>Alt</key><key>Up</key></keyseq>"
 msgstr "<keyseq><key>Alt</key><key>↑</key></keyseq>"
 
 #. (itstool) path: td/p
+=======
+msgstr "Das nächste Vorkommen der Zeichenkette suchen."
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:90 C/keyboard-shortcuts.page:96
+msgid "<keyseq><key>Alt</key><key>Up</key></keyseq>"
+msgstr "<keyseq><key>Alt</key><key>↑</key></keyseq>"
+
+#. (itstool) path: td/p
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 #: C/keyboard-shortcuts.page:91
 msgid ""
 "Go to the next difference. (Also <keyseq><key>Ctrl</key><key>D</key></"
@@ -1236,12 +1326,16 @@ msgstr "Tastenkürzel für Anzeigeoptionen"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:115
 msgid "<keyseq><key>Escape</key></keyseq>"
+<<<<<<< HEAD
 msgstr "<keyseq><key>Escape</key></keyseq>"
+=======
+msgstr "<keyseq><key>Esc</key></keyseq>"
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:116
 msgid "Stop the current comparison."
-msgstr "Stoppt den aktuellen Vergleich."
+msgstr "Den aktuellen Vergleich stoppen."
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:119
@@ -1251,7 +1345,11 @@ msgstr "<keyseq><key>Strg</key><key>R</key></keyseq>"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:120
 msgid "Refresh the current comparison."
+<<<<<<< HEAD
 msgstr "Aktualisiert den aktuellen Vergleich."
+=======
+msgstr "Den aktuellen Vergleich aktualisieren."
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 
 #. (itstool) path: table/title
 #: C/keyboard-shortcuts.page:127
@@ -1566,6 +1664,7 @@ msgid "Run <cmd>meld --help</cmd> for a list of all command line options."
 msgstr ""
 "Um eine vollständige Liste von Optionen zu erhalten, rufen Sie <cmd>meld --"
 "help</cmd> auf."
+<<<<<<< HEAD
 
 #~ msgid "Meld Users Manual"
 #~ msgstr "Meld-Benutzerhandbuch"
@@ -1913,3 +2012,5 @@ msgstr ""
 
 #~ msgid "Reload the current comparison."
 #~ msgstr "Lädt den aktuellen Vergleich neu."
+=======
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1

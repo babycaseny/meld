@@ -1,20 +1,18 @@
-### Copyright (C) 2002-2006 Stephen Kennedy <stevek@gnome.org>
-### Copyright (C) 2010-2011 Kai Willadsen <kai.willadsen@gmail.com>
-
-### This program is free software; you can redistribute it and/or modify
-### it under the terms of the GNU General Public License as published by
-### the Free Software Foundation; either version 2 of the License, or
-### (at your option) any later version.
-
-### This program is distributed in the hope that it will be useful,
-### but WITHOUT ANY WARRANTY; without even the implied warranty of
-### MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-### GNU General Public License for more details.
-
-### You should have received a copy of the GNU General Public License
-### along with this program; if not, write to the Free Software
-### Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301,
-### USA.
+# Copyright (C) 2002-2006 Stephen Kennedy <stevek@gnome.org>
+# Copyright (C) 2010-2011 Kai Willadsen <kai.willadsen@gmail.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 """Module to help implement undo functionality.
 
@@ -33,7 +31,8 @@ def on_undo_button_pressed():
     s.undo()
 """
 
-import gobject
+from gi.repository import GObject
+
 
 class GroupAction(object):
     """A group action combines several actions into one logical action.
@@ -43,27 +42,30 @@ class GroupAction(object):
         # TODO: If a GroupAction affects more than one sequence, our logic
         # breaks. Currently, this isn't a problem.
         self.buffer = seq.actions[0].buffer
+
     def undo(self):
         while self.seq.can_undo():
             self.seq.undo()
+
     def redo(self):
         while self.seq.can_redo():
             self.seq.redo()
 
-class UndoSequence(gobject.GObject):
+
+class UndoSequence(GObject.GObject):
     """A manager class for operations which can be undone/redone.
     """
 
     __gsignals__ = {
-        'can-undo': (gobject.SIGNAL_RUN_FIRST, gobject.TYPE_NONE, (gobject.TYPE_BOOLEAN,)),
-        'can-redo': (gobject.SIGNAL_RUN_FIRST, gobject.TYPE_NONE, (gobject.TYPE_BOOLEAN,)),
-        'checkpointed': (gobject.SIGNAL_RUN_FIRST, gobject.TYPE_NONE, (gobject.TYPE_OBJECT, gobject.TYPE_BOOLEAN,)),
+        'can-undo': (GObject.SignalFlags.RUN_FIRST, None, (GObject.TYPE_BOOLEAN,)),
+        'can-redo': (GObject.SignalFlags.RUN_FIRST, None, (GObject.TYPE_BOOLEAN,)),
+        'checkpointed': (GObject.SignalFlags.RUN_FIRST, None, (GObject.TYPE_OBJECT, GObject.TYPE_BOOLEAN,)),
     }
 
     def __init__(self):
         """Create an empty UndoSequence.
         """
-        gobject.GObject.__init__(self)
+        GObject.GObject.__init__(self)
         self.actions = []
         self.next_redo = 0
         self.checkpoints = {}
@@ -153,7 +155,7 @@ class UndoSequence(gobject.GObject):
 
     def redo(self):
         """Redo an action.
-        
+
         Raises and AssertionError if the sequence is not undoable.
         """
         assert self.next_redo < len(self.actions)
@@ -178,8 +180,8 @@ class UndoSequence(gobject.GObject):
         while start > 0 and self.actions[start - 1].buffer != buf:
             start -= 1
         end = self.next_redo
-        while end < len(self.actions) - 1 and \
-              self.actions[end + 1].buffer != buf:
+        while (end < len(self.actions) - 1 and
+               self.actions[end + 1].buffer != buf):
             end += 1
         if end == len(self.actions):
             end = None
@@ -209,13 +211,13 @@ class UndoSequence(gobject.GObject):
             return
 
         if self.group:
-            self.group.begin_group() 
+            self.group.begin_group()
         else:
             self.group = UndoSequence()
 
     def end_group(self):
         """End a logical group action. See also begin_group().
-        
+
         Raises an AssertionError if there was not a matching call to
         begin_group().
         """
@@ -228,14 +230,15 @@ class UndoSequence(gobject.GObject):
         else:
             group = self.group
             self.group = None
-            if len(group.actions) == 1: # collapse 
-                self.add_action( group.actions[0] )
+            # Collapse single action groups
+            if len(group.actions) == 1:
+                self.add_action(group.actions[0])
             elif len(group.actions) > 1:
-                self.add_action( GroupAction(group) )
+                self.add_action(GroupAction(group))
 
     def abort_group(self):
         """Revert the sequence to the state before begin_group() was called.
-        
+
         Raises an AssertionError if there was no a matching call to begin_group().
         """
         if self.busy:
@@ -249,4 +252,3 @@ class UndoSequence(gobject.GObject):
 
     def in_grouped_action(self):
         return self.group is not None
-

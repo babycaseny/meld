@@ -1,0 +1,29 @@
+python: can't open file 'setup_py2app.py': [Errno 2] No such file or directory
+python: can't open file 'setup_py2app.py': [Errno 2] No such file or directory
+cp: 無法 stat ‘/home/tom/gtk/inst/share/icons/Tango’: 沒有此一檔案或目錄
+cp: 無法 stat ‘data/icons/*’: 沒有此一檔案或目錄
+cp: 無法 stat ‘/home/tom/gtk/inst/share/themes/Clearlooks/’: 沒有此一檔案或目錄
+cp: 無法 stat ‘/home/tom/gtk/inst/share/themes/Mac/’: 沒有此一檔案或目錄
+cp: 無法 stat ‘/home/tom/gtk/inst/share/gtksourceview-2.0’: 沒有此一檔案或目錄
+cp: 無法 stat ‘osx/gtkrc’: 沒有此一檔案或目錄
+cp: 無法 stat ‘osx/pangorc’: 沒有此一檔案或目錄
+cp: 無法 stat ‘/home/tom/gtk/inst/lib/girepository-1.0’: 沒有此一檔案或目錄
+cp: 無法 stat ‘/home/tom/gtk/inst/lib/gtk-2.0’: 沒有此一檔案或目錄
+mv: 無法 stat ‘dist/Meld.app//Contents/MacOS/Meld’: 沒有此一檔案或目錄
+cp: 無法 stat ‘osx/Meld’: 沒有此一檔案或目錄
+chmod: 無法存取 ‘dist/Meld.app//Contents/MacOS/Meld’: 沒有此一檔案或目錄
+build_app.sh: line 44: hdiutil：命令找不到
+build_app.sh: line 45: hdiutil：命令找不到
+build_app.sh: line 46: hdiutil：命令找不到
+rsync: mkdir "/Volumes/Meld Merge" failed: No such file or directory (2)
+rsync error: error in file IO (code 11) at main.c(674) [Receiver=3.1.1]
+build_app.sh: line 50: cd: /Volumes/Meld Merge/: 沒有此一檔案或目錄
+cp: 無法 stat ‘osx/DS_Store’: 沒有此一檔案或目錄
+build_app.sh: line 54: hdiutil：命令找不到
+build_app.sh: line 55: hdiutil：命令找不到
+
+  File "./build_app.sh", line 10
+    python setup_py2app.py build
+                      ^
+SyntaxError: invalid syntax
+

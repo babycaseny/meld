@@ -30,9 +30,10 @@ import os
 import re
 import shutil
 import subprocess
+import sys
 import tempfile
 
-from gettext import gettext as _, ngettext
+from meld.conf import _, ngettext
 
 from . import _vc
 
@@ -42,9 +43,15 @@ class Vc(_vc.CachedVc):
     CMD = "git"
     NAME = "Git"
     VC_DIR = ".git"
+<<<<<<< HEAD
     GIT_DIFF_FILES_RE = ":(\d+) (\d+) [a-z0-9]+ [a-z0-9]+ ([XADMTU])\t(.*)"
+=======
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 
     VC_COLUMNS = (_vc.DATA_NAME, _vc.DATA_STATE, _vc.DATA_OPTIONS)
+
+    GIT_DIFF_FILES_RE = ":(\d+) (\d+) [a-z0-9]+ [a-z0-9]+ ([XADMTU])\t(.*)"
+    DIFF_RE = re.compile(GIT_DIFF_FILES_RE)
 
     conflict_map = {
         # These are the arguments for git-show
@@ -63,23 +70,29 @@ class Vc(_vc.CachedVc):
         "U": _vc.STATE_CONFLICT,  # Unmerged
     }
 
+    file_encoding = sys.getfilesystemencoding()
+
     def __init__(self, location):
         super(Vc, self).__init__(location)
-        self.diff_re = re.compile(self.GIT_DIFF_FILES_RE)
         self._tree_cache = {}
         self._tree_meta_cache = {}
 
+    @classmethod
+    def is_installed(cls):
+        try:
+            proc = _vc.popen([cls.CMD, '--version'])
+            assert proc.read().startswith('git version')
+            return True
+        except:
+            return False
+
+    @classmethod
     def check_repo_root(self, location):
         # Check exists instead of isdir, since .git might be a git-file
-        if not os.path.exists(os.path.join(location, self.VC_DIR)):
-            raise ValueError
-        return location
+        return os.path.exists(os.path.join(location, self.VC_DIR))
 
     def commit_command(self, message):
         return [self.CMD, "commit", "-m", message]
-
-    def add_command(self):
-        return [self.CMD, "add"]
 
     # Prototyping VC interface version 2
 
@@ -155,7 +168,7 @@ class Vc(_vc.CachedVc):
         for p in paths:
             if os.path.isdir(p):
                 entries = self._get_modified_files(p)
-                names = [self.diff_re.search(e).groups()[3] for e in entries]
+                names = [self.DIFF_RE.search(e).groups()[3] for e in entries]
                 files.extend(names)
             else:
                 files.append(os.path.relpath(p, self.root))
@@ -181,6 +194,10 @@ class Vc(_vc.CachedVc):
         command = [self.CMD, 'push']
         runner(command, [], refresh=True, working_dir=self.root)
 
+    def add(self, runner, files):
+        command = [self.CMD, 'add']
+        runner(command, files, refresh=True, working_dir=self.root)
+
     def remove(self, runner, files):
         command = [self.CMD, 'rm', '-r']
         runner(command, files, refresh=True, working_dir=self.root)
@@ -194,6 +211,10 @@ class Vc(_vc.CachedVc):
         if missing:
             command = [self.CMD, 'checkout', 'HEAD']
             runner(command, missing, refresh=True, working_dir=self.root)
+
+    def resolve(self, runner, files):
+        command = [self.CMD, 'add']
+        runner(command, files, refresh=True, working_dir=self.root)
 
     def get_path_for_conflict(self, path, conflict):
         if not path.startswith(self.root + os.path.sep):
@@ -246,13 +267,11 @@ class Vc(_vc.CachedVc):
             shutil.copyfileobj(vc_file, f)
         return f.name
 
-    def valid_repo(self):
+    @classmethod
+    def valid_repo(cls, path):
         # TODO: On Windows, this exit code is wrong under the normal shell; it
         # appears to be correct under the default git bash shell however.
-        if _vc.call([self.CMD, "branch"], cwd=self.root):
-            return False
-        else:
-            return True
+        return not _vc.call([cls.CMD, "branch"], cwd=path)
 
     def get_working_directory(self, workdir):
         if workdir.startswith("/"):
@@ -268,14 +287,16 @@ class Vc(_vc.CachedVc):
 
         # Get the status of files that are different in the "index" vs
         # the HEAD of the git repository
-        proc = _vc.popen([self.CMD, "diff-index",
-                          "--cached", "HEAD", path], cwd=self.location)
+        proc = _vc.popen(
+            [self.CMD, "diff-index", "--cached", "HEAD", "--relative", path],
+            cwd=self.location)
         entries = proc.read().split("\n")[:-1]
 
         # Get the status of files that are different in the "index" vs
         # the files on disk
-        proc = _vc.popen([self.CMD, "diff-files",
-                          "-0", path], cwd=self.location)
+        proc = _vc.popen(
+            [self.CMD, "diff-files", "-0", "--relative", path],
+            cwd=self.location)
         entries += (proc.read().split("\n")[:-1])
 
         # An unmerged file or a file that has been modified, added to
@@ -293,9 +314,10 @@ class Vc(_vc.CachedVc):
             try:
                 entries = self._get_modified_files(path)
 
-                # Identify ignored files
+                # Identify ignored files and folders
                 proc = _vc.popen([self.CMD, "ls-files", "--others",
-                                  "--ignored", "--exclude-standard", path],
+                                  "--ignored", "--exclude-standard",
+                                  "--directory", path],
                                  cwd=self.location)
                 ignored_entries = proc.read().split("\n")[:-1]
 
@@ -310,6 +332,20 @@ class Vc(_vc.CachedVc):
                 if e.errno != errno.EAGAIN:
                     raise
 
+        def get_real_path(name):
+            name = name.strip()
+            if os.name == 'nt':
+                # Git returns unix-style paths on Windows
+                name = os.path.normpath(name)
+
+            # Unicode file names and file names containing quotes are
+            # returned by git as quoted strings
+            if name[0] == '"':
+                name = name[1:-1].decode('string_escape')
+            name = name.decode(self.file_encoding)
+            return os.path.abspath(
+                os.path.join(self.location, name))
+
         if len(entries) == 0 and os.path.isfile(path):
             # If we're just updating a single file there's a chance that it
             # was it was previously modified, and now has been edited
@@ -317,30 +353,23 @@ class Vc(_vc.CachedVc):
             # 'entries' list, and tree_state['path'] will still contain stale
             # data.  When this corner case occurs we force tree_state['path']
             # to STATE_NORMAL.
-            tree_state[path] = _vc.STATE_NORMAL
+            tree_state[get_real_path(path)] = _vc.STATE_NORMAL
         else:
-            # There are 1 or more modified files, parse their state
             for entry in entries:
-                columns = self.diff_re.search(entry).groups()
-                old_mode, new_mode, statekey, name = columns
-                if os.name == 'nt':
-                    # Git returns unix-style paths on Windows
-                    name = os.path.normpath(name.strip())
-                path = os.path.join(self.root, name.strip())
+                columns = self.DIFF_RE.search(entry).groups()
+                old_mode, new_mode, statekey, path = columns
                 state = self.state_map.get(statekey.strip(), _vc.STATE_NONE)
-                tree_state[path] = state
+                tree_state[get_real_path(path)] = state
                 if old_mode != new_mode:
                     msg = _("Mode changed from %s to %s" %
                             (old_mode, new_mode))
                     self._tree_meta_cache[path] = msg
 
-            for entry in ignored_entries:
-                path = os.path.join(self.location, entry.strip())
-                tree_state[path] = _vc.STATE_IGNORED
+            for path in ignored_entries:
+                tree_state[get_real_path(path)] = _vc.STATE_IGNORED
 
-            for entry in unversioned_entries:
-                path = os.path.join(self.location, entry.strip())
-                tree_state[path] = _vc.STATE_NONE
+            for path in unversioned_entries:
+                tree_state[get_real_path(path)] = _vc.STATE_NONE
 
     def _lookup_tree_cache(self, rootdir):
         # Get a list of all files in rootdir, as well as their status
@@ -363,8 +392,8 @@ class Vc(_vc.CachedVc):
             meta = self._tree_meta_cache.get(path, "")
             retfiles.append(_vc.File(path, name, state, options=meta))
         for name, path in dirs:
-            # git does not operate on dirs, just files
-            retdirs.append(_vc.Dir(path, name, _vc.STATE_NORMAL))
+            state = tree.get(path, _vc.STATE_NORMAL)
+            retdirs.append(_vc.Dir(path, name, state))
         for path, state in tree.items():
             # removed files are not in the filesystem, so must be added here
             if state in (_vc.STATE_REMOVED, _vc.STATE_MISSING):

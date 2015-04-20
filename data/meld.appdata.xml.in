@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD:data/meld.appdata.xml
+<!-- Copyright 2013 Kai Willadsen <kai.willadsen@gmail.com> -->
+=======
+<!-- Copyright 2013-2014 Kai Willadsen <kai.willadsen@gmail.com> -->
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1:data/meld.appdata.xml.in
+<application>
+ <id type="desktop">meld.desktop</id>
+ <metadata_license>CC0-1.0</metadata_license>
+ <project_license>GPL-2.0+ and CC-BY-SA-3.0</project_license>
+ <description>
+  <_p>
+  Meld is a visual diff and merge tool targeted at developers. Meld helps you
+  compare files, directories, and version controlled projects. It provides
+  two- and three-way comparison of both files and directories, and supports
+  many version control systems including Git, Mercurial, Bazaar and Subversion.
+  </_p>
+  <_p>
+  Meld helps you review code changes, understand patches, and makes enormous
+  merge conflicts slightly less painful.
+  </_p>
+ </description>
+ <screenshots>
+  <screenshot type="default" width="992" height="759">http://meldmerge.org/images/meld-filediff-full.png</screenshot>
+  <screenshot width="655" height="532">http://meldmerge.org/images/meld-dircomp-full.png</screenshot>
+  <screenshot width="655" height="532">http://meldmerge.org/images/meld-vc-full.png</screenshot>
+ </screenshots>
+ <url type="homepage">http://meldmerge.org</url>
+ <updatecontact>meld-list@gnome.org</updatecontact>
+</application>

@@ -1,18 +1,17 @@
-### Copyright (C) 2011-2012 Kai Willadsen <kai.willadsen@gmail.com>
-
-### This program is free software; you can redistribute it and/or modify
-### it under the terms of the GNU General Public License as published by
-### the Free Software Foundation; either version 2 of the License, or
-### (at your option) any later version.
-
-### This program is distributed in the hope that it will be useful,
-### but WITHOUT ANY WARRANTY; without even the implied warranty of
-### MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-### GNU General Public License for more details.
-
-### You should have received a copy of the GNU General Public License
-### along with this program; if not, write to the Free Software
-### Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+# Copyright (C) 2011-2013 Kai Willadsen <kai.willadsen@gmail.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import re
 
@@ -65,6 +64,14 @@ class FilterEntry(object):
             return None
         name, active = elements[0], bool(int(elements[1]))
         filter_string = " ".join(elements[2:])
+        compiled = FilterEntry.compile_filter(filter_string, filter_type)
+        if compiled is None:
+            active = False
+        return FilterEntry(name, active, compiled, filter_string)
+
+    @classmethod
+    def new_from_gsetting(cls, elements, filter_type):
+        name, active, filter_string = elements
         compiled = FilterEntry.compile_filter(filter_string, filter_type)
         if compiled is None:
             active = False

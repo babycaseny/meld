@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <requires lib="gtk+" version="2.18"/>
-  <!-- interface-naming-policy toplevel-contextual -->
+  <!-- interface-requires gtk+ 3.0 -->
   <object class="GtkAdjustment" id="adjustment1">
     <property name="lower">1</property>
     <property name="upper">8</property>
@@ -16,21 +15,73 @@
     <property name="step_increment">1</property>
     <property name="page_increment">10</property>
   </object>
+  <object class="GtkListStore" id="syntaxschemestore">
+    <columns>
+      <!-- column-name id -->
+      <column type="gchararray"/>
+      <!-- column-name name -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
   <object class="GtkListStore" id="fileorderstore">
     <columns>
       <!-- column-name id -->
+      <column type="gboolean"/>
+      <!-- column-name label -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">False</col>
+        <col id="1" translatable="yes">Left is remote, right is local</col>
+      </row>
+      <row>
+        <col id="0">True</col>
+        <col id="1" translatable="yes">Left is local, right is remote</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="mergeorderstore">
+    <columns>
+      <!-- column-name id -->
+      <column type="gchararray"/>
+      <!-- column-name label -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">remote-merge-local</col>
+        <col id="1" translatable="yes">Remote, merge, local</col>
+      </row>
+      <row>
+        <col id="0">local-merge-remote</col>
+        <col id="1" translatable="yes">Local, merge, remote</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="timestampstore">
+    <columns>
+      <!-- column-name value -->
       <column type="gint"/>
       <!-- column-name label -->
       <column type="gchararray"/>
     </columns>
     <data>
       <row>
-        <col id="0">0</col>
-        <col id="1" translatable="yes">Left is remote, right is local</col>
+        <col id="0">1</col>
+        <col id="1" translatable="yes">1ns (ext4)</col>
       </row>
       <row>
-        <col id="0">1</col>
-        <col id="1" translatable="yes">Left is local, right is remote</col>
+        <col id="0">100</col>
+        <col id="1" translatable="yes">100ns (NTFS)</col>
+      </row>
+      <row>
+        <col id="0">1000000000</col>
+        <col id="1" translatable="yes">1s (ext2/ext3)</col>
+      </row>
+      <row>
+        <col id="0">2000000000</col>
+        <col id="1" translatable="yes">2s (VFAT)</col>
       </row>
     </data>
   </object>
@@ -39,14 +90,14 @@
     <property name="border_width">5</property>
     <property name="title" translatable="yes">Meld Preferences</property>
     <property name="type_hint">dialog</property>
-    <property name="has_separator">False</property>
     <signal name="response" handler="on_response" swapped="no"/>
     <child internal-child="vbox">
-      <object class="GtkVBox" id="dialog-vbox4">
+      <object class="GtkBox" id="dialog-vbox4">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
         <child internal-child="action_area">
-          <object class="GtkHButtonBox" id="dialog-action_area4">
+          <object class="GtkButtonBox" id="dialog-action_area4">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
@@ -56,7 +107,6 @@
                 <property name="can_focus">True</property>
                 <property name="can_default">True</property>
                 <property name="receives_default">False</property>
-                <property name="use_action_appearance">False</property>
                 <property name="use_stock">True</property>
               </object>
               <packing>
@@ -72,7 +122,6 @@
                 <property name="can_focus">True</property>
                 <property name="can_default">True</property>
                 <property name="receives_default">False</property>
-                <property name="use_action_appearance">False</property>
                 <property name="use_stock">True</property>
                 <accelerator key="Escape" signal="clicked"/>
               </object>
@@ -151,11 +200,10 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
-                                <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
+                                <property name="xalign">0</property>
                                 <property name="active">True</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="on_checkbutton_default_font_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -169,7 +217,7 @@
                                 <property name="can_focus">False</property>
                                 <property name="spacing">6</property>
                                 <child>
-                                  <object class="GtkLabel" id="label1">
+                                  <object class="GtkLabel" id="label_fontpicker">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="xalign">0</property>
@@ -188,10 +236,8 @@
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">False</property>
-                                    <property name="use_action_appearance">False</property>
                                     <property name="font_name">Monospace 12</property>
                                     <property name="use_font">True</property>
-                                    <signal name="font-set" handler="on_fontpicker_font_set" swapped="no"/>
                                   </object>
                                   <packing>
                                     <property name="expand">True</property>
@@ -276,7 +322,7 @@
                                 <property name="can_focus">False</property>
                                 <property name="spacing">6</property>
                                 <child>
-                                  <object class="GtkLabel" id="label16">
+                                  <object class="GtkLabel" id="label_tabsize">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="xalign">0</property>
@@ -296,7 +342,6 @@
                                     <property name="can_focus">True</property>
                                     <property name="adjustment">adjustment1</property>
                                     <property name="climb_rate">1</property>
-                                    <signal name="value-changed" handler="on_spinbutton_tabsize_changed" swapped="no"/>
                                   </object>
                                   <packing>
                                     <property name="expand">False</property>
@@ -317,10 +362,9 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
-                                <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
+                                <property name="xalign">0</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="on_checkbutton_spaces_instead_of_tabs_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -334,8 +378,8 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
-                                <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
+                                <property name="xalign">0</property>
                                 <property name="draw_indicator">True</property>
                                 <signal name="toggled" handler="on_checkbutton_wrap_text_toggled" swapped="no"/>
                               </object>
@@ -351,14 +395,14 @@
                                 <property name="can_focus">False</property>
                                 <property name="left_padding">18</property>
                                 <child>
-                                  <object class="GtkCheckButton" id="checkbutton_split_words">
+                                  <object class="GtkCheckButton" id="checkbutton_wrap_word">
                                     <property name="label" translatable="yes">Do not _split words over two lines</property>
                                     <property name="visible">True</property>
                                     <property name="sensitive">False</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">False</property>
-                                    <property name="use_action_appearance">False</property>
                                     <property name="use_underline">True</property>
+                                    <property name="xalign">0</property>
                                     <property name="active">True</property>
                                     <property name="draw_indicator">True</property>
                                     <signal name="toggled" handler="on_checkbutton_wrap_text_toggled" swapped="no"/>
@@ -377,10 +421,9 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
-                                <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
+                                <property name="xalign">0</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="on_checkbutton_highlight_current_line_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -394,10 +437,9 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
-                                <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
+                                <property name="xalign">0</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="on_checkbutton_show_line_numbers_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -411,8 +453,8 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
-                                <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
+                                <property name="xalign">0</property>
                                 <property name="draw_indicator">True</property>
                                 <signal name="toggled" handler="on_checkbutton_show_whitespace_toggled" swapped="no"/>
                               </object>
@@ -428,15 +470,58 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
-                                <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
+                                <property name="xalign">0</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="on_checkbutton_use_syntax_highlighting_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
                                 <property name="fill">False</property>
                                 <property name="position">7</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkHBox" id="hbox11">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="spacing">6</property>
+                                <child>
+                                  <object class="GtkLabel" id="label16">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="label" translatable="yes">Syntax highlighting color scheme:</property>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">True</property>
+                                    <property name="fill">True</property>
+                                    <property name="padding">0</property>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GSettingsStringComboBox" id="combobox_style_scheme">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="model">syntaxschemestore</property>
+                                    <property name="gsettings-column">0</property>
+                                    <child>
+                                      <object class="GtkCellRendererText" id="syntax_scheme_renderer"/>
+                                      <attributes>
+                                        <attribute name="text">1</attribute>
+                                      </attributes>
+                                    </child>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">True</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">False</property>
+                                <property name="position">8</property>
                               </packing>
                             </child>
                           </object>
@@ -509,10 +594,9 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
-                                <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
+                                <property name="xalign">0</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="on_system_editor_checkbutton_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
@@ -526,7 +610,7 @@
                                 <property name="can_focus">False</property>
                                 <property name="spacing">6</property>
                                 <child>
-                                  <object class="GtkLabel" id="label2">
+                                  <object class="GtkLabel" id="label_editor_command">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="xalign">0</property>
@@ -544,8 +628,6 @@
                                   <object class="GtkEntry" id="custom_edit_command_entry">
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
-                                    <signal name="focus-out-event" handler="on_custom_edit_command_entry_activate" swapped="no"/>
-                                    <signal name="activate" handler="on_custom_edit_command_entry_activate" swapped="no"/>
                                   </object>
                                   <packing>
                                     <property name="expand">True</property>
@@ -648,11 +730,9 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
-                                <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
-                                <property name="xalign">0.51999998092651367</property>
+                                <property name="xalign">0</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="on_checkbutton_shallow_compare_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -681,13 +761,21 @@
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkComboBox" id="combo_timestamp">
+                                  <object class="GSettingsIntComboBox" id="combo_timestamp">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
-                                    <signal name="changed" handler="on_combo_timestamp_changed" swapped="no"/>
+                                    <property name="model">timestampstore</property>
+                                    <property name="active">0</property>
+                                    <property name="gsettings-column">0</property>
+                                    <child>
+                                      <object class="GtkCellRendererText" id="combo_timestamp_renderer"/>
+                                      <attributes>
+                                        <attribute name="text">1</attribute>
+                                      </attributes>
+                                    </child>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -697,6 +785,22 @@
                                 <property name="expand">False</property>
                                 <property name="fill">False</property>
                                 <property name="position">1</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkCheckButton" id="checkbutton_folder_filter_text">
+                                <property name="label" translatable="yes">Apply text filters during folder comparisons</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="receives_default">False</property>
+                                <property name="use_underline">True</property>
+                                <property name="xalign">0</property>
+                                <property name="draw_indicator">True</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">False</property>
+                                <property name="position">2</property>
                               </packing>
                             </child>
                           </object>
@@ -764,10 +868,9 @@
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="receives_default">False</property>
-                            <property name="use_action_appearance">False</property>
                             <property name="use_underline">True</property>
+                            <property name="xalign">0</property>
                             <property name="draw_indicator">True</property>
-                            <signal name="toggled" handler="on_checkbutton_ignore_symlinks_toggled" swapped="no"/>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -927,11 +1030,11 @@
                                 <property name="can_focus">False</property>
                                 <property name="spacing">6</property>
                                 <child>
-                                  <object class="GtkLabel" id="label12">
+                                  <object class="GtkLabel" id="file_order_label">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="xalign">0</property>
-                                    <property name="label" translatable="yes">_When comparing file revisions:</property>
+                                    <property name="label" translatable="yes">_Order when comparing file revisions:</property>
                                     <property name="use_underline">True</property>
                                     <property name="mnemonic_widget">combo_file_order</property>
                                   </object>
@@ -942,12 +1045,12 @@
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkComboBox" id="combo_file_order">
+                                  <object class="GSettingsBoolComboBox" id="combo_file_order">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="model">fileorderstore</property>
                                     <property name="active">0</property>
-                                    <signal name="changed" handler="on_combo_file_order_changed" swapped="no"/>
+                                    <property name="gsettings-column">0</property>
                                     <child>
                                       <object class="GtkCellRendererText" id="file_order_renderer"/>
                                       <attributes>
@@ -956,7 +1059,7 @@
                                     </child>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -966,6 +1069,53 @@
                                 <property name="expand">False</property>
                                 <property name="fill">False</property>
                                 <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkHBox" id="merge_order_hbox1">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="spacing">6</property>
+                                <child>
+                                  <object class="GtkLabel" id="merge_order_label">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="xalign">0</property>
+                                    <property name="label" translatable="yes">Order when _merging files:</property>
+                                    <property name="use_underline">True</property>
+                                    <property name="mnemonic_widget">combo_merge_order</property>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">False</property>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GSettingsStringComboBox" id="combo_merge_order">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="model">mergeorderstore</property>
+                                    <property name="active">0</property>
+                                    <property name="gsettings-column">0</property>
+                                    <child>
+                                      <object class="GtkCellRendererText" id="merge_order_renderer"/>
+                                      <attributes>
+                                        <attribute name="text">1</attribute>
+                                      </attributes>
+                                    </child>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">False</property>
+                                <property name="position">1</property>
                               </packing>
                             </child>
                           </object>
@@ -1043,11 +1193,9 @@
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">False</property>
-                                    <property name="use_action_appearance">False</property>
                                     <property name="use_underline">True</property>
-                                    <property name="xalign">0.51999998092651367</property>
+                                    <property name="xalign">0</property>
                                     <property name="draw_indicator">True</property>
-                                    <signal name="toggled" handler="on_checkbutton_show_commit_margin_toggled" swapped="no"/>
                                   </object>
                                   <packing>
                                     <property name="expand">False</property>
@@ -1061,7 +1209,6 @@
                                     <property name="can_focus">True</property>
                                     <property name="adjustment">adjustment2</property>
                                     <property name="climb_rate">1</property>
-                                    <signal name="value-changed" handler="on_spinbutton_commit_margin_value_changed" swapped="no"/>
                                   </object>
                                   <packing>
                                     <property name="expand">False</property>
@@ -1087,16 +1234,14 @@
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">False</property>
-                                    <property name="use_action_appearance">False</property>
                                     <property name="use_underline">True</property>
-                                    <property name="xalign">0.51999998092651367</property>
+                                    <property name="xalign">0</property>
                                     <property name="draw_indicator">True</property>
-                                    <signal name="toggled" handler="on_checkbutton_break_commit_lines_toggled" swapped="no"/>
                                   </object>
                                 </child>
                               </object>
                               <packing>
-                                <property name="expand">True</property>
+                                <property name="expand">False</property>
                                 <property name="fill">True</property>
                                 <property name="position">1</property>
                               </packing>
@@ -1149,21 +1294,86 @@
                 <property name="border_width">12</property>
                 <property name="spacing">12</property>
                 <child>
-                  <object class="GtkLabel" id="label86">
+                  <object class="GtkVBox" id="vbox9">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="xalign">0</property>
-                    <property name="label" translatable="yes">When performing directory comparisons, you may filter out files and directories by name. Each pattern is a list of shell style wildcards separated by spaces.</property>
-                    <property name="wrap">True</property>
+                    <property name="spacing">6</property>
+                    <child>
+                      <object class="GtkLabel" id="label1">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="xalign">0</property>
+                        <property name="label" translatable="yes">Filename filters</property>
+                        <property name="use_markup">True</property>
+                        <attributes>
+                          <attribute name="weight" value="bold"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkHBox" id="hbox6">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <child>
+                          <object class="GtkLabel" id="label2">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="xpad">12</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">False</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkVBox" id="file_filters_vbox">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="spacing">12</property>
+                            <child>
+                              <object class="GtkLabel" id="label86">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="xalign">0</property>
+                                <property name="label" translatable="yes">When performing directory comparisons, you may filter out files and directories by name. Each pattern is a list of shell style wildcards separated by spaces.</property>
+                                <property name="wrap">True</property>
+                                <property name="max-width-chars">40</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">False</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <placeholder/>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
                   </object>
                   <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">False</property>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
                     <property name="position">0</property>
                   </packing>
-                </child>
-                <child>
-                  <placeholder/>
                 </child>
               </object>
               <packing>
@@ -1189,84 +1399,16 @@
                 <property name="border_width">12</property>
                 <property name="spacing">12</property>
                 <child>
-                  <object class="GtkLabel" id="label87">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="xalign">0</property>
-                    <property name="label" translatable="yes">When performing file comparisons, you may ignore certain types of changes. Each pattern here is a python regular expression which replaces matching text with the empty string before comparison is performed. If the expression contains groups, only the groups are replaced. See the user manual for more details.</property>
-                    <property name="use_markup">True</property>
-                    <property name="wrap">True</property>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">False</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkHBox" id="hbox39">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <child>
-                      <object class="GtkCheckButton" id="checkbutton_ignore_blank_lines">
-                        <property name="label" translatable="yes">Ignore changes which insert or delete blank lines</property>
-                        <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="receives_default">False</property>
-                        <property name="use_action_appearance">False</property>
-                        <property name="use_underline">True</property>
-                        <property name="draw_indicator">True</property>
-                        <signal name="toggled" handler="on_checkbutton_ignore_blank_lines_toggled" swapped="no"/>
-                      </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">False</property>
-                        <property name="position">0</property>
-                      </packing>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">False</property>
-                    <property name="position">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <placeholder/>
-                </child>
-              </object>
-              <packing>
-                <property name="position">4</property>
-              </packing>
-            </child>
-            <child type="tab">
-              <object class="GtkLabel" id="regex_label">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="label" translatable="yes">Text Filters</property>
-              </object>
-              <packing>
-                <property name="position">4</property>
-                <property name="tab_fill">False</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkVBox" id="encoding_tab">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="border_width">12</property>
-                <property name="spacing">12</property>
-                <child>
-                  <object class="GtkVBox" id="vbox39">
+                  <object class="GtkVBox" id="vbox12">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="spacing">6</property>
                     <child>
-                      <object class="GtkLabel" id="label52">
+                      <object class="GtkLabel" id="label14">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="xalign">0</property>
-                        <property name="label" translatable="yes">Loading</property>
+                        <property name="label" translatable="yes">Change trimming</property>
                         <property name="use_markup">True</property>
                         <attributes>
                           <attribute name="weight" value="bold"/>
@@ -1279,11 +1421,11 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkHBox" id="hbox29">
+                      <object class="GtkHBox" id="hbox10">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
-                          <object class="GtkLabel" id="label53">
+                          <object class="GtkLabel" id="label15">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="xpad">12</property>
@@ -1295,42 +1437,19 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkVBox" id="vbox40">
+                          <object class="GtkVBox" id="change_trimming_vbox">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
+                            <property name="spacing">12</property>
                             <child>
-                              <object class="GtkVBox" id="vbox41">
+                              <object class="GtkCheckButton" id="checkbutton_ignore_blank_lines">
+                                <property name="label" translatable="yes">Trim blank line differences from the start and end of changes</property>
                                 <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <child>
-                                  <object class="GtkLabel" id="label55">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="xalign">0</property>
-                                    <property name="xpad">4</property>
-                                    <property name="ypad">4</property>
-                                    <property name="label" translatable="yes">When loading, try these codecs in order. (e.g. utf8, iso8859)</property>
-                                  </object>
-                                  <packing>
-                                    <property name="expand">False</property>
-                                    <property name="fill">False</property>
-                                    <property name="position">0</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkEntry" id="entry_text_codecs">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">True</property>
-                                    <property name="text">utf8 iso8859</property>
-                                    <signal name="focus-out-event" handler="on_entry_text_codecs_activate" swapped="no"/>
-                                    <signal name="activate" handler="on_entry_text_codecs_activate" swapped="no"/>
-                                  </object>
-                                  <packing>
-                                    <property name="expand">False</property>
-                                    <property name="fill">False</property>
-                                    <property name="position">1</property>
-                                  </packing>
-                                </child>
+                                <property name="can_focus">True</property>
+                                <property name="receives_default">False</property>
+                                <property name="use_underline">True</property>
+                                <property name="xalign">0</property>
+                                <property name="draw_indicator">True</property>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -1359,19 +1478,102 @@
                     <property name="position">0</property>
                   </packing>
                 </child>
+                <child>
+                  <object class="GtkVBox" id="vbox11">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="spacing">6</property>
+                    <child>
+                      <object class="GtkLabel" id="label12">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="xalign">0</property>
+                        <property name="label" translatable="yes">Text filters</property>
+                        <property name="use_markup">True</property>
+                        <attributes>
+                          <attribute name="weight" value="bold"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkHBox" id="hbox9">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <child>
+                          <object class="GtkLabel" id="label13">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="xpad">12</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkVBox" id="text_filters_vbox">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="spacing">12</property>
+                            <child>
+                              <object class="GtkLabel" id="label87">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="xalign">0</property>
+                                <property name="label" translatable="yes">When performing file comparisons, you may ignore certain types of changes. Each pattern here is a python regular expression which replaces matching text with the empty string before comparison is performed. If the expression contains groups, only the groups are replaced. See the user manual for more details.</property>
+                                <property name="use_markup">True</property>
+                                <property name="wrap">True</property>
+                                <property name="max-width-chars">40</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">False</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <placeholder/>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
               </object>
               <packing>
-                <property name="position">5</property>
+                <property name="position">4</property>
               </packing>
             </child>
             <child type="tab">
-              <object class="GtkLabel" id="encoding_label">
+              <object class="GtkLabel" id="regex_label">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="label" translatable="yes">Encoding</property>
+                <property name="label" translatable="yes">Text Filters</property>
               </object>
               <packing>
-                <property name="position">5</property>
+                <property name="position">4</property>
                 <property name="tab_fill">False</property>
               </packing>
             </child>
@@ -1388,5 +1590,24 @@
       <action-widget response="-11">helpbutton1</action-widget>
       <action-widget response="-7">closebutton1</action-widget>
     </action-widgets>
+  </object>
+  <object class="GtkSizeGroup" id="sizegroup_editor">
+    <widgets>
+      <widget name="label_fontpicker"/>
+      <widget name="label_tabsize"/>
+      <widget name="label_editor_command"/>
+    </widgets>
+  </object>
+  <object class="GtkSizeGroup" id="sizegroup_file_order_labels">
+    <widgets>
+      <widget name="file_order_label"/>
+      <widget name="merge_order_label"/>
+    </widgets>
+  </object>
+  <object class="GtkSizeGroup" id="sizegroup_file_order_combos">
+    <widgets>
+      <widget name="combo_file_order"/>
+      <widget name="combo_merge_order"/>
+    </widgets>
   </object>
 </interface>

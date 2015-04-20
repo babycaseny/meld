@@ -1,6 +1,7 @@
 # Czech translation for meld.
 # Copyright (C) 2014 meld's COPYRIGHT HOLDER
 # This file is distributed under the same license as the meld package.
+<<<<<<< HEAD
 # Marek Černocký <marek@manet.cz>, 2014.
 #
 msgid ""
@@ -8,6 +9,15 @@ msgstr ""
 "Project-Id-Version: meld meld-1.8\n"
 "POT-Creation-Date: 2014-09-21 21:40+0000\n"
 "PO-Revision-Date: 2014-08-26 10:13+0200\n"
+=======
+# Marek Černocký <marek@manet.cz>, 2014, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: meld master\n"
+"POT-Creation-Date: 2015-02-16 11:01+0000\n"
+"PO-Revision-Date: 2015-02-16 21:11+0100\n"
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -644,7 +654,11 @@ msgid ""
 "a 'merge helper'; <app>Meld</app> is one such helper. If you want to make "
 "<app>git mergetool</app> use <app>Meld</app> by default, you can add"
 msgstr ""
+<<<<<<< HEAD
 "Například, když používáte <app>Git</app>, <cmd>git mergtool</app> spustí "
+=======
+"Například, když používáte <app>Git</app>, <cmd>git mergtool</cmd> spustí "
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 "„pomocníka se slučováním“. <app>Meld</app> je jedním z možných takovýchto "
 "pomocníků. Jestli chcete, aby <app>git mergetool</app> používal <app>Meld</"
 "app> jako výchozího pomocníka, můžete přidat"
@@ -714,6 +728,56 @@ msgstr ""
 "nahradí názvem souboru včetně cesty, respektive číslem aktuálního řádku. "
 "(např. <cmd>gedit {file}:{line}</cmd>)."
 
+<<<<<<< HEAD
+=======
+#. (itstool) path: terms/title
+#: C/preferences.page:31
+#| msgid "Folder comparison states"
+msgid "Folder Comparison preferences"
+msgstr "Předvolby porovnávání složek"
+
+#. (itstool) path: item/title
+#: C/preferences.page:33
+#| msgid "States in folder comparisons"
+msgid "Apply text filters during folder comparisons"
+msgstr "Použití textových filtrů při porovnávání složek"
+
+#. (itstool) path: item/p
+#: C/preferences.page:34
+msgid ""
+"When comparing files in folder comparison mode, text filters and other text "
+"manipulation options can be applied to the contents of files. If this option "
+"is enabled, all currently enabled text filters will be applied, the blank "
+"line trimming option will be applied as appropriate, and differences in line "
+"endings will be ignored."
+msgstr ""
+"Když se porovnávají soubory v režimu porovnávání složek, mohou být na obsah "
+"souborů použity filtry a další možnosti práce s textem. Pokud je tato volba "
+"zapnutá, všechny zapnuté textové filtry se použijí, bude příslušně použita "
+"volba ořezávání prázných řádků a rozdíly v zakončeních řádků budou "
+"ignorovány."
+
+#. (itstool) path: item/p
+#: C/preferences.page:40
+msgid ""
+"Enabling this option means that <app>Meld</app> must fully read all non-"
+"binary files into memory during the folder comparison. With large text "
+"files, this can be slow and may cause memory issues."
+msgstr ""
+"Zapnutí této volby znamená, že <app>Meld</app> musí během porovnávání složek "
+"načíst všechny nebinární soubory kompletně do paměti. U rozsáhlých textových "
+"souborů to může způsobit problémy v podobě zpomalení a velké spotřeby paměti."
+
+#. (itstool) path: item/p
+#: C/preferences.page:44
+msgid ""
+"This option only has an effect if if \"Compare files based only on size and "
+"timestamp\" is not enabled."
+msgstr ""
+"Tato volba má význam, jen když není zapnuto „Porovnávat soubory jen na "
+"základě velikosti a časového razítka“."
+
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 #. (itstool) path: page/title
 #: C/file-changes.page:16
 msgid "Dealing with changes"
@@ -1674,8 +1738,13 @@ msgstr ""
 #: C/folder-mode.page:217
 msgid ""
 "You can filter out files based on these states, for example, to show only "
+<<<<<<< HEAD
 "files that have are <em>Modified</em>. You can read more about this in <link "
 "xref=\"file-filters#file-state-filter\"/>."
+=======
+"files that have been <em>Modified</em>. You can read more about this in "
+"<link xref=\"file-filters#file-state-filter\"/>."
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 msgstr ""
 "Můžete odfiltrovat soubory na základě jejich stavu, například aby se "
 "zobrazovaly jen soubory, které byly <em>změněné</em>. Více si o tom můžete "

@@ -1,54 +1,48 @@
-### Copyright (C) 2002-2006 Stephen Kennedy <stevek@gnome.org>
-### Copyright (C) 2009-2010 Kai Willadsen <kai.willadsen@gmail.com>
-
-### This program is free software; you can redistribute it and/or modify
-### it under the terms of the GNU General Public License as published by
-### the Free Software Foundation; either version 2 of the License, or
-### (at your option) any later version.
-
-### This program is distributed in the hope that it will be useful,
-### but WITHOUT ANY WARRANTY; without even the implied warranty of
-### MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-### GNU General Public License for more details.
-
-### You should have received a copy of the GNU General Public License
-### along with this program; if not, write to the Free Software
-### Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301,
-### USA.
+# Copyright (C) 2002-2006 Stephen Kennedy <stevek@gnome.org>
+# Copyright (C) 2009-2010, 2013 Kai Willadsen <kai.willadsen@gmail.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import difflib
-from gettext import gettext as _
 import os
 
-import gtk
-import pango
+from gi.repository import Gtk
+from gi.repository import GtkSource
 
-from . import paths
 from .ui import gnomeglade
 
+from meld.conf import _
+from meld.settings import meldsettings
 from .util.compat import text_type
-from .util.sourceviewer import srcviewer
+from meld.sourceview import LanguageManager
 
 
 class PatchDialog(gnomeglade.Component):
 
     def __init__(self, filediff):
-        ui_file = paths.ui_dir("patch-dialog.ui")
-        gnomeglade.Component.__init__(self, ui_file, "patchdialog")
+        gnomeglade.Component.__init__(self, "patch-dialog.ui", "patchdialog")
 
         self.widget.set_transient_for(filediff.widget.get_toplevel())
-        self.prefs = filediff.prefs
-        self.prefs.notify_add(self.on_preference_changed)
         self.filediff = filediff
 
-        buf = srcviewer.GtkTextBuffer()
+        buf = GtkSource.Buffer()
         self.textview.set_buffer(buf)
-        lang = srcviewer.get_language_from_mime_type("text/x-diff")
-        srcviewer.set_language(buf, lang)
-        srcviewer.set_highlight_syntax(buf, True)
+        lang = LanguageManager.get_language_from_mime_type("text/x-diff")
+        buf.set_language(lang)
+        buf.set_highlight_syntax(True)
 
-        fontdesc = pango.FontDescription(self.prefs.get_current_font())
-        self.textview.modify_font(fontdesc)
+        self.textview.modify_font(meldsettings.font)
         self.textview.set_editable(False)
 
         self.index_map = {self.left_radiobutton: (0, 1),
@@ -57,13 +51,14 @@ class PatchDialog(gnomeglade.Component):
         self.reverse_patch = self.reverse_checkbutton.get_active()
 
         if self.filediff.num_panes < 3:
-            self.label3.hide()
-            self.hbox2.hide()
+            self.side_selection_label.hide()
+            self.side_selection_box.hide()
 
-    def on_preference_changed(self, key, value):
-        if key == "use_custom_font" or key == "custom_font":
-            fontdesc = pango.FontDescription(self.prefs.get_current_font())
-            self.textview.modify_font(fontdesc)
+        meldsettings.connect('changed', self.on_setting_changed)
+
+    def on_setting_changed(self, setting, key):
+        if key == "font":
+            self.textview.modify_font(meldsettings.font)
 
     def on_buffer_selection_changed(self, radiobutton):
         if not radiobutton.get_active():
@@ -113,7 +108,7 @@ class PatchDialog(gnomeglade.Component):
 
             # Copy patch to clipboard
             if result == 1:
-                clip = gtk.clipboard_get()
+                clip = Gtk.clipboard_get()
                 clip.set_text(txt)
                 clip.store()
                 break
@@ -123,6 +118,7 @@ class PatchDialog(gnomeglade.Component):
                 filename = self.filediff._get_filename_for_saving(
                     _("Save Patch"))
                 if filename:
+                    txt = txt.encode('utf-8')
                     self.filediff._save_text_to_filename(filename, txt)
                     break
 

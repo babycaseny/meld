@@ -1,30 +1,29 @@
-### Copyright (C) 2002-2006 Stephen Kennedy <stevek@gnome.org>
-
-### This program is free software; you can redistribute it and/or modify
-### it under the terms of the GNU General Public License as published by
-### the Free Software Foundation; either version 2 of the License, or
-### (at your option) any later version.
-
-### This program is distributed in the hope that it will be useful,
-### but WITHOUT ANY WARRANTY; without even the implied warranty of
-### MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-### GNU General Public License for more details.
-
-### You should have received a copy of the GNU General Public License
-### along with this program; if not, write to the Free Software
-### Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301,
-### USA.
+# Copyright (C) 2002-2006 Stephen Kennedy <stevek@gnome.org>
+# Copyright (C) 2011-2013 Kai Willadsen <kai.willadsen@gmail.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import os
-import gobject
-import gtk
-import pango
+from gi.repository import GLib
+from gi.repository import Gtk
+from gi.repository import Pango
 
 COL_PATH, COL_STATE, COL_TEXT, COL_ICON, COL_TINT, COL_FG, COL_STYLE, \
     COL_WEIGHT, COL_STRIKE, COL_END = list(range(10))
 
-COL_TYPES = (str, str, str, str, str, gtk.gdk.Color, pango.Style,
-             pango.Weight, bool)
+COL_TYPES = (str, str, str, str, str, str, Pango.Style,
+             Pango.Weight, bool)
 
 
 from meld.vc._vc import \
@@ -36,28 +35,34 @@ from meld.vc._vc import \
     CONFLICT_MERGED, CONFLICT_OTHER, CONFLICT_THIS
 
 
-class DiffTreeStore(gtk.TreeStore):
+class DiffTreeStore(Gtk.TreeStore):
 
     def __init__(self, ntree, types):
         full_types = []
         for col_type in (COL_TYPES + tuple(types)):
             full_types.extend([col_type] * ntree)
-        gtk.TreeStore.__init__(self, *full_types)
+        Gtk.TreeStore.__init__(self, *full_types)
         self.ntree = ntree
         self._setup_default_styles()
 
-    def on_style_set(self, widget, prev_style):
-        style = widget.get_style()
+    def on_style_updated(self, widget):
+        style = widget.get_style_context()
         self._setup_default_styles(style)
 
     def _setup_default_styles(self, style=None):
-        roman, italic = pango.STYLE_NORMAL, pango.STYLE_ITALIC
-        normal, bold = pango.WEIGHT_NORMAL, pango.WEIGHT_BOLD
+        roman, italic = Pango.Style.NORMAL, Pango.Style.ITALIC
+        normal, bold = Pango.Weight.NORMAL, Pango.Weight.BOLD
 
-        if style:
-            lookup = lambda color_id, default: style.lookup_color(color_id)
-        else:
-            lookup = lambda color_id, default: gtk.gdk.color_parse(default)
+        def lookup(name, default):
+            try:
+                found, colour = style.lookup_color(name)
+                if found:
+                    colour = colour.to_string()
+                else:
+                    colour = default
+            except AttributeError:
+                colour = default
+            return colour
 
         unk_fg = lookup("unknown-text", "#888888")
         new_fg = lookup("insert-text", "#008800")
@@ -76,6 +81,7 @@ class DiffTreeStore(gtk.TreeStore):
             (unk_fg, italic, normal, None),  # STATE_EMPTY
             (new_fg, roman,  bold,   None),  # STATE_NEW
             (mod_fg, roman,  bold,   None),  # STATE_MODIFIED
+            (mod_fg, roman,  normal, None),  # STATE_RENAMED
             (con_fg, roman,  bold,   None),  # STATE_CONFLICT
             (del_fg, roman,  bold,   True),  # STATE_REMOVED
             (del_fg, roman,  bold,   True),  # STATE_MISSING
@@ -92,6 +98,7 @@ class DiffTreeStore(gtk.TreeStore):
             (None,             None    , None,   None),    # EMPTY
             ("text-x-generic", "folder", new_fg, None),    # NEW
             ("text-x-generic", "folder", mod_fg, None),    # MODIFIED
+            ("text-x-generic", "folder", mod_fg, None),    # RENAMED
             ("text-x-generic", "folder", con_fg, None),    # CONFLICT
             ("text-x-generic", "folder", del_fg, None),    # REMOVED
             ("text-x-generic", "folder", unk_fg, unk_fg),  # MISSING
@@ -108,6 +115,12 @@ class DiffTreeStore(gtk.TreeStore):
         if path is not None:
             path = path.decode('utf8')
         return path
+
+    def is_folder(self, it, pane, path):
+        # A folder may no longer exist, and is only tracked by VC.
+        # Therefore, check the icon instead, as the pane already knows.
+        icon = self.get_value(it, self.column_index(COL_ICON, pane))
+        return icon == "folder" or os.path.isdir(path)
 
     def column_index(self, col, pane):
         return self.ntree * col + pane
@@ -133,7 +146,7 @@ class DiffTreeStore(gtk.TreeStore):
 
     def set_path_state(self, it, pane, state, isdir=0):
         fullname = self.get_value(it, self.column_index(COL_PATH,pane))
-        name = gobject.markup_escape_text(os.path.basename(fullname))
+        name = GLib.markup_escape_text(os.path.basename(fullname))
         self.set_state(it, pane, state, name, isdir)
 
     def set_state(self, it, pane, state, label, isdir=0):
@@ -143,6 +156,8 @@ class DiffTreeStore(gtk.TreeStore):
         self.set_value(it, col_idx(COL_STATE, pane), str(state))
         self.set_value(it, col_idx(COL_TEXT,  pane), label)
         self.set_value(it, col_idx(COL_ICON,  pane), icon)
+        # FIXME: This is horrible, but EmblemCellRenderer crashes
+        # if you try to give it a Gdk.Color property
         self.set_value(it, col_idx(COL_TINT,  pane), tint)
 
         fg, style, weight, strike = self.text_attributes[state]
@@ -183,7 +198,7 @@ class DiffTreeStore(gtk.TreeStore):
         while it:
             path = self.get_path(it)
             if path[-1]:
-                path = path[:-1] + (path[-1]-1,)
+                path = path[:-1] + [path[-1] - 1]
                 it = self.get_iter(path)
                 while 1:
                     nc = self.iter_n_children(it)
@@ -217,7 +232,7 @@ class DiffTreeStore(gtk.TreeStore):
 
         return prev_path, next_path
 
-    def treeview_search_cb(self, model, column, key, it):
+    def treeview_search_cb(self, model, column, key, it, data):
         # If the key contains a path separator, search the whole path,
         # otherwise just use the filename. If the key is all lower-case, do a
         # case-insensitive match.

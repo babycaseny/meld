@@ -1,0 +1,8 @@
+os:
+  - linux
+  - osx
+language: python
+install:
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get install intltool itstool libxml2 libxml2-utils; fi
+  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew install intltool itstool libxml2 libxml2-utils; fi
+  - python ./setup.py -v install

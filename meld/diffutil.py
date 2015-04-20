@@ -1,22 +1,20 @@
-### Copyright (C) 2002-2006 Stephen Kennedy <stevek@gnome.org>
-### Copyright (C) 2009, 2012 Kai Willadsen <kai.willadsen@gmail.com>
+# Copyright (C) 2002-2006 Stephen Kennedy <stevek@gnome.org>
+# Copyright (C) 2009, 2012-2013 Kai Willadsen <kai.willadsen@gmail.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-### This program is free software; you can redistribute it and/or modify
-### it under the terms of the GNU General Public License as published by
-### the Free Software Foundation; either version 2 of the License, or
-### (at your option) any later version.
-
-### This program is distributed in the hope that it will be useful,
-### but WITHOUT ANY WARRANTY; without even the implied warranty of
-### MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-### GNU General Public License for more details.
-
-### You should have received a copy of the GNU General Public License
-### along with this program; if not, write to the Free Software
-### Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301,
-### USA.
-
-import gobject
+from gi.repository import GObject
 
 from .matchers import DiffChunk, MyersSequenceMatcher, \
     SyncPointMyersSequenceMatcher
@@ -60,11 +58,11 @@ def consume_blank_lines(chunk, texts, pane1, pane2):
     return DiffChunk._make((tag, c1, c2, c3, c4))
 
 
-class Differ(gobject.GObject):
+class Differ(GObject.GObject):
     """Utility class to hold diff2 or diff3 chunks"""
 
     __gsignals__ = {
-        'diffs-changed': (gobject.SIGNAL_RUN_FIRST, gobject.TYPE_NONE,
+        'diffs-changed': (GObject.SignalFlags.RUN_FIRST, None,
                                                     (object,)),
     }
 
@@ -73,7 +71,7 @@ class Differ(gobject.GObject):
 
     def __init__(self):
         # Internally, diffs are stored from text1 -> text0 and text1 -> text2.
-        gobject.GObject.__init__(self)
+        GObject.GObject.__init__(self)
         self.num_sequences = 0
         self.seqlength = [0, 0, 0]
         self.diffs = [[], []]

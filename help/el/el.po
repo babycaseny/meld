@@ -1724,7 +1724,11 @@ msgstr ""
 #: C/folder-mode.page:217
 msgid ""
 "You can filter out files based on these states, for example, to show only "
+<<<<<<< HEAD
 "files that have are <em>Modified</em>. You can read more about this in <link "
+=======
+"files that have been <em>Modified</em>. You can read more about this in <link "
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 "xref=\"file-filters#file-state-filter\"/>."
 msgstr ""
 "Μπορείτε να φιλτράρετε αρχεία με βάση αυτές τις καταστάσεις, για παράδειγμα, "

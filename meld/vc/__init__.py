@@ -1,9 +1,10 @@
 ### Copyright (C) 2002-2005 Stephen Kennedy <stevek@gnome.org>
+### Copyright (C) 2012 Kai Willadsen <kai.willadsen@gmail.com>
 
 ### Redistribution and use in source and binary forms, with or without
 ### modification, are permitted provided that the following conditions
 ### are met:
-### 
+###
 ### 1. Redistributions of source code must retain the above copyright
 ###    notice, this list of conditions and the following disclaimer.
 ### 2. Redistributions in binary form must reproduce the above copyright
@@ -21,12 +22,33 @@
 ### (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 ### THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-import os
-import glob
+import importlib
 from . import _null
 from ._vc import DATA_NAME, DATA_STATE, DATA_REVISION, DATA_OPTIONS
 
+# FIXME: This is a horrible hack to help cx_Freeze pick up these plugins when
+# freezing the distributable package.
+from . import (
+    git, mercurial, bzr, fossil, monotone, darcs, svk, svn, svn_17, cvs)
 
+# Tuple with module name and vc.NAME field, ordered according to best-guess
+# as to which VC a user is likely to want by default in a multiple-VC situation
+vc_names = (
+    "git",
+    "mercurial",
+    "bzr",
+    "fossil",
+    "monotone",
+    "darcs",
+    "svk",
+    "svn",
+    "svn_17",
+    "cvs",
+)
+
+_plugins = [importlib.import_module("." + vc, __package__) for vc in vc_names]
+
+<<<<<<< HEAD
 def load_plugins():
     _vcdir = os.path.dirname(os.path.abspath(__file__))
     ret = []
@@ -35,6 +57,8 @@ def load_plugins():
         ret.append( __import__(modname, globals(), locals(), "*") )
     return ret
 _plugins = load_plugins()
+=======
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 
 def get_plugins_metadata():
     ret = []
@@ -47,22 +71,10 @@ def get_plugins_metadata():
             ret.extend(p.Vc.VC_METADATA)
     return ret
 
-vc_sort_order = (
-    "Git",
-    "Bazaar",
-    "Mercurial",
-    "Fossil",
-    "Monotone",
-    "Darcs",
-    "SVK",
-    "Subversion",
-    "Subversion 1.7",
-    "CVS",
-)
 
 def get_vcs(location):
     """Pick only the Vcs with the longest repo root
-    
+
        Some VC plugins search their repository root
        by walking the filesystem upwards its root
        and now that we display multiple VCs in the
@@ -74,12 +86,12 @@ def get_vcs(location):
 
     vcs = []
     for plugin in _plugins:
-        try:
-            vc = plugin.Vc(location)
-        except ValueError:
+        root, location = plugin.Vc.is_in_repo(location)
+        if not root:
             continue
         vcs.append(vc)
 
+<<<<<<< HEAD
     # Choose the deepest root we find, unless it's from a VC that
     # doesn't walk; these can be spurious as the real root may be
     # much higher up in the tree.
@@ -93,5 +105,19 @@ def get_vcs(location):
 
     vc_sort_key = lambda v: vc_sort_order.index(v.NAME)
     vcs.sort(key=vc_sort_key)
+=======
+        # Choose the deepest root we find, unless it's from a VC that
+        # doesn't walk; these can be spurious as the real root may be
+        # much higher up in the tree.
+        depth = len(root)
+        if depth > max_depth and plugin.Vc.VC_ROOT_WALK:
+            vcs, max_depth = [], depth
+        if depth >= max_depth:
+            vcs.append(plugin.Vc)
+
+    if not vcs:
+        # No plugin recognized that location, fallback to _null
+        return [_null.Vc]
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 
     return vcs

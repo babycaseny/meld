@@ -1,6 +1,6 @@
 *.gmo
-*.mo
-*.pot
+# *.mo
+# *.pot
 Makefile
 Makefile.in
 Makefile.in.in

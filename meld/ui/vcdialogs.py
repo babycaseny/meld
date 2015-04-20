@@ -1,49 +1,53 @@
 # Copyright (C) 2002-2006 Stephen Kennedy <stevek@gnome.org>
 # Copyright (C) 2010-2013 Kai Willadsen <kai.willadsen@gmail.com>
-
-# This program is free software; you can redistribute it and/or modify
+#
+# This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
-# the Free Software Foundation; either version 2 of the License, or
-# (at your option) any later version.
-
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-
+# the Free Software Foundation, either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
 # You should have received a copy of the GNU General Public License
-# along with this program; if not, write to the Free Software
-# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301,
-# USA.
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from __future__ import print_function
 
 import os
 import textwrap
-from gettext import gettext as _
 
-import gtk
-import pango
+from gi.repository import Gio
+from gi.repository import GObject
+from gi.repository import Gtk
+from gi.repository import Pango
 
-from meld import misc
-from meld import paths
-from . import gnomeglade
+from meld.conf import _
+from meld.misc import commonprefix
+from meld.settings import meldsettings, settings
+from meld.ui.gnomeglade import Component
 
 
 # FIXME: Duplication from vcview
 def _commonprefix(files):
     if len(files) != 1:
-        workdir = misc.commonprefix(files)
+        workdir = commonprefix(files)
     else:
         workdir = os.path.dirname(files[0]) or "."
     return workdir
 
 
-class CommitDialog(gnomeglade.Component):
+class CommitDialog(GObject.GObject, Component):
+
+    __gtype_name__ = "CommitDialog"
+
+    break_commit_message = GObject.property(type=bool, default=False)
 
     def __init__(self, parent):
-        gnomeglade.Component.__init__(self, paths.ui_dir("vcview.ui"),
-                                      "commitdialog")
+        GObject.GObject.__init__(self)
+        Component.__init__(self, "vcview.ui", "commitdialog")
         self.parent = parent
         self.widget.set_transient_for(parent.widget.get_toplevel())
         selected = parent._get_selected_files()
@@ -61,8 +65,7 @@ class CommitDialog(gnomeglade.Component):
         self.changedfiles.set_text("(in %s)\n%s" %
                                    (topdir, "\n".join(to_commit)))
 
-        fontdesc = pango.FontDescription(self.parent.prefs.get_current_font())
-        self.textview.modify_font(fontdesc)
+        self.textview.modify_font(meldsettings.font)
         commit_prefill = self.parent.vc.get_commit_message_prefill()
         if commit_prefill:
             buf = self.textview.get_buffer()
@@ -72,26 +75,30 @@ class CommitDialog(gnomeglade.Component):
         # Try and make the textview wide enough for a standard 80-character
         # commit message.
         context = self.textview.get_pango_context()
-        metrics = context.get_metrics(fontdesc, context.get_language())
-        char_width = metrics.get_approximate_char_width()
-        self.textview.set_size_request(80 * pango.PIXELS(char_width), -1)
+        metrics = context.get_metrics(meldsettings.font,
+                                      context.get_language())
+        char_width = metrics.get_approximate_char_width() / Pango.SCALE
+        self.scrolledwindow1.set_size_request(80 * char_width, -1)
 
+        settings.bind('vc-show-commit-margin', self.textview,
+                      'show-right-margin', Gio.SettingsBindFlags.DEFAULT)
+        settings.bind('vc-commit-margin', self.textview,
+                      'right-margin-position', Gio.SettingsBindFlags.DEFAULT)
+        settings.bind('vc-break-commit-message', self,
+                      'break-commit-message', Gio.SettingsBindFlags.DEFAULT)
         self.widget.show_all()
 
     def run(self):
-        prefs = self.parent.prefs
-        margin = prefs.vc_commit_margin
-        self.textview.set_right_margin_position(margin)
-        self.textview.set_show_right_margin(prefs.vc_show_commit_margin)
-
         self.previousentry.set_active(-1)
         self.textview.grab_focus()
         response = self.widget.run()
-        if response == gtk.RESPONSE_OK:
+        if response == Gtk.ResponseType.OK:
+            show_margin = self.textview.get_show_right_margin()
+            margin = self.textview.get_right_margin_position()
             buf = self.textview.get_buffer()
             msg = buf.get_text(*buf.get_bounds(), include_hidden_chars=False)
             # This is a dependent option because of the margin column
-            if prefs.vc_show_commit_margin and prefs.vc_break_commit_message:
+            if show_margin and self.props.break_commit_message:
                 paragraphs = msg.split("\n\n")
                 msg = "\n\n".join(textwrap.fill(p, margin) for p in paragraphs)
             self.parent._command_on_selected(
@@ -108,11 +115,10 @@ class CommitDialog(gnomeglade.Component):
             buf.set_text(model[idx][1])
 
 
-class PushDialog(gnomeglade.Component):
+class PushDialog(Component):
 
     def __init__(self, parent):
-        gnomeglade.Component.__init__(self, paths.ui_dir("vcview.ui"),
-                                      "pushdialog")
+        Component.__init__(self, "vcview.ui", "pushdialog")
         self.parent = parent
         self.widget.set_transient_for(parent.widget.get_toplevel())
         self.widget.show_all()
@@ -122,6 +128,6 @@ class PushDialog(gnomeglade.Component):
         # In git, this is probably the parsed output of push --dry-run.
 
         response = self.widget.run()
-        if response == gtk.RESPONSE_OK:
+        if response == Gtk.ResponseType.OK:
             self.parent.vc.push(self.parent._command)
         self.widget.destroy()

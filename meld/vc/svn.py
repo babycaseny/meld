@@ -57,8 +57,7 @@ class Vc(_vc.CachedVc):
 
     def update_command(self):
         return [self.CMD,"update"]
-    def add_command(self):
-        return [self.CMD,"add"]
+
     def remove_command(self, force=0):
         return [self.CMD,"rm","--force"]
     def revert_command(self):
@@ -142,17 +141,32 @@ class Vc(_vc.CachedVc):
 
         raise KeyError("Conflict file does not exist")
 
-    def _repo_version_support(self, version):
+    def add(self, runner, files):
+        # SVN < 1.7 needs to add folders from their immediate parent
+        dirs = [s for s in files if os.path.isdir(s)]
+        files = [s for s in files if os.path.isfile(s)]
+        command = [self.CMD, 'add']
+        for path in dirs:
+            runner(command, [path], refresh=True,
+                   working_dir=os.path.dirname(path))
+        if files:
+            runner(command, files, refresh=True)
+
+    @classmethod
+    def _repo_version_support(cls, version):
         return version < 12
 
-    def valid_repo(self):
-        if _vc.call([self.CMD, "info"], cwd=self.root):
+    @classmethod
+    def valid_repo(cls, path):
+        if _vc.call([cls.CMD, "info"], cwd=path):
             return False
 
+        root, location = cls.is_in_repo(path)
+
         # Check for repository version, trusting format file then entries file
-        format_path = os.path.join(self.root, self.VC_DIR, "format")
-        entries_path = os.path.join(self.root, self.VC_DIR, "entries")
-        wcdb_path = os.path.join(self.root, self.VC_DIR, "wc.db")
+        format_path = os.path.join(root, cls.VC_DIR, "format")
+        entries_path = os.path.join(root, cls.VC_DIR, "entries")
+        wcdb_path = os.path.join(root, cls.VC_DIR, "wc.db")
         format_exists = os.path.exists(format_path)
         entries_exists = os.path.exists(entries_path)
         wcdb_exists = os.path.exists(wcdb_path)
@@ -167,7 +181,7 @@ class Vc(_vc.CachedVc):
         else:
             return False
 
-        return self._repo_version_support(repo_version)
+        return cls._repo_version_support(repo_version)
 
     def _update_tree_state_cache(self, path, tree_state):
         while 1:

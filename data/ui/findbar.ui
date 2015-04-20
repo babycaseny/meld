@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <requires lib="gtk+" version="2.16"/>
-  <!-- interface-naming-policy toplevel-contextual -->
+  <!-- interface-requires gtk+ 3.6 -->
   <object class="GtkArrow" id="arrow_left">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
@@ -14,10 +13,8 @@
   <object class="GtkWindow" id="window1">
     <property name="can_focus">False</property>
     <child>
-      <object class="GtkTable" id="findbar">
+      <object class="GtkGrid" id="findbar">
         <property name="can_focus">False</property>
-        <property name="n_rows">2</property>
-        <property name="n_columns">6</property>
         <property name="column_spacing">6</property>
         <child>
           <object class="GtkHButtonBox" id="hbuttonbox2">
@@ -30,10 +27,10 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
                 <property name="relief">none</property>
                 <property name="use_underline">True</property>
                 <property name="focus_on_click">False</property>
+                <signal name="clicked" handler="on_replace_button_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -47,10 +44,10 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
                 <property name="relief">none</property>
                 <property name="use_underline">True</property>
                 <property name="focus_on_click">False</property>
+                <signal name="clicked" handler="on_replace_all_button_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -61,11 +58,9 @@
           </object>
           <packing>
             <property name="left_attach">2</property>
-            <property name="right_attach">4</property>
             <property name="top_attach">1</property>
-            <property name="bottom_attach">2</property>
-            <property name="x_options">GTK_FILL</property>
-            <property name="y_options">GTK_FILL</property>
+            <property name="width">1</property>
+            <property name="height">1</property>
           </packing>
         </child>
         <child>
@@ -79,11 +74,11 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
                 <property name="image">arrow_left</property>
                 <property name="relief">none</property>
                 <property name="use_underline">True</property>
                 <property name="focus_on_click">False</property>
+                <signal name="clicked" handler="on_find_previous_button_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -97,11 +92,11 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
                 <property name="image">arrow_right</property>
                 <property name="relief">none</property>
                 <property name="use_underline">True</property>
                 <property name="focus_on_click">False</property>
+                <signal name="clicked" handler="on_find_next_button_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -112,9 +107,9 @@
           </object>
           <packing>
             <property name="left_attach">2</property>
-            <property name="right_attach">4</property>
-            <property name="x_options">GTK_FILL</property>
-            <property name="y_options">GTK_FILL</property>
+            <property name="top_attach">0</property>
+            <property name="width">1</property>
+            <property name="height">1</property>
           </packing>
         </child>
         <child>
@@ -127,21 +122,27 @@
             <property name="mnemonic_widget">find_entry</property>
           </object>
           <packing>
-            <property name="x_options">GTK_FILL</property>
-            <property name="y_options">GTK_FILL</property>
+            <property name="left_attach">0</property>
+            <property name="top_attach">0</property>
+            <property name="width">1</property>
+            <property name="height">1</property>
           </packing>
         </child>
         <child>
-          <object class="GtkEntry" id="find_entry">
+          <object class="GtkSearchEntry" id="find_entry">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="width_chars">32</property>
+            <property name="primary_icon_activatable">False</property>
+            <property name="secondary_icon_activatable">False</property>
+            <signal name="changed" handler="on_find_entry_changed" swapped="no"/>
+            <signal name="activate" handler="on_find_next_button_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">1</property>
-            <property name="right_attach">2</property>
-            <property name="x_options">GTK_FILL</property>
-            <property name="y_options">GTK_FILL</property>
+            <property name="top_attach">0</property>
+            <property name="width">1</property>
+            <property name="height">1</property>
           </packing>
         </child>
         <child>
@@ -154,10 +155,10 @@
             <property name="mnemonic_widget">replace_entry</property>
           </object>
           <packing>
+            <property name="left_attach">0</property>
             <property name="top_attach">1</property>
-            <property name="bottom_attach">2</property>
-            <property name="x_options">GTK_FILL</property>
-            <property name="y_options">GTK_FILL</property>
+            <property name="width">1</property>
+            <property name="height">1</property>
           </packing>
         </child>
         <child>
@@ -165,14 +166,15 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="width_chars">32</property>
+            <property name="primary_icon_activatable">False</property>
+            <property name="secondary_icon_activatable">False</property>
+            <signal name="activate" handler="on_replace_button_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">1</property>
-            <property name="right_attach">2</property>
             <property name="top_attach">1</property>
-            <property name="bottom_attach">2</property>
-            <property name="x_options">GTK_FILL</property>
-            <property name="y_options">GTK_FILL</property>
+            <property name="width">1</property>
+            <property name="height">1</property>
           </packing>
         </child>
         <child>
@@ -186,9 +188,9 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">False</property>
-                <property name="use_action_appearance">False</property>
                 <property name="use_underline">True</property>
                 <property name="focus_on_click">False</property>
+                <property name="xalign">0.5</property>
                 <property name="draw_indicator">True</property>
               </object>
               <packing>
@@ -203,9 +205,9 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
-                <property name="use_action_appearance">False</property>
                 <property name="use_underline">True</property>
                 <property name="focus_on_click">False</property>
+                <property name="xalign">0.5</property>
                 <property name="draw_indicator">True</property>
               </object>
               <packing>
@@ -220,9 +222,9 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
-                <property name="use_action_appearance">False</property>
                 <property name="use_underline">True</property>
                 <property name="focus_on_click">False</property>
+                <property name="xalign">0.5</property>
                 <property name="draw_indicator">True</property>
               </object>
               <packing>
@@ -233,11 +235,10 @@
             </child>
           </object>
           <packing>
-            <property name="left_attach">4</property>
-            <property name="right_attach">5</property>
-            <property name="x_options">GTK_FILL</property>
-            <property name="y_options">GTK_FILL</property>
-            <property name="x_padding">7</property>
+            <property name="left_attach">3</property>
+            <property name="top_attach">0</property>
+            <property name="width">1</property>
+            <property name="height">1</property>
           </packing>
         </child>
         <child>
@@ -272,10 +273,10 @@
             </child>
           </object>
           <packing>
-            <property name="left_attach">5</property>
-            <property name="right_attach">6</property>
-            <property name="x_options"/>
-            <property name="x_padding">6</property>
+            <property name="left_attach">4</property>
+            <property name="top_attach">0</property>
+            <property name="width">1</property>
+            <property name="height">1</property>
           </packing>
         </child>
         <child>

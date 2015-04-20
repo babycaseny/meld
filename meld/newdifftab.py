@@ -1,43 +1,40 @@
-# Copyright (C) 2011-2012 Kai Willadsen <kai.willadsen@gmail.com>
-
-# This program is free software; you can redistribute it and/or modify
+# Copyright (C) 2011-2013 Kai Willadsen <kai.willadsen@gmail.com>
+#
+# This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
-# the Free Software Foundation; either version 2 of the License, or
-# (at your option) any later version.
-
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-
+# the Free Software Foundation, either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
 # You should have received a copy of the GNU General Public License
-# along with this program; if not, write to the Free Software
-# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
-# 02110-1301, USA.
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import os
 
-import gobject
-import gtk
+from gi.repository import GObject
+from gi.repository import Gtk
 
-from . import paths
 from .ui import gnomeglade
 
-from .meldapp import app
+from meld.recent import recent_comparisons
 
 
-class NewDiffTab(gobject.GObject, gnomeglade.Component):
+class NewDiffTab(GObject.GObject, gnomeglade.Component):
 
     __gtype_name__ = "NewDiffTab"
 
     __gsignals__ = {
-        'diff-created': (gobject.SIGNAL_RUN_FIRST, gobject.TYPE_NONE,
+        'diff-created': (GObject.SignalFlags.RUN_FIRST, None,
                          (object,)),
     }
 
     def __init__(self, parentapp):
-        gobject.GObject.__init__(self)
-        gnomeglade.Component.__init__(self, paths.ui_dir("tab-placeholder.ui"),
+        GObject.GObject.__init__(self)
+        gnomeglade.Component.__init__(self, "tab-placeholder.ui",
                                       "new_comparison_tab")
         self.map_widgets_into_lists(["file_chooser", "dir_chooser",
                                      "vc_chooser"])
@@ -66,8 +63,8 @@ class NewDiffTab(gobject.GObject, gnomeglade.Component):
 
         self.diff_type = self.button_types.index(button)
         self.choosers_notebook.set_current_page(self.diff_type + 1)
-        # FIXME: Add support for new blank for DirDiff and VcView
-        self.button_new_blank.set_sensitive(self.diff_type == 0)
+        # FIXME: Add support for new blank for VcView
+        self.button_new_blank.set_sensitive(self.diff_type in (0, 1))
         self.button_compare.set_sensitive(True)
 
     def on_three_way_checkbutton_toggled(self, button, *args):
@@ -113,7 +110,7 @@ class NewDiffTab(gobject.GObject, gnomeglade.Component):
             compare_paths.append(path)
 
         tab = self.diff_methods[self.diff_type](compare_paths)
-        app.recent_comparisons.add(tab)
+        recent_comparisons.add(tab)
         self.emit('diff-created', tab)
 
     def on_button_new_blank_clicked(self, *args):
@@ -131,4 +128,4 @@ class NewDiffTab(gobject.GObject, gnomeglade.Component):
         pass
 
     def on_delete_event(self, *args):
-        return gtk.RESPONSE_OK
+        return Gtk.ResponseType.OK

@@ -7,7 +7,11 @@
 #pip install pygtksourceview
 
 
+<<<<<<< HEAD
 python setup_py2app.py build
+=======
+cat python setup_py2app.py build
+>>>>>>> 55719856aebb7ccb7a0c3dbbc2b2e092821c23f1
 python setup_py2app.py py2app
 
 APP="dist/Meld.app"

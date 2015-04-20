@@ -5,3 +5,8 @@
 *.install
 data/appdata.xml
 data/mime/meld.xml
+build
+dist
+MANIFEST
+data/gschemas.compiled
+build/
