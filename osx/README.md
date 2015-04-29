@@ -49,12 +49,15 @@ jhbuild
 ```
 
 ######6. Fix the gtksourceview issues
+gtksourceview can't find gtk-mac-integration in configure phase
 ```bash
 ln -sf ~/gtk/inst/lib/pkgconfig/gtk-mac-integration-gtk2.pc ~/gtk/inst/lib/pkgconfig/gtk-mac-integration.pc
 ```
+gtksourceview test-widget.c failing - ugly workaround; but who cares...
 ```bash
 cp ~/Source/gtk/gtksourceview-2.10.5/tests/test-completion.c  ~/Source/gtk/gtksourceview-2.10.5/tests/test-widget.c
 ```
+gtksourceview i18n looking for function not in gtk-mac-integration for some reason. We don't have i18n in the Mac version of meld for now, so skip it...
 Edit: `~/Source/gtk/gtksourceview-2.10.5/gtksourceview/gtksourceview-i18n.c` and comment out: 
 ```
 //if (quartz_application_get_bundle_id () != NULL)
