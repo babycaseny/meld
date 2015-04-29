@@ -1,14 +1,15 @@
-# Meld for OS X #
+# Meld for OS X
 
 This README should help you build Meld for OS X. 
 
-### Preparing JHBuild Environment ###
+### Preparing JHBuild Environment
 
 JHBuild is the build system that we will be using to build Meld. This step should really be done once and further builds should not require updating the build environment unless there has been some updates to the libraries that you'd like to do.
 
-### Never Root ###
+### Never Root
 
 Through this tutorial, you should *never* be root. If at any point in time a script or command required access to your system - or to python site-packages on your system, then something is wrong. In which case, you should ensure that whatever command are running are under jhbuild shell or are running from the ~/gtk/inst path. 
+
 ---
 
 #### Initial Phase ####
