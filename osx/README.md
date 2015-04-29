@@ -10,31 +10,31 @@ JHBuild is the build system that we will be using to build Meld. This step shoul
 
 #### Initial Phase ####
 
-1. Download the setup script
-```
+######1. Download the setup script
+```bash
 cd ~
 curl -O https://git.gnome.org/browse/gtk-osx/plain/gtk-osx-build-setup.sh
 ```
 
-2. Run the setup script
-```
+######2. Run the setup script
+```bash
 sh gtk-osx-build-setup.sh
 ~/.local/bin/jhbuild shell
 ```
 
-3. Build python
-```
+######3. Build python
+```bash
 jhbuild build python
 ```
 
-4. Prepare paths and build the bootstrap
-```
+######4. Prepare paths and build the bootstrap
+```bash
 alias jhbuild="PATH=gtk-prefix/bin:$PATH jhbuild"
 jhbuild bootstrap
 ```
 
-5. Checkout meld and start the initial phase
-```
+######5. Checkout meld and start the initial phase
+```bash
 git clone https://github.com/yousseb/meld.git
 cd meld
 git checkout meld-1-8
@@ -44,11 +44,11 @@ cd ..
 jhbuild
 ```
 
-6- Fix the gtksourceview issues
-```
+######6. Fix the gtksourceview issues
+```bash
 ln -sf ~/gtk/inst/lib/pkgconfig/gtk-mac-integration-gtk2.pc ~/gtk/inst/lib/pkgconfig/gtk-mac-integration.pc
 ```
-```
+```bash
 cp ~/Source/gtk/gtksourceview-2.10.5/tests/test-completion.c  ~/Source/gtk/gtksourceview-2.10.5/tests/test-widget.c
 ```
 Edit: ~/Source/gtk/gtksourceview-2.10.5/gtksourceview/gtksourceview-i18n.c
@@ -61,18 +61,18 @@ Comment out:
 //else
 ```
 
-7. Continue the build
+######7. Resume the build
 ```
 jhbuild
 ```
 
-8. Build extra dependencies
-```
+######8. Build extra dependencies
+```bash
 jhbuild -m osx/meld.modules build meld-python-deps
 easy_install py2app
 ```
 
-9. You're now ready to build Meld. 
-```
+######9. You're now ready to build Meld. 
+```bash
 bash osx/build_app.sh
 ```
