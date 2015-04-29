@@ -10,6 +10,7 @@ _gtk_osx_use_jhbuild_python = True
 
 skip.append("libiconv") # Lion issues
 skip.append("cups")
+skip.append("adwaita-icon-theme")
 
 modules = [
   "python",
@@ -35,7 +36,7 @@ module_autogenargs['pango'] = "--with-included-modules " + autogenargs
 #module_autogenargs['gtk+'] = '--with-included-immodules ' + autogenargs
 module_autogenargs['gtk+'] = ' --disable-papi --disable-cups ' + autogenargs
 module_autogenargs['gtk-engines'] = "--disable-all --enable-clearlooks --enable-animation " + autogenargs
-module_autogenargs['gtksourceview'] = '' #--disable-nls ' + autogenargs
+module_autogenargs['gtksourceview'] = '--disable-gtk-doc-html' #--disable-nls ' + autogenargs
 module_autogenargs['gtk-mac-integration'] = '' #'CFLAGS="$CFLAGS -mmacosx-version-min=10.7" '  + autogenargs
 
 
