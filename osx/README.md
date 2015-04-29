@@ -55,8 +55,7 @@ ln -sf ~/gtk/inst/lib/pkgconfig/gtk-mac-integration-gtk2.pc ~/gtk/inst/lib/pkgco
 ```bash
 cp ~/Source/gtk/gtksourceview-2.10.5/tests/test-completion.c  ~/Source/gtk/gtksourceview-2.10.5/tests/test-widget.c
 ```
-Edit: ~/Source/gtk/gtksourceview-2.10.5/gtksourceview/gtksourceview-i18n.c
-Comment out: 
+Edit: `~/Source/gtk/gtksourceview-2.10.5/gtksourceview/gtksourceview-i18n.c` and comment out: 
 ```
 //if (quartz_application_get_bundle_id () != NULL)
 //{
