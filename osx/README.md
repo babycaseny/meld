@@ -8,7 +8,7 @@ JHBuild is the build system that we will be using to build Meld. This step shoul
 
 ### Never Root
 
-Through this tutorial, you should *never* be root. If at any point in time a script or command required access to your system - or to python site-packages on your system, then something is wrong. In which case, you should ensure that whatever command are running are under jhbuild shell or are running from the ~/gtk/inst path. 
+Through this tutorial, you should *never* be root. If at any point in time a script or command required access to your system - or to python site-packages on your system, then something is wrong. In which case, you should ensure that this command is running under jhbuild shell or from the ~/gtk/inst path. 
 
 ---
 
@@ -77,6 +77,7 @@ easy_install py2app
 ```
 
 ######9. You're now ready to build Meld. 
+This is the command that you will be running over an over if you plan to customize the build. Most of the customization would actually be in thie build_app.sh file itself.
 ```bash
 bash osx/build_app.sh
 ```
