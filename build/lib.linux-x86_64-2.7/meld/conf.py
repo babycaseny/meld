@@ -3,7 +3,7 @@ import os
 import sys
 
 __package__ = "meld"
-__version__ = "3.13.1"
+__version__ = "3.13.2"
 
 DATADIR = "/usr/share/meld"
 LOCALEDIR = "/usr/share/locale"
