@@ -294,6 +294,12 @@ def cli():
 
 
 @cli.command()
+def test():
+    cmd = ['python', '-m', 'unittest', 'discover']
+    call_with_output(cmd, echo_stdout=True)
+
+
+@cli.command()
 def news():
     rendered = render_template(NEWS_TEMPLATE)
     with open('NEWS', 'r') as f:

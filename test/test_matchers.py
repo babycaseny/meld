@@ -1,6 +1,6 @@
 
 import unittest
-import matchers
+from meld import matchers
 
 class MatchersTests(unittest.TestCase):
 
