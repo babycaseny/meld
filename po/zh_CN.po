@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: meld master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=meld&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-10 23:05+0000\n"
+"POT-Creation-Date: 2015-04-11 22:29+0000\n"
 "PO-Revision-Date: 2015-03-20 11:00+0800\n"
 "Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
@@ -154,8 +154,7 @@ msgstr "高亮显示语法"
 msgid ""
 "Whether to highlight syntax in comparisons. Because of Meld's own color "
 "highlighting, this is off by default."
-msgstr ""
-"比较要不要高亮显示语法。由於 Meld 用本身的高亮显示色，本项目默认关闭。"
+msgstr "比较要不要高亮显示语法。由於 Meld 用本身的高亮显示色，本项目默认关闭。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:17
 msgid "Color scheme to use for syntax highlighting"
@@ -196,8 +195,7 @@ msgstr "高亮当前行"
 msgid ""
 "If true, the line containing the cursor will be highlighted in file "
 "comparisons."
-msgstr ""
-"如果为true，包含光标的行会在文件中高亮。"
+msgstr "如果为true，包含光标的行会在文件中高亮。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:25
 msgid "Use the system default monospace font"
@@ -258,8 +256,7 @@ msgstr "要显示的列"
 msgid ""
 "List of column names in folder comparison and whether they should be "
 "displayed."
-msgstr ""
-"在文件夹比较时会用的栏，以及这些栏是否要显示。"
+msgstr "在文件夹比较时会用的栏，以及这些栏是否要显示。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:37 ../data/ui/preferences.ui.h:32
 msgid "Ignore symbolic links"
@@ -322,8 +319,8 @@ msgid ""
 "If true, a console output section will be shown in version control views, "
 "showing the commands run for version control operations."
 msgstr ""
-"如果为true，控制台终端输出部分将显示在版本控制视图中，"
-"显示版本控制操作运行中的命令。"
+"如果为true，控制台终端输出部分将显示在版本控制视图中，显示版本控制操作运行中"
+"的命令。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:49
 msgid "Version control pane position"
@@ -356,8 +353,8 @@ msgid ""
 "preference only affects three-way comparisons launched from the version "
 "control view, so is used solely for merges/conflict resolution within Meld."
 msgstr ""
-"文件比较顺序可选择“远程/合并/本地”或“本地/合并/远程”。这种偏好只影响"
-"从版本控制视图的三方比较，所以在 Meld 仅用于合并/解决冲突。"
+"文件比较顺序可选择“远程/合并/本地”或“本地/合并/远程”。这种偏好只影响从版本控"
+"制视图的三方比较，所以在 Meld 仅用于合并/解决冲突。"
 
 #: ../data/org.gnome.meld.gschema.xml.h:55
 msgid "Show margin in commit message editor"
@@ -558,7 +555,7 @@ msgid "_Add"
 msgstr "添加(_A)"
 
 #: ../data/ui/EditableList.ui.h:5 ../data/ui/vcview.ui.h:11
-#: ../meld/vcview.py:747
+#: ../meld/vcview.py:753
 msgid "_Remove"
 msgstr "删除(_R)"
 
@@ -894,12 +891,10 @@ msgid "Left is local, right is remote"
 msgstr "左侧为本地，右侧为远端"
 
 #: ../data/ui/preferences.ui.h:3
-#| msgid "Left is remote, right is local"
 msgid "Remote, merge, local"
 msgstr "远端,合并,本地"
 
 #: ../data/ui/preferences.ui.h:4
-#| msgid "Left is local, right is remote"
 msgid "Local, merge, remote"
 msgstr "本地,合并,远端"
 
@@ -973,7 +968,6 @@ msgstr "使用语法高亮(_Y)"
 
 #: ../data/ui/preferences.ui.h:22
 #, fuzzy
-#| msgid "Change highlighting incomplete"
 msgid "Syntax highlighting color scheme:"
 msgstr "更改高亮不完整"
 
@@ -1022,7 +1016,6 @@ msgid "Version Comparisons"
 msgstr "版本比较"
 
 #: ../data/ui/preferences.ui.h:36
-#| msgid "_When comparing file revisions:"
 msgid "_Order when comparing file revisions:"
 msgstr "在比较文件版本时的次序(_O)："
 
@@ -1048,7 +1041,6 @@ msgstr "版本控制"
 
 #: ../data/ui/preferences.ui.h:42
 #, fuzzy
-#| msgid "Filename-based filters"
 msgid "Filename filters"
 msgstr "基于文件名的过滤器"
 
@@ -1074,7 +1066,6 @@ msgid "Trim blank line differences from the start and end of changes"
 msgstr ""
 
 #: ../data/ui/preferences.ui.h:47
-#| msgid "Text Filters"
 msgid "Text filters"
 msgstr "文字过滤器"
 
@@ -1207,7 +1198,6 @@ msgid "Console"
 msgstr "终端"
 
 #: ../data/ui/vcview.ui.h:19
-#| msgid "Show the version control console output"
 msgid "Show or hide the version control console output pane"
 msgstr "显示或隐藏版本控制终端输出面板"
 
@@ -1349,9 +1339,6 @@ msgstr ""
 
 #: ../meld/dirdiff.py:860
 #, fuzzy
-#| msgid ""
-#| "Text filters are being used, and may be masking differences between "
-#| "files. Would you like to compare the unfiltered files?"
 msgid "Text filters are in use and may be masking content differences."
 msgstr "正在使用文本过滤器，可能会屏蔽文件之间的不同。您想比较未过滤的文件吗？"
 
@@ -1451,9 +1438,6 @@ msgstr ""
 
 #: ../meld/filediff.py:823
 #, fuzzy, python-format
-#| msgid ""
-#| "Filter '%s' changed the number of lines in the file. Comparison will be "
-#| "incorrect. See the user manual for more details."
 msgid ""
 "Filter “%s” changed the number of lines in the file, which is unsupported. "
 "The comparison will not be accurate."
@@ -1462,7 +1446,6 @@ msgstr ""
 
 #: ../meld/filediff.py:894
 #, fuzzy
-#| msgid "Mar_k as Resolved"
 msgid "Mark conflict as resolved?"
 msgstr "标记为“已解决”(_K)"
 
@@ -1473,13 +1456,11 @@ msgstr ""
 
 #: ../meld/filediff.py:898
 #, fuzzy
-#| msgid "_Cancel"
 msgid "Cancel"
 msgstr "取消(_C)"
 
 #: ../meld/filediff.py:899
 #, fuzzy
-#| msgid "Mar_k as Resolved"
 msgid "Mark _Resolved"
 msgstr "标记为“已解决”(_K)"
 
@@ -1589,7 +1570,6 @@ msgstr ""
 
 #: ../meld/filediff.py:1653
 #, fuzzy, python-format
-#| msgid "Could not read file"
 msgid "Could not save file %s."
 msgstr "无法读取文件"
 
@@ -1631,16 +1611,11 @@ msgstr "不保存"
 
 #: ../meld/filediff.py:1716
 #, fuzzy
-#| msgid "Files with invalid encodings found"
 msgid "Inconsistent line endings found"
 msgstr "发现文件使用的编码不正确"
 
 #: ../meld/filediff.py:1718
 #, fuzzy, python-format
-#| msgid ""
-#| "This file '%s' contains a mixture of line endings.\n"
-#| "\n"
-#| "Which format would you like to use?"
 msgid ""
 "'%s' contains a mixture of line endings. Select the line ending format to "
 "use."
@@ -1660,9 +1635,6 @@ msgstr ""
 
 #: ../meld/filediff.py:1744
 #, fuzzy, python-format
-#| msgid ""
-#| "'%s' contains characters not encodable with '%s'\n"
-#| "Would you like to save as UTF-8?"
 msgid ""
 "File “%s” contains characters that can't be encoded using encoding “%s”.\n"
 "Would you like to save as UTF-8?"
@@ -1722,7 +1694,6 @@ msgstr "开始两向或三向文件比较"
 
 #: ../meld/meldapp.py:181
 #, fuzzy
-#| msgid "Start a 2- or 3-way file comparison"
 msgid "Start a 2- or 3-way folder comparison"
 msgstr "开始两向或三向文件比较"
 
@@ -1991,7 +1962,6 @@ msgid "Open recent files"
 msgstr "选择文件"
 
 #: ../meld/meldwindow.py:164
-#| msgid "Meld"
 msgid "_Meld"
 msgstr "_Meld"
 
@@ -2000,7 +1970,6 @@ msgid "Quit the program"
 msgstr "退出程序"
 
 #: ../meld/meldwindow.py:167
-#| msgid "_Preferences"
 msgid "Prefere_nces"
 msgstr "首选项(_N)"
 
@@ -2017,7 +1986,6 @@ msgid "Open the Meld manual"
 msgstr "打开 Meld 帮助手册"
 
 #: ../meld/meldwindow.py:173
-#| msgid "Configure the application"
 msgid "About this application"
 msgstr "关于本应用程序"
 
@@ -2102,7 +2070,6 @@ msgid "Remote"
 msgstr "远端"
 
 #: ../meld/vc/_vc.py:65
-#| msgid "Un_versioned"
 msgid "Unversioned"
 msgstr "不在版本控制"
 
@@ -2115,17 +2082,14 @@ msgid "Newly added"
 msgstr ""
 
 #: ../meld/vc/_vc.py:72
-#| msgid "<unnamed>"
 msgid "Renamed"
 msgstr "改名"
 
 #: ../meld/vc/_vc.py:73
-#| msgid "Next Conflict"
 msgid "Conflict"
 msgstr "冲突"
 
 #: ../meld/vc/_vc.py:74
-#| msgid "_Remove"
 msgid "Removed"
 msgstr "已删除"
 
@@ -2214,19 +2178,16 @@ msgstr "%s — 远端"
 
 #: ../meld/vcview.py:531
 #, python-format
-#| msgid "Left is local, right is remote"
 msgid "%s (local, merge, remote)"
 msgstr "%s (本地,合并,远端)"
 
 #: ../meld/vcview.py:536
 #, python-format
-#| msgid "Left is remote, right is local"
 msgid "%s (remote, merge, local)"
 msgstr "%s (远端,合并,本地)"
 
 #: ../meld/vcview.py:547
 #, python-format
-#| msgid "Invalid repository"
 msgid "%s — repository"
 msgstr "%s — 仓库"
 
@@ -2240,20 +2201,49 @@ msgstr ""
 msgid "%s (repository, working)"
 msgstr ""
 
-#: ../meld/vcview.py:741
+#: ../meld/vcview.py:747
 msgid "Remove folder and all its files?"
 msgstr "移除文件夹及所有包含的文件？"
 
-#: ../meld/vcview.py:743
+#: ../meld/vcview.py:749
 msgid ""
 "This will remove all selected files and folders, and all files within any "
 "selected folders, from version control."
 msgstr "这将从版本控制中移除所有选中的文件及文件夹，及选中文件夹中的所有文件。"
 
-#: ../meld/vcview.py:777
+#: ../meld/vcview.py:783
 #, python-format
 msgid "Error removing %s"
 msgstr "删除 %s 出错"
+
+#~ msgid ""
+#~ "'%s' exists.\n"
+#~ "Overwrite?"
+#~ msgstr ""
+#~ "“%s”已存在。\n"
+#~ "覆盖文件?"
+
+#~ msgid "Clear manual change sychronization points"
+#~ msgstr "清除手动更改同步点"
+
+#~ msgid "Cycle Through Documents"
+#~ msgstr "在文档间循环"
+
+#~ msgid ""
+#~ "\"%s\" exists!\n"
+#~ "Overwrite?"
+#~ msgstr ""
+#~ "“%s”已存在！\n"
+#~ "覆盖文件？"
+
+#~ msgid ""
+#~ "Error writing to %s\n"
+#~ "\n"
+#~ "%s."
+#~ msgstr ""
+#~ "写入到“%s”时出错\n"
+#~ "\n"
+#~ "%s。"
 
 #~ msgid "Copy _Left"
 #~ msgstr "复制左侧(_L)"
@@ -2263,13 +2253,6 @@ msgstr "删除 %s 出错"
 
 #~ msgid "Ignore changes which insert or delete blank lines"
 #~ msgstr "忽略多空行或少空行的差异"
-
-#~ msgid ""
-#~ "'%s' exists.\n"
-#~ "Overwrite?"
-#~ msgstr ""
-#~ "“%s”已存在。\n"
-#~ "覆盖文件?"
 
 #~ msgid "%i second"
 #~ msgid_plural "%i seconds"
@@ -2298,28 +2281,6 @@ msgstr "删除 %s 出错"
 #~ msgid "%i year"
 #~ msgid_plural "%i years"
 #~ msgstr[0] "%i 年"
-
-#~ msgid "Clear manual change sychronization points"
-#~ msgstr "清除手动更改同步点"
-
-#~ msgid "Cycle Through Documents"
-#~ msgstr "在文档间循环"
-
-#~ msgid ""
-#~ "\"%s\" exists!\n"
-#~ "Overwrite?"
-#~ msgstr ""
-#~ "“%s”已存在！\n"
-#~ "覆盖文件？"
-
-#~ msgid ""
-#~ "Error writing to %s\n"
-#~ "\n"
-#~ "%s."
-#~ msgstr ""
-#~ "写入到“%s”时出错\n"
-#~ "\n"
-#~ "%s。"
 
 #~ msgid "dir"
 #~ msgstr "目录"
