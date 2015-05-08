@@ -774,6 +774,14 @@ class FileDiff(melddoc.MeldDoc, gnomeglade.Component):
         except AttributeError:
             pass
 
+    def _set_external_action_sensitivity(self):
+        have_file = self.focus_pane is not None
+        try:
+            self.main_actiongroup.get_action("OpenExternal").set_sensitive(
+                have_file)
+        except AttributeError:
+            pass
+
     def on_textview_focus_in_event(self, view, event):
         self.focus_pane = view
         self.findbar.textview = view

@@ -1150,6 +1150,14 @@ msgid "<keyseq><key>Ctrl</key><key>Shift</key><key>Z</key></keyseq>"
 msgstr "<keyseq><key>Strg</key><key>Umschalt</key><key>Z</key></keyseq>"
 
 #. (itstool) path: td/p
+<<<<<<< HEAD
+=======
+#: C/keyboard-shortcuts.page:66
+msgid "<keyseq><key>Ctrl</key><key>Shift</key><key>Z</key></keyseq>"
+msgstr "<keyseq><key>Strg</key><key>Umschalt</key><key>Z</key></keyseq>"
+
+#. (itstool) path: td/p
+>>>>>>> f3e0dc2a756597710149a301dc2177c2ada195d3
 #: C/keyboard-shortcuts.page:67
 msgid "Redo the last undone action."
 msgstr "Die zuletzt rückgängig gemachte Aktion wiederholen."
@@ -1569,3 +1577,350 @@ msgid "Run <cmd>meld --help</cmd> for a list of all command line options."
 msgstr ""
 "Um eine vollständige Liste von Optionen zu erhalten, rufen Sie <cmd>meld --"
 "help</cmd> auf."
+
+#~ msgid "Meld Users Manual"
+#~ msgstr "Meld-Benutzerhandbuch"
+
+#~ msgid "Stephen"
+#~ msgstr "Stephen"
+
+#~ msgid "Kennedy"
+#~ msgstr "Kennedy"
+
+#~ msgid "stevek@gnome.org"
+#~ msgstr "stevek@gnome.org"
+
+#~ msgid "2004"
+#~ msgstr "2004"
+
+#~ msgid "Stephen Kennedy"
+#~ msgstr "Stephen Kennedy"
+
+#~ msgid "This is version 0.1 of the meld manual, describing meld 0.9.6"
+#~ msgstr ""
+#~ "Die vorliegende Version 0.1 des Meld-Handbuchs beschreibt die "
+#~ "Anwendungsversion 0.9.6."
+
+#~ msgid ""
+#~ "Meld views differences between files and between directories. Meld makes "
+#~ "it easy to isolate and merge these differences."
+#~ msgstr ""
+#~ "Meld zeigt Unterschiede zwischen Dateien und zwischen Ordnern an. Meld "
+#~ "erleichtert Ihnen die Herauslösung oder Zusammenführung dieser "
+#~ "Unterschiede."
+
+#~ msgid "Starting meld"
+#~ msgstr "Starten von Meld"
+
+#~ msgid "meld"
+#~ msgstr "meld"
+
+#~ msgid "File Comparison"
+#~ msgstr "Dateivergleich"
+
+#~ msgid "Starting"
+#~ msgstr "Starten"
+
+#~ msgid ""
+#~ "To compare files, choose <menuchoice><guimenu>File</"
+#~ "guimenu><guimenuitem>New</guimenuitem></menuchoice> and select the "
+#~ "<guilabel>File Comparison</guilabel> tab. You can compare two or three "
+#~ "files."
+#~ msgstr ""
+#~ "Zum Vergleichen von Dateien wählen Sie <menuchoice><guimenu>Datei</"
+#~ "guimenu><guimenuitem>Neu</guimenuitem></menuchoice> und wählen den Reiter "
+#~ "<guilabel>Dateien vergleichen</guilabel>. Sie können zwei oder drei "
+#~ "Dateien miteinander vergleichen."
+
+#~ msgid ""
+#~ "For two way comparisons the original is shown in the left pane and the "
+#~ "modified version in the right pane by convention."
+#~ msgstr ""
+#~ "Per Vorgabe wird bei Zweiwege-Vergleichen das Original in der linken "
+#~ "Ansicht und die geänderte Version in der rechten Ansicht dargestellt."
+
+#~ msgid ""
+#~ "For three way comparisons, the original is shown in the centre pane and "
+#~ "the left and right panes show the modified versions. By convention we put "
+#~ "the locally modified file in the right pane."
+#~ msgstr ""
+#~ "Bei Dreiwege-Vergleichen wird das Original in der mittleren Ansicht und "
+#~ "die geänderten Versionen in der linken und rechten Ansicht dargestellt. "
+#~ "Per Vorgabe wird die lokal geänderte Version in der linken Ansicht "
+#~ "dargestellt."
+
+#~ msgid "Change Summary"
+#~ msgstr "Änderungs-Zusammenfassung"
+
+#~ msgid ""
+#~ "The location of the changes is summarised in the window margins at the "
+#~ "far left and right. By default green marks insertions and deletions and "
+#~ "blue marks changes."
+#~ msgstr ""
+#~ "Die Orte der Änderungen werden an den linken und rechten Rändern des "
+#~ "Fensters zusammengefasst. Einfügungen werden standardmäßig grün markiert, "
+#~ "Löschungen dagegen blau."
+
+#~ msgid ""
+#~ "You can jump to an individual change by clicking in the margin or using "
+#~ "the scrollbar."
+#~ msgstr ""
+#~ "Sie können zu einer bestimmten Änderung springen, indem Sie auf diese "
+#~ "Ränder klicken oder die Bildlaufleiste bewegen."
+
+#~ msgid "Detailed View"
+#~ msgstr "Detailansicht"
+
+#~ msgid "Editing"
+#~ msgstr "Bearbeiten"
+
+#~ msgid "Regular Expressions"
+#~ msgstr "Reguläre Ausdrücke"
+
+#~ msgid ""
+#~ "Differences are computed line-by-line so multiline regulare expressions "
+#~ "will likely have unintended consequences."
+#~ msgstr ""
+#~ "Unterschiede werden zeilenweise erkannt, so dass sich über mehrere Zeilen "
+#~ "erstreckende reguläre Ausdrücke vielleicht unerwartete Konsequenzen haben "
+#~ "könnten."
+
+#~ msgid "Blank Lines"
+#~ msgstr "Leerzeilen"
+
+#~ msgid ""
+#~ "Changes which insert or remove blank lines can be ignored. This option is "
+#~ "most useful in conjunction with one or more regular expression filters."
+#~ msgstr ""
+#~ "Änderungen, die lediglich Leerzeilen einfügen oder löschen, werden "
+#~ "ignoriert. Diese Option ist am nützlichsten in Verbindung mit einem oder "
+#~ "mehreren Filtern für reguläre Ausdrücke."
+
+#~ msgid "Saving"
+#~ msgstr "speichern"
+
+#~ msgid ""
+#~ "To save a file, choose <menuchoice><guimenu>File</"
+#~ "guimenu><guimenuitem>Save</guimenuitem></menuchoice>, press "
+#~ "<keycombo><keycap>Ctrl</keycap><keycap>S</keycap></keycombo>, or press "
+#~ "the toolbar save button. All of these save the currently focussed file "
+#~ "(the file containing the edit cursor)."
+#~ msgstr ""
+#~ "Um eine Datei zu speichern, wählen Sie <menuchoice><guimenu>Datei</"
+#~ "guimenu><guimenuitem>Speichern</guimenuitem></menuchoice>, drücken "
+#~ "<keycombo><keycap>Strg</keycap><keycap>S</keycap></keycombo>, oder "
+#~ "klicken auf den Knopf <guilabel>Speichern</guilabel> in der "
+#~ "Werkzeugleiste. Auf alle diese Arten speichern Sie die aktuelle "
+#~ "ausgewählte Datei, also jene, die den Cursor enthält."
+
+#~ msgid "Status Bar"
+#~ msgstr "Statuszeile"
+
+#~ msgid ""
+#~ "The status bar shows the cursor location (line and column) and also "
+#~ "progress messages as files are initially loaded and compared."
+#~ msgstr ""
+#~ "Die Statuszeile zeigt die aktuelle Position des Cursors an (Zeile und "
+#~ "Spalte) sowie Fortschrittsmeldungen beim erstmaligen Laden von Dateien "
+#~ "und Vergleichsvorgängen."
+
+#~ msgid ""
+#~ "To compare directories, choose <menuchoice><guimenu>File</"
+#~ "guimenu><guimenuitem>New</guimenuitem></menuchoice> and select the "
+#~ "<guilabel>Directory Comparison</guilabel> tab. You can compare two or "
+#~ "three directories."
+#~ msgstr ""
+#~ "Zum Vergleichen von Ordnern wählen Sie <menuchoice><guimenu>Datei</"
+#~ "guimenu><guimenuitem>Neu</guimenuitem></menuchoice> und wählen den Reiter "
+#~ "<guilabel>Ordner vergleichen</guilabel>. Sie können zwei oder drei Ordner "
+#~ "miteinander vergleichen."
+
+#~ msgid ""
+#~ "Modified files are highlighted with red, created files with green and "
+#~ "deleted files with a strikethrough. See also <xref linkend="
+#~ "\"dir_content_filtering\"/>"
+#~ msgstr ""
+#~ "Geänderte Dateien werden rot hervorgehoben, erzeugte Dateien grün und "
+#~ "gelöschte Dateien blau. Siehe auch <xref linkend=\"dir_content_filtering"
+#~ "\"/>."
+
+#~ msgid ""
+#~ "Activate an item with double click or <keycap>Return</keycap> to start an "
+#~ "individual file comparison."
+#~ msgstr ""
+#~ "Aktivieren Sie ein Objekt mittels Doppelklick oder durch Drücken der "
+#~ "<keycap>Eingabetaste</keycap>, um einen individuellen Dateivergleich zu "
+#~ "starten."
+
+#~ msgid "Additional options are available from a right click context menu."
+#~ msgstr ""
+#~ "Zusätzliche Optionen sind über das Kontextmenü (durch Klick mit der "
+#~ "rechten Maustaste) erreichbar."
+
+#~ msgid "Use Shift+Click and Control+Click to select multiple items."
+#~ msgstr ""
+#~ "Halten Sie beim Anklicken die <keycap>Umschalttaste</keycap> oder die "
+#~ "<keycap>Strg</keycap>-Taste gedrückt, um mehrere Dateien auszuwählen."
+
+#~ msgid ""
+#~ "Often the initial comparison will contain too much spurious information. "
+#~ "You can use filters to isolate the differences which are important to you."
+#~ msgstr ""
+#~ "Oft enthält ein erstmaliger Vergleich zu viele unnötige Informationen. "
+#~ "Sie können Filter verwenden, um nur die für Sie wichtigen Informationen "
+#~ "anzeigen zu lassen."
+
+#~ msgid "Explicit Hiding"
+#~ msgstr "Ausdrückliches Verbergen"
+
+#~ msgid ""
+#~ "Use the toolbar button to hide an item (and all subitems for directories)."
+#~ msgstr ""
+#~ "Verwenden Sie den Knopf in der Werkzeugleiste, um ein Objekt (und alle in "
+#~ "einem Ordner enthaltenen Objekte) zu verbergen."
+
+#~ msgid ""
+#~ "By default filename comparisons are case sensitive. Use the toolbar "
+#~ "button to toggle case sensitivty of filenames."
+#~ msgstr ""
+#~ "Per Vorgabe wird bei Vergleichen auf die Groß- und Kleinschreibung von "
+#~ "Dateinamen geachtet. Verwenden Sie den Knopf in der Werkzeugleiste, um "
+#~ "dieses Verhalten an- oder abzuschalten."
+
+#~ msgid "State Filtering"
+#~ msgstr "Filterung nach Status"
+
+#~ msgid ""
+#~ "Modified (there is some content difference between files which are "
+#~ "present)"
+#~ msgstr ""
+#~ "Geändert (Es gibt inhaltliche Unterschiede zwischen den vorhandenen "
+#~ "Dateien)"
+
+#~ msgid ""
+#~ "New (there is no content difference between present files, but the file "
+#~ "is missing from at least one directory)"
+#~ msgstr ""
+#~ "Neu (Es gibt keine inhaltlichen Unterschiede zwischen den vorhandenen "
+#~ "Dateien, die Datei fehlt aber in mindestens einem Ordner)"
+
+#~ msgid "Identical (all files have equal content and are all present)"
+#~ msgstr ""
+#~ "Identisch (Alle Dateien sind inhaltlich gleich und sind alle vorhanden)"
+
+#~ msgid "All items have a state which is one of: <placeholder-1/>"
+#~ msgstr "Der Status aller Objekte ist einer von diesen: <placeholder-1/>"
+
+#~ msgid ""
+#~ "In the current version, only files are filtered by state. Directories are "
+#~ "always shown."
+#~ msgstr ""
+#~ "In der aktuellen Version werden nur Dateien nach deren Status gefiltert. "
+#~ "Ordner werden immer angezeigt."
+
+#~ msgid ""
+#~ "Use the toolbar buttons to control which items are shown by their state."
+#~ "<placeholder-1/>"
+#~ msgstr ""
+#~ "Verwenden Sie die Knöpfe in der Werkzeugleiste, um festzulegen, welche "
+#~ "Objekte anhand deren Status angezeigt werden sollen.<placeholder-1/>"
+
+#~ msgid "Content Filtering"
+#~ msgstr "Filterung nach Inhalt"
+
+#~ msgid ""
+#~ "To browse a working copy of a source control repository, choose "
+#~ "<menuchoice><guimenu>File</guimenu><guimenuitem>New</guimenuitem></"
+#~ "menuchoice> and select the <guilabel>Version Control Browser</guilabel> "
+#~ "tab."
+#~ msgstr ""
+#~ "Um eine Arbeitskopie eines unter Versionskontrolle stehenden "
+#~ "Softwarebestandes zu durchsuchen, wählen Sie <menuchoice><guimenu>Datei</"
+#~ "guimenu><guimenuitem>Neu</guimenuitem></menuchoice> und wählen den Reiter "
+#~ "<guilabel>Versionskontrolle</guilabel>."
+
+#~ msgid "The file has not changed since it was checked out or committed."
+#~ msgstr ""
+#~ "Die Datei wurde nicht geändert, seit sie zuletzt ausgecheckt oder "
+#~ "eingespielt wurde."
+
+#~ msgid "The file has been locally changed, added, or removed."
+#~ msgstr "Die Datei wurde lokal geändert, hinzugefügt oder entfernt."
+
+#~ msgid ""
+#~ "The file is explicitly ignored e.g. though a <filename>.cvsignore</"
+#~ "filename> file."
+#~ msgstr ""
+#~ "Die Datei wird ausdrücklich ignoriert, z.B. in der Datei <filename>."
+#~ "cvsignore</filename>."
+
+#~ msgid "Viewing Differences"
+#~ msgstr "Anzeigen von Unterschieden"
+
+#~ msgid "Shortcut Keys"
+#~ msgstr "Tastenkombination"
+
+#~ msgid ""
+#~ "For more on shortcut keys, see the <ulink type=\"help\" url=\"ghelp:user-"
+#~ "guide?keyboard-skills\">Desktop User Guide</ulink>."
+#~ msgstr ""
+#~ "Weitere Informationen über Tastenkürzel finden Sie im <ulink type=\"help"
+#~ "\" url=\"ghelp:user-guide?keyboard-skills\">Desktop-Benutzerhandbuch</"
+#~ "ulink>."
+
+#~ msgid "Ctrl"
+#~ msgstr "Strg"
+
+#~ msgid "N"
+#~ msgstr "N"
+
+#~ msgid "S"
+#~ msgstr "S"
+
+#~ msgid "Shift"
+#~ msgstr "Umschalt"
+
+#~ msgid "W"
+#~ msgstr "W"
+
+#~ msgid "Q"
+#~ msgstr "Q"
+
+#~ msgid "Z"
+#~ msgstr "Z"
+
+#~ msgid "X"
+#~ msgstr "X"
+
+#~ msgid "C"
+#~ msgstr "C"
+
+#~ msgid "V"
+#~ msgstr "V"
+
+#~ msgid "F"
+#~ msgstr "F"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#~ msgid "D"
+#~ msgstr "D"
+
+#~ msgid "Go to the next difference."
+#~ msgstr "Springt zum nächsten Unterschied."
+
+#~ msgid "E"
+#~ msgstr "E"
+
+#~ msgid "Go to the previous difference."
+#~ msgstr "Springt zum vorherigen Unterschied."
+
+#~ msgid "Escape"
+#~ msgstr "Esc"
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "Reload the current comparison."
+#~ msgstr "Lädt den aktuellen Vergleich neu."

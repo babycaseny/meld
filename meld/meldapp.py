@@ -30,7 +30,7 @@ import meld.conf
 import meld.preferences
 import meld.ui.util
 
-from meld.conf import _
+version = "1.8.6"
 
 log = logging.getLogger(__name__)
 

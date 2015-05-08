@@ -48,6 +48,14 @@ vc_names = (
 
 _plugins = [importlib.import_module("." + vc, __package__) for vc in vc_names]
 
+def load_plugins():
+    _vcdir = os.path.dirname(os.path.abspath(__file__))
+    ret = []
+    for plugin in sorted(glob.glob(os.path.join(_vcdir, "[a-z]*.py"))):
+        modname = "meld.vc.%s" % os.path.basename(os.path.splitext(plugin)[0])
+        ret.append( __import__(modname, globals(), locals(), "*") )
+    return ret
+_plugins = load_plugins()
 
 def get_plugins_metadata():
     ret = []
@@ -74,23 +82,24 @@ def get_vcs(location):
     """
 
     vcs = []
-    max_depth = 0
     for plugin in _plugins:
         root, location = plugin.Vc.is_in_repo(location)
         if not root:
             continue
+        vcs.append(vc)
 
-        # Choose the deepest root we find, unless it's from a VC that
-        # doesn't walk; these can be spurious as the real root may be
-        # much higher up in the tree.
-        depth = len(root)
-        if depth > max_depth and plugin.Vc.VC_ROOT_WALK:
-            vcs, max_depth = [], depth
-        if depth >= max_depth:
-            vcs.append(plugin.Vc)
+    # Choose the deepest root we find, unless it's from a VC that
+    # doesn't walk; these can be spurious as the real root may be
+    # much higher up in the tree.
+    root_walk_lengths = [len(vc.root) for vc in vcs if vc.VC_ROOT_WALK]
+    max_depth = max(root_walk_lengths or [0])
+    vcs = [vc for vc in vcs if not vc.VC_ROOT_WALK or
+           (len(vc.root) == max_depth and vc.VC_ROOT_WALK)]
 
     if not vcs:
-        # No plugin recognized that location, fallback to _null
-        return [_null.Vc]
+        return [_null.Vc(location)]
+
+    vc_sort_key = lambda v: vc_sort_order.index(v.NAME)
+    vcs.sort(key=vc_sort_key)
 
     return vcs

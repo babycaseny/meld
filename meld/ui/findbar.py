@@ -44,8 +44,8 @@ class FindBar(gnomeglade.Component):
         return False
 
     def hide(self):
-        self.set_text_view(None)
-        self.wrap_box.set_visible(False)
+        self.textview = None
+        self.wrap_box.hide()
         self.widget.hide()
 
     def set_text_view(self, textview):
@@ -91,7 +91,7 @@ class FindBar(gnomeglade.Component):
         self.widget.set_row_spacing(6)
         self.widget.show_all()
         self.find_entry.grab_focus()
-        self.wrap_box.set_visible(False)
+        self.wrap_box.hide()
 
     def on_find_next_button_clicked(self, button):
         self._find_text()
@@ -150,6 +150,28 @@ class FindBar(gnomeglade.Component):
             self.find_entry.get_style_context().remove_class("not-found")
             return True
         else:
-            buf.place_cursor(buf.get_iter_at_mark(buf.get_insert()))
-            self.find_entry.get_style_context().add_class("not-found")
-            self.wrap_box.set_visible(False)
+            self.wrap_box.hide()
+            if backwards == False:
+                match = pattern.search(text, insert.get_offset() + start_offset)
+                if match is None and wrap:
+                    self.wrap_box.show()
+                    match = pattern.search(text, 0)
+            else:
+                match = None
+                for m in pattern.finditer(text, 0, insert.get_offset()):
+                    match = m
+                if match is None and wrap:
+                    self.wrap_box.show()
+                    for m in pattern.finditer(text, insert.get_offset()):
+                        match = m
+            if match:
+                it = buf.get_iter_at_offset( match.start() )
+                buf.place_cursor( it )
+                it.forward_chars( match.end() - match.start() )
+                buf.move_mark( buf.get_selection_bound(), it )
+                self.textview.scroll_to_mark(buf.get_insert(), 0.25)
+                return True
+            else:
+                buf.place_cursor( buf.get_iter_at_mark(buf.get_insert()) )
+                self.find_entry.modify_base(gtk.STATE_NORMAL, gtk.gdk.color_parse("#ffdddd"))
+                self.wrap_box.hide()

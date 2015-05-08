@@ -644,7 +644,7 @@ msgid ""
 "a 'merge helper'; <app>Meld</app> is one such helper. If you want to make "
 "<app>git mergetool</app> use <app>Meld</app> by default, you can add"
 msgstr ""
-"Například, když používáte <app>Git</app>, <cmd>git mergtool</cmd> spustí "
+"Například, když používáte <app>Git</app>, <cmd>git mergtool</app> spustí "
 "„pomocníka se slučováním“. <app>Meld</app> je jedním z možných takovýchto "
 "pomocníků. Jestli chcete, aby <app>git mergetool</app> používal <app>Meld</"
 "app> jako výchozího pomocníka, můžete přidat"
@@ -1721,8 +1721,13 @@ msgstr ""
 #: C/folder-mode.page:217
 msgid ""
 "You can filter out files based on these states, for example, to show only "
+<<<<<<< HEAD
 "files that have been <em>Modified</em>. You can read more about this in "
 "<link xref=\"file-filters#file-state-filter\"/>."
+=======
+"files that have are <em>Modified</em>. You can read more about this in <link "
+"xref=\"file-filters#file-state-filter\"/>."
+>>>>>>> f3e0dc2a756597710149a301dc2177c2ada195d3
 msgstr ""
 "Můžete odfiltrovat soubory na základě jejich stavu, například aby se "
 "zobrazovaly jen soubory, které byly <em>změněné</em>. Více si o tom můžete "

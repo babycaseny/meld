@@ -59,7 +59,8 @@ def unicodeify(s):
 class RecentFiles(object):
 
     mime_type = "application/x-meld-comparison"
-    recent_path = os.path.join(GLib.get_user_data_dir(), "meld")
+    recent_dirname = "Meld" if sys.platform == "win32" else "meld"
+    recent_path = os.path.join(glib.get_user_data_dir(), recent_dirname)
     recent_path = recent_path.decode('utf8')
     recent_suffix = ".meldcmp"
 

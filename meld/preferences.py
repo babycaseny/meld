@@ -1,35 +1,52 @@
-# Copyright (C) 2002-2009 Stephen Kennedy <stevek@gnome.org>
-# Copyright (C) 2010-2013 Kai Willadsen <kai.willadsen@gmail.com>
-#
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 2 of the License, or (at
-# your option) any later version.
-#
-# This program is distributed in the hope that it will be useful, but
-# WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-# General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+### Copyright (C) 2002-2009 Stephen Kennedy <stevek@gnome.org>
+### Copyright (C) 2010-2011 Kai Willadsen <kai.willadsen@gmail.com>
 
-from gi.repository import Gio
-from gi.repository import GLib
-from gi.repository import GObject
-from gi.repository import Gtk
-from gi.repository import GtkSource
+### This program is free software; you can redistribute it and/or modify
+### it under the terms of the GNU General Public License as published by
+### the Free Software Foundation; either version 2 of the License, or
+### (at your option) any later version.
 
-from meld.conf import _
-from meld.filters import FilterEntry
-from meld.settings import settings
-from meld.ui.gnomeglade import Component
-from meld.ui.listwidget import ListWidget
+### This program is distributed in the hope that it will be useful,
+### but WITHOUT ANY WARRANTY; without even the implied warranty of
+### MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+### GNU General Public License for more details.
+
+### You should have received a copy of the GNU General Public License
+### along with this program; if not, write to the Free Software
+### Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301,
+### USA.
+
+import logging
+import pipes
+import shlex
+import string
+
+from gettext import gettext as _
+
+import gtk
+
+from . import filters
+from . import misc
+from . import paths
+from . import vc
+from .ui import gnomeglade
+from .ui import listwidget
+from .util import prefs
+
+from .util.sourceviewer import srcviewer
 
 
-class FilterList(ListWidget):
+TIMESTAMP_RESOLUTION_PRESETS = [('1ns (ext4)', 1),
+                                ('100ns (NTFS)', 100),
+                                ('1s (ext2/ext3)', 1000000000),
+                                ('2s (VFAT)', 2000000000)]
 
-    def __init__(self, key, filter_type):
+log = logging.getLogger(__name__)
+
+
+class FilterList(listwidget.ListWidget):
+
+    def __init__(self, prefs, key, filter_type):
         default_entry = [_("label"), False, _("pattern"), True]
         ListWidget.__init__(self, "EditableList.ui",
                             "list_vbox", ["EditableListStore"],
@@ -72,11 +89,17 @@ class FilterList(ListWidget):
         self.model[path][3] = valid
 
     def _update_filter_string(self, *args):
-        value = [(row[0], row[1], row[2]) for row in self.model]
-        settings.set_value(self.key, GLib.Variant('a(sbs)', value))
+        pref = []
+        for row in self.model:
+            pattern = row[2]
+            if pattern:
+                pattern = pattern.replace('\r', '')
+                pattern = pattern.replace('\n', '')
+            pref.append("%s\t%s\t%s" % (row[0], 1 if row[1] else 0, pattern))
+        setattr(self.prefs, self.key, "\n".join(pref))
 
 
-class ColumnList(ListWidget):
+class ColumnList(listwidget.ListWidget):
 
     available_columns = {
         "size": _("Size"),
@@ -84,17 +107,17 @@ class ColumnList(ListWidget):
         "permissions": _("Permissions"),
     }
 
-    def __init__(self, key):
-        ListWidget.__init__(self, "EditableList.ui",
-                            "columns_ta", ["ColumnsListStore"],
-                            "columns_treeview")
+    def __init__(self, prefs, key):
+        listwidget.ListWidget.__init__(self, "EditableList.ui",
+                               "columns_ta", ["ColumnsListStore"],
+                               "columns_treeview")
+        self.prefs = prefs
         self.key = key
 
-        # Unwrap the variant
-        prefs_columns = [(k, v) for k, v in settings.get_value(self.key)]
         column_vis = {}
         column_order = {}
-        for sort_key, (column_name, visibility) in enumerate(prefs_columns):
+        for sort_key, column in enumerate(getattr(self.prefs, self.key)):
+            column_name, visibility = column.rsplit(" ", 1)
             column_vis[column_name] = bool(int(visibility))
             column_order[column_name] = sort_key
 
@@ -266,9 +289,51 @@ class PreferencesDialog(Component):
             wrap_mode = Gtk.WrapMode.CHAR
         settings.set_enum('wrap-mode', wrap_mode)
 
-    def on_checkbutton_show_whitespace_toggled(self, widget):
-        value = GtkSource.DrawSpacesFlags.ALL if widget.get_active() else 0
-        settings.set_flags('draw-spaces', value)
+    def get_toolbar_style(self):
+        if not hasattr(self, "_gconf"):
+            style = "both-horiz"
+        else:
+            style = self._gconf.get_string(
+                      '/desktop/gnome/interface/toolbar_style') or "both-horiz"
+        toolbar_styles = {
+            "both": gtk.TOOLBAR_BOTH, "text": gtk.TOOLBAR_TEXT,
+            "icon": gtk.TOOLBAR_ICONS, "icons": gtk.TOOLBAR_ICONS,
+            "both_horiz": gtk.TOOLBAR_BOTH_HORIZ,
+            "both-horiz": gtk.TOOLBAR_BOTH_HORIZ
+        }
+        return toolbar_styles[style]
 
-    def on_response(self, dialog, response_id):
-        self.widget.destroy()
+    def get_editor_command(self, path, line=0):
+        if self.edit_command_type == "custom":
+            custom_command = self.edit_command_custom
+            fmt = string.Formatter()
+            replacements = [tok[1] for tok in fmt.parse(custom_command)]
+
+            if not any(replacements):
+                return [custom_command, path]
+            elif not all(r in (None, 'file', 'line') for r in replacements):
+                log.error("Unsupported fields found", )
+                return [custom_command, path]
+            else:
+                cmd = custom_command.format(file=pipes.quote(path), line=line)
+            return shlex.split(cmd)
+        else:
+            if not hasattr(self, "_gconf"):
+                return []
+
+            editor_path = "/desktop/gnome/applications/editor/"
+            terminal_path = "/desktop/gnome/applications/terminal/"
+            editor = self._gconf.get_string(editor_path + "exec") or "gedit"
+            if self._gconf.get_bool(editor_path + "needs_term"):
+                argv = []
+                texec = self._gconf.get_string(terminal_path + "exec")
+                if texec:
+                    argv.append(texec)
+                    targ = self._gconf.get_string(terminal_path + "exec_arg")
+                    if targ:
+                        argv.append(targ)
+                escaped_path = path.replace(" ", "\\ ")
+                argv.append("%s %s" % (editor, escaped_path))
+                return argv
+            else:
+                return [editor, path]
