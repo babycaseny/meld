@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: meld master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=meld&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-04-11 22:29+0000\n"
+"POT-Creation-Date: 2015-04-13 10:29+0000\n"
 "PO-Revision-Date: 2015-03-25 21:33+0800\n"
 "Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
@@ -2230,6 +2230,546 @@ msgstr "這將從版本控制中移除所有選中的文件及資料夾，及選
 msgid "Error removing %s"
 msgstr "移除 %s 時出錯"
 
+msgid ""
+"Could not read from '%s'.\n"
+"\n"
+"I tried encodings %s."
+msgstr ""
+"Feilen tu rīd from «%s».\n"
+"\n"
+"Enkoudiŋ traien für %s."
+
+msgid "Browse %s"
+msgstr "Braws %s"
+
+msgid "Common Ancestor"
+msgstr "Kòmmòn-na Ançestā"
+
+msgid "`%s' is not a directory or file, cannot open cvs view"
+msgstr "`%s' não é um directório ou ficheiro, incapaz de abrir vista cvs"
+
+msgid "window1"
+msgstr "window1"
+
+msgid "Copyright (C) 2002 Stephen Kennedy"
+msgstr "Kopirait (C) 2002n Stephen Kennedy"
+
+msgid "Binary files do not have text filters applied to them when comparing."
+msgstr "Bainari fayls wa mwu tekst filtèrās applaien tu in kompäreiçion."
+
+#, fuzzy
+msgid ""
+"Ignored:Non CVS:::Error::Newly added:Modified:<b>Conflict</b>:Removed:Missing"
+msgstr ""
+"Ignored:Unversioned:::Error::Newly added:Modified:<b>Conflict</b>:Removed:"
+"Missiŋ"
+
+msgid ""
+"Error converting to a regular expression\n"
+"The pattern was '%s'\n"
+"The error was '%s'"
+msgstr ""
+"Error converting to a regular expression\n"
+"The pattern was '%s'\n"
+"The error was '%s'"
+
+msgid "Tag"
+msgstr "Täg"
+
+msgid "[%s] Applying patch"
+msgstr "[%s] Applying patch"
+
+msgid "Select some files first."
+msgstr "Select some files first."
+
+msgid "Error converting pattern '%s' to regular expression"
+msgstr "Error converting pattern '%s' to regular expression"
+
+msgid ""
+"'%s' is a directory.\n"
+"Remove recusively?"
+msgstr ""
+"'%s' wa direktòri.\n"
+"Remove recusively?"
+
+msgid "The regular expression '%s' was not found."
+msgstr "Regyular ikspresion '%s' wa not fainden."
+
+msgid "The text '%s' was not found."
+msgstr "Tekst '%s' wa not fainden."
+
+msgid ""
+"Could not open '%s' for reading.\n"
+"\n"
+"The error was:\n"
+"%s"
+msgstr ""
+"Could not open '%s' for reading.\n"
+"\n"
+"The error was:\n"
+"%s"
+
+msgid ""
+"Could not read from '%s'.\n"
+"\n"
+"The error was:\n"
+"%s"
+msgstr ""
+"Feilen tu rīd from «%s».\n"
+"\n"
+"Örakoud-wa:\n"
+"%s"
+
+msgid "Choose a name for buffer %i."
+msgstr "Choose a name for buffer %i."
+
+#, fuzzy
+msgid ""
+"Refreshing will discard changes in:\n"
+"%s\n"
+"\n"
+"You cannot undo this operation."
+msgstr ""
+"Reloading will discard changes in:\n"
+"%s\n"
+"\n"
+"You cannot undo this operation."
+
+msgid "Meld requires a recent version of pygtk."
+msgstr "Meld rīkwair pygtk dè zuigèn-na vörçion."
+
+msgid "pygtk-%s or higher is recommended."
+msgstr "pygtk-%s or higher is recommended."
+
+msgid "Meld works best with pygtk-%s or higher. (found %s)"
+msgstr "Meld works best with pygtk-%s or higher. (found %s)"
+
+msgid ""
+"Due to incompatible API changes some functions may not operate as expected."
+msgstr ""
+"Due to incompatible API changes some functions may not operate as expected."
+
+msgid "Original File"
+msgstr "Orijinol Fayl"
+
+msgid "Original Directory"
+msgstr "Orijinol Direktòri"
+
+msgid "Other Directory"
+msgstr "Kitadè Direktòri"
+
+#, fuzzy
+msgid "Root CVS Directory"
+msgstr "CVS Directory"
+
+#, fuzzy
+msgid ""
+"Meld is a file and directory comparison tool. Usage:\n"
+"\n"
+"    meld                        Start with no windows open\n"
+"    meld <dir>                  Start with CVS browser in 'dir'\n"
+"    meld <file>                 Start with CVS diff of 'file'\n"
+"    meld <file> <file> [file]   Start with 2 or 3 way file comparison\n"
+"    meld <dir>  <dir>  [dir]    Start with 2 or 3 way directory comparison\n"
+"\n"
+"For more information choose help -> contents.\n"
+"Report bugs to steve9000@users.sourceforge.net.\n"
+msgstr ""
+"Meld is a file and directory comparison tool. Usage:\n"
+"\n"
+" meld Start with no windows open\n"
+" meld <dir> Start with CVS browser in 'dir'\n"
+" meld <file> Start with CVS diff of 'file'\n"
+" meld <file> <file> [file] Start with 2 or 3 way file comparison\n"
+" meld <dir> <dir> [dir] Start with 2 or 3 way directory comparison\n"
+"\n"
+"For more information choose help -> contents.\n"
+"Report bugs at http://bugzilla.gnome.org/buglist.cgi?product=meld\n"
+"stevek@gnome.org\n"
+
+#, fuzzy
+msgid ""
+"Meld %s\n"
+"Written by Stephen Kennedy <steve9000@users.sf.net>"
+msgstr ""
+"Meld %s\n"
+"Wraiten bai Stephen Kennedy <stevek@gnome.org>"
+
+msgid "_Diff"
+msgstr "_Diff"
+
+#, fuzzy
+msgid "Non _CVS"
+msgstr "Non _VC"
+
+#, fuzzy
+msgid "Add to CVS"
+msgstr "Koncrol"
+
+#, fuzzy
+msgid "Remove from CVS"
+msgstr "Remove from VC"
+
+msgid "*"
+msgstr "*"
+
+msgid "Add _Binary"
+msgstr "Ädd _Binari"
+
+msgid "Remove _Locally"
+msgstr "Remove _Locally"
+
+#, fuzzy
+msgid "CVS Log"
+msgstr "VC Log"
+
+#, fuzzy
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Some files have been modified.\n"
+"Which ones would you like to save?</span>"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Some files have been modified.\n"
+"Which ones would you like to save?"
+
+msgid "Match _entire word only"
+msgstr "Match _entire word only"
+
+msgid "Diff"
+msgstr "Diff"
+
+msgid "Left"
+msgstr "Left"
+
+msgid "Ignore case of entries"
+msgstr "Ignore case of entries"
+
+msgid "Case"
+msgstr "Keis"
+
+msgid "Two way file"
+msgstr "Two way file"
+
+msgid "Three way file"
+msgstr "Three way file"
+
+msgid "Two way directory"
+msgstr "Two way directory"
+
+msgid "Three way directory"
+msgstr "Three way directory"
+
+msgid "CVS view"
+msgstr "CVS view"
+
+msgid "Report _Bug"
+msgstr "Report _Bug"
+
+msgid "_New..."
+msgstr "_Niu..."
+
+msgid "http://meld.sourceforge.net"
+msgstr "http://meld.sourceforge.net"
+
+#, fuzzy
+msgid "<span weight=\"bold\" size=\"x-large\">Editor</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">Editor"
+
+msgid "<b>Font</b>"
+msgstr "<b>Font</b>"
+
+msgid "<b>Misc</b>"
+msgstr "<b>Misc</b>"
+
+msgid "Tabs equivalent to "
+msgstr "Täbs equivalent to "
+
+msgid " spaces."
+msgstr " spaces."
+
+#, fuzzy
+msgid "Automatically supply missing newline at end of file."
+msgstr "Automatically supply missing newline at end of file"
+
+msgid "<b>Edit Menu</b>"
+msgstr "<b>Edit Menyu</b>"
+
+msgid "Edit menu popup invokes"
+msgstr "Edit menyu popùp invok"
+
+msgid "(gnome-default-editor)"
+msgstr "(gnome-default-editor)"
+
+#, fuzzy
+msgid "<span weight=\"bold\" size=\"x-large\">Display</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">Displei"
+
+msgid "<b>Drawing Style</b>"
+msgstr "<b>Drawing Style</b>"
+
+msgid ""
+"Choose how the central bar of the diff viewer is drawn. You may wish to "
+"choose a simpler mode if you find scrolling is slow."
+msgstr ""
+"Choose how the central bar of the diff viewer is drawn. You may wish to "
+"choose a simpler mode if you find scrolling is slow."
+
+#, fuzzy
+msgid "Simple : Lines only"
+msgstr "Simple: Lines only"
+
+#, fuzzy
+msgid "Solid   Filled Quadilaterals"
+msgstr "Solid: Filled Quadilaterals"
+
+#, fuzzy
+msgid "Curved : Filled Curves"
+msgstr "Curved: Filled Curves"
+
+msgid "<b>Toolbar Appearance</b>"
+msgstr "<b>Tūlbār Appīràns</b>"
+
+msgid "Gnome Default"
+msgstr "Gnome Difault"
+
+msgid "Icons Only"
+msgstr "Aikons Onli"
+
+msgid "Text Only"
+msgstr "Text Only"
+
+msgid "Text Under Icons"
+msgstr "Text Under Icons"
+
+msgid "Text Beside Icons"
+msgstr "Text Beside Icons"
+
+#, fuzzy
+msgid "<span weight=\"bold\" size=\"x-large\">File Filters</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">Fayl Filtèrās"
+
+#, fuzzy
+msgid "<span weight=\"bold\" size=\"x-large\">Text Filters</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">Tekst Filtèrās"
+
+#, fuzzy
+msgid "<span weight=\"bold\" size=\"x-large\">Encoding</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">Enkoudiŋ"
+
+msgid "<b>Loading</b>"
+msgstr "<b>Loudiŋ</b>"
+
+msgid "When loading, try these codecs in order. (e.g. utf8, iso8859)"
+msgstr "When loading, try these codecs in order. (e.g. utf8, iso8859)"
+
+msgid "utf8 iso8859"
+msgstr "utf8 iso8859"
+
+msgid "<b>Saving</b>"
+msgstr "<b>Seiviŋ</b>"
+
+msgid "Save in the files original encoding"
+msgstr "Save in the files original encoding"
+
+msgid "Encoding"
+msgstr "Enkoudiŋ"
+
+#, fuzzy
+msgid "<span weight=\"bold\" size=\"x-large\">CVS</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">CVS"
+
+msgid "<b>Global options</b>"
+msgstr "<b>Global options</b>"
+
+msgid "Quiet mode (-q)"
+msgstr "Quiet mode (-q)"
+
+msgid "Use Compression (-z)"
+msgstr "Use Compression (-z)"
+
+msgid "Ignore .cvsrc (-f)"
+msgstr "Ignor .cvsrc (-f)"
+
+msgid "CVS binary"
+msgstr "CVS binary"
+
+msgid "Locate CVS binary : Meld"
+msgstr "Locate CVS binary : Meld"
+
+msgid "<b>Update Options</b>"
+msgstr "<b>Ùpdeit Opçions</b>"
+
+msgid "Prune empty directories (-P)"
+msgstr "Prune empty directories (-P)"
+
+msgid "CVS"
+msgstr "CVS"
+
+msgid "_Logo"
+msgstr "_Logo"
+
+#, fuzzy
+msgid "<span weight=\"bold\" size=\"x-large\">Binary Files</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">Fayl Filtèrās"
+
+#, fuzzy
+msgid "_Binary Files"
+msgstr "Original File"
+
+#, fuzzy
+msgid "<span weight=\"bold\" size=\"x-large\">Diff</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">Diff"
+
+msgid ""
+"Ignore changes in case; consider upper and lower-case letters equivalent"
+msgstr ""
+"Ignore changes in case; consider upper and lower-case letters equivalent"
+
+msgid "<b>Whitespace</b>"
+msgstr "<b>Whitespace</b>"
+
+msgid "Whitespace is significant"
+msgstr "Whitespace is significant"
+
+msgid "Ignore changes that just insert or delete blank lines"
+msgstr "Ignore changes that just insert or delete blank lines"
+
+msgid "Ignore changes in amount of white space"
+msgstr "Ignore changes in amount of white space"
+
+msgid ""
+"Regular expression '%s' changed the number of lines in the file. Comparison "
+"will be incorrect. See the user manual for more details."
+msgstr ""
+"Regular expression '%s' changed the number of lines in the file. Comparison "
+"will be incorrect. See the user manual for more details."
+
+msgid "The error was:"
+msgstr "Ora wa:"
+
+msgid ""
+"It contains ascii nulls.\n"
+"Perhaps it is a binary file."
+msgstr ""
+"It contains ascii nulls.\n"
+"Perhaps it is a binary file."
+
+msgid "<span weight=\"bold\" size=\"x-large\">Compare"
+msgstr "<span weight=\"bold\" size=\"x-large\">Kompär"
+
+msgid "Ignore changes which insert or delete blank lines"
+msgstr "Ignore changes which insert or delete blank lines"
+
+msgid "Line Wrapping "
+msgstr "Line Wrapping "
+
+msgid "Mailing _List"
+msgstr "Mailing _List"
+
+msgid "Mine"
+msgstr "Mine"
+
+msgid "Original"
+msgstr "Original"
+
+msgid "Other"
+msgstr "Other"
+
+msgid "Other File"
+msgstr "Other File"
+
+msgid "_Character"
+msgstr "_Character"
+
+msgid "_Word"
+msgstr "_Word"
+
+msgid "Date"
+msgstr "Deit"
+
+msgid "Local copy against other remote revision"
+msgstr "Local copy against other remote revision"
+
+msgid "Local copy against same remote revision"
+msgstr "Local copy against same remote revision"
+
+msgid "Regex"
+msgstr "Regex"
+
+msgid ""
+"Line numbers are only available if you have gnome-python-desktop installed."
+msgstr ""
+"Line numbers are only available if you have gnome-python-desktop installed."
+
+msgid ""
+"Syntax highlighting is only available if you have gnome-python-desktop "
+"installed."
+msgstr ""
+"Syntax highlighting is only available if you have gnome-python-desktop "
+"installed."
+
+msgid "Backups\t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
+msgstr "Bäkùp\t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
+
+msgid "Version Control\t1\tCVS .svn MT [{]arch[}] .arch-ids .arch-inventory\n"
+msgstr "Version Control\t1\tCVS .svn MT [{]arch[}] .arch-ids .arch-inventory\n"
+
+msgid "Binaries\t1\t*.{pyc,a,obj,o,so,la,lib,dll}\n"
+msgstr "Binaries\t1\t*.{pyc,a,obj,o,so,la,lib,dll}\n"
+
+msgid "Media\t0\t*.{jpg,gif,png,wav,mp3,ogg,xcf,xpm}"
+msgstr "Midia\t0\t*.{jpg,gif,png,wav,mp3,ogg,xcf,xpm}"
+
+msgid "CVS keywords\t0\t\\$\\w+(:[^\\n$]+)?\\$\n"
+msgstr "CVS kyiwörds\t0\t\\$\\w+(:[^\\n$]+)?\\$\n"
+
+msgid "C++ comment\t0\t//.*\n"
+msgstr "C++ komment\t0\t//.*\n"
+
+msgid "C comment\t0\t/\\*.*?\\*/\n"
+msgstr "C komment\t0\t/\\*.*?\\*/\n"
+
+msgid "All whitespace\t0\t[ \\t\\r\\f\\v]*\n"
+msgstr "Ol hwaitspeis\t0\t[ \\t\\r\\f\\v]*\n"
+
+msgid "Leading whitespace\t0\t^[ \\t\\r\\f\\v]*\n"
+msgstr "Leading whitespace\t0\t^[ \\t\\r\\f\\v]*\n"
+
+msgid "Script comment\t0\t#.*"
+msgstr "Skript komment\t0\t#.*"
+
+msgid ""
+"second,seconds:minute,minutes:hour,hours:day,days:week,weeks:month,months:"
+"year,years"
+msgstr ""
+"second,seconds:minute,minutes:hour,hours:day,days:week,weeks:month,months:"
+"year,years"
+
+msgid "nonexistant"
+msgstr "nonexistant"
+
+msgid "C_VS Browser"
+msgstr "C_VS Brawsā"
+
+msgid "New..."
+msgstr "Niu..."
+
+msgid "SVN Directory"
+msgstr "SVN Directory"
+
+msgid "SVN view"
+msgstr "SVN vyu"
+
+msgid "_SVN Browser"
+msgstr "_SVN Brawsā"
+
+#, fuzzy
+#~ msgid "Rev"
+#~ msgstr "移除(_R)"
+
+#, fuzzy
+#~ msgid "[%s] Scanning"
+#~ msgstr "[%s] 正在掃描 %s"
+
 #~ msgid ""
 #~ "'%s' exists.\n"
 #~ "Overwrite?"
@@ -2237,11 +2777,11 @@ msgstr "移除 %s 時出錯"
 #~ "「%s」已存在。\n"
 #~ "覆寫它？"
 
-#~ msgid "Clear manual change sychronization points"
-#~ msgstr "清除手動更改同步點"
-
-#~ msgid "Cycle Through Documents"
-#~ msgstr "在文件間循環"
+#, fuzzy
+#~ msgid ""
+#~ "Regular expression error\n"
+#~ "'%s'"
+#~ msgstr "正規表示式(_X)"
 
 #~ msgid ""
 #~ "\"%s\" exists!\n"
@@ -2259,11 +2799,63 @@ msgstr "移除 %s 時出錯"
 #~ "\n"
 #~ "%s，"
 
-#~ msgid "Copy _Left"
-#~ msgstr "複製到左側(_L)"
+#, fuzzy
+#~ msgid "Local Changes"
+#~ msgstr "變更(_C)"
 
-#~ msgid "Copy _Right"
+#, fuzzy
+#~ msgid "Modified Directory"
+#~ msgstr "修改"
+
+#, fuzzy
+#~ msgid "Diff selected"
+#~ msgstr "隱藏所選內容"
+
+#, fuzzy
+#~ msgid "Show non-CVS"
+#~ msgstr "顯示新增處"
+
+#, fuzzy
+#~ msgid "Update"
+#~ msgstr "更新(_U)"
+
+#, fuzzy
+#~ msgid "Edit"
+#~ msgstr "編輯(_E)"
+
+#, fuzzy
+#~ msgid "_Delete Selected"
+#~ msgstr "刪除所選內容"
+
+#, fuzzy
+#~ msgid "Right"
 #~ msgstr "複製到右側(_R)"
+
+#, fuzzy
+#~ msgid "Hide..."
+#~ msgstr "隱藏"
+
+#, fuzzy
+#~ msgid "Choose Files"
+#~ msgstr "提交檔案"
+
+#, fuzzy
+#~ msgid "Create missing directories (-d)"
+#~ msgstr "將檔案合併顯示（不顯示資料夾）"
+
+#~ msgid "Cycle Through Documents"
+#~ msgstr "在文件間循環"
+
+#~ msgid "Clear manual change sychronization points"
+#~ msgstr "清除手動更改同步點"
+
+#, fuzzy
+#~ msgid ""
+#~ "'%s' iksist.\n"
+#~ "Overwrite?"
+#~ msgstr ""
+#~ "「%s」已存在。\n"
+#~ "覆寫它？"
 
 #~ msgid "%i second"
 #~ msgid_plural "%i seconds"
@@ -2292,3 +2884,30 @@ msgstr "移除 %s 時出錯"
 #~ msgid "%i year"
 #~ msgid_plural "%i years"
 #~ msgstr[0] "%i 年"
+
+#, fuzzy
+#~ msgid "Save patch as..."
+#~ msgstr "保存修正檔"
+
+#, fuzzy
+#~ msgid "Directory"
+#~ msgstr "資料夾比對"
+
+#, fuzzy
+#~ msgid "_Three Way Compare"
+#~ msgstr "比對(_C)"
+
+#, fuzzy
+#~ msgid "_Up"
+#~ msgstr "更新(_U)"
+
+#, fuzzy
+#~ msgid "Compare Options"
+#~ msgstr "選項"
+
+#, fuzzy
+#~ msgid "Diff Options"
+#~ msgstr "選項"
+
+#~ msgid "Copy _Left"
+#~ msgstr "複製到左側(_L)"
