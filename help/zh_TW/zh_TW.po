@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=meld&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-03-10 23:05+0000\n"
-"PO-Revision-Date: 2015-04-18 02:28+0800\n"
+"PO-Revision-Date: 2015-05-28 01:55+0800\n"
 "Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: zh_TW\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.7.5\n"
 "X-Project-Style: gnome\n"
 "X-Source-Language: C\n"
 
@@ -359,7 +359,7 @@ msgstr "<code>?</code>"
 #. (itstool) path: td/p
 #: C/file-filters.page:139
 msgid "exactly one character"
-msgstr "Iksäktli 1-gè karakta"
+msgstr "剛好一個字元"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:142
@@ -369,7 +369,7 @@ msgstr "<code>[abc]</code>"
 #. (itstool) path: td/p
 #: C/file-filters.page:143
 msgid "any one of the listed characters"
-msgstr "kiẑōŋ 1-gè listen karakta"
+msgstr "表列任何一個字元"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:146
@@ -389,7 +389,7 @@ msgstr "<code>{meow,wow}</code>"
 #. (itstool) path: td/p
 #: C/file-filters.page:151
 msgid "either \"cat\" or \"dog\""
-msgstr "cualquiera de «gato» o «perro»"
+msgstr "「貓」或「狗」其中一個"
 
 #. (itstool) path: note/p
 #: C/file-filters.page:157
@@ -407,8 +407,7 @@ msgid ""
 "Activating a filter from the menu or the toolbar turns the filter on or off "
 "for <em>this comparison only</em>."
 msgstr ""
-"Aktiveitiŋ filtèr from menyu or tulbar aktiveit nigè filtèr on or off für "
-"<em>nigè kompäreiçion onli</em>."
+"從選單啟動過濾，又或透過工具列將<em>只限本次比對的</em>過濾功能啟用或關閉。"
 
 #. (itstool) path: section/title
 #: C/file-filters.page:174
@@ -445,7 +444,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/text-filters.page:17
 msgid "Filtering out text"
-msgstr "Filtèriŋ tekst out"
+msgstr "將文字過濾走"
 
 #. (itstool) path: page/p
 #: C/text-filters.page:19
@@ -477,7 +476,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/text-filters.page:37
 msgid "Adding and using text filters"
-msgstr "Äddiŋ en yusiŋ tekst filtèrs"
+msgstr "添加及使用文字過濾器"
 
 #. (itstool) path: section/p
 #: C/text-filters.page:39
@@ -555,7 +554,7 @@ msgid ""
 msgstr ""
 "\n"
 "a\n"
-"b#komment\n"
+"b#註釋\n"
 "c\n"
 "d"
 
@@ -578,7 +577,7 @@ msgstr ""
 "a\n"
 "b\n"
 "c\n"
-"#komment"
+"#註釋"
 
 #. (itstool) path: section/p
 #: C/text-filters.page:101
@@ -637,7 +636,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/resolving-conflicts.page:15
 msgid "Resolving merge conflicts"
-msgstr "Rīsolviŋ mörj konflikts"
+msgstr "解決合併衝突"
 
 #. (itstool) path: page/p
 #: C/resolving-conflicts.page:17
@@ -855,7 +854,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/file-mode.page:35
 msgid "<app>Meld</app>'s file comparisons"
-msgstr "<app>Meld</app> dè fayl kompäreiçions"
+msgstr "<app>Meld</app>的檔案比對"
 
 #. (itstool) path: section/p
 #: C/file-mode.page:37
@@ -1027,7 +1026,7 @@ msgstr "0"
 #. (itstool) path: page/title
 #: C/vc-mode.page:16
 msgid "Viewing version-controlled files"
-msgstr "Displeiing Vörçion-koncrol fayls"
+msgstr "檢視受版本控制的檔案"
 
 #. (itstool) path: page/p
 #: C/vc-mode.page:18
@@ -1059,10 +1058,8 @@ msgid ""
 "has a <link xref=\"#vc-state\">state</link> that indicates how it differs "
 "from the repository copy."
 msgstr ""
-"Vörçion koncrol kompäreiçions displei diffèrènses bitwin kontents insaid "
-"körrènt fouldèr en körrènt ripositori vörçion.  Evri fayl in lokol kopi wa "
-"<link xref=\"#vc-state\">steitùs</link> indikeiting diffèrèns from "
-"ripositori kopi."
+"版本控制比對顯示您的資料夾與目前倉庫版本之間的差異。在您的本地版本的每一個檔"
+"案均有<link xref=\"#vc-state\">狀態</link>標記該檔與倉庫版本間的差異有多大。"
 
 #. (itstool) path: section/p
 #: C/vc-mode.page:46
@@ -1103,12 +1100,12 @@ msgstr ""
 #. (itstool) path: td/p
 #: C/vc-mode.page:85 C/folder-mode.page:110
 msgid "State"
-msgstr "Steitùs"
+msgstr "狀態"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:86 C/folder-mode.page:111
 msgid "Appearance"
-msgstr "Apariencia"
+msgstr "外貌"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:87 C/folder-mode.page:112
@@ -1149,7 +1146,7 @@ msgstr "Nigè fayl/fouldèr wa niu, en skejulen tu add tu ripositori."
 #. (itstool) path: td/p
 #: C/vc-mode.page:136
 msgid "Removed"
-msgstr "Rīmūven"
+msgstr "已移除"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:138
@@ -1249,7 +1246,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/vc-mode.page:230
 msgid "Version control state filtering"
-msgstr "Vörçion koncrol steitùs filtèring"
+msgstr "依版本控制狀態過濾"
 
 #. (itstool) path: section/p
 #: C/vc-mode.page:232
@@ -1273,12 +1270,12 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/keyboard-shortcuts.page:15
 msgid "Keyboard shortcuts"
-msgstr "Atajos de teclado"
+msgstr "鍵盤捷徑"
 
 #. (itstool) path: table/title
 #: C/keyboard-shortcuts.page:18
 msgid "Shortcuts for working with files and comparisons"
-msgstr "Atajos para trabajar con archivos y comparaciones"
+msgstr "處理檔案及比對時所用的捷徑"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:22 C/keyboard-shortcuts.page:56
@@ -1310,17 +1307,17 @@ msgstr "<keyseq><key>Ctrl</key><key>S</key></keyseq>"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:34
 msgid "Save the current document to disk."
-msgstr "Guardar el documento actual en el disco."
+msgstr "儲存現時文件到磁碟。"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:37
 msgid "<keyseq><key>Ctrl</key><key>Shift</key><key>S</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>Šift</key><key>S</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Shift</key><key>S</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:38
 msgid "Save the current document with a new filename."
-msgstr "Guardar el documento actual con un nuevo nombre de archivo."
+msgstr "以新的名稱儲存現時文件。"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:41
@@ -1345,7 +1342,7 @@ msgstr "<app>Meld</app> wa ziuru."
 #. (itstool) path: table/title
 #: C/keyboard-shortcuts.page:52
 msgid "Shortcuts for editing documents"
-msgstr "Atajos para editar documentos"
+msgstr "編輯文件的捷徑"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:62
@@ -1360,7 +1357,7 @@ msgstr "Deshacer la última acción."
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:66
 msgid "<keyseq><key>Ctrl</key><key>Shift</key><key>Z</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>Šift</key><key>Z</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Shift</key><key>Z</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:67
@@ -1420,7 +1417,7 @@ msgstr "尋找字串的下一個出處。"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:90 C/keyboard-shortcuts.page:96
 msgid "<keyseq><key>Alt</key><key>Up</key></keyseq>"
-msgstr "<keyseq><key>Alt</key><key>Ùp</key></keyseq>"
+msgstr "<keyseq><key>Alt</key><key>Up</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:91
@@ -1453,7 +1450,7 @@ msgstr "<keyseq><key>Esc</key></keyseq>"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:116
 msgid "Stop the current comparison."
-msgstr "Stop körrènt kompäreiçions."
+msgstr "停止現時之比對。"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:119
@@ -1468,7 +1465,7 @@ msgstr "Rīfreš körrènt kompäreiçion."
 #. (itstool) path: table/title
 #: C/keyboard-shortcuts.page:127
 msgid "Shortcuts for help"
-msgstr "Atajos para la ayuda"
+msgstr "說明文件的捷徑"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:137
@@ -1623,7 +1620,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/folder-mode.page:83
 msgid "States in folder comparisons"
-msgstr "Steitùs in fouldèr kompäreiçions"
+msgstr "文件夾比對的狀態"
 
 #. (itstool) path: section/p
 #: C/folder-mode.page:85
@@ -1647,7 +1644,7 @@ msgstr "El archivo/carpeta es igual en todas las carpetas comparadas."
 #. (itstool) path: td/p
 #: C/folder-mode.page:132
 msgid "Same when filtered"
-msgstr "Seim when filtèren"
+msgstr "過濾後才相同"
 
 #. (itstool) path: td/p
 #: C/folder-mode.page:134
@@ -1742,7 +1739,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/missing-functionality.page:30
 msgid "Aligning changes by adding lines"
-msgstr "Alinear los cambios al agregar líneas"
+msgstr "透過增列來對齊變更"
 
 #. (itstool) path: section/p
 #: C/missing-functionality.page:31
@@ -1816,6 +1813,4 @@ msgstr ""
 #. (itstool) path: note/p
 #: C/command-line.page:40
 msgid "Run <cmd>meld --help</cmd> for a list of all command line options."
-msgstr ""
-"Ejecute <cmd>meld --help</cmd> para una lista de todas las opciones de línea "
-"de comandos."
+msgstr "執行<cmd>meld --help</cmd>可列出所有命令列選項。"
