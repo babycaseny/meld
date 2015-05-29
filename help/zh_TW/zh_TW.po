@@ -508,9 +508,8 @@ msgid ""
 "the Python <link href=\"http://docs.python.org/howto/regex.html\">Regular "
 "Expression HOWTO</link>."
 msgstr ""
-"Si no está familiarizado con las expresiones regulares, tal ve quiera "
-"consultar el <link href=\"http://docs.python.org/howto/regex.html\"> "
-"Tutorial de expresiones regulares</link> de Python."
+"如果您不熟悉正則表達式，您可以參照"
+"Python的<link href=\"http://docs.python.org/howto/regex.html\">Python正則表達式操作指南</link>連結。"
 
 #. (itstool) path: section/title
 #: C/text-filters.page:67
