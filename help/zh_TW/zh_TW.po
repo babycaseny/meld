@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=meld&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-03-10 23:05+0000\n"
-"PO-Revision-Date: 2015-05-28 01:55+0800\n"
+"PO-Revision-Date: 2015-05-30 00:24+0800\n"
 "Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
 "Language-Team: Babycaseny Gavèrnmènt\n"
 "Language: zh_TW\n"
@@ -35,10 +35,9 @@ msgstr "3"
 #. (itstool) path: credit/name
 #: C/vc-supported.page:10 C/file-filters.page:10 C/text-filters.page:11
 #: C/resolving-conflicts.page:10 C/preferences.page:10 C/file-changes.page:10
-#: C/file-mode.page:11 C/flattened-view.page:10 C/index.page:8
-#: C/vc-mode.page:10 C/keyboard-shortcuts.page:10 C/introduction.page:10
-#: C/folder-mode.page:10 C/missing-functionality.page:10
-#: C/command-line.page:10
+#: C/file-mode.page:11 C/flattened-view.page:10 C/index.page:8 C/vc-mode.page:10
+#: C/keyboard-shortcuts.page:10 C/introduction.page:10 C/folder-mode.page:10
+#: C/missing-functionality.page:10 C/command-line.page:10
 msgid "Kai Willadsen"
 msgstr "Kai Willadsen"
 
@@ -119,13 +118,12 @@ msgstr "SVN"
 #. (itstool) path: page/p
 #: C/vc-supported.page:35
 msgid ""
-"Less common version control systems or unusual configurations may not be "
-"properly tested; please report any version control support bugs to <link "
-"href=\"https://bugzilla.gnome.org/\">GNOME bugzilla</link>."
+"Less common version control systems or unusual configurations may not be properly "
+"tested; please report any version control support bugs to <link href=\"https://"
+"bugzilla.gnome.org/\">GNOME bugzilla</link>."
 msgstr ""
-"不常見的版本控制系統或不尋常的配置可能未有正確測試；如有任何有關版本控制的問"
-"題，請向<link href=\"https://bugzilla.gnome.org/\">GNOME bugzilla</link>報"
-"告。"
+"不常見的版本控制系統或不尋常的配置可能未有正確測試；如有任何有關版本控制的問題，請向"
+"<link href=\"https://bugzilla.gnome.org/\">GNOME bugzilla</link>報告。"
 
 #. (itstool) path: info/title
 #: C/file-filters.page:5 C/text-filters.page:5 C/resolving-conflicts.page:5
@@ -143,48 +141,42 @@ msgstr "過濾了的檔案"
 #. (itstool) path: page/p
 #: C/file-filters.page:17
 msgid ""
-"When you compare folders, you may want to be able to ignore some files. For "
-"example, you may wish to only see files that are present and different in "
-"both folders, ignoring those that are the same or only exist in one folder. "
-"Alternatively, you might want to ignore all the files in your <file>.git</"
-"file> directory, or ignore all images."
+"When you compare folders, you may want to be able to ignore some files. For example, "
+"you may wish to only see files that are present and different in both folders, "
+"ignoring those that are the same or only exist in one folder. Alternatively, you might "
+"want to ignore all the files in your <file>.git</file> directory, or ignore all images."
 msgstr ""
-"當您比對資料夾時，您可能需要忽視某些檔案。例如："
-"可能您想看見只有在兩邊亦存在的檔案，而只在一邊存在的要忽視。"
-"另一方面，您又或想忽視所有在<file>.git</file>資料夾內的檔案，"
-"又或想忽視所有圖檔。"
+"當您比對資料夾時，您可能需要忽視某些檔案。例如：可能您想看見只有在兩邊亦存在的檔案，而"
+"只在一邊存在的要忽視。另一方面，您又或想忽視所有在<file>.git</file>資料夾內的檔案，又或"
+"想忽視所有圖檔。"
 
 #. (itstool) path: page/p
 #: C/file-filters.page:25
 #, fuzzy
 msgid ""
-"<app>Meld</app> has several different ways of controlling which files and "
-"what kind of differences you see. You can filter based on <link xref=\"#file-"
-"state-filter\">differences between a file across folders</link> or <link "
-"xref=\"#file-name-filter\">file and folder names</link>. You can also tell "
-"<app>Meld</app> to treat filenames as being <link xref=\"#file-case-filter"
-"\">case insensitive</link>. Finally, you can use <link xref=\"text-filters"
-"\">text filters</link> to change what both folder and file comparisons see."
+"<app>Meld</app> has several different ways of controlling which files and what kind of "
+"differences you see. You can filter based on <link xref=\"#file-state-filter"
+"\">differences between a file across folders</link> or <link xref=\"#file-name-filter"
+"\">file and folder names</link>. You can also tell <app>Meld</app> to treat filenames "
+"as being <link xref=\"#file-case-filter\">case insensitive</link>. Finally, you can "
+"use <link xref=\"text-filters\">text filters</link> to change what both folder and "
+"file comparisons see."
 msgstr ""
-"<app>Meld</app>有多種方式去控制您想看見哪些檔案，以及您想看見哪些差異。"
-"例如：您想<link xref=\"#file-state-filter"
-"\">基於資料夾間檔案的差異</link>或<link xref=\"#file-name-"
-"filter\">基於檔案及資料夾的名稱</link>作為過濾準則。您可告訴<app>Meld</app>"
-"在處理檔案名稱時，要不要<link xref=\"#file-case-filter\">忽略名稱的大小寫差異</link>。"
-"最後，您可以用<link xref=\"text-filters\">文字過濾器</link>去改變"
-"當比對資料夾及檔案時會看見甚麼。"
+"<app>Meld</app>有多種方式去控制您想看見哪些檔案，以及您想看見哪些差異。例如：您想<link "
+"xref=\"#file-state-filter\">基於資料夾間檔案的差異</link>或<link xref=\"#file-name-"
+"filter\">基於檔案及資料夾的名稱</link>作為過濾準則。您可告訴<app>Meld</app>在處理檔案名"
+"稱時，要不要<link xref=\"#file-case-filter\">忽略名稱的大小寫差異</link>。最後，您可以"
+"用<link xref=\"text-filters\">文字過濾器</link>去改變當比對資料夾及檔案時會看見甚麼。"
 
 #. (itstool) path: note/p
 #: C/file-filters.page:37
 msgid ""
-"Any <link xref=\"text-filters\">text filters</link> you've defined "
-"<em>automatically apply</em> when comparing folders. Files that are "
-"identical after all of the text filters are applied are not highlighted as "
-"being different, but are shown in italics."
+"Any <link xref=\"text-filters\">text filters</link> you've defined <em>automatically "
+"apply</em> when comparing folders. Files that are identical after all of the text "
+"filters are applied are not highlighted as being different, but are shown in italics."
 msgstr ""
-"任何您已定義的<link xref=\"text-filters\">文字過濾器</link>會在比對"
-"資料夾時<em>自動啟動</em>。當所有文字過濾器應用後，若檔案變得一致，"
-"其差異不會高亮顯示，而是會以斜體顯示。"
+"任何您已定義的<link xref=\"text-filters\">文字過濾器</link>會在比對資料夾時<em>自動啟動"
+"</em>。當所有文字過濾器應用後，若檔案變得一致，其差異不會高亮顯示，而是會以斜體顯示。"
 
 #. (itstool) path: section/title
 #: C/file-filters.page:48
@@ -194,10 +186,9 @@ msgstr "以檔案間的差異過濾"
 #. (itstool) path: section/p
 #: C/file-filters.page:50
 msgid ""
-"In a folder comparison, each line contains a single file or folder that is "
-"present in at least one of the folders being compared. Each of these lines "
-"is classified as being either <em>Modifed</em>, <em>New</em> or <em>Same</"
-"em>:"
+"In a folder comparison, each line contains a single file or folder that is present in "
+"at least one of the folders being compared. Each of these lines is classified as being "
+"either <em>Modifed</em>, <em>New</em> or <em>Same</em>:"
 msgstr ""
 "在資料夾比對時，畫面的每一列代表一個檔案或一個資料夾，而且至少在其中一個資料夾內存在。"
 "每一個這些列都會分類為<em>已修改</em>、<em>新增</em>或<em>相同</em>其中一種："
@@ -238,29 +229,28 @@ msgstr "檔案在所有資料夾都有，而且皆為同一個檔案。"
 #. (itstool) path: section/p
 #: C/file-filters.page:70
 msgid ""
-"You can change which types of differences you see in your current comparison "
-"by using the <gui style=\"button\">Same</gui>, <gui style=\"button\">New</"
-"gui> and <gui style=\"button\">Modified</gui> buttons on the toolbar or the "
-"<guiseq><gui style=\"menu\">View</gui><gui style=\"menuitem\">File Status</"
-"gui></guiseq> menu."
+"You can change which types of differences you see in your current comparison by using "
+"the <gui style=\"button\">Same</gui>, <gui style=\"button\">New</gui> and <gui style="
+"\"button\">Modified</gui> buttons on the toolbar or the <guiseq><gui style=\"menu"
+"\">View</gui><gui style=\"menuitem\">File Status</gui></guiseq> menu."
 msgstr ""
-"您可以在現時的比對模式中透過工具列上的<gui style=\"button\">相同</gui>、<gui style=\"button\">新增</gui>"
-"及<gui style=\"button\">已修改</gui>這三個按鈕，又或在選單上選擇<guiseq><gui style=\"menu\">檢視</gui>"
-"<gui style=\"menuitem\">檔案狀態</gui></guiseq>來改變要看見哪一類型的差異。"
+"您可以在現時的比對模式中透過工具列上的<gui style=\"button\">相同</gui>、<gui style="
+"\"button\">新增</gui>及<gui style=\"button\">已修改</gui>這三個按鈕，又或在選單上選擇"
+"<guiseq><gui style=\"menu\">檢視</gui><gui style=\"menuitem\">檔案狀態</gui></guiseq>來"
+"改變要看見哪一類型的差異。"
 
 #. (itstool) path: note/p
 #: C/file-filters.page:80
 msgid ""
-"Currently, you can only filter files based on their state; folders can't be "
-"filtered in this way. For example, you can't tell <app>Meld</app> to ignore "
-"all folders that contain only new files. A folder containing only \"New\" "
-"files would show up as empty, but still present."
+"Currently, you can only filter files based on their state; folders can't be filtered "
+"in this way. For example, you can't tell <app>Meld</app> to ignore all folders that "
+"contain only new files. A folder containing only \"New\" files would show up as empty, "
+"but still present."
 msgstr ""
-"Actualmente, solo se puede filtrar archivos en función de sus estados; las "
-"carpetas no se pueden ser filtrar de esta forma. Por ejemplo, se le puede "
-"decir a <app>Meld</app> que ignore todas las carpetas que contengan solo "
-"archivos nuevos. Una carpeta que contenga solo archivos \"Nuevos\" se "
-"mostraría como vacía, pero seguiría presente."
+"Actualmente, solo se puede filtrar archivos en función de sus estados; las carpetas no "
+"se pueden ser filtrar de esta forma. Por ejemplo, se le puede decir a <app>Meld</app> "
+"que ignore todas las carpetas que contengan solo archivos nuevos. Una carpeta que "
+"contenga solo archivos \"Nuevos\" se mostraría como vacía, pero seguiría presente."
 
 #. (itstool) path: section/title
 #: C/file-filters.page:94
@@ -270,54 +260,50 @@ msgstr "檔案名稱過濾"
 #. (itstool) path: section/p
 #: C/file-filters.page:96
 msgid ""
-"<app>Meld</app> comes with a useful set of filename filters that let you "
-"ignore uninteresting files and folders like common backup files and the "
-"metadata folders of version control systems. Each filename filter can be "
-"separately activated or deactivated from the <gui style=\"button\">Filters</"
-"gui> button on the toolbar or the <guiseq><gui style=\"menu\">View</gui><gui "
-"style=\"menuitem\">File Filters</gui></guiseq> menu."
+"<app>Meld</app> comes with a useful set of filename filters that let you ignore "
+"uninteresting files and folders like common backup files and the metadata folders of "
+"version control systems. Each filename filter can be separately activated or "
+"deactivated from the <gui style=\"button\">Filters</gui> button on the toolbar or the "
+"<guiseq><gui style=\"menu\">View</gui><gui style=\"menuitem\">File Filters</gui></"
+"guiseq> menu."
 msgstr ""
-"<app>Meld</app> incluye un útil conjunto de filtros de nombres de archivos "
-"para permitir ignorar archivos y carpetas poco interesantes como archivos "
-"comunes de respaldo y carpetas de metadatos del sistema de control de "
-"versiones. Cada filtro de nombres de archivo se puede activar o desactivar "
-"por separado desde el botón <gui style=\"button\">Filtro</gui> en la barra "
-"de herramientas o desde el menú <guiseq><gui style=\"menu\">Vista</gui><gui "
-"style=\"menuitem\">Filtros de archivo</gui></guiseq>."
+"<app>Meld</app> incluye un útil conjunto de filtros de nombres de archivos para "
+"permitir ignorar archivos y carpetas poco interesantes como archivos comunes de "
+"respaldo y carpetas de metadatos del sistema de control de versiones. Cada filtro de "
+"nombres de archivo se puede activar o desactivar por separado desde el botón <gui "
+"style=\"button\">Filtro</gui> en la barra de herramientas o desde el menú <guiseq><gui "
+"style=\"menu\">Vista</gui><gui style=\"menuitem\">Filtros de archivo</gui></guiseq>."
 
 #. (itstool) path: section/p
 #: C/file-filters.page:106
 msgid ""
-"You can add, remove or change filename filters from the <gui style=\"tab"
-"\">File Filters</gui> section of the <gui>Preferences</gui> dialog. Filename "
-"filters specify patterns of filenames that will <em>not</em> be looked at "
-"when performing a folder comparison. Any file that matches an active filter "
-"won't even show up in the tree comparison. Filename filters match both files "
-"and folders; if a folder matches a filter, it and all of its contents are "
-"ignored."
+"You can add, remove or change filename filters from the <gui style=\"tab\">File "
+"Filters</gui> section of the <gui>Preferences</gui> dialog. Filename filters specify "
+"patterns of filenames that will <em>not</em> be looked at when performing a folder "
+"comparison. Any file that matches an active filter won't even show up in the tree "
+"comparison. Filename filters match both files and folders; if a folder matches a "
+"filter, it and all of its contents are ignored."
 msgstr ""
-"Puede agregar, quitar o cambiar los filtros de nombres de archivo desde la "
-"sección <gui style=\"tab\">Filtros de archivo</gui> en la ventana del "
-"diálogo <gui>Preferencias</gui>. Los filtros de nombres de archivo "
-"especifican patrones de nombres de archivo que <em>no</em> ser considerarán "
-"cuando se realiza la comparación entre carpetas. Cualquier archivo que "
-"iguale con un filtro activo no será siquiera mostrado en el árbol de "
-"comparaciones. Los filtros de nombres de archivo pueden igualar tanto "
-"archivos como carpetas; si una carpeta se filtra, ella y todos sus "
+"Puede agregar, quitar o cambiar los filtros de nombres de archivo desde la sección "
+"<gui style=\"tab\">Filtros de archivo</gui> en la ventana del diálogo "
+"<gui>Preferencias</gui>. Los filtros de nombres de archivo especifican patrones de "
+"nombres de archivo que <em>no</em> ser considerarán cuando se realiza la comparación "
+"entre carpetas. Cualquier archivo que iguale con un filtro activo no será siquiera "
+"mostrado en el árbol de comparaciones. Los filtros de nombres de archivo pueden "
+"igualar tanto archivos como carpetas; si una carpeta se filtra, ella y todos sus "
 "contenidos se ignoran."
 
 #. (itstool) path: section/p
 #: C/file-filters.page:116
 msgid ""
-"Filename filters match according to shell glob patterns. For example, "
-"<code>*.jpg</code> will match all filenames ending in <code>.jpg</code>. The "
-"following table lists all of the shell glob characters that <app>Meld</app> "
-"recognises."
+"Filename filters match according to shell glob patterns. For example, <code>*.jpg</"
+"code> will match all filenames ending in <code>.jpg</code>. The following table lists "
+"all of the shell glob characters that <app>Meld</app> recognises."
 msgstr ""
-"Los filtros de nombres de archivo coinciden con los patrones de comodines "
-"del shell. Por ejemplo, <code>*.jpg</code> coincidirá con todas los archivos "
-"que terminen en <code>.jpg</code>. La siguiente tabla lista todos los "
-"caracteres comodines globales que <app>Meld</app> reconoce."
+"Los filtros de nombres de archivo coinciden con los patrones de comodines del shell. "
+"Por ejemplo, <code>*.jpg</code> coincidirá con todas los archivos que terminen en "
+"<code>.jpg</code>. La siguiente tabla lista todos los caracteres comodines globales "
+"que <app>Meld</app> reconoce."
 
 #. (itstool) path: table/title
 #: C/file-filters.page:124
@@ -387,20 +373,18 @@ msgstr "「貓」或「狗」其中一個"
 #. (itstool) path: note/p
 #: C/file-filters.page:157
 msgid ""
-"Changing a filter's <gui>Active</gui> setting in the <gui>Preferences</gui> "
-"dialog changes whether that filter is active <em>by default</em>."
+"Changing a filter's <gui>Active</gui> setting in the <gui>Preferences</gui> dialog "
+"changes whether that filter is active <em>by default</em>."
 msgstr ""
-"Cambiar la opción <gui>Activo</gui> de un filtro en el diálogo de "
-"<gui>Preferencias</gui> cambia si el filtro estará activo <em>de manera "
-"predeterminada</em>."
+"改變過濾器的<gui>開啟</gui>設定，可在<gui>偏好</gui>的對話匣中改變，以決定過濾器是否以"
+"開啟為<em>預設</em>。"
 
 #. (itstool) path: note/p
 #: C/file-filters.page:163
 msgid ""
-"Activating a filter from the menu or the toolbar turns the filter on or off "
-"for <em>this comparison only</em>."
-msgstr ""
-"從選單啟動過濾，又或透過工具列將<em>只限本次比對的</em>過濾功能啟用或關閉。"
+"Activating a filter from the menu or the toolbar turns the filter on or off for "
+"<em>this comparison only</em>."
+msgstr "從選單啟動過濾，又或透過工具列將<em>只限本次比對的</em>過濾功能啟用或關閉。"
 
 #. (itstool) path: section/title
 #: C/file-filters.page:174
@@ -410,29 +394,27 @@ msgstr "檔名不區分大小寫"
 #. (itstool) path: section/p
 #: C/file-filters.page:176
 msgid ""
-"Files are compared across directories according to their name. This "
-"comparison is case sensitive by default; that is, the files <file>README</"
-"file>, <file>readme</file> and <file>ReadMe</file> would all be seen as "
-"different files."
+"Files are compared across directories according to their name. This comparison is case "
+"sensitive by default; that is, the files <file>README</file>, <file>readme</file> and "
+"<file>ReadMe</file> would all be seen as different files."
 msgstr ""
-"Los archivos se comparan entre carpetas de acuerdo a su nombre. Esta "
-"comparación es sensible a capitalización de manera predeterminada; esto es, "
-"los archivos <file>README</file>, <file>readme</file> y <file>ReadMe</file> "
-"ser considerarán como distintos."
+"Los archivos se comparan entre carpetas de acuerdo a su nombre. Esta comparación es "
+"sensible a capitalización de manera predeterminada; esto es, los archivos "
+"<file>README</file>, <file>readme</file> y <file>ReadMe</file> ser considerarán como "
+"distintos."
 
 #. (itstool) path: section/p
 #: C/file-filters.page:183
 msgid ""
-"When comparing folders on some filesystems (e.g., HFS+ or FAT) you may wish "
-"to make <app>Meld</app> treat filenames as case insensitive. You can do this "
-"by selecting <guiseq><gui style=\"menu\">View</gui><gui style=\"menuitem"
-"\">Ignore filename case</gui></guiseq> from the menus."
+"When comparing folders on some filesystems (e.g., HFS+ or FAT) you may wish to make "
+"<app>Meld</app> treat filenames as case insensitive. You can do this by selecting "
+"<guiseq><gui style=\"menu\">View</gui><gui style=\"menuitem\">Ignore filename case</"
+"gui></guiseq> from the menus."
 msgstr ""
-"Cuando se comparan carpetas en algunos sistemas de archivo (por ejemplo, HFS"
-"+ o FAT) puede querer que <app>Meld</app> trate los nombres ignorando la "
-"capitalización. Esto se puede lograr seleccionando <guiseq><gui style=\"menu"
-"\">Vista</gui><gui style=\"menuitem\">Ignorar capitalización de archivos</"
-"gui></guiseq> desde los menús."
+"Cuando se comparan carpetas en algunos sistemas de archivo (por ejemplo, HFS+ o FAT) "
+"puede querer que <app>Meld</app> trate los nombres ignorando la capitalización. Esto "
+"se puede lograr seleccionando <guiseq><gui style=\"menu\">Vista</gui><gui style="
+"\"menuitem\">Ignorar capitalización de archivos</gui></guiseq> desde los menús."
 
 #. (itstool) path: page/title
 #: C/text-filters.page:17
@@ -442,29 +424,27 @@ msgstr "將文字過濾走"
 #. (itstool) path: page/p
 #: C/text-filters.page:19
 msgid ""
-"When comparing several files, you may have sections of text where "
-"differences aren't really important. For example, you may want to focus on "
-"changed sections of code, and ignore any changes in comment lines. With text "
-"filters you can tell <app>Meld</app> to ignore text that matches a pattern "
-"(i.e., a regular expression) when showing differences between files."
+"When comparing several files, you may have sections of text where differences aren't "
+"really important. For example, you may want to focus on changed sections of code, and "
+"ignore any changes in comment lines. With text filters you can tell <app>Meld</app> to "
+"ignore text that matches a pattern (i.e., a regular expression) when showing "
+"differences between files."
 msgstr ""
-"Cuando compare varios archivos, puede tener varias secciones de texto donde "
-"las diferencias no sean realmente importantes, quizás quiera enfocarse en "
-"los cambios en las secciones de código, e ignorar los cambios en los "
-"comentarios. Con los filtros de texto puede decirle a <app>Meld</app> que "
-"ignore el texto que coincida con el patrón (ej, con una expresión regular) "
-"cuando muestre las diferencias entre archivos."
+"Cuando compare varios archivos, puede tener varias secciones de texto donde las "
+"diferencias no sean realmente importantes, quizás quiera enfocarse en los cambios en "
+"las secciones de código, e ignorar los cambios en los comentarios. Con los filtros de "
+"texto puede decirle a <app>Meld</app> que ignore el texto que coincida con el patrón "
+"(ej, con una expresión regular) cuando muestre las diferencias entre archivos."
 
 #. (itstool) path: note/p
 #: C/text-filters.page:28
 msgid ""
-"Text filters don't just affect file comparisons, but also folder "
-"comparisons. Check the <link xref=\"file-filters\">file filtering notes</"
-"link> for more details."
+"Text filters don't just affect file comparisons, but also folder comparisons. Check "
+"the <link xref=\"file-filters\">file filtering notes</link> for more details."
 msgstr ""
-"Los filtros de texto no solo afectan las comparaciones entre archivos, sino "
-"también las comparaciones entre carpetas. Consulte a las <link xref=\"file-"
-"filters\"> notas sobre filtros de archivos </link> para obtener más detalles."
+"Los filtros de texto no solo afectan las comparaciones entre archivos, sino también "
+"las comparaciones entre carpetas. Consulte a las <link xref=\"file-filters\"> notas "
+"sobre filtros de archivos </link> para obtener más detalles."
 
 #. (itstool) path: section/title
 #: C/text-filters.page:37
@@ -474,42 +454,41 @@ msgstr "添加及使用文字過濾器"
 #. (itstool) path: section/p
 #: C/text-filters.page:39
 msgid ""
-"You can turn text filters on or off from the the <gui>Text Filters</gui> tab "
-"in <gui>Preferences</gui> dialog. <app>Meld</app> comes with a few simple "
-"filters that you might find useful, but you can add your own as well."
+"You can turn text filters on or off from the the <gui>Text Filters</gui> tab in "
+"<gui>Preferences</gui> dialog. <app>Meld</app> comes with a few simple filters that "
+"you might find useful, but you can add your own as well."
 msgstr ""
-"Se pueden activar o desactivar los filtros de texto desde la pestaña "
-"<gui>Filtros de Texto</gui> en la ventana de <gui>Preferencias</gui>. "
-"<app>Meld</app> proporciona unos pocos simples filtros que pueden resultar "
-"útiles, pero es posible añadir los propios también. "
+"Se pueden activar o desactivar los filtros de texto desde la pestaña <gui>Filtros de "
+"Texto</gui> en la ventana de <gui>Preferencias</gui>. <app>Meld</app> proporciona unos "
+"pocos simples filtros que pueden resultar útiles, pero es posible añadir los propios "
+"también. "
 
 #. (itstool) path: section/p
 #: C/text-filters.page:45
 msgid ""
-"In <app>Meld</app>, text filters are regular expressions that are matched "
-"against the text of files you're comparing. Any text that is matched is "
-"ignored during the comparsion; you'll still see this text in the comparison "
-"view, but it won't be taken into account when finding differences. Text "
-"filters are applied in order, so it's possible for the first filter to "
-"remove text that now makes the second filter match, and so on."
+"In <app>Meld</app>, text filters are regular expressions that are matched against the "
+"text of files you're comparing. Any text that is matched is ignored during the "
+"comparsion; you'll still see this text in the comparison view, but it won't be taken "
+"into account when finding differences. Text filters are applied in order, so it's "
+"possible for the first filter to remove text that now makes the second filter match, "
+"and so on."
 msgstr ""
-"En <app>Meld</app>, los filtros de texto son expresiones regulares que se "
-"comparan con el texto de los archivos que se están comparando. Cualquier "
-"texto que coincida se ignora durante la comparación; todavía puede verse ese "
-"texto en la vista de comparación, pero no se tendrá en cuenta cuando se "
-"encuentren las diferencias. Los filtros de texto se aplican en orden, de "
-"forma que es posible para el primer filtro quitar texto que podría coincidir "
-"con el segundo filtro, y así sucesivamente."
+"En <app>Meld</app>, los filtros de texto son expresiones regulares que se comparan con "
+"el texto de los archivos que se están comparando. Cualquier texto que coincida se "
+"ignora durante la comparación; todavía puede verse ese texto en la vista de "
+"comparación, pero no se tendrá en cuenta cuando se encuentren las diferencias. Los "
+"filtros de texto se aplican en orden, de forma que es posible para el primer filtro "
+"quitar texto que podría coincidir con el segundo filtro, y así sucesivamente."
 
 #. (itstool) path: note/p
 #: C/text-filters.page:55
 msgid ""
-"If you're not familiar with regular expressions, you might want to check out "
-"the Python <link href=\"http://docs.python.org/howto/regex.html\">Regular "
-"Expression HOWTO</link>."
+"If you're not familiar with regular expressions, you might want to check out the "
+"Python <link href=\"http://docs.python.org/howto/regex.html\">Regular Expression "
+"HOWTO</link>."
 msgstr ""
-"如果您不熟悉正則表達式，您可以參照"
-"Python的<link href=\"http://docs.python.org/howto/regex.html\">Python正則表達式操作指南</link>連結。"
+"如果您不熟悉正則表達式，您可以參照Python的<link href=\"http://docs.python.org/howto/"
+"regex.html\">Python正則表達式操作指南</link>連結。"
 
 #. (itstool) path: section/title
 #: C/text-filters.page:67
@@ -519,15 +498,15 @@ msgstr "讓文字過濾器正確運作"
 #. (itstool) path: section/p
 #: C/text-filters.page:69
 msgid ""
-"It's easy to get text filtering wrong, and Meld's support for filtering "
-"isn't complete. In particular, a text filter can't change the number of "
-"lines in a file. For example, if we had the built-in <gui>Script comment</"
-"gui> filter enabled, and compared the following files:"
+"It's easy to get text filtering wrong, and Meld's support for filtering isn't "
+"complete. In particular, a text filter can't change the number of lines in a file. For "
+"example, if we had the built-in <gui>Script comment</gui> filter enabled, and compared "
+"the following files:"
 msgstr ""
-"Es fácil cometer errores con el filtrado de texto, y el soporte para "
-"filtrado de Meld no está completo. En particular, un filtro de texto no "
-"puede cambiar el número de líneas de un archivo. Por ejemplo, si activa el "
-"filtro <gui>Skript komment</gui>, y compara los siguientes archivos:"
+"Es fácil cometer errores con el filtrado de texto, y el soporte para filtrado de Meld "
+"no está completo. En particular, un filtro de texto no puede cambiar el número de "
+"líneas de un archivo. Por ejemplo, si activa el filtro <gui>Skript komment</gui>, y "
+"compara los siguientes archivos:"
 
 #. (itstool) path: listing/title
 #: C/text-filters.page:80
@@ -574,20 +553,19 @@ msgstr ""
 #. (itstool) path: section/p
 #: C/text-filters.page:101
 msgid ""
-"then the lines starting with <code>b</code> would be shown as identical (the "
-"comment is stripped out) but the <code>d</code> line would be shown as "
-"different to the comment line on the right. This happens because the "
-"<code>#comment</code> is removed from the right-hand side, but the line "
-"itself can not be removed; <app>Meld</app> will show the <code>d</code> line "
-"as being different to what it sees as a blank line on the other side."
+"then the lines starting with <code>b</code> would be shown as identical (the comment "
+"is stripped out) but the <code>d</code> line would be shown as different to the "
+"comment line on the right. This happens because the <code>#comment</code> is removed "
+"from the right-hand side, but the line itself can not be removed; <app>Meld</app> will "
+"show the <code>d</code> line as being different to what it sees as a blank line on the "
+"other side."
 msgstr ""
-"por lo tanto, las líneas que comienzan con <code>b</code> se mostrarían como "
-"idénticas (los comentarios se eliminan) pero la línea <code>d</code> se "
-"mostraría como diferente a la línea de comentario de la derecha. Esto ocurre "
-"porque el <code>#comentario</code> se quita de la parte derecho, pero la "
-"línea en sí misma no se puede quitar; <app>Meld</app> mostrará la línea "
-"<code>d</code> como diferente de lo que ve como una línea en blanco en el "
-"otro lado."
+"por lo tanto, las líneas que comienzan con <code>b</code> se mostrarían como idénticas "
+"(los comentarios se eliminan) pero la línea <code>d</code> se mostraría como diferente "
+"a la línea de comentario de la derecha. Esto ocurre porque el <code>#comentario</code> "
+"se quita de la parte derecho, pero la línea en sí misma no se puede quitar; <app>Meld</"
+"app> mostrará la línea <code>d</code> como diferente de lo que ve como una línea en "
+"blanco en el otro lado."
 
 #. (itstool) path: section/title
 #: C/text-filters.page:114
@@ -597,33 +575,31 @@ msgstr "空行和過濾器"
 #. (itstool) path: section/p
 #: C/text-filters.page:116
 msgid ""
-"The <gui>Ignore changes which insert or delete blank lines</gui> preference "
-"in the <gui>Text Filters</gui> tab requires special explanation. If this "
-"special filter is enabled, then any change consisting only of blank lines is "
-"completely ignored. This may occur because there was an actual whitespace "
-"change in the text, but it may also arise if your active text filters have "
-"removed all of the other content from a change, leaving only blank lines."
+"The <gui>Ignore changes which insert or delete blank lines</gui> preference in the "
+"<gui>Text Filters</gui> tab requires special explanation. If this special filter is "
+"enabled, then any change consisting only of blank lines is completely ignored. This "
+"may occur because there was an actual whitespace change in the text, but it may also "
+"arise if your active text filters have removed all of the other content from a change, "
+"leaving only blank lines."
 msgstr ""
-"La preferencia <gui>Ignorar cambios con líneas vacías insertadas o "
-"eliminadas</gui> en la pestaña <gui>Filtros de texto</gui> requiere una "
-"explicación más detallada. Si este filtro especial está activado, entonces "
-"cualquier cambio que consista solamente en líneas en blanco, se ignora por "
-"completo. Esto puede ocurrir porque solo haya un cambio de un espacio en "
-"blanco en el texto, pero también puede surgir si los otros filtros de texto "
-"activos han quitado todo el contenido de un cambio, dejando solo líneas en "
-"blanco."
+"La preferencia <gui>Ignorar cambios con líneas vacías insertadas o eliminadas</gui> en "
+"la pestaña <gui>Filtros de texto</gui> requiere una explicación más detallada. Si este "
+"filtro especial está activado, entonces cualquier cambio que consista solamente en "
+"líneas en blanco, se ignora por completo. Esto puede ocurrir porque solo haya un "
+"cambio de un espacio en blanco en el texto, pero también puede surgir si los otros "
+"filtros de texto activos han quitado todo el contenido de un cambio, dejando solo "
+"líneas en blanco."
 
 #. (itstool) path: section/p
 #: C/text-filters.page:125
 msgid ""
-"You can use this option to get around some of the <link xref=\"#text-filter-"
-"problems\">problems and limitations</link> resulting from filters not being "
-"able to remove whole lines, but it can also be useful in and of itself."
+"You can use this option to get around some of the <link xref=\"#text-filter-problems"
+"\">problems and limitations</link> resulting from filters not being able to remove "
+"whole lines, but it can also be useful in and of itself."
 msgstr ""
-"Puede usarse esta opción para acotar algunos de los <link xref=\"#text-"
-"filter-problems\">problemas y limitaciones</link> resultantes de que los "
-"filtros no son capaces de quitar líneas enteras, pero también puede resultar "
-"útil en y por si mismo."
+"Puede usarse esta opción para acotar algunos de los <link xref=\"#text-filter-problems"
+"\">problemas y limitaciones</link> resultantes de que los filtros no son capaces de "
+"quitar líneas enteras, pero también puede resultar útil en y por si mismo."
 
 #. (itstool) path: page/title
 #: C/resolving-conflicts.page:15
@@ -633,23 +609,21 @@ msgstr "解決合併衝突"
 #. (itstool) path: page/p
 #: C/resolving-conflicts.page:17
 msgid ""
-"One of the best uses of <app>Meld</app> is to resolve conflicts that occur "
-"while merging different branches."
+"One of the best uses of <app>Meld</app> is to resolve conflicts that occur while "
+"merging different branches."
 msgstr ""
-"<app>Meld</app>其中一個讓使用者最愛使用的功能，就是在合併不同分支時"
-"解決當中的衝突。"
+"<app>Meld</app>其中一個讓使用者最愛使用的功能，就是在合併不同分支時解決當中的衝突。"
 
 #. (itstool) path: page/p
 #: C/resolving-conflicts.page:22
 msgid ""
-"For example, when using <app>Git</app>, <cmd>git mergetool</cmd> will start "
-"a 'merge helper'; <app>Meld</app> is one such helper. If you want to make "
-"<app>git mergetool</app> use <app>Meld</app> by default, you can add"
+"For example, when using <app>Git</app>, <cmd>git mergetool</cmd> will start a 'merge "
+"helper'; <app>Meld</app> is one such helper. If you want to make <app>git mergetool</"
+"app> use <app>Meld</app> by default, you can add"
 msgstr ""
-"Por ejemplo, cuando al usar <app>Git</app>, <cmd>git mergetool</cmd> arranca "
-"un «ayudante de mezcla»; <app>Meld</app> es uno de estos ayudantes. Si "
-"quiere hacer que <app>git mergetool</app> use <app>Meld</app> de manera "
-"predeterminada, puede agregar"
+"Por ejemplo, cuando al usar <app>Git</app>, <cmd>git mergetool</cmd> arranca un "
+"«ayudante de mezcla»; <app>Meld</app> es uno de estos ayudantes. Si quiere hacer que "
+"<app>git mergetool</app> use <app>Meld</app> de manera predeterminada, puede agregar"
 
 #. (itstool) path: page/code
 #: C/resolving-conflicts.page:27
@@ -666,15 +640,14 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/resolving-conflicts.page:31
 msgid ""
-"to <file>.git/gitconfig</file>. See the <app>git mergetool</app> manual for "
-"details."
+"to <file>.git/gitconfig</file>. See the <app>git mergetool</app> manual for details."
 msgstr ""
-"al archivo <file>.git/gitconfig</file>. Consulte el manual de <app>git "
-"mergetool</app> para obtener más detalles."
+"al archivo <file>.git/gitconfig</file>. Consulte el manual de <app>git mergetool</app> "
+"para obtener más detalles."
 
 #. (itstool) path: info/title
-#: C/preferences.page:5 C/file-mode.page:5 C/introduction.page:5
-#: C/folder-mode.page:5 C/missing-functionality.page:5
+#: C/preferences.page:5 C/file-mode.page:5 C/introduction.page:5 C/folder-mode.page:5
+#: C/missing-functionality.page:5
 msgctxt "sort"
 msgid "1"
 msgstr "1"
@@ -692,72 +665,70 @@ msgstr "Meld的偏好設定"
 #. (itstool) path: terms/title
 #: C/preferences.page:18
 msgid "Editor preferences"
-msgstr "Editā priförènses"
+msgstr "編輯器偏好"
 
 #. (itstool) path: item/title
 #: C/preferences.page:20
 msgid "Editor command"
-msgstr "Editā kommand"
+msgstr "編輯器命令"
 
 #. (itstool) path: item/p
 #: C/preferences.page:21
 msgid ""
-"The name of the command to run to open text files in an external editor. "
-"This may be just the command (e.g., <cmd>gedit</cmd>) in which case the file "
-"to be opened will be passed as the last argument. Alternatively, you can add "
-"<code>{file}</code> and <code>{line}</code> elements to the command, in "
-"which case <app>Meld</app> will substitute the file path and current line "
-"number respectively (e.g., <cmd>gedit {file}:{line}</cmd>)."
+"The name of the command to run to open text files in an external editor. This may be "
+"just the command (e.g., <cmd>gedit</cmd>) in which case the file to be opened will be "
+"passed as the last argument. Alternatively, you can add <code>{file}</code> and "
+"<code>{line}</code> elements to the command, in which case <app>Meld</app> will "
+"substitute the file path and current line number respectively (e.g., <cmd>gedit {file}:"
+"{line}</cmd>)."
 msgstr ""
-"El nombre del comando que ejecutar para abrir archivos de texto en un editor "
-"externo. Este puede ser simplemente el comando (por ejemplo: <cmd>gedit</"
-"cmd>) en cuyo caso el archivo que abrir se pasará como el último argumento. "
-"De otra manera, puede agregar los elementos <code>{archivo}</code> y "
-"<code>{línea}</code> al comando, en cuyo caso <app>Meld</app> sustituirá la "
-"ruta al archivo y el número de línea respectivamente (por ejemplo: "
-"<cmd>gedit {archivo}:{línea}</cmd>)."
+"El nombre del comando que ejecutar para abrir archivos de texto en un editor externo. "
+"Este puede ser simplemente el comando (por ejemplo: <cmd>gedit</cmd>) en cuyo caso el "
+"archivo que abrir se pasará como el último argumento. De otra manera, puede agregar "
+"los elementos <code>{archivo}</code> y <code>{línea}</code> al comando, en cuyo caso "
+"<app>Meld</app> sustituirá la ruta al archivo y el número de línea respectivamente "
+"(por ejemplo: <cmd>gedit {archivo}:{línea}</cmd>)."
 
 #. (itstool) path: page/title
 #: C/file-changes.page:16
 msgid "Dealing with changes"
-msgstr "Tratando con los cambios"
+msgstr "處理變更"
 
 #. (itstool) path: page/p
 #: C/file-changes.page:18
 msgid ""
-"<app>Meld</app> deals with differences between files as a list of <em>change "
-"blocks</em> or more simply <em>changes</em>. Each change is a group of lines "
-"which correspond between files. Since these changes are what you're usually "
-"interested in, <app>Meld</app> gives you specific tools to navigate between "
-"these changes and to edit them. You can find these tools in the <gui style="
-"\"menu\">Changes</gui> menu."
+"<app>Meld</app> deals with differences between files as a list of <em>change blocks</"
+"em> or more simply <em>changes</em>. Each change is a group of lines which correspond "
+"between files. Since these changes are what you're usually interested in, <app>Meld</"
+"app> gives you specific tools to navigate between these changes and to edit them. You "
+"can find these tools in the <gui style=\"menu\">Changes</gui> menu."
 msgstr ""
-"<app>Meld</app> trata las diferencias entre archivos como si fueran una "
-"lista de <em>bloques de cambios</em> o simplemente <em>cambios</em>. Cada "
-"cambio es un grupo de líneas que se corresponden entre archivos. Dado que "
-"estos cambios son lo que usualmente más interesa, <app>Meld</app> ofrece "
-"herramientas específicas para navegar entre estos cambios y editarlos. Puede "
-"encontrar estas herramientas en el menú <gui style=\"menu\">Cambios</gui>."
+"<app>Meld</app> trata las diferencias entre archivos como si fueran una lista de "
+"<em>bloques de cambios</em> o simplemente <em>cambios</em>. Cada cambio es un grupo de "
+"líneas que se corresponden entre archivos. Dado que estos cambios son lo que "
+"usualmente más interesa, <app>Meld</app> ofrece herramientas específicas para navegar "
+"entre estos cambios y editarlos. Puede encontrar estas herramientas en el menú <gui "
+"style=\"menu\">Cambios</gui>."
 
 #. (itstool) path: section/title
 #: C/file-changes.page:30
 msgid "Navigating between changes"
-msgstr "Navegar entre los cambios"
+msgstr "在變更之間遊走"
 
 #. (itstool) path: section/p
 #: C/file-changes.page:32
 msgid ""
-"You can navigate between changes with the <guiseq><gui style=\"menu"
-"\">Changes</gui><gui style=\"menuitem\">Previous change</gui></guiseq> and "
-"<guiseq><gui style=\"menu\">Changes</gui><gui style=\"menuitem\">Next "
-"change</gui></guiseq> menu items. You can also use your mouse's scroll wheel "
-"to move between changes, by scrolling on the central change bar."
+"You can navigate between changes with the <guiseq><gui style=\"menu\">Changes</"
+"gui><gui style=\"menuitem\">Previous change</gui></guiseq> and <guiseq><gui style="
+"\"menu\">Changes</gui><gui style=\"menuitem\">Next change</gui></guiseq> menu items. "
+"You can also use your mouse's scroll wheel to move between changes, by scrolling on "
+"the central change bar."
 msgstr ""
-"Puede navegar entre los cambios con los elementos de menú <guiseq><gui style="
-"\"menu\">Cambios</gui><gui style=\"menuitem\">Cambios Previos</gui></guiseq> "
-"y <guiseq><gui style=\"menu\">Cambios</gui><gui style=\"menuitem\">Siguiente "
-"cambio</gui></guiseq>. También puede usar la rueda de su ratón para moverse "
-"entre los cambios, desplazándose en la barra central de cambios."
+"Puede navegar entre los cambios con los elementos de menú <guiseq><gui style=\"menu"
+"\">Cambios</gui><gui style=\"menuitem\">Cambios Previos</gui></guiseq> y <guiseq><gui "
+"style=\"menu\">Cambios</gui><gui style=\"menuitem\">Siguiente cambio</gui></guiseq>. "
+"También puede usar la rueda de su ratón para moverse entre los cambios, desplazándose "
+"en la barra central de cambios."
 
 #. (itstool) path: section/title
 #: C/file-changes.page:46
@@ -767,34 +738,32 @@ msgstr "更改變化"
 #. (itstool) path: section/p
 #: C/file-changes.page:48
 msgid ""
-"In addition to directly editing text files, <app>Meld</app> gives you tools "
-"to move, copy or delete individual differences between files. The bar "
-"between two files not only shows you what parts of the two files correspond, "
-"but also lets you selectively merge or delete differing changes by clicking "
-"the arrow or cross icons next to the start of each change."
+"In addition to directly editing text files, <app>Meld</app> gives you tools to move, "
+"copy or delete individual differences between files. The bar between two files not "
+"only shows you what parts of the two files correspond, but also lets you selectively "
+"merge or delete differing changes by clicking the arrow or cross icons next to the "
+"start of each change."
 msgstr ""
-"Además de editar directamente archivos de texto, <app>Meld</app> brinda "
-"herramientas para mover, copiar o eliminar diferencias individuales entre "
-"archivos. La barra entre dos archivos no sólo muestra qué partes de los dos "
-"archivos se corresponden, sino que también permite combinar a su elección o "
-"eliminar diferentes cambios pulsando en los iconos de la flecha o cruz junto "
-"al comienzo de cada cambio."
+"Además de editar directamente archivos de texto, <app>Meld</app> brinda herramientas "
+"para mover, copiar o eliminar diferencias individuales entre archivos. La barra entre "
+"dos archivos no sólo muestra qué partes de los dos archivos se corresponden, sino que "
+"también permite combinar a su elección o eliminar diferentes cambios pulsando en los "
+"iconos de la flecha o cruz junto al comienzo de cada cambio."
 
 #. (itstool) path: section/p
 #: C/file-changes.page:52
 msgid ""
-"The default action is <em>replace</em>. This action replaces the contents of "
-"the corresponding change with the current change."
+"The default action is <em>replace</em>. This action replaces the contents of the "
+"corresponding change with the current change."
 msgstr ""
-"La acción predeterminada es <em>reemplazar</em>. Esta acción reemplaza el "
-"contenido del cambio que corresponde con el cambio en el que se está "
-"trabajando."
+"La acción predeterminada es <em>reemplazar</em>. Esta acción reemplaza el contenido "
+"del cambio que corresponde con el cambio en el que se está trabajando."
 
 #. (itstool) path: section/p
 #: C/file-changes.page:59
 msgid ""
-"Hold down the <key>Shift</key> key to change the current action to "
-"<em>delete</em>. This action deletes the current change."
+"Hold down the <key>Shift</key> key to change the current action to <em>delete</em>. "
+"This action deletes the current change."
 msgstr ""
 "Mantenga pulsada la tecla <key>Mayús</key> para cambiar la acción actual a "
 "<em>eliminar</em>. Esta acción elimina el cambio actual."
@@ -802,13 +771,13 @@ msgstr ""
 #. (itstool) path: section/p
 #: C/file-changes.page:62
 msgid ""
-"Hold down the <key>Ctrl</key> key to change the current action to "
-"<em>insert</em>. This action inserts the current change above or below (as "
-"selected) the corresponding change."
+"Hold down the <key>Ctrl</key> key to change the current action to <em>insert</em>. "
+"This action inserts the current change above or below (as selected) the corresponding "
+"change."
 msgstr ""
 "Mantenga pulsada la tecla <key>Ctrl</key> para cambiar la acción actual a "
-"<em>insertar</em>. Esta acción inserta el cambio actual arriba o abajo "
-"(según se haya elegido) del cambio correspondiente."
+"<em>insertar</em>. Esta acción inserta el cambio actual arriba o abajo (según se haya "
+"elegido) del cambio correspondiente."
 
 #. (itstool) path: page/title
 #: C/file-mode.page:17
@@ -818,30 +787,29 @@ msgstr "開始比對檔案"
 #. (itstool) path: page/p
 #: C/file-mode.page:19
 msgid ""
-"<app>Meld</app> lets you compare two or three text files side-by-side. You "
-"can start a new file comparison by selecting the <guiseq><gui style=\"menu"
-"\">File</gui><gui style=\"menuitem\">New...</gui></guiseq> menu item."
+"<app>Meld</app> lets you compare two or three text files side-by-side. You can start a "
+"new file comparison by selecting the <guiseq><gui style=\"menu\">File</gui><gui style="
+"\"menuitem\">New...</gui></guiseq> menu item."
 msgstr ""
-"<app>Meld</app> permite comparar dos o tres archivos de texto uno al lado "
-"del otro. Puede comenzar una nueva comparación entre archivos seleccionando "
-"en el menú <guiseq><gui style=\"menu\">Archivo</gui><gui style=\"menuitem"
-"\">Nuevo...</gui></guiseq>."
+"<app>Meld</app> permite comparar dos o tres archivos de texto uno al lado del otro. "
+"Puede comenzar una nueva comparación entre archivos seleccionando en el menú "
+"<guiseq><gui style=\"menu\">Archivo</gui><gui style=\"menuitem\">Nuevo...</gui></"
+"guiseq>."
 
 #. (itstool) path: page/p
 #: C/file-mode.page:26
 msgid ""
-"Once you've selected your files, <app>Meld</app> will show them side-by-"
-"side. Differences between the files will be highlighted to make individual "
-"changes easier to see. Editing the files will cause the comparison to update "
-"on-the-fly. For details on navigating between individual changes, and on how "
-"to use change-based editing, see <link xref=\"file-changes\"/>."
+"Once you've selected your files, <app>Meld</app> will show them side-by-side. "
+"Differences between the files will be highlighted to make individual changes easier to "
+"see. Editing the files will cause the comparison to update on-the-fly. For details on "
+"navigating between individual changes, and on how to use change-based editing, see "
+"<link xref=\"file-changes\"/>."
 msgstr ""
-"Una vez que haya seleccionado sus archivos, <app>Meld</app> los mostrará uno "
-"junto a otro. Las diferencias entre los archivos se resaltarán para que cada "
-"cambio sea más fácil de ver. Editar los archivos hará que la comparación se "
-"actualice en el acto. Para obtener detalles sobre cómo navegar entre los "
-"cambios individuales, y cómo utilizar la edición basada en cambios, consulte "
-"la <link xref=\"file-changes\"/>."
+"Una vez que haya seleccionado sus archivos, <app>Meld</app> los mostrará uno junto a "
+"otro. Las diferencias entre los archivos se resaltarán para que cada cambio sea más "
+"fácil de ver. Editar los archivos hará que la comparación se actualice en el acto. "
+"Para obtener detalles sobre cómo navegar entre los cambios individuales, y cómo "
+"utilizar la edición basada en cambios, consulte la <link xref=\"file-changes\"/>."
 
 #. (itstool) path: section/title
 #: C/file-mode.page:35
@@ -851,48 +819,45 @@ msgstr "<app>Meld</app>的檔案比對"
 #. (itstool) path: section/p
 #: C/file-mode.page:37
 msgid ""
-"There are several different parts to a file comparison. The most important "
-"parts are the editors where your files appear. In addition to these editors, "
-"the areas around and between your files give you a visual overview and "
-"actions to help you handle changes between the files."
+"There are several different parts to a file comparison. The most important parts are "
+"the editors where your files appear. In addition to these editors, the areas around "
+"and between your files give you a visual overview and actions to help you handle "
+"changes between the files."
 msgstr ""
-"Hay varias partes diferentes en una comparación entre archivos. La más "
-"importante son los editores en los que los archivos aparecen. Además de "
-"estos editores, las áreas alrededor y entre sus archivos brindan una visión "
-"general y acciones para ayudarle a manejar los cambios entre los archivos."
+"Hay varias partes diferentes en una comparación entre archivos. La más importante son "
+"los editores en los que los archivos aparecen. Además de estos editores, las áreas "
+"alrededor y entre sus archivos brindan una visión general y acciones para ayudarle a "
+"manejar los cambios entre los archivos."
 
 #. (itstool) path: section/p
 #: C/file-mode.page:43
 msgid ""
-"On the left and right-hand sides of the window, there are two small vertical "
-"bars showing various coloured blocks. These bars are designed to give you an "
-"overview of all of the differences between your two files. Each coloured "
-"block represents a section that is inserted, deleted, changed or in conflict "
-"between your files, depending on the block's colour used."
+"On the left and right-hand sides of the window, there are two small vertical bars "
+"showing various coloured blocks. These bars are designed to give you an overview of "
+"all of the differences between your two files. Each coloured block represents a "
+"section that is inserted, deleted, changed or in conflict between your files, "
+"depending on the block's colour used."
 msgstr ""
-"En los lados izquierdo y derecho de la ventana, hay dos pequeñas barras "
-"verticales que muestran varios bloques de color. Estas barras están "
-"diseñadas para ofrecer una visión general de todas las diferencias entre los "
-"dos archivos. Cada bloque de color representa una sección que se inserta, "
-"elimina, cambia o en conflicto entre sus archivos, dependiendo del bloque de "
-"color usado."
+"En los lados izquierdo y derecho de la ventana, hay dos pequeñas barras verticales que "
+"muestran varios bloques de color. Estas barras están diseñadas para ofrecer una visión "
+"general de todas las diferencias entre los dos archivos. Cada bloque de color "
+"representa una sección que se inserta, elimina, cambia o en conflicto entre sus "
+"archivos, dependiendo del bloque de color usado."
 
 #. (itstool) path: section/p
 #: C/file-mode.page:50
 msgid ""
-"In between each pair of files is a segment that shows how the changed "
-"sections between your files correspond to each other. You can click on the "
-"arrows in a segment to replace sections in one file with sections from the "
-"other. You can also delete, copy or merge changes. For details on what you "
-"can do with individual change segments, see <link xref=\"file-changes#change-"
-"actions\"/>."
-msgstr ""
-"Entre cada par de archivos hay un segmento que muestra cómo cambiaron las "
-"secciones que se corresponden entre los archivos. Puede pulsar en las "
-"flechas en el segmento para reemplazar las secciones en un archivo con las "
-"del otro. También puede eliminar, copiar o mezclar cambios. Para obtener "
-"detalles sobre cómo hacer cambios en segmentos individuales, consulte la "
+"In between each pair of files is a segment that shows how the changed sections between "
+"your files correspond to each other. You can click on the arrows in a segment to "
+"replace sections in one file with sections from the other. You can also delete, copy "
+"or merge changes. For details on what you can do with individual change segments, see "
 "<link xref=\"file-changes#change-actions\"/>."
+msgstr ""
+"Entre cada par de archivos hay un segmento que muestra cómo cambiaron las secciones "
+"que se corresponden entre los archivos. Puede pulsar en las flechas en el segmento "
+"para reemplazar las secciones en un archivo con las del otro. También puede eliminar, "
+"copiar o mezclar cambios. Para obtener detalles sobre cómo hacer cambios en segmentos "
+"individuales, consulte la <link xref=\"file-changes#change-actions\"/>."
 
 #. (itstool) path: section/title
 #: C/file-mode.page:62
@@ -902,82 +867,75 @@ msgstr "儲存您的變更"
 #. (itstool) path: section/p
 #: C/file-mode.page:64
 msgid ""
-"Once you've finished editing your files, you need to save each file you've "
-"changed."
+"Once you've finished editing your files, you need to save each file you've changed."
 msgstr ""
-"Cuando haya terminado de editar los archivos, es necesario guardar cada "
-"archivo que se haya modificado."
+"Cuando haya terminado de editar los archivos, es necesario guardar cada archivo que se "
+"haya modificado."
 
 #. (itstool) path: section/p
 #: C/file-mode.page:68
 msgid ""
-"You can tell whether your files have been saved since they last changed by "
-"the save icon that appears next to the file name above each file. Also, the "
-"notebook label will show an asterisk (<code>*</code>) after any file that "
-"hasn't been saved."
+"You can tell whether your files have been saved since they last changed by the save "
+"icon that appears next to the file name above each file. Also, the notebook label will "
+"show an asterisk (<code>*</code>) after any file that hasn't been saved."
 msgstr ""
-"Es posible decir si sus archivos se han grabado desde el último cambio por "
-"el icono de guardar que aparece junto al nombre sobre cada archivo. También, "
-"la etiqueta del bloc de notas mostrará un asterisco (<code>*</code>) cuando "
-"el archivo no se haya grabado."
+"Es posible decir si sus archivos se han grabado desde el último cambio por el icono de "
+"guardar que aparece junto al nombre sobre cada archivo. También, la etiqueta del bloc "
+"de notas mostrará un asterisco (<code>*</code>) cuando el archivo no se haya grabado."
 
 #. (itstool) path: section/p
 #: C/file-mode.page:74
 msgid ""
-"You can save the current file by selecting the <guiseq><gui style=\"menu"
-"\">File</gui><gui style=\"menuitem\">Save</gui></guiseq> menu item, or using "
-"the <keyseq><key>Ctrl</key><key>S</key></keyseq> keyboard shortcut."
+"You can save the current file by selecting the <guiseq><gui style=\"menu\">File</"
+"gui><gui style=\"menuitem\">Save</gui></guiseq> menu item, or using the "
+"<keyseq><key>Ctrl</key><key>S</key></keyseq> keyboard shortcut."
 msgstr ""
-"Puede guardar el archivo actual seleccionando en el menú <guiseq><gui style="
-"\"menu\">Archivo</gui><gui style=\"menuitem\">Guardar</gui></guiseq>, o "
-"utilizando el atajo <keyseq><key>Ctrl</key><key>S</key></keyseq>. "
+"Puede guardar el archivo actual seleccionando en el menú <guiseq><gui style=\"menu"
+"\">Archivo</gui><gui style=\"menuitem\">Guardar</gui></guiseq>, o utilizando el atajo "
+"<keyseq><key>Ctrl</key><key>S</key></keyseq>. "
 
 #. (itstool) path: note/p
 #: C/file-mode.page:81
 msgid ""
-"Saving only saves the <em>currently focussed</em> file, which is the file "
-"containing the cursor. If you can't tell which file is focussed, you can "
-"click on the file to focus it before saving."
+"Saving only saves the <em>currently focussed</em> file, which is the file containing "
+"the cursor. If you can't tell which file is focussed, you can click on the file to "
+"focus it before saving."
 msgstr ""
-"Guardar solo guarda el archivo <em>enfocado actualmente</em>, que es la "
-"página que contiene el cursor. Si no puede decir cual es el archivo "
-"enfocado, puede pulsar en el archivo para enfocarlo antes de guardarlo."
+"Guardar solo guarda el archivo <em>enfocado actualmente</em>, que es la página que "
+"contiene el cursor. Si no puede decir cual es el archivo enfocado, puede pulsar en el "
+"archivo para enfocarlo antes de guardarlo."
 
 #. (itstool) path: page/title
 #: C/flattened-view.page:15
 msgid "Flattened view"
-msgstr "Flätenaisen vyu"
+msgstr "平面化檢視"
 
 #. (itstool) path: page/p
 #: C/flattened-view.page:17
 msgid ""
-"When viewing large folders, you may be interested in only a few files among "
-"the thousands in the folder itself. For this reason, <app>Meld</app> "
-"includes a <em>flattened view</em> of a folder; only files that have not "
-"been filtered out (e.g., by <link xref=\"vc-mode#vc-state-filtering\"/>) are "
-"shown, and the folder heirarchy is stripped away, with file paths shown in "
-"the <em>Location</em> column."
+"When viewing large folders, you may be interested in only a few files among the "
+"thousands in the folder itself. For this reason, <app>Meld</app> includes a "
+"<em>flattened view</em> of a folder; only files that have not been filtered out (e.g., "
+"by <link xref=\"vc-mode#vc-state-filtering\"/>) are shown, and the folder heirarchy is "
+"stripped away, with file paths shown in the <em>Location</em> column."
 msgstr ""
-"Cuando esté viendo carpetas grandes, puede estar interesado solo en unos "
-"pocos archivos entre los miles que estén en la carpeta. Por esta razón, "
-"<app>Meld</app> incluye la <em>vista aplanada</em> de una carpeta; solo se "
-"muestran los archivos que no se hayan filtrado (por ejemplo, mediante <link "
-"xref=\"vc-mode#vc-state-filtering\"/>), y la jerarquía de la carpeta se "
-"elimina, con las direcciones de los archivos mostrados en la columna "
-"<em>Ubicación</em>."
+"Cuando esté viendo carpetas grandes, puede estar interesado solo en unos pocos "
+"archivos entre los miles que estén en la carpeta. Por esta razón, <app>Meld</app> "
+"incluye la <em>vista aplanada</em> de una carpeta; solo se muestran los archivos que "
+"no se hayan filtrado (por ejemplo, mediante <link xref=\"vc-mode#vc-state-filtering\"/"
+">), y la jerarquía de la carpeta se elimina, con las direcciones de los archivos "
+"mostrados en la columna <em>Ubicación</em>."
 
 #. (itstool) path: page/p
 #: C/flattened-view.page:27
 msgid ""
-"You can turn this flattened view on or off by unchecking the <guiseq><gui "
-"style=\"menu\">View</gui><gui style=\"menuitem\">Flatten</gui></guiseq> menu "
-"item, or by clicking the corresponding <gui style=\"button\">Flatten</gui> "
-"button on the toolbar."
+"You can turn this flattened view on or off by unchecking the <guiseq><gui style=\"menu"
+"\">View</gui><gui style=\"menuitem\">Flatten</gui></guiseq> menu item, or by clicking "
+"the corresponding <gui style=\"button\">Flatten</gui> button on the toolbar."
 msgstr ""
-"Se puede activar o desactivar esta vista aplanada seleccionando el menú "
-"<guiseq><gui style=\"menu\">Vista</gui><gui style=\"menuitem\">Aplanar</"
-"gui></guiseq>, o pulsando en el botón <gui style=\"button\">Aplanar</gui> en "
-"la barra de herramientas."
+"Se puede activar o desactivar esta vista aplanada seleccionando el menú <guiseq><gui "
+"style=\"menu\">Vista</gui><gui style=\"menuitem\">Aplanar</gui></guiseq>, o pulsando "
+"en el botón <gui style=\"button\">Aplanar</gui> en la barra de herramientas."
 
 #. (itstool) path: page/title
 #: C/index.page:14
@@ -1023,18 +981,16 @@ msgstr "檢視受版本控制的檔案"
 #. (itstool) path: page/p
 #: C/vc-mode.page:18
 msgid ""
-"<app>Meld</app> integrates with <link xref=\"vc-supported\">many version "
-"control systems</link> to let you review local changes and perform simple "
-"version control tasks. You can start a new version control comparison by "
-"selecting the <guiseq><gui style=\"menu\">File</gui><gui style=\"menuitem"
-"\">New...</gui></guiseq> menu item, and clicking on the <gui style=\"tab"
-"\">Version Control</gui> tab."
+"<app>Meld</app> integrates with <link xref=\"vc-supported\">many version control "
+"systems</link> to let you review local changes and perform simple version control "
+"tasks. You can start a new version control comparison by selecting the <guiseq><gui "
+"style=\"menu\">File</gui><gui style=\"menuitem\">New...</gui></guiseq> menu item, and "
+"clicking on the <gui style=\"tab\">Version Control</gui> tab."
 msgstr ""
-"<app>Meld</app>整合<link xref=\"vc-supported\">多個版本"
-"控制系統</link>，讓您回顧本地的變更，進行簡單的"
-"版本控制任務。您可以透過選擇<guiseq><gui style="
-"\"menu\">檔案</gui><gui style=\"menuitem\">新增...</gui></guiseq>，然後"
-"選擇<gui style=\"tab\">版本控制</gui>來開啟新的版本控制比對。"
+"<app>Meld</app>整合<link xref=\"vc-supported\">多個版本控制系統</link>，讓您回顧本地的"
+"變更，進行簡單的版本控制任務。您可以透過選擇<guiseq><gui style=\"menu\">檔案</gui><gui "
+"style=\"menuitem\">新增...</gui></guiseq>，然後選擇<gui style=\"tab\">版本控制</gui>來"
+"開啟新的版本控制比對。"
 
 #. (itstool) path: section/title
 #: C/vc-mode.page:30
@@ -1044,26 +1000,24 @@ msgstr "版本控制比對"
 #. (itstool) path: section/p
 #: C/vc-mode.page:32
 msgid ""
-"Version control comparisons show the differences between the contents of "
-"your folder and the current repository version. Each file in your local copy "
-"has a <link xref=\"#vc-state\">state</link> that indicates how it differs "
-"from the repository copy."
+"Version control comparisons show the differences between the contents of your folder "
+"and the current repository version. Each file in your local copy has a <link xref="
+"\"#vc-state\">state</link> that indicates how it differs from the repository copy."
 msgstr ""
-"版本控制比對顯示您的資料夾與目前倉庫版本之間的差異。在您的本地版本的每一個檔"
-"案均有<link xref=\"#vc-state\">狀態</link>標記該檔與倉庫版本間的差異有多大。"
+"版本控制比對顯示您的資料夾與目前倉庫版本之間的差異。在您的本地版本的每一個檔案均有"
+"<link xref=\"#vc-state\">狀態</link>標記該檔與倉庫版本間的差異有多大。"
 
 #. (itstool) path: section/p
 #: C/vc-mode.page:46
 msgid ""
-"If you want to look at a particular file's differences, you can select it "
-"and press <key>Enter</key>, or double-click the file to start a <link xref="
-"\"file-mode\">file comparison</link>. You can also interact with your "
-"version control system using the <gui style=\"menu\">Changes</gui> menu."
+"If you want to look at a particular file's differences, you can select it and press "
+"<key>Enter</key>, or double-click the file to start a <link xref=\"file-mode\">file "
+"comparison</link>. You can also interact with your version control system using the "
+"<gui style=\"menu\">Changes</gui> menu."
 msgstr ""
-"如果您想查看某特定檔案的差異，您可以選擇該檔，"
-"然後按<key>Enter</key>鍵，又或在該檔上按兩下，"
-"以啟動<link xref=\"file-mode\">檔案比對</link>模式。您亦可"
-"在選單上選擇<gui style=\"menu\">變更</gui>來跟您的版本控制系統互動。"
+"如果您想查看某特定檔案的差異，您可以選擇該檔，然後按<key>Enter</key>鍵，又或在該檔上按"
+"兩下，以啟動<link xref=\"file-mode\">檔案比對</link>模式。您亦可在選單上選擇<gui style="
+"\"menu\">變更</gui>來跟您的版本控制系統互動。"
 
 #. (itstool) path: section/title
 #. (itstool) path: table/title
@@ -1074,18 +1028,17 @@ msgstr "版本控制狀態"
 #. (itstool) path: section/p
 #: C/vc-mode.page:58
 msgid ""
-"Each file or folder in a version control comparison has a <em>state</em>, "
-"obtained from the version control system itself. <app>Meld</app> maps these "
-"different states into a standard set of very similar concepts. As such, "
-"<app>Meld</app> might use slightly different names for states than your "
-"version control system does. The possible states are:"
+"Each file or folder in a version control comparison has a <em>state</em>, obtained "
+"from the version control system itself. <app>Meld</app> maps these different states "
+"into a standard set of very similar concepts. As such, <app>Meld</app> might use "
+"slightly different names for states than your version control system does. The "
+"possible states are:"
 msgstr ""
-"Cada archivo o carpeta en una comparación de control de versiones tiene un "
-"<em>estado</em>, obtenido por el propio sistema de control de versiones. "
-"<app>Meld</app> mapea estos diferentes estados en un conjunto estándar de "
-"conceptos muy similares. De este modo, <app>Meld</app> puede utilizar "
-"nombres ligeramente diferentes para los estados de los que emplea su sistema "
-"de control de versiones. Los estados posibles son:"
+"Cada archivo o carpeta en una comparación de control de versiones tiene un <em>estado</"
+"em>, obtenido por el propio sistema de control de versiones. <app>Meld</app> mapea "
+"estos diferentes estados en un conjunto estándar de conceptos muy similares. De este "
+"modo, <app>Meld</app> puede utilizar nombres ligeramente diferentes para los estados "
+"de los que emplea su sistema de control de versiones. Los estados posibles son:"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:85 C/folder-mode.page:110
@@ -1129,8 +1082,7 @@ msgstr "綠色粗體"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:129
-msgid ""
-"This file/folder is new, and is scheduled to be added to the repository."
+msgid "This file/folder is new, and is scheduled to be added to the repository."
 msgstr "這個檔案/資料夾是新增的，而且排期了會新增到倉庫去。"
 
 #. (itstool) path: td/p
@@ -1145,8 +1097,7 @@ msgstr "紅色粗體文字加上中間一條刪除線"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:144
-msgid ""
-"This file/folder existed, but is scheduled to be removed from the repository."
+msgid "This file/folder existed, but is scheduled to be removed from the repository."
 msgstr "這個檔案/資料夾存在，但已排期從倉庫中移除。"
 
 #. (itstool) path: td/p
@@ -1162,13 +1113,13 @@ msgstr "鮮紅色粗體文字"
 #. (itstool) path: td/p
 #: C/vc-mode.page:159
 msgid ""
-"When trying to merge with the repository, the differences between the local "
-"file and the repository could not be resolved, and the file is now in "
-"conflict with the repository contents"
+"When trying to merge with the repository, the differences between the local file and "
+"the repository could not be resolved, and the file is now in conflict with the "
+"repository contents"
 msgstr ""
-"Cuando se intenta mezclar con el repositorio, las diferencias entre los "
-"archivos locales y los del repositorio podrían no resolverse, y entonces el "
-"archivo se encontrará en conflicto con el contenido del repositorio"
+"Cuando se intenta mezclar con el repositorio, las diferencias entre los archivos "
+"locales y los del repositorio podrían no resolverse, y entonces el archivo se "
+"encontrará en conflicto con el contenido del repositorio"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:167 C/folder-mode.page:176
@@ -1198,11 +1149,11 @@ msgstr "灰掉了的文字"
 #. (itstool) path: td/p
 #: C/vc-mode.page:189
 msgid ""
-"This file/folder has been explicitly ignored (e.g., by an entry in <file>."
-"gitignore</file>) and is not being tracked by version control."
+"This file/folder has been explicitly ignored (e.g., by an entry in <file>.gitignore</"
+"file>) and is not being tracked by version control."
 msgstr ""
-"這檔案/資料夾被刻意忽略（例如：屬於在"
-"<file>.gitignore</file>列出的檔案），不受版本控制系統追蹤。"
+"這檔案/資料夾被刻意忽略（例如：屬於在<file>.gitignore</file>列出的檔案），不受版本控制"
+"系統追蹤。"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:197
@@ -1211,10 +1162,8 @@ msgstr "未有版本控制"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:205
-msgid ""
-"This file is not in the version control system; it is only in the local copy."
-msgstr ""
-"這個檔案本在版本控制系統裡：只存在於本地。"
+msgid "This file is not in the version control system; it is only in the local copy."
+msgstr "這個檔案本在版本控制系統裡：只存在於本地。"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:212 C/folder-mode.page:191
@@ -1239,21 +1188,20 @@ msgstr "依版本控制狀態過濾"
 #. (itstool) path: section/p
 #: C/vc-mode.page:232
 msgid ""
-"Most often, you will only want to see files that are identified as being in "
-"some way different; this is the default setting in <app>Meld</app>. You can "
-"change which file states you see by using the <guiseq><gui style=\"menu"
-"\">View</gui><gui style=\"menuitem\">Version Status</gui></guiseq> menu, or "
-"by clicking the corresponding <gui style=\"button\">Modified</gui>, <gui "
-"style=\"button\">Normal</gui>, <gui style=\"button\">Non VC</gui> and <gui "
-"style=\"button\">Ignored</gui> buttons on the toolbar."
+"Most often, you will only want to see files that are identified as being in some way "
+"different; this is the default setting in <app>Meld</app>. You can change which file "
+"states you see by using the <guiseq><gui style=\"menu\">View</gui><gui style=\"menuitem"
+"\">Version Status</gui></guiseq> menu, or by clicking the corresponding <gui style="
+"\"button\">Modified</gui>, <gui style=\"button\">Normal</gui>, <gui style=\"button"
+"\">Non VC</gui> and <gui style=\"button\">Ignored</gui> buttons on the toolbar."
 msgstr ""
-"A menudo, querrá ver solo los archivos que se presentan alguna diferencia; "
-"esta es la configuración por defecto en <app>Meld</app>. Puede cambiar qué "
-"estados de archivos se muestran usando el menú <guiseq><gui style=\"menu"
-"\">Vista</gui><gui style=\"menuitem\">Estado de la versión</gui></guiseq> o "
-"pulsando el botón <gui style=\"button\">Modificado</gui>, <gui style=\"button"
-"\">Normal</gui>, <gui style=\"button\">Sin control de versiones</gui> o <gui "
-"style=\"button\">Ignorado</gui> en la barra de herramientas."
+"A menudo, querrá ver solo los archivos que se presentan alguna diferencia; esta es la "
+"configuración por defecto en <app>Meld</app>. Puede cambiar qué estados de archivos se "
+"muestran usando el menú <guiseq><gui style=\"menu\">Vista</gui><gui style=\"menuitem"
+"\">Estado de la versión</gui></guiseq> o pulsando el botón <gui style=\"button"
+"\">Modificado</gui>, <gui style=\"button\">Normal</gui>, <gui style=\"button\">Sin "
+"control de versiones</gui> o <gui style=\"button\">Ignorado</gui> en la barra de "
+"herramientas."
 
 #. (itstool) path: page/title
 #: C/keyboard-shortcuts.page:15
@@ -1395,7 +1343,7 @@ msgstr "搜尋一個字串。"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:86
 msgid "<keyseq><key>Ctrl</key><key>G</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>G</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>G</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:87
@@ -1409,19 +1357,14 @@ msgstr "<keyseq><key>Alt</key><key>Up</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:91
-msgid ""
-"Go to the next difference. (Also <keyseq><key>Ctrl</key><key>D</key></"
-"keyseq>)"
-msgstr ""
-"到下一個差異去。（亦可用<keyseq><key>Ctrl</key><key>D</key></keyseq>）"
+msgid "Go to the next difference. (Also <keyseq><key>Ctrl</key><key>D</key></keyseq>)"
+msgstr "到下一個差異去。（亦可用<keyseq><key>Ctrl</key><key>D</key></keyseq>）"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:97
 msgid ""
-"Go to the previous difference. (Also <keyseq><key>Ctrl</key><key>E</key></"
-"keyseq>)"
-msgstr ""
-"到上一個差異去。（亦可用<keyseq><key>Ctrl</key><key>E</key></keyseq>）"
+"Go to the previous difference. (Also <keyseq><key>Ctrl</key><key>E</key></keyseq>)"
+msgstr "到上一個差異去。（亦可用<keyseq><key>Ctrl</key><key>E</key></keyseq>）"
 
 #. (itstool) path: table/title
 #: C/keyboard-shortcuts.page:105
@@ -1471,27 +1414,26 @@ msgstr "Meld是甚麼？"
 #. (itstool) path: page/p
 #: C/introduction.page:16
 msgid ""
-"<app>Meld</app> is a tool for comparing files and directories, and for "
-"resolving differences between them. It is also useful for comparing changes "
-"captured by version control systems."
+"<app>Meld</app> is a tool for comparing files and directories, and for resolving "
+"differences between them. It is also useful for comparing changes captured by version "
+"control systems."
 msgstr ""
-"<app>Meld</app>是一個用來比對檔案及目錄的工具，而且還可"
-"解決比對間的衝突。它在捕捉與版本控制系統的變更亦很有用。"
+"<app>Meld</app>是一個用來比對檔案及目錄的工具，而且還可解決比對間的衝突。它在捕捉與版本"
+"控制系統的變更亦很有用。"
 
 #. (itstool) path: page/p
 #: C/introduction.page:22
 msgid ""
-"<app>Meld</app> shows differences between two or three files (or two or "
-"three directories) and allows you to move content between them, or edit the "
-"files manually. <app>Meld</app>'s focus is on helping developers compare and "
-"merge source files, and get a visual overview of changes in their favourite "
-"version control system."
+"<app>Meld</app> shows differences between two or three files (or two or three "
+"directories) and allows you to move content between them, or edit the files manually. "
+"<app>Meld</app>'s focus is on helping developers compare and merge source files, and "
+"get a visual overview of changes in their favourite version control system."
 msgstr ""
-"<app>Meld</app> muestra las diferencias entre dos o tres archivos (o dos o "
-"tres carpetas) y permite mover contenido entre ellos, o editar los archivos "
-"manualmente. <app>Meld</app> está enfocado a ayudar a los desarrolladores a "
-"comparar y mezclar archivos fuente, y tener una supervisión gráfica de los "
-"cambios en su sistema de control de versiones favorito."
+"<app>Meld</app> muestra las diferencias entre dos o tres archivos (o dos o tres "
+"carpetas) y permite mover contenido entre ellos, o editar los archivos manualmente. "
+"<app>Meld</app> está enfocado a ayudar a los desarrolladores a comparar y mezclar "
+"archivos fuente, y tener una supervisión gráfica de los cambios en su sistema de "
+"control de versiones favorito."
 
 #. (itstool) path: page/title
 #: C/folder-mode.page:16
@@ -1501,28 +1443,26 @@ msgstr "開始比對資料夾"
 #. (itstool) path: page/p
 #: C/folder-mode.page:18
 msgid ""
-"<app>Meld</app> lets you compare two or three folders side-by-side. You can "
-"start a new folder comparison by selecting the <guiseq><gui style=\"menu"
-"\">File</gui><gui style=\"menuitem\">New...</gui></guiseq> menu item, and "
-"clicking on the <gui style=\"tab\">Directory Comparison</gui> tab."
+"<app>Meld</app> lets you compare two or three folders side-by-side. You can start a "
+"new folder comparison by selecting the <guiseq><gui style=\"menu\">File</gui><gui "
+"style=\"menuitem\">New...</gui></guiseq> menu item, and clicking on the <gui style="
+"\"tab\">Directory Comparison</gui> tab."
 msgstr ""
-"<app>Meld</app> permite comparar dos o tres carpetas una junto a la otra. "
-"Puede comenzar una nueva comparación de carpetas seleccionando <guiseq><gui "
-"style=\"menu\">Archivo</gui><gui style=\"menuitem\">Nuevo...</gui></guiseq> "
-"en el menú, y pulsando en la pestaña <gui style=\"tab\">Comparación de "
-"carpetas</gui>."
+"<app>Meld</app> permite comparar dos o tres carpetas una junto a la otra. Puede "
+"comenzar una nueva comparación de carpetas seleccionando <guiseq><gui style=\"menu"
+"\">Archivo</gui><gui style=\"menuitem\">Nuevo...</gui></guiseq> en el menú, y pulsando "
+"en la pestaña <gui style=\"tab\">Comparación de carpetas</gui>."
 
 #. (itstool) path: page/p
 #: C/folder-mode.page:26
 msgid ""
-"Your selected folders will be shown as side-by-side trees, with differences "
-"between files in each folder highlighted. You can copy or delete files from "
-"either folder, or compare individual text files in more detail."
+"Your selected folders will be shown as side-by-side trees, with differences between "
+"files in each folder highlighted. You can copy or delete files from either folder, or "
+"compare individual text files in more detail."
 msgstr ""
 "Las carpetas elegidas se mostrarán una junto a la otra como árboles, con las "
-"diferencias entre archivos resaltadas en cada carpeta. Puede copiar o "
-"eliminar archivos de cada carpeta, o comparar con más detalle archivos de "
-"texto individualmente."
+"diferencias entre archivos resaltadas en cada carpeta. Puede copiar o eliminar "
+"archivos de cada carpeta, o comparar con más detalle archivos de texto individualmente."
 
 #. (itstool) path: section/title
 #: C/folder-mode.page:36
@@ -1532,75 +1472,69 @@ msgstr "檢視資料夾比對"
 #. (itstool) path: section/p
 #: C/folder-mode.page:38
 msgid ""
-"The main parts of a folder comparison are the trees showing the folders "
-"you're comparing. You can easily <link xref=\"#folder-navigation\">move "
-"around</link> these comparisons to find changes that you're interested in. "
-"When you select a file or folder, more detailed information is given in the "
-"status bar at the bottom of the window. Pressing <key>Enter</key> on a "
-"selected file, or double-clicking any file in the tree will open a side-by-"
-"side <link xref=\"file-mode\">file comparison</link> of the files in a new "
-"tab, but this will only work properly if they're text files!"
+"The main parts of a folder comparison are the trees showing the folders you're "
+"comparing. You can easily <link xref=\"#folder-navigation\">move around</link> these "
+"comparisons to find changes that you're interested in. When you select a file or "
+"folder, more detailed information is given in the status bar at the bottom of the "
+"window. Pressing <key>Enter</key> on a selected file, or double-clicking any file in "
+"the tree will open a side-by-side <link xref=\"file-mode\">file comparison</link> of "
+"the files in a new tab, but this will only work properly if they're text files!"
 msgstr ""
-"Lo principal en una comparación de carpetas son los árboles que muestran las "
-"carpetas comparadas. Puede <link xref=\"#folder-navigation\">moverse entre</"
-"link> estas comparaciones fácilmente para encontrar los cambios de su "
-"interés. Al elegir un archivo o carpeta, se le brindará información más "
-"detallada en la barra de estado en la parte de abajo de la ventana. "
-"Presionando <key>Intro</key> en el archivo elegido, o pulsando dos veces con "
-"el ratón en cualquier archivo del árbol se abrirá en una nueva pestaña una "
-"<link xref=\"file-mode\">comparación de archivos</link> uno junto al otro, "
+"Lo principal en una comparación de carpetas son los árboles que muestran las carpetas "
+"comparadas. Puede <link xref=\"#folder-navigation\">moverse entre</link> estas "
+"comparaciones fácilmente para encontrar los cambios de su interés. Al elegir un "
+"archivo o carpeta, se le brindará información más detallada en la barra de estado en "
+"la parte de abajo de la ventana. Presionando <key>Intro</key> en el archivo elegido, o "
+"pulsando dos veces con el ratón en cualquier archivo del árbol se abrirá en una nueva "
+"pestaña una <link xref=\"file-mode\">comparación de archivos</link> uno junto al otro, "
 "pero esta opción solo funcionará apropiadamente si son archivos de texto."
 
 #. (itstool) path: section/p
 #: C/folder-mode.page:50
 msgid ""
-"There are bars on the left and right-hand sides of the window that show you "
-"a simple coloured summary of the comparison results. Each file or folder in "
-"the comparison corresponds to a small section of these bars, though "
-"<app>Meld</app> doesn't show <em>Same</em> files so that it's easier to see "
-"any actually important differences. You can click anywhere on this bar to "
-"jump straight to that place in the comparison."
+"There are bars on the left and right-hand sides of the window that show you a simple "
+"coloured summary of the comparison results. Each file or folder in the comparison "
+"corresponds to a small section of these bars, though <app>Meld</app> doesn't show "
+"<em>Same</em> files so that it's easier to see any actually important differences. You "
+"can click anywhere on this bar to jump straight to that place in the comparison."
 msgstr ""
-"Hay barras a los lados izquierdo y derecho de la ventana que muestran un "
-"resumen simple y coloreado de los resultados de la comparación. Cada archivo "
-"o carpeta en la comparación corresponde a una pequeña sección de estas "
-"barras, aunque <app>Meld</app> no muestra los archivos <em>Iguales</em> para "
-"que sea más fácil ver cualquier diferencia realmente importante. Es posible "
-"pulsar en cualquier lugar de esta barra para saltar directamente al lugar en "
-"la comparación."
+"Hay barras a los lados izquierdo y derecho de la ventana que muestran un resumen "
+"simple y coloreado de los resultados de la comparación. Cada archivo o carpeta en la "
+"comparación corresponde a una pequeña sección de estas barras, aunque <app>Meld</app> "
+"no muestra los archivos <em>Iguales</em> para que sea más fácil ver cualquier "
+"diferencia realmente importante. Es posible pulsar en cualquier lugar de esta barra "
+"para saltar directamente al lugar en la comparación."
 
 #. (itstool) path: section/title
 #: C/folder-mode.page:63
 msgid "Navigating folder comparisons"
-msgstr "Nävigeiting fouldèr kompäreiçions"
+msgstr "遊走於資料夾比對"
 
 #. (itstool) path: section/p
 #: C/folder-mode.page:65
 msgid ""
-"You can jump between changed files (that is, any files/folders that are "
-"<em>not</em> classified as being identical) with the <guiseq><gui style="
-"\"menu\">Changes</gui><gui style=\"menuitem\">Previous change</gui></guiseq> "
-"and <guiseq><gui style=\"menu\">Changes</gui><gui style=\"menuitem\">Next "
-"change</gui></guiseq> menu items, or using the corresponding buttons on the "
-"toolbar."
+"You can jump between changed files (that is, any files/folders that are <em>not</em> "
+"classified as being identical) with the <guiseq><gui style=\"menu\">Changes</gui><gui "
+"style=\"menuitem\">Previous change</gui></guiseq> and <guiseq><gui style=\"menu"
+"\">Changes</gui><gui style=\"menuitem\">Next change</gui></guiseq> menu items, or "
+"using the corresponding buttons on the toolbar."
 msgstr ""
-"Puede saltar entre archivos modificados (esto es, cualquier archivo/carpeta "
-"que <em>no</em> se clasifique como igual) seleccionando en el menú "
-"<guiseq><gui style=\"menu\">Cambios</gui><gui style=\"menuitem\">Cambios "
-"anteriores</gui></guiseq> y <guiseq><gui style=\"menu\">Cambios</gui><gui "
-"style=\"menuitem\">Cambios siguientes</gui></guiseq>, o utilizando los "
-"correspondientes botones en la barra de herramientas."
+"Puede saltar entre archivos modificados (esto es, cualquier archivo/carpeta que "
+"<em>no</em> se clasifique como igual) seleccionando en el menú <guiseq><gui style="
+"\"menu\">Cambios</gui><gui style=\"menuitem\">Cambios anteriores</gui></guiseq> y "
+"<guiseq><gui style=\"menu\">Cambios</gui><gui style=\"menuitem\">Cambios siguientes</"
+"gui></guiseq>, o utilizando los correspondientes botones en la barra de herramientas."
 
 #. (itstool) path: section/p
 #: C/folder-mode.page:73
 msgid ""
-"You can use the <key>Left</key> and <key>Right</key> arrow keys to move "
-"between the folders you're comparing. This is useful so that you can select "
-"an individual file for copying or deletion."
+"You can use the <key>Left</key> and <key>Right</key> arrow keys to move between the "
+"folders you're comparing. This is useful so that you can select an individual file for "
+"copying or deletion."
 msgstr ""
-"Puede usar las teclas <key>Izquierda</key> y <key>Derecha</key> para moverse "
-"entre las carpetas comparadas. Esto es útil para poder elegir los archivos "
-"para copiar o eliminar."
+"Puede usar las teclas <key>Izquierda</key> y <key>Derecha</key> para moverse entre las "
+"carpetas comparadas. Esto es útil para poder elegir los archivos para copiar o "
+"eliminar."
 
 #. (itstool) path: section/title
 #: C/folder-mode.page:83
@@ -1610,11 +1544,11 @@ msgstr "文件夾比對的狀態"
 #. (itstool) path: section/p
 #: C/folder-mode.page:85
 msgid ""
-"Each file or folder in a tree has its own <em>state</em>, telling you how it "
-"differed from its corresponding files/folders. The possible states are:"
+"Each file or folder in a tree has its own <em>state</em>, telling you how it differed "
+"from its corresponding files/folders. The possible states are:"
 msgstr ""
-"每個在樹的檔案或資料夾均有其<em>狀態</em>，告訴您與其相對應的檔案/資料夾的差異。"
-"可能的狀態有："
+"每個在樹的檔案或資料夾均有其<em>狀態</em>，告訴您與其相對應的檔案/資料夾的差異。可能的"
+"狀態有："
 
 #. (itstool) path: table/title
 #: C/folder-mode.page:106
@@ -1639,11 +1573,11 @@ msgstr "斜體"
 #. (itstool) path: td/p
 #: C/folder-mode.page:140
 msgid ""
-"These files are different across folders, but once <link xref=\"text-filters"
-"\">text filters</link> are applied, these files become identical."
+"These files are different across folders, but once <link xref=\"text-filters\">text "
+"filters</link> are applied, these files become identical."
 msgstr ""
-"Estos archivos son diferentes en las carpetas, pero una vez aplicados los "
-"<link xref=\"text-filters\">filtros de texto</link>, se han vuelto idénticos."
+"Estos archivos son diferentes en las carpetas, pero una vez aplicados los <link xref="
+"\"text-filters\">filtros de texto</link>, se han vuelto idénticos."
 
 #. (itstool) path: td/p
 #: C/folder-mode.page:156
@@ -1658,68 +1592,63 @@ msgstr "Este archivo/carpeta existe en esta carpeta, pero no en las otras."
 #. (itstool) path: td/p
 #: C/folder-mode.page:178
 msgid "Greyed out text with a line through the middle"
-msgstr "Fui-zo na tekst with lain akros middol"
+msgstr "灰掉了的文字加上中間一條刪除線"
 
 #. (itstool) path: td/p
 #: C/folder-mode.page:184
-msgid ""
-"This file/folder doesn't exist in this folder, but does in one of the others."
-msgstr ""
-"Este archivo/carpeta no existe en esta carpeta, pero se encuentra en otra."
+msgid "This file/folder doesn't exist in this folder, but does in one of the others."
+msgstr "Este archivo/carpeta no existe en esta carpeta, pero se encuentra en otra."
 
 #. (itstool) path: td/p
 #: C/folder-mode.page:199
 msgid ""
-"When comparing this file, an error occurred. The most common error causes "
-"are file permissions (i.e., <app>Meld</app> was not allowed to open the "
-"file) and filename encoding errors."
+"When comparing this file, an error occurred. The most common error causes are file "
+"permissions (i.e., <app>Meld</app> was not allowed to open the file) and filename "
+"encoding errors."
 msgstr ""
-"Hubo un error al comparar este archivo. La causa de error más común son los "
-"permisos (esto es, <app>Meld</app> no pudo abrir el archivo) y los errores "
-"en la codificación del nombre de archivo."
+"Hubo un error al comparar este archivo. La causa de error más común son los permisos "
+"(esto es, <app>Meld</app> no pudo abrir el archivo) y los errores en la codificación "
+"del nombre de archivo."
 
 #. (itstool) path: section/p
 #: C/folder-mode.page:217
 msgid ""
-"You can filter out files based on these states, for example, to show only "
-"files that have been <em>Modified</em>. You can read more about this in "
-"<link xref=\"file-filters#file-state-filter\"/>."
+"You can filter out files based on these states, for example, to show only files that "
+"have been <em>Modified</em>. You can read more about this in <link xref=\"file-"
+"filters#file-state-filter\"/>."
 msgstr ""
-"Es posible filtrar archivos en base a sus estados, por ejemplo, mostrar solo "
-"los archivos <em>Modificados</em>. Puede leer más sobre esto en la <link "
-"xref=\"file-filters#file-state-filter\"/>."
+"Es posible filtrar archivos en base a sus estados, por ejemplo, mostrar solo los "
+"archivos <em>Modificados</em>. Puede leer más sobre esto en la <link xref=\"file-"
+"filters#file-state-filter\"/>."
 
 #. (itstool) path: section/p
 #: C/folder-mode.page:223
-msgid ""
-"Finally, the most recently modified file/folder has an emblem attached to it."
-msgstr "Lastli, zuigèn modifaien fayl/fouldèrs wa emblèm attaĉen."
+msgid "Finally, the most recently modified file/folder has an emblem attached to it."
+msgstr "最後，最近修改過的檔案/資料夾會附有特殊標記。"
 
 #. (itstool) path: page/title
 #: C/missing-functionality.page:15
 msgid "Things that <app>Meld</app> doesn't do"
-msgstr "Cosas que <app>Meld</app> no hace"
+msgstr "有甚麼是<app>Meld</app>不會做的"
 
 #
 #. (itstool) path: page/p
 #: C/missing-functionality.page:17
 msgid ""
-"Have you ever spent half an hour poking around an application trying to find "
-"out how to do something, thinking that <em>surely</em> there must be an "
-"option for this?"
+"Have you ever spent half an hour poking around an application trying to find out how "
+"to do something, thinking that <em>surely</em> there must be an option for this?"
 msgstr ""
-"您有沒有試過在一個應用程式花了半小時到處走，只是為了想知道怎樣去做一件事，認"
-"為<em>肯定</em>在某處一定有個選項去做這件事的？"
+"您有沒有試過在一個應用程式花了半小時到處走，只是為了想知道怎樣去做一件事，認為<em>肯定"
+"</em>在某處一定有個選項去做這件事的？"
 
 #. (itstool) path: page/p
 #: C/missing-functionality.page:23
 msgid ""
-"This section lists a few of the common things that <app>Meld</app> "
-"<em>doesn't</em> do, either as a deliberate choice, or because we just "
-"haven't had time."
+"This section lists a few of the common things that <app>Meld</app> <em>doesn't</em> "
+"do, either as a deliberate choice, or because we just haven't had time."
 msgstr ""
-"Esta sección lista unas pocas cosas comunes que <app>Meld</app> <em>no</em> "
-"hace, ya sea por una decisión deliberada, o porque nos faltó tiempo."
+"Esta sección lista unas pocas cosas comunes que <app>Meld</app> <em>no</em> hace, ya "
+"sea por una decisión deliberada, o porque nos faltó tiempo."
 
 #. (itstool) path: section/title
 #: C/missing-functionality.page:30
@@ -1729,14 +1658,13 @@ msgstr "透過增列來對齊變更"
 #. (itstool) path: section/p
 #: C/missing-functionality.page:31
 msgid ""
-"When <app>Meld</app> shows differences between files, it shows both files as "
-"they would appear in a normal text editor. It does <em>not</em> insert "
-"additional lines so that the left and right sides of a particular change are "
-"the same size. There is no option to do this."
+"When <app>Meld</app> shows differences between files, it shows both files as they "
+"would appear in a normal text editor. It does <em>not</em> insert additional lines so "
+"that the left and right sides of a particular change are the same size. There is no "
+"option to do this."
 msgstr ""
-"當<app>Meld</app>顯示檔案間的差異時，會在兩邊以文字編輯器來顯示檔案內容。"
-"程式<em>不會</em>在檔案中插入空列，以保持左右兩側的比對內容在相同位置。"
-"本程式沒有這個選項。"
+"當<app>Meld</app>顯示檔案間的差異時，會在兩邊以文字編輯器來顯示檔案內容。程式<em>不會</"
+"em>在檔案中插入空列，以保持左右兩側的比對內容在相同位置。本程式沒有這個選項。"
 
 #. (itstool) path: page/title
 #: C/command-line.page:15
@@ -1746,51 +1674,45 @@ msgstr "命令列的用法"
 #. (itstool) path: page/p
 #: C/command-line.page:17
 msgid ""
-"If you start <app>Meld</app> from the command line, you can tell it what to "
-"do when it starts."
-msgstr ""
-"當您在命令列啟動<app>Meld</app>時，您可以告訴告訴它要做甚麼。"
+"If you start <app>Meld</app> from the command line, you can tell it what to do when it "
+"starts."
+msgstr "當您在命令列啟動<app>Meld</app>時，您可以告訴告訴它要做甚麼。"
 
 #. (itstool) path: page/p
 #: C/command-line.page:20
 msgid ""
-"For a two- or three-way <link xref=\"file-mode\">file comparison</link>, "
-"start <app>Meld</app> with <cmd>meld <var>file1</var> <var>file2</var></cmd> "
-"or <cmd>meld <var>file1</var> <var>file2</var> <var>file3</var></cmd> "
-"respectively."
+"For a two- or three-way <link xref=\"file-mode\">file comparison</link>, start "
+"<app>Meld</app> with <cmd>meld <var>file1</var> <var>file2</var></cmd> or <cmd>meld "
+"<var>file1</var> <var>file2</var> <var>file3</var></cmd> respectively."
 msgstr ""
-"要啟動雙向或三向<link xref=\"folder-mode\">檔案比對</link>，"
-"啟動<app>Meld</app>時在命令列輸入<cmd>meld <var>檔案1</var> "
-"<var>檔案2</var></cmd>，或<cmd>meld <var>檔案1</var> <var>檔案2</var> "
-"<var>檔案3</var></cmd>。"
+"要啟動雙向或三向<link xref=\"folder-mode\">檔案比對</link>，啟動<app>Meld</app>時在命令"
+"列輸入<cmd>meld <var>檔案1</var> <var>檔案2</var></cmd>，或<cmd>meld <var>檔案1</var> "
+"<var>檔案2</var> <var>檔案3</var></cmd>。"
 
 #. (itstool) path: page/p
 #: C/command-line.page:26
 msgid ""
-"For a two- or three-way <link xref=\"folder-mode\">directory comparison</"
-"link>, start <app>Meld</app> with <cmd>meld <var>dir1</var> <var>dir2</var></"
-"cmd> or <cmd>meld <var>dir1</var> <var>dir2</var> <var>dir3</var></cmd>."
+"For a two- or three-way <link xref=\"folder-mode\">directory comparison</link>, start "
+"<app>Meld</app> with <cmd>meld <var>dir1</var> <var>dir2</var></cmd> or <cmd>meld "
+"<var>dir1</var> <var>dir2</var> <var>dir3</var></cmd>."
 msgstr ""
-"要啟動雙向或三向<link xref=\"folder-mode\">資料夾比對</link>，"
-"啟動<app>Meld</app>時在命令列輸入<cmd>meld <var>目錄1</var> "
-"<var>目錄2</var></cmd>，或<cmd>meld <var>目錄1</var> <var>目錄2</var> "
-"<var>目錄3</var></cmd>。"
+"要啟動雙向或三向<link xref=\"folder-mode\">資料夾比對</link>，啟動<app>Meld</app>時在命"
+"令列輸入<cmd>meld <var>目錄1</var> <var>目錄2</var></cmd>，或<cmd>meld <var>目錄1</"
+"var> <var>目錄2</var> <var>目錄3</var></cmd>。"
 
 #. (itstool) path: page/p
 #: C/command-line.page:31
 msgid ""
-"You can start a <link xref=\"vc-mode\">version control</link> comparison by "
-"just giving a single argument; if that file or directory is managed by a "
-"<link xref=\"vc-supported\">recognized version control system</link>, it "
-"will start a version control comparison on that argument. For example, "
-"<cmd>meld .</cmd> would start a version control view of the current "
-"directory."
+"You can start a <link xref=\"vc-mode\">version control</link> comparison by just "
+"giving a single argument; if that file or directory is managed by a <link xref=\"vc-"
+"supported\">recognized version control system</link>, it will start a version control "
+"comparison on that argument. For example, <cmd>meld .</cmd> would start a version "
+"control view of the current directory."
 msgstr ""
-"當您啟動本程序時若只提供一個參數，就會啟動<link xref=\"vc-mode\">版本"
-"控制模式</link>；假如比對中的檔案或資料夾由"
-"<link xref=\"vc-supported\">已知的版本控制系統</link>管理，"
-"就會對提供的參數所在的檔案或資料夾進行版本控制比對。例如："
-"在命令列執行<cmd>meld .</cmd>會對目前目錄所在開始版本控制比對。"
+"當您啟動本程序時若只提供一個參數，就會啟動<link xref=\"vc-mode\">版本控制模式</link>；"
+"假如比對中的檔案或資料夾由<link xref=\"vc-supported\">已知的版本控制系統</link>管理，就"
+"會對提供的參數所在的檔案或資料夾進行版本控制比對。例如：在命令列執行<cmd>meld .</cmd>會"
+"對目前目錄所在開始版本控制比對。"
 
 #. (itstool) path: note/p
 #: C/command-line.page:40
