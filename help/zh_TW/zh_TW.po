@@ -322,7 +322,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: C/file-filters.page:124
 msgid "Shell glob patterns"
-msgstr "Patrón de comodines del shell"
+msgstr "殼層通配符模式"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:128
