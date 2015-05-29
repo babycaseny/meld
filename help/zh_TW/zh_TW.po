@@ -182,11 +182,9 @@ msgid ""
 "identical after all of the text filters are applied are not highlighted as "
 "being different, but are shown in italics."
 msgstr ""
-"Cualquier <link xref=\"text-filters\">filtro de texto</link> que haya "
-"definido <em> se aplica automáticamente</em> cuando se comparan carpetas. "
-"Los archivos que resulten idénticos después de que se les hayan aplicado "
-"todos los filtros de texto no se resaltarán como diferentes, pero se "
-"mostrarán en cursiva."
+"任何您已定義的<link xref=\"text-filters\">文字過濾器</link>會在比對"
+"資料夾時<em>自動啟動</em>。當所有文字過濾器應用後，若檔案變得一致，"
+"其差異不會高亮顯示，而是會以斜體顯示。"
 
 #. (itstool) path: section/title
 #: C/file-filters.page:48
@@ -201,9 +199,8 @@ msgid ""
 "is classified as being either <em>Modifed</em>, <em>New</em> or <em>Same</"
 "em>:"
 msgstr ""
-"Cuando se comparan carpetas, cada línea contiene un solo archivo o carpeta "
-"que exista en al menos una de las carpetas comparadas. Cada una de esas "
-"líneas se clasifica como <em>Modificada</em>, <em>Nueva</em> o <em>Igual</em>"
+"在資料夾比對時，畫面的每一列代表一個檔案或一個資料夾，而且至少在其中一個資料夾內存在。"
+"每一個這些列都會分類為<em>已修改</em>、<em>新增</em>或<em>相同</em>其中一種："
 
 #. (itstool) path: item/title
 #. (itstool) path: td/p
@@ -247,11 +244,9 @@ msgid ""
 "<guiseq><gui style=\"menu\">View</gui><gui style=\"menuitem\">File Status</"
 "gui></guiseq> menu."
 msgstr ""
-"Puede cambiar las diferencias que ve en su comparación actual usando los "
-"botones <gui style=\"button\">Mismo</gui>, <gui style=\"button\">Nuevo</gui> "
-"y <gui style=\"button\">Modificado</gui> de la barra de herramientas o del "
-"menú <guiseq><gui style=\"menu\">Vista</gui><gui style=\"menuitem\">Estado "
-"del archivo</gui></guiseq>."
+"您可以在現時的比對模式中透過工具列上的<gui style=\"button\">相同</gui>、<gui style=\"button\">新增</gui>"
+"及<gui style=\"button\">已修改</gui>這三個按鈕，又或在選單上選擇<guiseq><gui style=\"menu\">檢視</gui>"
+"<gui style=\"menuitem\">檔案狀態</gui></guiseq>來改變要看見哪一類型的差異。"
 
 #. (itstool) path: note/p
 #: C/file-filters.page:80
@@ -347,7 +342,7 @@ msgstr "<code>*</code>"
 #. (itstool) path: td/p
 #: C/file-filters.page:135
 msgid "anything (i.e., zero or more characters)"
-msgstr "任何 (cero o más caracteres)"
+msgstr "任何（零個或更多個字元）"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:138
@@ -377,12 +372,12 @@ msgstr "<code>[!abc]</code>"
 #. (itstool) path: td/p
 #: C/file-filters.page:147
 msgid "anything <em>except</em> one of the listed characters"
-msgstr "cualquier carácter <em>excepto</em> los listados"
+msgstr "<em>除了</em>表列以外任何一個字元"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:150
 msgid "<code>{cat,dog}</code>"
-msgstr "<code>{meow,wow}</code>"
+msgstr "<code>{貓,狗}</code>"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:151
@@ -520,7 +515,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/text-filters.page:67
 msgid "Getting text filters right"
-msgstr "Getiŋ tekst filtèrs korrekt"
+msgstr "讓文字過濾器正確運作"
 
 #. (itstool) path: section/p
 #: C/text-filters.page:69
@@ -538,7 +533,7 @@ msgstr ""
 #. (itstool) path: listing/title
 #: C/text-filters.page:80
 msgid "<file>comment1.txt</file>"
-msgstr "<file>komment1.txt</file>"
+msgstr "<file>註釋1.txt</file>"
 
 #. (itstool) path: listing/code
 #: C/text-filters.page:81
@@ -559,7 +554,7 @@ msgstr ""
 #. (itstool) path: listing/title
 #: C/text-filters.page:90
 msgid "<file>comment2.txt</file>"
-msgstr "<file>komment2.txt</file>"
+msgstr "<file>註釋2.txt</file>"
 
 #. (itstool) path: listing/code
 #: C/text-filters.page:91
@@ -642,8 +637,8 @@ msgid ""
 "One of the best uses of <app>Meld</app> is to resolve conflicts that occur "
 "while merging different branches."
 msgstr ""
-"Uno de los mejores usos de <app>Meld</app> es resolver los conflictos que "
-"ocurren cuando se mezclan diferentes ramas."
+"<app>Meld</app>其中一個讓使用者最愛使用的功能，就是在合併不同分支時"
+"解決當中的衝突。"
 
 #. (itstool) path: page/p
 #: C/resolving-conflicts.page:22
