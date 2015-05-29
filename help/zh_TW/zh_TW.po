@@ -24,7 +24,7 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Tom K. C. Chiu <tomchiukc@gmail.com>"
+msgstr "Tom K. C. Chiu <tomchiukc@gmail.com>, 2014, 2015"
 
 #. (itstool) path: info/title
 #: C/vc-supported.page:5
@@ -149,11 +149,10 @@ msgid ""
 "Alternatively, you might want to ignore all the files in your <file>.git</"
 "file> directory, or ignore all images."
 msgstr ""
-"Cuando compare carpetas, puede querer ignorar algunos archivos. Por ejemplo, "
-"puede querer ver solamente los archivos que están presentes o que difieren "
-"en ambas carpetas, ignorando aquellos que son iguales o solo existen en una "
-"de las carpetas. Alternativamente, puede querer ignorar todos los archivos "
-"de su carpeta <file>.git</file> , o ignorar todas las imágenes."
+"當您比對資料夾時，您可能需要忽視某些檔案。例如："
+"可能您想看見只有在兩邊亦存在的檔案，而只在一邊存在的要忽視。"
+"另一方面，您又或想忽視所有在<file>.git</file>資料夾內的檔案，"
+"又或想忽視所有圖檔。"
 
 #. (itstool) path: page/p
 #: C/file-filters.page:25
@@ -167,14 +166,13 @@ msgid ""
 "\">case insensitive</link>. Finally, you can use <link xref=\"text-filters"
 "\">text filters</link> to change what both folder and file comparisons see."
 msgstr ""
-"<app>Meld</app> wa severol diffèrènt meŧods tu koncrol fayls en diffèrènses "
-"tu displei.  Yus filtèr beisen on <link xref=\"#file-state-filter"
-"\">diffèrènses bitwin fayls akros fouldèrs</link> or <link xref=\"#file-name-"
-"filter\">fayl en fouldèr neims</link>.  Instrùkt <app>Meld</app> tu konsidèr "
-"faylneim seim if <link xref=\"#file-case-filter\"> distiŋktais mayúsculas en "
-"minúsculas</link>. Finalmente, se pueden usar <link xref=\"text-filters"
-"\">filtros de texto</link> para cambiar tanto las comparaciones mostradas de "
-"carpetas como de archivos."
+"<app>Meld</app>有多種方式去控制您想看見哪些檔案，以及您想看見哪些差異。"
+"例如：您想<link xref=\"#file-state-filter"
+"\">基於資料夾間檔案的差異</link>或<link xref=\"#file-name-"
+"filter\">基於檔案及資料夾的名稱</link>作為過濾準則。您可告訴<app>Meld</app>"
+"在處理檔案名稱時，要不要<link xref=\"#file-case-filter\">忽略名稱的大小寫差異</link>。"
+"最後，您可以用<link xref=\"text-filters\">文字過濾器</link>去改變"
+"當比對資料夾及檔案時會看見甚麼。"
 
 #. (itstool) path: note/p
 #: C/file-filters.page:37
@@ -184,16 +182,14 @@ msgid ""
 "identical after all of the text filters are applied are not highlighted as "
 "being different, but are shown in italics."
 msgstr ""
-"Cualquier <link xref=\"text-filters\">filtro de texto</link> que haya "
-"definido <em> se aplica automáticamente</em> cuando se comparan carpetas. "
-"Los archivos que resulten idénticos después de que se les hayan aplicado "
-"todos los filtros de texto no se resaltarán como diferentes, pero se "
-"mostrarán en cursiva."
+"任何您已定義的<link xref=\"text-filters\">文字過濾器</link>會在比對"
+"資料夾時<em>自動啟動</em>。當所有文字過濾器應用後，若檔案變得一致，"
+"其差異不會高亮顯示，而是會以斜體顯示。"
 
 #. (itstool) path: section/title
 #: C/file-filters.page:48
 msgid "File differences filtering"
-msgstr "Fayls diffèrènses filtèriŋ"
+msgstr "以檔案間的差異過濾"
 
 #. (itstool) path: section/p
 #: C/file-filters.page:50
@@ -203,9 +199,8 @@ msgid ""
 "is classified as being either <em>Modifed</em>, <em>New</em> or <em>Same</"
 "em>:"
 msgstr ""
-"Cuando se comparan carpetas, cada línea contiene un solo archivo o carpeta "
-"que exista en al menos una de las carpetas comparadas. Cada una de esas "
-"líneas se clasifica como <em>Modificada</em>, <em>Nueva</em> o <em>Igual</em>"
+"在資料夾比對時，畫面的每一列代表一個檔案或一個資料夾，而且至少在其中一個資料夾內存在。"
+"每一個這些列都會分類為<em>已修改</em>、<em>新增</em>或<em>相同</em>其中一種："
 
 #. (itstool) path: item/title
 #. (itstool) path: td/p
@@ -249,11 +244,9 @@ msgid ""
 "<guiseq><gui style=\"menu\">View</gui><gui style=\"menuitem\">File Status</"
 "gui></guiseq> menu."
 msgstr ""
-"Puede cambiar las diferencias que ve en su comparación actual usando los "
-"botones <gui style=\"button\">Mismo</gui>, <gui style=\"button\">Nuevo</gui> "
-"y <gui style=\"button\">Modificado</gui> de la barra de herramientas o del "
-"menú <guiseq><gui style=\"menu\">Vista</gui><gui style=\"menuitem\">Estado "
-"del archivo</gui></guiseq>."
+"您可以在現時的比對模式中透過工具列上的<gui style=\"button\">相同</gui>、<gui style=\"button\">新增</gui>"
+"及<gui style=\"button\">已修改</gui>這三個按鈕，又或在選單上選擇<guiseq><gui style=\"menu\">檢視</gui>"
+"<gui style=\"menuitem\">檔案狀態</gui></guiseq>來改變要看見哪一類型的差異。"
 
 #. (itstool) path: note/p
 #: C/file-filters.page:80
@@ -329,7 +322,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: C/file-filters.page:124
 msgid "Shell glob patterns"
-msgstr "Patrón de comodines del shell"
+msgstr "殼層通配符模式"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:128
@@ -349,7 +342,7 @@ msgstr "<code>*</code>"
 #. (itstool) path: td/p
 #: C/file-filters.page:135
 msgid "anything (i.e., zero or more characters)"
-msgstr "任何 (cero o más caracteres)"
+msgstr "任何（零個或更多個字元）"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:138
@@ -379,12 +372,12 @@ msgstr "<code>[!abc]</code>"
 #. (itstool) path: td/p
 #: C/file-filters.page:147
 msgid "anything <em>except</em> one of the listed characters"
-msgstr "cualquier carácter <em>excepto</em> los listados"
+msgstr "<em>除了</em>表列以外任何一個字元"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:150
 msgid "<code>{cat,dog}</code>"
-msgstr "<code>{meow,wow}</code>"
+msgstr "<code>{貓,狗}</code>"
 
 #. (itstool) path: td/p
 #: C/file-filters.page:151
@@ -515,14 +508,13 @@ msgid ""
 "the Python <link href=\"http://docs.python.org/howto/regex.html\">Regular "
 "Expression HOWTO</link>."
 msgstr ""
-"Si no está familiarizado con las expresiones regulares, tal ve quiera "
-"consultar el <link href=\"http://docs.python.org/howto/regex.html\"> "
-"Tutorial de expresiones regulares</link> de Python."
+"如果您不熟悉正則表達式，您可以參照"
+"Python的<link href=\"http://docs.python.org/howto/regex.html\">Python正則表達式操作指南</link>連結。"
 
 #. (itstool) path: section/title
 #: C/text-filters.page:67
 msgid "Getting text filters right"
-msgstr "Getiŋ tekst filtèrs korrekt"
+msgstr "讓文字過濾器正確運作"
 
 #. (itstool) path: section/p
 #: C/text-filters.page:69
@@ -540,7 +532,7 @@ msgstr ""
 #. (itstool) path: listing/title
 #: C/text-filters.page:80
 msgid "<file>comment1.txt</file>"
-msgstr "<file>komment1.txt</file>"
+msgstr "<file>註釋1.txt</file>"
 
 #. (itstool) path: listing/code
 #: C/text-filters.page:81
@@ -561,7 +553,7 @@ msgstr ""
 #. (itstool) path: listing/title
 #: C/text-filters.page:90
 msgid "<file>comment2.txt</file>"
-msgstr "<file>komment2.txt</file>"
+msgstr "<file>註釋2.txt</file>"
 
 #. (itstool) path: listing/code
 #: C/text-filters.page:91
@@ -644,8 +636,8 @@ msgid ""
 "One of the best uses of <app>Meld</app> is to resolve conflicts that occur "
 "while merging different branches."
 msgstr ""
-"Uno de los mejores usos de <app>Meld</app> es resolver los conflictos que "
-"ocurren cuando se mezclan diferentes ramas."
+"<app>Meld</app>其中一個讓使用者最愛使用的功能，就是在合併不同分支時"
+"解決當中的衝突。"
 
 #. (itstool) path: page/p
 #: C/resolving-conflicts.page:22
@@ -1010,7 +1002,7 @@ msgstr "比對資料夾"
 #. (itstool) path: section/title
 #: C/index.page:29
 msgid "Using Meld with Version Control"
-msgstr "Yusing Meld with Vörçion Koncrol"
+msgstr "透過Meld與檔案控制系統使用"
 
 #. (itstool) path: section/title
 #: C/index.page:33
@@ -1038,12 +1030,11 @@ msgid ""
 "\">New...</gui></guiseq> menu item, and clicking on the <gui style=\"tab"
 "\">Version Control</gui> tab."
 msgstr ""
-"<app>Meld</app> se integra con <link xref=\"vc-supported\">varios sistemas "
-"de control de versiones</link> para permitir revisar los cambios locales y "
-"ejecutar tareas simples de control de versiones. Puede empezar una nueva "
-"comparación de control de versiones eligiendo en el menú <guiseq><gui style="
-"\"menu\">Archivo</gui><gui style=\"menuitem\">Nuevo...</gui></guiseq>, y "
-"pulsando en la pestaña <gui style=\"tab\">Control de Versiones</gui>."
+"<app>Meld</app>整合<link xref=\"vc-supported\">多個版本"
+"控制系統</link>，讓您回顧本地的變更，進行簡單的"
+"版本控制任務。您可以透過選擇<guiseq><gui style="
+"\"menu\">檔案</gui><gui style=\"menuitem\">新增...</gui></guiseq>，然後"
+"選擇<gui style=\"tab\">版本控制</gui>來開啟新的版本控制比對。"
 
 #. (itstool) path: section/title
 #: C/vc-mode.page:30
@@ -1069,11 +1060,10 @@ msgid ""
 "\"file-mode\">file comparison</link>. You can also interact with your "
 "version control system using the <gui style=\"menu\">Changes</gui> menu."
 msgstr ""
-"Si quiere mirar unas diferencias de archivos en particular, puede elegirlo y "
-"presionar <key>Intro</key>, o pulsar dos veces en el archivo para empezar "
-"una <link xref=\"file-mode\">comparación de archivos</link>. También puede "
-"interactuar con su sistema de control de versiones usando el menú <gui style="
-"\"menu\">Cambios</gui>."
+"如果您想查看某特定檔案的差異，您可以選擇該檔，"
+"然後按<key>Enter</key>鍵，又或在該檔上按兩下，"
+"以啟動<link xref=\"file-mode\">檔案比對</link>模式。您亦可"
+"在選單上選擇<gui style=\"menu\">變更</gui>來跟您的版本控制系統互動。"
 
 #. (itstool) path: section/title
 #. (itstool) path: table/title
@@ -1120,7 +1110,7 @@ msgstr "正常字體"
 #. (itstool) path: td/p
 #: C/vc-mode.page:101
 msgid "The file/folder is the same as the repository version."
-msgstr "Fayl/Fouldèr wa seim as vörçion in ripositori."
+msgstr "檔案/資料夾跟倉庫的一致。"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:109 C/folder-mode.page:150
@@ -1130,7 +1120,7 @@ msgstr "紅色粗體"
 #. (itstool) path: td/p
 #: C/vc-mode.page:115
 msgid "This file is different to the repository version."
-msgstr "El archivo difiere respecto a la versión del repositorio."
+msgstr "這個檔案跟在倉庫的版本不一樣。"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:123 C/folder-mode.page:164
@@ -1141,7 +1131,7 @@ msgstr "綠色粗體"
 #: C/vc-mode.page:129
 msgid ""
 "This file/folder is new, and is scheduled to be added to the repository."
-msgstr "Nigè fayl/fouldèr wa niu, en skejulen tu add tu ripositori."
+msgstr "這個檔案/資料夾是新增的，而且排期了會新增到倉庫去。"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:136
@@ -1151,13 +1141,13 @@ msgstr "已移除"
 #. (itstool) path: td/p
 #: C/vc-mode.page:138
 msgid "Red bold text with a line through the middle"
-msgstr "Red en bold tekst with lain akros middol"
+msgstr "紅色粗體文字加上中間一條刪除線"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:144
 msgid ""
 "This file/folder existed, but is scheduled to be removed from the repository."
-msgstr "Nigè fayl/fouldèr iksisted, bùt skejulen tu rimuven from ripositori."
+msgstr "這個檔案/資料夾存在，但已排期從倉庫中移除。"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:151
@@ -1167,7 +1157,7 @@ msgstr "衝突"
 #. (itstool) path: td/p
 #: C/vc-mode.page:153
 msgid "Bright red bold text"
-msgstr "鮮紅色粗體"
+msgstr "鮮紅色粗體文字"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:159
@@ -1188,7 +1178,7 @@ msgstr "欠缺"
 #. (itstool) path: td/p
 #: C/vc-mode.page:169
 msgid "Blue bold text with a line through the middle"
-msgstr "藍色粗體最加上中間劃線"
+msgstr "藍色粗體文字加上中間一條刪除線"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:175
@@ -1203,7 +1193,7 @@ msgstr "忽略"
 #. (itstool) path: td/p
 #: C/vc-mode.page:183 C/vc-mode.page:199
 msgid "Greyed out text"
-msgstr "Fui-zo na tekst"
+msgstr "灰掉了的文字"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:189
@@ -1211,8 +1201,8 @@ msgid ""
 "This file/folder has been explicitly ignored (e.g., by an entry in <file>."
 "gitignore</file>) and is not being tracked by version control."
 msgstr ""
-"Este archivo/carpeta se ha ignorado deliberadamente (ej. por una entrada en "
-"<file>.gitignore</file>) y no está bajo el control de versiones."
+"這檔案/資料夾被刻意忽略（例如：屬於在"
+"<file>.gitignore</file>列出的檔案），不受版本控制系統追蹤。"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:197
@@ -1224,8 +1214,7 @@ msgstr "未有版本控制"
 msgid ""
 "This file is not in the version control system; it is only in the local copy."
 msgstr ""
-"Este archivo no se encuentra en el sistema de control de versiones; solo en "
-"la copia local"
+"這個檔案本在版本控制系統裡：只存在於本地。"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:212 C/folder-mode.page:191
@@ -1235,13 +1224,12 @@ msgstr "錯誤"
 #. (itstool) path: td/p
 #: C/vc-mode.page:214 C/folder-mode.page:193
 msgid "Bright red with a yellow background and bold"
-msgstr "Haihlàiten red with yelow bäkgraund en bold tekst"
+msgstr "鮮紅色粗體文字加上黃色背景"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:220
 msgid "The version control system has reported a problem with this file."
-msgstr ""
-"El sistema de control de versiones ha reportado un problema con este archivo."
+msgstr "版本控制系統回報這個檔案出了問題。"
 
 #. (itstool) path: section/title
 #: C/vc-mode.page:230
@@ -1292,7 +1280,7 @@ msgstr "描述"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:29
 msgid "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:30
@@ -1322,22 +1310,22 @@ msgstr "以新的名稱儲存現時文件。"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:41
 msgid "<keyseq><key>Ctrl</key><key>W</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>W</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>W</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:42
 msgid "Close the current comparison."
-msgstr "Klos körrènt kompäreiçion."
+msgstr "關閉現時比對。"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:45
 msgid "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>Q</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:46
 msgid "Quit <app>Meld</app>."
-msgstr "<app>Meld</app> wa ziuru."
+msgstr "離開<app>Meld</app>。"
 
 #. (itstool) path: table/title
 #: C/keyboard-shortcuts.page:52
@@ -1347,12 +1335,12 @@ msgstr "編輯文件的捷徑"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:62
 msgid "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>Z</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:63
 msgid "Undo the last action."
-msgstr "Deshacer la última acción."
+msgstr "撤銷上一個動作。"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:66
@@ -1362,47 +1350,47 @@ msgstr "<keyseq><key>Ctrl</key><key>Shift</key><key>Z</key></keyseq>"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:67
 msgid "Redo the last undone action."
-msgstr "Rehacer la última acción deshecha."
+msgstr "重做上一個被撤銷的動作。"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:70
 msgid "<keyseq><key>Ctrl</key><key>X</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>X</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>X</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:71
 msgid "Cut the selected text or region and place it on the clipboard."
-msgstr "Kùt silekten tekst or rijion en peist ontu klipbod."
+msgstr "剪出已選擇的文字或區域，放到剪貼板上。"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:74
 msgid "<keyseq><key>Ctrl</key><key>C</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>C</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>C</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:75
 msgid "Copy the selected text or region onto the clipboard."
-msgstr "Kopi silekten tekst or rijion ontu klipbôd."
+msgstr "複製已選擇的文字或區域，放到剪貼板上。"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:78
 msgid "<keyseq><key>Ctrl</key><key>V</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>V</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>V</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:79
 msgid "Paste the contents of the clipboard."
-msgstr "Pegar el contenido del portapapeles."
+msgstr "從剪貼板貼上內容。"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:82
 msgid "<keyseq><key>Ctrl</key><key>F</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>F</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>F</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:83
 msgid "Find a string."
-msgstr "搜尋一個字串"
+msgstr "搜尋一個字串。"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:86
@@ -1425,8 +1413,7 @@ msgid ""
 "Go to the next difference. (Also <keyseq><key>Ctrl</key><key>D</key></"
 "keyseq>)"
 msgstr ""
-"Ir a la siguiente diferencia. (También <keyseq><key>Ktrl</key><key>D</key></"
-"keyseq>)"
+"到下一個差異去。（亦可用<keyseq><key>Ctrl</key><key>D</key></keyseq>）"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:97
@@ -1434,8 +1421,7 @@ msgid ""
 "Go to the previous difference. (Also <keyseq><key>Ctrl</key><key>E</key></"
 "keyseq>)"
 msgstr ""
-"Ir a la diferencia anterior. (También <keyseq><key>Ktrl</key><key>E</key></"
-"keyseq>)"
+"到上一個差異去。（亦可用<keyseq><key>Ctrl</key><key>E</key></keyseq>）"
 
 #. (itstool) path: table/title
 #: C/keyboard-shortcuts.page:105
@@ -1445,7 +1431,7 @@ msgstr "檢視設定的捷徑"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:115
 msgid "<keyseq><key>Escape</key></keyseq>"
-msgstr "<keyseq><key>Esc</key></keyseq>"
+msgstr "<keyseq><key>Esc</key></keyseq>鍵"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:116
@@ -1455,12 +1441,12 @@ msgstr "停止現時之比對。"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:119
 msgid "<keyseq><key>Ctrl</key><key>R</key></keyseq>"
-msgstr "<keyseq><key>Ktrl</key><key>R</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>R</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:120
 msgid "Refresh the current comparison."
-msgstr "Rīfreš körrènt kompäreiçion."
+msgstr "更新現時比對。"
 
 #. (itstool) path: table/title
 #: C/keyboard-shortcuts.page:127
@@ -1475,7 +1461,7 @@ msgstr "<keyseq><key>F1</key></keyseq>"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:138
 msgid "Open <app>Meld</app>'s user manual."
-msgstr "Opèn <app>Meld</app> dè yusa manyuol."
+msgstr "開啟<app>Meld</app>的使用者手冊。"
 
 #. (itstool) path: page/title
 #: C/introduction.page:15
@@ -1489,9 +1475,8 @@ msgid ""
 "resolving differences between them. It is also useful for comparing changes "
 "captured by version control systems."
 msgstr ""
-"<app>Meld</app> es una herramienta para comparar archivos y carpetas, y para "
-"resolver diferencias entre ellos. También es útil para comparar cambios "
-"capturados por sistemas de control de versiones."
+"<app>Meld</app>是一個用來比對檔案及目錄的工具，而且還可"
+"解決比對間的衝突。它在捕捉與版本控制系統的變更亦很有用。"
 
 #. (itstool) path: page/p
 #: C/introduction.page:22
@@ -1511,7 +1496,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/folder-mode.page:16
 msgid "Getting started comparing folders"
-msgstr "Getiŋ started kompäriŋ fouldèrs"
+msgstr "開始比對資料夾"
 
 #. (itstool) path: page/p
 #: C/folder-mode.page:18
@@ -1542,7 +1527,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/folder-mode.page:36
 msgid "The folder comparison view"
-msgstr "Fouldèr kompäreiçion vyu"
+msgstr "檢視資料夾比對"
 
 #. (itstool) path: section/p
 #: C/folder-mode.page:38
@@ -1628,8 +1613,8 @@ msgid ""
 "Each file or folder in a tree has its own <em>state</em>, telling you how it "
 "differed from its corresponding files/folders. The possible states are:"
 msgstr ""
-"Cada archivo o carpeta en un árbol tiene su propio <em>estado</em>, que dice "
-"címo difiere del correspondiente archivo/carpeta. Los posibles estados son:"
+"每個在樹的檔案或資料夾均有其<em>狀態</em>，告訴您與其相對應的檔案/資料夾的差異。"
+"可能的狀態有："
 
 #. (itstool) path: table/title
 #: C/folder-mode.page:106
@@ -1749,10 +1734,9 @@ msgid ""
 "additional lines so that the left and right sides of a particular change are "
 "the same size. There is no option to do this."
 msgstr ""
-"Cuando <app>Meld</app> muestra diferencias entre archivos, muestra ambos de "
-"la manera en que aparecerían en un editor de textos normal. <em>No</em> "
-"inserta líneas adicionales de manera que los lados derecho e izquierdo de un "
-"cambio en particular sean del mismo tamaño. No existe una opción para esto."
+"當<app>Meld</app>顯示檔案間的差異時，會在兩邊以文字編輯器來顯示檔案內容。"
+"程式<em>不會</em>在檔案中插入空列，以保持左右兩側的比對內容在相同位置。"
+"本程式沒有這個選項。"
 
 #. (itstool) path: page/title
 #: C/command-line.page:15
@@ -1765,8 +1749,7 @@ msgid ""
 "If you start <app>Meld</app> from the command line, you can tell it what to "
 "do when it starts."
 msgstr ""
-"Si ejecuta <app>Meld</app> desde la línea de comandos, puede decirle que "
-"hacer cuando arranca."
+"當您在命令列啟動<app>Meld</app>時，您可以告訴告訴它要做甚麼。"
 
 #. (itstool) path: page/p
 #: C/command-line.page:20
@@ -1776,10 +1759,10 @@ msgid ""
 "or <cmd>meld <var>file1</var> <var>file2</var> <var>file3</var></cmd> "
 "respectively."
 msgstr ""
-"Para una <link xref=\"file-mode\">comparación de archivos</link> de dos o "
-"tres vías, ejecute <app>Meld</app> con <cmd>meld <var>archivo1</var> "
-"<var>archivo2</var></cmd> o <cmd>meld <var>archivo1</var> <var>archivo2</"
-"var> <var>archivo3</var></cmd> respectivamente."
+"要啟動雙向或三向<link xref=\"folder-mode\">檔案比對</link>，"
+"啟動<app>Meld</app>時在命令列輸入<cmd>meld <var>檔案1</var> "
+"<var>檔案2</var></cmd>，或<cmd>meld <var>檔案1</var> <var>檔案2</var> "
+"<var>檔案3</var></cmd>。"
 
 #. (itstool) path: page/p
 #: C/command-line.page:26
@@ -1788,10 +1771,10 @@ msgid ""
 "link>, start <app>Meld</app> with <cmd>meld <var>dir1</var> <var>dir2</var></"
 "cmd> or <cmd>meld <var>dir1</var> <var>dir2</var> <var>dir3</var></cmd>."
 msgstr ""
-"Para una <link xref=\"folder-mode\">comparación de carpetas</link>de dos o "
-"tres vías, ejecute <app>Meld</app> con <cmd>meld <var>carpeta1</var> "
-"<var>carpeta2</var></cmd>  <cmd>meld <var>carpeta1</var> <var>carpeta2</var> "
-"<var>carpeta3</var></cmd>"
+"要啟動雙向或三向<link xref=\"folder-mode\">資料夾比對</link>，"
+"啟動<app>Meld</app>時在命令列輸入<cmd>meld <var>目錄1</var> "
+"<var>目錄2</var></cmd>，或<cmd>meld <var>目錄1</var> <var>目錄2</var> "
+"<var>目錄3</var></cmd>。"
 
 #. (itstool) path: page/p
 #: C/command-line.page:31
@@ -1803,12 +1786,11 @@ msgid ""
 "<cmd>meld .</cmd> would start a version control view of the current "
 "directory."
 msgstr ""
-"Puede empezar una comparación de <link xref=\"vc-mode\">control de "
-"versiones</link> agregando un solo argumento; si es un archivo o carpeta "
-"manejado por un  <link xref=\"vc-supported\">sistema de control de versiones "
-"reconocido</link>, ejecutará la comparación de control de versiones con ese "
-"argumento. Por ejemplo, <cmd>meld .</cmd> ejecutaría una vista de control de "
-"versiones de la carpeta actual."
+"當您啟動本程序時若只提供一個參數，就會啟動<link xref=\"vc-mode\">版本"
+"控制模式</link>；假如比對中的檔案或資料夾由"
+"<link xref=\"vc-supported\">已知的版本控制系統</link>管理，"
+"就會對提供的參數所在的檔案或資料夾進行版本控制比對。例如："
+"在命令列執行<cmd>meld .</cmd>會對目前目錄所在開始版本控制比對。"
 
 #. (itstool) path: note/p
 #: C/command-line.page:40
