@@ -5,8 +5,8 @@ import sys
 __package__ = "meld"
 __version__ = "3.13.2"
 
-DATADIR = "/usr/local/share/meld"
-LOCALEDIR = "/usr/local/share/locale"
+DATADIR = "/usr/share/meld"
+LOCALEDIR = "/usr/share/locale"
 UNINSTALLED = False
 
 # Installed from main script

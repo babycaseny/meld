@@ -197,7 +197,7 @@ msgid ""
 "being either <em>Modifed</em>, <em>New</em> or <em>Same</em>:"
 msgstr ""
 "In 1-gè fouldèr dè kompäreiçion, evri lain kontein 1-gè fayl or fouldèr which "
-"àveilàbol in kizong 1-gè fouldèr kompäring.  On evri lain on skrin wa klassifiaien as "
+"aveilàbol in kizuŋ 1-gè fouldèr kompäriŋ.  On evri lain on skrīn wa klassifaien as "
 "<em>Modifaien</em>, <em>Pikka></em> or <em>Seim</em>:"
 
 #. (itstool) path: item/title
@@ -275,13 +275,12 @@ msgid ""
 "<guiseq><gui style=\"menu\">View</gui><gui style=\"menuitem\">File Filters</gui></"
 "guiseq> menu."
 msgstr ""
-"<app>Meld</app> incluye un útil conjunto de filtros de nombres de archivos para "
-"permitir ignorar archivos y carpetas poco interesantes como archivos comunes de "
-"respaldo y carpetas de metadatos del sistema de control de versiones. Cada filtro de "
-"nombres de archivo se puede activar o desactivar por separado desde el botón <gui "
-"style=\"button\">Filtro</gui> en la barra de herramientas o desde el menú "
-"<guiseq><gui style=\"menu\">Vista</gui><gui style=\"menuitem\">Filtros de archivo</"
-"gui></guiseq>."
+"<app>Meld</app> inklūd wiŧ 1-gè yusfol-na faylneim filtèrās,  sou nei keyi ignor "
+"fayls en fouldèrs not dū intèrèsten (für iksampol, bäkùp fayls or vörçion koncrol "
+"sistèms rīleiten metadeitā fouldèrs).  Evri faylneim filtèrā wa keyi sepäreitli "
+"aktiveiten or diaktiveiten from <gui style=\"button\">Filtèrās</gui> bùttòn on tūlbār "
+"or <guiseq><gui style=\"menu\">Vyu</gui><gui style=\"menuitem\">Fayl Filtèrās </gui></"
+"guiseq> dè menyu."
 
 #. (itstool) path: section/p
 #: C/file-filters.page:106
@@ -989,7 +988,7 @@ msgstr "0"
 #. (itstool) path: page/title
 #: C/vc-mode.page:16
 msgid "Viewing version-controlled files"
-msgstr "Displeiing Vörçion-koncrol fayls"
+msgstr "Displeiiŋ Vörçion-koncrol fayls"
 
 #. (itstool) path: page/p
 #: C/vc-mode.page:18
@@ -1071,7 +1070,7 @@ msgstr "Appīràns"
 #. (itstool) path: td/p
 #: C/vc-mode.page:87 C/folder-mode.page:112
 msgid "Meaning"
-msgstr "Yiyi"
+msgstr "Yiyǐ"
 
 #. (itstool) path: td/p
 #: C/vc-mode.page:95 C/folder-mode.page:120
@@ -1203,7 +1202,7 @@ msgstr "El sistema de control de versiones ha reportado un problema con este arc
 #. (itstool) path: section/title
 #: C/vc-mode.page:230
 msgid "Version control state filtering"
-msgstr "Vörçion koncrol steitùs filtèring"
+msgstr "Vörçion koncrol steitùs filtèriŋ"
 
 #. (itstool) path: section/p
 #: C/vc-mode.page:232
@@ -1431,7 +1430,7 @@ msgstr "Opèn <app>Meld</app> dè yusa manyuol."
 #. (itstool) path: page/title
 #: C/introduction.page:15
 msgid "What is Meld?"
-msgstr "Meld-wa mienigga?"
+msgstr "Meld-wa myenigga?"
 
 #. (itstool) path: page/p
 #: C/introduction.page:16

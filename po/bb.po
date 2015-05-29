@@ -2269,10 +2269,10 @@ msgstr "Bainari fayls wa mwu tekst filtèrās applaien tu in kompäreiçion."
 #~ msgstr "[%s] Skäniŋ"
 
 #~ msgid "[%s] Applying patch"
-#~ msgstr "[%s] Applying patch"
+#~ msgstr "[%s] Applaing patch"
 
 #~ msgid "Select some files first."
-#~ msgstr "Select some files first."
+#~ msgstr "Silekt bufùn-na fayls biforhand."
 
 #~ msgid "Error converting pattern '%s' to regular expression"
 #~ msgstr "Error converting pattern '%s' to regular expression"
