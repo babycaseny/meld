@@ -191,7 +191,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: C/file-filters.page:48
 msgid "File differences filtering"
-msgstr "Fayls diffèrènses filtèriŋ"
+msgstr "以檔案間的差異過濾"
 
 #. (itstool) path: section/p
 #: C/file-filters.page:50
