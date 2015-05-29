@@ -24,7 +24,7 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Tom K. C. Chiu <tomchiukc@gmail.com>"
+msgstr "Tom K. C. Chiu <tomchiukc@gmail.com>, 2014, 2015"
 
 #. (itstool) path: info/title
 #: C/vc-supported.page:5
@@ -1747,10 +1747,9 @@ msgid ""
 "additional lines so that the left and right sides of a particular change are "
 "the same size. There is no option to do this."
 msgstr ""
-"Cuando <app>Meld</app> muestra diferencias entre archivos, muestra ambos de "
-"la manera en que aparecerían en un editor de textos normal. <em>No</em> "
-"inserta líneas adicionales de manera que los lados derecho e izquierdo de un "
-"cambio en particular sean del mismo tamaño. No existe una opción para esto."
+"當<app>Meld</app>顯示檔案間的差異時，會在兩邊以文字編輯器來顯示檔案內容。"
+"程式<em>不會</em>在檔案中插入空列，以保持左右兩側的比對內容在相同位置。"
+"本程式沒有這個選項。"
 
 #. (itstool) path: page/title
 #: C/command-line.page:15
@@ -1763,8 +1762,7 @@ msgid ""
 "If you start <app>Meld</app> from the command line, you can tell it what to "
 "do when it starts."
 msgstr ""
-"Si ejecuta <app>Meld</app> desde la línea de comandos, puede decirle que "
-"hacer cuando arranca."
+"當您在命令列啟動<app>Meld</app>時，您可以告訴告訴它要做甚麼。"
 
 #. (itstool) path: page/p
 #: C/command-line.page:20
@@ -1774,10 +1772,10 @@ msgid ""
 "or <cmd>meld <var>file1</var> <var>file2</var> <var>file3</var></cmd> "
 "respectively."
 msgstr ""
-"Para una <link xref=\"file-mode\">comparación de archivos</link> de dos o "
-"tres vías, ejecute <app>Meld</app> con <cmd>meld <var>archivo1</var> "
-"<var>archivo2</var></cmd> o <cmd>meld <var>archivo1</var> <var>archivo2</"
-"var> <var>archivo3</var></cmd> respectivamente."
+"要啟動雙向或三向<link xref=\"folder-mode\">檔案比對</link>，"
+"啟動<app>Meld</app>時在命令列輸入<cmd>meld <var>檔案1</var> "
+"<var>檔案2</var></cmd>，或<cmd>meld <var>檔案1</var> <var>檔案2</var> "
+"<var>檔案3</var></cmd>。"
 
 #. (itstool) path: page/p
 #: C/command-line.page:26
@@ -1786,10 +1784,10 @@ msgid ""
 "link>, start <app>Meld</app> with <cmd>meld <var>dir1</var> <var>dir2</var></"
 "cmd> or <cmd>meld <var>dir1</var> <var>dir2</var> <var>dir3</var></cmd>."
 msgstr ""
-"Para una <link xref=\"folder-mode\">comparación de carpetas</link>de dos o "
-"tres vías, ejecute <app>Meld</app> con <cmd>meld <var>carpeta1</var> "
-"<var>carpeta2</var></cmd>  <cmd>meld <var>carpeta1</var> <var>carpeta2</var> "
-"<var>carpeta3</var></cmd>"
+"要啟動雙向或三向<link xref=\"folder-mode\">資料夾比對</link>，"
+"啟動<app>Meld</app>時在命令列輸入<cmd>meld <var>目錄1</var> "
+"<var>目錄2</var></cmd>，或<cmd>meld <var>目錄1</var> <var>目錄2</var> "
+"<var>目錄3</var></cmd>。"
 
 #. (itstool) path: page/p
 #: C/command-line.page:31
@@ -1801,12 +1799,11 @@ msgid ""
 "<cmd>meld .</cmd> would start a version control view of the current "
 "directory."
 msgstr ""
-"Puede empezar una comparación de <link xref=\"vc-mode\">control de "
-"versiones</link> agregando un solo argumento; si es un archivo o carpeta "
-"manejado por un  <link xref=\"vc-supported\">sistema de control de versiones "
-"reconocido</link>, ejecutará la comparación de control de versiones con ese "
-"argumento. Por ejemplo, <cmd>meld .</cmd> ejecutaría una vista de control de "
-"versiones de la carpeta actual."
+"當您啟動本程序時若只提供一個參數，就會啟動<link xref=\"vc-mode\">版本"
+"控制模式</link>；假如比對中的檔案或資料夾由"
+"<link xref=\"vc-supported\">已知的版本控制系統</link>管理，"
+"就會對提供的參數所在的檔案或資料夾進行版本控制比對。例如："
+"在命令列執行<cmd>meld .</cmd>會對目前目錄所在開始版本控制比對。"
 
 #. (itstool) path: note/p
 #: C/command-line.page:40
