@@ -1823,9 +1823,15 @@ class FileDiff(Gtk.VBox, MeldDoc):
             self.filelabel[pane].set_text(bufdata.label)
 
         if not force_overwrite and not bufdata.current_on_disk():
+<<<<<<< HEAD
             primary = (
                 _("File %s has changed on disk since it was opened") %
                 bufdata.gfile.get_parse_name())
+=======
+            gfile = Gio.File.new_for_path(bufdata.filename)
+            primary = _("File %s has changed on disk since it was opened") % \
+                      gfile.get_parse_name().decode('utf-8')
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
             secondary = _("If you save it, any external changes will be lost.")
             msgarea = self.msgarea_mgr[pane].new_from_text_and_icon(
                 'dialog-warning-symbolic', primary, secondary)

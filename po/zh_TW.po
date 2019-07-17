@@ -12,17 +12,30 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: meld master\n"
+<<<<<<< HEAD
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/meld/issues\n"
 "POT-Creation-Date: 2018-08-17 21:12+0000\n"
 "PO-Revision-Date: 2019-07-17 17:23+0800\n"
 "Last-Translator: Tom K. C. Chiu <babycaseny@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-translation@lists.linux.net.cn>\n"
+=======
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=meld&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-04-13 10:29+0000\n"
+"PO-Revision-Date: 2015-03-25 21:33+0800\n"
+"Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
+"Language-Team: Babycaseny Gavèrnmènt\n"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+<<<<<<< HEAD
 "X-Generator: Poedit 2.2.3\n"
+=======
+"X-Generator: Poedit 1.5.4\n"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 "X-Project-Style: gnome\n"
 "X-Source-Language: C\n"
 
@@ -74,20 +87,31 @@ msgid ""
 "two- and three-way comparison of both files and directories, and supports "
 "many version control systems including Git, Mercurial, Bazaar and Subversion."
 msgstr ""
+<<<<<<< HEAD
 "Meld 是針對開發人員的視覺化差異和合併工具。Meld 可以幫助您比對檔案、資料夾和"
 "版本控制的專案。它提供檔案和資料夾的雙向和三向比對，並支援許多版本控制系統，"
 "包括 Git、Mercurial、Bazaar 和 Subversion。"
+=======
+"meld 是一個為程式開發者設計的視覺差異和合併工具。meld可以幫助您比對檔案、資料"
+"夾和版本控制專案。它提供了檔案和資料夾的雙向和三向的比對，而且支援多種版本控"
+"制系統，包括Git、 Mercurial、Bazaar和Subversion。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.appdata.xml.in.h:4
 msgid ""
 "Meld helps you review code changes, understand patches, and makes enormous "
 "merge conflicts slightly less painful."
 msgstr ""
+<<<<<<< HEAD
 "Meld 可以幫助您查看代碼變更、理解修正檔，並可以減輕您在大型合併衝突中的痛苦。"
 
 #: ../data/org.gnome.meld.appdata.xml.in.h:5
 msgid "The GNOME Project"
 msgstr "GNOME 專案"
+=======
+"meld 可以幫助您查看原始碼的變更，理解修正檔，使您進行巨大的合併衝突時的痛苦略"
+"略減輕一點。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/mime/org.gnome.meld.xml.in.h:1
 msgid "Meld comparison description"
@@ -130,6 +154,7 @@ msgid "Additional automatically detected text encodings"
 msgstr "額外自動偵測的文字編碼"
 
 #: ../data/org.gnome.meld.gschema.xml.h:10
+<<<<<<< HEAD
 msgid ""
 "Meld will use these text encodings to try to decode loaded text files before "
 "trying any other encodings. In addition to the encodings in this list, UTF-8 "
@@ -147,6 +172,18 @@ msgstr "縮排的每級寬度"
 #: ../data/org.gnome.meld.gschema.xml.h:12
 msgid "The number of spaces to use for a single indent step"
 msgstr "用於單一縮排層級的空格數"
+=======
+msgid "The number of spaces to use for a single indent step"
+msgstr "縮排的每步寬度要用幾多個空白字元"
+
+#: ../data/org.gnome.meld.gschema.xml.h:11
+msgid "Whether to indent using spaces or tabs"
+msgstr "縮排用空白字符還是製表鍵。"
+
+#: ../data/org.gnome.meld.gschema.xml.h:12
+msgid "If true, any new indentation will use spaces instead of tabs."
+msgstr "如果選了這項，新插入的縮排會用空白字符而不是製表鍵。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:13
 msgid "Whether to indent using spaces or tabs"
@@ -162,7 +199,11 @@ msgstr "顯示列號"
 
 #: ../data/org.gnome.meld.gschema.xml.h:16
 msgid "If true, line numbers will be shown in the gutter of file comparisons."
+<<<<<<< HEAD
 msgstr "如果為 True，列號會在檔案比對的側邊長條溝中顯示。"
+=======
+msgstr "如果選了這項，比對檔案時會在每行的裝訂線顯示列號。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:17
 msgid "Highlight syntax"
@@ -173,11 +214,19 @@ msgid ""
 "Whether to highlight syntax in comparisons. Because of Meld’s own color "
 "highlighting, this is off by default."
 msgstr ""
+<<<<<<< HEAD
 "是否在比對中標示語法。由於 Meld 自身的色彩標示，因此預設情況下這是關閉的。"
+=======
+"在比對時要不要語法標明。由於 Meld 預設會用本身的標明顏色，本項目預設為關。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:19
 msgid "Color scheme to use for syntax highlighting"
+<<<<<<< HEAD
 msgstr "語法標示使用的配色方案"
+=======
+msgstr "語法標明功能使用的配色方案"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:20
 msgid "Used by GtkSourceView to determine colors for syntax highlighting"
@@ -185,15 +234,24 @@ msgstr "GtkSourceView 用來判斷語法標示的顏色"
 
 #: ../data/org.gnome.meld.gschema.xml.h:21
 msgid "Displayed whitespace"
+<<<<<<< HEAD
 msgstr "要顯示的空白字元"
+=======
+msgstr "會顯示的空白字元"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:22
 msgid ""
 "Selector for individual whitespace character types to be shown. Possible "
 "values are 'space', 'tab', 'newline' and 'nbsp'."
 msgstr ""
+<<<<<<< HEAD
 "要顯示的個別空白字元類型的選擇器。可能的值包括 'space'，'tab'，'newline' 和 "
 "'nbsp'。"
+=======
+"您可以選擇顯示的空白字元類型。可選值有「空白鍵」、「製表鍵」、「換行鍵」和"
+"「不換行空白鍵」。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:23
 msgid "Wrap mode"
@@ -205,8 +263,13 @@ msgid ""
 "not at all ('none'), at any character ('char') or only at the end of words "
 "('word')."
 msgstr ""
+<<<<<<< HEAD
 "檔案比對中的列將根據這個設定換列，可以是完全不換列 ('none')，在任何字元換列 "
 "('char') 或僅在單字結尾處換列 ('word')。"
+=======
+"在比對檔案時，過長的列會根據此設定而決定是否會換列。可以選「不換列」、「只看"
+"字元」或「詞邊界」。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:25
 msgid "Highlight current line"
@@ -216,7 +279,11 @@ msgstr "標示目前的列"
 msgid ""
 "If true, the line containing the cursor will be highlighted in file "
 "comparisons."
+<<<<<<< HEAD
 msgstr "如果為 True，包含游標的列將在檔案比對中標示。"
+=======
+msgstr "如果選了這項，包含光標的列會在文件中標明。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:27
 msgid "Use the system default monospace font"
@@ -225,17 +292,25 @@ msgstr "使用系統預設等寬字型"
 #: ../data/org.gnome.meld.gschema.xml.h:28
 msgid ""
 "If false, custom-font will be used instead of the system monospace font."
+<<<<<<< HEAD
 msgstr "如果為 False，將使用 custom-font 而不是系統等寬字型。"
+=======
+msgstr "如果選項為非，會使用自訂字型而不是系統預設等寬字型。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:29
 msgid "Custom font"
-msgstr "使用自訂字型"
+msgstr "自訂字型"
 
 #: ../data/org.gnome.meld.gschema.xml.h:30
 msgid ""
 "The custom font to use, stored as a string and parsed as a Pango font "
 "description."
+<<<<<<< HEAD
 msgstr "要使用的自訂字型，以字串儲存並以 Pango 字型描述。"
+=======
+msgstr "會使用的自訂字型，會以字串儲存，並作為 Pango 的字型描述來分析。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:31
 msgid "Ignore blank lines when comparing files"
@@ -244,7 +319,11 @@ msgstr "比對檔案時忽略空列"
 #: ../data/org.gnome.meld.gschema.xml.h:32
 msgid ""
 "If true, blank lines will be trimmed when highlighting changes between files."
+<<<<<<< HEAD
 msgstr "如果為 True，當標示檔案之間的變更時將修剪空列。"
+=======
+msgstr "如果選了這項，當標明檔案間的變更時，空列不會顯示。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:33
 msgid "Use the system default editor"
@@ -255,19 +334,32 @@ msgid ""
 "If false, custom-editor-command will be used instead of the system editor "
 "when opening files externally."
 msgstr ""
+<<<<<<< HEAD
 "如果為 False，在外部開啟檔案時將使用 custom-editor-command 而不是系統編輯器。"
+=======
+"如果選項為非，在使用外部編輯器打開文件時，系統預設編輯器將被自定編輯器的命令"
+"替代。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:35
 msgid "The custom editor launch command"
+<<<<<<< HEAD
 msgstr "自訂編輯器啟動指令"
+=======
+msgstr "自訂編輯器的啟動命令"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:36
 msgid ""
 "The command used to launch a custom editor. Some limited templating is "
 "supported here; at the moment '{file}' and '{line}' are recognised tokens."
 msgstr ""
+<<<<<<< HEAD
 "用於啟動自訂編輯器的指令。這裡支援一些有限的範本。目前「{file}」和「{line}」"
 "是被辨識的 token。"
+=======
+"啟動自訂編輯器的命令。目前支援的模板有限：只認得「{file}」跟「{line}」。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:37
 msgid "Columns to display"
@@ -277,7 +369,11 @@ msgstr "要顯示的欄位"
 msgid ""
 "List of column names in folder comparison and whether they should be "
 "displayed."
+<<<<<<< HEAD
 msgstr "資料夾比對中的欄位名稱清單以及是否應該顯示它們。"
+=======
+msgstr "在資料夾比對時會用的欄位，以及這些欄位是否要顯示。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:39 ../data/ui/preferences.ui.h:25
 msgid "Ignore symbolic links"
@@ -287,7 +383,11 @@ msgstr "忽略符號連結"
 msgid ""
 "If true, folder comparisons do not follow symbolic links when traversing the "
 "folder tree."
+<<<<<<< HEAD
 msgstr "如果為 True，資料夾比對在周遊資料夾樹時不跟隨符號連結。"
+=======
+msgstr "如果選了這項，資料夾比對在遊歷整個資料夾樹之時不會追蹤符號連結。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:41
 msgid "Use shallow comparison"
@@ -299,8 +399,13 @@ msgid ""
 "considering files to be identical if their size and mtime match, and "
 "different otherwise."
 msgstr ""
+<<<<<<< HEAD
 "如果為 True，資料夾比對中僅根據大小和 mtime 比對檔案，如果檔案大小和 mtime 符"
 "合則認為檔案相同，否則認為不相同。"
+=======
+"如果選了這項，資料夾比對在比對當中只會根據檔案大小及修改的時間去決定兩個檔案"
+"是否完全一樣。只有當兩個值均相同，才會當作完全一樣。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:43
 msgid "File timestamp resolution"
@@ -313,8 +418,13 @@ msgid ""
 "is useful when comparing files between filesystems with different timestamp "
 "resolution."
 msgstr ""
+<<<<<<< HEAD
 "當基於 mtime 進行比對時，兩個檔案至少要差異到奈秒以上，才會被認為 mtime 有差"
 "異。這在比對具有不同時間戳記精細度的檔案系統之間的檔案時非常有用。"
+=======
+"當根據檔案的修改時間去決定兩個檔案是否完全一樣時，少於‘檔案時間戳記精細度’的"
+"時間差會視作相同。這在比對不同系統的檔案時尤其有用。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:45 ../data/ui/preferences.ui.h:22
 msgid "Apply text filters during folder comparisons"
@@ -326,8 +436,13 @@ msgid ""
 "text filters and the blank line trimming option, and ignore newline "
 "differences."
 msgstr ""
+<<<<<<< HEAD
 "如果為 True，比對檔案內容的資料夾比對也會使用啟用的文字過濾器和空列修剪選項，"
 "並忽略換列字元差異。"
+=======
+"如果選了這項，資料夾比對在比對當中各檔案時，會使用啟用中的文字過濾器及是否要"
+"隱藏開始和結束的空列。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:47
 msgid "File status filters"
@@ -335,7 +450,11 @@ msgstr "檔案狀態過濾器"
 
 #: ../data/org.gnome.meld.gschema.xml.h:48
 msgid "List of statuses used to filter visible files in folder comparison."
+<<<<<<< HEAD
 msgstr "用於過濾資料夾比對中可見的檔案的狀態清單。"
+=======
+msgstr "在文件夾比對畫面用來篩選可見檔案狀態的列表。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:49
 msgid "Show the version control console output"
@@ -346,8 +465,13 @@ msgid ""
 "If true, a console output section will be shown in version control views, "
 "showing the commands run for version control operations."
 msgstr ""
+<<<<<<< HEAD
 "如果為 True，主控台輸出部分將顯示在版本控制檢視中，顯示版本控制操作執行的指"
 "令。"
+=======
+"如果選了這項，主控台輸出部分將顯示在版本控制檢視中，顯示版本控制操作運行中的"
+"命令。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:51
 msgid "Version control pane position"
@@ -357,11 +481,19 @@ msgstr "版本控制狀態窗格位置"
 msgid ""
 "This is the height of the main version control tree when the console pane is "
 "shown."
+<<<<<<< HEAD
 msgstr "這是當顯示主控台窗格時，主版本控制樹的高度。"
+=======
+msgstr "當主控台狀態窗格顯示時，主版本控制樹的高度。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:53
 msgid "Present version comparisons as left-local/right-remote"
+<<<<<<< HEAD
 msgstr "以左側為本地，右側為遠端方式顯示版本比對"
+=======
+msgstr "現時的版本比對設定為「左-本地/右-遠端」"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:54
 msgid ""
@@ -369,8 +501,13 @@ msgid ""
 "remote scheme to determine what order to present files in panes. Otherwise, "
 "a left-is-theirs, right-is-mine scheme is used."
 msgstr ""
+<<<<<<< HEAD
 "如果為 True，版本控制比對將使用左側為本地，右側為遠端的配置來決定在窗格中顯示"
 "檔案的順序。否則，使用左側為遠端，右側為本地的配置。"
+=======
+"如果選了這項，版本比對會使用「左-本地/右-遠端」的設定，否則會使用「右-本地/"
+"左-遠端」的設定。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:55
 msgid "Order for files in three-way version control merge comparisons"
@@ -382,29 +519,50 @@ msgid ""
 "preference only affects three-way comparisons launched from the version "
 "control view, so is used solely for merges/conflict resolution within Meld."
 msgstr ""
+<<<<<<< HEAD
 "檔案順序的選擇有遠端/合併/本地和本地/合併/遠端。此偏好設定僅影響從版本控制檢"
 "視啟動的三向比對，因此僅用於 Meld 中的合併/衝突解決。"
+=======
+"檔案順序的選擇為「遠程/合併/本地」或「本地/合併/遠程」。這選項只影響從版本控"
+"制檢視的三方比對，所以在 Meld 只用於合併/解決衝突。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:57
 msgid "Show margin in commit message editor"
+<<<<<<< HEAD
 msgstr "在提交訊息編輯器中顯示邊界"
+=======
+msgstr "顯示提交信息編輯器的右邊界"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:58
 msgid ""
 "If true, a guide will be displayed to show what column the margin is at in "
 "the version control commit message editor."
+<<<<<<< HEAD
 msgstr ""
 "如果為 True，在版本控制提交訊息編輯器中會顯示指引，來顯示邊界所在的列。"
+=======
+msgstr "如果選了這項，在版本控制提交信息的編輯器會在右邊邊界所在的行顯示指示。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:59
 msgid "Margin column in commit message editor"
+<<<<<<< HEAD
 msgstr "提交訊息編輯器中的邊界列"
+=======
+msgstr "提交信息編輯器的邊界行"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:60
 msgid ""
 "The column at which to show the margin in the version control commit message "
 "editor."
+<<<<<<< HEAD
 msgstr "在版本控制提交訊息編輯器中顯示邊界的列。"
+=======
+msgstr "在使用版本控制的提交信息編輯器時的，會顯示右邊邊界所在的行。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:61
 msgid "Automatically hard-wrap commit messages"
@@ -414,9 +572,13 @@ msgstr "提交時自動強制實體換列"
 msgid ""
 "If true, the version control commit message editor will hard-wrap (i.e., "
 "insert line breaks) at the commit margin before commit."
+<<<<<<< HEAD
 msgstr ""
 "如果為 True，版本控制提交訊息編輯器將在提交之前，在提交邊界實體換列（也就是插"
 "入斷列符號）。"
+=======
+msgstr "如果選了這項，提交時自動在長度超過右邊邊界的文字前強制插入實體換列符。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:63
 msgid "Version control status filters"
@@ -425,7 +587,11 @@ msgstr "版本控制狀態過濾器"
 #: ../data/org.gnome.meld.gschema.xml.h:64
 msgid ""
 "List of statuses used to filter visible files in version control comparison."
+<<<<<<< HEAD
 msgstr "用於在版本控制比對中過濾可見檔案的狀態清單。"
+=======
+msgstr "在比對時可以在過濾器選擇作檔案篩選的版本控制狀態列表。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:65
 msgid "Filename-based filters"
@@ -436,8 +602,13 @@ msgid ""
 "List of predefined filename-based filters that, if active, will remove "
 "matching files from a folder comparison."
 msgstr ""
+<<<<<<< HEAD
 "預先定義的基於檔案名稱的過濾器清單，如果啟用，將從資料夾比對中移除符合的檔"
 "案。"
+=======
+"預設檔案過濾器列表。如果此選項啟動了，在資料夾比對時，符合所選檔案篩選條件的"
+"檔案都會被隱藏。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/org.gnome.meld.gschema.xml.h:67
 msgid "Text-based filters"
@@ -449,6 +620,7 @@ msgid ""
 "text from being used in a file comparison. The text will still be displayed, "
 "but won’t contribute to the comparison itself."
 msgstr ""
+<<<<<<< HEAD
 "預先定義的基於文字的正規表示式過濾器清單，如果啟用，將在檔案比對不使用文字。"
 "文字仍將顯示，但不會對比對本身做出貢獻。"
 
@@ -467,6 +639,10 @@ msgstr "Meld 暗色配色方案"
 #: ../data/styles/meld-dark.xml.h:2
 msgid "Dark color scheme for Meld highlighting"
 msgstr "用於 Meld 標示的暗色配色方案"
+=======
+"預設的正則式文字為本過濾器列表。如果此選項啟動了，當比對檔案時，即使兩邊檔案"
+"內容有差異，若差異符合篩選內容，有關差異不會被顯示。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/ui/application.ui.h:1
 msgid "About Meld"
@@ -627,7 +803,11 @@ msgid "_Add"
 msgstr "加入(_A)"
 
 #: ../data/ui/EditableList.ui.h:5 ../data/ui/vcview.ui.h:11
+<<<<<<< HEAD
 #: ../meld/vcview.py:680
+=======
+#: ../meld/vcview.py:753
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 msgid "_Remove"
 msgstr "移除(_R)"
 
@@ -1386,6 +1566,7 @@ msgctxt "shortcut window"
 msgid "Next comparison pane"
 msgstr "下一個比對窗格"
 
+<<<<<<< HEAD
 #: ../data/ui/shortcuts.ui.h:44
 msgctxt "shortcut window"
 msgid "Folder comparison"
@@ -1395,6 +1576,15 @@ msgstr "資料夾比對"
 msgctxt "shortcut window"
 msgid "Copy to left"
 msgstr "複製到左側"
+=======
+#: ../data/ui/preferences.ui.h:45
+msgid "Change trimming"
+msgstr "精簡比對"
+
+#: ../data/ui/preferences.ui.h:46
+msgid "Trim blank line differences from the start and end of changes"
+msgstr "隱藏變更開始和結束的空列"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/ui/shortcuts.ui.h:46
 msgctxt "shortcut window"
@@ -1531,7 +1721,11 @@ msgstr "主控台"
 
 #: ../data/ui/vcview.ui.h:19
 msgid "Show or hide the version control console output pane"
+<<<<<<< HEAD
 msgstr "顯示或隱藏版本控制主控台輸出窗格"
+=======
+msgstr "顯示或隱藏版本控制狀態窗格"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../data/ui/vcview.ui.h:20
 msgid "_Flatten"
@@ -1613,9 +1807,13 @@ msgstr "主控台輸出"
 msgid "Push local commits to remote?"
 msgstr "推送 (push) 本地提交到遠端？"
 
+<<<<<<< HEAD
 #: ../data/ui/vcview.ui.h:41
+=======
+#: ../data/ui/vcview.ui.h:37
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 msgid "The commits to be pushed are determined by your version control system."
-msgstr "要推送的提交由您的版本控制系統決定。"
+msgstr "要推送(push)的提交由您的版本控制系統決定。"
 
 #: ../data/ui/vcview.ui.h:42
 msgid "_Push commits"
@@ -1669,21 +1867,37 @@ msgstr "資料夾沒有差異"
 
 #: ../meld/dirdiff.py:884
 msgid "Contents of scanned files in folders are identical."
+<<<<<<< HEAD
 msgstr "資料夾裡掃描的檔案的內容是相同的。"
+=======
+msgstr "資料夾內已掃描檔案的內容一致。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../meld/dirdiff.py:886
 msgid ""
 "Scanned files in folders appear identical, but contents have not been "
 "scanned."
+<<<<<<< HEAD
 msgstr "資料夾裡掃描的檔案似乎是相同的，但是內容沒有被掃描。"
+=======
+msgstr "資料夾內已掃描的檔案似乎一致，但其內容未有掃描。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../meld/dirdiff.py:889
 msgid "File filters are in use, so not all files have been scanned."
+<<<<<<< HEAD
 msgstr "檔案過濾器正在使用中，所以並非所有檔案都被掃描。"
+=======
+msgstr "檔案過濾器正在使用，未必能掃描所有檔案。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../meld/dirdiff.py:891
 msgid "Text filters are in use and may be masking content differences."
+<<<<<<< HEAD
 msgstr "文字過濾器正在使用中，可能會屏蔽內容差異。"
+=======
+msgstr "文字過濾器正在使用，可能會屏蔽不同之處。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../meld/dirdiff.py:909 ../meld/filediff.py:1491 ../meld/filediff.py:1521
 #: ../meld/filediff.py:1523 ../meld/ui/msgarea.py:106 ../meld/ui/msgarea.py:119
@@ -1732,12 +1946,17 @@ msgid ""
 "Another folder with the same name already exists in “%s”.\n"
 "If you replace the existing folder, all files in it will be lost."
 msgstr ""
+<<<<<<< HEAD
 "在「%s」中，另一個相同名稱的資料夾已經存在。\n"
 "如果你取代已存在的資料夾，裡面的所有檔案都將遺失。"
+=======
+"在「%s」已有一個相同名稱的資料夾。\n"
+"如果您取代現有的資料夾的話，裡面的全部檔案會流失。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../meld/dirdiff.py:1007
 msgid "Error copying file"
-msgstr "複製檔案時發生錯誤"
+msgstr "複製檔案時出錯"
 
 #: ../meld/dirdiff.py:1008
 #, python-format
@@ -1766,9 +1985,15 @@ msgstr "比對結果可能不準確"
 
 #: ../meld/filediff.py:836
 msgid ""
+<<<<<<< HEAD
 "A filter changed the number of lines in the file, which is unsupported. The "
 "comparison will not be accurate."
 msgstr "一個過濾器變更了檔案的列數，這不被支援。比對結果可能不準確。"
+=======
+"Filter “%s” changed the number of lines in the file, which is unsupported. "
+"The comparison will not be accurate."
+msgstr "「%s」過濾器更改了檔案的列數，但還尚未支援。比對結果可能不準確。"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../meld/filediff.py:893
 msgid "Mark conflict as resolved?"
@@ -2023,13 +2248,24 @@ msgstr "開始版本控制比對"
 
 #: ../meld/meldapp.py:188
 msgid "Start a 2- or 3-way file comparison"
+<<<<<<< HEAD
 msgstr "開始雙向或三向檔案比對"
+=======
+msgstr "開始雙向或三方檔案比對"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../meld/meldapp.py:190
 msgid "Start a 2- or 3-way folder comparison"
+<<<<<<< HEAD
 msgstr "開始雙向或三向資料夾比對"
 
 #: ../meld/meldapp.py:233
+=======
+msgstr "開始雙向或三方資料夾比對"
+
+# (n.)
+#: ../meld/meldapp.py:224
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 #, python-format
 msgid "Error: %s\n"
 msgstr "錯誤：%s\n"
@@ -2085,7 +2321,7 @@ msgstr "無法自動合併資料夾"
 
 #: ../meld/meldapp.py:307
 msgid "Error reading saved comparison file"
-msgstr "讀取已儲存比對檔案時發生錯誤"
+msgstr "讀取已儲存比對檔案時出錯"
 
 #: ../meld/meldapp.py:324
 #, python-format
@@ -2143,7 +2379,11 @@ msgstr "復原上一次的動作"
 
 #: ../meld/meldwindow.py:66
 msgid "Redo the last undone action"
+<<<<<<< HEAD
 msgstr "重做上一次復原的操作"
+=======
+msgstr "重做最後復原的操作"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../meld/meldwindow.py:68
 msgid "Cut the selection"
@@ -2171,7 +2411,7 @@ msgstr "尋找下一個(_X)"
 
 #: ../meld/meldwindow.py:77
 msgid "Search forwards for the same text"
-msgstr "向下尋找相同的文字"
+msgstr "向下搜尋相同的文字"
 
 #: ../meld/meldwindow.py:79
 msgid "Find _Previous"
@@ -2179,7 +2419,7 @@ msgstr "尋找上一個(_P)"
 
 #: ../meld/meldwindow.py:80
 msgid "Search backwards for the same text"
-msgstr "向上尋找相同的文字"
+msgstr "向上搜尋相同的文字"
 
 #: ../meld/meldwindow.py:83
 msgid "_Replace…"
@@ -2304,6 +2544,7 @@ msgstr "需要三個檔案來自動合併，已有：%r"
 
 #: ../meld/meldwindow.py:623
 msgid "Cannot compare a mixture of files and directories"
+<<<<<<< HEAD
 msgstr "無法對檔案和資料夾混合比對"
 
 #: ../meld/misc.py:136
@@ -2322,6 +2563,9 @@ msgstr ""
 #, python-format
 msgid "Couldn’t find colour scheme details for %s-%s; this is a bad install"
 msgstr "找不到 %s-%s 的配色方案詳細資料。這個安裝有問題"
+=======
+msgstr "無法對文件和目錄混合比對"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 #: ../meld/misc.py:326
 msgid "[None]"
@@ -2429,9 +2673,14 @@ msgstr "遠端"
 
 #: ../meld/vc/_vc.py:70
 msgid "Unversioned"
-msgstr "未版本控制"
+msgstr "不在版本控制"
 
+<<<<<<< HEAD
 #: ../meld/vc/_vc.py:73
+=======
+# (n.)
+#: ../meld/vc/_vc.py:68
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 msgid "Error"
 msgstr "錯誤"
 
@@ -2489,7 +2738,7 @@ msgstr "選擇要使用的版本控制系統"
 #: ../meld/vcview.py:331
 #, python-format
 msgid "%s: %s"
-msgstr "%s: %s"
+msgstr "%s：%s"
 
 #. Initial yield so when we add this to our tasks, we don't
 #. create iterators that may be invalidated.
@@ -2541,16 +2790,25 @@ msgstr "%s (作業中、倉儲)"
 msgid "%s (repository, working)"
 msgstr "%s (倉儲、作業中)"
 
+<<<<<<< HEAD
 #: ../meld/vcview.py:674
 msgid "Remove folder and all its files?"
 msgstr "移除資料夾及所有包含的檔案？"
 
 #: ../meld/vcview.py:676
+=======
+#: ../meld/vcview.py:747
+msgid "Remove folder and all its files?"
+msgstr "移除資料夾及所有包含的檔案？"
+
+#: ../meld/vcview.py:749
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 msgid ""
 "This will remove all selected files and folders, and all files within any "
 "selected folders, from version control."
 msgstr "這將從版本控制中移除所有選取的檔案及資料夾，及選取資料夾中的所有檔案。"
 
+<<<<<<< HEAD
 #: ../meld/vcview.py:785
 msgid "Clear"
 msgstr "清除"
@@ -2633,18 +2891,638 @@ msgstr "清除"
 
 #~ msgid "Error removing %s"
 #~ msgstr "移除 %s 時發生錯誤"
+=======
+#: ../meld/vcview.py:783
+#, python-format
+msgid "Error removing %s"
+msgstr "移除 %s 時出錯"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
-#~ msgid "Copy _Left"
-#~ msgstr "複製到左側(_L)"
+msgid ""
+"Could not read from '%s'.\n"
+"\n"
+"I tried encodings %s."
+msgstr ""
+"Feilen tu rīd from «%s».\n"
+"\n"
+"Enkoudiŋ traien für %s."
 
-#~ msgid "Copy _Right"
-#~ msgstr "複製到右側(_R)"
+msgid "Browse %s"
+msgstr "Braws %s"
+
+msgid "Common Ancestor"
+msgstr "Kòmmòn-na Ançestā"
+
+msgid "`%s' is not a directory or file, cannot open cvs view"
+msgstr "`%s' não é um directório ou ficheiro, incapaz de abrir vista cvs"
+
+msgid "window1"
+msgstr "window1"
+
+msgid "Copyright (C) 2002 Stephen Kennedy"
+msgstr "Kopirait (C) 2002n Stephen Kennedy"
+
+msgid "Binary files do not have text filters applied to them when comparing."
+msgstr "Bainari fayls wa mwu tekst filtèrās applaien tu in kompäreiçion."
+
+#, fuzzy
+msgid ""
+"Ignored:Non CVS:::Error::Newly added:Modified:<b>Conflict</b>:Removed:Missing"
+msgstr ""
+"Ignored:Unversioned:::Error::Newly added:Modified:<b>Conflict</b>:Removed:"
+"Missiŋ"
+
+msgid ""
+"Error converting to a regular expression\n"
+"The pattern was '%s'\n"
+"The error was '%s'"
+msgstr ""
+"Error converting to a regular expression\n"
+"The pattern was '%s'\n"
+"The error was '%s'"
+
+msgid "Tag"
+msgstr "Täg"
+
+msgid "[%s] Applying patch"
+msgstr "[%s] Applying patch"
+
+msgid "Select some files first."
+msgstr "Select some files first."
+
+msgid "Error converting pattern '%s' to regular expression"
+msgstr "Error converting pattern '%s' to regular expression"
+
+msgid ""
+"'%s' is a directory.\n"
+"Remove recusively?"
+msgstr ""
+"'%s' wa direktòri.\n"
+"Remove recusively?"
+
+msgid "The regular expression '%s' was not found."
+msgstr "Regyular ikspresion '%s' wa not fainden."
+
+msgid "The text '%s' was not found."
+msgstr "Tekst '%s' wa not fainden."
+
+msgid ""
+"Could not open '%s' for reading.\n"
+"\n"
+"The error was:\n"
+"%s"
+msgstr ""
+"Could not open '%s' for reading.\n"
+"\n"
+"The error was:\n"
+"%s"
+
+msgid ""
+"Could not read from '%s'.\n"
+"\n"
+"The error was:\n"
+"%s"
+msgstr ""
+"Feilen tu rīd from «%s».\n"
+"\n"
+"Örakoud-wa:\n"
+"%s"
+
+msgid "Choose a name for buffer %i."
+msgstr "Choose a name for buffer %i."
+
+#, fuzzy
+msgid ""
+"Refreshing will discard changes in:\n"
+"%s\n"
+"\n"
+"You cannot undo this operation."
+msgstr ""
+"Reloading will discard changes in:\n"
+"%s\n"
+"\n"
+"You cannot undo this operation."
+
+msgid "Meld requires a recent version of pygtk."
+msgstr "Meld rīkwair pygtk dè zuigèn-na vörçion."
+
+msgid "pygtk-%s or higher is recommended."
+msgstr "pygtk-%s or higher is recommended."
+
+msgid "Meld works best with pygtk-%s or higher. (found %s)"
+msgstr "Meld works best with pygtk-%s or higher. (found %s)"
+
+msgid ""
+"Due to incompatible API changes some functions may not operate as expected."
+msgstr ""
+"Due to incompatible API changes some functions may not operate as expected."
+
+msgid "Original File"
+msgstr "Orijinol Fayl"
+
+msgid "Original Directory"
+msgstr "Orijinol Direktòri"
+
+msgid "Other Directory"
+msgstr "Kitadè Direktòri"
+
+#, fuzzy
+msgid "Root CVS Directory"
+msgstr "CVS Directory"
+
+#, fuzzy
+msgid ""
+"Meld is a file and directory comparison tool. Usage:\n"
+"\n"
+"    meld                        Start with no windows open\n"
+"    meld <dir>                  Start with CVS browser in 'dir'\n"
+"    meld <file>                 Start with CVS diff of 'file'\n"
+"    meld <file> <file> [file]   Start with 2 or 3 way file comparison\n"
+"    meld <dir>  <dir>  [dir]    Start with 2 or 3 way directory comparison\n"
+"\n"
+"For more information choose help -> contents.\n"
+"Report bugs to steve9000@users.sourceforge.net.\n"
+msgstr ""
+"Meld is a file and directory comparison tool. Usage:\n"
+"\n"
+" meld Start with no windows open\n"
+" meld <dir> Start with CVS browser in 'dir'\n"
+" meld <file> Start with CVS diff of 'file'\n"
+" meld <file> <file> [file] Start with 2 or 3 way file comparison\n"
+" meld <dir> <dir> [dir] Start with 2 or 3 way directory comparison\n"
+"\n"
+"For more information choose help -> contents.\n"
+"Report bugs at http://bugzilla.gnome.org/buglist.cgi?product=meld\n"
+"stevek@gnome.org\n"
+
+#, fuzzy
+msgid ""
+"Meld %s\n"
+"Written by Stephen Kennedy <steve9000@users.sf.net>"
+msgstr ""
+"Meld %s\n"
+"Wraiten bai Stephen Kennedy <stevek@gnome.org>"
+
+msgid "_Diff"
+msgstr "_Diff"
+
+#, fuzzy
+msgid "Non _CVS"
+msgstr "Non _VC"
+
+#, fuzzy
+msgid "Add to CVS"
+msgstr "Koncrol"
+
+#, fuzzy
+msgid "Remove from CVS"
+msgstr "Remove from VC"
+
+msgid "*"
+msgstr "*"
+
+msgid "Add _Binary"
+msgstr "Ädd _Binari"
+
+msgid "Remove _Locally"
+msgstr "Remove _Locally"
+
+#, fuzzy
+msgid "CVS Log"
+msgstr "VC Log"
+
+#, fuzzy
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Some files have been modified.\n"
+"Which ones would you like to save?</span>"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Some files have been modified.\n"
+"Which ones would you like to save?"
+
+msgid "Match _entire word only"
+msgstr "Match _entire word only"
+
+msgid "Diff"
+msgstr "Diff"
+
+msgid "Left"
+msgstr "Left"
+
+msgid "Ignore case of entries"
+msgstr "Ignore case of entries"
+
+msgid "Case"
+msgstr "Keis"
+
+msgid "Two way file"
+msgstr "Two way file"
+
+msgid "Three way file"
+msgstr "Three way file"
+
+msgid "Two way directory"
+msgstr "Two way directory"
+
+msgid "Three way directory"
+msgstr "Three way directory"
+
+msgid "CVS view"
+msgstr "CVS view"
+
+msgid "Report _Bug"
+msgstr "Report _Bug"
+
+msgid "_New..."
+msgstr "_Niu..."
+
+msgid "http://meld.sourceforge.net"
+msgstr "http://meld.sourceforge.net"
+
+#, fuzzy
+msgid "<span weight=\"bold\" size=\"x-large\">Editor</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">Editor"
+
+msgid "<b>Font</b>"
+msgstr "<b>Font</b>"
+
+msgid "<b>Misc</b>"
+msgstr "<b>Misc</b>"
+
+msgid "Tabs equivalent to "
+msgstr "Täbs equivalent to "
+
+msgid " spaces."
+msgstr " spaces."
+
+#, fuzzy
+msgid "Automatically supply missing newline at end of file."
+msgstr "Automatically supply missing newline at end of file"
+
+msgid "<b>Edit Menu</b>"
+msgstr "<b>Edit Menyu</b>"
+
+msgid "Edit menu popup invokes"
+msgstr "Edit menyu popùp invok"
+
+msgid "(gnome-default-editor)"
+msgstr "(gnome-default-editor)"
+
+#, fuzzy
+msgid "<span weight=\"bold\" size=\"x-large\">Display</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">Displei"
+
+msgid "<b>Drawing Style</b>"
+msgstr "<b>Drawing Style</b>"
+
+msgid ""
+"Choose how the central bar of the diff viewer is drawn. You may wish to "
+"choose a simpler mode if you find scrolling is slow."
+msgstr ""
+"Choose how the central bar of the diff viewer is drawn. You may wish to "
+"choose a simpler mode if you find scrolling is slow."
+
+#, fuzzy
+msgid "Simple : Lines only"
+msgstr "Simple: Lines only"
+
+#, fuzzy
+msgid "Solid   Filled Quadilaterals"
+msgstr "Solid: Filled Quadilaterals"
+
+#, fuzzy
+msgid "Curved : Filled Curves"
+msgstr "Curved: Filled Curves"
+
+msgid "<b>Toolbar Appearance</b>"
+msgstr "<b>Tūlbār Appīràns</b>"
+
+msgid "Gnome Default"
+msgstr "Gnome Difault"
+
+msgid "Icons Only"
+msgstr "Aikons Onli"
+
+msgid "Text Only"
+msgstr "Text Only"
+
+msgid "Text Under Icons"
+msgstr "Text Under Icons"
+
+msgid "Text Beside Icons"
+msgstr "Text Beside Icons"
+
+#, fuzzy
+msgid "<span weight=\"bold\" size=\"x-large\">File Filters</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">Fayl Filtèrās"
+
+#, fuzzy
+msgid "<span weight=\"bold\" size=\"x-large\">Text Filters</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">Tekst Filtèrās"
+
+#, fuzzy
+msgid "<span weight=\"bold\" size=\"x-large\">Encoding</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">Enkoudiŋ"
+
+msgid "<b>Loading</b>"
+msgstr "<b>Loudiŋ</b>"
+
+msgid "When loading, try these codecs in order. (e.g. utf8, iso8859)"
+msgstr "When loading, try these codecs in order. (e.g. utf8, iso8859)"
+
+msgid "utf8 iso8859"
+msgstr "utf8 iso8859"
+
+msgid "<b>Saving</b>"
+msgstr "<b>Seiviŋ</b>"
+
+msgid "Save in the files original encoding"
+msgstr "Save in the files original encoding"
+
+msgid "Encoding"
+msgstr "Enkoudiŋ"
+
+#, fuzzy
+msgid "<span weight=\"bold\" size=\"x-large\">CVS</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">CVS"
+
+msgid "<b>Global options</b>"
+msgstr "<b>Global options</b>"
+
+msgid "Quiet mode (-q)"
+msgstr "Quiet mode (-q)"
+
+msgid "Use Compression (-z)"
+msgstr "Use Compression (-z)"
+
+msgid "Ignore .cvsrc (-f)"
+msgstr "Ignor .cvsrc (-f)"
+
+msgid "CVS binary"
+msgstr "CVS binary"
+
+msgid "Locate CVS binary : Meld"
+msgstr "Locate CVS binary : Meld"
+
+msgid "<b>Update Options</b>"
+msgstr "<b>Ùpdeit Opçions</b>"
+
+msgid "Prune empty directories (-P)"
+msgstr "Prune empty directories (-P)"
+
+msgid "CVS"
+msgstr "CVS"
+
+msgid "_Logo"
+msgstr "_Logo"
+
+#, fuzzy
+msgid "<span weight=\"bold\" size=\"x-large\">Binary Files</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">Fayl Filtèrās"
+
+#, fuzzy
+msgid "_Binary Files"
+msgstr "Original File"
+
+#, fuzzy
+msgid "<span weight=\"bold\" size=\"x-large\">Diff</span>"
+msgstr "<span weight=\"bold\" size=\"x-large\">Diff"
+
+msgid ""
+"Ignore changes in case; consider upper and lower-case letters equivalent"
+msgstr ""
+"Ignore changes in case; consider upper and lower-case letters equivalent"
+
+msgid "<b>Whitespace</b>"
+msgstr "<b>Whitespace</b>"
+
+msgid "Whitespace is significant"
+msgstr "Whitespace is significant"
+
+msgid "Ignore changes that just insert or delete blank lines"
+msgstr "Ignore changes that just insert or delete blank lines"
+
+msgid "Ignore changes in amount of white space"
+msgstr "Ignore changes in amount of white space"
+
+msgid ""
+"Regular expression '%s' changed the number of lines in the file. Comparison "
+"will be incorrect. See the user manual for more details."
+msgstr ""
+"Regular expression '%s' changed the number of lines in the file. Comparison "
+"will be incorrect. See the user manual for more details."
+
+msgid "The error was:"
+msgstr "Ora wa:"
+
+msgid ""
+"It contains ascii nulls.\n"
+"Perhaps it is a binary file."
+msgstr ""
+"It contains ascii nulls.\n"
+"Perhaps it is a binary file."
+
+msgid "<span weight=\"bold\" size=\"x-large\">Compare"
+msgstr "<span weight=\"bold\" size=\"x-large\">Kompär"
+
+msgid "Ignore changes which insert or delete blank lines"
+msgstr "Ignore changes which insert or delete blank lines"
+
+msgid "Line Wrapping "
+msgstr "Line Wrapping "
+
+msgid "Mailing _List"
+msgstr "Mailing _List"
+
+msgid "Mine"
+msgstr "Mine"
+
+msgid "Original"
+msgstr "Original"
+
+msgid "Other"
+msgstr "Other"
+
+msgid "Other File"
+msgstr "Other File"
+
+msgid "_Character"
+msgstr "_Character"
+
+msgid "_Word"
+msgstr "_Word"
+
+msgid "Date"
+msgstr "Deit"
+
+msgid "Local copy against other remote revision"
+msgstr "Local copy against other remote revision"
+
+msgid "Local copy against same remote revision"
+msgstr "Local copy against same remote revision"
+
+msgid "Regex"
+msgstr "Regex"
+
+msgid ""
+"Line numbers are only available if you have gnome-python-desktop installed."
+msgstr ""
+"Line numbers are only available if you have gnome-python-desktop installed."
+
+msgid ""
+"Syntax highlighting is only available if you have gnome-python-desktop "
+"installed."
+msgstr ""
+"Syntax highlighting is only available if you have gnome-python-desktop "
+"installed."
+
+msgid "Backups\t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
+msgstr "Bäkùp\t1\t#*# .#* ~* *~ *.{orig,bak,swp}\n"
+
+msgid "Version Control\t1\tCVS .svn MT [{]arch[}] .arch-ids .arch-inventory\n"
+msgstr "Version Control\t1\tCVS .svn MT [{]arch[}] .arch-ids .arch-inventory\n"
+
+msgid "Binaries\t1\t*.{pyc,a,obj,o,so,la,lib,dll}\n"
+msgstr "Binaries\t1\t*.{pyc,a,obj,o,so,la,lib,dll}\n"
+
+msgid "Media\t0\t*.{jpg,gif,png,wav,mp3,ogg,xcf,xpm}"
+msgstr "Midia\t0\t*.{jpg,gif,png,wav,mp3,ogg,xcf,xpm}"
+
+msgid "CVS keywords\t0\t\\$\\w+(:[^\\n$]+)?\\$\n"
+msgstr "CVS kyiwörds\t0\t\\$\\w+(:[^\\n$]+)?\\$\n"
+
+msgid "C++ comment\t0\t//.*\n"
+msgstr "C++ komment\t0\t//.*\n"
+
+msgid "C comment\t0\t/\\*.*?\\*/\n"
+msgstr "C komment\t0\t/\\*.*?\\*/\n"
+
+msgid "All whitespace\t0\t[ \\t\\r\\f\\v]*\n"
+msgstr "Ol hwaitspeis\t0\t[ \\t\\r\\f\\v]*\n"
+
+msgid "Leading whitespace\t0\t^[ \\t\\r\\f\\v]*\n"
+msgstr "Leading whitespace\t0\t^[ \\t\\r\\f\\v]*\n"
+
+msgid "Script comment\t0\t#.*"
+msgstr "Skript komment\t0\t#.*"
+
+msgid ""
+"second,seconds:minute,minutes:hour,hours:day,days:week,weeks:month,months:"
+"year,years"
+msgstr ""
+"second,seconds:minute,minutes:hour,hours:day,days:week,weeks:month,months:"
+"year,years"
+
+msgid "nonexistant"
+msgstr "nonexistant"
+
+msgid "C_VS Browser"
+msgstr "C_VS Brawsā"
+
+msgid "New..."
+msgstr "Niu..."
+
+msgid "SVN Directory"
+msgstr "SVN Directory"
+
+msgid "SVN view"
+msgstr "SVN vyu"
+
+msgid "_SVN Browser"
+msgstr "_SVN Brawsā"
+
+#, fuzzy
+#~ msgid "Rev"
+#~ msgstr "移除(_R)"
+
+#, fuzzy
+#~ msgid "[%s] Scanning"
+#~ msgstr "[%s] 正在掃描 %s"
 
 #~ msgid ""
 #~ "'%s' exists.\n"
 #~ "Overwrite?"
 #~ msgstr ""
-#~ "‘%s’已存在。\n"
+#~ "「%s」已存在。\n"
+#~ "覆寫它？"
+
+#, fuzzy
+#~ msgid ""
+#~ "Regular expression error\n"
+#~ "'%s'"
+#~ msgstr "正規表示式(_X)"
+
+#~ msgid ""
+#~ "\"%s\" exists!\n"
+#~ "Overwrite?"
+#~ msgstr ""
+#~ "「%s」已存在！\n"
+#~ "覆盖文件？"
+
+#~ msgid ""
+#~ "Error writing to %s\n"
+#~ "\n"
+#~ "%s."
+#~ msgstr ""
+#~ "寫入 %s 時發生錯誤\n"
+#~ "\n"
+#~ "%s，"
+
+#, fuzzy
+#~ msgid "Local Changes"
+#~ msgstr "變更(_C)"
+
+#, fuzzy
+#~ msgid "Modified Directory"
+#~ msgstr "修改"
+
+#, fuzzy
+#~ msgid "Diff selected"
+#~ msgstr "隱藏所選內容"
+
+#, fuzzy
+#~ msgid "Show non-CVS"
+#~ msgstr "顯示新增處"
+
+#, fuzzy
+#~ msgid "Update"
+#~ msgstr "更新(_U)"
+
+#, fuzzy
+#~ msgid "Edit"
+#~ msgstr "編輯(_E)"
+
+#, fuzzy
+#~ msgid "_Delete Selected"
+#~ msgstr "刪除所選內容"
+
+#, fuzzy
+#~ msgid "Right"
+#~ msgstr "複製到右側(_R)"
+
+#, fuzzy
+#~ msgid "Hide..."
+#~ msgstr "隱藏"
+
+#, fuzzy
+#~ msgid "Choose Files"
+#~ msgstr "提交檔案"
+
+#, fuzzy
+#~ msgid "Create missing directories (-d)"
+#~ msgstr "將檔案合併顯示（不顯示資料夾）"
+
+#~ msgid "Cycle Through Documents"
+#~ msgstr "在文件間循環"
+
+#~ msgid "Clear manual change sychronization points"
+#~ msgstr "清除手動更改同步點"
+
+#, fuzzy
+#~ msgid ""
+#~ "'%s' iksist.\n"
+#~ "Overwrite?"
+#~ msgstr ""
+#~ "「%s」已存在。\n"
 #~ "覆寫它？"
 
 #~ msgid "%i second"
@@ -2675,24 +3553,34 @@ msgstr "清除"
 #~ msgid_plural "%i years"
 #~ msgstr[0] "%i 年"
 
+<<<<<<< HEAD
 #~ msgid "Clear manual change sychronization points"
 #~ msgstr "清除手動變更同步點"
+=======
+#, fuzzy
+#~ msgid "Save patch as..."
+#~ msgstr "保存修正檔"
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
-#~ msgid "Cycle Through Documents"
-#~ msgstr "在文件間循環"
+#, fuzzy
+#~ msgid "Directory"
+#~ msgstr "資料夾比對"
 
-#~ msgid ""
-#~ "\"%s\" exists!\n"
-#~ "Overwrite?"
-#~ msgstr ""
-#~ "「%s」已存在！\n"
-#~ "覆盖文件？"
+#, fuzzy
+#~ msgid "_Three Way Compare"
+#~ msgstr "比對(_C)"
 
-#~ msgid ""
-#~ "Error writing to %s\n"
-#~ "\n"
-#~ "%s."
-#~ msgstr ""
-#~ "寫入 %s 時發生錯誤\n"
-#~ "\n"
-#~ "%s，"
+#, fuzzy
+#~ msgid "_Up"
+#~ msgstr "更新(_U)"
+
+#, fuzzy
+#~ msgid "Compare Options"
+#~ msgstr "選項"
+
+#, fuzzy
+#~ msgid "Diff Options"
+#~ msgstr "選項"
+
+#~ msgid "Copy _Left"
+#~ msgstr "複製到左側(_L)"

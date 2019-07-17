@@ -1,7 +1,11 @@
 
 import unittest
+<<<<<<< HEAD
 from meld.matchers import myers
 
+=======
+from meld import matchers
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
 
 class MatchersTests(unittest.TestCase):
 
@@ -49,8 +53,12 @@ class MatchersTests(unittest.TestCase):
         a = list('012a3456c789')
         b = list('02a341b5678')
         r = [(0, 0, 1), (2, 1, 1), (3, 2, 3), (9, 9, 2), (12, 11, 0)]
+<<<<<<< HEAD
         matcher = myers.SyncPointMyersSequenceMatcher(
             None, a, b, [(3, 2), (8, 6)])
+=======
+        matcher = matchers.SyncPointMyersSequenceMatcher(None, a, b, [(3,2), (8,6)])
+>>>>>>> c3a7c7d9b1b263e97a8640a8fe230e12e46f75cf
         blocks = matcher.get_matching_blocks()
         self.assertEqual(blocks, r)
 
