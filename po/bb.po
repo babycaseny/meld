@@ -1,9 +1,8 @@
-# Babyish translation for meld.
 # Copyright © 2005-2015 Free Software Foundation, Inc.
 # This file is distributed under the same license as the meld package.
-# Tom K. C. Chiu <tomchiukc@gmail.com>, 2014-2015.
-# Websàit: http://babyish.wikia.com/wiki/Meld%2Fbb.po
-# Babycasèny Gavèrnmènt <babycaseny@gmail.com>, 2015.
+# Tom K. C. Chiu <babycaseny@gmail.com>, 2014-2019.
+# Websàit: http://babyish.fandom.com/wiki/Meld%2Fbb.po
+# Babycasèny Gavèrnmènt <babycaseny@gmail.com>, 2015-2019.
 #
 msgid ""
 msgstr ""
@@ -11,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=meld&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-04-13 10:29+0000\n"
-"PO-Revision-Date: 2015-05-27 01:11+0800\n"
+"PO-Revision-Date: 2019-07-17 17:59+0800\n"
 "Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
 "Language-Team: Babycasèny Gavèrnmènt\n"
 "Language: bb\n"
@@ -19,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 2.2.3\n"
 "X-Project-Style: gnome\n"
 
 #: ../bin/meld:144
@@ -407,6 +406,8 @@ msgstr "Vörçion koncrol steitùs filtèrās"
 msgid ""
 "List of statuses used to filter visible files in version control comparison."
 msgstr ""
+"Steitùses yusen dè list tu filtèr vyuàbol fayls in vörçion koncrol "
+"kompäreiçion."
 
 #: ../data/org.gnome.meld.gschema.xml.h:63
 msgid "Filename-based filters"
@@ -447,7 +448,7 @@ msgstr "Websàit"
 
 #: ../data/ui/application.ui.h:5
 msgid "translator-credits"
-msgstr "Tom K. C. Chiu <tomchiukc@gmail.com>, 2015n"
+msgstr "Tom K. C. Chiu <babycaseny@gmail.com>, 2015n"
 
 #: ../data/ui/application.ui.h:6
 msgid "_Preferences"
@@ -581,8 +582,7 @@ msgid "Move _Down"
 msgstr "Mūv _Dawn"
 
 #. Create icon and filename CellRenderer
-#: ../data/ui/EditableList.ui.h:10 ../meld/dirdiff.py:374
-#: ../meld/vcview.py:203
+#: ../data/ui/EditableList.ui.h:10 ../meld/dirdiff.py:374 ../meld/vcview.py:203
 msgid "Name"
 msgstr "Neim"
 
@@ -688,7 +688,7 @@ msgstr "Kopi Abauv Left"
 
 #: ../data/ui/filediff.ui.h:23
 msgid "Copy change above the left chunk"
-msgstr "Kopi čeinj àbauv left chùngk"
+msgstr "Kopi čeinj àbauv left chùŋk"
 
 #: ../data/ui/filediff.ui.h:24
 msgid "Copy Below Left"
@@ -696,7 +696,7 @@ msgstr "Kopi Bilow Left"
 
 #: ../data/ui/filediff.ui.h:25
 msgid "Copy change below the left chunk"
-msgstr ""
+msgstr "Kopi čeinj bilow left chùŋk"
 
 #: ../data/ui/filediff.ui.h:26
 msgid "Copy Above Right"
@@ -704,7 +704,7 @@ msgstr "Kopi Abauv Ràit"
 
 #: ../data/ui/filediff.ui.h:27
 msgid "Copy change above the right chunk"
-msgstr ""
+msgstr "Kopi čeinj àbauv ràit chùŋk"
 
 #: ../data/ui/filediff.ui.h:28
 msgid "Copy Below Right"
@@ -712,7 +712,7 @@ msgstr "Kopi Bilow Ràit"
 
 #: ../data/ui/filediff.ui.h:29
 msgid "Copy change below the right chunk"
-msgstr ""
+msgstr "Kopi čeinj bilow ràit chùŋk"
 
 #: ../data/ui/filediff.ui.h:30
 msgid "Delete"
@@ -795,7 +795,7 @@ msgstr "_Seiv"
 msgid ""
 "This file can not be written to. You may click here to unlock this file and "
 "make changes anyway, but these changes must be saved to a new file."
-msgstr "Komplit wörd"
+msgstr "Nigè fayl wa not àbol tu wrait tu. Nei keyi klikk tu"
 
 #: ../data/ui/filediff.ui.h:50
 msgid "File 3"
@@ -847,7 +847,7 @@ msgstr "_Mätč keis"
 
 #: ../data/ui/findbar.ui.h:8
 msgid "Who_le word"
-msgstr "Komplit wörd"
+msgstr "Komp_lit wörd"
 
 #: ../data/ui/findbar.ui.h:9
 msgid "Regular e_xpression"
@@ -863,7 +863,7 @@ msgstr "Formät as progremfiks"
 
 #: ../data/ui/patch-dialog.ui.h:2
 msgid "Copy to Clipboard"
-msgstr "Kopi tu Klipbōd "
+msgstr "Kopi tu Klipbōd"
 
 #: ../data/ui/patch-dialog.ui.h:3 ../meld/patchdialog.py:119
 msgid "Save Patch"
@@ -887,11 +887,11 @@ msgstr "_Rīvörs progremfiks dè direkçion"
 
 #: ../data/ui/preferences.ui.h:1
 msgid "Left is remote, right is local"
-msgstr "Left wa rīmot, rait wa lokol"
+msgstr "Left wa rīmot, ràit wa lokol"
 
 #: ../data/ui/preferences.ui.h:2
 msgid "Left is local, right is remote"
-msgstr "Left wa lokol, rait wa rīmot"
+msgstr "Left wa lokol, ràit wa rīmot"
 
 #: ../data/ui/preferences.ui.h:3
 msgid "Remote, merge, local"
@@ -999,7 +999,7 @@ msgstr "K_ompär fayls beisen onli on saiz en taimstämp"
 
 #: ../data/ui/preferences.ui.h:29
 msgid "_Timestamp resolution:"
-msgstr "_Taimstämp rīsoluçion"
+msgstr "_Taimstämp rīsoluçion:"
 
 #: ../data/ui/preferences.ui.h:31
 msgid "Symbolic Links"
@@ -1065,7 +1065,7 @@ msgstr "Čeinj trimiŋ"
 
 #: ../data/ui/preferences.ui.h:46
 msgid "Trim blank line differences from the start and end of changes"
-msgstr "Trim blänk lain diffèrènses from čeinjs dè start en end"
+msgstr "Trim bläŋk lain diffèrènses from čeinjs dè start en end"
 
 #: ../data/ui/preferences.ui.h:47
 msgid "Text filters"
@@ -1087,7 +1087,7 @@ msgstr ""
 
 #: ../data/ui/preferences.ui.h:49
 msgid "Text Filters"
-msgstr "Tekst Filtèrenas"
+msgstr "Tekst Filtèrās"
 
 #: ../data/ui/tab-placeholder.ui.h:1 ../meld/meldwindow.py:625
 msgid "New comparison"
@@ -1139,7 +1139,7 @@ msgstr "Silekt 1-gè vörçion-koncrolen fouldèr"
 
 #: ../data/ui/tab-placeholder.ui.h:13
 msgid "_Blank comparison"
-msgstr "_Blänk kompäreiçion"
+msgstr "_Bläŋk kompäreiçion"
 
 #: ../data/ui/tab-placeholder.ui.h:14
 msgid "C_ompare"
@@ -1223,7 +1223,7 @@ msgstr "Displei modifaien fayls"
 
 #: ../data/ui/vcview.ui.h:24
 msgid "_Normal"
-msgstr "_Normal"
+msgstr "_Normol"
 
 #: ../data/ui/vcview.ui.h:25
 msgid "Show normal files"
@@ -1368,7 +1368,7 @@ msgstr ""
 
 #: ../meld/dirdiff.py:893
 msgid "Files hidden by case insensitive comparison"
-msgstr ""
+msgstr "Fayls haiden bai keis-not-sensitiv-na kompäreiçion"
 
 #. TRANSLATORS: This is followed by a list of files
 #: ../meld/dirdiff.py:895
@@ -1377,8 +1377,7 @@ msgid ""
 "filesystem. The following files in this folder are hidden:"
 msgstr ""
 "Neidè kompyutā wa rùniŋ on keis-not-sensitiv kompäreiçion on keis-sensitiv "
-"faylsistèm. Bufùn-dè fayls wa not dū vyuàbol:\n"
-"%s"
+"faylsistèm. Folowen fayls listen in nigè fouldèr wa haiden:"
 
 #: ../meld/dirdiff.py:906
 #, python-format
@@ -1402,13 +1401,17 @@ msgid "Error copying file"
 msgstr "Öra when kopiiŋ fayl"
 
 #: ../meld/dirdiff.py:987
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Couldn't copy %s\n"
 "to %s.\n"
 "\n"
 "%s"
-msgstr "붓 위치 복사(_L)"
+msgstr ""
+"Not àbol tu kopi %s\n"
+"tu %s.\n"
+"\n"
+"%s"
 
 #: ../meld/dirdiff.py:1010
 #, python-format
@@ -1522,7 +1525,7 @@ msgstr ""
 
 #: ../meld/filediff.py:1443
 msgid "Files differ in line endings only"
-msgstr "Fayls diffèr onli in lain dè endings"
+msgstr "Fayls diffèr onli in lain dè endiŋs"
 
 #: ../meld/filediff.py:1445
 #, python-format
@@ -1530,7 +1533,7 @@ msgid ""
 "Files are identical except for differing line endings:\n"
 "%s"
 msgstr ""
-"Fayls wa aidentikol iksept für diffèrèns in lain endings:\n"
+"Fayls wa aidentikol iksept für diffèrèns in lain endiŋs:\n"
 "%s"
 
 #: ../meld/filediff.py:1465
@@ -1570,7 +1573,7 @@ msgstr ""
 #: ../meld/filediff.py:1653
 #, python-format
 msgid "Could not save file %s."
-msgstr "Seiv fayl %s butdùk."
+msgstr "Not àbol tu seiv fayl %s."
 
 #: ../meld/filediff.py:1654
 #, python-format
@@ -1600,7 +1603,7 @@ msgstr "Fayl %s on disk yígīŋ čeinjen sins opènen"
 
 #: ../meld/filediff.py:1686
 msgid "If you save it, any external changes will be lost."
-msgstr ""
+msgstr "If seiven, ol čeinjs ikstörnolli wa mwuzo-gala."
 
 #: ../meld/filediff.py:1689
 msgid "Save Anyway"
@@ -1665,7 +1668,7 @@ msgstr "Kopi _dawn"
 
 #: ../meld/meldapp.py:170
 msgid "wrong number of arguments supplied to --diff"
-msgstr "Inkorrekt argyumènts kaunt supplaien tu --diff"
+msgstr "inkorrekt argyumènts kaunt supplaien tu --diff"
 
 #: ../meld/meldapp.py:175
 msgid "Start with an empty window"
@@ -1685,11 +1688,11 @@ msgstr "Start 1-gè vörçion koncrol kompäreiçion"
 
 #: ../meld/meldapp.py:179
 msgid "Start a 2- or 3-way file comparison"
-msgstr ""
+msgstr "Start 1-gè 2- or 3-wei fayl kompäreiçion"
 
 #: ../meld/meldapp.py:181
 msgid "Start a 2- or 3-way folder comparison"
-msgstr ""
+msgstr "Start 1-gè 2- or 3-wei fouldèr kompäreiçion"
 
 #: ../meld/meldapp.py:224
 #, python-format
@@ -1710,7 +1713,7 @@ msgstr ""
 
 #: ../meld/meldapp.py:241
 msgid "Automatically compare all differing files on startup"
-msgstr ""
+msgstr "Òtomeitikolli kompär ol diffèriŋ fayls ùpon startùp"
 
 #: ../meld/meldapp.py:244
 msgid "Ignored for compatibility"
@@ -1733,9 +1736,9 @@ msgid "Create a diff tab for the supplied files or folders"
 msgstr "Krieit diff täb für sùpplaien fayls or fouldèrs"
 
 #: ../meld/meldapp.py:279
-#, fuzzy, python-format
+#, python-format
 msgid "too many arguments (wanted 0-3, got %d)"
-msgstr "%s: 너무 많은 명령행 인자들 (시작 \"%s\")\n"
+msgstr "argyumènts moa đän rīkwairen (rīkwairen 0-3, geten %d)"
 
 #: ../meld/meldapp.py:282
 msgid "can't auto-merge less than 3 files"
@@ -1752,7 +1755,7 @@ msgstr "Öra rīdiŋ seiven kompäreiçion fayl"
 #: ../meld/meldapp.py:326
 #, python-format
 msgid "invalid path or URI \"%s\""
-msgstr "invälid paŧwei or YRI \"%s\""
+msgstr "invälid paŧwei or YRI «%s»"
 
 #. TRANSLATORS: This is the label of a new, currently-unnamed file.
 #: ../meld/meldbuffer.py:137
@@ -1773,7 +1776,7 @@ msgstr "_Pikka Kompäreiçion…"
 
 #: ../meld/meldwindow.py:50
 msgid "Start a new comparison"
-msgstr "Start Pikka kompäreiçion"
+msgstr "Start pikka kompäreiçion"
 
 #: ../meld/meldwindow.py:53
 msgid "Save the current file"
@@ -1977,7 +1980,7 @@ msgstr "_Kontents"
 
 #: ../meld/meldwindow.py:171
 msgid "Open the Meld manual"
-msgstr "Opèn Meld Mänyuol "
+msgstr "Opèn Meld mänyuol"
 
 #: ../meld/meldwindow.py:173
 msgid "About this application"
@@ -2095,7 +2098,7 @@ msgstr "Miss-zo"
 
 #: ../meld/vc/_vc.py:76
 msgid "Not present"
-msgstr "Mǐ-yu   "
+msgstr "Mǐ-yu"
 
 #: ../meld/vcview.py:233 ../meld/vcview.py:417
 msgid "Location"
@@ -2170,7 +2173,7 @@ msgstr "%s — lokol"
 #: ../meld/vcview.py:523
 #, python-format
 msgid "%s — remote"
-msgstr "%s — rimot"
+msgstr "%s — rīmot"
 
 #: ../meld/vcview.py:531
 #, python-format
@@ -2231,7 +2234,7 @@ msgid "Common Ancestor"
 msgstr "Kòmmòn-na Ançestā"
 
 msgid "`%s' is not a directory or file, cannot open cvs view"
-msgstr "`%s' não é um directório ou ficheiro, incapaz de abrir vista cvs"
+msgstr "`%s' wa not dū directori or fayl, not àbol tu opèn cvs vyu"
 
 msgid "window1"
 msgstr "window1"
